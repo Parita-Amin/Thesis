@@ -1,0 +1,109 @@
+%!TEX root = parita-msc.tex
+
+\chapter{Introduction}
+\label{chap:intro}
+\begin{doublespace}
+
+Tim Berners-Lee is 
+%considered as 
+the father of the \ac{www}.
+He wrote
+\emph{Information Management: A Proposal}\footnote{{\tt https://www.w3.org/History/1989/proposal.html}, dated March 1989, May 1990} in 1989 and 1990
+to present the need for a \say{global hypertext system} at the \ac{cern}.
+In his conclusion to that document, he wrote:
+\blockquote{\enquote{we should work toward a universal linked information system, 
+in which generality and portability are more important than fancy graphics techniques and complex extra facilities. 
+The aim would be to allow a place to be found for any information or reference which one felt was important and a way of finding it afterward. 
+The result should be sufficiently attractive to use, 
+that is, 
+the information contained would grow past a critical threshold 
+so that the usefulness of the scheme would, 
+in turn, 
+encourage its increased use.}}
+
+In the more than 30 years that have followed that initial proposal,
+a great deal of progress towards Berners-Lee's vision has been realized.
+The original \say{web of documents} is becoming the \say{web of data} or the
+\say{semantic web}. 
+Is this next web sufficiently attractive to use?
+This thesis will examine this question in the context of an example.
+
+\section{Motivation}
+
+In his teaching practise, 
+my supervisor collects feedback from students in his classes each semester 
+and makes the responses available on his 
+website\footnote{\tt http://www2.cs.uregina.ca/~hepting/teaching/evaluation.html}.
+Typically, student responses were collected on paper and then entered manually into
+computer-readable form.
+This was not done during the {COVID}-19 pandemic.
+
+Although it is valuable to have this data available on the web,
+it is not published as \ac{lod}.
+The motivation for the research presented here was to examine the
+process by which existing data can be published as \ac{lod} and
+to consider whether that process is ``sufficiently attractive to use''.
+%. The data has been
+%uses a survey to collect feedback from students taking his classes each semester. 
+%He makes the responses available on his website. The responses are collected on paper and then entered manually and stored in tabular form. Dr. Hepting and I were intrigued to know if it is possible to have the data available as linked open data. While researching for the ontology vocabularies that I can reuse for our application, I got to know there exists negligible research and development for the vocabularies that can be used to describe a \say{survey} ontology. This motivated me more to try to describe linked open data vocabularies for a feedback survey.
+
+%Working further on the vision of Berners-Lee for the current web, this thesis focuses on the aim of providing important information that can be useful for someone working in the same direction.
+
+%Data science~\cite{dhar2013} is a multifaceted field of computer science in which knowledge is extracted from various structured and unstructured data. Different scientific methods, algorithms, techniques, processes, and systems are used for data extractions. Data science is a vast field that covers numerous other fields under its umbrella. One such field is data management. Data management, on the contrary, is the study of data storage, representation, and accessibility.
+%
+%Sometimes, it is important to publish structured data and link it to already available structured data on the web, which makes searching the information on the web using semantics (keywords) more efficient and easier. Publishing unstructured data does not help the searches using keywords. 
+
+The published linked (structured) data which is available on the web can be efficiently retrieved and reused as, according to Ngomo et al.~\cite{ngomo2014introduction}, linked data is \say{a set of best practices for publishing and connecting structured data on the web}.
+%\marginpar{I suggest dealing with TBL's Design Issues post (berners1996linked) as the source for this part: I have referenced it right before the principles in order to include other related references}
+After the introduction of the semantic web and the four principles of linked data for publishing and connecting structured datasets on the web by Berners-Lee, the web of documents has been gradually moving towards the development of the web of data. 
+With time, these principles have been accepted and considered as the standard to publish structured data on the semantic web~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}. 
+The four principles of linked data by Berners-Lee~\cite{berners1996linked}
+\label{principles} 
+are as follows:
+
+\begin{itemize}
+  \item Use \ac{uri} as names for things
+  \item Use \ac{http}\footnote{Both \ac{http} and \ac{https}} \ac{uri}s to look up those names
+  \item Provide useful information, using the standards (\ac{rdf}\footnote{includes all the standards belonging to \ac{rdf} family}, \ac{sparql})
+  \item Include links to other \ac{uri}s to discover more things
+\end{itemize}
+
+After the development of Linked Data for the semantic web, 
+%\marginpar{I suggest starting with 0 stars and building up to 5 and cross-reference the 4 principles in that if you can: should it be in chapter 1 or 2?}
+Berners-Lee also contributed to web engineering by introducing a 5-star rating\footnote{https://www.w3.org/2011/gld/wiki/5\_Star\_Linked\_Data} system for the rating of linked data implementations. 
+In this system, using the linked data principles, the publishers of the data on the web link their data to the existing linked data to provide reference and make it available for lookup. The data on the web, according to the 5-star system, is accepted to be 5-star data if the data:
+
+\begin{itemize}
+  \item is structured (machine-readable)
+  \item has open-license for access
+  \item is described and linked to other data using \ac{uri}s
+\end{itemize}
+
+%Today, it is necessary to build a system where the unstructured data (data that is not yet available as linked data) can be transformed into linked data (structured) and published on the web using the Linked Data Life Cycle\footnote{https://www.w3.org/2011/gld/wiki/GLD\_Life\_cycle}. This transformation of publishing structured linked data will allow the users to carry out various functions and processes on the web, which was not possible earlier along with raising the importance, fruitfulness, and effectiveness of the datasets. 
+
+A query\footnote{https://www.techopedia.com/definition/5736/query} is used to retrieve information from a database that consists of multiple tables. 
+According to the \ac{w3c} recommendation, a semantic (web) query depicts the techniques and protocols that are \say{used to retrieve information from the web of data} using computer programs. Web (semantic) queries use the semantics and the constitution of data on the web to perform data retrieval operations. Various semantic web technologies have been developed for data retrieval on the web. \ac{sparql} is one of the semantic web technologies used for web queries, where it gathers all the data from different domains and treats all those datasets as local.
+%\marginpar{talking about queries is good - foreshadow  inclusion of a query on your sample data -- in Chapter 4. Maybe do this with respect to LD Life Cycle that is tailored to this example of the feedback data: I don't necessarily understand this}
+
+\section{Contribution}
+
+%The application of data science in the real world, 
+%till today, 
+%has been limited to technology firms and industries. 
+%The field is still being explored and hence, a lot of research work is going on as the focus is on the development of the technology. 
+%The use of data science in day-to-day life still requires a lot of research and development work. 
+%This research work is a small trial towards using the semantic web for non-computer-related tasks. There exists almost negligible work done related to the development of linked open vocabularies 
+%for a survey. 
+%An open-source ontology development tool, Protégé, has been used for the development of the new vocabularies. The instrument developed is an example of a set of survey vocabularies that can be described in correspondence to the design. 
+%For this research, the vocabulary mentioned is for the feedback form that Dr. Hepting uses for receiving feedback from the students for each course that he teaches.
+
+\section{Organization}
+
+Following this introduction, the rest of the thesis is organized as follows.
+Chapter 2...
+Chapter 3...
+Chapter 4...
+Finally, Chapter 5 presents some conclusions and opportunities for future work.
+
+%\par Standard Pizza ontology\footnote{https://protegewiki.stanford.edu/wiki/Protege4Pizzas10Minutes} is a user guide developed at Stanford University to help the users, step-by-step, in describing new vocabularies using Protégé. Protégé\footnote{https://protegewiki.stanford.edu/wiki/Main\_Page} is an open-source ontology development environment that supports the tools to build knowledge-based applications. The Protege4Pizza10Minutes has acted as a motivation to the research work described in this thesis. The thesis follows a specific methodology to build a model to describe forms for various surveys. Once the vocabulary is described, it is easier to use different ways of representation to explain the relationships among the entities as well as the properties. Some of the commonly used visualization tools are also described in the later part of the thesis. 
+\end{doublespace}
