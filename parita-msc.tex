@@ -1,0 +1,147 @@
+%
+% parita-msc.tex -- main file for my thesis
+%
+\documentclass[12pt]{report}
+\usepackage{caption}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{2}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+\usepackage{array,multirow}
+\usepackage[margin=3cm]{geometry}
+\usepackage[autostyle]{csquotes}
+\usepackage[table]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage[toc,page]{appendix}
+\usepackage{adjustbox,lipsum}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{dirtytalk}
+\usepackage{listings}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
+
+\usepackage{acro}
+\acsetup{
+	list-style=tabular, 
+	only-used=true, 
+	sort=true,
+	page-style=plain, 
+	pages=first
+}
+\include{abbrev}
+
+
+%
+% added following 3 lines to define "definition" -- see what you think
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+% added above 3 lines
+%
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+%\tracingassigns=1\tracinggroups=1\tracingall
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+    \begin{doublespace}
+        \vspace*{3cm}
+
+        \large
+%         A model for creation of Vocabularies in Ontology for a Survey 
+%	   Designing linked open vocabularies for Linked Data Applications
+%	   Creating a Linked Data Application for Surveys
+%	   Defining new linked open vocabularies for Student Feedback Application
+			%Creating a Linked Data Application
+			%Usability Issues in Creating a Linked Data Application
+			%A Guide for the Development and Evaluation of Adequacy of a Linked Open Vocabulary for a Feedback Survey
+			Development of a Linked Open Vocabulary for a Feedback Survey
+
+        \vspace{1cm}
+
+        \large
+        A Thesis\\
+        Submitted to the Faculty of Graduate Studies and Research\\
+        In Partial Fulfillment of the Requirements\\
+        For the Degree of\\
+        Master of Science\\
+        in Computer Science\\
+        University of Regina\\
+
+        \vspace{0.8cm}
+
+        \normalsize
+        By\\
+        Parita Dipakkumar Amin\\
+        Regina, Saskatchewan\\
+        August, 2022\\
+
+        \vspace{0.8cm}
+        \textcopyright \hspace*{0.2cm} Copyright 2022: Parita Amin%$\sim$
+    \end{doublespace}
+    \end{center}
+\end{titlepage}
+
+\newpage
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{Abstract}
+\include{abstract}
+
+\newpage
+\addcontentsline{toc}{chapter}{Acknowledgments}
+\include{ack}
+
+\newpage
+\addcontentsline{toc}{chapter}{Post-Defense Acknowledgments}
+\include{pd-ack}
+
+\renewcommand{\contentsname}{Table of Contents}
+\tableofcontents
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+%%\begin{doublespace}
+\printacronyms[include-classes=abbrev,name={List of Abbreviations},heading={chapter*}]
+%%\end{doublespace}
+\cleardoublepage
+
+\pagenumbering{arabic}
+\include{ch1}
+\include{ch2}
+\include{ch3}
+\include{ch4}
+\include{ch5}
+
+\appendix
+\include{appendix1}
+\include{appendix2}
+\include{appendix3}
+
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{plain}
+\bibliography{parita}
+
+\end{document}
