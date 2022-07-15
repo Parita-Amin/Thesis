@@ -1,0 +1,217 @@
+%!TEX root = parita-msc.tex
+
+\chapter{Expression of CSV Data in RDF}
+\label{chap:appendix2}
+%\begin{doublespace}
+\lstset{ 
+  %backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  %commentstyle=\color{mygreen},    % comment style
+  %deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  %extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1,                % start line enumeration with line 1000
+  %frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  %keywordstyle=\color{blue},       % keyword style
+  language=XML,                 % the language of the code
+  %morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  %stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+\begin{lstlisting}
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://survey.org/Question_1.
+%20The%20instructor%20is%20well-prepared%20for%20class">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">29</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">16</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">8</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">0</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_2.
+%20The%20instructor%20clearly%20communicates%20his%20expectations
+%20for%20student%20preparation%20and%
+20participation">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">33</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">15</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">4</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">1</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_3.
+%20The%20instructor%20uses%20class%20time%20effectively">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">26</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">18</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">7</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">2</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_4.
+%20The%20instructor%20has%20clear%20expectations%20for
+%20assigned%20work">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">34</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">10</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">8</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">1</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_5.%20The
+%20instructor%20encourages%20student%20participation">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">45</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">6</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">2</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">0</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_6.%20The
+%20instructor%20clearly%20answers%20questions">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">31</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">16</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">5</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">1</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_7.%20The
+%20instructor%20treats%20students%20with%20respect">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">49</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">3</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">1</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">0</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_8.%20The
+%20instructor%20effectively%20directs%20and%20stimulates
+%20discussion">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">38</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">10</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">4</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">1</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/Question_9.%20The
+%20instructor%20effectively%20encourages%20students%20to
+%20ask%20questions%20and%20give%20answers">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">43</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">8</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">2</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">0</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">53</Responses>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Question_Total">
+	<Always xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">328</Always>
+	<Mostly xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">102</Mostly>
+	<Sometimes xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">41</Sometimes>
+	<Rarely xmlns="http://survey.org/likert/">6</Rarely>
+	<Never xmlns="http://survey.org/likert/">0</Never>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://survey.org/likert/Total">
+	<Responses xmlns="http://survey.org/likert/" rdf:datatype=
+	"http://www.w3.org/2001/XMLSchema#int">477</Responses>
+</rdf:Description>
+
+</rdf:RDF>
+\end{lstlisting}
+%\end{doublespace}
