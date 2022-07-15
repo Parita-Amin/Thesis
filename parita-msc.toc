@@ -1,0 +1,50 @@
+\contentsline {chapter}{Abstract}{i}{Doc-Start}%
+\contentsline {chapter}{Acknowledgments}{ii}{Doc-Start}%
+\contentsline {chapter}{Post-Defense Acknowledgments}{iii}{Doc-Start}%
+\contentsline {chapter}{List of Figures}{vi}{chapter*.1}%
+\contentsline {chapter}{List of Tables}{viii}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{ix}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Contribution}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Organization}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Related Work}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Web}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Semantic Web}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Semantic Web Stack}{8}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Linked Open Data}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Linked Data}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Linked (Open) Data}{11}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Resource Description Framework}{12}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Uniform Resource Identifier}{21}{subsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Syntax of a \ac {uri}}{21}{subsubsection.2.4.1.1}%
+\contentsline {section}{\numberline {2.5}Linked Data Life Cycle}{23}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Conversion of Data from CSV to \ac {rdf}}{23}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Ontology Editors}{26}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Applications of Linked Open Data}{26}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Wikidata}{26}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}DBpedia}{29}{subsection.2.8.2}%
+\contentsline {chapter}{\numberline {3}Proof Of Concept}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ontology in Web Semantics}{35}{section.3.1}%
+\contentsline {section}{\numberline {3.2}\ac {owl} Ontologies}{36}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Components of \ac {owl} Ontologies}{36}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}\ac {owl} Ontology Inconsistencies and Reasoner}{38}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\ac {owl} Ontology for Survey}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Development Tool for the Creation of New \ac {owl} Vocabularies}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Protégé}{42}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Usability of Protégé}{43}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{46}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Classes and Class Hierarchy}{46}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Object Properties and Object Property Hierarchy}{53}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{56}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Individuals}{60}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Visualization Tools for \ac {owl} Ontology}{62}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}OntoGraf}{62}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}WebVOWL}{63}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{65}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{66}{section.5.2}%
+\contentsline {chapter}{\numberline {A}Sample CSV Data}{67}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Expression of CSV Data in RDF}{71}{appendix.B}%
+\contentsline {chapter}{\numberline {C}OWL Classes to be Used to Describe Surveys}{75}{appendix.C}%
+\contentsline {chapter}{References}{90}{lstnumber.-3.722}%
