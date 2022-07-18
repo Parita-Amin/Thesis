@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.4)  18 JUL 2022 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.4)  18 JUL 2022 15:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1828,27 +1828,71 @@ LaTeX Warning: Citation `heath2011linked' on page 2 undefined on input line 59.
 LaTeX Warning: Citation `berners1996linked' on page 2 undefined on input line 6
 0.
 
-[2]) [3] [4]
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+[]\T1/cmr/m/n/12 perhaps
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\T1/cmr/m/n/12 bet-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\T1/cmr/m/n/12 to use
+ []
+
+
+Overfull \hbox (3.14124pt too wide) in paragraph at lines 85--85
+\T1/cmr/m/n/12 SPARQL
+ []
+
+) [3] [4]
 \openout2 = `ch2.aux'.
 
  (./ch2.tex
 Chapter 2.
 
-LaTeX Warning: Citation `bernersreadings' on page 5 undefined on input line 15.
+Overfull \hbox (43.23177pt too wide) in paragraph at lines 19--23
+[]\T1/cmtt/m/n/12 I don't care for Web 1.0,2.0,3.0, 4.0 ... I think that the we
+b of documents
+ []
 
 
-<images/ch2/Figure1.png, id=442, 626.34pt x 232.87pt>
+Overfull \hbox (25.60695pt too wide) in paragraph at lines 19--23
+\T1/cmtt/m/n/12 and web of data are sufficient distinctions. Also, you are not 
+getting full
+ []
+
+
+Overfull \hbox (19.43346pt too wide) in paragraph at lines 19--23
+\T1/cmtt/m/n/12 labelfig:2.1 -- rather try to label the contents of the figure,
+ that way you
+ []
+
+
+Overfull \hbox (19.43346pt too wide) in paragraph at lines 19--23
+\T1/cmtt/m/n/12 don't have to remember numbers to reference the figures and the
+ labels help
+ []
+
+
+LaTeX Warning: Citation `bernersreadings' on page 5 undefined on input line 24.
+
+
+<images/ch2/Figure1.png, id=440, 626.34pt x 232.87pt>
 File: images/ch2/Figure1.png Graphic file (type png)
 <use images/ch2/Figure1.png>
-Package pdftex.def Info: images/ch2/Figure1.png  used on input line 19.
+Package pdftex.def Info: images/ch2/Figure1.png  used on input line 28.
 (pdftex.def)             Requested size: 426.79134pt x 158.6835pt.
 
 LaTeX Warning: Citation `aghaei2012evolution' on page 5 undefined on input line
- 20.
+ 29.
 
 
 LaTeX Warning: Citation `aghaei2012evolution' on page 5 undefined on input line
- 20.
+ 29.
 
 [5
 
@@ -1858,112 +1902,112 @@ LaTeX Warning: Citation `aghaei2012evolution' on page 5 undefined on input line
 ]
 
 LaTeX Warning: Citation `aghaei2012evolution' on page 6 undefined on input line
- 24.
+ 33.
 
 
 LaTeX Warning: Citation `aghaei2012evolution' on page 6 undefined on input line
- 26.
+ 35.
 
 
-LaTeX Warning: Citation `harris2009web' on page 6 undefined on input line 26.
-
-
-LaTeX Warning: Citation `aghaei2012evolution' on page 6 undefined on input line
- 30.
+LaTeX Warning: Citation `harris2009web' on page 6 undefined on input line 35.
 
 [6 <./images/ch2/Figure1.png>]
-<images/ch2/Figure2.png, id=457, 626.34pt x 318.18875pt>
+
+LaTeX Warning: Citation `aghaei2012evolution' on page 7 undefined on input line
+ 39.
+
+<images/ch2/Figure2.png, id=456, 626.34pt x 318.18875pt>
 File: images/ch2/Figure2.png Graphic file (type png)
 <use images/ch2/Figure2.png>
-Package pdftex.def Info: images/ch2/Figure2.png  used on input line 34.
+Package pdftex.def Info: images/ch2/Figure2.png  used on input line 43.
 (pdftex.def)             Requested size: 426.79134pt x 216.82185pt.
 
+LaTeX Warning: Citation `aghaei2012evolution' on page 7 undefined on input line
+ 44.
+
 
 LaTeX Warning: Citation `aghaei2012evolution' on page 7 undefined on input line
- 35.
+ 44.
 
 
-LaTeX Warning: Citation `aghaei2012evolution' on page 7 undefined on input line
- 35.
-
-
-LaTeX Warning: Citation `choudhury2014' on page 7 undefined on input line 39.
+LaTeX Warning: Citation `choudhury2014' on page 7 undefined on input line 48.
 
 
 LaTeX Warning: Citation `bernerslee1999weaving' on page 7 undefined on input li
-ne 39.
+ne 48.
 
-<images/ch2/Figure3.png, id=461, 601.24625pt x 327.2225pt>
+[7 <./images/ch2/Figure2.png>]
+<images/ch2/Figure3.png, id=465, 601.24625pt x 327.2225pt>
 File: images/ch2/Figure3.png Graphic file (type png)
 <use images/ch2/Figure3.png>
-Package pdftex.def Info: images/ch2/Figure3.png  used on input line 46.
+Package pdftex.def Info: images/ch2/Figure3.png  used on input line 55.
 (pdftex.def)             Requested size: 426.79134pt x 232.28465pt.
-[7 <./images/ch2/Figure2.png>]
+
 
 LaTeX Warning: Citation `aghaei2012evolution' on page 8 undefined on input line
- 52.
+ 61.
 
 [8 <./images/ch2/Figure3.png>]
 
 LaTeX Warning: Citation `bernerslee1999weaving' on page 9 undefined on input li
-ne 54.
+ne 63.
 
 
-LaTeX Warning: Citation `bizer2009linked' on page 9 undefined on input line 55.
+LaTeX Warning: Citation `bizer2009linked' on page 9 undefined on input line 64.
 
 
 [9]
 
-LaTeX Warning: Citation `bauer2011linked' on page 10 undefined on input line 66
+LaTeX Warning: Citation `bauer2011linked' on page 10 undefined on input line 75
 .
 
 [10]
 
 LaTeX Warning: Citation `berners1998universal' on page 11 undefined on input li
-ne 67.
+ne 76.
 
 
-Overfull \hbox (1.21146pt too wide) in paragraph at lines 76--77
+Overfull \hbox (1.21146pt too wide) in paragraph at lines 85--86
 []\T1/cmr/m/n/12 The RDF, ini-tially de-signed as a meta-data data model, is a 
 computer-understandable
  []
 
 [11]
 
-LaTeX Warning: Citation `cyganiak2014rdf' on page 12 undefined on input line 77
+LaTeX Warning: Citation `cyganiak2014rdf' on page 12 undefined on input line 86
 .
 
 
-LaTeX Warning: Citation `beckett2004rdf' on page 12 undefined on input line 77.
+LaTeX Warning: Citation `beckett2004rdf' on page 12 undefined on input line 86.
 
 
-<images/ch2/Figure4.png, id=512, 601.24625pt x 130.4875pt>
+<images/ch2/Figure4.png, id=511, 601.24625pt x 130.4875pt>
 File: images/ch2/Figure4.png Graphic file (type png)
 <use images/ch2/Figure4.png>
-Package pdftex.def Info: images/ch2/Figure4.png  used on input line 86.
+Package pdftex.def Info: images/ch2/Figure4.png  used on input line 95.
 (pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
 [12]
-<images/ch2/Figure5.png, id=523, 568.1225pt x 107.40125pt>
+<images/ch2/Figure5.png, id=522, 568.1225pt x 107.40125pt>
 File: images/ch2/Figure5.png Graphic file (type png)
 <use images/ch2/Figure5.png>
-Package pdftex.def Info: images/ch2/Figure5.png  used on input line 93.
+Package pdftex.def Info: images/ch2/Figure5.png  used on input line 102.
 (pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
-<images/ch2/Figure6.png, id=525, 572.1375pt x 188.705pt>
+<images/ch2/Figure6.png, id=524, 572.1375pt x 188.705pt>
 File: images/ch2/Figure6.png Graphic file (type png)
 <use images/ch2/Figure6.png>
-Package pdftex.def Info: images/ch2/Figure6.png  used on input line 100.
+Package pdftex.def Info: images/ch2/Figure6.png  used on input line 109.
 (pdftex.def)             Requested size: 426.79134pt x 140.76823pt.
  [13 <./images/ch2/Figure4.png> <./images/ch2/Figure5.png>]
 
-LaTeX Warning: Citation `beckett2014rdf' on page 14 undefined on input line 104
+LaTeX Warning: Citation `beckett2014rdf' on page 14 undefined on input line 113
 .
 
 
-LaTeX Warning: Citation `cyganiak2008n' on page 14 undefined on input line 104.
+LaTeX Warning: Citation `cyganiak2008n' on page 14 undefined on input line 113.
 
 
 
-Overfull \hbox (1.08981pt too wide) in paragraph at lines 107--125
+Overfull \hbox (1.08981pt too wide) in paragraph at lines 116--134
  [][] 
  []
 
@@ -1972,226 +2016,226 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: Citation `mcbride2004resource' on page 14 undefined on input lin
-e 128.
+e 137.
 
 
 LaTeX Warning: Citation `mcbride2004resource' on page 14 undefined on input lin
-e 128.
+e 137.
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 14 undefined on input line 129.
+LaTeX Warning: Citation `manola2004rdf' on page 14 undefined on input line 138.
 
 
-<images/ch2/Figure7.png, id=537, 739.76375pt x 411.5375pt>
+<images/ch2/Figure7.png, id=536, 739.76375pt x 411.5375pt>
 File: images/ch2/Figure7.png Graphic file (type png)
 <use images/ch2/Figure7.png>
-Package pdftex.def Info: images/ch2/Figure7.png  used on input line 136.
+Package pdftex.def Info: images/ch2/Figure7.png  used on input line 145.
 (pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
 
 LaTeX Warning: Citation `mcbride2004resource' on page 14 undefined on input lin
-e 137.
+e 146.
 
 
 LaTeX Warning: Citation `mcbride2004resource' on page 14 undefined on input lin
-e 137.
+e 146.
 
 [14 <./images/ch2/Figure6.png>]
-<images/ch2/Figure8.png, id=550, 501.875pt x 88.33pt>
+<images/ch2/Figure8.png, id=549, 501.875pt x 88.33pt>
 File: images/ch2/Figure8.png Graphic file (type png)
 <use images/ch2/Figure8.png>
-Package pdftex.def Info: images/ch2/Figure8.png  used on input line 143.
+Package pdftex.def Info: images/ch2/Figure8.png  used on input line 152.
 (pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
-<images/ch2/Figure9.png, id=553, 501.875pt x 104.39pt>
+<images/ch2/Figure9.png, id=552, 501.875pt x 104.39pt>
 File: images/ch2/Figure9.png Graphic file (type png)
 <use images/ch2/Figure9.png>
-Package pdftex.def Info: images/ch2/Figure9.png  used on input line 150.
+Package pdftex.def Info: images/ch2/Figure9.png  used on input line 159.
 (pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 151.
+LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 160.
 
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 151.
+LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 160.
 
 
 [15] [16 <./images/ch2/Figure7.png> <./images/ch2/Figure8.png>]
-<images/ch2/Figure10.png, id=569, 400.49625pt x 206.7725pt>
+<images/ch2/Figure10.png, id=568, 400.49625pt x 206.7725pt>
 File: images/ch2/Figure10.png Graphic file (type png)
 <use images/ch2/Figure10.png>
-Package pdftex.def Info: images/ch2/Figure10.png  used on input line 160.
+Package pdftex.def Info: images/ch2/Figure10.png  used on input line 169.
 (pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 161.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 170.
 
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 161.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 170.
 
 
-<images/ch2/Figure11.png, id=575, 618.31pt x 158.5925pt>
+<images/ch2/Figure11.png, id=574, 618.31pt x 158.5925pt>
 File: images/ch2/Figure11.png Graphic file (type png)
 <use images/ch2/Figure11.png>
-Package pdftex.def Info: images/ch2/Figure11.png  used on input line 167.
+Package pdftex.def Info: images/ch2/Figure11.png  used on input line 176.
 (pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 168.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 177.
 
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 168.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 177.
 
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 178.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 187.
 
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 178.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 187.
 
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure12.png, id=579, 687.56876pt x 386.44376pt>
+<images/ch2/Figure12.png, id=578, 687.56876pt x 386.44376pt>
 File: images/ch2/Figure12.png Graphic file (type png)
 <use images/ch2/Figure12.png>
-Package pdftex.def Info: images/ch2/Figure12.png  used on input line 184.
+Package pdftex.def Info: images/ch2/Figure12.png  used on input line 193.
 (pdftex.def)             Requested size: 426.79134pt x 239.87569pt.
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 185.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 194.
 
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 185.
+LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 194.
 
 
 [17 <./images/ch2/Figure9.png>] [18 <./images/ch2/Figure10.png> <./images/ch2/F
 igure11.png>]
-<images/ch2/Figure13.png, id=593, 687.56876pt x 400.49625pt>
+<images/ch2/Figure13.png, id=592, 687.56876pt x 400.49625pt>
 File: images/ch2/Figure13.png Graphic file (type png)
 <use images/ch2/Figure13.png>
-Package pdftex.def Info: images/ch2/Figure13.png  used on input line 192.
+Package pdftex.def Info: images/ch2/Figure13.png  used on input line 201.
 (pdftex.def)             Requested size: 426.79134pt x 248.59843pt.
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 19 undefined on input line 193.
+LaTeX Warning: Citation `manola2004rdf' on page 19 undefined on input line 202.
 
 
 
-LaTeX Warning: Citation `manola2004rdf' on page 19 undefined on input line 193.
+LaTeX Warning: Citation `manola2004rdf' on page 19 undefined on input line 202.
 
 
 [19 <./images/ch2/Figure12.png>] [20 <./images/ch2/Figure13.png>]
 
-LaTeX Warning: Citation `berners1998uri' on page 21 undefined on input line 198
+LaTeX Warning: Citation `berners1998uri' on page 21 undefined on input line 207
 .
 
 
-LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 19
-8.
+LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 20
+7.
 
 
-Overfull \hbox (45.9096pt too wide) in paragraph at lines 206--206
+Overfull \hbox (45.9096pt too wide) in paragraph at lines 215--215
 []|\T1/cmr/m/n/12 Resource|  
  []
 
 
-LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 20
-6.
+LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 21
+5.
 
 
-Overfull \hbox (46.33174pt too wide) in paragraph at lines 207--207
+Overfull \hbox (46.33174pt too wide) in paragraph at lines 216--216
 []|\T1/cmr/m/n/12 Identifier|  
  []
 
 
-LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 20
-9.
+LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 21
+8.
 
 
-LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 20
-9.
+LaTeX Warning: Citation `fielding1998uri' on page 21 undefined on input line 21
+8.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `berners1998uri' on page 21 undefined on input line 213
+LaTeX Warning: Citation `berners1998uri' on page 21 undefined on input line 222
 .
 
 [21]
-<images/ch2/Figure14.png, id=625, 733.74126pt x 115.43124pt>
+<images/ch2/Figure14.png, id=624, 733.74126pt x 115.43124pt>
 File: images/ch2/Figure14.png Graphic file (type png)
 <use images/ch2/Figure14.png>
-Package pdftex.def Info: images/ch2/Figure14.png  used on input line 227.
+Package pdftex.def Info: images/ch2/Figure14.png  used on input line 236.
 (pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
 
 
-LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 228
+LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 237
 .
 
 
-LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 228
+LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 237
 .
 
-<images/ch2/Figure15.png, id=626, 696.6025pt x 182.6825pt>
+<images/ch2/Figure15.png, id=625, 696.6025pt x 182.6825pt>
 File: images/ch2/Figure15.png Graphic file (type png)
 <use images/ch2/Figure15.png>
-Package pdftex.def Info: images/ch2/Figure15.png  used on input line 233.
+Package pdftex.def Info: images/ch2/Figure15.png  used on input line 242.
 (pdftex.def)             Requested size: 426.79134pt x 111.92397pt.
 
-LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 234
+LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 243
 .
 
 
-LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 234
+LaTeX Warning: Citation `berners1998uri' on page 22 undefined on input line 243
 .
 
 
 LaTeX Warning: Citation `ngomo2014introduction' on page 22 undefined on input l
-ine 238.
+ine 247.
 
 
 LaTeX Warning: Citation `ngomo2014introduction' on page 22 undefined on input l
-ine 251.
+ine 260.
 
 
 LaTeX Warning: Citation `ngomo2014introduction' on page 22 undefined on input l
-ine 251.
+ine 260.
 
 [22 <./images/ch2/Figure14.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `ermilov2013csv' on page 23 undefined on input line 255
+LaTeX Warning: Citation `ermilov2013csv' on page 23 undefined on input line 264
 .
 
 [23 <./images/ch2/Figure15.png>]
 
-LaTeX Warning: Citation `han2008rdf' on page 24 undefined on input line 260.
+LaTeX Warning: Citation `han2008rdf' on page 24 undefined on input line 269.
 
 [24]
 
 LaTeX Warning: Citation `andreas2009xlwrap' on page 25 undefined on input line 
-264.
+273.
 
 [25]
 
 LaTeX Warning: Citation `denny2014wikidata' on page 26 undefined on input line 
-279.
+288.
 
 
-LaTeX Warning: Citation `fredo2014intro' on page 26 undefined on input line 281
+LaTeX Warning: Citation `fredo2014intro' on page 26 undefined on input line 290
 .
 
 [26]
-<images/ch2/Figure16.png, id=675, 615.29875pt x 792.9625pt>
+<images/ch2/Figure16.png, id=674, 615.29875pt x 792.9625pt>
 File: images/ch2/Figure16.png Graphic file (type png)
 <use images/ch2/Figure16.png>
-Package pdftex.def Info: images/ch2/Figure16.png  used on input line 287.
+Package pdftex.def Info: images/ch2/Figure16.png  used on input line 296.
 (pdftex.def)             Requested size: 426.79134pt x 550.03651pt.
 
 
@@ -2201,41 +2245,41 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure17.png, id=687, 626.34pt x 485.815pt>
+<images/ch2/Figure17.png, id=686, 626.34pt x 485.815pt>
 File: images/ch2/Figure17.png Graphic file (type png)
 <use images/ch2/Figure17.png>
-Package pdftex.def Info: images/ch2/Figure17.png  used on input line 347.
+Package pdftex.def Info: images/ch2/Figure17.png  used on input line 356.
 (pdftex.def)             Requested size: 426.79134pt x 331.04665pt.
 
-Overfull \hbox (0.74484pt too wide) in paragraph at lines 344--351
+Overfull \hbox (0.74484pt too wide) in paragraph at lines 353--360
 []\T1/cmr/m/n/12 The URI for an en-tity on Wiki-data is ``https://www.wikidata.
 org/wiki/<id>'', where
  []
 
 [29] [30 <./images/ch2/Figure17.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 [][][]\T1/cmr/m/n/10 https://www.dummies.com/programming/big-data/data-science/
 how-pattern-matching-works-
  []
 
 
-LaTeX Warning: Citation `auer2007dbpedia' on page 31 undefined on input line 35
-3.
+LaTeX Warning: Citation `auer2007dbpedia' on page 31 undefined on input line 36
+2.
 
 
 LaTeX Warning: Citation `bizer2009dbpedia' on page 31 undefined on input line 3
-53.
+62.
 
-<images/ch2/Figure18.png, id=706, 679.53876pt x 664.4825pt>
+<images/ch2/Figure18.png, id=705, 679.53876pt x 664.4825pt>
 File: images/ch2/Figure18.png Graphic file (type png)
 <use images/ch2/Figure18.png>
-Package pdftex.def Info: images/ch2/Figure18.png  used on input line 356.
+Package pdftex.def Info: images/ch2/Figure18.png  used on input line 365.
 (pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
 [31]
-<images/ch2/Figure19.png, id=717, 626.34pt x 321.2pt>
+<images/ch2/Figure19.png, id=716, 626.34pt x 321.2pt>
 File: images/ch2/Figure19.png Graphic file (type png)
 <use images/ch2/Figure19.png>
-Package pdftex.def Info: images/ch2/Figure19.png  used on input line 363.
+Package pdftex.def Info: images/ch2/Figure19.png  used on input line 372.
 (pdftex.def)             Requested size: 426.79134pt x 218.87381pt.
 ) [32] [33 <./images/ch2/Figure18.png>] [34 <./images/ch2/Figure19.png>]
 \openout2 = `ch3.aux'.
@@ -2265,12 +2309,12 @@ ine 9.
 LaTeX Warning: Citation `horridge2009practical' on page 36 undefined on input l
 ine 14.
 
-<images/ch3/Figure1.png, id=744, 307.1475pt x 159.59625pt>
+<images/ch3/Figure1.png, id=743, 307.1475pt x 159.59625pt>
 File: images/ch3/Figure1.png Graphic file (type png)
 <use images/ch3/Figure1.png>
 Package pdftex.def Info: images/ch3/Figure1.png  used on input line 17.
 (pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
-<images/ch3/Figure2.png, id=748, 307.1475pt x 201.75375pt>
+<images/ch3/Figure2.png, id=747, 307.1475pt x 201.75375pt>
 File: images/ch3/Figure2.png Graphic file (type png)
 <use images/ch3/Figure2.png>
 Package pdftex.def Info: images/ch3/Figure2.png  used on input line 25.
@@ -2281,7 +2325,7 @@ LaTeX Warning: Citation `horridge2009practical' on page 37 undefined on input l
 ine 30.
 
 [37 <./images/ch3/Figure1.png> <./images/ch3/Figure2.png>]
-<images/ch3/Figure3.png, id=765, 307.1475pt x 312.16624pt>
+<images/ch3/Figure3.png, id=764, 307.1475pt x 312.16624pt>
 File: images/ch3/Figure3.png Graphic file (type png)
 <use images/ch3/Figure3.png>
 Package pdftex.def Info: images/ch3/Figure3.png  used on input line 40.
@@ -2321,13 +2365,13 @@ t line 22.
 LaTeX Warning: Citation `quesenbery2003dimensions' on page 42 undefined on inpu
 t line 22.
 
-<images/ch4/Figure1.png, id=803, 271.0125pt x 240.9pt>
+<images/ch4/Figure1.png, id=802, 271.0125pt x 240.9pt>
 File: images/ch4/Figure1.png Graphic file (type png)
 <use images/ch4/Figure1.png>
 Package pdftex.def Info: images/ch4/Figure1.png  used on input line 25.
 (pdftex.def)             Requested size: 341.43306pt x 303.50618pt.
 [42] [43 <./images/ch4/Figure1.png>] [44] [45]
-<images/ch4/Figure2.png, id=828, 558.085pt x 641.39626pt>
+<images/ch4/Figure2.png, id=827, 558.085pt x 641.39626pt>
 File: images/ch4/Figure2.png Graphic file (type png)
 <use images/ch4/Figure2.png>
 Package pdftex.def Info: images/ch4/Figure2.png  used on input line 53.
@@ -2339,35 +2383,35 @@ LaTeX Warning: Citation `prof' on page 46 undefined on input line 54.
 
 LaTeX Warning: Citation `prof' on page 46 undefined on input line 54.
 
-<images/ch4/Figure3.png, id=831, 1439.3775pt x 791.95876pt>
+<images/ch4/Figure3.png, id=830, 1439.3775pt x 791.95876pt>
 File: images/ch4/Figure3.png Graphic file (type png)
 <use images/ch4/Figure3.png>
 Package pdftex.def Info: images/ch4/Figure3.png  used on input line 60.
 (pdftex.def)             Requested size: 426.79134pt x 234.82216pt.
-<images/ch4/Figure4.png, id=833, 821.0675pt x 448.67625pt>
+<images/ch4/Figure4.png, id=832, 821.0675pt x 448.67625pt>
 File: images/ch4/Figure4.png Graphic file (type png)
 <use images/ch4/Figure4.png>
 Package pdftex.def Info: images/ch4/Figure4.png  used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 233.21715pt.
 [46] [47 <./images/ch4/Figure2.png>]
-<images/ch4/Figure5.png, id=846, 600.2425pt x 380.42125pt>
+<images/ch4/Figure5.png, id=845, 600.2425pt x 380.42125pt>
 File: images/ch4/Figure5.png Graphic file (type png)
 <use images/ch4/Figure5.png>
 Package pdftex.def Info: images/ch4/Figure5.png  used on input line 76.
 (pdftex.def)             Requested size: 426.79134pt x 270.5015pt.
-<images/ch4/Figure6.png, id=848, 1158.3275pt x 707.64375pt>
+<images/ch4/Figure6.png, id=847, 1158.3275pt x 707.64375pt>
 File: images/ch4/Figure6.png Graphic file (type png)
 <use images/ch4/Figure6.png>
 Package pdftex.def Info: images/ch4/Figure6.png  used on input line 83.
 (pdftex.def)             Requested size: 426.79134pt x 260.73352pt.
-<images/ch4/Figure7.png, id=851, 1153.30875pt x 707.64375pt>
+<images/ch4/Figure7.png, id=850, 1153.30875pt x 707.64375pt>
 File: images/ch4/Figure7.png Graphic file (type png)
 <use images/ch4/Figure7.png>
 Package pdftex.def Info: images/ch4/Figure7.png  used on input line 90.
 (pdftex.def)             Requested size: 426.79134pt x 261.86728pt.
  [48 <./images/ch4/Figure3.png>] [49 <./images/ch4/Figure4.png> <./images/ch4/F
 igure5.png>]
-<images/ch4/Figure8.png, id=869, 765.86125pt x 581.17125pt>
+<images/ch4/Figure8.png, id=868, 765.86125pt x 581.17125pt>
 File: images/ch4/Figure8.png Graphic file (type png)
 <use images/ch4/Figure8.png>
 Package pdftex.def Info: images/ch4/Figure8.png  used on input line 99.
@@ -2380,13 +2424,13 @@ Overfull \vbox (6.29114pt too high) has occurred while \output is active []
 
 LaTeX Warning: Citation `prof' on page 53 undefined on input line 121.
 
-<images/ch4/Figure9.png, id=892, 594.22pt x 399.4925pt>
+<images/ch4/Figure9.png, id=891, 594.22pt x 399.4925pt>
 File: images/ch4/Figure9.png Graphic file (type png)
 <use images/ch4/Figure9.png>
 Package pdftex.def Info: images/ch4/Figure9.png  used on input line 139.
 (pdftex.def)             Requested size: 426.79134pt x 286.94556pt.
 [53]
-<images/ch4/Figure10.png, id=898, 474.77374pt x 179.67125pt>
+<images/ch4/Figure10.png, id=897, 474.77374pt x 179.67125pt>
 File: images/ch4/Figure10.png Graphic file (type png)
 <use images/ch4/Figure10.png>
 Package pdftex.def Info: images/ch4/Figure10.png  used on input line 147.
@@ -2396,12 +2440,12 @@ Package pdftex.def Info: images/ch4/Figure10.png  used on input line 147.
 LaTeX Warning: Citation `horridge2009practical' on page 55 undefined on input l
 ine 155.
 
-<images/ch4/Figure11.png, id=906, 474.77374pt x 320.19624pt>
+<images/ch4/Figure11.png, id=905, 474.77374pt x 320.19624pt>
 File: images/ch4/Figure11.png Graphic file (type png)
 <use images/ch4/Figure11.png>
 Package pdftex.def Info: images/ch4/Figure11.png  used on input line 158.
 (pdftex.def)             Requested size: 341.43306pt x 230.27727pt.
-<images/ch4/Figure12.png, id=910, 727.71875pt x 491.8375pt>
+<images/ch4/Figure12.png, id=909, 727.71875pt x 491.8375pt>
 File: images/ch4/Figure12.png Graphic file (type png)
 <use images/ch4/Figure12.png>
 Package pdftex.def Info: images/ch4/Figure12.png  used on input line 165.
@@ -2410,13 +2454,13 @@ Package pdftex.def Info: images/ch4/Figure12.png  used on input line 165.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/Figure13.png, id=922, 558.085pt x 429.605pt>
+<images/ch4/Figure13.png, id=921, 558.085pt x 429.605pt>
 File: images/ch4/Figure13.png Graphic file (type png)
 <use images/ch4/Figure13.png>
 Package pdftex.def Info: images/ch4/Figure13.png  used on input line 211.
 (pdftex.def)             Requested size: 426.79134pt x 328.54842pt.
 [56 <./images/ch4/Figure11.png>] [57 <./images/ch4/Figure12.png>]
-<images/ch4/Figure14.png, id=936, 1062.97125pt x 565.11125pt>
+<images/ch4/Figure14.png, id=935, 1062.97125pt x 565.11125pt>
 File: images/ch4/Figure14.png Graphic file (type png)
 <use images/ch4/Figure14.png>
 Package pdftex.def Info: images/ch4/Figure14.png  used on input line 218.
@@ -2469,13 +2513,13 @@ Overfull \hbox (1.53156pt too wide) in paragraph at lines 234--234
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/Figure15.png, id=938, 505.89pt x 342.27875pt>
+<images/ch4/Figure15.png, id=937, 505.89pt x 342.27875pt>
 File: images/ch4/Figure15.png Graphic file (type png)
 <use images/ch4/Figure15.png>
 Package pdftex.def Info: images/ch4/Figure15.png  used on input line 244.
 (pdftex.def)             Requested size: 426.79134pt x 288.76563pt.
 [58] [59 <./images/ch4/Figure13.png> <./images/ch4/Figure14.png>]
-<images/ch4/Figure16.png, id=952, 1109.14375pt x 613.29124pt>
+<images/ch4/Figure16.png, id=951, 1109.14375pt x 613.29124pt>
 File: images/ch4/Figure16.png Graphic file (type png)
 <use images/ch4/Figure16.png>
 Package pdftex.def Info: images/ch4/Figure16.png  used on input line 251.
@@ -2489,7 +2533,7 @@ ne 258.
 LaTeX Warning: Citation `antoniazz2018rdf' on page 62 undefined on input line 2
 58.
 
-<images/ch4/Figure17.png, id=967, 1444.39626pt x 605.26125pt>
+<images/ch4/Figure17.png, id=966, 1444.39626pt x 605.26125pt>
 File: images/ch4/Figure17.png Graphic file (type png)
 <use images/ch4/Figure17.png>
 Package pdftex.def Info: images/ch4/Figure17.png  used on input line 262.
@@ -2503,7 +2547,7 @@ LaTeX Warning: Citation `lohmann2014webvowl' on page 63 undefined on input line
 LaTeX Warning: Citation `antoniazz2018rdf' on page 63 undefined on input line 2
 67.
 
-<images/ch4/Figure18.png, id=977, 1398.22375pt x 581.17125pt>
+<images/ch4/Figure18.png, id=976, 1398.22375pt x 581.17125pt>
 File: images/ch4/Figure18.png Graphic file (type png)
 <use images/ch4/Figure18.png>
 Package pdftex.def Info: images/ch4/Figure18.png  used on input line 276.
@@ -2596,11 +2640,11 @@ Package rerunfilecheck Info: File `parita-msc.out' has not changed.
 (rerunfilecheck)             Checksum: 60ECD2316CBCABD4821F8FFCC607B6FD;8071.
  ) 
 Here is how much of TeX's memory you used:
- 26988 strings out of 478276
- 566468 string characters out of 5846491
- 1423486 words of memory out of 5000000
- 43533 multiletter control sequences out of 15000+600000
- 499411 words of font info for 111 fonts, out of 8000000 for 9000
+ 26989 strings out of 478276
+ 566464 string characters out of 5846491
+ 1423417 words of memory out of 5000000
+ 43534 multiletter control sequences out of 15000+600000
+ 499724 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,80p,1762b,1974s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -2617,11 +2661,12 @@ ve/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive
 /2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2
 021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/202
 1/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on parita-msc.pdf (100 pages, 2172152 bytes).
+texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on parita-msc.pdf (100 pages, 2203033 bytes).
 PDF statistics:
- 2412 PDF objects out of 2487 (max. 8388607)
- 2176 compressed objects within 22 object streams
- 1253 named destinations out of 1440 (max. 500000)
+ 2415 PDF objects out of 2487 (max. 8388607)
+ 2177 compressed objects within 22 object streams
+ 1252 named destinations out of 1440 (max. 500000)
  585 words of extra memory for PDF output out of 10000 (max. 10000000)
 
