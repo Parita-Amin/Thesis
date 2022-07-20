@@ -39,25 +39,25 @@ The web was first designed by Berners-Lee in 1989\footnote{https://www.w3.org/Hi
 
 \section{Semantic Web}
 
-In 2006, John Markoff~\cite{aghaei2012evolution} introduced the new read-write-execute web as Web 3.0 in New York Times. Structured datasets and the links between them are used for the successful working of Web 3.0, also known as the Semantic Web. The web pages for the semantic web can be written using \ac{html} and \ac{rdf} as it is the web of data, contrary to the web of documents, where the web pages were written using \ac{html} and the links were described using hyperlinks. In the web of data, arbitrary things can be expressed using links to represent the relationship between two entities, as shown in Figure~\ref{fig:2.2}.
+In 2006, John Markoff~\cite{aghaei2012evolution} introduced the new read-write-execute web as Web 3.0 in New York Times. Structured datasets and the links between them are used for the successful working of Web 3.0, also known as the Semantic Web. The web pages for the semantic web can be written using \ac{html} and \ac{rdf} as it is the web of data, contrary to the web of documents, where the web pages were written using \ac{html} and the links were described using hyperlinks. In the web of data, arbitrary things can be expressed using links to represent the relationship between two entities, as shown in Figure~\ref{semantic-web}.
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure2.png}
     \caption{The Web to Semantic Web, according to Aghaei et al.~\cite{aghaei2012evolution}}
-    \label{fig:2.2}
+    \label{semantic-web}
 \end{figure}
 
 The latest generation of web that is still at its research and development stage is Web 4.0 which is supposed to be read-write-execute with the property of concurrency~\cite{choudhury2014}. This version of the web is intended to work with artificial intelligence to give users an exceptional quality of experience. While describing how Web 4.0 would be, Berners-Lee~\cite{bernerslee1999weaving}
 stated \say{if \ac{html} and the Web made all the online documents look like one huge book, \ac{rdf}, schema, and inference languages will make all the data in the world look like one huge database}.
 \subsection{The Semantic Web Stack}
 \par The Semantic Web Stack
-\footnote{https://en.wikipedia.org/wiki/Semantic\_Web\_Stack} is also known as Semantic Web Cake or Semantic Web Layer Cake. The stack represents the architecture of semantic web. Figure~\ref{fig:2.3}\footnote{https://www.w3.org/2001/12/semweb-fin/w3csw} shows how semantic web principles are implemented in the layers of technologies.
+\footnote{https://en.wikipedia.org/wiki/Semantic\_Web\_Stack} is also known as Semantic Web Cake or Semantic Web Layer Cake. The stack represents the architecture of semantic web. Figure~\ref{web-stack}\footnote{https://www.w3.org/2001/12/semweb-fin/w3csw} shows how semantic web principles are implemented in the layers of technologies.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure3.png}
     \caption{Semantic Web Stack}
-    \label{fig:2.3}
+    \label{web-stack}
 \end{figure}
 \par The layers in the stack consist of different technologies. Going from the lowest level to the top level, the technologies are Unicode and \ac{uri}; \ac{xml}, NS and xmlschema; \ac{rdf} and rdfschema; Ontology vocabulary; Logic; Proof; and Trust. Digital signatures are used as security at different levels. The layers belong to three different groups, namely, self-descriptive document, data and rules.
 \section{Linked Open Data}
@@ -92,26 +92,26 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
   \item As triples: subject-predicate-object form
   \item In graphical form
 \end{enumerate}
-\par Figure~\ref{fig:2.4} shows an example of an \ac{rdf}/\ac{xml}\footnote{\ac{rdf} written using \ac{xml}} document. The resource being described is \say{https://www.semanticweb.org/pda324/ontologies/survey} and \say{Survey Details} is the property value. The document consists of various \ac{xml} tags enclosed between the angular brackets (\say{<} and \say{>}). An \ac{rdf}/\ac{xml} document starts and ends with <rdf : \ac{rdf}> and </rdf : \ac{rdf}> respectively. <rdf : Description> consists of the elements that are responsible for the creation of the statement. Description tag holds an identification for the resource.
+\par Figure~\ref{rdf/xml-doc} shows an example of an \ac{rdf}/\ac{xml}\footnote{\ac{rdf} written using \ac{xml}} document. The resource being described is \say{https://www.semanticweb.org/pda324/ontologies/survey} and \say{Survey Details} is the property value. The document consists of various \ac{xml} tags enclosed between the angular brackets (\say{<} and \say{>}). An \ac{rdf}/\ac{xml} document starts and ends with <rdf : \ac{rdf}> and </rdf : \ac{rdf}> respectively. <rdf : Description> consists of the elements that are responsible for the creation of the statement. Description tag holds an identification for the resource.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure4.png}
     \caption{An Illustration of Code in an RDF/XML Document}
-    \label{fig:2.4}
+    \label{rdf/xml-doc}
 \end{figure}
-\par Figure~\ref{fig:2.5} shows an example of an \ac{rdf} as a triple. An \ac{rdf} triple, generally, follows subject-predicate-object format. For the illustration in the figure, the subject is \say{https://www.semanticweb.org/pda324/ontologies/survey}, predicate is \say{includes} and the object is \say{Survey Details}.
+\par Figure~\ref{rdf-triple} shows an example of an \ac{rdf} as a triple. An \ac{rdf} triple, generally, follows subject-predicate-object format. For the illustration in the figure, the subject is \say{https://www.semanticweb.org/pda324/ontologies/survey}, predicate is \say{includes} and the object is \say{Survey Details}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure5.png}
     \caption{An Example of an \ac{rdf} Triple}
-    \label{fig:2.5}
+    \label{rdf-triple}
 \end{figure}
-\par Figure~\ref{fig:2.6} show an \ac{rdf} in graphical format. Resource is indicated using an oval shape and a rectangle is used to represent a property value. A connector (an arrow) is used to represent a property to show that property (predicate) connects the resource (subject) with the value (object).
+\par Figure~\ref{rdf-graph} show an \ac{rdf} in graphical format. Resource is indicated using an oval shape and a rectangle is used to represent a property value. A connector (an arrow) is used to represent a property to show that property (predicate) connects the resource (subject) with the value (object).
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure6.png}
     \caption{Graphical Representation of an \ac{rdf}}
-    \label{fig:2.6}
+    \label{rdf-graph}
 \end{figure}
 \par The subject and object of the triples of \ac{rdf} act as nodes in the graph. In addition to \ac{rdf}/\ac{xml} documentation, the \ac{rdf} data model has a variety of serialization formats such as N-triples, which is a line base format where an \ac{rdf} triple is used to represent each line~\cite{beckett2014rdf}; \ac{turtle}; \ac{n3}, which is a subset of Turtle and N-Quads, which is an extension of N-Triples (line based) and adds a graph label to each line that allows multiple graph encoding~\cite{cyganiak2008n}.
 \begin{table}[h!]
@@ -135,50 +135,50 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
  \hline
 \end{tabular}
 \caption{Commonly used Classes and Properties of RDFS}
-\label{table:2.1}
+\label{rdfs-classes-and-properties}
 \end{table}
-\par \ac{rdfs}, according to McBride~\cite{mcbride2004resource}, was introduced by the \ac{w3c} as a technique to define resource types and property names. The data publishers can use \ac{rdfs} to define various vocabularies in an \ac{rdf} model. Some of the commonly used \ac{rdfs} classes and properties\footnote{https://www.w3.org/TR/rdf-schema/} along with their description are listed in Table~\ref{table:2.1}~\cite{mcbride2004resource}.
-\par Figure~\ref{fig:2.7} shows a graph for the representation of \ac{rdfs} for a comparatively complex and abstract example based on \ac{rdf} Primer~\cite{manola2004rdf}. The graph has been drawn for the following statement:
+\par \ac{rdfs}, according to McBride~\cite{mcbride2004resource}, was introduced by the \ac{w3c} as a technique to define resource types and property names. The data publishers can use \ac{rdfs} to define various vocabularies in an \ac{rdf} model. Some of the commonly used \ac{rdfs} classes and properties\footnote{https://www.w3.org/TR/rdf-schema/} along with their description are listed in Table~\ref{rdfs-classes-and-properties}~\cite{mcbride2004resource}.
+\par Figure~\ref{rdfs-graph-for-complex} shows a graph for the representation of \ac{rdfs} for a comparatively complex and abstract example based on \ac{rdf} Primer~\cite{manola2004rdf}. The graph has been drawn for the following statement:
 \emph{\begin{center}
     Romeo and Juliet is written by William Shakespeare.
 \end{center} }
-\par Figure~\ref{fig:2.7} is the graphical representation of an \ac{rdf} with schema as well as data. In the graph, the rdf:type of \say{Romeo and Juliet} is \say{Play} which in turn is an rdf:subClassOf \say{Literature}. Also, the rdf:type of \say{William Shakespeare} is \say{Person} which, further, is an rdfs:range of \say{is written by} of rdfs:domain \say{Literature}.
+\par Figure~\ref{rdfs-graph-for-complex} is the graphical representation of an \ac{rdf} with schema as well as data. In the graph, the rdf:type of \say{Romeo and Juliet} is \say{Play} which in turn is an rdf:subClassOf \say{Literature}. Also, the rdf:type of \say{William Shakespeare} is \say{Person} which, further, is an rdfs:range of \say{is written by} of rdfs:domain \say{Literature}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure7.png}
     \caption{Graphical Representation of an RDFS for a Comparatively Complex Illustration, after McBride~\cite{mcbride2004resource}}
-    \label{fig:2.7}
+    \label{rdfs-graph-for-complex}
 \end{figure} 
-\par The actual \ac{rdf} looks quite different from the previous example (Figures~\ref{fig:2.4}, ~\ref{fig:2.5}, ~\ref{fig:2.6} and ~\ref{fig:2.7}). For the representation of an actual \ac{rdf}, consider Figure~\ref{fig:2.8} for the corresponding English statement. \say{http://www.semanticweb.org/survey.html} is a subject \ac{uri} with respondent and Robert James having \ac{uri}s as \say{http://xyz.org/1/respondent} and \say{http://www.semanticweb.org/responseID/1234} respectively. The example represents a survey system which has responses as well as respondents and related details as a part of the environment.
+\par The actual \ac{rdf} looks quite different from the previous example (Figures~\ref{fig:rdf/xml-doc}, ~\ref{rdf-triple}, ~\ref{rdf-graph} and ~\ref{rdfs-graph-for-complex}). For the representation of an actual \ac{rdf}, consider Figure~\ref{statement-for-rdf} for the corresponding English statement. \say{http://www.semanticweb.org/survey.html} is a subject \ac{uri} with respondent and Robert James having \ac{uri}s as \say{http://xyz.org/1/respondent} and \say{http://www.semanticweb.org/responseID/1234} respectively. The example represents a survey system which has responses as well as respondents and related details as a part of the environment.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure8.png}
     \caption{English Statement for an Example of Actual \ac{rdf}}
-    \label{fig:2.8}
+    \label{statement-for-rdf}
 \end{figure}
-\par In the form of \ac{rdf} triple, the statement in Figure~\ref{fig:2.8} can be represented as shown in Figure~\ref{fig:2.9}. \ac{uri} is assigned to the subject survey.html and to the object which is the response with responseID 1234 which corresponds to the property value Robert James. A \ac{uri} is also assigned to the predicate (respondent).
+\par In the form of \ac{rdf} triple, the statement in Figure~\ref{statement-for-rdf} can be represented as shown in Figure~\ref{triple-for-rdf-statement}. \ac{uri} is assigned to the subject survey.html and to the object which is the response with responseID 1234 which corresponds to the property value Robert James. A \ac{uri} is also assigned to the predicate (respondent).
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure9.png}
-    \caption{\ac{rdf} Triple for English Statement in Figure~\ref{fig:2.8}, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{fig:2.9}
+    \caption{\ac{rdf} Triple for English Statement in Figure~\ref{statement-for-rdf}, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \label{triple-for-rdf-statement}
 \end{figure}
-\par Figure~\ref{fig:2.10} shows a graphical representation of the \ac{rdf} triple in Figure~\ref{fig:2.9}. The subject and the object are two entities and the predicate being the third entity acts as a connector between them. Considering an entity-relationship data model, the predicate can be treated as a relationship shared by the subject and the object. There can be more details added to the system, that is, more statements can be added which are in relation to the one in Figure~\ref{fig:2.8}. Suppose the new statement added is:
+\par Figure~\ref{rdf-graph-for-statement} shows a graphical representation of the \ac{rdf} triple in Figure~\ref{triple-for-rdf-statement}. The subject and the object are two entities and the predicate being the third entity acts as a connector between them. Considering an entity-relationship data model, the predicate can be treated as a relationship shared by the subject and the object. There can be more details added to the system, that is, more statements can be added which are in relation to the one in Figure~\ref{statement-for-rdf}. Suppose the new statement added is:
 \begin{center}
 \par \emph{http://www.semanticweb.org/survey.html} has a \emph{date} with value \emph{Sept. 08, 2020}    
 \end{center} and the \ac{uri} for the date is \say{http://www.semanticweb.org/respDetails/date}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=14cm]{images/ch2/Figure10.png}
-    \caption{\ac{rdf} Graph for English Statement in Figure~\ref{fig:2.8}, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{fig:2.10}
+    \caption{\ac{rdf} Graph for English Statement in Figure~\ref{statement-for-rdf}, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \label{rdf-graph-for-statement}
 \end{figure}
-\par The new graph would be as shown in Figure~\ref{fig:2.11} where as the set of statements in Table~\ref{table:2.2} shows the \ac{rdf} triple notation for Figure~\ref{fig:2.11}. The first notation represents the entities, survey.html (subject) and Robert James (object), along with respondent (predicate) as the relation between them, using the \ac{uri}s. The second notation is for the date, where instead of the \ac{uri}, the value of the property, Sept. 08, 2020, is used. Here, survey.html is the subject and Sept. 08, 2020 is the object with date acting as the predicate.
+\par The new graph would be as shown in Figure~\ref{graph-for-relative-statements} where as the set of statements in Table~\ref{rdf-notations} shows the \ac{rdf} triple notation for Figure~\ref{graph-for-relative-statements}. The first notation represents the entities, survey.html (subject) and Robert James (object), along with respondent (predicate) as the relation between them, using the \ac{uri}s. The second notation is for the date, where instead of the \ac{uri}, the value of the property, Sept. 08, 2020, is used. Here, survey.html is the subject and Sept. 08, 2020 is the object with date acting as the predicate.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure11.png}
     \caption{\ac{rdf} Graph for Two Relative Statements, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{fig:2.11}
+    \label{graph-for-relative-statements}
 \end{figure}
 \begin{table}[h!]
 \centering
@@ -188,26 +188,26 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
  \ \ <http://www.semanticweb.org/respDetails/date> “Sept. 08, 2020” . \\ \hline
 \end{tabular}
 \caption{\ac{rdf} Notations for Figure~\ref{fig:2.11}, after \ac{rdf} Primer~\cite{manola2004rdf}}
-\label{table:2.2}
+\label{rdf-notations}
 \end{table}
-\par Consider a more complex system, where the details of respondent are collected. Suppose, one of the details is name and the other is address of the respondent.  Figure~\ref{fig:2.12} shows a graphical representation of this \ac{rdf} system.
+\par Consider a more complex system, where the details of respondent are collected. Suppose, one of the details is name and the other is address of the respondent.  Figure~\ref{graph-for-respondent-details} shows a graphical representation of this \ac{rdf} system.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure12.png}
     \caption{Graphical Representation of \ac{rdf} with Details of the Respondent of the Survey, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{fig:2.12}
+    \label{graph-for-respondent-details}
 \end{figure}
 %% \marginpar{"after \ac{rdf} Primer" -- this appears a lot. I would like to see  consistency of text sizes and styles, perhaps using \LaTeX directly instead of images...} it is just that the information can be represented in 5 figures and 1 table after reading RDF Primer
-\par For name, the respondent is subject and Robert James acts as object whereas respName is the predicate. The \ac{uri} for respName is \say{http://www.semanticweb.org/respDe- tails/name} and the value, Robert James, is the object. On the other hand, respondent (subject) is connected to address (object) node, with \ac{uri} \say{http://www.semanticwe- b.org/addressID/1234}, through respAddress (predicate) with \ac{uri} \say{http://www.sema- nticweb.org/respDetails/address}. Further, the address node has multiple child nodes, namely, street, city, state and postal code. The address (subject) \ac{uri} is connected to the values of four different object values, 49 University Drive (street), Regina (city), Saskatchewan (state) and S4S 5N2 (postalCode) where the \ac{uri}s for the predicates are \say{http://www.semanticweb.org/respDetails/street}, \say{http://www.semanticweb.org/res- pDetails/city}, \say{http://www.semanticweb.org/respDetails/state} and \say{http://www.se- manticweb.org/respDetails/postalCode} respectively. Instead of using an unnecessary \ac{uri} for the address entity, a blank node can be used to denote the entity, as shown in Figure~\ref{fig:2.13}. As the relationships of the node with other nodes give sufficient details without hindering the flow of the data tree, the node does not require a \ac{uri}reference\footnote{https://lists.w3.org/Archives/Public/uri/2007Jul/0027.html}.
+\par For name, the respondent is subject and Robert James acts as object whereas respName is the predicate. The \ac{uri} for respName is \say{http://www.semanticweb.org/respDe- tails/name} and the value, Robert James, is the object. On the other hand, respondent (subject) is connected to address (object) node, with \ac{uri} \say{http://www.semanticwe- b.org/addressID/1234}, through respAddress (predicate) with \ac{uri} \say{http://www.sema- nticweb.org/respDetails/address}. Further, the address node has multiple child nodes, namely, street, city, state and postal code. The address (subject) \ac{uri} is connected to the values of four different object values, 49 University Drive (street), Regina (city), Saskatchewan (state) and S4S 5N2 (postalCode) where the \ac{uri}s for the predicates are \say{http://www.semanticweb.org/respDetails/street}, \say{http://www.semanticweb.org/res- pDetails/city}, \say{http://www.semanticweb.org/respDetails/state} and \say{http://www.se- manticweb.org/respDetails/postalCode} respectively. Instead of using an unnecessary \ac{uri} for the address entity, a blank node can be used to denote the entity, as shown in Figure~\ref{blank-node-for-rdf}. As the relationships of the node with other nodes give sufficient details without hindering the flow of the data tree, the node does not require a \ac{uri}reference\footnote{https://lists.w3.org/Archives/Public/uri/2007Jul/0027.html}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure13.png}
-    \caption{\ac{rdf} Representation in Figure~\ref{fig:2.12} without a URI (blank node) for Address Entity, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{fig:2.13}
+    \caption{\ac{rdf} Representation in Figure~\ref{graph-for-respondent-details} without a URI (blank node) for Address Entity, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \label{blank-node-for-rdf}
 \end{figure}
 \par In 2004, \ac{w3c} recommended intended goals that are to be achieved whenever an \ac{rdf} is to be designed. According to the \ac{w3c}Recommendation\footnote{https://www.w3.org/TR/rdf-concepts/}, the design should \say{have a simple data model; formal semantics and provable inference; should use an extensible \ac{uri}-based vocabulary and an \ac{xml}-based syntax; should support the use of \ac{xml} schema datatypes; and should allow any one to make statements about any resource}.
 \subsection{Uniform Resource Identifier} \label{subsection:uri}
-\par An abstract (a logical) or a physical resource on the web is identified by a unique set of ASCII characters which is referred to as a \ac{uri}\footnote{https://www.w3.org/wiki/URI}. According to Berners-Lee et. al.~\cite{berners1998uri} in RFC 3986, the unique string, on the web, follows a set of guidelines and security considerations while defining a syntax for the generic \ac{uri} and determining a process for \ac{uri} references' resolution. As mentioned by \ac{w3c}, for the operating systems on \ac{uri}s, some specific \say{protocols are defined depending on the UriScheme\footnote{https://www.w3.org/2001/tag/doc/SchemeProtocols.html}}. A system can perform multiple operations like \say{access}, \say{update}, \say{replace} and \say{find attributes} on the identified resources. In RFC 2396, Berners-Lee et al.~\cite{fielding1998uri} characterized \ac{uri} using three definitions, as shown in Table~\ref{table:2.3}.
+\par An abstract (a logical) or a physical resource on the web is identified by a unique set of ASCII characters which is referred to as a \ac{uri}\footnote{https://www.w3.org/wiki/URI}. According to Berners-Lee et. al.~\cite{berners1998uri} in RFC 3986, the unique string, on the web, follows a set of guidelines and security considerations while defining a syntax for the generic \ac{uri} and determining a process for \ac{uri} references' resolution. As mentioned by \ac{w3c}, for the operating systems on \ac{uri}s, some specific \say{protocols are defined depending on the UriScheme\footnote{https://www.w3.org/2001/tag/doc/SchemeProtocols.html}}. A system can perform multiple operations like \say{access}, \say{update}, \say{replace} and \say{find attributes} on the identified resources. In RFC 2396, Berners-Lee et al.~\cite{fielding1998uri} characterized \ac{uri} using three definitions, as shown in Table~\ref{definitions-for-uri}.
 \begin{table}[h!]
 \centering
 \begin{tabular}{| l | l |} 
@@ -219,7 +219,7 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
  \multirow{3}{0em}{Identifier} & An object which is used as a reference to a thing with unique identity\\ & on the web is termed as an identifier. In \ac{uri}, a string of ASCII char-\\ & acters restricted by a specific syntax is object.\\ \hline
 \end{tabular}
 \caption{Definitions Used for Characterizing URI, by Berners-Lee et al.~\cite{fielding1998uri}}
-\label{table:2.3}
+\label{definitions-for-uri}
 \end{table}  
 \subsubsection{Syntax of a \ac{uri}}
 \par According to Berners-Lee et al.~\cite{berners1998uri}, the generic syntax of a \ac{uri} comprises five components in a hierarchical sequence which are as follows:
@@ -230,7 +230,7 @@ where the authority component consists of three more components which are:
 \begin{center}
 \par authority = [userinfo@] host [:port]
 \end{center}
-\par A syntax diagram can be modelled to represent the components of Generic Syntax\footnote{https://www.w3.org/Addressing/URL/uri-spec.html} of \ac{uri} along with their hierarchy as shown in Figure~\ref{fig:2.14}. Consider the following \ac{url}. Figure~\ref{fig:2.15} shows its components.
+\par A syntax diagram can be modelled to represent the components of Generic Syntax\footnote{https://www.w3.org/Addressing/URL/uri-spec.html} of \ac{uri} along with their hierarchy as shown in Figure~\ref{syntax-diagram}. Consider the following \ac{url}. Figure~\ref{components-of-url-example} shows its components.
 \begin{center}
 \par https://parita@www.semanticweb.org:695/ontology/?tag=survey\&order=newest\#top
 \end{center}
@@ -238,16 +238,16 @@ where the authority component consists of three more components which are:
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure14.png}
     \caption{Syntax Diagram of a Generic URI, after Berners-Lee et al.~\cite{berners1998uri}}
-    \label{fig:2.14}
+    \label{syntax-diagram}
 \end{figure}
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure15.png}
     \caption{Components of an Example of URL, after Berners-Lee et al.~\cite{berners1998uri}}
-    \label{fig:2.15}
+    \label{components-of-url-example}
 \end{figure}
 \section{Linked Data Life Cycle}
-\par The Linked Data Life Cycle includes multiple stages as described by Ngomo et al.~\cite{ngomo2014introduction} which are listed in Table~\ref{table:2.4}. Each stage of this life cycle is independent yet linked to one another. So, it is not mandatory to go through all the stages sequentially to publish the data on the web. It is necessary to use a procedure that follows the life cycle to ensure the quality of data to be published as linked data. The first stage, generally, is data extraction along with conversion of the extracted data (in forms other than \ac{rdf}) into \ac{rdf}. Once the data is in \ac{rdf} form, any or all of the other stages listed in Table~\ref{table:2.4} can be performed.
+\par The Linked Data Life Cycle includes multiple stages as described by Ngomo et al.~\cite{ngomo2014introduction} which are listed in Table~\ref{ldlc-stages}. Each stage of this life cycle is independent yet linked to one another. So, it is not mandatory to go through all the stages sequentially to publish the data on the web. It is necessary to use a procedure that follows the life cycle to ensure the quality of data to be published as linked data. The first stage, generally, is data extraction along with conversion of the extracted data (in forms other than \ac{rdf}) into \ac{rdf}. Once the data is in \ac{rdf} form, any or all of the other stages listed in Table~\ref{ldlc-stages} can be performed.
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|} 
@@ -261,7 +261,7 @@ where the authority component consists of three more components which are:
      Browsing \& Exploration & Making the structured data available on the web for\\ & the users to browse and explore effectively\\ \hline
     \end{tabular}
     \caption{Stages in Linked Data Life Cycle, after Ngomo et al.~\cite{ngomo2014introduction}}
-    \label{table:2.4}
+    \label{ldlc-stages}
     \end{table}
 \section{Conversion of Data from CSV to \ac{rdf}}
 \par The preferred format of the data published on the semantic web is \ac{rdf} format. Many data scientists use tables and spreadsheets to store and publish data using \ac{csv} files over \ac{rdf} format as conversion of data to \ac{rdf} is comparatively difficult. The data used by Dr. Hepting has been stored in tabular format (Sample \ac{csv} data consisting of all responses is available in Appendix~\ref{chap:appendix1} ). To convert tabular data into \ac{rdf} (Appendix~\ref{chap:appendix2} consists of \ac{rdf} code for the \ac{csv} data in Appendix~\ref{chap:appendix1}), \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} recommends the following open source tools~\cite{ermilov2013csv},
@@ -291,17 +291,17 @@ where the authority component consists of three more components which are:
 \par According to a report by Krotzsch and Vrandecic~\cite{denny2014wikidata}, Wikidata was introduced to the world of information engineering in 2012 by Wikimedia. Wikidata can be defined as \say{the community-created
 knowledge base of Wikipedia and the central data management platform for
 Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others}}, according to Erxleben et al.~\cite{fredo2014intro}. Wikidata was established for the collection and integration of data on the semantic web with Wikipedia. Wikidata is a free open-source tool that handles a large amount of structured data and maintains pages that store the data. Each entity on Wikidata represents the subject of a triple with a dedicated page. The properties of Wikidata are similar to that of \ac{rdf} where the individuals and classes are indicated using items. As Wikidata is an open-source tool, the data on a page of the Wikidata is easily available for the users to access as well as edit.
-\par For instance, the University of Regina, a university in the provincial capital of Saskatchewan—the city of Regina, has an item page allotted for it. Figure~\ref{fig:2.16} shows the Wikidata item page of the University of Regina that can be accessed using the link: https://www.wikidata.org/wiki/Q3104287. Wikidata uses a method of automatically assigning unique identifiers to the entities, which are used as the labels of the item pages instead of the actual names of the entities. These identifiers are a string starting with a capital Q followed by a sequence of digits. The identifiers are assigned irrespective of the language as the Wikidata website supports multiple languages. For the University of Regina, the label used is \say{Q3104287}. The item page on Wikidata consists of multiple sections:
+\par For instance, the University of Regina, a university in the provincial capital of Saskatchewan—the city of Regina, has an item page allotted for it. Figure~\ref{wikidata-uofr} shows the Wikidata item page of the University of Regina that can be accessed using the link: https://www.wikidata.org/wiki/Q3104287. Wikidata uses a method of automatically assigning unique identifiers to the entities, which are used as the labels of the item pages instead of the actual names of the entities. These identifiers are a string starting with a capital Q followed by a sequence of digits. The identifiers are assigned irrespective of the language as the Wikidata website supports multiple languages. For the University of Regina, the label used is \say{Q3104287}. The item page on Wikidata consists of multiple sections:
 \begin{itemize}
-    \item label: The name of the subject that is treated as an entity. For the instance in Figure~\ref{fig:2.16}, the label is \say{University of Regina} along with the unique identifier \say{Q3104287}. 
+    \item label: The name of the subject that is treated as an entity. For the instance in Figure~\ref{wikidata-uofr}, the label is \say{University of Regina} along with the unique identifier \say{Q3104287}. 
     \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure16.png}
     \caption{Details of University of Regina, Regina, SK on Wikidata}
-    \label{fig:2.16}
+    \label{wikidata-uofr}
 \end{figure}
     \item description: This section consists of general introductory details about the subject. For the University of Regina, the description on wikidata is \say{university in Saskatchewan, Canada}.
-    \item statements: This section consists of a list of subsections called \say{property}. The properties along with their property IDs for the University of Regina are listed in Table~\ref{table:2.5}.
+    \item statements: This section consists of a list of subsections called \say{property}. The properties along with their property IDs for the University of Regina are listed in Table~\ref{uofr-statement-properties-and-id}.
     \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|} 
@@ -322,9 +322,9 @@ Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktio
      social media followers & P8687\\ \hline
     \end{tabular}
     \caption{Statement Properties and Property IDs for the University of Regina on Wikidata}
-    \label{table:2.5}
+    \label{uofr-statement-properties-and-id}
     \end{table}
-    \item identifiers: This section consists of various IDs belonging to the subject. For the University of Regina, the set of properties used for identifiers and their IDs are listed in Table~\ref{table:2.6}.
+    \item identifiers: This section consists of various IDs belonging to the subject. For the University of Regina, the set of properties used for identifiers and their IDs are listed in Table~\ref{uofr-identifier-properties-and-id}.
     \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|} 
@@ -350,31 +350,31 @@ Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktio
      U-Multirank university ID & P5600\\ \hline
     \end{tabular}
     \caption{Identifier Properties and Property IDs for University of Regina on Wikidata}
-    \label{table:2.6}
+    \label{uofr-identifier-properties-and-id}
     \end{table}
 \end{itemize}
-\par The \ac{uri} for an entity on Wikidata is \say{https://www.wikidata.org/wiki/<id>}, where <id> stands for the unique identifier. For the University of Regina, the <id> is the label identifier—Q3104287. Figure~\ref{fig:2.17} shows the \ac{rdf}/\ac{xml} description of the University of Regina on Wikidata.
+\par The \ac{uri} for an entity on Wikidata is \say{https://www.wikidata.org/wiki/<id>}, where <id> stands for the unique identifier. For the University of Regina, the <id> is the label identifier—Q3104287. Figure~\ref{rdf/xml-uofr} shows the \ac{rdf}/\ac{xml} description of the University of Regina on Wikidata.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure17.png}
     \caption{Wikidata Entry (RDF/XML) for University of Regina, Regina, SK}
-    \label{fig:2.17}
+    \label{rdf/xml-uofr}
 \end{figure}
 \subsection{DBpedia}
 \par Jimmy Wales and Larry Sanger, in 2001, created the largest general reference work on the internet consisting of articles\footnote{include data comprising of templates, images, videos, categorizations, and links to other articles (pages) in multiple languages} in over 280 languages, the Wikipedia\footnote{https://en.wikipedia.org/wiki/Main\_Page}, which acts as a source of data for many web projects like DBpedia\footnote{https://wiki.dbpedia.org/}, one of the major linked open data projects. The main aim behind the development of DBpedia is the conversion of unstructured data on Wikipedia into structured datasets. DBpedia enables querying the Wikipedia data as well as the generation of links among the structured datasets, resulting in the establishment of a massive web of data.
-\par Initially, the template of the page is discovered using a Template Extraction Algorithm\footnote{like Principle Components Analysis, Linear Discriminant Analysis, Logically Linear Embedding} which results in the identification of the structure of the template using various Pattern Matching Techniques\footnote{https://www.dummies.com/programming/big-data/data-science/how-pattern-matching-works-in-data-science}. Once the appropriate template is selected, the template data is parsed using a suitable algorithm and transformed into \ac{rdf} triples. MediaWiki\footnote{https://www.mediawiki.org/wiki/MediaWiki} links are identified and assigned specific \ac{uri}s. On the other hand, the common units of data are recognized  and assigned appropriate datatypes whereas \ac{rdf} lists are created for the object lists. According to Auer et al.~\cite{auer2007dbpedia}, DBpedia in 2007 was a platform that delivered information on \say{more than 1.95 million \say{things} that includes at least 80,000 persons, 70,000 places, 35,000 music albums, 12,000 films}. The DBpedia semantic web services are handled using the GNU Free Documentation License terms and policies. The data on DBpedia is easily accessible in different ways like accessing the datasets as linked data; using \ac{sparql} queries for data extraction and accessibility; and in the form of a downloadable \ac{rdf} snippets~\cite{bizer2009dbpedia}. Figure~\ref{fig:2.18} shows DBpedia entry for the \say{University of Regina, Regina, SK}. Like Wikidata, DBpedia also has a label, a description section and a set of important property-value pairs that give information related to the entity that has been described.
+\par Initially, the template of the page is discovered using a Template Extraction Algorithm\footnote{like Principle Components Analysis, Linear Discriminant Analysis, Logically Linear Embedding} which results in the identification of the structure of the template using various Pattern Matching Techniques\footnote{https://www.dummies.com/programming/big-data/data-science/how-pattern-matching-works-in-data-science}. Once the appropriate template is selected, the template data is parsed using a suitable algorithm and transformed into \ac{rdf} triples. MediaWiki\footnote{https://www.mediawiki.org/wiki/MediaWiki} links are identified and assigned specific \ac{uri}s. On the other hand, the common units of data are recognized  and assigned appropriate datatypes whereas \ac{rdf} lists are created for the object lists. According to Auer et al.~\cite{auer2007dbpedia}, DBpedia in 2007 was a platform that delivered information on \say{more than 1.95 million \say{things} that includes at least 80,000 persons, 70,000 places, 35,000 music albums, 12,000 films}. The DBpedia semantic web services are handled using the GNU Free Documentation License terms and policies. The data on DBpedia is easily accessible in different ways like accessing the datasets as linked data; using \ac{sparql} queries for data extraction and accessibility; and in the form of a downloadable \ac{rdf} snippets~\cite{bizer2009dbpedia}. Figure~\ref{dbpedia-uofr} shows DBpedia entry for the \say{University of Regina, Regina, SK}. Like Wikidata, DBpedia also has a label, a description section and a set of important property-value pairs that give information related to the entity that has been described.
 \begin{figure}[htp]
 \centering
     \includegraphics[width=15cm]{images/ch2/Figure18.png}
     \caption{Description of University of Regina, Regina, SK on DBpedia}
-    \label{fig:2.18}
+    \label{dbpedia-uofr}
 \end{figure}
-\par Figure~\ref{fig:2.19} shows the data architecture of DBpedia. An open-link software, Virtuoso Universal Server\footnote{https://dbpedia.org/page/Virtuoso\_Universal\_Server}, is a data virtualization tool used to host and publish \ac{rdf} datasets on DBpedia, which can be easily accessed using \ac{sparql} endpoint. The \ac{html} or \ac{rdf} representation of the DBpedia resources is enabled by the data architecture using \ac{http} that supports the standard \ac{http} GET method calls from the web clients.
+\par Figure~\ref{dbpedia-architecture} shows the data architecture of DBpedia. An open-link software, Virtuoso Universal Server\footnote{https://dbpedia.org/page/Virtuoso\_Universal\_Server}, is a data virtualization tool used to host and publish \ac{rdf} datasets on DBpedia, which can be easily accessed using \ac{sparql} endpoint. The \ac{html} or \ac{rdf} representation of the DBpedia resources is enabled by the data architecture using \ac{http} that supports the standard \ac{http} GET method calls from the web clients.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch2/Figure19.png}
     \caption{DBpedia Data Architecture}
-    \label{fig:2.19}
+    \label{depedia-architecture}
 \end{figure}
 \end{doublespace}
 
