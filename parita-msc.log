@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 JUL 2022 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 JUL 2022 18:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -944,7 +944,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 \tf@lof=\write5
 \openout5 = `parita-msc.lof'.
 
- [7] (./parita-msc.lot)
+ [7] (./parita-msc.lot
+
+LaTeX Warning: Reference `fig:2.11' on page viii undefined on input line 4.
+
+)
 \tf@lot=\write6
 \openout6 = `parita-msc.lot'.
 
@@ -978,12 +982,12 @@ Chapter 2.
 
 
 ]
-<images/ch2/Figure2.png, id=515, 626.34pt x 318.18875pt>
+<images/ch2/Figure2.png, id=514, 626.34pt x 318.18875pt>
 File: images/ch2/Figure2.png Graphic file (type png)
 <use images/ch2/Figure2.png>
 Package pdftex.def Info: images/ch2/Figure2.png  used on input line 46.
 (pdftex.def)             Requested size: 426.79134pt x 216.82185pt.
-<images/ch2/Figure3.png, id=524, 601.24625pt x 327.2225pt>
+<images/ch2/Figure3.png, id=523, 601.24625pt x 327.2225pt>
 File: images/ch2/Figure3.png Graphic file (type png)
 <use images/ch2/Figure3.png>
 Package pdftex.def Info: images/ch2/Figure3.png  used on input line 58.
@@ -995,18 +999,18 @@ a computer-understandable
  []
 
 [10]
-<images/ch2/Figure4.png, id=586, 601.24625pt x 130.4875pt>
+<images/ch2/Figure4.png, id=585, 601.24625pt x 130.4875pt>
 File: images/ch2/Figure4.png Graphic file (type png)
 <use images/ch2/Figure4.png>
 Package pdftex.def Info: images/ch2/Figure4.png  used on input line 98.
 (pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
  [11]
-<images/ch2/Figure5.png, id=599, 568.1225pt x 107.40125pt>
+<images/ch2/Figure5.png, id=598, 568.1225pt x 107.40125pt>
 File: images/ch2/Figure5.png Graphic file (type png)
 <use images/ch2/Figure5.png>
 Package pdftex.def Info: images/ch2/Figure5.png  used on input line 105.
 (pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
-<images/ch2/Figure6.png, id=601, 572.1375pt x 188.705pt>
+<images/ch2/Figure6.png, id=600, 572.1375pt x 188.705pt>
 File: images/ch2/Figure6.png Graphic file (type png)
 <use images/ch2/Figure6.png>
 Package pdftex.def Info: images/ch2/Figure6.png  used on input line 112.
@@ -1019,45 +1023,55 @@ Overfull \hbox (1.08981pt too wide) in paragraph at lines 119--137
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure7.png, id=619, 739.76375pt x 411.5375pt>
+<images/ch2/Figure7.png, id=618, 739.76375pt x 411.5375pt>
 File: images/ch2/Figure7.png Graphic file (type png)
 <use images/ch2/Figure7.png>
 Package pdftex.def Info: images/ch2/Figure7.png  used on input line 148.
 (pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
 [13 <./images/ch2/Figure6.png>]
-<images/ch2/Figure8.png, id=635, 501.875pt x 88.33pt>
+
+LaTeX Warning: Reference `fig:rdf/xml-doc' on page 14 undefined on input line 1
+52.
+
+<images/ch2/Figure8.png, id=633, 501.875pt x 88.33pt>
 File: images/ch2/Figure8.png Graphic file (type png)
 <use images/ch2/Figure8.png>
 Package pdftex.def Info: images/ch2/Figure8.png  used on input line 155.
 (pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
-<images/ch2/Figure9.png, id=638, 501.875pt x 104.39pt>
+<images/ch2/Figure9.png, id=636, 501.875pt x 104.39pt>
 File: images/ch2/Figure9.png Graphic file (type png)
 <use images/ch2/Figure9.png>
 Package pdftex.def Info: images/ch2/Figure9.png  used on input line 162.
 (pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
- [14] [15 <./images/ch2/Figure7.png> <./images/ch2/Figure8.png>]
-<images/ch2/Figure10.png, id=657, 400.49625pt x 206.7725pt>
+[14] [15 <./images/ch2/Figure7.png> <./images/ch2/Figure8.png>]
+<images/ch2/Figure10.png, id=655, 400.49625pt x 206.7725pt>
 File: images/ch2/Figure10.png Graphic file (type png)
 <use images/ch2/Figure10.png>
 Package pdftex.def Info: images/ch2/Figure10.png  used on input line 172.
 (pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
-<images/ch2/Figure11.png, id=665, 618.31pt x 158.5925pt>
+<images/ch2/Figure11.png, id=663, 618.31pt x 158.5925pt>
 File: images/ch2/Figure11.png Graphic file (type png)
 <use images/ch2/Figure11.png>
 Package pdftex.def Info: images/ch2/Figure11.png  used on input line 179.
 (pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
 
 
+LaTeX Warning: Reference `fig:2.11' on page 16 undefined on input line 190.
+
+
+LaTeX Warning: Reference `fig:2.11' on page 16 undefined on input line 190.
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure12.png, id=673, 687.56876pt x 386.44376pt>
+<images/ch2/Figure12.png, id=669, 687.56876pt x 386.44376pt>
 File: images/ch2/Figure12.png Graphic file (type png)
 <use images/ch2/Figure12.png>
 Package pdftex.def Info: images/ch2/Figure12.png  used on input line 196.
 (pdftex.def)             Requested size: 426.79134pt x 239.87569pt.
 [16 <./images/ch2/Figure9.png>] [17 <./images/ch2/Figure10.png> <./images/ch2/F
 igure11.png>]
-<images/ch2/Figure13.png, id=689, 687.56876pt x 400.49625pt>
+<images/ch2/Figure13.png, id=685, 687.56876pt x 400.49625pt>
 File: images/ch2/Figure13.png Graphic file (type png)
 <use images/ch2/Figure13.png>
 Package pdftex.def Info: images/ch2/Figure13.png  used on input line 204.
@@ -1076,12 +1090,12 @@ Overfull \hbox (46.33174pt too wide) in paragraph at lines 219--219
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20]
-<images/ch2/Figure14.png, id=726, 733.74126pt x 115.43124pt>
+<images/ch2/Figure14.png, id=722, 733.74126pt x 115.43124pt>
 File: images/ch2/Figure14.png Graphic file (type png)
 <use images/ch2/Figure14.png>
 Package pdftex.def Info: images/ch2/Figure14.png  used on input line 239.
 (pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
-<images/ch2/Figure15.png, id=729, 696.6025pt x 182.6825pt>
+<images/ch2/Figure15.png, id=725, 696.6025pt x 182.6825pt>
 File: images/ch2/Figure15.png Graphic file (type png)
 <use images/ch2/Figure15.png>
 Package pdftex.def Info: images/ch2/Figure15.png  used on input line 245.
@@ -1091,7 +1105,7 @@ Package pdftex.def Info: images/ch2/Figure15.png  used on input line 245.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [22 <./images/ch2/Figure15.png>] [23] [24] [25]
-<images/ch2/Figure16.png, id=794, 615.29875pt x 792.9625pt>
+<images/ch2/Figure16.png, id=790, 615.29875pt x 792.9625pt>
 File: images/ch2/Figure16.png Graphic file (type png)
 <use images/ch2/Figure16.png>
 Package pdftex.def Info: images/ch2/Figure16.png  used on input line 299.
@@ -1104,7 +1118,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure17.png, id=807, 626.34pt x 485.815pt>
+<images/ch2/Figure17.png, id=803, 626.34pt x 485.815pt>
 File: images/ch2/Figure17.png Graphic file (type png)
 <use images/ch2/Figure17.png>
 Package pdftex.def Info: images/ch2/Figure17.png  used on input line 359.
@@ -1121,13 +1135,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 365--365
 how-pattern-matching-works-
  []
 
-<images/ch2/Figure18.png, id=828, 679.53876pt x 664.4825pt>
+<images/ch2/Figure18.png, id=824, 679.53876pt x 664.4825pt>
 File: images/ch2/Figure18.png Graphic file (type png)
 <use images/ch2/Figure18.png>
 Package pdftex.def Info: images/ch2/Figure18.png  used on input line 368.
 (pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
 [30]
-<images/ch2/Figure19.png, id=838, 626.34pt x 321.2pt>
+
+LaTeX Warning: Reference `dbpedia-architecture' on page 31 undefined on input l
+ine 372.
+
+<images/ch2/Figure19.png, id=833, 626.34pt x 321.2pt>
 File: images/ch2/Figure19.png Graphic file (type png)
 <use images/ch2/Figure19.png>
 Package pdftex.def Info: images/ch2/Figure19.png  used on input line 375.
@@ -1143,18 +1161,18 @@ Chapter 3.
 
 
 ]
-<images/ch3/Figure1.png, id=873, 307.1475pt x 159.59625pt>
+<images/ch3/Figure1.png, id=868, 307.1475pt x 159.59625pt>
 File: images/ch3/Figure1.png Graphic file (type png)
 <use images/ch3/Figure1.png>
 Package pdftex.def Info: images/ch3/Figure1.png  used on input line 17.
 (pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
-<images/ch3/Figure2.png, id=877, 307.1475pt x 201.75375pt>
+<images/ch3/Figure2.png, id=872, 307.1475pt x 201.75375pt>
 File: images/ch3/Figure2.png Graphic file (type png)
 <use images/ch3/Figure2.png>
 Package pdftex.def Info: images/ch3/Figure2.png  used on input line 25.
 (pdftex.def)             Requested size: 227.62204pt x 149.51707pt.
  [35] [36 <./images/ch3/Figure1.png> <./images/ch3/Figure2.png>]
-<images/ch3/Figure3.png, id=897, 307.1475pt x 312.16624pt>
+<images/ch3/Figure3.png, id=892, 307.1475pt x 312.16624pt>
 File: images/ch3/Figure3.png Graphic file (type png)
 <use images/ch3/Figure3.png>
 Package pdftex.def Info: images/ch3/Figure3.png  used on input line 40.
@@ -1170,46 +1188,46 @@ Chapter 4.
 
 
 ]
-<images/ch4/Figure1.png, id=942, 271.0125pt x 240.9pt>
+<images/ch4/Figure1.png, id=937, 271.0125pt x 240.9pt>
 File: images/ch4/Figure1.png Graphic file (type png)
 <use images/ch4/Figure1.png>
 Package pdftex.def Info: images/ch4/Figure1.png  used on input line 25.
 (pdftex.def)             Requested size: 341.43306pt x 303.50618pt.
  [41] [42 <./images/ch4/Figure1.png>] [43] [44]
-<images/ch4/Figure2.png, id=968, 558.085pt x 641.39626pt>
+<images/ch4/Figure2.png, id=962, 558.085pt x 641.39626pt>
 File: images/ch4/Figure2.png Graphic file (type png)
 <use images/ch4/Figure2.png>
 Package pdftex.def Info: images/ch4/Figure2.png  used on input line 53.
 (pdftex.def)             Requested size: 426.79134pt x 490.51973pt.
-<images/ch4/Figure3.png, id=973, 1439.3775pt x 791.95876pt>
+<images/ch4/Figure3.png, id=967, 1439.3775pt x 791.95876pt>
 File: images/ch4/Figure3.png Graphic file (type png)
 <use images/ch4/Figure3.png>
 Package pdftex.def Info: images/ch4/Figure3.png  used on input line 60.
 (pdftex.def)             Requested size: 426.79134pt x 234.82216pt.
-<images/ch4/Figure4.png, id=975, 821.0675pt x 448.67625pt>
+<images/ch4/Figure4.png, id=969, 821.0675pt x 448.67625pt>
 File: images/ch4/Figure4.png Graphic file (type png)
 <use images/ch4/Figure4.png>
 Package pdftex.def Info: images/ch4/Figure4.png  used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 233.21715pt.
  [45] [46 <./images/ch4/Figure2.png>]
-<images/ch4/Figure5.png, id=989, 600.2425pt x 380.42125pt>
+<images/ch4/Figure5.png, id=984, 600.2425pt x 380.42125pt>
 File: images/ch4/Figure5.png Graphic file (type png)
 <use images/ch4/Figure5.png>
 Package pdftex.def Info: images/ch4/Figure5.png  used on input line 76.
 (pdftex.def)             Requested size: 426.79134pt x 270.5015pt.
-<images/ch4/Figure6.png, id=991, 1158.3275pt x 707.64375pt>
+<images/ch4/Figure6.png, id=986, 1158.3275pt x 707.64375pt>
 File: images/ch4/Figure6.png Graphic file (type png)
 <use images/ch4/Figure6.png>
 Package pdftex.def Info: images/ch4/Figure6.png  used on input line 83.
 (pdftex.def)             Requested size: 426.79134pt x 260.73352pt.
-<images/ch4/Figure7.png, id=994, 1153.30875pt x 707.64375pt>
+<images/ch4/Figure7.png, id=989, 1153.30875pt x 707.64375pt>
 File: images/ch4/Figure7.png Graphic file (type png)
 <use images/ch4/Figure7.png>
 Package pdftex.def Info: images/ch4/Figure7.png  used on input line 90.
 (pdftex.def)             Requested size: 426.79134pt x 261.86728pt.
  [47 <./images/ch4/Figure3.png>] [48 <./images/ch4/Figure4.png> <./images/ch4/F
 igure5.png>]
-<images/ch4/Figure8.png, id=1012, 765.86125pt x 581.17125pt>
+<images/ch4/Figure8.png, id=1007, 765.86125pt x 581.17125pt>
 File: images/ch4/Figure8.png Graphic file (type png)
 <use images/ch4/Figure8.png>
 Package pdftex.def Info: images/ch4/Figure8.png  used on input line 99.
@@ -1219,24 +1237,24 @@ Overfull \vbox (6.29114pt too high) has occurred while \output is active []
 
 
 [50 <./images/ch4/Figure7.png>] [51 <./images/ch4/Figure8.png>]
-<images/ch4/Figure9.png, id=1036, 594.22pt x 399.4925pt>
+<images/ch4/Figure9.png, id=1031, 594.22pt x 399.4925pt>
 File: images/ch4/Figure9.png Graphic file (type png)
 <use images/ch4/Figure9.png>
 Package pdftex.def Info: images/ch4/Figure9.png  used on input line 139.
 (pdftex.def)             Requested size: 426.79134pt x 286.94556pt.
  [52]
-<images/ch4/Figure10.png, id=1042, 474.77374pt x 179.67125pt>
+<images/ch4/Figure10.png, id=1037, 474.77374pt x 179.67125pt>
 File: images/ch4/Figure10.png Graphic file (type png)
 <use images/ch4/Figure10.png>
 Package pdftex.def Info: images/ch4/Figure10.png  used on input line 147.
 (pdftex.def)             Requested size: 426.79134pt x 161.51892pt.
  [53 <./images/ch4/Figure9.png>]
-<images/ch4/Figure11.png, id=1051, 474.77374pt x 320.19624pt>
+<images/ch4/Figure11.png, id=1046, 474.77374pt x 320.19624pt>
 File: images/ch4/Figure11.png Graphic file (type png)
 <use images/ch4/Figure11.png>
 Package pdftex.def Info: images/ch4/Figure11.png  used on input line 158.
 (pdftex.def)             Requested size: 341.43306pt x 230.27727pt.
-<images/ch4/Figure12.png, id=1055, 727.71875pt x 491.8375pt>
+<images/ch4/Figure12.png, id=1050, 727.71875pt x 491.8375pt>
 File: images/ch4/Figure12.png Graphic file (type png)
 <use images/ch4/Figure12.png>
 Package pdftex.def Info: images/ch4/Figure12.png  used on input line 165.
@@ -1245,13 +1263,13 @@ Package pdftex.def Info: images/ch4/Figure12.png  used on input line 165.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/Figure13.png, id=1067, 558.085pt x 429.605pt>
+<images/ch4/Figure13.png, id=1062, 558.085pt x 429.605pt>
 File: images/ch4/Figure13.png Graphic file (type png)
 <use images/ch4/Figure13.png>
 Package pdftex.def Info: images/ch4/Figure13.png  used on input line 211.
 (pdftex.def)             Requested size: 426.79134pt x 328.54842pt.
 [55 <./images/ch4/Figure11.png>] [56 <./images/ch4/Figure12.png>]
-<images/ch4/Figure14.png, id=1080, 1062.97125pt x 565.11125pt>
+<images/ch4/Figure14.png, id=1075, 1062.97125pt x 565.11125pt>
 File: images/ch4/Figure14.png Graphic file (type png)
 <use images/ch4/Figure14.png>
 Package pdftex.def Info: images/ch4/Figure14.png  used on input line 218.
@@ -1304,25 +1322,25 @@ Overfull \hbox (1.53156pt too wide) in paragraph at lines 234--234
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/Figure15.png, id=1082, 505.89pt x 342.27875pt>
+<images/ch4/Figure15.png, id=1077, 505.89pt x 342.27875pt>
 File: images/ch4/Figure15.png Graphic file (type png)
 <use images/ch4/Figure15.png>
 Package pdftex.def Info: images/ch4/Figure15.png  used on input line 244.
 (pdftex.def)             Requested size: 426.79134pt x 288.76563pt.
 [57] [58 <./images/ch4/Figure13.png> <./images/ch4/Figure14.png>]
-<images/ch4/Figure16.png, id=1097, 1109.14375pt x 613.29124pt>
+<images/ch4/Figure16.png, id=1092, 1109.14375pt x 613.29124pt>
 File: images/ch4/Figure16.png Graphic file (type png)
 <use images/ch4/Figure16.png>
 Package pdftex.def Info: images/ch4/Figure16.png  used on input line 251.
 (pdftex.def)             Requested size: 426.79134pt x 235.99152pt.
  [59] [60 <./images/ch4/Figure15.png> <./images/ch4/Figure16.png>]
-<images/ch4/Figure17.png, id=1114, 1444.39626pt x 605.26125pt>
+<images/ch4/Figure17.png, id=1109, 1444.39626pt x 605.26125pt>
 File: images/ch4/Figure17.png Graphic file (type png)
 <use images/ch4/Figure17.png>
 Package pdftex.def Info: images/ch4/Figure17.png  used on input line 262.
 (pdftex.def)             Requested size: 426.79134pt x 178.8368pt.
  [61]
-<images/ch4/Figure18.png, id=1127, 1398.22375pt x 581.17125pt>
+<images/ch4/Figure18.png, id=1122, 1398.22375pt x 581.17125pt>
 File: images/ch4/Figure18.png Graphic file (type png)
 <use images/ch4/Figure18.png>
 Package pdftex.def Info: images/ch4/Figure18.png  used on input line 276.
@@ -1451,15 +1469,19 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
 Package rerunfilecheck Info: File `parita-msc.out' has not changed.
 (rerunfilecheck)             Checksum: 63EBD08AABA2B3B861201FF18646CBCD;3299.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 20954 strings out of 480608
- 383454 string characters out of 5903631
- 1101390 words of memory out of 5000000
- 35116 multiletter control sequences out of 15000+600000
+ 20957 strings out of 480608
+ 383756 string characters out of 5903631
+ 1101466 words of memory out of 5000000
+ 35119 multiletter control sequences out of 15000+600000
  550974 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,12n,84p,1745b,1938s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,12n,84p,1749b,1938s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{lstnumber.-3.722} has been referenced but does no
 t exist, replaced by a fixed one
 
@@ -1480,10 +1502,10 @@ e/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on parita-msc.pdf (102 pages, 2192262 bytes).
+Output written on parita-msc.pdf (102 pages, 2192470 bytes).
 PDF statistics:
- 2584 PDF objects out of 2984 (max. 8388607)
- 2347 compressed objects within 24 object streams
+ 2579 PDF objects out of 2984 (max. 8388607)
+ 2343 compressed objects within 24 object streams
  1293 named destinations out of 1440 (max. 500000)
  588 words of extra memory for PDF output out of 10000 (max. 10000000)
 
