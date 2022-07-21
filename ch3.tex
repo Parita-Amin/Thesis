@@ -11,20 +11,20 @@
 \par An \ac{owl} ontology consists of a set of components that define and describe the concepts collectively. The basic components of any \ac{owl} ontology, Individuals, Properties and Classes, are briefly explained in this section.
 \begin{itemize}
     \item Individuals:
-    \par According to Horridge et al.~\cite{horridge2009practical}, \say{Individuals represent objects in the domain in which we are interested}. Individuals are the objects of classes. Figure~\ref{fig:3.1} shows the representation of different individuals in various domains. The triangles are used here to denote the individuals in free space.
+    \par According to Horridge et al.~\cite{horridge2009practical}, \say{Individuals represent objects in the domain in which we are interested}. Individuals are the objects of classes. Figure~\ref{owl-individuals} shows the representation of different individuals in various domains. The triangles are used here to denote the individuals in free space.
     \begin{figure}[htp]
     \centering
-    \includegraphics[width=8cm]{images/ch3/Figure1.png}
+    \includegraphics[width=8cm]{images/ch3/owl-individuals.png}
     \caption{Representation of Individuals in OWL}
-    \label{fig:3.1}
+    \label{owl-individuals}
 \end{figure}
     \item Properties:
-    \par The Binary Relationships\footnote{links shared by two individuals} between the individuals (things) are called properties. For instance, the individuals \say{Max} and \say{Kieron} from Figure~\ref{fig:3.1} are linked to each other by the property \say{hasSibling}. Each property can have its inverse. For instance, \say{hasSibling} can have an inverse property \say{isSiblingOf}. The properties can be symmetric or transitive. It is possible to have functional properties where the properties can be restricted to having only one value. Figure~\ref{fig:3.2} shows representation of properties between the individuals \say{Max} and \say{India}, and \say{Max} and \say{hasSibling}. The relation between \say{Max} and \say{India} is \say{livesIn}. The arrow between two individuals in the figure denotes the property (relationship) between them.
+    \par The Binary Relationships\footnote{links shared by two individuals} between the individuals (things) are called properties. For instance, the individuals \say{Max} and \say{Kieron} from Figure~\ref{owl-individuals} are linked to each other by the property \say{hasSibling}. Each property can have its inverse. For instance, \say{hasSibling} can have an inverse property \say{isSiblingOf}. The properties can be symmetric or transitive. It is possible to have functional properties where the properties can be restricted to having only one value. Figure~\ref{owl-properties} shows representation of properties between the individuals \say{Max} and \say{India}, and \say{Max} and \say{hasSibling}. The relation between \say{Max} and \say{India} is \say{livesIn}. The arrow between two individuals in the figure denotes the property (relationship) between them.
     \begin{figure}[htp]
     \centering
-    \includegraphics[width=8cm]{images/ch3/Figure2.png}
+    \includegraphics[width=8cm]{images/ch3/owl-properties.png}
     \caption{Representation of Properties in OWL}
-    \label{fig:3.2}
+    \label{owl-properties}
 \end{figure}
     \item Classes:
     \par In \ac{owl}, the sets consisting of individuals are called \ac{owl} classes. Mathematical (formal) descriptions are used to describe the \ac{owl} classes. These descriptions include accurate statements on the requirements for the class membership. For instance, the class \say{Country} consists of all the individuals that are countries in the Domain of Discourse\footnote{can contain one or more classes}. Inheritance in \ac{owl} classes (Class Hierarchy) may exist with the classes having subclasses and/or super-classes which is technically termed as taxonomy. \say{Subclasses specialise (\say{are subsumed by}) their super-classes}~\cite{horridge2009practical}. For instance, consider the classes \say{Lady} and \say{Human}, where \say{Lady} is a subclass of \say{Human}. This implies the following statements:
@@ -34,12 +34,12 @@
         \item Being a \say{Lady} implies that individual is \say{Human}
         \item \say{Lady} is subsumed by \say{Human}
     \end{itemize}
-    Figure~\ref{fig:3.3} shows the representation of the classes for the individuals and properties that are shown in Figure~\ref{fig:3.2}.
+    Figure~\ref{owl-classes-with-individuals-and-properties} shows the representation of the classes for the individuals and properties that are shown in Figure~\ref{owl-properties}.
     \begin{figure}[htp]
     \centering
-    \includegraphics[width=8cm]{images/ch3/Figure3.png}
+    \includegraphics[width=8cm]{images/ch3/owl-classes-with-individuals-and-properties.png}
     \caption{Representation of OWL Classes Consisting of Individuals and Properties}
-    \label{fig:3.3}
+    \label{owl-classes-with-individuals-and-properties}
 \end{figure}
 \end{itemize}
 \section{\ac{owl} Ontology Inconsistencies and Reasoner}
