@@ -19,12 +19,12 @@
 \par Stanford University developed a free, open-source ontology development platform, Protégé\footnote{https://protege.stanford.edu}, that offers a set of substantial tools\footnote{along with various plug-ins and Java-based \ac{api}} to build ontologies for knowledge-based applications and to implement various \say{knowledge-modeling structures and actions that support the creation, visualization and manipulation of ontologies in various representation formats}~\cite{alatrish2013comparison}. Protégé offers customization options to build knowledge models and to add data. 
 \subsection{Usability of Protégé}
 \par The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} defines usability as \say{the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use}. In usability engineering, Jacob Neilson~\cite{neilson1994usability} suggested five qualities of a usable product: \say{learnability, efficiency, memorability, errors (low rate,
-easy to recover), and satisfaction}. These were the original five dimensions of usability which were then re-termed as all five words starting with \say{E} by Quesenbery~\cite{quesenbery2003dimensions}, and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. The new terms are as shown in Figure~\ref{fig:4.1}.
+easy to recover), and satisfaction}. These were the original five dimensions of usability which were then re-termed as all five words starting with \say{E} by Quesenbery~\cite{quesenbery2003dimensions}, and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. The new terms are as shown in Figure~\ref{5Es}.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{images/ch4/Figure1.png}
+    \includegraphics[width=12cm]{images/ch4/5Es.png}
     \caption{Five Es of Usability}
-    \label{fig:4.1}
+    \label{5Es}
 \end{figure}
 \begin{itemize}
   \item Effective: The task is completed accurately
@@ -47,58 +47,58 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
   \item Easy to learn: Protégé is easy to learn as it has a familiar look and commonly used names for the tools and menus making it easy for the users to adapt and know them nicely. Also, the \say{Help} document along with a list of some frequently asked questions is available which helps the users in the correct direction whenever they are lost.
 \end{itemize}
 \section{Procedure to Model the Survey Ontology in \ac{owl} Using Protégé Tools}
-\par This section focuses on a step-wise methodology that has been followed to create new \ac{owl} vocabularies for a survey using Protégé. Figure~\ref{fig:4.2} shows the student feedback form for which the new vocabularies are described. Protégé is available for use as a web application. Protégé can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} to use as a desktop application for ontology construction and visualization.
+\par This section focuses on a step-wise methodology that has been followed to create new \ac{owl} vocabularies for a survey using Protégé. Figure~\ref{feedback-form} shows the student feedback form for which the new vocabularies are described. Protégé is available for use as a web application. Protégé can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} to use as a desktop application for ontology construction and visualization.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure2.png}
+    \includegraphics[width=15cm]{images/ch4/feedback-form.png}
     \caption{The Student Feedback Form, from Hepting~\cite{prof}}
-    \label{fig:4.2}
+    \label{feedback-form}
 \end{figure}
-\par To commence with the process of building the survey ontology, a new project needs to be created with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal}  and the ontology version. Figure~\ref{fig:4.3} shows the Protégé home-screen with a new project created and an \ac{iri} with the name and version of ontology.
+\par To commence with the process of building the survey ontology, a new project needs to be created with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal}  and the ontology version. Figure~\ref{protege-homescreen} shows the Protégé home-screen with a new project created and an \ac{iri} with the name and version of ontology.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure3.png}
+    \includegraphics[width=15cm]{images/ch4/protege-homescreen.png}
     \caption{Protégé Home-screen for a New Project with an Ontology Name and an IRI}
-    \label{fig:4.3}
+    \label{protege-homescreen}
 \end{figure}
 \subsection{Classes and Class Hierarchy}
-\par The next step is to create classes and build the hierarchy for the class nodes. Each entity in Protégé is directly or indirectly a child node of the \say{Thing} class. Also, each object has a name-value pair, which generally are the nodes of the \say{Domain\_Entity} class, an inherited class of Thing. Initially, four classes, \say{Thing}, \say{Domain\_Entity}, \say{Independent\_Entity}, and \say{Value} are created using class hierarchy, as shown in Figure~\ref{fig:4.4}. To create a class hierarchy for the classes that represent entities in the survey, there are three steps to be followed:
+\par The next step is to create classes and build the hierarchy for the class nodes. Each entity in Protégé is directly or indirectly a child node of the \say{Thing} class. Also, each object has a name-value pair, which generally are the nodes of the \say{Domain\_Entity} class, an inherited class of Thing. Initially, four classes, \say{Thing}, \say{Domain\_Entity}, \say{Independent\_Entity}, and \say{Value} are created using class hierarchy, as shown in Figure~\ref{class-hierarchy}. To create a class hierarchy for the classes that represent entities in the survey, there are three steps to be followed:
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure4.png}
+    \includegraphics[width=15cm]{images/ch4/class-hierarchy.png}
     \caption{Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value}
-    \label{fig:4.4}
+    \label{class-hierarchy}
 \end{figure}
 \begin{enumerate}
-    \item Select \say{owl:Thing} in the Class Hierarchy View of the Classes tab from the Windows menu followed by selecting \say{Create class hierarchy...} from the Tools menu, as shown in Figure~\ref{fig:4.5} to open a \say{Enter hierarchy} pop-up window which allows the users to add classes to the ontology.
+    \item Select \say{owl:Thing} in the Class Hierarchy View of the Classes tab from the Windows menu followed by selecting \say{Create class hierarchy...} from the Tools menu, as shown in Figure~\ref{tools-menu-class-hierarchy} to open a \say{Enter hierarchy} pop-up window which allows the users to add classes to the ontology.
     \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure5.png}
+    \includegraphics[width=15cm]{images/ch4/tools-menu-class-hierarchy.png}
     \caption{Tools Menu to Create Class Hierarchy}
-    \label{fig:4.5}
+    \label{tools-menu-class-hierarchy}
 \end{figure}
-    \item Enter the class names in the pop-up window starting from the left. For the child nodes, leave some spaces before writing the class name. Each horizontal line consists of one class name, as shown in Figure~\ref{fig:4.6}. 
+    \item Enter the class names in the pop-up window starting from the left. For the child nodes, leave some spaces before writing the class name. Each horizontal line consists of one class name, as shown in Figure~\ref{enter-hierarchy-pop-up}. 
     \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure6.png}
-    \caption{\enquote{Enter hierarchy} Pop-up Window}
-    \label{fig:4.6}
+    \includegraphics[width=15cm]{images/ch4/enter-hierarchy-pop-up.png}
+    \caption{\enquote{Enter hierarchy} Pop-up Window} 
+    \label{enter-hierarchy-pop-up}
 \end{figure}
-    \item On clicking \say{Continue} on the pop-up window in Figure~\ref{fig:4.6}, it opens up a new pop-up window. Here, it is important to state whether one wants the sibling classes to be disjoint or not. The checkbox needs to be checked accordingly. Usually, it is recommended to create disjoint sibling classes which can be changed later as necessary, as shown in Figure~\ref{fig:4.7}.
+    \item On clicking \say{Continue} on the pop-up window in Figure~\ref{enter-hierarchy-pop-up}, it opens up a new pop-up window. Here, it is important to state whether one wants the sibling classes to be disjoint or not. The checkbox needs to be checked accordingly. Usually, it is recommended to create disjoint sibling classes which can be changed later as necessary, as shown in Figure~\ref{create-disjoint-siblings}.
     \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure7.png}
+    \includegraphics[width=15cm]{images/ch4/create-disjoint-siblings.png}
     \caption{Pop-up Window to Create Disjoint Sibling Classes}
-    \label{fig:4.7}
+    \label{create-disjoint-siblings}
 \end{figure}
 \end{enumerate}
-\par Once the classes are added, the next step is to describe the classes. Descriptions of classes like \say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on can be added using the Description view of the Class tab (shown in Figure~\ref{fig:4.4}). Each class can be described individually by selecting a particular class and adding details to the description view. 
-\par All the classes can be created and described using the above steps. In the end, the class hierarchy for the survey ontology would be as shown in Figure~\ref{fig:4.8}. The survey can have \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, \say{Survey Answers}, and \say{Likert Scale}, which are considered for this ontology as well. Here, the type of survey used is \say{feedback survey}. The survey questions and survey answers would further have entities corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
+\par Once the classes are added, the next step is to describe the classes. Descriptions of classes like \say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on can be added using the Description view of the Class tab (shown in Figure~\ref{class-hierarchy}). Each class can be described individually by selecting a particular class and adding details to the description view. 
+\par All the classes can be created and described using the above steps. In the end, the class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. The survey can have \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, \say{Survey Answers}, and \say{Likert Scale}, which are considered for this ontology as well. Here, the type of survey used is \say{feedback survey}. The survey questions and survey answers would further have entities corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure8.png}
+    \includegraphics[width=15cm]{images/ch4/survey-class-hierarchy.png}
     \caption{Class Hierarchy in Survey Ontology}
-    \label{fig:4.8}
+    \label{survey-class-hierarchy}
 \end{figure}
 \begin{multicols}{2}
 \begin{itemize}
@@ -118,7 +118,7 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
 \end{itemize}
 \end{multicols}
 \par For this research, the feedback survey that has been considered has Likert and Open-ended questions. The entities described for the questions and answers are \say{LikertScaleQuestions}, and \say{OpenEndedQuestions} as sub-classes of \say{SurveyQuestions}, and \say{LikertScaleAnswers}, and \say{OpenEndedAnswers} as sub-classes of \say{SurveyAnswers}.
-\par For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct entities. Likert questions are the questions for which the answers are from the preset list of answers. For the Likert questions, the questions can be either of type \say{Never-Always-4} or \say{Never-Always-5} or \say{Never-Always-7} or \say{Never-Always-*}, of which Never-Always-5 has been used by Hepting~\cite{prof}. In a Never-Always-5 type of survey, 5 degrees of agreement are used as shown in Table~\ref{table:4.1}. In addition to these degrees, this ontology also considers the instances where the question wouldn't be answered. In this case, the field corresponding to the answer is left blank. On the other hand, Open-ended questions have unpredictable answers and hence there cannot be any degree of measurement for Open-ended questions.
+\par For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct entities. Likert questions are the questions for which the answers are from the preset list of answers. For the Likert questions, the questions can be either of type \say{Never-Always-4} or \say{Never-Always-5} or \say{Never-Always-7} or \say{Never-Always-*}, of which Never-Always-5 has been used by Hepting~\cite{prof}. In a Never-Always-5 type of survey, 5 degrees of agreement are used as shown in Table~\ref{likert-degrees}. In addition to these degrees, this ontology also considers the instances where the question wouldn't be answered. In this case, the field corresponding to the answer is left blank. On the other hand, Open-ended questions have unpredictable answers and hence there cannot be any degree of measurement for Open-ended questions.
 \begin{table}[h!]
     \centering
     \begin{tabular}{|c|l|}
@@ -130,41 +130,41 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
      5 & Always\\ \hline
     \end{tabular}
     \caption{Degrees of Agreement for Likert-scale Questions}
-    \label{table:4.1}
+    \label{likert-degrees}
 \end{table}
 \subsection{Object Properties and Object Property Hierarchy}
-\par The next step in building the ontology, after describing the classes, is describing the \say{Object Properties}. Object properties are used to link the entities (classes in Protégé). The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{fig:4.9}. The remaining steps are similar to the ones that are followed for building class hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}).
+\par The next step in building the ontology, after describing the classes, is describing the \say{Object Properties}. Object properties are used to link the entities (classes in Protégé). The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-object-property-hierarchy}. The remaining steps are similar to the ones that are followed for building class hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}).    
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure9.png}
+    \includegraphics[width=15cm]{images/ch4/tools-menu-object-property-hierarchy.png}
     \caption{Tools Menu to Create Object Property Hierarchy}
-    \label{fig:4.9}
+    \label{tools-menu-object-property-hierarchy}
 \end{figure}
 \par Also, the description view of object properties hierarchy allows the user to describe the object properties. The details that can be added or modified using the description view are \say{Equivalent To}, \say{SubProperty Of}, \say{Inverse Of}, \say{Domains (intersection)}, \say{Ranges (intersection)}, \say{Disjoint With}, and \say{SuperProperty Of (Chain)}. 
-\par The names of the object properties usually start with an \say{is} or a \say{has}. For instance, consider two classes: \say{Lady} (class 1) and \say{Parita} (class 2). To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, the properties \say{hasName} and \say{isNameOf} would be used respectively, as shown in Figure~\ref{fig:4.10}. 
+\par The names of the object properties usually start with an \say{is} or a \say{has}. For instance, consider two classes: \say{Lady} (class 1) and \say{Parita} (class 2). To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, the properties \say{hasName} and \say{isNameOf} would be used respectively, as shown in Figure~\ref{object-properties-for-lady-and-parita}. 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure10.png}
+    \includegraphics[width=15cm]{images/ch4/object-properties-for-lady-and-parita.png}
     \caption{Object Properties for Classes \enquote{Lady} and \enquote{Parita}}
-    \label{fig:4.10}
+    \label{object-properties-for-lady-and-parita}
 \end{figure}
 \par Each object property might have a corresponding inverse property. For the above instance, it can be said that:
 \begin{center}
     \par Lady hasName Parita \textbf{is equivalent to} Parita isNameOf Lady
 \end{center}
-Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse of \say{hasName}. Apart from inverse, domain and range\footnote{http://protegeproject.github.io/protege/views/object-property-description/} are two other important parts of description of object properties. According to Horridge et al.~\cite{horridge2009practical}, in \ac{owl}, \say{domain and range are not constraints to be checked. They are axioms which are used by the reasoner to make inferences}. As shown in Figure~\ref{fig:4.11}, \say{Lady} acts as the \say{Domain} and \say{Parita} acts as the \say{Range} for \say{hasName} whereas for \say{isNameOf}, \say{Parita} is the \say{Domain} and \say{Lady} is the \say{Range}. 
+Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse of \say{hasName}. Apart from inverse, domain and range\footnote{http://protegeproject.github.io/protege/views/object-property-description/} are two other important parts of description of object properties. According to Horridge et al.~\cite{horridge2009practical}, in \ac{owl}, \say{domain and range are not constraints to be checked. They are axioms which are used by the reasoner to make inferences}. As shown in Figure~\ref{domain-and-range-for-hasName-and-isNameOf}, \say{Lady} acts as the \say{Domain} and \say{Parita} acts as the \say{Range} for \say{hasName} whereas for \say{isNameOf}, \say{Parita} is the \say{Domain} and \say{Lady} is the \say{Range}. 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{images/ch4/Figure11.png}
+    \includegraphics[width=12cm]{images/ch4/domain-and-range-for-hasName-and-isNameOf.png}
     \caption{Domain and Range Classes for \enquote{hasName} and \enquote{isNameOf}}
-    \label{fig:4.11}
+    \label{domain-and-range-for-hasName-and-isNameOf}
 \end{figure}
-\par Using the above method of naming and building object properties, some of the primary object properties are described for the survey ontology as shown in Figure~\ref{fig:4.12} where as Table~\ref{table:4.2} shows the list of the object properties along with their domain and range classes (entities). Table~\ref{table:4.3} consists of the parent nodes and inverse properties of the object properties. The three parent nodes involved in object property hierarchy are \say{owl:TopObjectProperty}, \say{hasContent}, and \say{isContentOf}. Protégé has a built-in \say{Reasoner} that allows the users to determine inconsistencies of a class as well as to discover implicit information.
+\par Using the above method of naming and building object properties, some of the primary object properties are described for the survey ontology as shown in Figure~\ref{survey-object-properties} where as Table~\ref{survey-object-properties-domains-and-ranges} shows the list of the object properties along with their domain and range classes (entities). Table~\ref{survey-object-properties-parent-nodes-and-inverse} consists of the parent nodes and inverse properties of the object properties. The three parent nodes involved in object property hierarchy are \say{owl:TopObjectProperty}, \say{hasContent}, and \say{isContentOf}. Protégé has a built-in \say{Reasoner} that allows the users to determine inconsistencies of a class as well as to discover implicit information.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure12.png}
+    \includegraphics[width=15cm]{images/ch4/survey-object-properties.png}
     \caption{Object Property Hierarchies, Domain and Range for Classes}
-    \label{fig:4.12}
+    \label{survey-object-properties}
 \end{figure}
 \begin{table}[h!]
     \centering
@@ -180,7 +180,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
      hasOEAnswer\_Strengths & OpenEndedQuestions & OpenEndedAnswers\\ \hline
     \end{tabular}
     \caption{Object Properties and Their Domain and Range}
-    \label{table:4.2}
+    \label{survey-object-properties-domains-and-ranges}
     \end{table}
 \begin{table}[h!]
     \centering
@@ -202,22 +202,22 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
      isSurveyAnswerOf & isContentOf & hasSurveyAnswer\\ \hline
     \end{tabular}
     \caption{Object Properties with Their Parent Nodes and Inverse Properties}
-    \label{table:4.3}
+    \label{survey-object-properties-parent-nodes-and-inverse}
     \end{table}
 \subsection{Data Properties and Data Property Hierarchy}
-\par Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/} In Protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{fig:4.13}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}). 
-\begin{figure}[htp]
+\par Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/} In Protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}). 
+\begin{figure}[htp] 
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure13.png}
+    \includegraphics[width=15cm]{images/ch4/tools-menu-data-property.png}
     \caption{Tools Menu to Create Data Property Hierarchy}
-    \label{fig:4.13}
+    \label{tools-menu-data-property}
 \end{figure}
-\par Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{fig:4.14} shows the data properties described for the survey ontology. The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are \say{Respondent} and \say{xsd:positiveInteger} respectively. Table~\ref{table:4.4} consists of list of data properties along with their domain and range classes (entities).
+\par Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{survey-data-properties} shows the data properties described for the survey ontology. The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are \say{Respondent} and \say{xsd:positiveInteger} respectively. Table~\ref{survey-data-properties-domains-and-ranges} consists of list of data properties along with their domain and range classes (entities).
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure14.png}
+    \includegraphics[width=15cm]{images/ch4/survey-data-properties.png}
     \caption{Data Property Hierarchies, Domain and Range for Classes}
-    \label{fig:4.14}
+    \label{survey-data-properties}
 \end{figure}
 \begin{table}[h!]
     \centering
@@ -234,34 +234,34 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
      hasLikertAns\_effectively\_encourages&\\ \_students\_to\_ask\_questions\_and&\\ \_give\_answers & \multirow{-3}{5em}{Respondent} & \multirow{-3}{8.5em}{xsd:positiveInteger}\\ \hline
     \end{tabular}
     \caption{Data Properties and Their Domain and Range}
-    \label{table:4.4}
+    \label{survey-data-properties-domains-and-ranges}
     \end{table}
 \subsection{Individuals}
 \par 
-\par After describing the classes, object properties, data properties, and individuals, the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner. The final class hierarchy of the \ac{owl} ontology in Protégé, after using the HermiT 1.4.3.456 reasoner, would be as shown in Figure~\ref{fig:4.15}.
+\par After describing the classes, object properties, data properties, and individuals, the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner. The final class hierarchy of the \ac{owl} ontology in Protégé, after using the HermiT 1.4.3.456 reasoner, would be as shown in Figure~\ref{final-survey-classes}.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure15.png}
+    \includegraphics[width=15cm]{images/ch4/final-survey-classes.png}
     \caption{Class Hierarchy for the Final Version of Survey Ontology}
-    \label{fig:4.15}
+    \label{final-survey-classes}
 \end{figure}
-\par The grey (all entities) and blue (\say{Survey} entity) back arrows in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of Protégé. Figure~\ref{fig:4.16} shows the relation indicated by the blue back arrow.
+\par The grey (all entities) and blue (\say{Survey} entity) back arrows in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of Protégé. Figure~\ref{back-arrows} shows the relation indicated by the blue back arrow.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure16.png}
+    \includegraphics[width=15cm]{images/ch4/back-arrows.png}
     \caption{Parent/Child Relation indicated by "Blue Back" Arrow}
-    \label{fig:4.16}
+    \label{back-arrows}
 \end{figure}
 \section{Visualization Tools for \ac{owl} Ontology}
 \par The next step is visualization of the built \ac{owl} ontology using various visualization tools. Protégé supports plug-ins for some visualization tools like OntoGraf and \ac{owl}Viz whereas tools like WebVOWL, RelFinder and \ac{owl}GrEd are available for use as web-based tools. This section focuses on the two tools, OntoGraf and WebVOWL, used for the visualization of the survey ontology in this research.
 \subsection{OntoGraf}
 \par Falconer~\cite{falconer2010ontograf} introduced OntoGraf as a Protégé plug-in for the visualization of the \ac{owl} ontologies. This tool helps the users to represent the ontologies, built using Protégé, by repetitively allowing and restricting the desired classes. OntoGraf offers various graph layout options for visualization like Grid Layout\footnote{classes are arranged in a grid alphabetically}, Spring Layout, and Tree Layout\footnote{both horizontal and vertical}. Antoniazzi and Viola~\cite{antoniazz2018rdf} stated that the \say{individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements}. The graphs generated using OntoGraf can be exported as image files of various formats such as \ac{png}, \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
-\par Figure~\ref{fig:4.17} shows the graph generated using OntoGraf for the survey ontology. To start with the graph formation, the classes \say{Thing}, \say{Domain\_entity}, \say{Independent\_entity} and \say{Value} were selected followed by expansion of \say{Independent\_entity} and \say{Value} classes by double-clicking them. This expansion adds all the classes that are connected to the classes. The classes connected includes both the subclasses as well as the ones linked through the object properties. Solid blue lines are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties.
+\par Figure~\ref{ontograf} shows the graph generated using OntoGraf for the survey ontology. To start with the graph formation, the classes \say{Thing}, \say{Domain\_entity}, \say{Independent\_entity} and \say{Value} were selected followed by expansion of \say{Independent\_entity} and \say{Value} classes by double-clicking them. This expansion adds all the classes that are connected to the classes. The classes connected includes both the subclasses as well as the ones linked through the object properties. Solid blue lines are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/Figure17.png}
+    \includegraphics[width=15cm]{images/ch4/ontograf.png}
     \caption{OntoGraf for Survey Ontology}
-    \label{fig:4.17}
+    \label{ontograf}
 \end{figure}
 \subsection{WebVOWL}
 \par WebVOWL~\cite{lohmann2014webvowl}, the Web-based \ac{vowl}, one of the variety of forms in which the \ac{vowl} visualization tool is available, represents the \say{ontologies graphically using a force-directed graph layout}~\cite{antoniazz2018rdf}. \ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
@@ -270,11 +270,11 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \item Black solid lines are used to represent \ac{owl} object and datatype properties. The object properties use light blue labels where as the datatype properties are labelled in green.
     \item The relationships between the classes and their subclasses are represented using dashed lines.
 \end{enumerate}
-\par Figure~\ref{fig:4.18} shows the graphical representation of the survey ontology using Web\ac{vowl}. The figure focuses on only some of the class-subclass relationships and some of the object properties. The metadata and the statistics of the node (circle) or the edge (line) can be retrieved by clicked on them. The entities (classes) and their relationships (object and datatype properties) can be presented or restricted using filters. The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} code file.
+\par Figure~\ref{webVOWL} shows the graphical representation of the survey ontology using Web\ac{vowl}. The figure focuses on only some of the class-subclass relationships and some of the object properties. The metadata and the statistics of the node (circle) or the edge (line) can be retrieved by clicked on them. The entities (classes) and their relationships (object and datatype properties) can be presented or restricted using filters. The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} code file.
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15.5cm]{images/ch4/Figure18.png}
+    \includegraphics[width=15.5cm]{images/ch4/webVOWL.png}
     \caption{WebVOWL for Survey Ontology}
-    \label{fig:4.18}
+    \label{webVOWL}
 \end{figure}
 \end{doublespace}
