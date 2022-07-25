@@ -54,7 +54,9 @@ The web pages for the semantic web can be written using \ac{html} and \ac{rdf} a
 
 The latest generation of web that is still at its research and development stage is Web 4.0 which is supposed to be read-write-execute with the property of concurrency~\cite{choudhury2014}. This version of the web is intended to work with artificial intelligence to give users an exceptional quality of experience. While describing how Web 4.0 would be, Berners-Lee~\cite{bernerslee1999weaving}
 stated \say{if \ac{html} and the Web made all the online documents look like one huge book, \ac{rdf}, schema, and inference languages will make all the data in the world look like one huge database}.
+
 \subsection{The Semantic Web Stack}
+
 \par The Semantic Web Stack
 \footnote{https://en.wikipedia.org/wiki/Semantic\_Web\_Stack} is also known as Semantic Web Cake or Semantic Web Layer Cake. The stack represents the architecture of semantic web. Figure~\ref{web-stack}\footnote{https://www.w3.org/2001/12/semweb-fin/w3csw} shows how semantic web principles are implemented in the layers of technologies.
 \begin{figure}[htp]
@@ -64,9 +66,13 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
     \label{web-stack}
 \end{figure}
 \par The layers in the stack consist of different technologies. Going from the lowest level to the top level, the technologies are Unicode and \ac{uri}; \ac{xml}, NS and xmlschema; \ac{rdf} and rdfschema; Ontology vocabulary; Logic; Proof; and Trust. Digital signatures are used as security at different levels. The layers belong to three different groups, namely, self-descriptive document, data and rules.
+
 \section{Linked Open Data}
+
 \par According to Berners-Lee et al.~\cite{aghaei2012evolution}, \say{Semantic web is not limited to publication of data on the web; it is about making links to connect related data.} The concept of Linked Open Data\footnote{https://www.ontotext.com/knowledgehub/fundamentals/linked-data-linked-open-data/} is an amalgamation of two technologies, Linked Data and Open Data. GraphDB\footnote{https://www.ontotext.com/knowledgehub/fundamentals/linked-data-linked-open-data/} by Ontotext, an \ac{rdf} database, is an example of \ac{lod}. GraphDB promotes knowledge-discovery and efficient data-driven analytics by linking large datasets from distinct sources to Open Data.
+
 \subsection{Linked Data}
+
 \par The relationships shared among the data from different sources on the web are equally important as the access to the data for efficient working of the semantic web. The technique used to manage these datasets and their relationships is referred to as Linked Data. In other words, Linked Data\footnote{https://www.w3.org/wiki/LinkedData} can be termed as a set of various techniques of publishing structured data on the web. The \ac{w3c} standards and various semantic web technologies handle the distribution and engagement of the structured data across the web to aggregate the data available on the web into one huge database~\cite{bernerslee1999weaving}.
 \par In 2006, Berners-Lee~\cite{bizer2009linked} framed four basic rules (mentioned in section \ref{principles}) to publish and connect the structured datasets across the web. This set of rules was termed as Linked Data principles. A brief description of these principles is as follows:
 \begin{enumerate}
@@ -81,14 +87,18 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
 \end{enumerate}
 \par Publishing data on the web as per linked data principles can benefit the data providers by allowing them to use one global space to add all their data. An \ac{rdf} data model and \ac{uri}s are used by the linked data to name the things (entities). The linked datasets publish and locate the class-object data which in turn is accessed using the \ac{http}/\ac{https} and maintains the connection among them~\cite{bauer2011linked}. 
 \par A wide network of structured data, from a variety of domains, on the web has been formed obeying the principles of linked data by Berners-Lee. This has resulted in the formation of a huge database of structured linked data on the web which has further led to the concept of the \ac{lod} Cloud. The \ac{lod} cloud is a set of publicly~\cite{berners1998universal} accessible/available linked datasets.
+
 \subsection{Linked (Open) Data}
+
 \par According to a handbook\footnote{https://opendatahandbook.org/guide/en/what-is-open-data/} by the Open Knowledge Foundation, \say{Open Data is data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share-alike}. To make open data available to everyone on the web, the data don't need to be interlinked. Important features of open data are:
 \begin{itemize}
   \item Availability and access: the data should be available on the web. The users should be able to access the data easily by downloading them over the internet. It should be easy to access and modify the data.
   \item Re-use and redistribution: the data on the web must have permissions to re-use and redistribute in combination to other datasets.
   \item Universal participation: the data should be available to use, re-use, and redistribute for all the users without any discrimination to an individual or a group.
 \end{itemize}
+
 \section{Resource Description Framework} \label{section:rdf}
+
 \par The \ac{rdf}, initially designed as a metadata data model, is a computer-understandable specification written in a particular format. According to a proposal by \ac{w3c}\footnote{https://www.w3.org/TR/PR-rdf-syntax/Overview.html}, \ac{rdf} plays an important role in their \say{Semantic Web Vision}. \ac{rdf} describes an entity (or resources) and the relationships among them on the web using basic data models like the \ac{er} model.
 \par \ac{rdf} is a \ac{w3c}\footnote{https://www.w3schools.com/xml/xml\_rdf.asp} specification for describing resources on the web. \ac{rdf} uses \say{properties} and \say{property values} to describe the resource which is identified by web identifiers called \ac{uri} (section~\ref{subsection:uri}). There are three types of objects in \ac{rdf}, namely, resources, properties, and statements. Each data object in a dataset on the web is considered a resource and is named using a \ac{uri} with an optional ID. To search for the resources on the web, the resources must be named using the \ac{http}/\ac{https} \ac{uri}s. The \ac{w3c} has defined the \say{rdf:type} property to represent the \say{object of one or more classes}~\cite{cyganiak2014rdf}. Resources are described by their characteristics, called \say{property}. The object of \ac{rdf} that is used to combine a resource with a property of its value is a \say{statement}. A statement, in general terms, can be seen as building blocks of a statement in English, which are a subject, an object, and a predicate. An object in a statement can be either a property value, a resource, or a literal. \ac{rdf}, according to Swick and Lassila~\cite{beckett2004rdf}, can be represented in three ways:
 \begin{enumerate}
@@ -210,7 +220,9 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
     \label{blank-node-for-rdf}
 \end{figure}
 \par In 2004, \ac{w3c} recommended intended goals that are to be achieved whenever an \ac{rdf} is to be designed. According to the \ac{w3c}Recommendation\footnote{https://www.w3.org/TR/rdf-concepts/}, the design should \say{have a simple data model; formal semantics and provable inference; should use an extensible \ac{uri}-based vocabulary and an \ac{xml}-based syntax; should support the use of \ac{xml} schema datatypes; and should allow any one to make statements about any resource}.
+
 \subsection{Uniform Resource Identifier} \label{subsection:uri}
+
 \par An abstract (a logical) or a physical resource on the web is identified by a unique set of ASCII characters which is referred to as a \ac{uri}\footnote{https://www.w3.org/wiki/URI}. According to Berners-Lee et. al.~\cite{berners1998uri} in RFC 3986, the unique string, on the web, follows a set of guidelines and security considerations while defining a syntax for the generic \ac{uri} and determining a process for \ac{uri} references' resolution. As mentioned by \ac{w3c}, for the operating systems on \ac{uri}s, some specific \say{protocols are defined depending on the UriScheme\footnote{https://www.w3.org/2001/tag/doc/SchemeProtocols.html}}. A system can perform multiple operations like \say{access}, \say{update}, \say{replace} and \say{find attributes} on the identified resources. In RFC 2396, Berners-Lee et al.~\cite{fielding1998uri} characterized \ac{uri} using three definitions, as shown in Table~\ref{definitions-for-uri}.
 \begin{table}[h!]
 \centering
@@ -225,7 +237,9 @@ stated \say{if \ac{html} and the Web made all the online documents look like one
 \caption{Definitions Used for Characterizing URI, by Berners-Lee et al.~\cite{fielding1998uri}}
 \label{definitions-for-uri}
 \end{table}  
+
 \subsubsection{Syntax of a \ac{uri}}
+
 \par According to Berners-Lee et al.~\cite{berners1998uri}, the generic syntax of a \ac{uri} comprises five components in a hierarchical sequence which are as follows:
 \begin{center}
 \par \ac{uri} = scheme: [//authority] path [?query] [\#fragment]    
@@ -250,7 +264,9 @@ where the authority component consists of three more components which are:
     \caption{Components of an Example of URL, after Berners-Lee et al.~\cite{berners1998uri}}
     \label{components-of-url-example}
 \end{figure}
+
 \section{Linked Data Life Cycle}
+
 \par The Linked Data Life Cycle includes multiple stages as described by Ngomo et al.~\cite{ngomo2014introduction} which are listed in Table~\ref{ldlc-stages}. Each stage of this life cycle is independent yet linked to one another. So, it is not mandatory to go through all the stages sequentially to publish the data on the web. It is necessary to use a procedure that follows the life cycle to ensure the quality of data to be published as linked data. The first stage, generally, is data extraction along with conversion of the extracted data (in forms other than \ac{rdf}) into \ac{rdf}. Once the data is in \ac{rdf} form, any or all of the other stages listed in Table~\ref{ldlc-stages} can be performed.
 \begin{table}[h!]
     \centering
@@ -267,7 +283,70 @@ where the authority component consists of three more components which are:
     \caption{Stages in Linked Data Life Cycle, after Ngomo et al.~\cite{ngomo2014introduction}}
     \label{ldlc-stages}
     \end{table}
+
+\section{Ontology in Web Semantics}
+
+\par Ontology is a branch of information science that encloses representation, nomenclature, and definition of various properties, categories, and relationships shared among the entities\footnote{includes all types of data, concepts and entities} that support any number of domains the user is interested in. In other words, Ontology is a form of defining a set of concepts for representing the subject properties and the relationships shared among them. According to Tom Gruber~\cite{gruber1995towards}, ontology is \say{an explicit specification of a conceptualization}, where conceptualization is \say{an abstract, simplified view of the world (includes objects, concepts and other entities that are assumed to exist in some area of interest and the relationships that hold among them) that we wish to represent for some purpose}. In web semantics, an ontology is used to define the semantics of the resources briefly and methodically. The ontologies have have been used to \say{specify the physical as well as conceptual characteristics of resources, in the form of metadata schema on the semantic web, for a fixed set of users}~\cite{jacob2003ontologies}.
+
+\section{\ac{owl} Ontologies}
+
+\par W3C developed a standard ontology language called \ac{owl}\footnote{ http://www.w3.org/TR/owl- guide/} to define and describe concepts for ontology using different facilities and operations like intersection, union and negation. It is based on a logical model due to which a reasoner\footnote{maintains hierarchy accurately} can be used to check the mutual consistency among the statements and definitions in the ontology. The reasoner is also responsible for the identification of a suitable concept for particular definitions~\cite{horridge2009practical}.
+
+\subsection{Components of \ac{owl} Ontologies}
+
+\par An \ac{owl} ontology consists of a set of components that define and describe the concepts collectively. The basic components of any \ac{owl} ontology, Individuals, Properties and Classes, are briefly explained in this section.
+\begin{itemize}
+    \item Individuals:
+    \par According to Horridge et al.~\cite{horridge2009practical}, \say{Individuals represent objects in the domain in which we are interested}. Individuals are the objects of classes. Figure~\ref{owl-individuals} shows the representation of different individuals in various domains. The triangles are used here to denote the individuals in free space.
+    \begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{images/ch2/owl-individuals.png}
+    \caption{Representation of Individuals in OWL}
+    \label{owl-individuals}
+\end{figure}
+    \item Properties:
+    \par The Binary Relationships\footnote{links shared by two individuals} between the individuals (things) are called properties. For instance, the individuals \say{Max} and \say{Kieron} from Figure~\ref{owl-individuals} are linked to each other by the property \say{hasSibling}. Each property can have its inverse. For instance, \say{hasSibling} can have an inverse property \say{isSiblingOf}. The properties can be symmetric or transitive. It is possible to have functional properties where the properties can be restricted to having only one value. Figure~\ref{owl-properties} shows representation of properties between the individuals \say{Max} and \say{India}, and \say{Max} and \say{hasSibling}. The relation between \say{Max} and \say{India} is \say{livesIn}. The arrow between two individuals in the figure denotes the property (relationship) between them.
+    \begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{images/ch2/owl-properties.png}
+    \caption{Representation of Properties in OWL}
+    \label{owl-properties}
+\end{figure}
+    \item Classes:
+    \par In \ac{owl}, the sets consisting of individuals are called \ac{owl} classes. Mathematical (formal) descriptions are used to describe the \ac{owl} classes. These descriptions include accurate statements on the requirements for the class membership. For instance, the class \say{Country} consists of all the individuals that are countries in the Domain of Discourse\footnote{can contain one or more classes}. Inheritance in \ac{owl} classes (Class Hierarchy) may exist with the classes having subclasses and/or super-classes which is technically termed as taxonomy. \say{Subclasses specialise (\say{are subsumed by}) their super-classes}~\cite{horridge2009practical}. For instance, consider the classes \say{Lady} and \say{Human}, where \say{Lady} is a subclass of \say{Human}. This implies the following statements:
+    \begin{itemize}
+        \item All ladies are humans
+        \item All members of class \say{Lady} are members of class \say{Human}
+        \item Being a \say{Lady} implies that individual is \say{Human}
+        \item \say{Lady} is subsumed by \say{Human}
+    \end{itemize}
+    Figure~\ref{owl-classes-with-individuals-and-properties} shows the representation of the classes for the individuals and properties that are shown in Figure~\ref{owl-properties}.
+    \begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{images/ch2/owl-classes-with-individuals-and-properties.png}
+    \caption{Representation of OWL Classes Consisting of Individuals and Properties}
+    \label{owl-classes-with-individuals-and-properties}
+\end{figure}
+\end{itemize}
+
+\section{\ac{owl} Ontology Inconsistencies and Reasoner}
+
+\par A Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner} is used in Protégé to address and solve the inconsistencies. The current version of the Protégé \ac{ide} offers support for some built-in semantic reasoners which are listed below: 
+\begin{itemize}
+    \item ELK 0.4.3\footnote{https://www.w3.org/2001/sw/wiki/ELK} : A Java-based fast reasoner for lightweight \ac{owl}2 EL which is available under Apache License 2.0
+    \item FaCT++ 1.6.5\footnote{https://www.w3.org/2001/sw/wiki/Fact} : A Tableaux-based reasoner for expressive \ac{owl} \ac{dl} which is implemented using C++
+    \item HermiT 1.4.3.456\footnote{https://www.w3.org/2001/sw/wiki/Hermit} : A Java-based reasoner, written using \ac{owl}, that can be used to determine consistency of the ontology as well as for the identification of relationships among the classes of the ontology
+    \item Mastro DL-Lite\footnote{https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : An \ac{obda} management system in which the \ac{dl}-Lite family of languages for lightweight \ac{dl} are used for ontology specifications
+    \item Ontop 4.1.0\footnote{https://www.w3.org/2001/sw/wiki/Ontop} : A reasoner which uses \ac{sparql} for querying datasets as Virtual \ac{rdf} Graphs
+    \item Pellet and Pellet (incremental)\footnote{https://www.w3.org/2001/sw/wiki/Pellet} : A Java-based \ac{owl}2 reasoner for the optimization of nominals, conjunctive query answering, and incremental reasoning
+\end{itemize}
+
+\section{Data Validation}
+
+\par Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. It is important to validate the stored data so that the data only consist of acceptable values. According to Ekaputra and Xiashuo~\cite{shacl4protege}, \say{One of the challenges of adopting \ac{swt} for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.} To address this challenge, they developed SHACL4P, a protégé plugin. SHACL4P is used for defining and validating \ac{shacl}, which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. \ac{shacl} uses \say{shapes} to describe constraints.
+
 \section{Conversion of Data from CSV to \ac{rdf}}
+
 \par The preferred format of the data published on the semantic web is \ac{rdf} format. Many data scientists use tables and spreadsheets to store and publish data using \ac{csv} files over \ac{rdf} format as conversion of data to \ac{rdf} is comparatively difficult. The data used by Dr. Hepting has been stored in tabular format (Sample \ac{csv} data consisting of all responses is available in Appendix~\ref{chap:appendix1} ). To convert tabular data into \ac{rdf} (Appendix~\ref{chap:appendix2} consists of \ac{rdf} code for the \ac{csv} data in Appendix~\ref{chap:appendix1}), \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} recommends the following open source tools~\cite{ermilov2013csv},
 \begin{itemize}
     \item OpenRefine:
@@ -287,11 +366,17 @@ where the authority component consists of three more components which are:
     \item Tarql:
     \par Tarql\footnote{https://tarql.github.io} operates as a command-line application for the conversion of \ac{csv} to \ac{rdf} using a user-defined mapping that is written in \ac{sparql} standard 1.1.
 \end{itemize}
+
 \section{Ontology Editors}
-\par Ontology editors are used by publishers to create new ontologies when the existing vocabulary is not suitable for their purpose. \ac{w3c}\footnote{https://www.w3.org/wiki/Ontology\_editors} has recommended a list of ontology editors that can be used to edit, manage, organize and visualize ontology. The list of editors includes Protégé, NeOn Toolkit, SWOOP, Neologism, TopBraid Composer, Vitro, Knoodl, Anzo for Excel, OWLGrEd, Fluent Editor, Semantic Turkey, VocBench. The page does not include valid links to the editors' websites. Protégé is the most popular ontology editor among researchers. There exists negligible information about most of the editors in the list which has driven the decision of the use of Protégé for ontology development and OntoGraf and WebVOWL for visualization.
+
+\par Ontology editors are used by publishers to create new ontologies when the existing vocabulary is not suitable for their purpose. \ac{w3c}\footnote{https://www.w3.org/wiki/Ontology\_editors} has recommended a list of ontology editors that can be used to edit, manage, organize and visualize ontology. The list of editors includes Protégé, NeOn Toolkit, SWOOP, Neologism, TopBraid Composer, Vitro, Knoodl, Anzo for Excel, OWLGrEd, Fluent Editor, Semantic Turkey, VocBench. The page does not include valid links to the editors' websites. Protégé is the most popular ontology editor among researchers. There exists negligible information about most of the editors in the list which has driven the decision of the use of Protégé for ontology development and OntoGraf and WebVOWL for visualization which are discussed in detail in chapter~\ref{chap:proofOfConcept}.
+
 \section{Applications of Linked Open Data}
+
 \par A variety of projects and websites, that use linked open data, have been developed. Wikidata and DBpedia are two major projects of linked open data that present structured data on the semantic web. This section consists of a brief description of both applications.
+
 \subsection{Wikidata}
+
 \par According to a report by Krotzsch and Vrandecic~\cite{denny2014wikidata}, Wikidata was introduced to the world of information engineering in 2012 by Wikimedia. Wikidata can be defined as \say{the community-created
 knowledge base of Wikipedia and the central data management platform for
 Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others}}, according to Erxleben et al.~\cite{fredo2014intro}. Wikidata was established for the collection and integration of data on the semantic web with Wikipedia. Wikidata is a free open-source tool that handles a large amount of structured data and maintains pages that store the data. Each entity on Wikidata represents the subject of a triple with a dedicated page. The properties of Wikidata are similar to that of \ac{rdf} where the individuals and classes are indicated using items. As Wikidata is an open-source tool, the data on a page of the Wikidata is easily available for the users to access as well as edit.
@@ -365,7 +450,9 @@ Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktio
     \caption{Wikidata Entry (RDF/XML) for University of Regina, Regina, SK}
     \label{rdf-xml-uofr}
 \end{figure}
+
 \subsection{DBpedia}
+
 \par Jimmy Wales and Larry Sanger, in 2001, created the largest general reference work on the internet consisting of articles\footnote{include data comprising of templates, images, videos, categorizations, and links to other articles (pages) in multiple languages} in over 280 languages, the Wikipedia\footnote{https://en.wikipedia.org/wiki/Main\_Page}, which acts as a source of data for many web projects like DBpedia\footnote{https://wiki.dbpedia.org/}, one of the major linked open data projects. The main aim behind the development of DBpedia is the conversion of unstructured data on Wikipedia into structured datasets. DBpedia enables querying the Wikipedia data as well as the generation of links among the structured datasets, resulting in the establishment of a massive web of data.
 \par Initially, the template of the page is discovered using a Template Extraction Algorithm\footnote{like Principle Components Analysis, Linear Discriminant Analysis, Logically Linear Embedding} which results in the identification of the structure of the template using various Pattern Matching Techniques\footnote{https://www.dummies.com/programming/big-data/data-science/how-pattern-matching-works-in-data-science}. Once the appropriate template is selected, the template data is parsed using a suitable algorithm and transformed into \ac{rdf} triples. MediaWiki\footnote{https://www.mediawiki.org/wiki/MediaWiki} links are identified and assigned specific \ac{uri}s. On the other hand, the common units of data are recognized  and assigned appropriate datatypes whereas \ac{rdf} lists are created for the object lists. According to Auer et al.~\cite{auer2007dbpedia}, DBpedia in 2007 was a platform that delivered information on \say{more than 1.95 million \say{things} that includes at least 80,000 persons, 70,000 places, 35,000 music albums, 12,000 films}. The DBpedia semantic web services are handled using the GNU Free Documentation License terms and policies. The data on DBpedia is easily accessible in different ways like accessing the datasets as linked data; using \ac{sparql} queries for data extraction and accessibility; and in the form of a downloadable \ac{rdf} snippets~\cite{bizer2009dbpedia}. Figure~\ref{dbpedia-uofr} shows DBpedia entry for the \say{University of Regina, Regina, SK}. Like Wikidata, DBpedia also has a label, a description section and a set of important property-value pairs that give information related to the entity that has been described.
 \begin{figure}[htp]
