@@ -14,14 +14,14 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces \ac {rdf} Representation in Figure\nobreakspace {}\ref {graph-for-respondent-details} without a URI (blank node) for Address Entity, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{18}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Syntax Diagram of a Generic URI, after Berners-Lee et al.\nobreakspace {}\cite {berners1998uri}\relax }}{21}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Components of an Example of URL, after Berners-Lee et al.\nobreakspace {}\cite {berners1998uri}\relax }}{21}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Details of University of Regina, Regina, SK on Wikidata\relax }}{25}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Wikidata Entry (RDF/XML) for University of Regina, Regina, SK\relax }}{27}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Description of University of Regina, Regina, SK on DBpedia\relax }}{30}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces DBpedia Data Architecture\relax }}{31}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Representation of Individuals in OWL\relax }}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Representation of Properties in OWL\relax }}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Representation of OWL Classes Consisting of Individuals and Properties\relax }}{25}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Details of University of Regina, Regina, SK on Wikidata\relax }}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Wikidata Entry (RDF/XML) for University of Regina, Regina, SK\relax }}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Description of University of Regina, Regina, SK on DBpedia\relax }}{35}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces DBpedia Data Architecture\relax }}{36}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Representation of Individuals in OWL\relax }}{34}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Representation of Properties in OWL\relax }}{34}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Representation of OWL Classes Consisting of Individuals and Properties\relax }}{36}{figure.caption.31}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Five Es of Usability\relax }}{40}{figure.caption.32}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The Student Feedback Form, from Hepting\nobreakspace {}\cite {prof}\relax }}{44}{figure.caption.33}%
