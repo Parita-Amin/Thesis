@@ -18,33 +18,36 @@
 \BOOKMARK [1][-]{section.2.4}{Resource Description Framework}{chapter.2}% 18
 \BOOKMARK [2][-]{subsection.2.4.1}{Uniform Resource Identifier}{section.2.4}% 19
 \BOOKMARK [1][-]{section.2.5}{Linked Data Life Cycle}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.6}{Conversion of Data from CSV to RDF}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.7}{Ontology Editors}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.8}{Applications of Linked Open Data}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.8.1}{Wikidata}{section.2.8}% 24
-\BOOKMARK [2][-]{subsection.2.8.2}{DBpedia}{section.2.8}% 25
-\BOOKMARK [0][-]{chapter.3}{Proof Of Concept}{}% 26
-\BOOKMARK [1][-]{section.3.1}{Ontology in Web Semantics}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.2}{OWL Ontologies}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.2.1}{Components of OWL Ontologies}{section.3.2}% 29
-\BOOKMARK [1][-]{section.3.3}{OWL Ontology Inconsistencies and Reasoner}{chapter.3}% 30
-\BOOKMARK [0][-]{chapter.4}{OWL Ontology for Survey}{}% 31
-\BOOKMARK [1][-]{section.4.1}{Development Tool for the Creation of New OWL Vocabularies}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.2}{Prot\351g\351}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.2.1}{Usability of Prot\351g\351}{section.4.2}% 34
-\BOOKMARK [1][-]{section.4.3}{Procedure to Model the Survey Ontology in OWL Using Prot\351g\351 Tools}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.3.1}{Classes and Class Hierarchy}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.2}{Object Properties and Object Property Hierarchy}{section.4.3}% 37
-\BOOKMARK [2][-]{subsection.4.3.3}{Data Properties and Data Property Hierarchy}{section.4.3}% 38
-\BOOKMARK [2][-]{subsection.4.3.4}{Individuals}{section.4.3}% 39
-\BOOKMARK [1][-]{section.4.4}{From Spreadsheets to Linked Open Data}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.5}{Visualization Tools for OWL Ontology}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.5.1}{OntoGraf}{section.4.5}% 42
-\BOOKMARK [2][-]{subsection.4.5.2}{WebVOWL}{section.4.5}% 43
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 44
-\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 46
-\BOOKMARK [0][-]{appendix.A}{Sample CSV Data}{}% 47
-\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in RDF}{}% 48
-\BOOKMARK [0][-]{appendix.C}{OWL Classes to be Used to Describe Surveys}{}% 49
-\BOOKMARK [0][-]{lstnumber.-3.722}{References}{}% 50
+\BOOKMARK [1][-]{section.2.6}{Ontology in Web Semantics}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.7}{OWL Ontologies}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.7.1}{Components of OWL Ontologies}{section.2.7}% 23
+\BOOKMARK [1][-]{section.2.8}{OWL Ontology Inconsistencies and Reasoner}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.9}{Data Validation}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.10}{Conversion of Data from CSV to RDF}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.11}{Ontology Editors}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.12}{Applications of Linked Open Data}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.12.1}{Wikidata}{section.2.12}% 29
+\BOOKMARK [2][-]{subsection.2.12.2}{DBpedia}{section.2.12}% 30
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 31
+\BOOKMARK [1][-]{section.3.1}{Workflow}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Proof of Concept}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Development Tool for the Creation of New OWL Vocabularies}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{Prot\351g\351}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.2.1}{Usability of Prot\351g\351}{section.4.2}% 36
+\BOOKMARK [1][-]{section.4.3}{Procedure to Model the Survey Ontology in OWL Using Prot\351g\351 Tools}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.3.1}{Classes and Class Hierarchy}{section.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.3.2}{Object Properties and Object Property Hierarchy}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.3}{Data Properties and Data Property Hierarchy}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.4}{Individuals}{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.5}{Using SHACL for Data Validation}{section.4.3}% 42
+\BOOKMARK [1][-]{section.4.4}{From Spreadsheets to Linked Open Data}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.5}{Visualization Tools for OWL Ontology}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.5.1}{OntoGraf}{section.4.5}% 45
+\BOOKMARK [2][-]{subsection.4.5.2}{WebVOWL}{section.4.5}% 46
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 47
+\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 49
+\BOOKMARK [0][-]{appendix.A}{Sample CSV Data}{}% 50
+\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in RDF}{}% 51
+\BOOKMARK [0][-]{appendix.C}{OWL Classes to be Used to Describe Surveys}{}% 52
+\BOOKMARK [0][-]{lstnumber.-3.722}{References}{}% 53
