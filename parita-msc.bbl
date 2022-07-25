@@ -136,6 +136,13 @@ Richard Cyganiak, David Wood, Markus Lanthaler, Graham Klyne, Jeremy~J Carroll,
 \newblock {\em W3C Recommendation}, 25(02):1--22, January 2014.
   http://hdl.handle.net/10421/2427 , accessed January 05, 2020.
 
+\bibitem{shacl4protege}
+Fajar~J. Ekaputra and Xiashuo Lin.
+\newblock {SHACL4P}: {SHACL} constraints validation within {{P}}rot{\'e}g{\'e}
+  ontology editor.
+\newblock In {\em 2016 International Conference on Data and Software
+  Engineering (ICoDSE)}, pages 1--6, Oct 2016.
+
 \bibitem{ermilov2013csv}
 Ivan Ermilov, S{\"o}ren Auer, and Claus Stadler.
 \newblock {{CSV2RDF}}: {{U}ser-{D}riven} {{CSV}} to {{RDF}} {{M}ass}
@@ -152,7 +159,7 @@ Fredo Erxleben, Michael G{\"u}nther, Markus Kr{\"o}tzsch, Julian Mendez, and
 
 \bibitem{falconer2010ontograf}
 Sean Falconer.
-\newblock {{O}ntograf} {{P}rotege} {{P}lugin}.
+\newblock {{O}ntograf} {{P}}rot{\'e}g{\'e} {{P}lugin}.
 \newblock {\em Available at: http://protegewiki.stanford.edu/wiki/OntoGraf},
   2010.
 
