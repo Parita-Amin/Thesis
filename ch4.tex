@@ -1,10 +1,11 @@
 %!TEX root = parita-msc.tex
 
-\chapter{\ac{owl} Ontology for Survey}
-\label{chap:ontology}
+\chapter{Proof of Concept}
+\label{chap:proofOfConcept}
 \begin{doublespace}
 
 \section{Development Tool for the Creation of New \ac{owl} Vocabularies}
+
 \par In data science, for a fresh and developing branch like ontology engineering, it is difficult to find enough knowledge that can be reused. The field is still growing with research and development in progress as well as a lot still required to be explored in the future. As a result of this, linked open vocabularies are limited currently, and hence, the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
 \par There are editors available today that help the publishers to create their own linked open vocabularies. Alatrish at the University of Belgrad~\cite{alatrish2013comparison}, in 2013, compared the most used ontology editors, namely, Apollo, OntoStudio, Protégé, Swoop, and TopBraid Composer. The editors were compared based on the following features:
 \begin{itemize}
@@ -15,12 +16,14 @@
   \item Inference services: built-in inference engine, other attached inference engines, and constraint/consistency checking
   \item Usability: graphical taxonomy, graphical views, zooms, collaborative working, and ontology libraries
 \end{itemize}
-\par After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, Protégé has been used for the development of the instrument to support this research and thesis work.
+\par After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, protégé has been used for the development of the instrument to support this research and thesis work.
 
 \section{Protégé}
+
 \par Stanford University developed a free, open-source ontology development platform, Protégé\footnote{https://protege.stanford.edu}, that offers a set of substantial tools\footnote{along with various plug-ins and Java-based \ac{api}} to build ontologies for knowledge-based applications and to implement various \say{knowledge-modeling structures and actions that support the creation, visualization and manipulation of ontologies in various representation formats}~\cite{alatrish2013comparison}. Protégé offers customization options to build knowledge models and to add data. 
 
 \subsection{Usability of Protégé}
+
 \par The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} defines usability as \say{the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use}. In usability engineering, Jacob Neilson~\cite{neilson1994usability} suggested five qualities of a usable product: \say{learnability, efficiency, memorability, errors (low rate,
 easy to recover), and satisfaction}. These were the original five dimensions of usability which were then re-termed as all five words starting with \say{E} by Quesenbery~\cite{quesenbery2003dimensions}, and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. The new terms are as shown in Figure~\ref{5Es}.
 \begin{figure}[htp]
@@ -41,24 +44,25 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
   \item Easy to learn: The interface should be easy to learn
   \par The user should get the feeling of familiarity and adaption while using the interface. The names of the components and tools in the design must be appropriate so that the user can understand their purpose from the name itself. For instance, in a banking application, using the keyword \say{balance owed} to denote the debit amount might confuse the user by not giving a clear idea about who owes the money, that is, whether the customer owes the amount to the bank or vice versa.
 \end{itemize}
-\par The five dimensions of usability can be considered while designing as well as for evaluation. While designing, the engineers consider the five dimensions as goals to be achieved whereas while testing and evaluation, they are considered as the requirements necessary for the designed model. The five dimensions of usability were used to assess the usability of Protégé and the report of the evaluation is as follows:
+\par The five dimensions of usability can be considered while designing as well as for evaluation. While designing, the engineers consider the five dimensions as goals to be achieved whereas while testing and evaluation, they are considered as the requirements necessary for the designed model. The five dimensions of usability were used to assess the usability of protégé and the report of the evaluation is as follows:
 \begin{itemize}
   \item Effective: Protégé is an effective design as it allows the users to build ontologies and use other tools precisely. The users can complete the desired tasks accurately using the set of facilities available.
-  \item Efficient: It is easy and straightforward to describe the vocabularies and build ontologies. All the desired tasks in Protégé can be completed quickly (without wasting much time) as it is easy to look for the facilities using the menus and tools available. Hence, Protégé is an efficient ontology builder.
-  \item Engaging: The tools and menus in Protégé are interactive which leads to a better experience for the user. Also, the layout and the components are attractive and decent for the user to use this ontology builder whenever necessary. Overall, Protégé gives an engaging and satisfactory user experience.
-  \item Error-tolerant: Protégé provides options for modifications, additions, and deletions of classes, objects, and properties, which allow the users to correct the errors that were committed. Also, the deleted classes can be recovered using \say{Undo} from the edit menu resulting in proving Protégé as an error-tolerant design.
+  \item Efficient: It is easy and straightforward to describe the vocabularies and build ontologies. All the desired tasks in protégé can be completed quickly (without wasting much time) as it is easy to look for the facilities using the menus and tools available. Hence, protégé is an efficient ontology builder.
+  \item Engaging: The tools and menus in protégé are interactive which leads to a better experience for the user. Also, the layout and the components are attractive and decent for the user to use this ontology builder whenever necessary. Overall, protégé gives an engaging and satisfactory user experience.
+  \item Error-tolerant: Protégé provides options for modifications, additions, and deletions of classes, objects, and properties, which allow the users to correct the errors that were committed. Also, the deleted classes can be recovered using \say{Undo} from the edit menu resulting in proving protégé as an error-tolerant design.
   \item Easy to learn: Protégé is easy to learn as it has a familiar look and commonly used names for the tools and menus making it easy for the users to adapt and know them nicely. Also, the \say{Help} document along with a list of some frequently asked questions is available which helps the users in the correct direction whenever they are lost.
 \end{itemize}
 
 \section{Procedure to Model the Survey Ontology in \ac{owl} Using Protégé Tools}
-\par This section focuses on a step-wise methodology that has been followed to create new \ac{owl} vocabularies for a survey using Protégé. Figure~\ref{feedback-form} shows the student feedback form for which the new vocabularies are described. Protégé is available for use as a web application. Protégé can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} to use as a desktop application for ontology construction and visualization.
+
+\par This section focuses on a step-wise methodology that has been followed to create new \ac{owl} vocabularies for a survey using protégé. Figure~\ref{feedback-form} shows the student feedback form for which the new vocabularies are described. Protégé is available for use as a web application. Protégé can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} to use as a desktop application for ontology construction and visualization.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/feedback-form.png}
     \caption{The Student Feedback Form, from Hepting~\cite{prof}}
     \label{feedback-form}
 \end{figure}
-\par To commence with the process of building the survey ontology, a new project needs to be created with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal}  and the ontology version. Figure~\ref{protege-homescreen} shows the Protégé home-screen with a new project created and an \ac{iri} with the name and version of ontology.
+\par To commence with the process of building the survey ontology, a new project needs to be created with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal}  and the ontology version. Figure~\ref{protege-homescreen} shows the protégé home-screen with a new project created and an \ac{iri} with the name and version of ontology.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/protege-homescreen.png}
@@ -67,7 +71,8 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
 \end{figure}
 
 \subsection{Classes and Class Hierarchy}
-\par The next step is to create classes and build the hierarchy for the class nodes. Each entity in Protégé is directly or indirectly a child node of the \say{Thing} class. Also, each object has a name-value pair, which generally are the nodes of the \say{Domain\_Entity} class, an inherited class of Thing. Initially, four classes, \say{Thing}, \say{Domain\_Entity}, \say{Independent\_Entity}, and \say{Value} are created using class hierarchy, as shown in Figure~\ref{class-hierarchy}. To create a class hierarchy for the classes that represent entities in the survey, there are three steps to be followed:
+
+\par The next step is to create classes and build the hierarchy for the class nodes. Each entity in protégé is directly or indirectly a child node of the \say{Thing} class. Also, each object has a name-value pair, which generally are the nodes of the \say{Domain\_Entity} class, an inherited class of Thing. Initially, four classes, \say{Thing}, \say{Domain\_Entity}, \say{Independent\_Entity}, and \say{Value} are created using class hierarchy, as shown in Figure~\ref{class-hierarchy}. To create a class hierarchy for the classes that represent entities in the survey, there are three steps to be followed:
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/class-hierarchy.png}
@@ -139,7 +144,8 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
 \end{table}
 
 \subsection{Object Properties and Object Property Hierarchy}
-\par The next step in building the ontology, after describing the classes, is describing the \say{Object Properties}. Object properties are used to link the entities (classes in Protégé). The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-object-property-hierarchy}. The remaining steps are similar to the ones that are followed for building class hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}).    
+
+\par The next step in building the ontology, after describing the classes, is describing the \say{Object Properties}. Object properties are used to link the entities (classes in protégé). The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-object-property-hierarchy}. The remaining steps are similar to the ones that are followed for building class hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}).    
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/tools-menu-object-property-hierarchy.png}
@@ -214,8 +220,9 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \end{table}
 
 \subsection{Data Properties and Data Property Hierarchy}
+
 \par Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/}
-\par In Protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}). 
+\par In protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}). 
 \begin{figure}[htp] 
     \centering
     \includegraphics[width=15cm]{images/ch4/tools-menu-data-property.png}
@@ -251,25 +258,33 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \end{table}
 
 \subsection{Individuals}
-\par An instance of a class  in Protégé is termed as an \say{Individual}.
 
-\par After describing the classes, object properties, data properties, and individuals, the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner. The final class hierarchy of the \ac{owl} ontology in Protégé, after using the HermiT 1.4.3.456 reasoner, would be as shown in Figure~\ref{final-survey-classes}.
+\par An instance of a class  in protégé is termed as an \say{Individual}.
+
+\par After describing the classes, object properties, data properties, and individuals, the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner. The final class hierarchy of the \ac{owl} ontology in protégé, after using the HermiT 1.4.3.456 reasoner, would be as shown in Figure~\ref{final-survey-classes}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/final-survey-classes.png}
     \caption{Class Hierarchy for the Final Version of Survey Ontology}
     \label{final-survey-classes}
 \end{figure}
-\par The grey (all classes) and blue (\say{Survey} entity) back arrows in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of Protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
+\par The grey (all classes) and blue (\say{Survey} entity) back arrows in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
+
+\subsection{Using SHACL for Data Validation}
+
+\par 
 
 \section{From Spreadsheets to Linked Open Data}
+
 \par
 
 \section{Visualization Tools for \ac{owl} Ontology}
+
 \par The next step is visualization of the built \ac{owl} ontology using various visualization tools. Protégé supports plug-ins for some visualization tools like OntoGraf and \ac{owl}Viz whereas tools like WebVOWL, RelFinder and \ac{owl}GrEd are available for use as web-based tools. This section focuses on the two tools, OntoGraf and WebVOWL, used for the visualization of the survey ontology in this research.
 
 \subsection{OntoGraf}
-\par Falconer~\cite{falconer2010ontograf} introduced OntoGraf as a Protégé plug-in for the visualization of the \ac{owl} ontologies. This tool helps the users to represent the ontologies, built using Protégé, by repetitively allowing and restricting the desired classes. OntoGraf offers various graph layout options for visualization like Grid Layout\footnote{classes are arranged in a grid alphabetically}, Spring Layout, and Tree Layout\footnote{both horizontal and vertical}. Antoniazzi and Viola~\cite{antoniazz2018rdf} stated that the \say{individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements}. The graphs generated using OntoGraf can be exported as image files of various formats such as \ac{png}, \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
+
+\par Falconer~\cite{falconer2010ontograf} introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. This tool helps the users to represent the ontologies, built using protégé, by repetitively allowing and restricting the desired classes. OntoGraf offers various graph layout options for visualization like Grid Layout\footnote{classes are arranged in a grid alphabetically}, Spring Layout, and Tree Layout\footnote{both horizontal and vertical}. Antoniazzi and Viola~\cite{antoniazz2018rdf} stated that the \say{individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements}. The graphs generated using OntoGraf can be exported as image files of various formats such as \ac{png}, \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
 \par Figure~\ref{ontograf} shows the graph generated using OntoGraf for the survey ontology. To start with the graph formation, the classes \say{Thing}, \say{Domain\_entity}, \say{Independent\_entity} and \say{Value} were selected followed by expansion of \say{Independent\_entity} and \say{Value} classes by double-clicking them. This expansion adds all the classes that are connected to the classes. The classes connected includes both the subclasses as well as the ones linked through the object properties. Solid blue lines are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties.
 \begin{figure}[htp]
     \centering
@@ -279,6 +294,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
 \end{figure}
 
 \subsection{WebVOWL}
+
 \par WebVOWL~\cite{lohmann2014webvowl}, the Web-based \ac{vowl}, one of the variety of forms in which the \ac{vowl} visualization tool is available, represents the \say{ontologies graphically using a force-directed graph layout}~\cite{antoniazz2018rdf}. \ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
 \begin{enumerate}
     \item Circles are used to denote classes. Also, different types are assigned different colors. For instance, \ac{owl} classes are denoted using \say{light blue circles}.
