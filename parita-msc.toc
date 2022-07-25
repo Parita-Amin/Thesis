@@ -38,9 +38,10 @@
 \contentsline {subsection}{\numberline {4.3.2}Object Properties and Object Property Hierarchy}{50}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{53}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Individuals}{56}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Visualization Tools for \ac {owl} Ontology}{57}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}OntoGraf}{58}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}WebVOWL}{59}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{58}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Visualization Tools for \ac {owl} Ontology}{58}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}OntoGraf}{58}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}WebVOWL}{59}{subsection.4.5.2}%
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{61}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusion}{61}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Future Work}{62}{section.5.2}%
