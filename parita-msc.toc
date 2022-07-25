@@ -19,17 +19,19 @@
 \contentsline {subsection}{\numberline {2.4.1}Uniform Resource Identifier}{19}{subsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.1.1}Syntax of a \ac {uri}}{19}{subsubsection.2.4.1.1}%
 \contentsline {section}{\numberline {2.5}Linked Data Life Cycle}{20}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Conversion of Data from CSV to \ac {rdf}}{21}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Ontology Editors}{23}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Applications of Linked Open Data}{24}{section.2.8}%
-\contentsline {subsection}{\numberline {2.8.1}Wikidata}{24}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}DBpedia}{29}{subsection.2.8.2}%
-\contentsline {chapter}{\numberline {3}Proof Of Concept}{32}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Ontology in Web Semantics}{32}{section.3.1}%
-\contentsline {section}{\numberline {3.2}\ac {owl} Ontologies}{33}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Components of \ac {owl} Ontologies}{33}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}\ac {owl} Ontology Inconsistencies and Reasoner}{35}{section.3.3}%
-\contentsline {chapter}{\numberline {4}\ac {owl} Ontology for Survey}{38}{chapter.4}%
+\contentsline {section}{\numberline {2.6}Ontology in Web Semantics}{21}{section.2.6}%
+\contentsline {section}{\numberline {2.7}\ac {owl} Ontologies}{22}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Components of \ac {owl} Ontologies}{22}{subsection.2.7.1}%
+\contentsline {section}{\numberline {2.8}\ac {owl} Ontology Inconsistencies and Reasoner}{25}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Data Validation}{26}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Conversion of Data from CSV to \ac {rdf}}{26}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Ontology Editors}{28}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Applications of Linked Open Data}{29}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}Wikidata}{29}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}DBpedia}{34}{subsection.2.12.2}%
+\contentsline {chapter}{\numberline {3}Methodology}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Workflow}{37}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Proof of Concept}{38}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Development Tool for the Creation of New \ac {owl} Vocabularies}{38}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Protégé}{39}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Usability of Protégé}{40}{subsection.4.2.1}%
@@ -38,6 +40,7 @@
 \contentsline {subsection}{\numberline {4.3.2}Object Properties and Object Property Hierarchy}{50}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{53}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Individuals}{56}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Using SHACL for Data Validation}{58}{subsection.4.3.5}%
 \contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{58}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Visualization Tools for \ac {owl} Ontology}{58}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}OntoGraf}{58}{subsection.4.5.1}%
