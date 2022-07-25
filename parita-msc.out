@@ -37,13 +37,14 @@
 \BOOKMARK [2][-]{subsection.4.3.2}{Object Properties and Object Property Hierarchy}{section.4.3}% 37
 \BOOKMARK [2][-]{subsection.4.3.3}{Data Properties and Data Property Hierarchy}{section.4.3}% 38
 \BOOKMARK [2][-]{subsection.4.3.4}{Individuals}{section.4.3}% 39
-\BOOKMARK [1][-]{section.4.4}{Visualization Tools for OWL Ontology}{chapter.4}% 40
-\BOOKMARK [2][-]{subsection.4.4.1}{OntoGraf}{section.4.4}% 41
-\BOOKMARK [2][-]{subsection.4.4.2}{WebVOWL}{section.4.4}% 42
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 43
-\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 45
-\BOOKMARK [0][-]{appendix.A}{Sample CSV Data}{}% 46
-\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in RDF}{}% 47
-\BOOKMARK [0][-]{appendix.C}{OWL Classes to be Used to Describe Surveys}{}% 48
-\BOOKMARK [0][-]{lstnumber.-3.722}{References}{}% 49
+\BOOKMARK [1][-]{section.4.4}{From Spreadsheets to Linked Open Data}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.5}{Visualization Tools for OWL Ontology}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.5.1}{OntoGraf}{section.4.5}% 42
+\BOOKMARK [2][-]{subsection.4.5.2}{WebVOWL}{section.4.5}% 43
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 44
+\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 46
+\BOOKMARK [0][-]{appendix.A}{Sample CSV Data}{}% 47
+\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in RDF}{}% 48
+\BOOKMARK [0][-]{appendix.C}{OWL Classes to be Used to Describe Surveys}{}% 49
+\BOOKMARK [0][-]{lstnumber.-3.722}{References}{}% 50
