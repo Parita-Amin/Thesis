@@ -242,13 +242,17 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
      hasLikertAns\_treats\_students\_with\_respect & Respondent & xsd:positiveInteger\\ \hline
      hasLikertAns\_effectively\_directs\_and\_stimulates&\\ \_discussion & \multirow{-2}{5em}{Respondent} & \multirow{-2}{8.5em}{xsd:positiveInteger}\\ \hline
      hasLikertAns\_effectively\_encourages\_students\_to&\\ \_ask\_questions\_and\_give\_answers & \multirow{-2}{5em}{Respondent} & \multirow{-2}{8.5em}{xsd:positiveInteger}\\ \hline
+     hasOEAnswer\_Change & Respondent & xsd:string\\ \hline
+     hasOEAnswer\_LikeBest & Respondent & xsd:string\\ \hline
+     hasOEAnswer\_Strengths & Respondent & xsd:string\\ \hline
     \end{tabular}
     \caption{Data Properties and Their Domain and Range}
     \label{survey-data-properties-domains-and-ranges}
     \end{table}
 
 \subsection{Individuals}
-\par 
+\par An instance of a class  in Protégé is termed as an \say{Individual}.
+
 \par After describing the classes, object properties, data properties, and individuals, the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner. The final class hierarchy of the \ac{owl} ontology in Protégé, after using the HermiT 1.4.3.456 reasoner, would be as shown in Figure~\ref{final-survey-classes}.
 \begin{figure}[htp]
     \centering
@@ -257,6 +261,9 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \label{final-survey-classes}
 \end{figure}
 \par The grey (all classes) and blue (\say{Survey} entity) back arrows in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of Protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
+
+\section{From Spreadsheets to Linked Open Data}
+\par
 
 \section{Visualization Tools for \ac{owl} Ontology}
 \par The next step is visualization of the built \ac{owl} ontology using various visualization tools. Protégé supports plug-ins for some visualization tools like OntoGraf and \ac{owl}Viz whereas tools like WebVOWL, RelFinder and \ac{owl}GrEd are available for use as web-based tools. This section focuses on the two tools, OntoGraf and WebVOWL, used for the visualization of the survey ontology in this research.
