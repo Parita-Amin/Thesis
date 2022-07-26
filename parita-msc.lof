@@ -17,31 +17,31 @@
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Representation of Individuals in OWL\relax }}{23}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Representation of Properties in OWL\relax }}{24}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Representation of OWL Classes Consisting of Individuals and Properties\relax }}{25}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Details of University of Regina, Regina, SK on Wikidata\relax }}{30}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Wikidata Entry (RDF/XML) for University of Regina, Regina, SK\relax }}{32}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Description of University of Regina, Regina, SK on DBpedia\relax }}{35}{figure.caption.30}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces DBpedia Data Architecture\relax }}{36}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Details of University of Regina, Regina, SK on Wikidata\relax }}{31}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Wikidata Entry (RDF/XML) for University of Regina, Regina, SK\relax }}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Description of University of Regina, Regina, SK on DBpedia\relax }}{36}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces DBpedia Data Architecture\relax }}{37}{figure.caption.31}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Five Es of Usability\relax }}{40}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The Student Feedback Form, from Hepting\nobreakspace {}\cite {prof}\relax }}{44}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Protégé Home-screen for a New Project with an Ontology Name and an IRI\relax }}{45}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value\relax }}{46}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Tools Menu to Create Class Hierarchy\relax }}{46}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \enquote {Enter hierarchy} Pop-up Window\relax }}{47}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Pop-up Window to Create Disjoint Sibling Classes\relax }}{48}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Class Hierarchy in Survey Ontology\relax }}{49}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Tools Menu to Create Object Property Hierarchy\relax }}{51}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Object Properties for Classes \enquote {Lady} and \enquote {Parita}\relax }}{52}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Domain and Range Classes for \enquote {hasName} and \enquote {isNameOf}\relax }}{53}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Object Property Hierarchies, Domain and Range for Classes\relax }}{54}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Tools Menu to Create Data Property Hierarchy\relax }}{55}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Data Property Hierarchies, Domain and Range for Classes\relax }}{56}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Class Hierarchy for the Final Version of Survey Ontology\relax }}{57}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Data Validation using SHACL Editor\relax }}{58}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces SHACL Constraint Violations\relax }}{59}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces OntoGraf for Survey Ontology\relax }}{60}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces WebVOWL for Survey Ontology\relax }}{62}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Five Es of Usability\relax }}{41}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The Student Feedback Form, from Hepting\nobreakspace {}\cite {prof}\relax }}{45}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Protégé Home-screen for a New Project with an Ontology Name and an IRI\relax }}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value\relax }}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Tools Menu to Create Class Hierarchy\relax }}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \enquote {Enter hierarchy} Pop-up Window\relax }}{48}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pop-up Window to Create Disjoint Sibling Classes\relax }}{49}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Class Hierarchy in Survey Ontology\relax }}{50}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Tools Menu to Create Object Property Hierarchy\relax }}{52}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Object Properties for Classes \enquote {Lady} and \enquote {Parita}\relax }}{53}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Domain and Range Classes for \enquote {hasName} and \enquote {isNameOf}\relax }}{54}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Object Property Hierarchies, Domain and Range for Classes\relax }}{55}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Tools Menu to Create Data Property Hierarchy\relax }}{56}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Data Property Hierarchies, Domain and Range for Classes\relax }}{57}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Class Hierarchy for the Final Version of Survey Ontology\relax }}{58}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Data Validation using SHACL Editor\relax }}{59}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces SHACL Constraint Violations\relax }}{60}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces OntoGraf for Survey Ontology\relax }}{61}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces WebVOWL for Survey Ontology\relax }}{63}{figure.caption.54}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
