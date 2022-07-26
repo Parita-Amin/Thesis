@@ -1,0 +1,218 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<https://parita-amin.github.io/survey.owl> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix survey: 		<https://parita-amin.github.io/survey.owl#> .
+@prefix : 		<http://www.semanticweb.org/pda324/ontologies/untitled-ontology-153#> .
+@base 			<https://parita-amin.github.io/survey.owl> .
+
+<https://parita-amin.github.io/survey.owl> rdf:type owl:Ontology ;
+                                           dc:title "undefined"@en;
+                                           dc:description "undefined"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 27 ###
+#  --------------------------- Property 0------------------------- 
+survey:isContentOf rdf:type owl:ObjectProperty; 
+                   owl:inverseOf survey:hasContent ;
+                   rdfs:label "isContentOf"@IRI-based . 
+#  --------------------------- Property 1------------------------- 
+survey:hasLikertScaleAnswer rdf:type owl:ObjectProperty ;
+                            rdfs:label "hasLikertScaleAnswer"@IRI-based; 
+                            rdfs:domain survey:LikertScaleQuestions;
+                            rdfs:range survey:LikertScale5 . 
+#  --------------------------- Property 2------------------------- 
+survey:hasLikertAns_clearly_communicates_his_expectations_for_student_preparation_and_participation rdf:type owl:DatatypeProperty ;
+                                                                                                    rdfs:label "hasLikertAns_clearly_communicates_his_expectations_for_student_preparation_and_participation"@IRI-based; 
+                                                                                                    rdfs:domain survey:Respondent;
+                                                                                                    rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 3------------------------- 
+survey:hasContent rdf:type owl:ObjectProperty; 
+                  owl:inverseOf survey:isContentOf ;
+                  rdfs:label "hasContent"@IRI-based . 
+#  --------------------------- Property 4------------------------- 
+survey:hasLikertAns_uses_class_time_effectively rdf:type owl:DatatypeProperty ;
+                                                rdfs:label "hasLikertAns_uses_class_time_effectively"@IRI-based; 
+                                                rdfs:domain survey:Respondent;
+                                                rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 5------------------------- 
+survey:hasOEAns_LikeBest rdf:type owl:DatatypeProperty ;
+                         rdfs:label "hasOEAns_LikeBest"@IRI-based; 
+                         rdfs:domain survey:Respondent;
+                         rdfs:range xsd:string . 
+#  --------------------------- Property 6------------------------- 
+survey:hasRespondedOn rdf:type owl:ObjectProperty ;
+                      rdfs:label "hasRespondedOn"@IRI-based; 
+                      rdfs:domain survey:Respondent;
+                      rdfs:range survey:ResponseDate . 
+#  --------------------------- Property 7------------------------- 
+survey:hasSurveyQuestion rdf:type owl:ObjectProperty; 
+                         owl:inverseOf survey:isSurveyQuestionOf ;
+                        rdfs:subPropertyOf survey:hasContent;
+                         rdfs:label "hasSurveyQuestion"@IRI-based; 
+                         rdfs:domain survey:Survey;
+                         rdfs:range survey:SurveyQuestions . 
+#  --------------------------- Property 8------------------------- 
+survey:hasSurveyAnswer rdf:type owl:ObjectProperty; 
+                       owl:inverseOf survey:isSurveyAnswerOf ;
+                      rdfs:subPropertyOf survey:hasContent;
+                       rdfs:label "hasSurveyAnswer"@IRI-based; 
+                       rdfs:domain survey:Survey;
+                       rdfs:range survey:SurveyAnswers . 
+#  --------------------------- Property 9------------------------- 
+survey:hasLikertAns_effectively_directs_and_stimulates_discussion rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:label "hasLikertAns_effectively_directs_and_stimulates_discussion"@IRI-based; 
+                                                                  rdfs:domain survey:Respondent;
+                                                                  rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 10------------------------- 
+survey:hasOEAnswer_LikeBest rdf:type owl:ObjectProperty ;
+                            rdfs:label "hasOEAnswer_LikeBest"@IRI-based; 
+                            rdfs:domain survey:OpenEndedQuestions;
+                            rdfs:range survey:OpenEndedAnswers . 
+#  --------------------------- Property 11------------------------- 
+survey:respondedToSurvey rdf:type owl:ObjectProperty; 
+                         owl:inverseOf survey:respondedByRespondent ;
+                         rdfs:label "respondedToSurvey"@IRI-based; 
+                         rdfs:domain survey:Respondent;
+                         rdfs:range survey:Survey . 
+#  --------------------------- Property 12------------------------- 
+survey:hasLikertAns_effectively_encourages_students_to_ask_questions_and_give_answers rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:label "hasLikertAns_effectively_encourages_students_to_ask_questions_and_give_answers"@IRI-based; 
+                                                                                      rdfs:domain survey:Respondent;
+                                                                                      rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 13------------------------- 
+survey:hasLikertAns_treats_students_with_respect rdf:type owl:DatatypeProperty ;
+                                                 rdfs:label "hasLikertAns_treats_students_with_respect"@IRI-based; 
+                                                 rdfs:domain survey:Respondent;
+                                                 rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 14------------------------- 
+survey:hasLikertAns_has_clear_expectations_for_assigned_work rdf:type owl:DatatypeProperty ;
+                                                             rdfs:label "hasLikertAns_has_clear_expectations_for_assigned_work"@IRI-based; 
+                                                             rdfs:domain survey:Respondent;
+                                                             rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 15------------------------- 
+survey:hasType rdf:type owl:ObjectProperty; 
+               owl:inverseOf survey:isTypeOf ;
+               rdfs:label "hasType"@IRI-based; 
+               rdfs:domain survey:Survey;
+               rdfs:range survey:FeedbackSurvey . 
+#  --------------------------- Property 16------------------------- 
+survey:isSurveyQuestionOf rdf:type owl:ObjectProperty; 
+                          owl:inverseOf survey:hasSurveyQuestion ;
+                         rdfs:subPropertyOf survey:isContentOf;
+                          rdfs:label "isSurveyQuestionOf"@IRI-based; 
+                          rdfs:domain survey:SurveyQuestions;
+                          rdfs:range survey:Survey . 
+#  --------------------------- Property 17------------------------- 
+survey:hasOEAns_Change rdf:type owl:DatatypeProperty ;
+                       rdfs:label "hasOEAns_Change"@IRI-based; 
+                       rdfs:domain survey:Respondent;
+                       rdfs:range xsd:string . 
+#  --------------------------- Property 18------------------------- 
+survey:isTypeOf rdf:type owl:ObjectProperty; 
+                owl:inverseOf survey:hasType ;
+                rdfs:label "isTypeOf"@IRI-based; 
+                rdfs:domain survey:FeedbackSurvey;
+                rdfs:range survey:Survey . 
+#  --------------------------- Property 19------------------------- 
+survey:hasOEAnswer_Strengths rdf:type owl:ObjectProperty ;
+                             rdfs:label "hasOEAnswer_Strengths"@IRI-based; 
+                             rdfs:domain survey:OpenEndedQuestions;
+                             rdfs:range survey:OpenEndedAnswers . 
+#  --------------------------- Property 20------------------------- 
+survey:hasLikertAns_is_well-prepared_for_class rdf:type owl:DatatypeProperty ;
+                                               rdfs:label "hasLikertAns_is_well-prepared_for_class"@IRI-based; 
+                                               rdfs:domain survey:Respondent;
+                                               rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 21------------------------- 
+survey:hasLikertAns_encourages_student_participation rdf:type owl:DatatypeProperty ;
+                                                     rdfs:label "hasLikertAns_encourages_student_participation"@IRI-based; 
+                                                     rdfs:domain survey:Respondent;
+                                                     rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 22------------------------- 
+survey:hasOEAnswer_Change rdf:type owl:ObjectProperty ;
+                          rdfs:label "hasOEAnswer_Change"@IRI-based; 
+                          rdfs:domain survey:OpenEndedQuestions;
+                          rdfs:range survey:OpenEndedAnswers . 
+#  --------------------------- Property 23------------------------- 
+survey:respondedByRespondent rdf:type owl:ObjectProperty; 
+                             owl:inverseOf survey:respondedToSurvey ;
+                             rdfs:label "respondedByRespondent"@IRI-based; 
+                             rdfs:domain survey:Survey;
+                             rdfs:range survey:Respondent . 
+#  --------------------------- Property 24------------------------- 
+survey:hasOEAns_Strengths rdf:type owl:DatatypeProperty ;
+                          rdfs:label "hasOEAns_Strengths"@IRI-based; 
+                          rdfs:domain survey:Respondent;
+                          rdfs:range xsd:string . 
+#  --------------------------- Property 25------------------------- 
+survey:hasLikertAns_clearly_answers_questions rdf:type owl:DatatypeProperty ;
+                                              rdfs:label "hasLikertAns_clearly_answers_questions"@IRI-based; 
+                                              rdfs:domain survey:Respondent;
+                                              rdfs:range xsd:positiveInteger . 
+#  --------------------------- Property 26------------------------- 
+survey:isSurveyAnswerOf rdf:type owl:ObjectProperty; 
+                        owl:inverseOf survey:hasSurveyAnswer ;
+                       rdfs:subPropertyOf survey:isContentOf;
+                        rdfs:label "isSurveyAnswerOf"@IRI-based; 
+                        rdfs:domain survey:SurveyAnswers;
+                        rdfs:range survey:Survey . 
+###  Class Definitions (Number of Classes) 11 ###
+#  --------------------------- Class  0------------------------- 
+survey:LikertScale5 rdf:type owl:Class; 
+                    rdfs:subClassOf survey:LikertScaleQuestions ;
+                    rdfs:label "LikertScale5"@IRI-based . 
+#  --------------------------- Class  1------------------------- 
+survey:ResponseDate rdf:type owl:Class; 
+                    rdfs:label "ResponseDate"@IRI-based . 
+#  --------------------------- Class  2------------------------- 
+survey:Survey rdf:type owl:Class; 
+              rdfs:subClassOf [ rdf:type owl:Restriction ; 
+                                owl:onProperty survey:hasSurveyQuestion;
+                                owl:someValuesFrom survey:SurveyQuestions
+                              ];
+              rdfs:label "Survey"@IRI-based . 
+#  --------------------------- Class  3------------------------- 
+survey:OpenEndedAnswers rdf:type owl:Class; 
+                        rdfs:subClassOf survey:SurveyAnswers ;
+                        rdfs:label "OpenEndedAnswers"@IRI-based . 
+#  --------------------------- Class  4------------------------- 
+survey:SurveyQuestions rdf:type owl:Class; 
+                       owl:disjointWith survey:Survey ;
+                       rdfs:label "SurveyQuestions"@IRI-based . 
+#  --------------------------- Class  5------------------------- 
+survey:Respondent rdf:type owl:intersectionOf; 
+                  rdfs:label "Respondent"@IRI-based . 
+#  --------------------------- Class  6------------------------- 
+survey:FeedbackSurvey rdf:type owl:Class; 
+                      rdfs:subClassOf survey:Survey ;
+                      rdfs:label "FeedbackSurvey"@IRI-based . 
+#  --------------------------- Class  7------------------------- 
+survey:OpenEndedQuestions rdf:type owl:Class; 
+                          rdfs:subClassOf survey:SurveyQuestions ;
+                          rdfs:label "OpenEndedQuestions"@IRI-based . 
+#  --------------------------- Class  8------------------------- 
+survey:SurveyAnswers rdf:type owl:Class; 
+                     owl:disjointWith survey:SurveyQuestions ;
+                     owl:disjointWith survey:Survey ;
+                     rdfs:label "SurveyAnswers"@IRI-based . 
+#  --------------------------- Class  9------------------------- 
+survey:LikertScaleQuestions rdf:type owl:Class; 
+                            rdfs:subClassOf survey:SurveyQuestions ;
+                            owl:disjointWith survey:OpenEndedQuestions ;
+                            rdfs:label "LikertScaleQuestions"@IRI-based . 
+#  --------------------------- Class  10------------------------- 
+survey:LikertScaleAnswers rdf:type owl:Class; 
+                          rdfs:subClassOf survey:SurveyAnswers ;
+                          owl:disjointWith survey:OpenEndedAnswers ;
+                          rdfs:label "LikertScaleAnswers"@IRI-based . 
