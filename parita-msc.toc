@@ -25,33 +25,33 @@
 \contentsline {subsubsection}{\numberline {2.6.1.1}Individuals}{23}{subsubsection.2.6.1.1}%
 \contentsline {subsubsection}{\numberline {2.6.1.2}Properties}{23}{subsubsection.2.6.1.2}%
 \contentsline {subsubsection}{\numberline {2.6.1.3}Classes}{24}{subsubsection.2.6.1.3}%
-\contentsline {section}{\numberline {2.7}\ac {owl} Ontology Inconsistencies and Reasoner}{25}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Data Validation}{26}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Conversion of Data from CSV to \ac {rdf}}{27}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Ontology Editors}{29}{section.2.10}%
-\contentsline {section}{\numberline {2.11}Applications of Linked Open Data}{29}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1}Wikidata}{29}{subsection.2.11.1}%
-\contentsline {subsection}{\numberline {2.11.2}DBpedia}{32}{subsection.2.11.2}%
-\contentsline {chapter}{\numberline {3}Methodology}{38}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Workflow}{38}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Proof of Concept}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Development Tool for the Creation of New \ac {owl} Vocabularies}{39}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Protégé}{40}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Usability of Protégé}{41}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{44}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Classes and Class Hierarchy}{44}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Object Properties and Object Property Hierarchy}{51}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{54}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Individuals}{57}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Using SHACL for Data Validation}{58}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{60}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Visualization Tools for \ac {owl} Ontology}{60}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}OntoGraf}{60}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}WebVOWL}{62}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{64}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{64}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{65}{section.5.2}%
-\contentsline {chapter}{\numberline {A}Sample CSV Data}{66}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Expression of CSV Data in RDF}{70}{appendix.B}%
-\contentsline {chapter}{\numberline {C}OWL Classes to be Used to Describe Surveys}{74}{appendix.C}%
-\contentsline {chapter}{References}{89}{lstnumber.-3.722}%
+\contentsline {subsection}{\numberline {2.6.2}\ac {owl} Ontology Inconsistencies and Reasoner}{25}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Data Validation}{26}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Conversion of Data from CSV to \ac {rdf}}{27}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Ontology Editors}{28}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Applications of Linked Open Data}{29}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Wikidata}{29}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}DBpedia}{33}{subsection.2.9.2}%
+\contentsline {chapter}{\numberline {3}Methodology}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Workflow}{37}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Proof of Concept}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Development Tool for the Creation of New \ac {owl} Vocabularies}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Protégé}{39}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Usability of Protégé}{40}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Classes and Class Hierarchy}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Object Properties and Object Property Hierarchy}{50}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{53}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Individuals}{56}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Using SHACL for Data Validation}{57}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{59}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Visualization Tools for \ac {owl} Ontology}{59}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}OntoGraf}{59}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}WebVOWL}{61}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{63}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{64}{section.5.2}%
+\contentsline {chapter}{\numberline {A}Sample CSV Data}{65}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Expression of CSV Data in LOD (Turtle)}{72}{appendix.B}%
+\contentsline {chapter}{\numberline {C}OWL Vocabulary for Feedback Survey}{107}{appendix.C}%
+\contentsline {chapter}{References}{120}{lstnumber.-3.465}%
