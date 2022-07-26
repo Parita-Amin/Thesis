@@ -44,11 +44,11 @@
 \contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{59}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Visualization Tools for \ac {owl} Ontology}{59}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}OntoGraf}{59}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}WebVOWL}{60}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{62}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{62}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{63}{section.5.2}%
-\contentsline {chapter}{\numberline {A}Sample CSV Data}{64}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Expression of CSV Data in RDF}{68}{appendix.B}%
-\contentsline {chapter}{\numberline {C}OWL Classes to be Used to Describe Surveys}{72}{appendix.C}%
-\contentsline {chapter}{References}{87}{lstnumber.-3.722}%
+\contentsline {subsection}{\numberline {4.5.2}WebVOWL}{61}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{63}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{64}{section.5.2}%
+\contentsline {chapter}{\numberline {A}Sample CSV Data}{65}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Expression of CSV Data in RDF}{69}{appendix.B}%
+\contentsline {chapter}{\numberline {C}OWL Classes to be Used to Describe Surveys}{73}{appendix.C}%
+\contentsline {chapter}{References}{88}{lstnumber.-3.722}%
