@@ -1,81 +1,96 @@
 %!TEX root = parita-msc.tex
 
-\chapter{Sample CSV Data}
-\label{chap:appendix1}
-\begin{doublespace}
+\UseRawInputEncoding
+\chapter{Sample CSV Data}\label{chap:appendix1}
+%\begin{doublespace}
+\lstset{ 
+  %backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  %commentstyle=\color{mygreen},    % comment style
+  %deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  %extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1,                % start line enumeration with line 1000
+  %frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  %keywordstyle=\color{blue},       % keyword style
+  language=XML,                 % the language of the code
+  %morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  %stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
 \begin{lstlisting}
-Likert Item,5 Always,4 [Mostly],3 [Sometimes],2 [Rarely],1 Never,Total
-1. The instructor is well-prepared for class,29,16,8,0,0,53
-2. The instructor clearly communicates his expectations for student 
-    preparation and participation,33,15,4,1,0,53
-3. The instructor uses class time effectively,26,18,7,2,0,53
-4. The instructor has clear expectations for assigned work,34,10,8,1,0,53
-5. The instructor encourages student participation,45,6,2,0,0,53
-6. The instructor clearly answers questions,31,16,5,1,0,53
-7. The instructor treats students with respect,49,3,1,0,0,53
-8. The instructor effectively directs and stimulates discussion,
-    38,10,4,1,0,53
-9. The instructor effectively encourages students to ask questions and 
-    give answers,43,8,2,0,0,53
-Total,328,102,41,6,0,477
-Weighted Average: 91% 'Always'
-Response,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Avg,SD,Mode,Median
-1,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-2,4,3,3,2,3,4,5,3,4,3.44,0.88,3,3
-3,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-4,5,5,4,5,5,5,5,5,5,4.89,0.33,5,5
-5,5,5,4,5,5,5,5,4,5,4.78,0.44,5,5
-6,3,4,4,3,5,4,5,5,5,4.22,0.83,5,4
-7,3,4,4,4,4,4,5,3,3,3.78,0.67,4,4
-8,4,4,4,4,5,5,5,5,5,4.56,0.53,5,5
-9,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-10,4,5,4,5,5,5,4,4,5,4.56,0.53,5,5
-11,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-12,5,5,5,4,5,4,5,5,5,4.78,0.44,5,5
-13,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-14,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-15,4,5,4,4,5,5,5,5,5,4.67,0.50,5,5
-16,5,5,4,5,5,5,5,5,5,4.89,0.33,5,5
-17,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-18,3,4,5,3,3,2,3,4,4,3.44,0.88,3,3
-19,3,3,3,3,5,3,5,4,5,3.78,0.97,3,3
-20,4,4,4,5,5,5,5,5,5,4.67,0.50,5,5
-21,4,4,3,5,5,4,5,5,5,4.44,0.73,5,5
-22,3,3,3,3,5,3,5,4,5,3.78,0.97,3,3
-23,4,4,4,3,5,4,5,5,5,4.33,0.71,4,4
-24,4,4,5,5,5,4,5,5,5,4.67,0.50,5,5
-25,3,2,2,3,4,3,5,3,4,3.22,0.97,3,3
-26,3,3,2,3,4,3,4,2,3,3.00,0.71,3,3
-27,5,5,4,5,5,5,5,4,4,4.67,0.50,5,5
-28,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-29,4,4,4,3,5,4,5,5,4,4.22,0.67,4,4
-30,4,5,4,5,5,4,5,5,4,4.56,0.53,5,5
-31,5,5,5,5,5,4,5,5,5,4.89,0.33,5,5
-32,5,5,5,5,4,5,5,4,5,4.78,0.44,5,5
-33,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-34,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-35,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-36,4,4,3,4,5,5,5,5,5,4.44,0.73,5,5
-37,5,5,5,5,5,5,5,4,5,4.89,0.33,5,5
-38,4,4,3,4,5,3,5,4,5,4.11,0.78,4,4
-39,5,5,5,4,5,4,5,5,4,4.67,0.50,5,5
-40,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-41,5,4,5,5,5,5,5,5,5,4.89,0.33,5,5
-42,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-43,4,5,4,5,5,5,5,5,5,4.78,0.44,5,5
-44,4,5,4,5,4,4,5,4,5,4.44,0.53,4,4
-45,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-46,3,4,4,4,4,4,5,3,4,3.89,0.60,4,4
-47,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-48,4,4,4,5,5,4,4,5,5,4.44,0.53,4,4
-49,4,4,3,4,5,5,5,5,5,4.44,0.73,5,5
-50,5,5,4,4,5,4,5,5,5,4.67,0.50,5,5
-51,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-52,5,5,5,5,5,5,5,5,5,5.00,0.00,5,5
-53,5,5,5,5,5,4,5,5,5,4.89,0.33,5,5
-Avg,4.40,4.51,4.28,4.45,4.81,4.45,4.91,4.60,4.77,4.58,0.21
-SD,0.74,0.72,0.84,0.82,0.48,0.75,0.35,0.72,0.51
-Mode,5,5,5,5,5,5,5,5,5
-Median,5,5,4,5,5,5,5,5,5
+Submitted on:,Q01_Rate instructor->1. The instructor is well-prepared for class,Q01_Rate instructor->2. The instructor clearly communicates his expectations for student preparation and participation,Q01_Rate instructor->3. The instructor uses class time effectively,Q01_Rate instructor->4. The instructor has clear expectations for assigned work,Q01_Rate instructor->5. The instructor encourages student participation,Q01_Rate instructor->6. The instructor clearly answers questions,Q01_Rate instructor->7. The instructor treats students with respect,Q01_Rate instructor->8. The instructor effectively directs and stimulates discussion,Q01_Rate instructor->9. The instructor effectively encourages students to ask questions and give answers,Q02_Like  best,Q03_Change,Q04_Strengths
+08/MAR/2022,2,1,1,1,3,1,4,1,1,literally not a thing ,"the professor, the grading scheme ",??
+03/MAR/2022,4,5,2,5,5,5,5,4,4,I like how quick the teacher is to answer any question about a assignment or a project and clarify any detail.  ,I feel like if we had some more information about debate topics we would be able to debate more effectively. ,The teacher always answers questions about assignments and projects when ever he is asked about them so I always feel prepared for the next assignment.
+07/MAR/2022,4,4,4,4,4,4,4,4,4,,,
+11/MAR/2022,3,4,3,2,5,3,5,4,5,,I am confused on what the topics of this course even are. Every class it's students asking questions about the assignments and projects and then we have about 15 minutes at the end of every class to try and have a discussion. ,Having open communication with the students. No one is afraid to turn their microphones on and talk or share an opinion. It is a very welcoming environment. 
+03/MAR/2022,5,5,4,5,5,5,5,5,5,"The course effectively encourages me to ask questions and give answers. I like the class discussions on current topics in the world, helps me keep myself aware of what is happening in the world. ",This class is different from all the other classes I have taken. The discussions are open-ended and sometimes I feel I am not sure how well I am doing in this class or what I am learning. I would like to see more concrete implementation for achieving the desired learning outcomes. I do not what would be there on the final exam and what should I need to do to pass the final exam.,Dr. Daryl Hepting is a great mentor with a lot of knowledge and experience teaching this course. He is always well-prepared for the class and communicates his expectations for students clearly. His teaching style encourages student participation. He is very respectful of his students and always willing to go above and beyond for helping his students. I would definitely take another class with Dr. Hepting.
+11/MAR/2022,2,2,1,2,5,3,5,4,5,The discussion section of each lecture.,The clarity on what is expected of us on assignments.,discussions
+09/MAR/2022,1,1,1,2,3,1,3,2,2,,,
+11/MAR/2022,3,3,3,3,3,3,3,3,3,The content,Nothing,His communication skills
+11/MAR/2022,3,3,4,4,5,4,5,5,5,,,
+07/MAR/2022,5,5,5,5,5,5,5,5,5,"The teacher's lessons are very informative, and then you need to reply every day so that people can discuss the content of the daily lessons.",NO,NO
+03/MAR/2022,5,4,4,5,4,5,5,4,5,I enjoy how the instructor is very knowledgeable and always available when questions need to be answered.  ,"Not much honestly, I don't see a need to change something that works.",His knowledge. 
+11/MAR/2022,3,3,1,3,3,3,4,2,2,N/A,I'd like more focus and discussion on the course material and more focus overall. Too much time is spent talking about assignment submissions and not enough about topics relating to the course material.Discussions more suited for office hours routinely dominate class time and obstruct relevant discussion.,N/A
+04/MAR/2022,4,4,4,5,5,3,5,5,5,The discussions ,Nothing I can think of,Creative
+05/MAR/2022,3,3,3,4,3,2,5,3,3,I like the say we are able to give about assignment due dates.,I would probably change how to teach things having more of a concrete definition of different topics.,Greatest strengths are being able to communicate with students about assignment topics as well as the freedom he is able to give students in his class.
+07/MAR/2022,5,5,5,5,5,5,5,5,5,,,
+11/MAR/2022,4,4,4,5,5,5,5,5,4,,,
+07/MAR/2022,5,5,4,5,5,5,5,5,4,This course is best to study with Dr Hepting as he includes most of the stuff practical based.,I don't think there are any changed requirements.,"Knowledge, Teaching skills."
+07/MAR/2022,4,5,4,5,5,5,5,5,5,I really like how the professor encourages open student discussion  on current world events and topics related to the course. The  lively exchange of ideas during the class makes for the majority of the course content and it is an innovative way of learning and encouraging student participation.,The only thing  I  would like to change about this course would be to have the course content a  little bit more organized and fast-paced and focused on the final exam since it  is 25% of our final grade and also explain what would the final exam entail.,The instructor's greatest strengths are: - Encourage student participation and make every student feel welcomed to join any on-going discussion.- Engaging students by related current world events to our course content- Patience and enthusiasm during the class-Clarity about assignments
+07/MAR/2022,3,5,4,4,5,5,5,5,5,I like the wide variety of topics discussed,I wish that the expectations for assignments were explained more thoroughly further in advance rather than a week before ,Interacting with students and encouraging discussion
+10/MAR/2022,3,4,3,4,5,3,5,5,5,The class discussions and his understanding of the student's being confused,"To have a more structured lesson plan and teaching, we don't always have textbook readings and we don't do any note-taking in class, so I'm a little lost on what will be on the exam. we tend to go in circles a little bit.","relating content to the real world and making us see and compare it, not to made-up examples, but things we interact with daily."
+06/MAR/2022,4,4,3,3,4,4,5,4,4,I like the course material and that discussion is encouraged.,I would like to talk more about stuff we are told to watch or read before class in actual class time.,Very kind and willing to answer questions.
+03/MAR/2022,4,5,5,5,5,5,5,5,5,The best thing I like about this course is that I hear my peers' points of view and I can build my aspect upon their points of view.,,
+07/MAR/2022,4,4,3,3,5,4,5,5,5,The interesting discussions about online activity and information. ,More clearly laid out assignment details and expectations; Sometimes feels like there's a lot of dead space in class where time could be used more effectively. ,The ability to foster and encourage interesting in class discussion. 
+03/MAR/2022,4,2,2,5,5,5,5,3,5,"The writing part, I am not good at it, this course is a chance for me to practice my writing skills.The topic we discussed is very interesting tho.",I would like to get rid of the response to meeting part. It's just frustrating that we have to do it every lecture,"His preparation skills. I believe that Dr Hepting knew his weakness, so he created so many tools, so many notes that the students can use. And for a ""geek"" like me, they are amazing!"
+10/MAR/2022,4,4,4,4,5,4,5,5,5,The professor is very considerate of the students. He always encourages lively discussions.,Nothing so far.,Instructor is very considerate of students. Does not give work during holidays or immediately after. Gives students time and second chances. 
+09/MAR/2022,5,5,5,5,5,5,5,5,5,"Professor Hepting I guess, he is well prepared and has answers to our questions promptly. ",Nothing from my point of view. ,Not going to a different topic unless things are clear for all the students.
+10/MAR/2022,5,5,5,5,5,5,5,5,5,,,
+07/MAR/2022,4,4,3,4,5,4,5,5,5,,,
+09/MAR/2022,2,3,2,3,4,3,5,3,4,everything seams relatively easy.,i wish there was better organization and better use of class time.,he has good topics to talk about.
+03/MAR/2022,4,4,4,4,5,4,4,4,5,The fact that most of the topics are relevant to today's world and not outdated.,Better ways of communication during class for all our classmates so breakout rooms go more smoothly.,His compassion towards the students and understanding our own struggles as well.
+10/MAR/2022,5,5,5,5,5,5,5,5,5,It’s interesting and non complicated course which is based on our daily lives. The main thing is that it does not require mental attention and it’s a free learning and fun course.,Nothing ! It’s all good and perfect.,"He is soft spoken, always keeps patience, answers questions and explains things thoroughly."
+10/MAR/2022,5,5,5,5,5,5,5,5,5,The topics which are covered in this course. ,Nothing in particular. ,The greatest strength of the instructor of this course is that he ready to help even if you ask question in middle of discussion he is ready to answer. Also to make students more interactive he arranges class discussion as well which also with the participation.  
+11/MAR/2022,5,5,5,5,5,5,5,5,5,The best part is how the instructor teaches and explains the stuff,nothing,Explaining the course
+03/MAR/2022,4,3,4,5,5,4,5,4,5,The thing i like most about this course is it very based on research and that is what is making me research more about the topics discussed. Since then i have started to research more and more about the class,Lecture’s  are little boring  and need some entertainment. He is a great teacher but students need some motivation thats is what is missing and a big smile is missing of professor,He is really good with the topics and knows everything he teaches he helps us with some research strategies thats what is the greatest strength.
+26500,03/MAR/2022,3,4,3,4,5,5,5,5,4,I like the idea of the course the best. The idea of weighing risks vs rewards of giving companies your information.,"I'd change how the course is presented. Whether or not it is a teaching style preference, I tend to prefer classes that have a bit more structure to them, and less group activities as I prefer to rely solely on myself for my grade."
+03/MAR/2022,4,5,3,4,5,4,5,5,5,The topics discussed and the way assignments are delivered.,"Less group work, especially for a class delivered remotely.",The instructor is a very smart individual who is very passionate about the topics.
+07/MAR/2022,3,2,3,2,3,2,4,3,3,"My classmates and I continuously communicate with each other to help understand what's happening, ask questions about homework, and such. The topics can be quite interesting and with each discussion, I learn something new.",Nothing,He is knowledgable and well updated with tech news.
+06/MAR/2022,5,5,5,5,5,5,5,5,5,The fact that our professor encourages more class participation by effective methods like group projects and always relate topics with current affairs is the best part of this course to me.,"Honestly, getting up early is hard probably would like to change the class timing by a hour maybe",Our instructors greatest strength his ability to relate the topic with current affairs.
+03/MAR/2022,3,4,2,4,5,4,5,4,4,I really like the content of this course. It is very interesting and changes my perspective of technology,I would like to see more content in class. I feel we don't really get anything done in class till the end.,The instructor's greatest strengths are that he is very knowledgeable and genuinely cares for his students.
+03/MAR/2022,4,1,5,5,5,5,5,5,5,Professor give equal opportunity to every student in the class and explain every single detail of our works we need to submit. Even present some examples of our submission to make it even more clear.,I dont like how we are supposed to work in different groups for each assessment which makes it confusing and unfair for the student with no connections or friends at all.,Professor is a good listener and believes in team work.
+11/MAR/2022,2,3,2,2,4,2,5,3,5,"As this course is running remotely as well as in-person which is the only one best thing I have found. Also, The way the professor treats us with very polite behavior.","To be honest, I didn't find anything best yet, because we didn't get proper knowledge in this class as we have given the name of a textbook but in class, we didn't get any information regarding our course. Every day I have found that Professor is busy changing the due dates and editing on URCourses. One of my friends suggested CS280 and also told me that I will gain more knowledge as well as I will really enjoy this course. But, somehow I'm feeling completely opposite. I'm completely disappointed with this course.Hope I'll get at least some knowledge of this course and suggest others for this course.",I have found that the professor is more knowledgeable but his teaching style does not fit particularly in my mind.
+11/MAR/2022,5,5,5,5,5,5,5,5,5,The delivery of the course is excellent,"I would like to change the group studies portion to individual, so we don't have to be dependent on others.",The explanation skills and most importantly the period of giving time to students.
+09/MAR/2022,4,4,4,4,4,4,4,4,4,,,
+08/MAR/2022,4,5,4,4,5,4,5,5,4,Flexible assignment due dates. Different projects with a different perspective can make a lot of difference in group projects. ,Nothing.,The way he conducts the class and how he organizeshis website like detailed assignment requirements and the syllabus also how and when the assignment and exams are due. 
+04/MAR/2022,3,4,3,4,4,3,4,3,4,"I like that we can tie in class material with current events, because I think talking about relevant news is more interesting than just reading a textbook.","I would like to change how much down time there is in class, I think we spend too much time in between topics or discussions, and if we didn't do that I think everyone would be able to learn a lot more.","I think that the professor's greatest strengths are his knowledge on the subject matter being taught, whatever we talk about he for the most part has a good idea on the concepts, but he can sometime struggle to explain it better for other students who didn't understand."
+08/MAR/2022,5,5,1,5,5,5,5,4,5,I like how Dr. Hepting encourages conversation in class and encourages student participation.,While I like the idea of learning about risks and rewards in computer   science it seems like we never actually learn anything in class. Instead   we just go over what's expected on assignments and answer and re-answer   the same questions. I wish we could actually learn something new for a change.,Listening to students and accommodating are needs.
+04/MAR/2022,3,4,4,3,4,4,4,4,4,The in class discussions are interesting ,I wish it was more constructed and had notes or readings for us to do,
+04/MAR/2022,5,5,5,5,5,5,5,5,5,,,
+04/MAR/2022,5,4,5,5,5,5,4,4,5,,big writing assignments.,the ability to teach.
+10/MAR/2022,4,4,4,4,4,4,4,4,4,The topics are really interesting.,More assignments.,Content knowledge and experience.
+09/MAR/2022,4,5,3,5,5,5,5,5,5,The discussion on various topics; gaining new insight and ideas from my peersVery low-intensity Lots of critical thinking and researchI also really like the post-lecture feedback from each student regarding that day's topic. It's interesting to see other people's posts because I can learn new ideas from them.,"I'd like to spend more time exploring topics and learning new ideas than just administration stuff. I think it's only like this because of online learning and Covid, though, so I understand if there's a lot of difficulties we have to work through. I just wish it wasn't so often. It'll probably get better once everything is in person. ","Really engages class discussion. It's nice because you get to hear other viewsProvides some really good resources (all of which are free!). The Ted talks, articles, and book are pretty relevant and insightful. I appreciate that everything is gathered together in the website because I might miss something.I also appreciate the class notes summary that students post. I can look at them in case I miss a class."
+10/MAR/2022,4,5,4,4,4,5,5,4,5,Taking this course I got to know many things like how information is important and what is privacy and so on... So it is an interesting class I guess... ,I think there is nothing that needs to be changed except giving lot of assignments.. ,I think Dr Daryl Hepting has good nature and he is friendly with everyone and so I think this is his greatest strength... 
+04/MAR/2022,3,2,3,5,5,4,5,4,3,I like how there's no coding in this computer science course.,I would make the expectations and how to approach and succeed in this course clear at the beginning of the course.,The instructor greatest strength is his ability to start a discussion among students
+11/MAR/2022,3,4,3,4,4,4,5,4,5,"I enjoy the discussions the most honestly, hearing everyone's opinions on web safety topics (tracking, articles and truth) is probably one of my favorite things about this course.","If we could be more on topic in most lectures, that'd be great. We spend so much time talking about assignments that the actual lectures and discussions feel few and far between compared to the course admin days.","The website used for documentation about meeting documentation (transcripts, responses) and assignments is very nice, and I'm glad effort has gone into making it a good website.While stuttering a lot makes it a bit hard to understand what he's saying, it's not like it makes what he's saying any less interesting. I usually end up thinking about the discussion topics or the lecture topic far after the class because they're that interesting."
+04/MAR/2022,,,,,,,,,,variety of topics,more clarity,
+05/MAR/2022,5,5,4,5,5,5,5,5,5,"The freedom to speak what you think and believe in. The freedom and encouragement of expressing your thoughts and opinions about various topics. I like the professor. Dr Daryl always keeps his calm. I have never seen him angry; I like his patience. He listens to the students, for example when we asked for extending the deadlines for blog entry assignment, he listened to us and extended it. ",This course is good. The only thing is sometimes Dr Daryl don't reply to emails.,"His calm, patience, knowledge, enthusiasm about participation. "
+07/MAR/2022,5,4,5,5,5,5,5,4,5,"We get to know about a lot of things from this course. That, in this information society there are both risks and rewards. It depends on us how we use this. Using the internet and other software with full knowledge is quite important to earn maximum rewards. But, if we don't use it securely then it can be harmful to us and can disturb our private life. The professor is awesome as he enforces more participation from students and listens to their points and views carefully and corrects them where ever possible. Thanks for this wonderful course and a great professor. :)","If I want to change something in this course would be the appropriate syllabus for the final exam. And the other thing would be that I would be glad if this course would be in person because, for me, offline learning is more efficient than online learning. :)","The instructor's greater strength is that he does not only speak and teach, he also expects students to come up and discuss with him their views and he listens to us very carefully and always comes up with a better idea to make us understand more properly. Other than that he is a great tutor and I love attending his class. Thank you, professor. :)"
+06/MAR/2022,3,3,3,3,3,2,5,3,4,,,
+03/MAR/2022,3,1,1,3,4,2,5,3,3,It opened my eyes to the act of analyzing algorithms to ensure they are ethical.,"1.       I’d like a roadmap to final exam  prep – With the final coming up it is important to have a clear understanding  of how we should be preparing for it.   Would it be fair to say that the majority of the test will be on the  textbook?  Because as of right now I  would be able to answer none of the practice exam questions because we haven’t  covered the relevant events – which has me concerned that the final – which I  have to pass to pass the class – may be the same since practice exams are  supposed to help you practice for the final.    2.       Pacing/speaking skills/preparation  could improve – I was surprised when I joined this class.  Your speech was very slow and you seemed to be  struggling to communicate.  Since that  day, every day you have gotten slightly better at speaking.  I just wanted to acknowledge that this is a  thing and many people were concerned about it.   Several people I know dropped your class because of it both this year  and previous years.  I’m not sure what  was causing this, but I thought you ought to know.  I will also add that today your speech seemed totally normal and you were prepared and had good pacing.",You  listen to people’s feedback during class and seem to actually care about  people.  That goes a long way.
 \end{lstlisting}
-\end{doublespace}
+%\end{doublespace}
