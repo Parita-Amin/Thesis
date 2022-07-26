@@ -272,11 +272,24 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
 
 \subsection{Using SHACL for Data Validation}
 
-\par 
+\par \ac{shacl}4P is a protégé plugin for \ac{shacl}, which uses \say{shapes} to describe constraints. \ac{shacl} can be used to validate the manually entered data which are stored in spreadsheets. For feedback survey, the likert answers can only have values 1, 2, 3, 4, 5, or No Answer (blank cell). To restrict the values of data properties corresponding to likert questions in Figure~\ref{survey-data-properties}, \ac{shacl}4P has been used. Protégé offers a view for \ac{shacl} editor as well as \ac{shacl} constraint violations. For successful working of \ac{shacl}4P, a reasoner should be enabled. The \ac{shacl} editor provides three buttons, namely, \say{Open}, \say{Save} , and \say{Validate}. After opening the shapes file (Open button), changes can be made and saved (Save button). Where as the Validate button allows users to validate the data. Figure~\ref{shacl-editor} shows a sample \say{SurveyShapes.txt} file opened in \ac{shacl} editor of protégé.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/shacl-editor.png}
+    \caption{Data Validation using SHACL Editor}
+    \label{shacl-editor}
+\end{figure}
+\par On clicking the Validate button, the summary of violated constraints is displayed on the \ac{shacl} constraint violations view in protégé. It contains the details like \say{Severity}, \say{SourceShape}, \say{Message}, \say{FocusNode}, \say{Path}, and \say{Value} as shown in Figure~\ref{shacl-constraint-violations}.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/shacl-constraint-violations.png}
+    \caption{SHACL Constraint Violations}
+    \label{shacl-constraint-violations}
+\end{figure}
 
 \section{From Spreadsheets to Linked Open Data}
 
-\par
+\par 
 
 \section{Visualization Tools for \ac{owl} Ontology}
 
