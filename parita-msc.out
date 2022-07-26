@@ -21,13 +21,13 @@
 \BOOKMARK [1][-]{section.2.5}{Ontology in Web Semantics}{chapter.2}% 21
 \BOOKMARK [1][-]{section.2.6}{OWL Ontologies}{chapter.2}% 22
 \BOOKMARK [2][-]{subsection.2.6.1}{Components of OWL Ontologies}{section.2.6}% 23
-\BOOKMARK [1][-]{section.2.7}{OWL Ontology Inconsistencies and Reasoner}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.8}{Data Validation}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.9}{Conversion of Data from CSV to RDF}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.10}{Ontology Editors}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.11}{Applications of Linked Open Data}{chapter.2}% 28
-\BOOKMARK [2][-]{subsection.2.11.1}{Wikidata}{section.2.11}% 29
-\BOOKMARK [2][-]{subsection.2.11.2}{DBpedia}{section.2.11}% 30
+\BOOKMARK [2][-]{subsection.2.6.2}{OWL Ontology Inconsistencies and Reasoner}{section.2.6}% 24
+\BOOKMARK [2][-]{subsection.2.6.3}{Data Validation}{section.2.6}% 25
+\BOOKMARK [1][-]{section.2.7}{Conversion of Data from CSV to RDF}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.8}{Ontology Editors}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.9}{Applications of Linked Open Data}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.9.1}{Wikidata}{section.2.9}% 29
+\BOOKMARK [2][-]{subsection.2.9.2}{DBpedia}{section.2.9}% 30
 \BOOKMARK [0][-]{chapter.3}{Methodology}{}% 31
 \BOOKMARK [1][-]{section.3.1}{Workflow}{chapter.3}% 32
 \BOOKMARK [0][-]{chapter.4}{Proof of Concept}{}% 33
@@ -48,6 +48,6 @@
 \BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 48
 \BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 49
 \BOOKMARK [0][-]{appendix.A}{Sample CSV Data}{}% 50
-\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in RDF}{}% 51
-\BOOKMARK [0][-]{appendix.C}{OWL Classes to be Used to Describe Surveys}{}% 52
-\BOOKMARK [0][-]{lstnumber.-3.722}{References}{}% 53
+\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in LOD \(Turtle\)}{}% 51
+\BOOKMARK [0][-]{appendix.C}{OWL Vocabulary for Feedback Survey}{}% 52
+\BOOKMARK [0][-]{lstnumber.-3.465}{References}{}% 53
