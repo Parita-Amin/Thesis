@@ -1,12 +1,13 @@
 %!TEX root = parita-msc.tex
 
-\chapter{Proof of Concept}
-\label{chap:proofOfConcept}
+\chapter{Proof of Concept}\label{chap:proofOfConcept}
+
 \begin{doublespace}
 
 \section{Development Tool for the Creation of New \ac{owl} Vocabularies}
 
 \par In data science, for a fresh and developing branch like ontology engineering, it is difficult to find enough knowledge that can be reused. The field is still growing with research and development in progress as well as a lot still required to be explored in the future. As a result of this, linked open vocabularies are limited currently, and hence, the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
+
 \par There are editors available today that help the publishers to create their own linked open vocabularies. Alatrish at the University of Belgrad~\cite{alatrish2013comparison}, in 2013, compared the most used ontology editors, namely, Apollo, OntoStudio, Protégé, Swoop, and TopBraid Composer. The editors were compared based on the following features:
 \begin{itemize}
   \item General description: developers' details, and accessibility on the internet (open source or software licensed)
@@ -16,6 +17,7 @@
   \item Inference services: built-in inference engine, other attached inference engines, and constraint/consistency checking
   \item Usability: graphical taxonomy, graphical views, zooms, collaborative working, and ontology libraries
 \end{itemize}
+
 \par After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, protégé has been used for the development of the instrument to support this research and thesis work.
 
 \section{Protégé}
@@ -44,6 +46,7 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
   \item Easy to learn: The interface should be easy to learn
   \par The user should get the feeling of familiarity and adaption while using the interface. The names of the components and tools in the design must be appropriate so that the user can understand their purpose from the name itself. For instance, in a banking application, using the keyword \say{balance owed} to denote the debit amount might confuse the user by not giving a clear idea about who owes the money, that is, whether the customer owes the amount to the bank or vice versa.
 \end{itemize}
+
 \par The five dimensions of usability can be considered while designing as well as for evaluation. While designing, the engineers consider the five dimensions as goals to be achieved whereas while testing and evaluation, they are considered as the requirements necessary for the designed model. The five dimensions of usability were used to assess the usability of protégé and the report of the evaluation is as follows:
 \begin{itemize}
   \item Effective: Protégé is an effective design as it allows the users to build ontologies and use other tools precisely. The users can complete the desired tasks accurately using the set of facilities available.
@@ -62,6 +65,7 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
     \caption{The Student Feedback Form, from Hepting~\cite{prof}}
     \label{feedback-form}
 \end{figure}
+
 \par To commence with the process of building the survey ontology, a new project needs to be created with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal}  and the ontology version. Figure~\ref{protege-homescreen} shows the protégé home-screen with a new project created and an \ac{iri} with the name and version of ontology.
 \begin{figure}[htp]
     \centering
@@ -82,27 +86,29 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
 \begin{enumerate}
     \item Select \say{owl:Thing} in the Class Hierarchy View of the Classes tab from the Windows menu followed by selecting \say{Create class hierarchy...} from the Tools menu, as shown in Figure~\ref{tools-menu-class-hierarchy} to open a \say{Enter hierarchy} pop-up window which allows the users to add classes to the ontology.
     \begin{figure}[htp]
-    \centering
-    \includegraphics[width=15cm]{images/ch4/tools-menu-class-hierarchy.png}
-    \caption{Tools Menu to Create Class Hierarchy}
-    \label{tools-menu-class-hierarchy}
-\end{figure}
+        \centering
+        \includegraphics[width=15cm]{images/ch4/tools-menu-class-hierarchy.png}
+        \caption{Tools Menu to Create Class Hierarchy}
+        \label{tools-menu-class-hierarchy}
+    \end{figure}
     \item Enter the class names in the pop-up window starting from the left. For the child nodes, leave some spaces before writing the class name. Each horizontal line consists of one class name, as shown in Figure~\ref{enter-hierarchy-pop-up}. 
     \begin{figure}[htp]
-    \centering
-    \includegraphics[width=15cm]{images/ch4/enter-hierarchy-pop-up.png}
-    \caption{\enquote{Enter hierarchy} Pop-up Window} 
-    \label{enter-hierarchy-pop-up}
-\end{figure}
+        \centering
+        \includegraphics[width=15cm]{images/ch4/enter-hierarchy-pop-up.png}
+        \caption{\enquote{Enter hierarchy} Pop-up Window} 
+        \label{enter-hierarchy-pop-up}
+    \end{figure}
     \item On clicking \say{Continue} on the pop-up window in Figure~\ref{enter-hierarchy-pop-up}, it opens up a new pop-up window. Here, it is important to state whether one wants the sibling classes to be disjoint or not. The checkbox needs to be checked accordingly. Usually, it is recommended to create disjoint sibling classes which can be changed later as necessary, as shown in Figure~\ref{create-disjoint-siblings}.
     \begin{figure}[htp]
-    \centering
-    \includegraphics[width=15cm]{images/ch4/create-disjoint-siblings.png}
-    \caption{Pop-up Window to Create Disjoint Sibling Classes}
-    \label{create-disjoint-siblings}
-\end{figure}
+        \centering
+        \includegraphics[width=15cm]{images/ch4/create-disjoint-siblings.png}
+        \caption{Pop-up Window to Create Disjoint Sibling Classes}
+        \label{create-disjoint-siblings}
+    \end{figure}
 \end{enumerate}
+
 \par Once the classes are added, the next step is to describe the classes. Descriptions of classes like \say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on can be added using the Description view of the Class tab (shown in Figure~\ref{class-hierarchy}). Each class can be described individually by selecting a particular class and adding details to the description view. 
+
 \par All the classes can be created and described using the above steps. In the end, the class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. The survey can have \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, and \say{Survey Answers}, which are considered for this ontology as well. Here, the type of survey used is \say{feedback survey}. The survey questions and survey answers would further have classes corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
 \begin{figure}[htp]
     \centering
@@ -127,7 +133,9 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
     \item Benchmarkable Questions
 \end{itemize}
 \end{multicols}
+
 \par For this research, the feedback survey that has been considered has Likert and Open-ended questions. The classes described for the questions and answers are \say{LikertScaleQuestions}, and \say{OpenEndedQuestions} as sub-classes of \say{SurveyQuestions}, and \say{LikertScaleAnswers}, and \say{OpenEndedAnswers} as sub-classes of \say{SurveyAnswers}.
+
 \par For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct classes. Likert questions are the questions for which the answers are from the preset list of answers. For the Likert questions, the questions can be either of type \say{Never-Always-4} or \say{Never-Always-5} or \say{Never-Always-7} or \say{Never-Always-*}, of which Never-Always-5 has been used by Hepting~\cite{prof}. In a Never-Always-5 type of survey, 5 degrees of agreement are used as shown in Table~\ref{likert-degrees}. In addition to these degrees, this ontology also considers the instances where the question wouldn't be answered. In this case, the field corresponding to the answer is left blank. On the other hand, Open-ended questions have unpredictable answers and hence there cannot be any degree of measurement for Open-ended questions.
 \begin{table}[h!]
     \centering
@@ -152,7 +160,9 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
     \caption{Tools Menu to Create Object Property Hierarchy}
     \label{tools-menu-object-property-hierarchy}
 \end{figure}
+
 \par Also, the description view of object properties hierarchy allows the user to describe the object properties. The details that can be added or modified using the description view are \say{Equivalent To}, \say{SubProperty Of}, \say{Inverse Of}, \say{Domains (intersection)}, \say{Ranges (intersection)}, \say{Disjoint With}, and \say{SuperProperty Of (Chain)}. 
+
 \par The names of the object properties usually start with an \say{is} or a \say{has}. For instance, consider two classes: \say{Lady} (class 1) and \say{Parita} (class 2). To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, the properties \say{hasName} and \say{isNameOf} would be used respectively, as shown in Figure~\ref{object-properties-for-lady-and-parita}. 
 \begin{figure}[htp]
     \centering
@@ -160,6 +170,7 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
     \caption{Object Properties for Classes \enquote{Lady} and \enquote{Parita}}
     \label{object-properties-for-lady-and-parita}
 \end{figure}
+
 \par Each object property might have a corresponding inverse property. For the above instance, it can be said that:
 \begin{center}
     \par Lady hasName Parita \textbf{is equivalent to} Parita isNameOf Lady
@@ -171,6 +182,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \caption{Domain and Range Classes for \enquote{hasName} and \enquote{isNameOf}}
     \label{domain-and-range-for-hasName-and-isNameOf}
 \end{figure}
+
 \par Using the above method of naming and building object properties, some of the primary object properties are described for the survey ontology as shown in Figure~\ref{survey-object-properties} where as Table~\ref{survey-object-properties-domains-and-ranges} shows the list of the object properties along with their domain and range classes. Table~\ref{survey-object-properties-parent-nodes-and-inverse} consists of the parent nodes and inverse properties of the object properties. The three parent nodes involved in object property hierarchy are \say{owl:TopObjectProperty}, \say{hasContent}, and \say{isContentOf}. Protégé has a built-in \say{Reasoner} that allows the users to determine inconsistencies of a class as well as to discover implicit information.
 \begin{figure}[htp]
     \centering
@@ -217,11 +229,12 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \end{tabular}
     \caption{Object Properties with Their Parent Nodes and Inverse Properties}
     \label{survey-object-properties-parent-nodes-and-inverse}
-    \end{table}
+\end{table}
 
 \subsection{Data Properties and Data Property Hierarchy}
 
 \par Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/}
+
 \par In protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}). 
 \begin{figure}[htp] 
     \centering
@@ -229,6 +242,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \caption{Tools Menu to Create Data Property Hierarchy}
     \label{tools-menu-data-property}
 \end{figure}
+
 \par Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{survey-data-properties} shows the data properties described for the survey ontology. The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}.
 \begin{figure}[htp]
     \centering
@@ -268,6 +282,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \caption{Class Hierarchy for the Final Version of Survey Ontology}
     \label{final-survey-classes}
 \end{figure}
+
 \par The grey (all classes) and blue (\say{Survey} entity) back arrows in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
 
 \subsection{Using SHACL for Data Validation}
@@ -279,6 +294,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \caption{Data Validation using SHACL Editor}
     \label{shacl-editor}
 \end{figure}
+
 \par On clicking the Validate button, the summary of violated constraints is displayed on the \ac{shacl} constraint violations view in protégé. It contains the details like \say{Severity}, \say{SourceShape}, \say{Message}, \say{FocusNode}, \say{Path}, and \say{Value} as shown in Figure~\ref{shacl-constraint-violations}.
 \begin{figure}[htp]
     \centering
@@ -298,6 +314,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
 \subsection{OntoGraf}
 
 \par Falconer~\cite{falconer2010ontograf} introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. This tool helps the users to represent the ontologies, built using protégé, by repetitively allowing and restricting the desired classes. OntoGraf offers various graph layout options for visualization like Grid Layout\footnote{classes are arranged in a grid alphabetically}, Spring Layout, and Tree Layout\footnote{both horizontal and vertical}. Antoniazzi and Viola~\cite{antoniazz2018rdf} stated that the \say{individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements}. The graphs generated using OntoGraf can be exported as image files of various formats such as \ac{png}, \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
+
 \par Figure~\ref{ontograf} shows the graph generated using OntoGraf for the survey ontology. To start with the graph formation, the classes \say{Thing}, \say{Domain\_entity}, \say{Independent\_entity} and \say{Value} were selected followed by expansion of \say{Independent\_entity} and \say{Value} classes by double-clicking them. This expansion adds all the classes that are connected to the classes. The classes connected includes both the subclasses as well as the ones linked through the object properties. Solid blue lines are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties.
 \begin{figure}[htp]
     \centering
@@ -314,6 +331,7 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \item Black solid lines are used to represent \ac{owl} object and datatype properties. The object properties use light blue labels where as the datatype properties are labelled in green.
     \item The relationships between the classes and their subclasses are represented using dashed lines.
 \end{enumerate}
+
 \par Figure~\ref{webVOWL} shows the graphical representation of the survey ontology using Web\ac{vowl}. The figure focuses on only some of the class-subclass relationships and some of the object properties. The metadata and the statistics of the node (circle) or the edge (line) can be retrieved by clicked on them. The entities (classes) and their relationships (object and datatype properties) can be presented or restricted using filters. The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} code file.
 \begin{figure}[htp]
     \centering
