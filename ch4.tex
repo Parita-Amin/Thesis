@@ -191,7 +191,13 @@ All the classes can be created and described using the above steps. In the end, 
 
 For this research, the feedback survey that has been considered has Likert and Open-ended questions. The classes described for the questions and answers are \say{LikertScaleQuestions}, and \say{OpenEndedQuestions} as sub-classes of \say{SurveyQuestions}, and \say{LikertScaleAnswers}, and \say{OpenEndedAnswers} as sub-classes of \say{SurveyAnswers}.
 
-For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct classes. Likert questions are the questions for which the answers are from the preset list of answers. For the Likert questions, the questions can be either of type \say{Never-Always-4} or \say{Never-Always-5} or \say{Never-Always-7} or \say{Never-Always-*}, of which Never-Always-5 has been used by Hepting~\cite{prof}. In a Never-Always-5 type of survey, 5 degrees of agreement are used as shown in Table~\ref{likert-degrees}. In addition to these degrees, this ontology also considers the instances where the question wouldn't be answered. In this case, the field corresponding to the answer is left blank. On the other hand, Open-ended questions have unpredictable answers and hence there cannot be any degree of measurement for Open-ended questions.
+For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct classes. Open-ended questions have unpredictable answers. Section~\ref{subsubsec:likertscaleques} focuses on likert scale questions. 
+
+\subsubsection{The ``LikertScaleQuestions'' Class}\label{subsubsec:likertscaleques}
+
+Likert questions are the questions for which the answers are from the preset list of answers. For the Likert questions, the questions can be either of type \say{Never-Always-4} or \say{Never-Always-5} or \say{Never-Always-7} or \say{Never-Always-*}, of which Never-Always-5 has been used by Hepting~\cite{prof}. The survey ontology consists of \say{LikertScaleQuestions} class for likert questions.
+
+In a Never-Always-5 type of survey, 5 degrees of agreement can be used. It is challenging to decide whether the range for the degrees would be 0 to 4, 1 to 5, 10 to 50, or something else. The degree of agreements used here are as shown in Table~\ref{likert-degrees}. In addition to these degrees, this ontology also considers the instances where the question wouldn't be answered. In this case, the field corresponding to the answer is left blank.
 
 \begin{table}[h!]
     \centering
@@ -206,6 +212,15 @@ For all the survey questions, there would be a question and an answer, where bot
     \caption{Degrees of Agreement for Likert-scale Questions}
     \label{likert-degrees}
 \end{table}
+
+The \say{LikertScaleQuestions} class of survey ontology has a sub-class, \say{LikertScale5}, which represents the likert scale with the degrees of agreement from Table~\ref{likert-degrees}. The \say{Equivalent To} (from the description view of the class tab) can be used to describe the \say{LikertScale5} class in terms of a range containing degrees of agreement as shown in Figure~\ref{likertscale5-class}. Each of these degrees are treated as an individual (section~\ref{subsec:individuals}) of the class.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/likertscale5-class.png}
+    \caption{``LikertScale5'' class in Survey Ontology}
+    \label{likertscale5-class}
+\end{figure}
 
 \subsection{Object Properties and Object Property Hierarchy}
 
@@ -308,7 +323,7 @@ In protégé, the \say{owl:topDataProperty} is the root node of the data propert
     \label{tools-menu-data-property}
 \end{figure}
 
-Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{survey-data-properties} shows the data properties described for the survey ontology. The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}.
+Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{survey-data-properties} shows the data properties described for the survey ontology. 
 
 \begin{figure}[htp]
     \centering
@@ -316,6 +331,8 @@ Data properties can be described using the description view of data properties o
     \caption{Data Property Hierarchies, Domain and Range for Classes}
     \label{survey-data-properties}
 \end{figure}
+
+The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}. The properties for likert answers restrict the datatype to positive integer and to string for open-ended answers.
 
 \begin{table}[h!]
     \centering
@@ -338,9 +355,33 @@ Data properties can be described using the description view of data properties o
     \label{survey-data-properties-domains-and-ranges}
 \end{table}
 
-\subsection{Individuals}
+\subsection{Individuals}\label{subsec:individuals}
 
-An instance of a class  in protégé is termed as an \say{Individual}.
+While dealing with ontologies, an instance of class is termed as an \say{Individual}. In protégé, an individual can be described as an instance of class using the Description view of the Class tab. For example, Figure~\ref{instances-of-survey-class} shows instances of \say{Survey} class.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/instances-of-survey-class.png}
+    \caption{Individuals for Survey Class}
+    \label{instances-of-survey-class}
+\end{figure}
+
+A new individual can be described using the Individuals view of the Entities tab where as the property assertions view can be used to describe the property restrictions. Table~\ref{survey-individuals} shows a list of classes and individuals described in survey ontology.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|} 
+    \hline \ \ \ \ \ Class & \ \ \ \ \ \ \ Individuals \\ \hline
+     Respondent &  1, 2, 3, ... , 50 \\ \hline
+     ResponseDate &  05-JAN-2022 \\ \hline
+     Survey & CS280/202210, CS499+900/202210, CS730/202210 \\ \hline
+     \multirow{2}{9.5em}{OpenEndedQuestions} &  OEQuestion\_LikeBest, OEQuestion\_Change, \\& OEQuestion\_Strengths \\ \hline
+     OpenEndedAnswers & OEAns\_LikeBest, OEAns\_Change, OEAns\_Strengths \\ \hline
+     LikertScale5 & 1\_Never, 2\_Rarely, 3\_Sometimes, 4\_Often, 5\_Always \\ \hline
+    \end{tabular}
+    \caption{Classes and their Individuals}
+    \label{survey-individuals}
+\end{table}
 
 After describing the classes, object properties, data properties, and individuals, the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner. The final class hierarchy of the \ac{owl} ontology in protégé, after using the HermiT 1.4.3.456 reasoner, would be as shown in Figure~\ref{final-survey-classes}.
 
@@ -351,11 +392,13 @@ After describing the classes, object properties, data properties, and individual
     \label{final-survey-classes}
 \end{figure}
 
-The grey (all classes) and blue (\say{Survey} entity) back arrows in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
+The blue (\say{Survey} entity) back arrow in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
 
 \subsection{Using SHACL for Data Validation}
 
-\ac{shacl}4P is a protégé plugin for \ac{shacl}, which uses \say{shapes} to describe constraints. \ac{shacl} can be used to validate the manually entered data which are stored in spreadsheets. For feedback survey, the likert answers can only have values 1, 2, 3, 4, 5, or No Answer (blank cell). To restrict the values of data properties corresponding to likert questions in Figure~\ref{survey-data-properties}, \ac{shacl}4P has been used. Protégé offers a view for \ac{shacl} editor as well as \ac{shacl} constraint violations. For successful working of \ac{shacl}4P, a reasoner should be enabled. The \ac{shacl} editor provides three buttons, namely, \say{Open}, \say{Save} , and \say{Validate}. After opening the shapes file (Open button), changes can be made and saved (Save button). Where as the Validate button allows users to validate the data. Figure~\ref{shacl-editor} shows a sample \say{SurveyShapes.txt} file opened in \ac{shacl} editor of protégé.
+\ac{shacl}4P is a protégé plugin for \ac{shacl}, which uses \say{shapes} to describe constraints. \ac{shacl} can be used to validate the manually entered data which are stored in spreadsheets. For feedback survey, the likert answers can only have values 1, 2, 3, 4, 5, or No Answer (blank cell). To restrict the values of data properties corresponding to likert questions in Figure~\ref{survey-data-properties}, \ac{shacl}4P has been used.
+
+Protégé offers a view for \ac{shacl} editor as well as \ac{shacl} constraint violations. For successful working of \ac{shacl}4P, a reasoner should be enabled. The \ac{shacl} editor provides three buttons, namely, \say{Open}, \say{Save} , and \say{Validate}. After opening the shapes file (Open button), changes can be made and saved (Save button). Where as the Validate button allows users to validate the data. Figure~\ref{shacl-editor} shows a sample \say{SurveyShapes.txt} file opened in \ac{shacl} editor of protégé.
 
 \begin{figure}[htp]
     \centering
@@ -375,7 +418,7 @@ On clicking the Validate button, the summary of violated constraints is displaye
 
 \section{From Spreadsheets to Linked Open Data}
 
- 
+
 
 \section{Visualization Tools for \ac{owl} Ontology}
 
