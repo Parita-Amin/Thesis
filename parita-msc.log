@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 JUL 2022 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  27 JUL 2022 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -723,7 +723,9 @@ Package csquotes Warning: No multilingual support.
 
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 58.
-(./parita-msc.aux)
+(./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux) (./ch1.aux)
+(./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix1.aux)
+(./appendix2.aux) (./appendix3.aux))
 \openout1 = `parita-msc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -927,41 +929,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
  (./pd-ack.tex) [3
 
 
-]
+] (./parita-msc.toc [4
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 
+])
 \tf@toc=\write4
 \openout4 = `parita-msc.toc'.
 
-[4
+ [5]
+(./parita-msc.lof [6
 
 
-]
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
+])
 \tf@lof=\write5
 \openout5 = `parita-msc.lof'.
 
-[5
-
-
-]
-
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
+ [7] (./parita-msc.lot)
 \tf@lot=\write6
 \openout6 = `parita-msc.lot'.
 
-[6
+ [8
 
 
-]
-
-LaTeX Warning: Rerun to get acronym list right.
-
-[7
+] [9
 
 
 ]
@@ -978,344 +968,93 @@ l.40
 
 
 
-]
-
-LaTeX Warning: Citation `ngomo2014introduction' on page 2 undefined on input li
-ne 56.
-
-
-LaTeX Warning: Citation `bizer2009emerging' on page 2 undefined on input line 5
-9.
-
-
-LaTeX Warning: Citation `bizer2011linked' on page 2 undefined on input line 59.
-
-
-
-LaTeX Warning: Citation `bizer2008linked' on page 2 undefined on input line 59.
-
-
-
-LaTeX Warning: Citation `heath2011linked' on page 2 undefined on input line 59.
-
-
-
-LaTeX Warning: Citation `berners1996linked' on page 2 undefined on input line 6
-0.
-
-[2] [3]) [4]
+] [2] [3]) [4]
 \openout2 = `ch2.aux'.
 
  (./ch2.tex
 Chapter 2.
-
-LaTeX Warning: Citation `bernersreadings' on page 5 undefined on input line 25.
-
-
-
-LaTeX Warning: Reference `semantic-web' on page 5 undefined on input line 46.
-
-<images/ch2/semantic-web.png, id=87, 626.34pt x 318.18875pt>
+<images/ch2/semantic-web.png, id=537, 626.34pt x 318.18875pt>
 File: images/ch2/semantic-web.png Graphic file (type png)
 <use images/ch2/semantic-web.png>
 Package pdftex.def Info: images/ch2/semantic-web.png  used on input line 50.
 (pdftex.def)             Requested size: 426.79134pt x 216.82185pt.
-
-LaTeX Warning: Citation `aghaei2012evolution' on page 5 undefined on input line
- 51.
-
-
-LaTeX Warning: Citation `aghaei2012evolution' on page 5 undefined on input line
- 51.
-
-
-LaTeX Warning: Citation `choudhury2014' on page 5 undefined on input line 55.
-
-
-LaTeX Warning: Citation `bernerslee1999weaving' on page 5 undefined on input li
-ne 55.
-
 [5
 
 
 
 ]
-
-LaTeX Warning: Reference `web-stack' on page 6 undefined on input line 61.
-
-<images/ch2/web-stack.png, id=101, 601.24625pt x 327.2225pt>
+<images/ch2/web-stack.png, id=553, 601.24625pt x 327.2225pt>
 File: images/ch2/web-stack.png Graphic file (type png)
 <use images/ch2/web-stack.png>
 Package pdftex.def Info: images/ch2/web-stack.png  used on input line 65.
 (pdftex.def)             Requested size: 426.79134pt x 232.28465pt.
-[6 <./images/ch2/semantic-web.png>]
-
-LaTeX Warning: Citation `aghaei2012evolution' on page 7 undefined on input line
- 74.
-
-
-LaTeX Warning: Citation `bernerslee1999weaving' on page 7 undefined on input li
-ne 78.
-
-[7 <./images/ch2/web-stack.png>]
-
-LaTeX Warning: Citation `bizer2009linked' on page 8 undefined on input line 80.
-
-
-
-LaTeX Warning: Reference `principles' on page 8 undefined on input line 80.
-
-
-LaTeX Warning: Reference `section:rdf' on page 8 undefined on input line 94.
-
-[8]
-
-LaTeX Warning: Citation `bauer2011linked' on page 9 undefined on input line 102
-.
-
-
-LaTeX Warning: Citation `berners1998universal' on page 9 undefined on input lin
-e 104.
-
-[9]
+ [6 <./images/ch2/semantic-web.png>] [7 <./images/ch2/web-stack.png>]
+[8] [9]
 Overfull \hbox (1.21146pt too wide) in paragraph at lines 122--123
 []\T1/cmr/m/n/12 The []RDF, ini-tially de-signed as a meta-data data model, is 
 a computer-understandable
  []
 
-
-LaTeX Warning: Reference `subsection:uri' on page 10 undefined on input line 12
-4.
-
-
-LaTeX Warning: Citation `cyganiak2014rdf' on page 10 undefined on input line 12
-4.
-
-
-LaTeX Warning: Citation `beckett2004rdf' on page 10 undefined on input line 124
-.
-
 [10]
-
-LaTeX Warning: Reference `rdf-xml-doc' on page 11 undefined on input line 136.
-
-<images/ch2/rdf-xml-doc.png, id=155, 601.24625pt x 130.4875pt>
+<images/ch2/rdf-xml-doc.png, id=617, 601.24625pt x 130.4875pt>
 File: images/ch2/rdf-xml-doc.png Graphic file (type png)
 <use images/ch2/rdf-xml-doc.png>
 Package pdftex.def Info: images/ch2/rdf-xml-doc.png  used on input line 140.
 (pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
-
-LaTeX Warning: Reference `rdf-triple' on page 11 undefined on input line 145.
-
-<images/ch2/rdf-triple.png, id=156, 568.1225pt x 107.40125pt>
+<images/ch2/rdf-triple.png, id=619, 568.1225pt x 107.40125pt>
 File: images/ch2/rdf-triple.png Graphic file (type png)
 <use images/ch2/rdf-triple.png>
 Package pdftex.def Info: images/ch2/rdf-triple.png  used on input line 149.
 (pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
-
-LaTeX Warning: Reference `rdf-graph' on page 11 undefined on input line 154.
-
-[11]
-<images/ch2/rdf-graph.png, id=166, 572.1375pt x 188.705pt>
+ [11]
+<images/ch2/rdf-graph.png, id=631, 572.1375pt x 188.705pt>
 File: images/ch2/rdf-graph.png Graphic file (type png)
 <use images/ch2/rdf-graph.png>
 Package pdftex.def Info: images/ch2/rdf-graph.png  used on input line 158.
 (pdftex.def)             Requested size: 426.79134pt x 140.76823pt.
-
-
-LaTeX Warning: Citation `beckett2014rdf' on page 12 undefined on input line 163
-.
-
-
-LaTeX Warning: Citation `cyganiak2008n' on page 12 undefined on input line 163.
-
-
-[12 <./images/ch2/rdf-xml-doc.png> <./images/ch2/rdf-triple.png> <./images/ch2/
-rdf-graph.png>]
+ [12 <./images/ch2/rdf-xml-doc.png> <./images/ch2/rdf-triple.png> <./images/ch2
+/rdf-graph.png>]
 Overfull \hbox (1.08981pt too wide) in paragraph at lines 167--182
  [][] 
  []
 
-
-LaTeX Warning: Citation `mcbride2004resource' on page 13 undefined on input lin
-e 186.
-
-
-LaTeX Warning: Reference `rdfs-classes-and-properties' on page 13 undefined on 
-input line 186.
-
-
-LaTeX Warning: Citation `mcbride2004resource' on page 13 undefined on input lin
-e 186.
-
-
-LaTeX Warning: Reference `rdfs-graph-for-complex' on page 13 undefined on input
- line 188.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 13 undefined on input line 188.
-
-
 [13]
-
-LaTeX Warning: Reference `rdfs-graph-for-complex' on page 14 undefined on input
- line 194.
-
-<images/ch2/rdfs-graph-for-complex.png, id=184, 739.76375pt x 411.5375pt>
+<images/ch2/rdfs-graph-for-complex.png, id=655, 739.76375pt x 411.5375pt>
 File: images/ch2/rdfs-graph-for-complex.png Graphic file (type png)
 <use images/ch2/rdfs-graph-for-complex.png>
 Package pdftex.def Info: images/ch2/rdfs-graph-for-complex.png  used on input l
 ine 198.
 (pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
-
-LaTeX Warning: Citation `mcbride2004resource' on page 14 undefined on input lin
-e 199.
-
-
-LaTeX Warning: Citation `mcbride2004resource' on page 14 undefined on input lin
-e 199.
-
-
-LaTeX Warning: Reference `rdf-xml-doc' on page 14 undefined on input line 203.
-
-
-LaTeX Warning: Reference `rdf-triple' on page 14 undefined on input line 203.
-
-
-LaTeX Warning: Reference `rdf-graph' on page 14 undefined on input line 203.
-
-
-LaTeX Warning: Reference `rdfs-graph-for-complex' on page 14 undefined on input
- line 203.
-
-
-LaTeX Warning: Reference `statement-for-rdf' on page 14 undefined on input line
- 203.
-
-<images/ch2/statement-for-rdf.png, id=185, 501.875pt x 88.33pt>
+<images/ch2/statement-for-rdf.png, id=663, 501.875pt x 88.33pt>
 File: images/ch2/statement-for-rdf.png Graphic file (type png)
 <use images/ch2/statement-for-rdf.png>
 Package pdftex.def Info: images/ch2/statement-for-rdf.png  used on input line 2
 07.
 (pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
-
-LaTeX Warning: Reference `statement-for-rdf' on page 14 undefined on input line
- 212.
-
-
-LaTeX Warning: Reference `triple-for-rdf-statement' on page 14 undefined on inp
-ut line 212.
-
-[14 <./images/ch2/rdfs-graph-for-complex.png>]
-<images/ch2/triple-for-rdf-statement.png, id=192, 501.875pt x 104.39pt>
+ [14 <./images/ch2/rdfs-graph-for-complex.png>]
+<images/ch2/triple-for-rdf-statement.png, id=671, 501.875pt x 104.39pt>
 File: images/ch2/triple-for-rdf-statement.png Graphic file (type png)
 <use images/ch2/triple-for-rdf-statement.png>
 Package pdftex.def Info: images/ch2/triple-for-rdf-statement.png  used on input
  line 216.
 (pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
-
-
-LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
- 217.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 217.
-
-
-
-LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
- 217.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 217.
-
-
-
-LaTeX Warning: Reference `rdf-graph-for-statement' on page 15 undefined on inpu
-t line 221.
-
-
-LaTeX Warning: Reference `triple-for-rdf-statement' on page 15 undefined on inp
-ut line 221.
-
-
-LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
- 221.
-
-<images/ch2/rdf-graph-for-statement.png, id=193, 400.49625pt x 206.7725pt>
+<images/ch2/rdf-graph-for-statement.png, id=679, 400.49625pt x 206.7725pt>
 File: images/ch2/rdf-graph-for-statement.png Graphic file (type png)
 <use images/ch2/rdf-graph-for-statement.png>
 Package pdftex.def Info: images/ch2/rdf-graph-for-statement.png  used on input 
 line 230.
 (pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
-
-LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
- 231.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 231.
-
-
-
-LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
- 231.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 15 undefined on input line 231.
-
-
-
-LaTeX Warning: Reference `graph-for-relative-statements' on page 15 undefined o
-n input line 235.
-
-
-LaTeX Warning: Reference `rdf-notations' on page 15 undefined on input line 235
-.
-
-
-LaTeX Warning: Reference `graph-for-relative-statements' on page 15 undefined o
-n input line 235.
-
-[15 <./images/ch2/statement-for-rdf.png> <./images/ch2/triple-for-rdf-statement
-.png>]
-<images/ch2/graph-for-relative-statements.png, id=202, 618.31pt x 158.5925pt>
+ [15 <./images/ch2/statement-for-rdf.png> <./images/ch2/triple-for-rdf-statemen
+t.png>]
+<images/ch2/graph-for-relative-statements.png, id=694, 618.31pt x 158.5925pt>
 File: images/ch2/graph-for-relative-statements.png Graphic file (type png)
 <use images/ch2/graph-for-relative-statements.png>
 Package pdftex.def Info: images/ch2/graph-for-relative-statements.png  used on 
 input line 239.
 (pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 16 undefined on input line 240.
-
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 16 undefined on input line 240.
-
-
-
-LaTeX Warning: Reference `graph-for-relative-statements' on page 16 undefined o
-n input line 250.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 16 undefined on input line 250.
-
-
-
-LaTeX Warning: Reference `graph-for-relative-statements' on page 16 undefined o
-n input line 250.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 16 undefined on input line 250.
-
-
-
-LaTeX Warning: Reference `graph-for-respondent-details' on page 16 undefined on
- input line 254.
-
-[16 <./images/ch2/rdf-graph-for-statement.png> <./images/ch2/graph-for-relative
--statements.png>]
-<images/ch2/graph-for-respondent-details.png, id=212, 687.56876pt x 386.44376pt
+ [16 <./images/ch2/rdf-graph-for-statement.png> <./images/ch2/graph-for-relativ
+e-statements.png>]
+<images/ch2/graph-for-respondent-details.png, id=708, 687.56876pt x 386.44376pt
 >
 File: images/ch2/graph-for-respondent-details.png Graphic file (type png)
 <use images/ch2/graph-for-respondent-details.png>
@@ -1323,62 +1062,17 @@ Package pdftex.def Info: images/ch2/graph-for-respondent-details.png  used on i
 nput line 258.
 (pdftex.def)             Requested size: 426.79134pt x 239.87569pt.
 
-
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 259.
-
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 17 undefined on input line 259.
-
-
-
-LaTeX Warning: Reference `blank-node-for-rdf' on page 17 undefined on input lin
-e 265.
-
 [17 <./images/ch2/graph-for-respondent-details.png>]
-<images/ch2/blank-node-for-rdf.png, id=221, 687.56876pt x 400.49625pt>
+<images/ch2/blank-node-for-rdf.png, id=718, 687.56876pt x 400.49625pt>
 File: images/ch2/blank-node-for-rdf.png Graphic file (type png)
 <use images/ch2/blank-node-for-rdf.png>
 Package pdftex.def Info: images/ch2/blank-node-for-rdf.png  used on input line 
 269.
 (pdftex.def)             Requested size: 426.79134pt x 248.59843pt.
-
-
-LaTeX Warning: Reference `graph-for-respondent-details' on page 18 undefined on
- input line 270.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 18 undefined on input line 270.
-
-
-
-LaTeX Warning: Reference `graph-for-respondent-details' on page 18 undefined on
- input line 270.
-
-
-LaTeX Warning: Citation `manola2004rdf' on page 18 undefined on input line 270.
-
-
-
-LaTeX Warning: Citation `berners1998uri' on page 18 undefined on input line 278
-.
-
-
-LaTeX Warning: Citation `fielding1998uri' on page 18 undefined on input line 27
-8.
-
-
-LaTeX Warning: Reference `definitions-for-uri' on page 18 undefined on input li
-ne 278.
-
-[18 <./images/ch2/blank-node-for-rdf.png>]
+ [18 <./images/ch2/blank-node-for-rdf.png>]
 Overfull \hbox (45.9096pt too wide) in paragraph at lines 285--285
 []|\T1/cmr/m/n/12 Resource|  
  []
-
-
-LaTeX Warning: Citation `fielding1998uri' on page 19 undefined on input line 28
-5.
 
 
 Overfull \hbox (46.33174pt too wide) in paragraph at lines 286--286
@@ -1386,136 +1080,40 @@ Overfull \hbox (46.33174pt too wide) in paragraph at lines 286--286
  []
 
 
-LaTeX Warning: Citation `fielding1998uri' on page 19 undefined on input line 28
-8.
-
-
-LaTeX Warning: Citation `fielding1998uri' on page 19 undefined on input line 28
-8.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `berners1998uri' on page 19 undefined on input line 294
-.
-
-
-LaTeX Warning: Reference `syntax-diagram' on page 19 undefined on input line 30
-5.
-
-<images/ch2/syntax-diagram.png, id=234, 733.74126pt x 115.43124pt>
+<images/ch2/syntax-diagram.png, id=742, 733.74126pt x 115.43124pt>
 File: images/ch2/syntax-diagram.png Graphic file (type png)
 <use images/ch2/syntax-diagram.png>
 Package pdftex.def Info: images/ch2/syntax-diagram.png  used on input line 309.
 
 (pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
-
-LaTeX Warning: Citation `berners1998uri' on page 19 undefined on input line 310
-.
-
-
-LaTeX Warning: Citation `berners1998uri' on page 19 undefined on input line 310
-.
-
-
-LaTeX Warning: Reference `components-of-url-example' on page 19 undefined on in
-put line 314.
-
-<images/ch2/components-of-url-example.png, id=235, 696.6025pt x 182.6825pt>
+<images/ch2/components-of-url-example.png, id=746, 696.6025pt x 182.6825pt>
 File: images/ch2/components-of-url-example.png Graphic file (type png)
 <use images/ch2/components-of-url-example.png>
 Package pdftex.def Info: images/ch2/components-of-url-example.png  used on inpu
 t line 322.
 (pdftex.def)             Requested size: 426.79134pt x 111.92397pt.
-
-LaTeX Warning: Citation `berners1998uri' on page 19 undefined on input line 323
-.
-
-
-LaTeX Warning: Citation `berners1998uri' on page 19 undefined on input line 323
-.
-
-
-LaTeX Warning: Citation `ngomo2014introduction' on page 19 undefined on input l
-ine 329.
-
-
-LaTeX Warning: Reference `ldlc-stages' on page 19 undefined on input line 329.
-
-
-LaTeX Warning: Reference `ldlc-stages' on page 19 undefined on input line 329.
-
 [19]
-
-LaTeX Warning: Citation `ngomo2014introduction' on page 20 undefined on input l
-ine 343.
-
-
-LaTeX Warning: Citation `ngomo2014introduction' on page 20 undefined on input l
-ine 343.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation `gruber1995towards' on page 20 undefined on input line 
-349.
-
-
-LaTeX Warning: Citation `jacob2003ontologies' on page 20 undefined on input lin
-e 349.
-
 [20] [21 <./images/ch2/syntax-diagram.png> <./images/ch2/components-of-url-exam
-ple.png>]
-
-LaTeX Warning: Citation `horridge2009practical' on page 22 undefined on input l
-ine 353.
-
-[22]
-
-LaTeX Warning: Citation `horridge2009practical' on page 23 undefined on input l
-ine 361.
-
-
-LaTeX Warning: Reference `owl-individuals' on page 23 undefined on input line 3
-61.
-
-<images/ch2/owl-individuals.png, id=273, 307.1475pt x 159.59625pt>
+ple.png>] [22]
+<images/ch2/owl-individuals.png, id=792, 307.1475pt x 159.59625pt>
 File: images/ch2/owl-individuals.png Graphic file (type png)
 <use images/ch2/owl-individuals.png>
 Package pdftex.def Info: images/ch2/owl-individuals.png  used on input line 365
 .
 (pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
-
-LaTeX Warning: Reference `owl-individuals' on page 23 undefined on input line 3
-72.
-
-
-LaTeX Warning: Reference `owl-properties' on page 23 undefined on input line 37
-4.
-
-<images/ch2/owl-properties.png, id=275, 307.1475pt x 201.75375pt>
+<images/ch2/owl-properties.png, id=796, 307.1475pt x 201.75375pt>
 File: images/ch2/owl-properties.png Graphic file (type png)
 <use images/ch2/owl-properties.png>
 Package pdftex.def Info: images/ch2/owl-properties.png  used on input line 378.
 
 (pdftex.def)             Requested size: 227.62204pt x 149.51707pt.
-[23 <./images/ch2/owl-individuals.png>]
-
-LaTeX Warning: Citation `horridge2009practical' on page 24 undefined on input l
-ine 385.
-
-
-LaTeX Warning: Reference `owl-classes-with-individuals-and-properties' on page 
-24 undefined on input line 399.
-
-
-LaTeX Warning: Reference `owl-properties' on page 24 undefined on input line 39
-9.
-
-[24 <./images/ch2/owl-properties.png>]
-<images/ch2/owl-classes-with-individuals-and-properties.png, id=296, 307.1475pt
+ [23 <./images/ch2/owl-individuals.png>] [24 <./images/ch2/owl-properties.png>]
+<images/ch2/owl-classes-with-individuals-and-properties.png, id=816, 307.1475pt
  x 312.16624pt>
 File: images/ch2/owl-classes-with-individuals-and-properties.png Graphic file (
 type png)
@@ -1523,80 +1121,19 @@ type png)
 Package pdftex.def Info: images/ch2/owl-classes-with-individuals-and-properties
 .png  used on input line 403.
 (pdftex.def)             Requested size: 227.62204pt x 231.34236pt.
-
-
-LaTeX Warning: Reference `chap:proofOfConcept' on page 25 undefined on input li
-ne 410.
-
-[25 <./images/ch2/owl-classes-with-individuals-and-properties.png>] [26]
-
-LaTeX Warning: Citation `shacl4protege' on page 27 undefined on input line 434.
-
-
-
-LaTeX Warning: Reference `chap:appendix1' on page 27 undefined on input line 43
-8.
-
-
-LaTeX Warning: Reference `chap:appendix2' on page 27 undefined on input line 43
-8.
-
-
-LaTeX Warning: Reference `chap:appendix1' on page 27 undefined on input line 43
-8.
-
-
-LaTeX Warning: Citation `ermilov2013csv' on page 27 undefined on input line 438
-.
-
-[27]
-
-LaTeX Warning: Citation `han2008rdf' on page 28 undefined on input line 448.
-
-
-LaTeX Warning: Citation `andreas2009xlwrap' on page 28 undefined on input line 
-456.
-
-[28]
-
-LaTeX Warning: Citation `denny2014wikidata' on page 29 undefined on input line 
-482.
-
-
-LaTeX Warning: Citation `fredo2014intro' on page 29 undefined on input line 484
-.
-
-[29]
-
-LaTeX Warning: Reference `wikidata-uofr' on page 30 undefined on input line 486
-.
-
-<images/ch2/wikidata-uofr.png, id=360, 615.29875pt x 792.9625pt>
+ [25 <./images/ch2/owl-classes-with-individuals-and-properties.png>] [26] [27] 
+[28] [29]
+<images/ch2/wikidata-uofr.png, id=891, 615.29875pt x 792.9625pt>
 File: images/ch2/wikidata-uofr.png Graphic file (type png)
 <use images/ch2/wikidata-uofr.png>
 Package pdftex.def Info: images/ch2/wikidata-uofr.png  used on input line 490.
 (pdftex.def)             Requested size: 426.79134pt x 550.03651pt.
 
-LaTeX Warning: Reference `wikidata-uofr' on page 30 undefined on input line 499
-.
-
-
-LaTeX Warning: Reference `uofr-statement-properties-and-id' on page 30 undefine
-d on input line 503.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `uofr-identifier-properties-and-id' on page 30 undefin
-ed on input line 528.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `rdf-xml-uofr' on page 30 undefined on input line 560.
-
 
 
 Overfull \hbox (0.74484pt too wide) in paragraph at lines 560--561
@@ -1609,7 +1146,7 @@ a.org/wiki/<id>'', where
 LaTeX Warning: Text page 32 contains only floats.
 
 [32]
-<images/ch2/rdf-xml-uofr.png, id=376, 626.34pt x 485.815pt>
+<images/ch2/rdf-xml-uofr.png, id=908, 626.34pt x 485.815pt>
 File: images/ch2/rdf-xml-uofr.png Graphic file (type png)
 <use images/ch2/rdf-xml-uofr.png>
 Package pdftex.def Info: images/ch2/rdf-xml-uofr.png  used on input line 564.
@@ -1620,29 +1157,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 573--573
 how-pattern-matching-works-
  []
 
-
-LaTeX Warning: Citation `auer2007dbpedia' on page 34 undefined on input line 57
-3.
-
-
-LaTeX Warning: Citation `bizer2009dbpedia' on page 34 undefined on input line 5
-75.
-
-
-LaTeX Warning: Reference `dbpedia-uofr' on page 34 undefined on input line 575.
-
-
-<images/ch2/dbpedia-uofr.png, id=392, 679.53876pt x 664.4825pt>
+<images/ch2/dbpedia-uofr.png, id=926, 679.53876pt x 664.4825pt>
 File: images/ch2/dbpedia-uofr.png Graphic file (type png)
 <use images/ch2/dbpedia-uofr.png>
 Package pdftex.def Info: images/ch2/dbpedia-uofr.png  used on input line 579.
 (pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
-
-LaTeX Warning: Reference `depedia-architecture' on page 34 undefined on input l
-ine 584.
-
 [34] [35 <./images/ch2/dbpedia-uofr.png>]
-<images/ch2/depedia-architecture.png, id=411, 626.34pt x 321.2pt>
+<images/ch2/depedia-architecture.png, id=945, 626.34pt x 321.2pt>
 File: images/ch2/depedia-architecture.png Graphic file (type png)
 <use images/ch2/depedia-architecture.png>
 Package pdftex.def Info: images/ch2/depedia-architecture.png  used on input lin
@@ -1653,10 +1174,6 @@ e 588.
 
  (./ch3.tex
 Chapter 3.
-
-LaTeX Warning: Reference `chap:proofOfConcept' on page 37 undefined on input li
-ne 6.
-
 ) [37
 
 
@@ -1666,130 +1183,59 @@ ne 6.
 
  (./ch4.tex
 Chapter 4.
-
-LaTeX Warning: Citation `alatrish2013comparison' on page 38 undefined on input 
-line 11.
-
 [38
 
 
 
-]
-
-LaTeX Warning: Citation `alatrish2013comparison' on page 39 undefined on input 
-line 29.
-
-
-LaTeX Warning: Citation `alatrish2013comparison' on page 39 undefined on input 
-line 33.
-
-
-LaTeX Warning: Citation `neilson1994usability' on page 39 undefined on input li
-ne 37.
-
-
-LaTeX Warning: Citation `quesenbery2003dimensions' on page 39 undefined on inpu
-t line 38.
-
-
-LaTeX Warning: Citation `quesenbery2003dimensions' on page 39 undefined on inpu
-t line 38.
-
-
-LaTeX Warning: Reference `5Es' on page 39 undefined on input line 38.
-
-[39]
-<images/ch4/5Es.png, id=440, 271.0125pt x 240.9pt>
+] [39]
+<images/ch4/5Es.png, id=979, 271.0125pt x 240.9pt>
 File: images/ch4/5Es.png Graphic file (type png)
 <use images/ch4/5Es.png>
 Package pdftex.def Info: images/ch4/5Es.png  used on input line 42.
 (pdftex.def)             Requested size: 341.43306pt x 303.50618pt.
  [40 <./images/ch4/5Es.png>] [41] [42]
-
-LaTeX Warning: Reference `feedback-form' on page 43 undefined on input line 89.
-
-
-<images/ch4/feedback-form.png, id=459, 484.81125pt x 572.1375pt>
+<images/ch4/feedback-form.png, id=998, 484.81125pt x 572.1375pt>
 File: images/ch4/feedback-form.png Graphic file (type png)
 <use images/ch4/feedback-form.png>
 Package pdftex.def Info: images/ch4/feedback-form.png  used on input line 93.
 (pdftex.def)             Requested size: 426.79134pt x 503.69208pt.
-
-LaTeX Warning: Citation `prof' on page 43 undefined on input line 94.
-
-
-LaTeX Warning: Citation `prof' on page 43 undefined on input line 94.
-
-
-LaTeX Warning: Reference `protege-homescreen' on page 43 undefined on input lin
-e 98.
-
-<images/ch4/protege-homescreen.png, id=461, 1439.3775pt x 791.95876pt>
+<images/ch4/protege-homescreen.png, id=1003, 1439.3775pt x 791.95876pt>
 File: images/ch4/protege-homescreen.png Graphic file (type png)
 <use images/ch4/protege-homescreen.png>
 Package pdftex.def Info: images/ch4/protege-homescreen.png  used on input line 
 102.
 (pdftex.def)             Requested size: 426.79134pt x 234.82216pt.
-
-LaTeX Warning: Reference `class-hierarchy' on page 43 undefined on input line 1
-09.
-
-[43] [44 <./images/ch4/feedback-form.png>]
-<images/ch4/class-hierarchy.png, id=476, 821.0675pt x 448.67625pt>
+ [43] [44 <./images/ch4/feedback-form.png>]
+<images/ch4/class-hierarchy.png, id=1016, 821.0675pt x 448.67625pt>
 File: images/ch4/class-hierarchy.png Graphic file (type png)
 <use images/ch4/class-hierarchy.png>
 Package pdftex.def Info: images/ch4/class-hierarchy.png  used on input line 113
 .
 (pdftex.def)             Requested size: 426.79134pt x 233.21715pt.
+<images/ch4/tools-menu-class-hierarchy.png, id=1018, 541.02126pt x 199.74625pt>
 
-
-LaTeX Warning: Reference `tools-menu-class-hierarchy' on page 45 undefined on i
-nput line 120.
-
-<images/ch4/tools-menu-class-hierarchy.png, id=477, 541.02126pt x 199.74625pt>
 File: images/ch4/tools-menu-class-hierarchy.png Graphic file (type png)
 <use images/ch4/tools-menu-class-hierarchy.png>
 Package pdftex.def Info: images/ch4/tools-menu-class-hierarchy.png  used on inp
 ut line 124.
 (pdftex.def)             Requested size: 426.79134pt x 157.5753pt.
-
-LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 45 undefined on input
- line 129.
-
-<images/ch4/enter-hierarchy-pop-up.png, id=478, 803.0pt x 575.14874pt>
+<images/ch4/enter-hierarchy-pop-up.png, id=1020, 803.0pt x 575.14874pt>
 File: images/ch4/enter-hierarchy-pop-up.png Graphic file (type png)
 <use images/ch4/enter-hierarchy-pop-up.png>
 Package pdftex.def Info: images/ch4/enter-hierarchy-pop-up.png  used on input l
 ine 133.
 (pdftex.def)             Requested size: 426.79134pt x 305.69621pt.
-
-LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 45 undefined on input
- line 138.
-
-
-LaTeX Warning: Reference `create-disjoint-siblings' on page 45 undefined on inp
-ut line 138.
-
-[45 <./images/ch4/protege-homescreen.png>] [46 <./images/ch4/class-hierarchy.pn
-g> <./images/ch4/tools-menu-class-hierarchy.png>] [47 <./images/ch4/enter-hiera
-rchy-pop-up.png>]
-<images/ch4/create-disjoint-siblings.png, id=503, 801.99625pt x 573.14125pt>
+ [45 <./images/ch4/protege-homescreen.png>] [46 <./images/ch4/class-hierarchy.p
+ng> <./images/ch4/tools-menu-class-hierarchy.png>] [47 <./images/ch4/enter-hier
+archy-pop-up.png>]
+<images/ch4/create-disjoint-siblings.png, id=1043, 801.99625pt x 573.14125pt>
 File: images/ch4/create-disjoint-siblings.png Graphic file (type png)
 <use images/ch4/create-disjoint-siblings.png>
 Package pdftex.def Info: images/ch4/create-disjoint-siblings.png  used on input
  line 142.
 (pdftex.def)             Requested size: 426.79134pt x 305.00526pt.
-
-
-LaTeX Warning: Reference `class-hierarchy' on page 48 undefined on input line 1
-49.
-
-
-LaTeX Warning: Reference `survey-class-hierarchy' on page 48 undefined on input
- line 151.
-
-[48 <./images/ch4/create-disjoint-siblings.png>]
-<images/ch4/survey-class-hierarchy.png, id=511, 693.59125pt x 589.20125pt>
+ [48 <./images/ch4/create-disjoint-siblings.png>]
+<images/ch4/survey-class-hierarchy.png, id=1052, 693.59125pt x 589.20125pt>
 File: images/ch4/survey-class-hierarchy.png Graphic file (type png)
 <use images/ch4/survey-class-hierarchy.png>
 Package pdftex.def Info: images/ch4/survey-class-hierarchy.png  used on input l
@@ -1803,108 +1249,43 @@ Package multicol Warning: I moved some lines to the next page.
 
 [49 <./images/ch4/survey-class-hierarchy.png>]
 
-LaTeX Warning: Reference `subsubsec:likertscaleques' on page 50 undefined on in
-put line 194.
-
-
-LaTeX Warning: Citation `prof' on page 50 undefined on input line 198.
-
-
-LaTeX Warning: Reference `likert-degrees' on page 50 undefined on input line 20
-0.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `likert-degrees' on page 50 undefined on input line 21
-6.
-
-
-LaTeX Warning: Reference `likertscale5-class' on page 50 undefined on input lin
-e 216.
-
-
-LaTeX Warning: Reference `subsec:individuals' on page 50 undefined on input lin
-e 216.
-
 [50]
-<images/ch4/likertscale5-class.png, id=524, 663.47874pt x 373.395pt>
+<images/ch4/likertscale5-class.png, id=1070, 663.47874pt x 373.395pt>
 File: images/ch4/likertscale5-class.png Graphic file (type png)
 <use images/ch4/likertscale5-class.png>
 Package pdftex.def Info: images/ch4/likertscale5-class.png  used on input line 
 220.
 (pdftex.def)             Requested size: 426.79134pt x 240.19125pt.
-
-
-LaTeX Warning: Reference `tools-menu-object-property-hierarchy' on page 51 unde
-fined on input line 227.
-
-
-LaTeX Warning: Reference `tools-menu-class-hierarchy' on page 51 undefined on i
-nput line 227.
-
-
-LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 51 undefined on input
- line 227.
-
-
-LaTeX Warning: Reference `create-disjoint-siblings' on page 51 undefined on inp
-ut line 227.
-
-[51 <./images/ch4/likertscale5-class.png>]
-<images/ch4/tools-menu-object-property-hierarchy.png, id=532, 537.00626pt x 195
-.73125pt>
+ [51 <./images/ch4/likertscale5-class.png>]
+<images/ch4/tools-menu-object-property-hierarchy.png, id=1081, 537.00626pt x 19
+5.73125pt>
 File: images/ch4/tools-menu-object-property-hierarchy.png Graphic file (type pn
 g)
 <use images/ch4/tools-menu-object-property-hierarchy.png>
 Package pdftex.def Info: images/ch4/tools-menu-object-property-hierarchy.png  u
 sed on input line 231.
 (pdftex.def)             Requested size: 426.79134pt x 155.56079pt.
-
-
-LaTeX Warning: Reference `object-properties-for-lady-and-parita' on page 52 und
-efined on input line 238.
-
-<images/ch4/object-properties-for-lady-and-parita.png, id=533, 474.77374pt x 17
-9.67125pt>
+<images/ch4/object-properties-for-lady-and-parita.png, id=1083, 474.77374pt x 1
+79.67125pt>
 File: images/ch4/object-properties-for-lady-and-parita.png Graphic file (type p
 ng)
 <use images/ch4/object-properties-for-lady-and-parita.png>
 Package pdftex.def Info: images/ch4/object-properties-for-lady-and-parita.png  
 used on input line 242.
 (pdftex.def)             Requested size: 426.79134pt x 161.51892pt.
-[52 <./images/ch4/tools-menu-object-property-hierarchy.png>]
-
-LaTeX Warning: Citation `horridge2009practical' on page 53 undefined on input l
-ine 253.
-
-
-LaTeX Warning: Reference `domain-and-range-for-hasName-and-isNameOf' on page 53
- undefined on input line 253.
-
-<images/ch4/domain-and-range-for-hasName-and-isNameOf.png, id=542, 474.77374pt 
-x 320.19624pt>
+ [52 <./images/ch4/tools-menu-object-property-hierarchy.png>]
+<images/ch4/domain-and-range-for-hasName-and-isNameOf.png, id=1092, 474.77374pt
+ x 320.19624pt>
 File: images/ch4/domain-and-range-for-hasName-and-isNameOf.png Graphic file (ty
 pe png)
 <use images/ch4/domain-and-range-for-hasName-and-isNameOf.png>
 Package pdftex.def Info: images/ch4/domain-and-range-for-hasName-and-isNameOf.p
 ng  used on input line 257.
 (pdftex.def)             Requested size: 341.43306pt x 230.27727pt.
-
-LaTeX Warning: Reference `survey-object-properties' on page 53 undefined on inp
-ut line 262.
-
-
-LaTeX Warning: Reference `survey-object-properties-domains-and-ranges' on page 
-53 undefined on input line 262.
-
-
-LaTeX Warning: Reference `survey-object-properties-parent-nodes-and-inverse' on
- page 53 undefined on input line 262.
-
-[53 <./images/ch4/object-properties-for-lady-and-parita.png>]
-<images/ch4/survey-object-properties.png, id=551, 679.53876pt x 446.66875pt>
+ [53 <./images/ch4/object-properties-for-lady-and-parita.png>]
+<images/ch4/survey-object-properties.png, id=1103, 679.53876pt x 446.66875pt>
 File: images/ch4/survey-object-properties.png Graphic file (type png)
 <use images/ch4/survey-object-properties.png>
 Package pdftex.def Info: images/ch4/survey-object-properties.png  used on input
@@ -1919,42 +1300,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: Text page 55 contains only floats.
 
 [55 <./images/ch4/survey-object-properties.png>]
-
-LaTeX Warning: Reference `tools-menu-data-property' on page 56 undefined on inp
-ut line 317.
-
-
-LaTeX Warning: Reference `tools-menu-class-hierarchy' on page 56 undefined on i
-nput line 317.
-
-
-LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 56 undefined on input
- line 317.
-
-
-LaTeX Warning: Reference `create-disjoint-siblings' on page 56 undefined on inp
-ut line 317.
-
-<images/ch4/tools-menu-data-property.png, id=569, 538.01pt x 196.735pt>
+<images/ch4/tools-menu-data-property.png, id=1119, 538.01pt x 196.735pt>
 File: images/ch4/tools-menu-data-property.png Graphic file (type png)
 <use images/ch4/tools-menu-data-property.png>
 Package pdftex.def Info: images/ch4/tools-menu-data-property.png  used on input
  line 321.
 (pdftex.def)             Requested size: 426.79134pt x 156.06734pt.
-
-LaTeX Warning: Reference `survey-data-properties' on page 56 undefined on input
- line 326.
-
-<images/ch4/survey-data-properties.png, id=570, 954.56625pt x 295.1025pt>
+<images/ch4/survey-data-properties.png, id=1121, 954.56625pt x 295.1025pt>
 File: images/ch4/survey-data-properties.png Graphic file (type png)
 <use images/ch4/survey-data-properties.png>
 Package pdftex.def Info: images/ch4/survey-data-properties.png  used on input l
 ine 330.
 (pdftex.def)             Requested size: 426.79134pt x 131.93933pt.
-
-LaTeX Warning: Reference `survey-data-properties-domains-and-ranges' on page 56
- undefined on input line 335.
-
 
 Overfull \hbox (1.53156pt too wide) in paragraph at lines 342--342
 []|\T1/cmr/m/n/12 Respondent|  
@@ -1983,103 +1340,48 @@ Overfull \hbox (21.80428pt too wide) in paragraph at lines 339--354
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `instances-of-survey-class' on page 56 undefined on in
-put line 360.
-
 [56 <./images/ch4/tools-menu-data-property.png>]
-<images/ch4/instances-of-survey-class.png, id=578, 573.14125pt x 309.155pt>
+<images/ch4/instances-of-survey-class.png, id=1130, 573.14125pt x 309.155pt>
 File: images/ch4/instances-of-survey-class.png Graphic file (type png)
 <use images/ch4/instances-of-survey-class.png>
 Package pdftex.def Info: images/ch4/instances-of-survey-class.png  used on inpu
 t line 364.
 (pdftex.def)             Requested size: 426.79134pt x 230.21461pt.
-
-
-LaTeX Warning: Reference `survey-individuals' on page 57 undefined on input lin
-e 369.
-
-[57 <./images/ch4/survey-data-properties.png>]
-
-LaTeX Warning: Reference `final-survey-classes' on page 58 undefined on input l
-ine 386.
-
-<images/ch4/final-survey-classes.png, id=587, 583.17876pt x 364.36125pt>
+ [57 <./images/ch4/survey-data-properties.png>]
+<images/ch4/final-survey-classes.png, id=1139, 583.17876pt x 364.36125pt>
 File: images/ch4/final-survey-classes.png Graphic file (type png)
 <use images/ch4/final-survey-classes.png>
 Package pdftex.def Info: images/ch4/final-survey-classes.png  used on input lin
 e 390.
 (pdftex.def)             Requested size: 426.79134pt x 266.65977pt.
-
-LaTeX Warning: Reference `final-survey-classes' on page 58 undefined on input l
-ine 395.
-
-[58 <./images/ch4/instances-of-survey-class.png>]
-
-LaTeX Warning: Reference `survey-data-properties' on page 59 undefined on input
- line 399.
-
-
-LaTeX Warning: Reference `shacl-editor' on page 59 undefined on input line 401.
-
-
-[59 <./images/ch4/final-survey-classes.png>]
-<images/ch4/shacl-editor.png, id=603, 1011.78pt x 468.75125pt>
+ [58 <./images/ch4/instances-of-survey-class.png>] [59 <./images/ch4/final-surv
+ey-classes.png>]
+<images/ch4/shacl-editor.png, id=1153, 1011.78pt x 468.75125pt>
 File: images/ch4/shacl-editor.png Graphic file (type png)
 <use images/ch4/shacl-editor.png>
 Package pdftex.def Info: images/ch4/shacl-editor.png  used on input line 405.
 (pdftex.def)             Requested size: 426.79134pt x 197.73248pt.
-
-
-LaTeX Warning: Reference `shacl-constraint-violations' on page 60 undefined on 
-input line 410.
-
-<images/ch4/shacl-constraint-violations.png, id=604, 1275.76625pt x 392.46625pt
->
+<images/ch4/shacl-constraint-violations.png, id=1155, 1275.76625pt x 392.46625p
+t>
 File: images/ch4/shacl-constraint-violations.png Graphic file (type png)
 <use images/ch4/shacl-constraint-violations.png>
 Package pdftex.def Info: images/ch4/shacl-constraint-violations.png  used on in
 put line 414.
 (pdftex.def)             Requested size: 426.79134pt x 131.29285pt.
-[60 <./images/ch4/shacl-editor.png> <./images/ch4/shacl-constraint-violations.p
-ng>]
-
-LaTeX Warning: Citation `falconer2010ontograf' on page 61 undefined on input li
-ne 429.
-
-
-LaTeX Warning: Citation `antoniazz2018rdf' on page 61 undefined on input line 4
-29.
-
-
-LaTeX Warning: Reference `ontograf' on page 61 undefined on input line 431.
-
-[61]
-<images/ch4/ontograf.png, id=626, 1105.12875pt x 622.325pt>
+ [60 <./images/ch4/shacl-editor.png> <./images/ch4/shacl-constraint-violations.
+png>] [61]
+<images/ch4/ontograf.png, id=1177, 1105.12875pt x 622.325pt>
 File: images/ch4/ontograf.png Graphic file (type png)
 <use images/ch4/ontograf.png>
 Package pdftex.def Info: images/ch4/ontograf.png  used on input line 435.
 (pdftex.def)             Requested size: 426.79134pt x 240.33179pt.
-
-
-LaTeX Warning: Citation `lohmann2014webvowl' on page 62 undefined on input line
- 442.
-
-
-LaTeX Warning: Citation `antoniazz2018rdf' on page 62 undefined on input line 4
-42.
-
-[62 <./images/ch4/ontograf.png>]
-
-LaTeX Warning: Reference `webVOWL' on page 63 undefined on input line 454.
-
-
-Overfull \hbox (6.7365pt too wide) in paragraph at lines 454--455
-[]\T1/cmr/m/n/12 Figure [] shows the graph-i-cal rep-re-sen-ta-tion of the sur-
-vey on-tol-ogy us-ing Web[]VOWL.
+ [62 <./images/ch4/ontograf.png>]
+Overfull \hbox (14.87338pt too wide) in paragraph at lines 454--455
+[]\T1/cmr/m/n/12 Figure []4.21[] shows the graph-i-cal rep-re-sen-ta-tion of th
+e sur-vey on-tol-ogy us-ing Web[]VOWL.
  []
 
-<images/ch4/webVOWL.png, id=636, 864.22874pt x 727.71875pt>
+<images/ch4/webVOWL.png, id=1189, 864.22874pt x 727.71875pt>
 File: images/ch4/webVOWL.png Graphic file (type png)
 <use images/ch4/webVOWL.png>
 Package pdftex.def Info: images/ch4/webVOWL.png  used on input line 458.
@@ -2097,12 +1399,7 @@ LaTeX Warning: Reference `chap:ontology' on page 65 undefined on input line 13.
 
 
 
-]
-
-LaTeX Warning: Reference `chap:appendix3' on page 66 undefined on input line 24
-.
-
-) [66]
+]) [66]
 \openout2 = `appendix1.aux'.
 
  (./appendix1.tex
@@ -2112,37 +1409,724 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
+) [67
 
-./appendix1.tex:36: Package inputenc Error: Invalid UTF-8 byte sequence.
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 ...2,1,1,1,3,1,4,1,1,literally not a thingÂ ,
-                                                  "the professor, the gradin...
 
-? 
-./appendix1.tex:36: Emergency stop.
- ...                                              
-                                                  
-l.36 ...2,1,1,1,3,1,4,1,1,literally not a thingÂ ,
-                                                  "the professor, the gradin...
+]
+[68] [69] [70] [71] [72]) [73]
+\openout2 = `appendix2.aux'.
 
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
+ (./appendix2.tex
+Appendix B.
 
- 
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 43--44
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 50--51
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 54--55
+[][] 
+ []
+
+[74
+
+
+
+]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 63--64
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 69--70
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 76--77
+[][] 
+ []
+
+[75]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 79--80
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 86--87
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 91--92
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 98--99
+[][] 
+ []
+
+[76]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 104--105
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 111--112
+[][] 
+ []
+
+[77]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 117--118
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 124--125
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 127--128
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 134--135
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 140--141
+[][] 
+ []
+
+[78]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 147--148
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 150--151
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 157--158
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 162--163
+[][] 
+ []
+
+[79]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 170--171
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 178--179
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 183--184
+[][] 
+ []
+
+[80]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 189--190
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 196--197
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 202--203
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 209--210
+[][] 
+ []
+
+[81]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 215--216
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 222--223
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 225--226
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 232--233
+[][] 
+ []
+
+[82]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 238--239
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 242--243
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 248--249
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 255--256
+[][] 
+ []
+
+[83]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 261--262
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 268--269
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 274--275
+[][] 
+ []
+
+[84]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 281--282
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 287--288
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 294--295
+[][] 
+ []
+
+[85]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 299--300
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 307--308
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 311--312
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 318--319
+[][] 
+ []
+
+[86]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 324--325
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 331--332
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 337--338
+[][] 
+ []
+
+[87]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 344--345
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 348--349
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 357--358
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 363--364
+[][] 
+ []
+
+[88]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 370--371
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 371--372
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 374--375
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 381--382
+[][] 
+ []
+
+[89]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 390--391
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 397--398
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 403--404
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 409--410
+[][] 
+ []
+
+[90]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 416--417
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 422--423
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 429--430
+[][] 
+ []
+
+[91]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 436--437
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 442--443
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 446--447
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 455--456
+[][] 
+ []
+
+[92]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 461--462
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 468--469
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 474--475
+[][] 
+ []
+
+[93]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 481--482
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 488--489
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 491--492
+[][] 
+ []
+
+[94]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 500--501
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 507--508
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 513--514
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 520--521
+[][] 
+ []
+
+[95]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 524--525
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 533--534
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 539--540
+[][] 
+ []
+
+[96]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 546--547
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 552--553
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 559--560
+[][] 
+ []
+
+[97]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 565--566
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 572--573
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 575--576
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 582--583
+[][] 
+ []
+
+[98]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 586--587
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 595--596
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 601--602
+[][] 
+ []
+
+[99]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 608--609
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 619--620
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 621--622
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 626--627
+[][] 
+ []
+
+[100]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 633--634
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 636--637
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 643--644
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 648--649
+[][] 
+ []
+
+[101]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 655--656
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 662--663
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 669--670
+[][] 
+ []
+
+[102]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 674--675
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 681--682
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 687--688
+[][] 
+ []
+
+[103]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 694--695
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 698--699
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 707--708
+[][] 
+ []
+
+[104]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 713--714
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 720--721
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 725--726
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 732--733
+[][] 
+ []
+
+[105]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 739--740
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 745--746
+[][] 
+ []
+
+[106]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 752--753
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 758--759
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 761--762
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 767--768
+[][] 
+ []
+
+[107]) [108]
+\openout2 = `appendix3.aux'.
+
+ (./appendix3.tex
+Appendix C.
+[109
+
+
+
+] [110] [111]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 168--170
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 170--171
+[][] 
+ []
+
+[112]
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 182--184
+[][] 
+ []
+
+
+Overfull \hbox (44.31084pt too wide) in paragraph at lines 184--185
+[][] 
+ []
+
+[113] [114] [115] [116] [117] [118] [119] [120]) [121] (./parita-msc.bbl
+Underfull \hbox (badness 5231) in paragraph at lines 42--47
+[]\T1/cmr/m/n/12 David Beck-ett.  RDF 1.1 N-Triples.  \T1/cmr/m/it/12 W3C Rec-o
+m-men-da-tion\T1/cmr/m/n/12 , 2014.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+[]\T1/cmr/m/n/12 Tim Berners-Lee.  Linked Data.  \T1/cmr/m/it/12 W3C Rec-om-men
+-da-tion\T1/cmr/m/n/12 , 1996.
+ []
+
+[122
+
+
+] [123]
+Underfull \hbox (badness 10000) in paragraph at lines 161--165
+[]\T1/cmr/m/n/12 Sean Fal-coner.  On-tograf Pro-tégé Plu-gin.  \T1/cmr/m/it/12 
+Avail-able at:
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 187--192
+[]\T1/cmr/m/n/12 Daryl Hep-t-ing.  Stu-dent Feed-back In-stru-ment.  \T1/cmr/m/
+it/12 Avail-able at: []$\T1/cmtt/m/it/12 http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
+\T1/cmtt/m/it/12 / / www2\OML/cmm/m/it/12 :\T1/cmtt/m/it/12 cs\OML/cmm/m/it/12 
+:\T1/cmtt/m/it/12 uregina\OML/cmm/m/it/12 :\T1/cmtt/m/it/12 ca / ~hepting / ass
+ets / teaching / pdf / feedback -[]
+ []
+
+[124])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
+ [125]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+ (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux)
+(./ch1.aux) (./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix1.aux)
+(./appendix2.aux) (./appendix3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
+Package rerunfilecheck Info: File `parita-msc.out' has not changed.
+(rerunfilecheck)             Checksum: 16FFAD1388A82E9B884F5F9BB09FE637;3604.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 19733 strings out of 480608
- 370503 string characters out of 5903631
- 927838 words of memory out of 5000000
- 34973 multiletter control sequences out of 15000+600000
- 548820 words of font info for 65 fonts, out of 8000000 for 9000
+ 21254 strings out of 480608
+ 395738 string characters out of 5903631
+ 1198184 words of memory out of 5000000
+ 35061 multiletter control sequences out of 15000+600000
+ 550974 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,84p,1484b,1140s stack positions out of 5000i,500n,10000p,200000b,80000s
-./appendix1.tex:36:  ==> Fatal error occurred, no output PDF file produced!
+ 45i,11n,84p,1484b,2045s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{lstnumber.-3.465} has been referenced but does no
+t exist, replaced by a fixed one
+
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on parita-msc.pdf (135 pages, 2141135 bytes).
+PDF statistics:
+ 3136 PDF objects out of 3580 (max. 8388607)
+ 2855 compressed objects within 29 object streams
+ 1626 named destinations out of 1728 (max. 500000)
+ 635 words of extra memory for PDF output out of 10000 (max. 10000000)
+
