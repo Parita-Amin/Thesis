@@ -148,7 +148,7 @@ The next step is to create classes and build the hierarchy for the class nodes. 
 
 Once the classes are added, the next step is to describe the classes. Descriptions of classes like \say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on can be added using the Description view of the Class tab (shown in Figure~\ref{class-hierarchy}). Each class can be described individually by selecting a particular class and adding details to the description view. 
 
-All the classes can be created and described using the above steps. In the end, the class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. The survey can have \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, and \say{Survey Answers}, which are considered for this ontology as well. Here, the type of survey used is \say{feedback survey}. The survey questions and survey answers would further have classes corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
+All the classes can be created and described using the above steps. In the end, the class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. The survey can have \say{Survey Response}, \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, and \say{Survey Answers}, which are considered for this ontology as well. 
 
 \begin{figure}[htp]
     \centering
@@ -156,6 +156,8 @@ All the classes can be created and described using the above steps. In the end, 
     \caption{Class Hierarchy in Survey Ontology}
     \label{survey-class-hierarchy}
 \end{figure}
+
+Here, the type of survey used is \say{feedback survey}. The \say{SurveyCollection} class corresponds to a collection of survey responses (\say{SurveyResponse} class) that were collected for a particular course (\say{CourseID} class) in a particular semester (\say{SemesterID} class) with a specific collection ID (\say{CollectionID} class). The survey questions and survey answers would further have classes corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
 
 \begin{multicols}{2}
 \begin{itemize}
@@ -189,11 +191,9 @@ All the classes can be created and described using the above steps. In the end, 
 \end{itemize}
 \end{multicols}
 
-For this research, the feedback survey that has been considered has Likert and Open-ended questions. The classes described for the questions and answers are \say{LikertScaleQuestions}, and \say{OpenEndedQuestions} as sub-classes of \say{SurveyQuestions}, and \say{LikertScaleAnswers}, and \say{OpenEndedAnswers} as sub-classes of \say{SurveyAnswers}.
+The feedback survey that has been considered has Likert and Open-ended questions. The classes described for the questions and answers are \say{LikertScaleQuestions}, and \say{OpenEndedQuestions} as sub-classes of \say{SurveyQuestions}, and \say{LikertScaleAnswers}, and \say{OpenEndedAnswers} as sub-classes of \say{SurveyAnswers}. For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct classes. Open-ended questions have unpredictable answers.
 
-For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct classes. Open-ended questions have unpredictable answers. Section~\ref{subsubsec:likertscaleques} focuses on likert scale questions. 
-
-\subsubsection{The ``LikertScaleQuestions'' Class}\label{subsubsec:likertscaleques}
+\subsubsection{The ``LikertScaleQuestions'' Class}
 
 Likert questions are the questions for which the answers are from the preset list of answers. For the Likert questions, the questions can be either of type \say{Never-Always-4} or \say{Never-Always-5} or \say{Never-Always-7} or \say{Never-Always-*}, of which Never-Always-5 has been used by Hepting~\cite{prof}. The survey ontology consists of \say{LikertScaleQuestions} class for likert questions.
 
@@ -274,13 +274,17 @@ Using the above method of naming and building object properties, some of the pri
     \hline \ \ \ \ \ Object Property & \ \ \ \ \ \ \ \ Domain & \ \ \ \ \ \ \ \ Range\\ \hline
      hasSurveyQuestion & Survey & SurveyQuestions\\ \hline
      hasSurveyAnswer & Survey & SurveyAnswers\\ \hline
-     hasRespondedOn & Respondent & ResponseDate\\ \hline
-     respondedToSurvey & Respondent & Survey\\ \hline
-     isTypeOf & FeedbackSurvey & Survey\\ \hline
      hasOEAnswer\_Change & OpenEndedQuestions & OpenEndedAnswers\\ \hline
      hasOEAnswer\_LikeBest & OpenEndedQuestions & OpenEndedAnswers\\ \hline
      hasOEAnswer\_Strengths & OpenEndedQuestions & OpenEndedAnswers\\ \hline
      hasLikertScaleAnswer & LikertScaleQuestions & LikertScale5\\ \hline
+     hasEvent & SurveyResponse & Event\\ \hline
+     hasCourseID & SurveyResponse & CourseID\\ \hline
+     hasSemesterID & SurveyResponse & SemesterID\\ \hline
+     hasCollectionID & SurveyResponse & CollectionID\\ \hline
+     isCollectionOf & SurveyCollection & SurveyResponse\\ \hline
+     respondedToSurvey & Respondent & Survey\\ \hline
+     isTypeOf & FeedbackSurvey & Survey\\ \hline
     \end{tabular}
     \caption{Object Properties and Their Domain and Range}
     \label{survey-object-properties-domains-and-ranges}
@@ -298,7 +302,11 @@ Using the above method of naming and building object properties, some of the pri
      hasOEAnswer\_Change & owl:TopObjectProperty & \\ \hline
      hasOEAnswer\_LikeBest & owl:TopObjectProperty & \\ \hline
      hasOEAnswer\_Strengths & owl:TopObjectProperty & \\ \hline
-     hasRespondedOn & owl:TopObjectProperty & \\ \hline
+     hasEvent & owl:TopObjectProperty & \\ \hline
+     hasCourseID & owl:TopObjectProperty & \\ \hline
+     hasSemesterID & owl:TopObjectProperty & \\ \hline
+     hasCollectionID & owl:TopObjectProperty & \\ \hline
+     isCollectionOf & owl:TopObjectProperty & \\ \hline
      respondedByRespondent & owl:TopObjectProperty & respondedToSurvey\\ \hline
      respondedToSurvey & owl:TopObjectProperty & respondedByRespondent\\ \hline
      hasSurveyQuestion & hasContent & isSurveyQuestionOf\\ \hline
@@ -314,13 +322,13 @@ Using the above method of naming and building object properties, some of the pri
 
 Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/}
 
-In protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}). 
+In protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property-hierarchy}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{tools-menu-class-hierarchy}, ~\ref{enter-hierarchy-pop-up}, and ~\ref{create-disjoint-siblings}). 
 
 \begin{figure}[htp] 
     \centering
-    \includegraphics[width=15cm]{images/ch4/tools-menu-data-property.png}
+    \includegraphics[width=15cm]{images/ch4/tools-menu-data-property-hierarchy.png}
     \caption{Tools Menu to Create Data Property Hierarchy}
-    \label{tools-menu-data-property}
+    \label{tools-menu-data-property-hierarchy}
 \end{figure}
 
 Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{survey-data-properties} shows the data properties described for the survey ontology. 
@@ -371,10 +379,14 @@ A new individual can be described using the Individuals view of the Entities tab
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|} 
-    \hline \ \ \ \ \ Class & \ \ \ \ \ \ \ Individuals \\ \hline
-     Respondent &  1, 2, 3, ... , 50 \\ \hline
-     ResponseDate &  05-JAN-2022 \\ \hline
+    \hline \ \ \ \ \ \ \ \ \ \ Class & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Individuals \\ \hline
+     Respondent &  1, 2, 3, ... , 59 \\ \hline
      Survey & CS280/202210, CS499+900/202210, CS730/202210 \\ \hline
+     SurveyCollection &  Collection1, Collection2 \\ \hline
+     Event &  FinalExam, Midterm \\ \hline
+     CollectionID &  CS280/202210/Collection1 \\ \hline
+     SemesterID &  202210, 202220, 202230 \\ \hline
+     CourseID &  CS280, CS499+900, CS730 \\ \hline
      \multirow{2}{9.5em}{OpenEndedQuestions} &  OEQuestion\_LikeBest, OEQuestion\_Change, \\& OEQuestion\_Strengths \\ \hline
      OpenEndedAnswers & OEAns\_LikeBest, OEAns\_Change, OEAns\_Strengths \\ \hline
      LikertScale5 & 1\_Never, 2\_Rarely, 3\_Sometimes, 4\_Often, 5\_Always \\ \hline
@@ -392,7 +404,7 @@ After describing the classes, object properties, data properties, and individual
     \label{final-survey-classes}
 \end{figure}
 
-The blue (\say{Survey} entity) back arrow in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
+The blue (\say{Survey} and \say{SurveyCollection} class) back arrow in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
 
 \subsection{Using SHACL for Data Validation}
 
@@ -416,7 +428,15 @@ On clicking the Validate button, the summary of violated constraints is displaye
     \label{shacl-constraint-violations}
 \end{figure}
 
+\subsection{Querying Linked Open Data using SPARQL}
+
+
+
 \section{From Spreadsheets to Linked Open Data}
+
+After describing the best possible version of the ontology, the next step is to convert the data stored in spreadsheets to linked open data using the ontology .
+
+\section{Publishing Linked Open Data for Survey}
 
 
 
@@ -455,7 +475,7 @@ Figure~\ref{webVOWL} shows the graphical representation of the survey ontology u
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15.5cm]{images/ch4/webVOWL.png}
+    \includegraphics[width=15cm]{images/ch4/webVOWL.png}
     \caption{WebVOWL for Survey Ontology}
     \label{webVOWL}
 \end{figure}
