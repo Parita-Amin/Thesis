@@ -40,19 +40,21 @@
 \contentsline {subsection}{\numberline {4.2.1}Usability of Protégé}{40}{subsection.4.2.1}%
 \contentsline {section}{\numberline {4.3}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{43}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Classes and Class Hierarchy}{43}{subsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.1.1}The ``LikertScaleQuestions'' Class}{50}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}The ``LikertScaleQuestions'' Class}{51}{subsubsection.4.3.1.1}%
 \contentsline {subsection}{\numberline {4.3.2}Object Properties and Object Property Hierarchy}{52}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{54}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Individuals}{57}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Using SHACL for Data Validation}{59}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{61}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Visualization Tools for \ac {owl} Ontology}{61}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}OntoGraf}{61}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}WebVOWL}{62}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{65}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{65}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{66}{section.5.2}%
-\contentsline {chapter}{\numberline {A}Sample CSV Data}{67}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Expression of CSV Data in LOD (Turtle)}{74}{appendix.B}%
-\contentsline {chapter}{\numberline {C}OWL Vocabulary for Feedback Survey}{109}{appendix.C}%
-\contentsline {chapter}{References}{122}{lstnumber.-3.465}%
+\contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{55}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Individuals}{58}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Using SHACL for Data Validation}{61}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Querying Linked Open Data using SPARQL}{62}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{62}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Publishing Linked Open Data for Survey}{62}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Visualization Tools for \ac {owl} Ontology}{62}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}OntoGraf}{63}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}WebVOWL}{63}{subsection.4.6.2}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{66}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{66}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{67}{section.5.2}%
+\contentsline {chapter}{\numberline {A}Sample CSV Data}{68}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Expression of CSV Data in LOD (Turtle)}{75}{appendix.B}%
+\contentsline {chapter}{\numberline {C}OWL Vocabulary for Feedback Survey}{110}{appendix.C}%
+\contentsline {chapter}{References}{123}{lstnumber.-3.465}%
