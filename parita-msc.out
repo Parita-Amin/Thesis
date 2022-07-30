@@ -40,14 +40,16 @@
 \BOOKMARK [2][-]{subsection.4.3.3}{Data Properties and Data Property Hierarchy}{section.4.3}% 40
 \BOOKMARK [2][-]{subsection.4.3.4}{Individuals}{section.4.3}% 41
 \BOOKMARK [2][-]{subsection.4.3.5}{Using SHACL for Data Validation}{section.4.3}% 42
-\BOOKMARK [1][-]{section.4.4}{From Spreadsheets to Linked Open Data}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.5}{Visualization Tools for OWL Ontology}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.5.1}{OntoGraf}{section.4.5}% 45
-\BOOKMARK [2][-]{subsection.4.5.2}{WebVOWL}{section.4.5}% 46
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 47
-\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 49
-\BOOKMARK [0][-]{appendix.A}{Sample CSV Data}{}% 50
-\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in LOD \(Turtle\)}{}% 51
-\BOOKMARK [0][-]{appendix.C}{OWL Vocabulary for Feedback Survey}{}% 52
-\BOOKMARK [0][-]{lstnumber.-3.465}{References}{}% 53
+\BOOKMARK [2][-]{subsection.4.3.6}{Querying Linked Open Data using SPARQL}{section.4.3}% 43
+\BOOKMARK [1][-]{section.4.4}{From Spreadsheets to Linked Open Data}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.5}{Publishing Linked Open Data for Survey}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.6}{Visualization Tools for OWL Ontology}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.6.1}{OntoGraf}{section.4.6}% 47
+\BOOKMARK [2][-]{subsection.4.6.2}{WebVOWL}{section.4.6}% 48
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 49
+\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 51
+\BOOKMARK [0][-]{appendix.A}{Sample CSV Data}{}% 52
+\BOOKMARK [0][-]{appendix.B}{Expression of CSV Data in LOD \(Turtle\)}{}% 53
+\BOOKMARK [0][-]{appendix.C}{OWL Vocabulary for Feedback Survey}{}% 54
+\BOOKMARK [0][-]{lstnumber.-3.465}{References}{}% 55
