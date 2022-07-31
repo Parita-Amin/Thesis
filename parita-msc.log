@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  30 JUL 2022 05:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  31 JUL 2022 05:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -973,7 +973,7 @@ l.40
 
  (./ch2.tex
 Chapter 2.
-<images/ch2/semantic-web.png, id=547, 626.34pt x 318.18875pt>
+<images/ch2/semantic-web.png, id=553, 626.34pt x 318.18875pt>
 File: images/ch2/semantic-web.png Graphic file (type png)
 <use images/ch2/semantic-web.png>
 Package pdftex.def Info: images/ch2/semantic-web.png  used on input line 50.
@@ -983,7 +983,7 @@ Package pdftex.def Info: images/ch2/semantic-web.png  used on input line 50.
 
 
 ]
-<images/ch2/web-stack.png, id=563, 601.24625pt x 327.2225pt>
+<images/ch2/web-stack.png, id=569, 601.24625pt x 327.2225pt>
 File: images/ch2/web-stack.png Graphic file (type png)
 <use images/ch2/web-stack.png>
 Package pdftex.def Info: images/ch2/web-stack.png  used on input line 65.
@@ -996,18 +996,18 @@ a computer-understandable
  []
 
 [10]
-<images/ch2/rdf-xml-doc.png, id=627, 601.24625pt x 130.4875pt>
+<images/ch2/rdf-xml-doc.png, id=633, 601.24625pt x 130.4875pt>
 File: images/ch2/rdf-xml-doc.png Graphic file (type png)
 <use images/ch2/rdf-xml-doc.png>
 Package pdftex.def Info: images/ch2/rdf-xml-doc.png  used on input line 140.
 (pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
-<images/ch2/rdf-triple.png, id=629, 568.1225pt x 107.40125pt>
+<images/ch2/rdf-triple.png, id=635, 568.1225pt x 107.40125pt>
 File: images/ch2/rdf-triple.png Graphic file (type png)
 <use images/ch2/rdf-triple.png>
 Package pdftex.def Info: images/ch2/rdf-triple.png  used on input line 149.
 (pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
  [11]
-<images/ch2/rdf-graph.png, id=641, 572.1375pt x 188.705pt>
+<images/ch2/rdf-graph.png, id=647, 572.1375pt x 188.705pt>
 File: images/ch2/rdf-graph.png Graphic file (type png)
 <use images/ch2/rdf-graph.png>
 Package pdftex.def Info: images/ch2/rdf-graph.png  used on input line 158.
@@ -1019,26 +1019,26 @@ Overfull \hbox (1.08981pt too wide) in paragraph at lines 167--182
  []
 
 [13]
-<images/ch2/rdfs-graph-for-complex.png, id=665, 739.76375pt x 411.5375pt>
+<images/ch2/rdfs-graph-for-complex.png, id=671, 739.76375pt x 411.5375pt>
 File: images/ch2/rdfs-graph-for-complex.png Graphic file (type png)
 <use images/ch2/rdfs-graph-for-complex.png>
 Package pdftex.def Info: images/ch2/rdfs-graph-for-complex.png  used on input l
 ine 198.
 (pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
-<images/ch2/statement-for-rdf.png, id=673, 501.875pt x 88.33pt>
+<images/ch2/statement-for-rdf.png, id=679, 501.875pt x 88.33pt>
 File: images/ch2/statement-for-rdf.png Graphic file (type png)
 <use images/ch2/statement-for-rdf.png>
 Package pdftex.def Info: images/ch2/statement-for-rdf.png  used on input line 2
 07.
 (pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
  [14 <./images/ch2/rdfs-graph-for-complex.png>]
-<images/ch2/triple-for-rdf-statement.png, id=681, 501.875pt x 104.39pt>
+<images/ch2/triple-for-rdf-statement.png, id=687, 501.875pt x 104.39pt>
 File: images/ch2/triple-for-rdf-statement.png Graphic file (type png)
 <use images/ch2/triple-for-rdf-statement.png>
 Package pdftex.def Info: images/ch2/triple-for-rdf-statement.png  used on input
  line 216.
 (pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
-<images/ch2/rdf-graph-for-statement.png, id=689, 400.49625pt x 206.7725pt>
+<images/ch2/rdf-graph-for-statement.png, id=695, 400.49625pt x 206.7725pt>
 File: images/ch2/rdf-graph-for-statement.png Graphic file (type png)
 <use images/ch2/rdf-graph-for-statement.png>
 Package pdftex.def Info: images/ch2/rdf-graph-for-statement.png  used on input 
@@ -1046,7 +1046,7 @@ line 230.
 (pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
  [15 <./images/ch2/statement-for-rdf.png> <./images/ch2/triple-for-rdf-statemen
 t.png>]
-<images/ch2/graph-for-relative-statements.png, id=704, 618.31pt x 158.5925pt>
+<images/ch2/graph-for-relative-statements.png, id=710, 618.31pt x 158.5925pt>
 File: images/ch2/graph-for-relative-statements.png Graphic file (type png)
 <use images/ch2/graph-for-relative-statements.png>
 Package pdftex.def Info: images/ch2/graph-for-relative-statements.png  used on 
@@ -1054,7 +1054,7 @@ input line 239.
 (pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
  [16 <./images/ch2/rdf-graph-for-statement.png> <./images/ch2/graph-for-relativ
 e-statements.png>]
-<images/ch2/graph-for-respondent-details.png, id=718, 687.56876pt x 386.44376pt
+<images/ch2/graph-for-respondent-details.png, id=724, 687.56876pt x 386.44376pt
 >
 File: images/ch2/graph-for-respondent-details.png Graphic file (type png)
 <use images/ch2/graph-for-respondent-details.png>
@@ -1063,7 +1063,7 @@ nput line 258.
 (pdftex.def)             Requested size: 426.79134pt x 239.87569pt.
 
 [17 <./images/ch2/graph-for-respondent-details.png>]
-<images/ch2/blank-node-for-rdf.png, id=728, 687.56876pt x 400.49625pt>
+<images/ch2/blank-node-for-rdf.png, id=734, 687.56876pt x 400.49625pt>
 File: images/ch2/blank-node-for-rdf.png Graphic file (type png)
 <use images/ch2/blank-node-for-rdf.png>
 Package pdftex.def Info: images/ch2/blank-node-for-rdf.png  used on input line 
@@ -1082,13 +1082,13 @@ Overfull \hbox (46.33174pt too wide) in paragraph at lines 286--286
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/syntax-diagram.png, id=752, 733.74126pt x 115.43124pt>
+<images/ch2/syntax-diagram.png, id=759, 733.74126pt x 115.43124pt>
 File: images/ch2/syntax-diagram.png Graphic file (type png)
 <use images/ch2/syntax-diagram.png>
 Package pdftex.def Info: images/ch2/syntax-diagram.png  used on input line 309.
 
 (pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
-<images/ch2/components-of-url-example.png, id=756, 696.6025pt x 182.6825pt>
+<images/ch2/components-of-url-example.png, id=763, 696.6025pt x 182.6825pt>
 File: images/ch2/components-of-url-example.png Graphic file (type png)
 <use images/ch2/components-of-url-example.png>
 Package pdftex.def Info: images/ch2/components-of-url-example.png  used on inpu
@@ -1100,20 +1100,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20] [21 <./images/ch2/syntax-diagram.png> <./images/ch2/components-of-url-exam
 ple.png>] [22]
-<images/ch2/owl-individuals.png, id=802, 307.1475pt x 159.59625pt>
+<images/ch2/owl-individuals.png, id=808, 307.1475pt x 159.59625pt>
 File: images/ch2/owl-individuals.png Graphic file (type png)
 <use images/ch2/owl-individuals.png>
 Package pdftex.def Info: images/ch2/owl-individuals.png  used on input line 365
 .
 (pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
-<images/ch2/owl-properties.png, id=806, 307.1475pt x 201.75375pt>
+<images/ch2/owl-properties.png, id=812, 307.1475pt x 201.75375pt>
 File: images/ch2/owl-properties.png Graphic file (type png)
 <use images/ch2/owl-properties.png>
 Package pdftex.def Info: images/ch2/owl-properties.png  used on input line 378.
 
 (pdftex.def)             Requested size: 227.62204pt x 149.51707pt.
  [23 <./images/ch2/owl-individuals.png>] [24 <./images/ch2/owl-properties.png>]
-<images/ch2/owl-classes-with-individuals-and-properties.png, id=826, 307.1475pt
+<images/ch2/owl-classes-with-individuals-and-properties.png, id=832, 307.1475pt
  x 312.16624pt>
 File: images/ch2/owl-classes-with-individuals-and-properties.png Graphic file (
 type png)
@@ -1123,7 +1123,7 @@ Package pdftex.def Info: images/ch2/owl-classes-with-individuals-and-properties
 (pdftex.def)             Requested size: 227.62204pt x 231.34236pt.
  [25 <./images/ch2/owl-classes-with-individuals-and-properties.png>] [26] [27] 
 [28] [29]
-<images/ch2/wikidata-uofr.png, id=901, 615.29875pt x 792.9625pt>
+<images/ch2/wikidata-uofr.png, id=907, 615.29875pt x 792.9625pt>
 File: images/ch2/wikidata-uofr.png Graphic file (type png)
 <use images/ch2/wikidata-uofr.png>
 Package pdftex.def Info: images/ch2/wikidata-uofr.png  used on input line 490.
@@ -1146,7 +1146,7 @@ a.org/wiki/<id>'', where
 LaTeX Warning: Text page 32 contains only floats.
 
 [32]
-<images/ch2/rdf-xml-uofr.png, id=918, 626.34pt x 485.815pt>
+<images/ch2/rdf-xml-uofr.png, id=924, 626.34pt x 485.815pt>
 File: images/ch2/rdf-xml-uofr.png Graphic file (type png)
 <use images/ch2/rdf-xml-uofr.png>
 Package pdftex.def Info: images/ch2/rdf-xml-uofr.png  used on input line 564.
@@ -1157,13 +1157,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 573--573
 how-pattern-matching-works-
  []
 
-<images/ch2/dbpedia-uofr.png, id=936, 679.53876pt x 664.4825pt>
+<images/ch2/dbpedia-uofr.png, id=942, 679.53876pt x 664.4825pt>
 File: images/ch2/dbpedia-uofr.png Graphic file (type png)
 <use images/ch2/dbpedia-uofr.png>
 Package pdftex.def Info: images/ch2/dbpedia-uofr.png  used on input line 579.
 (pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
 [34] [35 <./images/ch2/dbpedia-uofr.png>]
-<images/ch2/depedia-architecture.png, id=955, 626.34pt x 321.2pt>
+<images/ch2/depedia-architecture.png, id=961, 626.34pt x 321.2pt>
 File: images/ch2/depedia-architecture.png Graphic file (type png)
 <use images/ch2/depedia-architecture.png>
 Package pdftex.def Info: images/ch2/depedia-architecture.png  used on input lin
@@ -1188,38 +1188,38 @@ Chapter 4.
 
 
 ] [39]
-<images/ch4/5Es.png, id=989, 271.0125pt x 240.9pt>
+<images/ch4/5Es.png, id=995, 271.0125pt x 240.9pt>
 File: images/ch4/5Es.png Graphic file (type png)
 <use images/ch4/5Es.png>
 Package pdftex.def Info: images/ch4/5Es.png  used on input line 42.
 (pdftex.def)             Requested size: 341.43306pt x 303.50618pt.
  [40 <./images/ch4/5Es.png>] [41] [42]
-<images/ch4/feedback-form.png, id=1008, 484.81125pt x 572.1375pt>
+<images/ch4/feedback-form.png, id=1014, 484.81125pt x 572.1375pt>
 File: images/ch4/feedback-form.png Graphic file (type png)
 <use images/ch4/feedback-form.png>
 Package pdftex.def Info: images/ch4/feedback-form.png  used on input line 93.
 (pdftex.def)             Requested size: 426.79134pt x 503.69208pt.
-<images/ch4/protege-homescreen.png, id=1013, 1439.3775pt x 791.95876pt>
+<images/ch4/protege-homescreen.png, id=1019, 1439.3775pt x 791.95876pt>
 File: images/ch4/protege-homescreen.png Graphic file (type png)
 <use images/ch4/protege-homescreen.png>
 Package pdftex.def Info: images/ch4/protege-homescreen.png  used on input line 
 102.
 (pdftex.def)             Requested size: 426.79134pt x 234.82216pt.
  [43] [44 <./images/ch4/feedback-form.png>]
-<images/ch4/class-hierarchy.png, id=1026, 821.0675pt x 448.67625pt>
+<images/ch4/class-hierarchy.png, id=1032, 821.0675pt x 448.67625pt>
 File: images/ch4/class-hierarchy.png Graphic file (type png)
 <use images/ch4/class-hierarchy.png>
 Package pdftex.def Info: images/ch4/class-hierarchy.png  used on input line 113
 .
 (pdftex.def)             Requested size: 426.79134pt x 233.21715pt.
-<images/ch4/tools-menu-class-hierarchy.png, id=1028, 541.02126pt x 199.74625pt>
+<images/ch4/tools-menu-class-hierarchy.png, id=1034, 541.02126pt x 199.74625pt>
 
 File: images/ch4/tools-menu-class-hierarchy.png Graphic file (type png)
 <use images/ch4/tools-menu-class-hierarchy.png>
 Package pdftex.def Info: images/ch4/tools-menu-class-hierarchy.png  used on inp
 ut line 124.
 (pdftex.def)             Requested size: 426.79134pt x 157.5753pt.
-<images/ch4/enter-hierarchy-pop-up.png, id=1030, 803.0pt x 575.14874pt>
+<images/ch4/enter-hierarchy-pop-up.png, id=1036, 803.0pt x 575.14874pt>
 File: images/ch4/enter-hierarchy-pop-up.png Graphic file (type png)
 <use images/ch4/enter-hierarchy-pop-up.png>
 Package pdftex.def Info: images/ch4/enter-hierarchy-pop-up.png  used on input l
@@ -1228,13 +1228,13 @@ ine 133.
  [45 <./images/ch4/protege-homescreen.png>] [46 <./images/ch4/class-hierarchy.p
 ng> <./images/ch4/tools-menu-class-hierarchy.png>] [47 <./images/ch4/enter-hier
 archy-pop-up.png>]
-<images/ch4/create-disjoint-siblings.png, id=1053, 801.99625pt x 573.14125pt>
+<images/ch4/create-disjoint-siblings.png, id=1059, 801.99625pt x 573.14125pt>
 File: images/ch4/create-disjoint-siblings.png Graphic file (type png)
 <use images/ch4/create-disjoint-siblings.png>
 Package pdftex.def Info: images/ch4/create-disjoint-siblings.png  used on input
  line 142.
 (pdftex.def)             Requested size: 426.79134pt x 305.00526pt.
-<images/ch4/survey-class-hierarchy.png, id=1056, 732.7375pt x 597.23125pt>
+<images/ch4/survey-class-hierarchy.png, id=1062, 732.7375pt x 597.23125pt>
 File: images/ch4/survey-class-hierarchy.png Graphic file (type png)
 <use images/ch4/survey-class-hierarchy.png>
 Package pdftex.def Info: images/ch4/survey-class-hierarchy.png  used on input l
@@ -1242,14 +1242,14 @@ ine 155.
 (pdftex.def)             Requested size: 426.79134pt x 347.87067pt.
  [48 <./images/ch4/create-disjoint-siblings.png>]
 [49 <./images/ch4/survey-class-hierarchy.png>] [50]
-<images/ch4/likertscale5-class.png, id=1078, 725.71124pt x 384.43625pt>
+<images/ch4/likertscale5-class.png, id=1084, 725.71124pt x 384.43625pt>
 File: images/ch4/likertscale5-class.png Graphic file (type png)
 <use images/ch4/likertscale5-class.png>
 Package pdftex.def Info: images/ch4/likertscale5-class.png  used on input line 
 220.
 (pdftex.def)             Requested size: 426.79134pt x 226.09389pt.
  [51]
-<images/ch4/tools-menu-object-property-hierarchy.png, id=1089, 537.00626pt x 19
+<images/ch4/tools-menu-object-property-hierarchy.png, id=1095, 537.00626pt x 19
 5.73125pt>
 File: images/ch4/tools-menu-object-property-hierarchy.png Graphic file (type pn
 g)
@@ -1258,7 +1258,7 @@ Package pdftex.def Info: images/ch4/tools-menu-object-property-hierarchy.png  u
 sed on input line 231.
 (pdftex.def)             Requested size: 426.79134pt x 155.56079pt.
  [52 <./images/ch4/likertscale5-class.png>]
-<images/ch4/object-properties-for-lady-and-parita.png, id=1096, 474.77374pt x 1
+<images/ch4/object-properties-for-lady-and-parita.png, id=1103, 474.77374pt x 1
 79.67125pt>
 File: images/ch4/object-properties-for-lady-and-parita.png Graphic file (type p
 ng)
@@ -1268,7 +1268,7 @@ used on input line 242.
 (pdftex.def)             Requested size: 426.79134pt x 161.51892pt.
  [53 <./images/ch4/tools-menu-object-property-hierarchy.png> <./images/ch4/obje
 ct-properties-for-lady-and-parita.png>]
-<images/ch4/domain-and-range-for-hasName-and-isNameOf.png, id=1108, 474.77374pt
+<images/ch4/domain-and-range-for-hasName-and-isNameOf.png, id=1114, 474.77374pt
  x 320.19624pt>
 File: images/ch4/domain-and-range-for-hasName-and-isNameOf.png Graphic file (ty
 pe png)
@@ -1276,7 +1276,7 @@ pe png)
 Package pdftex.def Info: images/ch4/domain-and-range-for-hasName-and-isNameOf.p
 ng  used on input line 257.
 (pdftex.def)             Requested size: 341.43306pt x 230.27727pt.
-<images/ch4/survey-object-properties.png, id=1112, 697.60625pt x 389.455pt>
+<images/ch4/survey-object-properties.png, id=1118, 697.60625pt x 389.455pt>
 File: images/ch4/survey-object-properties.png Graphic file (type png)
 <use images/ch4/survey-object-properties.png>
 Package pdftex.def Info: images/ch4/survey-object-properties.png  used on input
@@ -1291,7 +1291,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [54 <./images/ch4/domain-and-range-for-hasName-and-isNameOf.png>] [55 <./images
 /ch4/survey-object-properties.png>]
-<images/ch4/tools-menu-data-property-hierarchy.png, id=1128, 538.01pt x 196.735
+<images/ch4/tools-menu-data-property-hierarchy.png, id=1134, 538.01pt x 196.735
 pt>
 File: images/ch4/tools-menu-data-property-hierarchy.png Graphic file (type png)
 
@@ -1299,7 +1299,7 @@ File: images/ch4/tools-menu-data-property-hierarchy.png Graphic file (type png)
 Package pdftex.def Info: images/ch4/tools-menu-data-property-hierarchy.png  use
 d on input line 329.
 (pdftex.def)             Requested size: 426.79134pt x 156.06734pt.
-<images/ch4/survey-data-properties.png, id=1130, 1012.78375pt x 462.72874pt>
+<images/ch4/survey-data-properties.png, id=1136, 1012.78375pt x 462.72874pt>
 File: images/ch4/survey-data-properties.png Graphic file (type png)
 <use images/ch4/survey-data-properties.png>
 Package pdftex.def Info: images/ch4/survey-data-properties.png  used on input l
@@ -1331,7 +1331,7 @@ Overfull \hbox (21.80428pt too wide) in paragraph at lines 347--362
  [][] 
  []
 
-<images/ch4/instances-of-survey-class.png, id=1145, 672.5125pt x 313.17pt>
+<images/ch4/instances-of-survey-class.png, id=1151, 672.5125pt x 313.17pt>
 File: images/ch4/instances-of-survey-class.png Graphic file (type png)
 <use images/ch4/instances-of-survey-class.png>
 Package pdftex.def Info: images/ch4/instances-of-survey-class.png  used on inpu
@@ -1340,7 +1340,7 @@ t line 372.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/final-survey-classes.png, id=1148, 502.87875pt x 468.75125pt>
+<images/ch4/final-survey-classes.png, id=1154, 502.87875pt x 468.75125pt>
 File: images/ch4/final-survey-classes.png Graphic file (type png)
 <use images/ch4/final-survey-classes.png>
 Package pdftex.def Info: images/ch4/final-survey-classes.png  used on input lin
@@ -1348,50 +1348,71 @@ e 402.
 (pdftex.def)             Requested size: 426.79134pt x 397.82532pt.
 [58] [59 <./images/ch4/instances-of-survey-class.png>] [60 <./images/ch4/final-
 survey-classes.png>]
-<images/ch4/shacl-editor.png, id=1166, 1011.78pt x 468.75125pt>
+<images/ch4/shacl-editor.png, id=1172, 1011.78pt x 468.75125pt>
 File: images/ch4/shacl-editor.png Graphic file (type png)
 <use images/ch4/shacl-editor.png>
 Package pdftex.def Info: images/ch4/shacl-editor.png  used on input line 417.
 (pdftex.def)             Requested size: 426.79134pt x 197.73248pt.
-<images/ch4/shacl-constraint-violations.png, id=1168, 1275.76625pt x 392.46625p
+<images/ch4/shacl-constraint-violations.png, id=1174, 1275.76625pt x 392.46625p
 t>
 File: images/ch4/shacl-constraint-violations.png Graphic file (type png)
 <use images/ch4/shacl-constraint-violations.png>
 Package pdftex.def Info: images/ch4/shacl-constraint-violations.png  used on in
 put line 426.
 (pdftex.def)             Requested size: 426.79134pt x 131.29285pt.
- [61 <./images/ch4/shacl-editor.png>] [62 <./images/ch4/shacl-constraint-violat
-ions.png>]
-<images/ch4/ontograf.png, id=1185, 1105.12875pt x 622.325pt>
+<images/ch4/survey-sparql-query.png, id=1175, 612.2875pt x 525.965pt>
+File: images/ch4/survey-sparql-query.png Graphic file (type png)
+<use images/ch4/survey-sparql-query.png>
+Package pdftex.def Info: images/ch4/survey-sparql-query.png  used on input line
+ 435.
+(pdftex.def)             Requested size: 426.79134pt x 366.61601pt.
+ [61 <./images/ch4/shacl-editor.png>]
+<images/ch4/survey-snap-sparql-query.png, id=1181, 813.0375pt x 534.99875pt>
+File: images/ch4/survey-snap-sparql-query.png Graphic file (type png)
+<use images/ch4/survey-snap-sparql-query.png>
+Package pdftex.def Info: images/ch4/survey-snap-sparql-query.png  used on input
+ line 442.
+(pdftex.def)             Requested size: 426.79134pt x 280.83772pt.
+<images/ch4/survey-rdf-skeleton.png, id=1182, 637.38126pt x 609.27625pt>
+File: images/ch4/survey-rdf-skeleton.png Graphic file (type png)
+<use images/ch4/survey-rdf-skeleton.png>
+Package pdftex.def Info: images/ch4/survey-rdf-skeleton.png  used on input line
+ 453.
+(pdftex.def)             Requested size: 426.79134pt x 407.97124pt.
+ [62 <./images/ch4/shacl-constraint-violations.png>] [63 <./images/ch4/survey-s
+parql-query.png>]
+[64 <./images/ch4/survey-snap-sparql-query.png>] [65 <./images/ch4/survey-rdf-s
+keleton.png>]
+<images/ch4/ontograf.png, id=1215, 1202.4925pt x 617.30624pt>
 File: images/ch4/ontograf.png Graphic file (type png)
 <use images/ch4/ontograf.png>
-Package pdftex.def Info: images/ch4/ontograf.png  used on input line 455.
-(pdftex.def)             Requested size: 426.79134pt x 240.33179pt.
- [63]
-Overfull \hbox (14.87338pt too wide) in paragraph at lines 474--475
-[]\T1/cmr/m/n/12 Figure []4.21[] shows the graph-i-cal rep-re-sen-ta-tion of th
+Package pdftex.def Info: images/ch4/ontograf.png  used on input line 476.
+(pdftex.def)             Requested size: 426.79134pt x 219.09344pt.
+ [66 <./images/ch4/ontograf.png>]
+Overfull \hbox (14.87338pt too wide) in paragraph at lines 495--496
+[]\T1/cmr/m/n/12 Figure []4.24[] shows the graph-i-cal rep-re-sen-ta-tion of th
 e sur-vey on-tol-ogy us-ing Web[]VOWL.
  []
 
-<images/ch4/webVOWL.png, id=1200, 864.22874pt x 727.71875pt>
+<images/ch4/webVOWL.png, id=1226, 870.25125pt x 692.5875pt>
 File: images/ch4/webVOWL.png Graphic file (type png)
 <use images/ch4/webVOWL.png>
-Package pdftex.def Info: images/ch4/webVOWL.png  used on input line 478.
-(pdftex.def)             Requested size: 426.79134pt x 359.37242pt.
-[64 <./images/ch4/ontograf.png>]) [65 <./images/ch4/webVOWL.png>]
+Package pdftex.def Info: images/ch4/webVOWL.png  used on input line 499.
+(pdftex.def)             Requested size: 426.79134pt x 339.66675pt.
+) [67] [68 <./images/ch4/webVOWL.png>]
 \openout2 = `ch5.aux'.
 
  (./ch5.tex
 Chapter 5.
 
-LaTeX Warning: Reference `chap:ontology' on page 66 undefined on input line 13.
+LaTeX Warning: Reference `chap:ontology' on page 69 undefined on input line 13.
 
 
-[66
+[69
 
 
 
-]) [67]
+]) [70]
 \openout2 = `appendix1.aux'.
 
  (./appendix1.tex
@@ -1401,12 +1422,12 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [68
+) [71
 
 
 
 ]
-[69] [70] [71] [72] [73]) [74]
+[72] [73] [74] [75] [76]) [77]
 \openout2 = `appendix2.aux'.
 
  (./appendix2.tex
@@ -1426,7 +1447,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 54--55
 [][] 
  []
 
-[75
+[78
 
 
 
@@ -1445,7 +1466,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-[76]
+[79]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 79--80
 [][] 
  []
@@ -1465,7 +1486,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 98--99
 [][] 
  []
 
-[77]
+[80]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 104--105
 [][] 
  []
@@ -1475,7 +1496,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 111--112
 [][] 
  []
 
-[78]
+[81]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 117--118
 [][] 
  []
@@ -1500,7 +1521,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 140--141
 [][] 
  []
 
-[79]
+[82]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 147--148
 [][] 
  []
@@ -1520,7 +1541,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 162--163
 [][] 
  []
 
-[80]
+[83]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 170--171
 [][] 
  []
@@ -1535,7 +1556,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 183--184
 [][] 
  []
 
-[81]
+[84]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 189--190
 [][] 
  []
@@ -1555,7 +1576,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 209--210
 [][] 
  []
 
-[82]
+[85]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 215--216
 [][] 
  []
@@ -1575,7 +1596,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 232--233
 [][] 
  []
 
-[83]
+[86]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 238--239
 [][] 
  []
@@ -1595,7 +1616,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 255--256
 [][] 
  []
 
-[84]
+[87]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 261--262
 [][] 
  []
@@ -1610,7 +1631,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 274--275
 [][] 
  []
 
-[85]
+[88]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 281--282
 [][] 
  []
@@ -1625,7 +1646,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 294--295
 [][] 
  []
 
-[86]
+[89]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 299--300
 [][] 
  []
@@ -1645,7 +1666,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 318--319
 [][] 
  []
 
-[87]
+[90]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 324--325
 [][] 
  []
@@ -1660,7 +1681,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 337--338
 [][] 
  []
 
-[88]
+[91]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 344--345
 [][] 
  []
@@ -1680,7 +1701,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 363--364
 [][] 
  []
 
-[89]
+[92]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 370--371
 [][] 
  []
@@ -1700,7 +1721,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 381--382
 [][] 
  []
 
-[90]
+[93]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 390--391
 [][] 
  []
@@ -1720,7 +1741,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 409--410
 [][] 
  []
 
-[91]
+[94]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 416--417
 [][] 
  []
@@ -1735,7 +1756,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 429--430
 [][] 
  []
 
-[92]
+[95]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 436--437
 [][] 
  []
@@ -1755,7 +1776,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 455--456
 [][] 
  []
 
-[93]
+[96]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 461--462
 [][] 
  []
@@ -1770,7 +1791,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 474--475
 [][] 
  []
 
-[94]
+[97]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 481--482
 [][] 
  []
@@ -1785,7 +1806,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 491--492
 [][] 
  []
 
-[95]
+[98]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 500--501
 [][] 
  []
@@ -1805,7 +1826,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 520--521
 [][] 
  []
 
-[96]
+[99]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 524--525
 [][] 
  []
@@ -1820,7 +1841,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 539--540
 [][] 
  []
 
-[97]
+[100]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 546--547
 [][] 
  []
@@ -1835,7 +1856,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 559--560
 [][] 
  []
 
-[98]
+[101]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 565--566
 [][] 
  []
@@ -1855,7 +1876,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 582--583
 [][] 
  []
 
-[99]
+[102]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 586--587
 [][] 
  []
@@ -1870,7 +1891,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 601--602
 [][] 
  []
 
-[100]
+[103]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 608--609
 [][] 
  []
@@ -1890,7 +1911,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 626--627
 [][] 
  []
 
-[101]
+[104]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 633--634
 [][] 
  []
@@ -1910,7 +1931,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 648--649
 [][] 
  []
 
-[102]
+[105]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 655--656
 [][] 
  []
@@ -1925,7 +1946,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 669--670
 [][] 
  []
 
-[103]
+[106]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 674--675
 [][] 
  []
@@ -1940,7 +1961,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 687--688
 [][] 
  []
 
-[104]
+[107]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 694--695
 [][] 
  []
@@ -1955,7 +1976,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 707--708
 [][] 
  []
 
-[105]
+[108]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 713--714
 [][] 
  []
@@ -1975,7 +1996,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 732--733
 [][] 
  []
 
-[106]
+[109]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 739--740
 [][] 
  []
@@ -1985,7 +2006,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 745--746
 [][] 
  []
 
-[107]
+[110]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 752--753
 [][] 
  []
@@ -2005,16 +2026,16 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 767--768
 [][] 
  []
 
-[108]) [109]
+[111]) [112]
 \openout2 = `appendix3.aux'.
 
  (./appendix3.tex
 Appendix C.
-[110
+[113
 
 
 
-] [111] [112]
+] [114] [115]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 168--170
 [][] 
  []
@@ -2024,7 +2045,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 170--171
 [][] 
  []
 
-[113]
+[116]
 Overfull \hbox (44.31084pt too wide) in paragraph at lines 182--184
 [][] 
  []
@@ -2034,7 +2055,7 @@ Overfull \hbox (44.31084pt too wide) in paragraph at lines 184--185
 [][] 
  []
 
-[114] [115] [116] [117] [118] [119] [120] [121]) [122] (./parita-msc.bbl
+[117] [118] [119] [120] [121] [122] [123] [124]) [125] (./parita-msc.bbl
 Underfull \hbox (badness 5231) in paragraph at lines 42--47
 []\T1/cmr/m/n/12 David Beck-ett.  RDF 1.1 N-Triples.  \T1/cmr/m/it/12 W3C Rec-o
 m-men-da-tion\T1/cmr/m/n/12 , 2014.
@@ -2046,10 +2067,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--53
 -da-tion\T1/cmr/m/n/12 , 1996.
  []
 
-[123
+[126
 
 
-] [124]
+] [127]
 Underfull \hbox (badness 10000) in paragraph at lines 161--165
 []\T1/cmr/m/n/12 Sean Fal-coner.  On-tograf Pro-tégé Plu-gin.  \T1/cmr/m/it/12 
 Avail-able at:
@@ -2068,9 +2089,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--192
 ets / teaching / pdf / feedback -[]
  []
 
-[125])
+[128])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
- [126]
+ [129]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
  (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux)
 (./ch1.aux) (./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix1.aux)
@@ -2088,10 +2109,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 21258 strings out of 480608
- 395847 string characters out of 5903631
- 1198368 words of memory out of 5000000
- 35062 multiletter control sequences out of 15000+600000
+ 21285 strings out of 480608
+ 396656 string characters out of 5903631
+ 1198751 words of memory out of 5000000
+ 35080 multiletter control sequences out of 15000+600000
  550974 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,11n,84p,1484b,2045s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2115,10 +2136,10 @@ e/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on parita-msc.pdf (136 pages, 2183664 bytes).
+Output written on parita-msc.pdf (139 pages, 2430739 bytes).
 PDF statistics:
- 3150 PDF objects out of 3580 (max. 8388607)
- 2868 compressed objects within 29 object streams
- 1629 named destinations out of 1728 (max. 500000)
- 651 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3176 PDF objects out of 3580 (max. 8388607)
+ 2885 compressed objects within 29 object streams
+ 1635 named destinations out of 1728 (max. 500000)
+ 666 words of extra memory for PDF output out of 10000 (max. 10000000)
 
