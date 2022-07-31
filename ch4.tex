@@ -428,7 +428,26 @@ On clicking the Validate button, the summary of violated constraints is displaye
     \label{shacl-constraint-violations}
 \end{figure}
 
-\subsection{Querying Linked Open Data using SPARQL}
+\subsection{Querying Survey Ontology in Protégé}
+
+The ontology vocabularies can be queried using query languages like DL query and \ac{sparql}. A DL query is used to  such as `and' (corresponding to set intersection) and `some'.\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html}. \ac{sparql} query is used to express queries and optional graph patterns along with their conjunctions and disjunctions as well as aggregation, subqueries, negation, etc.\footnote{https://www.w3.org/TR/sparql11-query/} 
+
+Protégé offers a plugin for DL as well as SPARQL queries. 
+
+\subsubsection{DL Query}
+
+\say{The DL Query tab allows users to quickly test definitions of classes to see that they subsume the appropriate subclasses. Or check for class membership of arbitrary descriptions without having to create named class placeholders.}\footnote{https://protegewiki.stanford.edu/wiki/DL\_Query} The DL Query tab can be opened using Tabs option under Windows menu. It is important to configure a reasoner to successfully express a DL query. Figure~\ref{survey-dl-query} shows expression of a sample DL query on the survey ontology in protégé. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/survey-dl-query.png}
+    \caption{DL Query on Survey Ontology}
+    \label{survey-dl-query}
+\end{figure}
+
+\subsubsection{SPARQL Query}
+
+
 
 \begin{figure}[htp]
     \centering
