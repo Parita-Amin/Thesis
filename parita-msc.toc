@@ -49,12 +49,12 @@
 \contentsline {section}{\numberline {4.4}From Spreadsheets to Linked Open Data}{62}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Publishing Linked Open Data for Survey}{62}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Visualization Tools for \ac {owl} Ontology}{62}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}OntoGraf}{63}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}WebVOWL}{63}{subsection.4.6.2}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{66}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{66}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{67}{section.5.2}%
-\contentsline {chapter}{\numberline {A}Sample CSV Data}{68}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Expression of CSV Data in LOD (Turtle)}{75}{appendix.B}%
-\contentsline {chapter}{\numberline {C}OWL Vocabulary for Feedback Survey}{110}{appendix.C}%
-\contentsline {chapter}{References}{123}{lstnumber.-3.465}%
+\contentsline {subsection}{\numberline {4.6.1}OntoGraf}{64}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}WebVOWL}{66}{subsection.4.6.2}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{69}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{69}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{70}{section.5.2}%
+\contentsline {chapter}{\numberline {A}Sample CSV Data}{71}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Expression of CSV Data in LOD (Turtle)}{78}{appendix.B}%
+\contentsline {chapter}{\numberline {C}OWL Vocabulary for Feedback Survey}{113}{appendix.C}%
+\contentsline {chapter}{References}{126}{lstnumber.-3.465}%
