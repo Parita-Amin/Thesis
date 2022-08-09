@@ -289,7 +289,7 @@ An abstract (a logical) or a physical resource on the web is identified by a uni
     \label{definitions-for-uri}
 \end{table}  
 
-\subsubsection{Syntax of a \ac{uri}}
+\subsubsection{Syntax of a URI}
 
 According to Berners-Lee et al.~\cite{berners1998uri}, the generic syntax of a \ac{uri} comprises five components in a hierarchical sequence which are as follows:
 
@@ -348,11 +348,11 @@ The Linked Data Life Cycle includes multiple stages as described by Ngomo et al.
 
 Ontology is a branch of information science that encloses representation, nomenclature, and definition of various properties, categories, and relationships shared among the entities\footnote{includes all types of data, concepts and entities} that support any number of domains the user is interested in. In other words, Ontology is a form of defining a set of concepts for representing the subject properties and the relationships shared among them. According to Tom Gruber~\cite{gruber1995towards}, ontology is \say{an explicit specification of a conceptualization}, where conceptualization is \say{an abstract, simplified view of the world (includes objects, concepts and other entities that are assumed to exist in some area of interest and the relationships that hold among them) that we wish to represent for some purpose}. In web semantics, an ontology is used to define the semantics of the resources briefly and methodically. The ontologies have have been used to \say{specify the physical as well as conceptual characteristics of resources, in the form of metadata schema on the semantic web, for a fixed set of users}~\cite{jacob2003ontologies}.
 
-\section{\ac{owl} Ontologies}
+\section{OWL Ontologies}
 
 W3C developed a standard ontology language called \ac{owl}\footnote{ http://www.w3.org/TR/owl- guide/} to define and describe concepts for ontology using different facilities and operations like intersection, union and negation. It is based on a logical model due to which a reasoner\footnote{maintains hierarchy accurately} can be used to check the mutual consistency among the statements and definitions in the ontology. The reasoner is also responsible for the identification of a suitable concept for particular definitions~\cite{horridge2009practical}.
 
-\subsection{Components of \ac{owl} Ontologies}
+\subsection{Components of OWL Ontologies}
 
 An \ac{owl} ontology consists of a set of components that define and describe the concepts collectively. The basic components of any \ac{owl} ontology, Individuals, Properties and Classes, are briefly explained in this section.
 
@@ -407,35 +407,13 @@ Figure~\ref{owl-classes-with-individuals-and-properties} shows the representatio
 
 \subsection{Ontology Editors}
 
-Ontology editors are used by publishers to create new ontologies when the existing vocabulary is not suitable for their purpose. \ac{w3c}\footnote{https://www.w3.org/wiki/Ontology\_editors} has recommended a list of ontology editors that can be used to edit, manage, organize and visualize ontology. The list of editors includes Protégé, NeOn Toolkit, SWOOP, Neologism, TopBraid Composer, Vitro, Knoodl, Anzo for Excel, OWLGrEd, Fluent Editor, Semantic Turkey, VocBench. The page does not include valid links to the editors' websites. Protégé is the most popular ontology editor among researchers. There exists negligible information about most of the editors in the list which has driven the decision of the use of Protégé for ontology development and OntoGraf and WebVOWL for visualization which are discussed in detail in chapter~\ref{chap:proofOfConcept}.
+Ontology editors are used by publishers to create new ontologies when the existing vocabulary is not suitable for their purpose. \ac{w3c}\footnote{https://www.w3.org/wiki/Ontology\_editors} has recommended a list of ontology editors that can be used to edit, manage, organize and visualize ontology. The list of editors includes Protégé, NeOn Toolkit, SWOOP, Neologism, TopBraid Composer, Vitro, Knoodl, Anzo for Excel, OWLGrEd, Fluent Editor, Semantic Turkey, VocBench. The page does not include valid links to the editors' websites. Protégé is the most popular ontology editor among researchers. There exists negligible information about most of the editors in the list which has driven the decision of the use of protégé for ontology development and OntoGraf and WebVOWL for visualization which are discussed in detail in chapter~\ref{chap:proofOfConcept}.
 
-\subsection{\ac{owl} Ontology Inconsistencies and Reasoner}
+\section{Conversion of Data from Spreadsheets to RDF}
 
-A Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner} is used in Protégé to address and solve the inconsistencies. The current version of the Protégé \ac{ide} offers support for some built-in semantic reasoners which are listed below: 
+The preferred format of the data published on the semantic web is \ac{rdf} format. Many data scientists use tables and spreadsheets to store and publish data using \ac{csv} files over \ac{rdf} format as conversion of data to \ac{rdf} is comparatively difficult. The data used by Dr. Hepting has been stored in tabular format which can be converted into \ac{rdf} using different open source tools~\cite{ermilov2013csv} recommended by \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} or using tools for \ac{rml}. 
 
-\begin{itemize}
-   
-    \item ELK 0.4.3\footnote{https://www.w3.org/2001/sw/wiki/ELK} : A Java-based fast reasoner for lightweight \ac{owl}2 EL which is available under Apache License 2.0
-   
-    \item FaCT++ 1.6.5\footnote{https://www.w3.org/2001/sw/wiki/Fact} : A Tableaux-based reasoner for expressive \ac{owl} \ac{dl} which is implemented using C++
-   
-    \item HermiT 1.4.3.456\footnote{https://www.w3.org/2001/sw/wiki/Hermit} : A Java-based reasoner, written using \ac{owl}, that can be used to determine consistency of the ontology as well as for the identification of relationships among the classes of the ontology
-   
-    \item Mastro DL-Lite\footnote{https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : An \ac{obda} management system in which the \ac{dl}-Lite family of languages for lightweight \ac{dl} are used for ontology specifications
-   
-    \item Ontop 4.1.0\footnote{https://www.w3.org/2001/sw/wiki/Ontop} : A reasoner which uses \ac{sparql} for querying datasets as Virtual \ac{rdf} Graphs
-   
-    \item Pellet and Pellet (incremental)\footnote{https://www.w3.org/2001/sw/wiki/Pellet} : A Java-based \ac{owl}2 reasoner for the optimization of nominals, conjunctive query answering, and incremental reasoning
-
-\end{itemize}
-
-\subsection{Data Validation}
-
-Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. It is important to validate the stored data so that the data only consist of acceptable values. According to Ekaputra and Xiashuo~\cite{shacl4protege}, \say{One of the challenges of adopting \ac{swt} for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.} To address this challenge, they developed SHACL4P, a protégé plugin. SHACL4P is used for defining and validating \ac{shacl}, which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. \ac{shacl} uses \say{shapes} to describe constraints.
-
-\section{Conversion of Data from CSV to \ac{rdf}}
-
-The preferred format of the data published on the semantic web is \ac{rdf} format. Many data scientists use tables and spreadsheets to store and publish data using \ac{csv} files over \ac{rdf} format as conversion of data to \ac{rdf} is comparatively difficult. The data used by Dr. Hepting has been stored in tabular format (Sample \ac{csv} data consisting of all responses is available in Appendix~\ref{chap:appendix1} ). To convert tabular data into \ac{rdf} (Appendix~\ref{chap:appendix2} consists of \ac{rdf} code for the \ac{csv} data in Appendix~\ref{chap:appendix1}), \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} recommends the following open source tools~\cite{ermilov2013csv},
+\subsection{Open-source Tools to Convert Data from CSV to RDF}
 
 \begin{itemize}
    
@@ -472,6 +450,10 @@ The preferred format of the data published on the semantic web is \ac{rdf} forma
     Tarql\footnote{https://tarql.github.io} operates as a command-line application for the conversion of \ac{csv} to \ac{rdf} using a user-defined mapping that is written in \ac{sparql} standard 1.1.
     
 \end{itemize}
+
+\subsection{Tools for RML Conversion}
+
+https://d2s.semanticscience.org/docs/convert-rml/
 
 \section{Applications of Linked Open Data}
 
