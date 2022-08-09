@@ -3,10 +3,228 @@
 
 \begin{doublespace}
 
-This chapter focuses on the methodology involved in describing and publishing linked open data. Chapter~\ref{chap:proofOfConcept} presents proof of concept of this methodology.
+This chapter focuses on the usability of protégé along with the methodology involved in describing and publishing linked open data. Chapter~\ref{chap:proofOfConcept} presents the proof of concept for this methodology.
 
-\section{Workflow}
+\section{Describing New OWL Vocabularies}
 
-owl ontology -> csv to rdf -> license and publish
+In data science, for a fresh and developing branch like ontology engineering, it is difficult to find enough knowledge that can be reused. The field is still growing with research and development in progress as well as a lot still required to be explored in the future. As a result of this, linked open vocabularies are limited currently, and hence, the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
+
+There are editors available today that help the publishers to create their own linked open vocabularies. Alatrish at the University of Belgrad~\cite{alatrish2013comparison}, in 2013, compared the most used ontology editors, namely, Apollo, OntoStudio, Protégé, Swoop, and TopBraid Composer. The editors were compared based on the following features:
+
+\begin{itemize}
+ 
+  \item General description: developers' details, and accessibility on the internet (open source or software licensed)
+ 
+  \item Software architecture and tools evaluation: semantic web architecture, support for plug-ins, backup management, and ontology storage
+ 
+  \item Interoperability: interoperability with other ontology tools, support and translation for other languages
+ 
+  \item Knowledge representation: Knowledge Representation (KR) paradigm of knowledge model, axiom language, and methodological support
+ 
+  \item Inference services: built-in inference engine, other attached inference engines, and constraint/consistency checking
+ 
+  \item Usability: graphical taxonomy, graphical views, zooms, collaborative working, and ontology libraries
+
+\end{itemize}
+
+After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, protégé has been used for the development of the instrument to support this research and thesis work.
+
+\subsection{Protégé}
+
+Stanford University developed a free, open-source ontology development platform, Protégé\footnote{https://protege.stanford.edu}, that offers a set of substantial tools\footnote{along with various plug-ins and Java-based \ac{api}} to build ontologies for knowledge-based applications and to implement various \say{knowledge-modeling structures and actions that support the creation, visualization and manipulation of ontologies in various representation formats}~\cite{alatrish2013comparison}. Protégé offers customization options to build knowledge models and to add data. 
+
+\subsection{Usability of Protégé}
+
+The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} defines usability as \say{the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use}. In usability engineering, Jacob Neilson~\cite{neilson1994usability} suggested five qualities of a usable product: \say{learnability, efficiency, memorability, errors (low rate,
+easy to recover), and satisfaction}. These were the original five dimensions of usability which were then re-termed as all five words starting with \say{E} by Quesenbery~\cite{quesenbery2003dimensions}, and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. The new terms are \say{Effective}, \say{Efficient}, \say{Engaging}, \say{Error-tolerant}, and \say{Easy to learn}
+
+The five dimensions of usability can be considered while designing as well as for evaluation. While designing, the engineers consider the five dimensions as goals to be achieved whereas while testing and evaluation, they are considered as the requirements necessary for the designed model. The five dimensions of usability were used to assess the usability of protégé and the report of the evaluation is as follows:
+
+\begin{itemize}
+ 
+  \item Effective: The task is completed accurately
+  
+  Protégé is an effective design as it allows the users to build ontologies and use other tools precisely. The users can complete the desired tasks accurately using the set of facilities available.
+  
+  \item Efficient: The task is completed quickly
+  
+  It is easy and straightforward to describe the vocabularies and build ontologies. All the desired tasks in protégé can be completed quickly (without wasting much time) as it is easy to look for the facilities using the menus and tools available. Hence, protégé is an efficient ontology builder.
+ 
+  \item Engaging: The look and feel of the design is interactive and engaging 
+  
+  The tools and menus in protégé are interactive which leads to a better experience for the user. Also, the layout and the components are attractive and decent for the user to use this ontology builder whenever necessary. Overall, protégé gives an engaging and satisfactory user experience.
+
+  \item Error-tolerant: Error prevention and data recovery in case any error is committed
+  
+  Protégé provides options for modifications, additions, and deletions of classes, objects, and properties, which allow the users to correct the errors that were committed. Also, the deleted classes can be recovered using \say{Undo} from the edit menu resulting in proving protégé as an error-tolerant design.
+ 
+  \item Easy to learn: The interface should be easy to learn
+  
+  Protégé is easy to learn as it has a familiar look and commonly used names for the tools and menus making it easy for the users to adapt and know them nicely. Also, the \say{Help} document along with a list of some frequently asked questions is available which helps the users in the correct direction whenever they are lost.
+  
+\end{itemize}
+
+\section{Procedure to Describe OWL Vocabularies Using Protégé}
+
+This section focuses on a step-wise methodology that has been followed to create new \ac{owl} vocabularies using protégé. Protégé is available for use as a web application or it can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} to use as a desktop application.
+
+To commence with the process of building an ontology, a new project needs to be created with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal} and the ontology version. Figure~\ref{protege-homescreen} shows the protégé home-screen with a new project created and an \ac{iri} with the name and version of ontology.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch3/protege-homescreen.png}
+    \caption{Protégé Home-screen for a New Project with an Ontology Name and an IRI}
+    \label{protege-homescreen}
+\end{figure}
+
+\subsection{Classes and Class Hierarchy}
+
+The next step is to create classes and build the hierarchy for the class nodes. Each entity in protégé is directly or indirectly a child node of the \say{Thing} class. Also, each object has a name-value pair, which generally are the nodes of the \say{Domain\_Entity} class, an inherited class of Thing. Initially, four classes, \say{Thing}, \say{Domain\_Entity}, \say{Independent\_Entity}, and \say{Value} are created using class hierarchy, as shown in Figure~\ref{class-hierarchy}. To create a class hierarchy for the classes that represent entities in an ontology, there are three steps to be followed:
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch3/class-hierarchy.png}
+    \caption{Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value}
+    \label{class-hierarchy}
+\end{figure}
+
+\begin{enumerate}
+
+    \item Select \say{owl:Thing} in the Class Hierarchy View of the Classes tab from the Windows menu followed by selecting \say{Create class hierarchy...} from the Tools menu, as shown in Figure~\ref{tools-menu-class-hierarchy} to open a \say{Enter hierarchy} pop-up window which allows the users to add classes to the ontology.
+    
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[width=15cm]{images/ch3/tools-menu-class-hierarchy.png}
+        \caption{Tools Menu to Create Class Hierarchy}
+        \label{tools-menu-class-hierarchy}
+    \end{figure}
+    
+    \item Enter the class names in the pop-up window starting from the left. For the child nodes, leave some spaces before writing the class name. Each horizontal line consists of one class name, as shown in Figure~\ref{enter-hierarchy-pop-up}. 
+    
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[width=15cm]{images/ch3/enter-hierarchy-pop-up.png}
+        \caption{\enquote{Enter hierarchy} Pop-up Window} 
+        \label{enter-hierarchy-pop-up}
+    \end{figure}
+    
+    \item On clicking \say{Continue} on the pop-up window in Figure~\ref{enter-hierarchy-pop-up}, it opens up a new pop-up window. Here, it is important to state whether one wants the sibling classes to be disjoint or not. The checkbox needs to be checked accordingly. Usually, it is recommended to create disjoint sibling classes which can be changed later as necessary, as shown in Figure~\ref{create-disjoint-siblings}.
+    
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[width=15cm]{images/ch3/create-disjoint-siblings.png}
+        \caption{Pop-up Window to Create Disjoint Sibling Classes}
+        \label{create-disjoint-siblings}
+    \end{figure}
+    
+\end{enumerate}
+
+Once the classes are added, the next step is to describe the classes. Descriptions of classes like \say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on can be added using the Description view of the Class tab (shown in Figure~\ref{class-hierarchy}). Each class can be described individually by selecting a particular class and adding details to the description view. 
+
+\subsection{Object Properties and Object Property Hierarchy}
+
+The next step in building the ontology, after describing the classes, is describing the \say{Object Properties}. Object properties are used to link the entities (classes in protégé). The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-object-property-hierarchy}. The remaining steps are similar to the ones that are followed for building class hierarchy (Figure~\ref{enter-hierarchy-pop-up} and ~\ref{create-disjoint-siblings}).    
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch3/tools-menu-object-property-hierarchy.png}
+    \caption{Tools Menu to Create Object Property Hierarchy}
+    \label{tools-menu-object-property-hierarchy}
+\end{figure}
+
+Also, the description view of object properties hierarchy allows the user to describe the object properties. The details that can be added or modified using the description view are \say{Equivalent To}, \say{SubProperty Of}, \say{Inverse Of}, \say{Domains (intersection)}, \say{Ranges (intersection)}, \say{Disjoint With}, and \say{SuperProperty Of (Chain)}. 
+
+The names of the object properties usually start with an \say{is} or a \say{has}. For instance, consider two classes: \say{Lady} (class 1) and \say{Parita} (class 2). To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, the properties \say{hasName} and \say{isNameOf} would be used respectively, as shown in Figure~\ref{object-properties-for-lady-and-parita}. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch3/object-properties-for-lady-and-parita.png}
+    \caption{Object Properties for Classes \enquote{Lady} and \enquote{Parita}}
+    \label{object-properties-for-lady-and-parita}
+\end{figure}
+
+Each object property might have a corresponding inverse property. For the above instance, it can be said that:
+
+\begin{center}
+    \par Lady hasName Parita \textbf{is equivalent to} Parita isNameOf Lady
+\end{center}
+
+Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse of \say{hasName}. Apart from inverse, domain and range\footnote{http://protegeproject.github.io/protege/views/object-property-description/} are two other important parts of description of object properties. According to Horridge et al.~\cite{horridge2009practical}, in \ac{owl}, \say{domain and range are not constraints to be checked. They are axioms which are used by the reasoner to make inferences}. As shown in Figure~\ref{domain-and-range-for-hasName-and-isNameOf}, \say{Lady} acts as the \say{Domain} and \say{Parita} acts as the \say{Range} for \say{hasName} whereas for \say{isNameOf}, \say{Parita} is the \say{Domain} and \say{Lady} is the \say{Range}. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=12cm]{images/ch3/domain-and-range-for-hasName-and-isNameOf.png}
+    \caption{Domain and Range Classes for \enquote{hasName} and \enquote{isNameOf}}
+    \label{domain-and-range-for-hasName-and-isNameOf}
+\end{figure}
+
+\subsection{Data Properties and Data Property Hierarchy}
+
+Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/}
+
+In protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property-hierarchy}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{enter-hierarchy-pop-up} and ~\ref{create-disjoint-siblings}). 
+
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/tools-menu-data-property-hierarchy.png}
+    \caption{Tools Menu to Create Data Property Hierarchy}
+    \label{tools-menu-data-property-hierarchy}
+\end{figure}
+
+Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}.
+
+\subsection{OWL Ontology Inconsistencies and Reasoner}
+
+After describing the classes, object properties, data properties, and individuals, the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner}. The current version of the protégé \ac{ide} offers support for some built-in semantic reasoners which are listed below: 
+
+\begin{itemize}
+   
+    \item ELK 0.4.3\footnote{https://www.w3.org/2001/sw/wiki/ELK} : A Java-based fast reasoner for lightweight \ac{owl}2 EL which is available under Apache License 2.0
+   
+    \item FaCT++ 1.6.5\footnote{https://www.w3.org/2001/sw/wiki/Fact} : A Tableaux-based reasoner for expressive \ac{owl} \ac{dl} which is implemented using C++
+   
+    \item HermiT 1.4.3.456\footnote{https://www.w3.org/2001/sw/wiki/Hermit} : A Java-based reasoner, written using \ac{owl}, that can be used to determine consistency of the ontology as well as for the identification of relationships among the classes of the ontology
+   
+    \item Mastro DL-Lite\footnote{https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : An \ac{obda} management system in which the \ac{dl}-Lite family of languages for lightweight \ac{dl} are used for ontology specifications
+   
+    \item Ontop 4.1.0\footnote{https://www.w3.org/2001/sw/wiki/Ontop} : A reasoner which uses \ac{sparql} for querying datasets as Virtual \ac{rdf} Graphs
+   
+    \item Pellet and Pellet (incremental)\footnote{https://www.w3.org/2001/sw/wiki/Pellet} : A Java-based \ac{owl}2 reasoner for the optimization of nominals, conjunctive query answering, and incremental reasoning
+
+\end{itemize}
+
+\subsection{Data Validation}
+
+Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. It is important to validate the stored data so that the data only consist of acceptable values. According to Ekaputra and Xiashuo~\cite{shacl4protege}, \say{One of the challenges of adopting \ac{swt} for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.} To address this challenge, they developed SHACL4P, a protégé plugin. SHACL4P is used for defining and validating \ac{shacl}, which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. \ac{shacl} uses \say{shapes} to describe constraints.
+
+\section{Conversion of Tabular Data into Linked Open Data}
+
+After describing the best possible version of the ontology, the next step is to convert the data stored in spreadsheets into linked open data using either OpenRefine\footnote{https://openrefine.org/} or RMLStreamer\footnote{https://github.com/RMLio/RMLStreamer}.
+
+\subsection{Conversion Using OpenRefine}
+
+
+
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine-new-project.png}
+    \caption{Create New OpenRefine Project}
+    \label{openrefine-new-project}
+\end{figure}
+
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine-update-preview.png}
+    \caption{Options to Update Preview for OpenRefine Project}
+    \label{openrefine-update-preview}
+\end{figure}
+
+\subsection{Conversion Using RMLStreamer}
+
+
+
+\section{Publishing Linked Open Data}
+
+
 
 \end{doublespace}
