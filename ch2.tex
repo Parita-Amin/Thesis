@@ -411,9 +411,9 @@ Ontology editors are used by publishers to create new ontologies when the existi
 
 \section{Conversion of Data from Spreadsheets to RDF}
 
-The preferred format of the data published on the semantic web is \ac{rdf} format. Many data scientists use tables and spreadsheets to store and publish data using \ac{csv} files over \ac{rdf} format as conversion of data to \ac{rdf} is comparatively difficult. The data used by Dr. Hepting has been stored in tabular format which can be converted into \ac{rdf} using different open source tools~\cite{ermilov2013csv} recommended by \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} or using tools for \ac{rml}. 
+The preferred format of the data published on the semantic web is \ac{rdf} format. Many data scientists use tables and spreadsheets to store and publish data using \ac{csv} files over \ac{rdf} format as conversion of data to \ac{rdf} is comparatively difficult. The data used by Dr. Hepting has been stored in tabular format which can be converted into \ac{rdf} using different open source tools~\cite{ermilov2013csv} recommended by \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}. 
 
-\subsection{Open-source Tools to Convert Data from CSV to RDF}
+\subsection{Open-source Tools Recommended by W3C}
 
 \begin{itemize}
    
@@ -451,9 +451,36 @@ The preferred format of the data published on the semantic web is \ac{rdf} forma
     
 \end{itemize}
 
-\subsection{Tools for RML Conversion}
+\subsection{Conversion Using RML}
 
-https://d2s.semanticscience.org/docs/convert-rml/
+\say{An \ac{rml} mapping defines a mapping from any logical source to \ac{rdf}. It is a structure that consists of one or more triples maps.}\footnote{https://rml.io/specs/rml/\#example-XML} The \ac{rml} rules can be written and tested using tools like the Matey Web UI \footnote{https://rml.io/yarrrml/matey/}.
+
+\subsubsection{Tools for RML Conversion}
+
+Once the \ac{rml} rules have been defined, the next step is generate \ac{rdf} from the \ac{rml} mappings. The list below shows multiple tools, suggested by Data2Services\footnote{https://d2s.semanticscience.org/}, with various efficiency, stability, and features that can be used for \ac{rml} conversion.
+
+\begin{itemize}
+   
+    \item RMLMapper:
+    
+    RMLMapper\footnote{https://github.com/RMLio/rmlmapper-java} is a reference implementation written in Java. It supports custom functions and operations with small files as it loads all data in memory. 
+    
+    \item RMLStreamer: 
+    
+    RMLStreamer\footnote{https://github.com/RMLio/RMLStreamer}, written in Scala, is well-suited for large input files and continuous data streams like sensor data. It is still under development resulting in limited support for the use of custom functions.    
+    \item SDM-RDFizer:
+    
+    SDM-RDFizer\footnote{https://github.com/SDM-TIB/SDM-RDFizer}, written in Python, implements optimized data structures and relational algebra operators that enable an efficient execution of \ac{rml} triple maps even in the presence of Big data. A separate tools called Dragoman\footnote{https://github.com/SDM-TIB/Dragoman} can be used for the execution of custom functions.
+    
+    \item Morph-KGC:
+    
+    Morph-KGC\footnote{https://morph-kgc.readthedocs.io/en/latest/documentation/} is an \ac{rml} conversion tool written in Python. It does not support custom functions.
+    
+    \item RocketRML:
+    
+    RocketRML\footnote{https://github.com/semantifyit/RocketRML} is a JavaScript implementation for \ac{rml} conversion. It provides an easy way to define custom functions.
+        
+\end{itemize}
 
 \section{Applications of Linked Open Data}
 
