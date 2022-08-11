@@ -72,18 +72,18 @@ To commence with the process of building an ontology, a new project needs to be 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch3/protege-homescreen.png}
+    \includegraphics[width=15cm]{images/ch3/protege/protege-homescreen.png}
     \caption{Protégé Home-screen for a New Project with an Ontology Name and an IRI}
     \label{protege-homescreen}
 \end{figure}
 
-\subsection{Classes and Class Hierarchy}
+\subsection{Classes and Class Hierarchy}\label{subsec:classhierarchy}
 
 The next step is to create classes and build the hierarchy for the class nodes. Each entity in protégé is directly or indirectly a child node of the \say{Thing} class. Also, each object has a name-value pair, which generally are the nodes of the \say{Domain\_Entity} class, an inherited class of Thing. Initially, four classes, \say{Thing}, \say{Domain\_Entity}, \say{Independent\_Entity}, and \say{Value} are created using class hierarchy, as shown in Figure~\ref{class-hierarchy}. To create a class hierarchy for the classes that represent entities in an ontology, there are three steps to be followed:
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch3/class-hierarchy.png}
+    \includegraphics[width=15cm]{images/ch3/protege/class-hierarchy.png}
     \caption{Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value}
     \label{class-hierarchy}
 \end{figure}
@@ -94,7 +94,7 @@ The next step is to create classes and build the hierarchy for the class nodes. 
     
     \begin{figure}[htp]
         \centering
-        \includegraphics[width=15cm]{images/ch3/tools-menu-class-hierarchy.png}
+        \includegraphics[width=15cm]{images/ch3/protege/tools-menu-class-hierarchy.png}
         \caption{Tools Menu to Create Class Hierarchy}
         \label{tools-menu-class-hierarchy}
     \end{figure}
@@ -103,7 +103,7 @@ The next step is to create classes and build the hierarchy for the class nodes. 
     
     \begin{figure}[htp]
         \centering
-        \includegraphics[width=15cm]{images/ch3/enter-hierarchy-pop-up.png}
+        \includegraphics[width=15cm]{images/ch3/protege/enter-hierarchy-pop-up.png}
         \caption{\enquote{Enter hierarchy} Pop-up Window} 
         \label{enter-hierarchy-pop-up}
     \end{figure}
@@ -112,7 +112,7 @@ The next step is to create classes and build the hierarchy for the class nodes. 
     
     \begin{figure}[htp]
         \centering
-        \includegraphics[width=15cm]{images/ch3/create-disjoint-siblings.png}
+        \includegraphics[width=15cm]{images/ch3/protege/create-disjoint-siblings.png}
         \caption{Pop-up Window to Create Disjoint Sibling Classes}
         \label{create-disjoint-siblings}
     \end{figure}
@@ -121,13 +121,13 @@ The next step is to create classes and build the hierarchy for the class nodes. 
 
 Once the classes are added, the next step is to describe the classes. Descriptions of classes like \say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on can be added using the Description view of the Class tab (shown in Figure~\ref{class-hierarchy}). Each class can be described individually by selecting a particular class and adding details to the description view. 
 
-\subsection{Object Properties and Object Property Hierarchy}
+\subsection{Object Properties and Object Property Hierarchy}\label{subsec:objectproperties}
 
 The next step in building the ontology, after describing the classes, is describing the \say{Object Properties}. Object properties are used to link the entities (classes in protégé). The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-object-property-hierarchy}. The remaining steps are similar to the ones that are followed for building class hierarchy (Figure~\ref{enter-hierarchy-pop-up} and ~\ref{create-disjoint-siblings}).    
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch3/tools-menu-object-property-hierarchy.png}
+    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-object-property-hierarchy.png}
     \caption{Tools Menu to Create Object Property Hierarchy}
     \label{tools-menu-object-property-hierarchy}
 \end{figure}
@@ -138,7 +138,7 @@ The names of the object properties usually start with an \say{is} or a \say{has}
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch3/object-properties-for-lady-and-parita.png}
+    \includegraphics[width=15cm]{images/ch3/protege/object-properties-for-lady-and-parita.png}
     \caption{Object Properties for Classes \enquote{Lady} and \enquote{Parita}}
     \label{object-properties-for-lady-and-parita}
 \end{figure}
@@ -153,12 +153,12 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{images/ch3/domain-and-range-for-hasName-and-isNameOf.png}
+    \includegraphics[width=12cm]{images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png}
     \caption{Domain and Range Classes for \enquote{hasName} and \enquote{isNameOf}}
     \label{domain-and-range-for-hasName-and-isNameOf}
 \end{figure}
 
-\subsection{Data Properties and Data Property Hierarchy}
+\subsection{Data Properties and Data Property Hierarchy}\label{subsec:dataproperties}
 
 Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/}
 
@@ -166,7 +166,7 @@ In protégé, the \say{owl:topDataProperty} is the root node of the data propert
 
 \begin{figure}[htp] 
     \centering
-    \includegraphics[width=15cm]{images/ch3/tools-menu-data-property-hierarchy.png}
+    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-data-property-hierarchy.png}
     \caption{Tools Menu to Create Data Property Hierarchy}
     \label{tools-menu-data-property-hierarchy}
 \end{figure}
@@ -199,32 +199,154 @@ Dr. Hepting collects the feedback responses and manually stores them in spreadsh
 
 \section{Conversion of Tabular Data into Linked Open Data}
 
-After describing the best possible version of the ontology, the next step is to convert the data stored in spreadsheets into linked open data using either OpenRefine\footnote{https://openrefine.org/} or RMLStreamer\footnote{https://github.com/RMLio/RMLStreamer}.
+After describing the best possible version of the ontology, the next step is to convert the data stored in spreadsheets into linked open data using either OpenRefine or RMLStreamer. As RMLStreamer is still under development and provides limited support for custom functions, this research uses OpenRefine.
 
 \subsection{Conversion Using OpenRefine}
 
-
+OpenRefine is a free, open-source powerful tool for working with messy data. OpenRefine can be downloaded and installed from the OpenRefine website\footnote{https://openrefine.org/}; run as a web server; and accessed using local web server in the browser. The first step is to load OpenRefine and access it in the browser. Figure~\ref{openrefine-homepage} shows the homepage of OpenRefine.
 
 \begin{figure}[htp] 
     \centering
-    \includegraphics[width=15cm]{images/ch3/openrefine-new-project.png}
-    \caption{Create New OpenRefine Project}
+    \includegraphics[width=15cm]{images/ch3/openrefine/homepage.png}
+    \caption{OpenRefine Homepage}
+    \label{openrefine-homepage}
+\end{figure}
+
+ OpenRefine offers options to create a new project as well as to open an existing project. The users can open an existing project using \say{Open Project} and continue working on the data. Creating a new project includes following steps:
+
+\begin{enumerate}
+   
+    \item Click on \say{Create Project}, select the type on sources of dataset and then click on \say{Choose Files} button to select data sources as shown in Figure~\ref{openrefine-new-project}. OpenRefine supports imports from \ac{tsv}, \ac{csv}, \ac{json}, \ac{xml}, \ac{rdf}/\ac{xml}, Excel, and Google Data documents whereas the other file types can be supported using OpenRefine extensions.
+
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/new-project.png}
+    \caption{Create a New OpenRefine Project}
     \label{openrefine-new-project}
 \end{figure}
 
+    \item The next step is to decide the orientation of the data to be displayed using various options as shown in Figure~\ref{openrefine-update-preview}. The \say{Update Preview} button allows viewing the results of these modifications. 
+
 \begin{figure}[htp] 
     \centering
-    \includegraphics[width=15cm]{images/ch3/openrefine-update-preview.png}
-    \caption{Options to Update Preview for OpenRefine Project}
+    \includegraphics[width=15cm]{images/ch3/openrefine/update-preview.png}
+    \caption{Options to Set Orientation of Data in New OpenRefine Project}
     \label{openrefine-update-preview}
 \end{figure}
 
-\subsection{Conversion Using RMLStreamer}
+    \item The final step is to mention the name of the project and click on the \say{Create Project >>} button as shown in Figure~\ref{openrefine-name-project}.
 
+ \begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/name-project.png}
+    \caption{Naming the New OpenRefine Project}
+    \label{openrefine-name-project}
+\end{figure}
+    
+\end{enumerate}
 
+OpenRefine provides support for following tasks:
+
+\begin{enumerate}
+   
+    \item Exploring Data: 
+    
+    Large data sets can be explored with ease using OpenRefine. The \say{Facet} option allows users to explore values of particular type by offering options like \say{Text facet}, \say{Numeric facet}, \say{Timeline facet}, \say{Scatterplot facet}, and other custom facet. Figure~\ref{openrefine-facet} shows the facet options offered by OpenRefine for a field.
+    
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/facet.png}
+    \caption{Exploring Data in OpenRefine - 1 of 3}
+    \label{openrefine-facet}
+\end{figure}
+
+    The left side of the screen in Figure~\ref{openrefine-facet-result} shows the result of using \say{Text facet} for \say{Response} column. It also offers an option to \say{edit} and \say{include} the results of the facet. Figure~\ref{openrefine-include-result} shows the result of using \say{include} for the record corresponding to the response \say{26480}.
+        
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/facet-result.png}
+    \caption{Exploring Data in OpenRefine - 2 of 3}
+    \label{openrefine-facet-result}
+\end{figure}
+
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/include-result.png}
+    \caption{Exploring Data in OpenRefine - 3 of 3}
+    \label{openrefine-include-result}
+\end{figure}
+   
+    \item Cleaning and Transforming Data: 
+    
+    \begin{itemize}
+   
+        \item Cleaning Data: 
+        
+        While dealing with messy data, OpenRefine can be used to clean the data using the \say{Text filter} option. Figure~\ref{openrefine-clean-data} shows the \say{Text filter} option offered by OpenRefine for a field. 
+                
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/clean-data.png}
+    \caption{Cleaning Data in OpenRefine - 1 of 2}
+    \label{openrefine-clean-data}
+\end{figure}
+
+        Figure~\ref{openrefine-textfilter-result} shows the result of applying the \say{Text filter} option for the \say{Q01\_Rate instructor->1.} field and using \say{-999} as argument.  
+        
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/textfilter-result.png}
+    \caption{Cleaning Data in OpenRefine - 2 of 2}
+    \label{openrefine-textfilter-result}
+\end{figure}
+        
+        \item Transforming Data: 
+        
+        OpenRefine allows transforming data from one format to another using \say{Edit cells} option under which \say{Transform...} and \say{Common transform} offers different options for transforming data. Figure~\ref{openrefine-transform} shows all the options offered by OpenRefine for transforming data.
+        
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/transform.png}
+    \caption{Transforming Data in OpenRefine - 1 of 3}
+    \label{openrefine-transform}
+\end{figure}
+
+        Figure~\ref{openrefine-custom-text-transform} shows the result of selecting \say{Transform...} option for \say{Response} field and modifying the Expression to \say{Response:} + value. It also offers preview of the result of the \ac{grel} expression.
+
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/custom-text-transform.png}
+    \caption{Transforming Data in OpenRefine - 2 of 3}
+    \label{openrefine-custom-text-transform}
+\end{figure}
+
+        As a result of using the \say{Custom text transform on column Response} in OpenRefine, the text of all the records for \say{Response} field would be transformed from one format to another. For instance, the value of \say{Response} for the first record is transformed from \say{26660} to \say{Response:26660} as shown in Figure~\ref{openrefine-transform-result}. 
+
+\begin{figure}[htp] 
+    \centering
+    \includegraphics[width=15cm]{images/ch3/openrefine/transform-result.png}
+    \caption{Transforming Data in OpenRefine - 3 of 3}
+    \label{openrefine-transform-result}
+\end{figure}
+        
+    \end{itemize}
+   
+    \item Reconciling and Matching Data:
+    
+    OpenRefine can be used to link and extend dataset with various web services. It also supports services (using extensions and plugins) that can be used to upload the cleaned data to central databases like Wikidata.
+   
+\end{enumerate}
 
 \section{Publishing Linked Open Data}
 
+As stated by Petrou et al.~\cite{publishlod}, according to the principles of linked data, dereferencable \ac{uri}s can be used to access 
+linked data which 
+the way to access Linked Data is via dereferencable URIs, which, when accessed, provide meaningful descriptions of the concept they represent in a variety of formats, and the data should be accessible to the public. Therefore, access to the data can be provided as RDF dumps or via SPARQL endpoints. To make the data accessible, there are multiple ways 
 
+Finally, machine access is provided as it is one of the best practices of
+publishing Linked Data. The datasets converted can be accessed at http://linked-statistics.gr in
+three ways: (a) download the data as RDF dumps for local processing, (b) query and browse the
+data using the SPARQL endpoint service and SPARQL query form, and (c) link to the data by
+referencing to their unique identifier (URI).
 
 \end{doublespace}
