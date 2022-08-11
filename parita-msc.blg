@@ -14,44 +14,44 @@ A level-1 auxiliary file: appendix2.aux
 A level-1 auxiliary file: appendix3.aux
 The style file: plain.bst
 Database file #1: parita.bib
-You've used 39 entries,
+You've used 40 entries,
             2118 wiz_defined-function locations,
-            728 strings with 12029 characters,
-and the built_in function-call counts, 14310 in all, are:
-= -- 1447
-> -- 635
+            734 strings with 12238 characters,
+and the built_in function-call counts, 14657 in all, are:
+= -- 1480
+> -- 653
 < -- 16
-+ -- 252
-- -- 212
-* -- 960
-:= -- 2306
-add.period$ -- 124
-call.type$ -- 39
-change.case$ -- 222
++ -- 259
+- -- 218
+* -- 991
+:= -- 2365
+add.period$ -- 127
+call.type$ -- 40
+change.case$ -- 228
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 572
-empty$ -- 1119
-format.name$ -- 212
-if$ -- 3052
+cite$ -- 40
+duplicate$ -- 583
+empty$ -- 1145
+format.name$ -- 218
+if$ -- 3123
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 40
-newline$ -- 198
-num.names$ -- 78
-pop$ -- 234
+int.to.str$ -- 40
+missing$ -- 41
+newline$ -- 203
+num.names$ -- 80
+pop$ -- 238
 preamble$ -- 1
-purify$ -- 184
+purify$ -- 189
 quote$ -- 0
-skip$ -- 429
+skip$ -- 436
 stack$ -- 0
-substring$ -- 950
-swap$ -- 162
+substring$ -- 973
+swap$ -- 163
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
+type$ -- 158
 warning$ -- 0
-while$ -- 149
-width$ -- 41
-write$ -- 428
+while$ -- 152
+width$ -- 42
+write$ -- 439
