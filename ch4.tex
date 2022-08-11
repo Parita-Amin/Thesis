@@ -4,29 +4,31 @@
 
 \begin{doublespace}
 
-\section{OWL Ontology for Feedback Survey Using Protégé}
+Chapter~\ref{chap:methodology} focuses on the methodology which has been followed to describe and publish the linked open vocabulary for survey in this chapter.
+
+\section{OWL Ontology for Survey Using Protégé}
 
 Figure~\ref{feedback-form} shows the student feedback form for which the new vocabularies are described. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/feedback-form.png}
+    \includegraphics[width=15cm]{images/ch4/survey/feedback-form.png}
     \caption{The Student Feedback Form, from Hepting~\cite{prof}}
     \label{feedback-form}
 \end{figure}
 
-\subsection{Classes for Feedback Survey Ontology}
+\subsection{Classes for Survey Ontology}
 
-All the classes can be created and described using the above steps. In the end, the class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. The survey can have \say{Survey Response}, \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, and \say{Survey Answers}, which are considered for this ontology as well. 
+All the classes can be created and described using the steps described in section~\ref{subsec:classhierarchy}. The resultant class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. A survey can have \say{Survey Response}, \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, and \say{Survey Answers}, which are considered for this ontology as well. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-class-hierarchy.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-class-hierarchy.png}
     \caption{Class Hierarchy in Survey Ontology}
     \label{survey-class-hierarchy}
 \end{figure}
 
-Here, the type of survey used is \say{feedback survey}. The \say{SurveyCollection} class corresponds to a collection of survey responses (\say{SurveyResponse} class) that were collected for a particular course (\say{CourseID} class) in a particular semester (\say{SemesterID} class) with a specific collection ID (\say{CollectionID} class). The survey questions and survey answers would further have classes corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
+Here, the type of survey used is feedback survey (\say{FeedbackSurvey} class). The \say{SurveyCollection} class corresponds to a collection of survey responses (\say{SurveyResponse} class) that were collected for a particular course (\say{CourseID} class) in a particular semester (\say{SemesterID} class) with a specific collection ID (\say{CollectionID} class). Furthermore, the survey questions and survey answers have classes corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
 
 \begin{multicols}{2}
 \begin{itemize}
@@ -60,7 +62,7 @@ Here, the type of survey used is \say{feedback survey}. The \say{SurveyCollectio
 \end{itemize}
 \end{multicols}
 
-The feedback survey that has been considered has Likert and Open-ended questions. The classes described for the questions and answers are \say{LikertScaleQuestions}, and \say{OpenEndedQuestions} as sub-classes of \say{SurveyQuestions}, and \say{LikertScaleAnswers}, and \say{OpenEndedAnswers} as sub-classes of \say{SurveyAnswers}. For all the survey questions, there would be a question and an answer, where both of them would be considered as distinct classes. Open-ended questions have unpredictable answers.
+The feedback survey in this research has Likert and Open-ended questions. The classes described for the questions and answers are \say{LikertScaleQuestions}, and \say{OpenEndedQuestions} as sub-classes of \say{SurveyQuestions}, and \say{LikertScaleAnswers}, and \say{OpenEndedAnswers} as sub-classes of \say{SurveyAnswers}. For all the survey questions, there is a question and an answer, where both of them are considered as distinct classes. Open-ended questions have unpredictable answers.
 
 \subsubsection{The ``LikertScaleQuestions'' Class}
 
@@ -86,18 +88,18 @@ The \say{LikertScaleQuestions} class of survey ontology has a sub-class, \say{Li
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/likertscale5-class.png}
+    \includegraphics[width=15cm]{images/ch4/survey/likertscale5-class.png}
     \caption{``LikertScale5'' class in Survey Ontology}
     \label{likertscale5-class}
 \end{figure}
 
-\subsection{Object Properties for Feedback Survey Ontology}
+\subsection{Object Properties for Survey Ontology}
 
-Using the above method of naming and building object properties, some of the primary object properties are described for the survey ontology as shown in Figure~\ref{survey-object-properties} where as Table~\ref{survey-object-properties-domains-and-ranges} shows the list of the object properties along with their domain and range classes. Table~\ref{survey-object-properties-parent-nodes-and-inverse} consists of the parent nodes and inverse properties of the object properties. The three parent nodes involved in object property hierarchy are \say{owl:TopObjectProperty}, \say{hasContent}, and \say{isContentOf}. Protégé has a built-in \say{Reasoner} that allows the users to determine inconsistencies of a class as well as to discover implicit information.
+Using the method of naming and building object properties described in section~\ref{subsec:objectproperties}, some of the primary object properties are described for the survey ontology as shown in Figure~\ref{survey-object-properties} where as Table~\ref{survey-object-properties-domains-and-ranges} shows the list of the object properties along with their domain and range classes. Table~\ref{survey-object-properties-parent-nodes-and-inverse} consists of the parent nodes and inverse properties of the object properties. The three parent nodes involved in object property hierarchy are \say{owl:TopObjectProperty}, \say{hasContent}, and \say{isContentOf}.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-object-properties.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-object-properties.png}
     \caption{Object Property Hierarchies, Domain and Range for Classes}
     \label{survey-object-properties}
 \end{figure}
@@ -152,13 +154,13 @@ Using the above method of naming and building object properties, some of the pri
     \label{survey-object-properties-parent-nodes-and-inverse}
 \end{table}
 
-\subsection{Data Properties for Feedback Survey Ontology}
+\subsection{Data Properties for Survey Ontology}
 
- Figure~\ref{survey-data-properties} shows the data properties described for the survey ontology. 
+Data properties for survey ontology have been described following the method described in section~\ref{subsec:dataproperties} which are as shown in Figure~\ref{survey-data-properties}.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-data-properties.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-data-properties.png}
     \caption{Data Property Hierarchies, Domain and Range for Classes}
     \label{survey-data-properties}
 \end{figure}
@@ -192,7 +194,7 @@ While dealing with ontologies, an instance of class is termed as an \say{Individ
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/instances-of-survey-class.png}
+    \includegraphics[width=15cm]{images/ch4/survey/instances-of-survey-class.png}
     \caption{Individuals for Survey Class}
     \label{instances-of-survey-class}
 \end{figure}
@@ -218,13 +220,13 @@ A new individual can be described using the Individuals view of the Entities tab
     \label{survey-individuals}
 \end{table}
 
-\subsection{Final Class Hierarchy for Feedback Survey Ontology}
+\subsection{Final Class Hierarchy for Survey Ontology}
 
 The final class hierarchy of the \ac{owl} ontology in protégé, after using the HermiT 1.4.3.456 reasoner, would be as shown in Figure~\ref{final-survey-classes}.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/final-survey-classes.png}
+    \includegraphics[width=15cm]{images/ch4/survey/final-survey-classes.png}
     \caption{Class Hierarchy for the Final Version of Survey Ontology}
     \label{final-survey-classes}
 \end{figure}
@@ -239,7 +241,7 @@ Protégé offers a view for \ac{shacl} editor as well as \ac{shacl} constraint v
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/shacl-editor.png}
+    \includegraphics[width=15cm]{images/ch4/survey/shacl-editor.png}
     \caption{Data Validation using SHACL Editor}
     \label{shacl-editor}
 \end{figure}
@@ -248,12 +250,12 @@ On clicking the Validate button, the summary of violated constraints is displaye
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/shacl-constraint-violations.png}
+    \includegraphics[width=15cm]{images/ch4/survey/shacl-constraint-violations.png}
     \caption{SHACL Constraint Violations}
     \label{shacl-constraint-violations}
 \end{figure}
 
-\subsection{Querying Feedback Survey Ontology in Protégé}
+\subsection{Querying Survey Ontology in Protégé}
 
 The ontology vocabularies can be queried using query languages like DL query and \ac{sparql}. A DL query is used to  such as `and' (corresponding to set intersection) and `some'.\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html}. \ac{sparql} query is used to express queries and optional graph patterns along with their conjunctions and disjunctions as well as aggregation, subqueries, negation, etc.\footnote{https://www.w3.org/TR/sparql11-query/} 
 
@@ -265,7 +267,7 @@ Protégé offers a plugin for DL as well as SPARQL queries.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-dl-query.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-dl-query.png}
     \caption{DL Query on Survey Ontology}
     \label{survey-dl-query}
 \end{figure}
@@ -276,43 +278,41 @@ Protégé offers a plugin for DL as well as SPARQL queries.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-sparql-query.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-sparql-query.png}
     \caption{SPARQL Query on Survey Ontology}
     \label{survey-sparql-query}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-snap-sparql-query.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-snap-sparql-query.png}
     \caption{Snap SPARQL Query on Survey Ontology}
     \label{survey-snap-sparql-query}
 \end{figure}
 
-\section{From Spreadsheets to Linked Open Data}
-
-\subsection{Using OpenRefine for Feedback Survey Ontology}
+\section{From Spreadsheets to Linked Open Data For Survey Ontology}
 
 Primarily, OpenRefine\footnote{https://openrefine.org/} was used to convert the data stored in spreadsheets to Turtle and \ac{rdf} files.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-rdf-skeleton.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-rdf-skeleton.png}
     \caption{RDF Skeleton for CSV using Survey Ontology}
     \label{survey-rdf-skeleton}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey-rdf-preview.png}
+    \includegraphics[width=15cm]{images/ch4/survey/survey-rdf-preview.png}
     \caption{RDF Preview for CSV using Survey Ontology}
     \label{survey-rdf-preview}
 \end{figure}
 
-\subsection{Using RMLStreamer for Feedback Survey Ontology}
+\section{Licensing Survey Vocabulary}
 
 
 
-\section{Publishing Vocabulary for Feedback Survey}
+\section{Publishing Linked Open Vocabulary for Survey}
 
 
 
