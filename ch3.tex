@@ -197,7 +197,7 @@ After describing the classes, object properties, data properties, and individual
 
 Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. It is important to validate the stored data so that the data only consist of acceptable values. According to Ekaputra and Xiashuo~\cite{shacl4protege}, \say{One of the challenges of adopting \ac{swt} for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.} To address this challenge, they developed SHACL4P, a protégé plugin. SHACL4P is used for defining and validating \ac{shacl}, which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. \ac{shacl} uses \say{shapes} to describe constraints.
 
-\section{Conversion of Tabular Data into Linked Data}
+\section{Conversion of Tabular Data into Linked Data}\label{sec:csvtolod}
 
 After describing the best possible version of the ontology, the next step is to convert the data stored in spreadsheets into linked data using either OpenRefine or RMLStreamer. As RMLStreamer is still under development and provides limited support for custom functions, this research uses OpenRefine.
 
@@ -337,13 +337,21 @@ OpenRefine provides support for following tasks:
    
 \end{enumerate}
 
-\section{Announcing Linked Open Data}
+\section{Announcing Linked Open Data}\label{sec:announcinglod}
+
+After the data is converted into linked data, it can be made available on the web in two steps, licensing the data and publishing on the web, which are discussed in this section. 
 
 \subsection{Licensing Linked Data}
 
+\ac{w3c}~\cite{hyland2014bestpractices} advises that it's critical to identify the owner of any data published on the web and to explicitly link the licence to the data itself. It is simpler to attach a licence that goes with the data itself when publishing linked open data. When data has a clear, agreeable licence attached to it, people are more likely to reuse it.
+
+The Creative Commons\footnote{https://creativecommons.org/} website is a useful resource for open data providers. The legal and technical framework for publishing digital content is developed, supported, and maintained by Creative Commons. There are different licenses available like Attribution-ShareAlike 1.0 Generic\footnote{https://creativecommons.org/licenses/by-sa/1.0/}, Attribution-ShareAlike 2.0 Generic\footnote{https://creativecommons.org/licenses/by-sa/2.0/}, Attribution-ShareAlike 2.5 Generic\footnote{https://creativecommons.org/licenses/by-sa/2.5/}, Attribution-ShareAlike 3.0 Unported\footnote{https://creativecommons.org/licenses/by-sa/3.0/}, and Attribution-ShareAlike 4.0 International\footnote{https://creativecommons.org/licenses/by-sa/4.0/}
+
 \subsection{Publishing Linked ``Open" Data}
 
-As stated by Petrou et al.~\cite{publishlod}, according to the principles of linked data
+According to Petrou et al.~\cite{irene2014publishlod}, the linked data principles state that dereferencable \ac{uri}s are the preferred method of accessing linked data and that the data should be openly available. When accessed, these \ac{uri}s offer accurate descriptions of the concepts they stand for in a number of formats. \ac{rdf} dumps and \ac{sparql} endpoints are hence two ways that users can access the data. Dereferencing of the data is accomplished using the specialised \ac{rdf} store, and all the data are accessible via a \ac{sparql} endpoint service or through the faceted browsing feature, which allows users to search resources and move between them.
+
+Publishing datasets to international or national open data portals (e.g. open.canada.ca\footnote{https://open.canada.ca/en/open-data}) might further \say{announce} them to the public and make them discoverable.
 
 \section{Visualizing Linked Data}
 
