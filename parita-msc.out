@@ -38,25 +38,31 @@
 \BOOKMARK [2][-]{subsection.3.2.3}{Data Properties and Data Property Hierarchy}{section.3.2}% 38
 \BOOKMARK [2][-]{subsection.3.2.4}{OWL Ontology Inconsistencies and Reasoner}{section.3.2}% 39
 \BOOKMARK [2][-]{subsection.3.2.5}{Data Validation}{section.3.2}% 40
-\BOOKMARK [1][-]{section.3.3}{Conversion of Tabular Data into Linked Open Data}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.3}{Conversion of Tabular Data into Linked Data}{chapter.3}% 41
 \BOOKMARK [2][-]{subsection.3.3.1}{Conversion Using OpenRefine}{section.3.3}% 42
-\BOOKMARK [1][-]{section.3.4}{Publishing Linked Open Data}{chapter.3}% 43
-\BOOKMARK [0][-]{chapter.4}{Proof of Concept}{}% 44
-\BOOKMARK [1][-]{section.4.1}{OWL Ontology for Survey Using Prot\351g\351}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.1.1}{Classes for Survey Ontology}{section.4.1}% 46
-\BOOKMARK [2][-]{subsection.4.1.2}{Object Properties for Survey Ontology}{section.4.1}% 47
-\BOOKMARK [2][-]{subsection.4.1.3}{Data Properties for Survey Ontology}{section.4.1}% 48
-\BOOKMARK [2][-]{subsection.4.1.4}{Individuals}{section.4.1}% 49
-\BOOKMARK [2][-]{subsection.4.1.5}{Final Class Hierarchy for Survey Ontology}{section.4.1}% 50
-\BOOKMARK [2][-]{subsection.4.1.6}{Using SHACL for Data Validation}{section.4.1}% 51
-\BOOKMARK [2][-]{subsection.4.1.7}{Querying Survey Ontology in Prot\351g\351}{section.4.1}% 52
-\BOOKMARK [1][-]{section.4.2}{From Spreadsheets to Linked Open Data For Survey Ontology}{chapter.4}% 53
-\BOOKMARK [1][-]{section.4.3}{Licensing Survey Vocabulary}{chapter.4}% 54
-\BOOKMARK [1][-]{section.4.4}{Publishing Linked Open Vocabulary for Survey}{chapter.4}% 55
-\BOOKMARK [1][-]{section.4.5}{Visualization Tools for OWL Ontology}{chapter.4}% 56
-\BOOKMARK [2][-]{subsection.4.5.1}{OntoGraf}{section.4.5}% 57
-\BOOKMARK [2][-]{subsection.4.5.2}{WebVOWL}{section.4.5}% 58
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 59
-\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 61
-\BOOKMARK [0][-]{section.5.2}{References}{}% 62
+\BOOKMARK [1][-]{section.3.4}{Announcing Linked Open Data}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.4.1}{Licensing Linked Data}{section.3.4}% 44
+\BOOKMARK [2][-]{subsection.3.4.2}{Publishing Linked ``Open" Data}{section.3.4}% 45
+\BOOKMARK [1][-]{section.3.5}{Visualizing Linked Data}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.5.1}{OntoGraf}{section.3.5}% 47
+\BOOKMARK [2][-]{subsection.3.5.2}{WebVOWL}{section.3.5}% 48
+\BOOKMARK [0][-]{chapter.4}{Proof of Concept}{}% 49
+\BOOKMARK [1][-]{section.4.1}{Modeling OWL Ontology for Survey Using Prot\351g\351}{chapter.4}% 50
+\BOOKMARK [2][-]{subsection.4.1.1}{Classes for Survey Ontology}{section.4.1}% 51
+\BOOKMARK [2][-]{subsection.4.1.2}{Object Properties for Survey Ontology}{section.4.1}% 52
+\BOOKMARK [2][-]{subsection.4.1.3}{Data Properties for Survey Ontology}{section.4.1}% 53
+\BOOKMARK [2][-]{subsection.4.1.4}{Individuals}{section.4.1}% 54
+\BOOKMARK [2][-]{subsection.4.1.5}{Final Class Hierarchy for Survey Ontology}{section.4.1}% 55
+\BOOKMARK [2][-]{subsection.4.1.6}{Using SHACL for Data Validation}{section.4.1}% 56
+\BOOKMARK [2][-]{subsection.4.1.7}{Querying Survey Ontology in Prot\351g\351}{section.4.1}% 57
+\BOOKMARK [1][-]{section.4.2}{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}{chapter.4}% 58
+\BOOKMARK [1][-]{section.4.3}{Announcing Linked Data on the Web}{chapter.4}% 59
+\BOOKMARK [2][-]{subsection.4.3.1}{Licensing Survey Vocabulary}{section.4.3}% 60
+\BOOKMARK [2][-]{subsection.4.3.2}{Publishing Linked Open Vocabulary for Survey}{section.4.3}% 61
+\BOOKMARK [1][-]{section.4.4}{Visualizing Survey Ontology}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.4.1}{Representation of Survey Ontology in OntoGraf}{section.4.4}% 63
+\BOOKMARK [2][-]{subsection.4.4.2}{Representation of Survey Ontology in WebVOWL}{section.4.4}% 64
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 65
+\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 66
+\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 67
+\BOOKMARK [0][-]{section.5.2}{References}{}% 68
