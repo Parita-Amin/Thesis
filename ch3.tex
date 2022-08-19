@@ -197,9 +197,9 @@ After describing the classes, object properties, data properties, and individual
 
 Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. It is important to validate the stored data so that the data only consist of acceptable values. According to Ekaputra and Xiashuo~\cite{shacl4protege}, \say{One of the challenges of adopting \ac{swt} for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.} To address this challenge, they developed SHACL4P, a protégé plugin. SHACL4P is used for defining and validating \ac{shacl}, which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. \ac{shacl} uses \say{shapes} to describe constraints.
 
-\section{Conversion of Tabular Data into Linked Open Data}
+\section{Conversion of Tabular Data into Linked Data}
 
-After describing the best possible version of the ontology, the next step is to convert the data stored in spreadsheets into linked open data using either OpenRefine or RMLStreamer. As RMLStreamer is still under development and provides limited support for custom functions, this research uses OpenRefine.
+After describing the best possible version of the ontology, the next step is to convert the data stored in spreadsheets into linked data using either OpenRefine or RMLStreamer. As RMLStreamer is still under development and provides limited support for custom functions, this research uses OpenRefine.
 
 \subsection{Conversion Using OpenRefine}
 
@@ -337,16 +337,48 @@ OpenRefine provides support for following tasks:
    
 \end{enumerate}
 
-\section{Publishing Linked Open Data}
+\section{Announcing Linked Open Data}
 
-As stated by Petrou et al.~\cite{publishlod}, according to the principles of linked data, dereferencable \ac{uri}s can be used to access 
-linked data which 
-the way to access Linked Data is via dereferencable URIs, which, when accessed, provide meaningful descriptions of the concept they represent in a variety of formats, and the data should be accessible to the public. Therefore, access to the data can be provided as RDF dumps or via SPARQL endpoints. To make the data accessible, there are multiple ways 
+\subsection{Licensing Linked Data}
 
-Finally, machine access is provided as it is one of the best practices of
-publishing Linked Data. The datasets converted can be accessed at http://linked-statistics.gr in
-three ways: (a) download the data as RDF dumps for local processing, (b) query and browse the
-data using the SPARQL endpoint service and SPARQL query form, and (c) link to the data by
-referencing to their unique identifier (URI).
+\subsection{Publishing Linked ``Open" Data}
+
+As stated by Petrou et al.~\cite{publishlod}, according to the principles of linked data
+
+\section{Visualizing Linked Data}
+
+The modelled ontology can be visualized using various visualization tools. Protégé supports plug-ins for some visualization tools like OntoGraf and \ac{owl}Viz whereas tools like WebVOWL, RelFinder and \ac{owl}GrEd are available for use as web-based tools. This section focuses on the two tools, OntoGraf and WebVOWL, used for the visualization of ontology in this research.
+
+\subsection{OntoGraf}
+
+Falconer~\cite{falconer2010ontograf} introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. This tool helps the users to represent the ontologies, built using protégé, by repetitively allowing and restricting the desired classes. OntoGraf offers various graph layout options for visualization like Grid Layout\footnote{classes are arranged in a grid alphabetically}, Spring Layout, and Tree Layout\footnote{both horizontal and vertical}. Antoniazzi and Viola~\cite{antoniazz2018rdf} stated that the \say{individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements}. The graphs generated using OntoGraf can be exported as image files of various formats such as \ac{png}, \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch3/protege/ontograf-homescreen.png}
+    \caption{OntoGraf for Survey Ontology}
+    \label{ontograf-homescreen}
+\end{figure}
+
+\subsection{WebVOWL}
+
+WebVOWL~\cite{lohmann2014webvowl}, the Web-based \ac{vowl}, one of the variety of forms in which the \ac{vowl} visualization tool is available, represents the \say{ontologies graphically using a force-directed graph layout}~\cite{antoniazz2018rdf}. \ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
+
+\begin{enumerate}
+  
+    \item Circles are used to denote classes. Also, different types are assigned different colors. For instance, \ac{owl} classes are denoted using \say{light blue circles}.
+
+    \item Black solid lines are used to represent \ac{owl} object and datatype properties. The object properties use light blue labels where as the datatype properties are labelled in green.
+  
+    \item The relationships between the classes and their subclasses are represented using dashed lines.
+
+\end{enumerate}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch3/protege/webvowl-homescreen.png}
+    \caption{WebVOWL for Survey Ontology}
+    \label{webvowl-homescreen}
+\end{figure}
 
 \end{doublespace}
