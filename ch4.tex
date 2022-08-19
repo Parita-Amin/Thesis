@@ -6,7 +6,7 @@
 
 Chapter~\ref{chap:methodology} focuses on the methodology which has been followed to describe and publish the linked open vocabulary for survey in this chapter.
 
-\section{OWL Ontology for Survey Using Protégé}
+\section{Modeling OWL Ontology for Survey Using Protégé}
 
 Figure~\ref{feedback-form} shows the student feedback form for which the new vocabularies are described. 
 
@@ -274,7 +274,7 @@ Protégé offers a plugin for DL as well as SPARQL queries.
 
 \subsubsection{SPARQL Query}
 
-
+Protégé offers plugins to express \ac{sparql} as \say{\ac{sparql} Query} and \say{Snap \ac{sparql} Query}.
 
 \begin{figure}[htp]
     \centering
@@ -290,7 +290,7 @@ Protégé offers a plugin for DL as well as SPARQL queries.
     \label{survey-snap-sparql-query}
 \end{figure}
 
-\section{From Spreadsheets to Linked Open Data For Survey Ontology}
+\section{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}
 
 Primarily, OpenRefine\footnote{https://openrefine.org/} was used to convert the data stored in spreadsheets to Turtle and \ac{rdf} files.
 
@@ -308,21 +308,21 @@ Primarily, OpenRefine\footnote{https://openrefine.org/} was used to convert the 
     \label{survey-rdf-preview}
 \end{figure}
 
-\section{Licensing Survey Vocabulary}
+\section{Announcing Linked Data on the Web}
+
+\subsection{Licensing Survey Vocabulary}
 
 
 
-\section{Publishing Linked Open Vocabulary for Survey}
+\subsection{Publishing Linked Open Vocabulary for Survey}
 
 
 
-\section{Visualization Tools for \ac{owl} Ontology}
+\section{Visualizing Survey Ontology}
 
-The next step is visualization of the built \ac{owl} ontology using various visualization tools. Protégé supports plug-ins for some visualization tools like OntoGraf and \ac{owl}Viz whereas tools like WebVOWL, RelFinder and \ac{owl}GrEd are available for use as web-based tools. This section focuses on the two tools, OntoGraf and WebVOWL, used for the visualization of the survey ontology in this research.
+This section consists of the results of using two ontology visualizations tools for survey vocabulary, namely, OntoGraf and Web\ac{vowl}.
 
-\subsection{OntoGraf}
-
-Falconer~\cite{falconer2010ontograf} introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. This tool helps the users to represent the ontologies, built using protégé, by repetitively allowing and restricting the desired classes. OntoGraf offers various graph layout options for visualization like Grid Layout\footnote{classes are arranged in a grid alphabetically}, Spring Layout, and Tree Layout\footnote{both horizontal and vertical}. Antoniazzi and Viola~\cite{antoniazz2018rdf} stated that the \say{individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements}. The graphs generated using OntoGraf can be exported as image files of various formats such as \ac{png}, \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
+\subsection{Representation of Survey Ontology in OntoGraf}
 
 Figure~\ref{ontograf} shows the graph generated using OntoGraf for the survey ontology. To start with the graph formation, the classes \say{Thing}, \say{Domain\_entity}, \say{Independent\_entity} and \say{Value} were selected followed by expansion of \say{Independent\_entity} and \say{Value} classes by double-clicking them. This expansion adds all the classes that are connected to the classes. The classes connected includes both the subclasses as well as the ones linked through the object properties. Solid blue lines are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties.
 
@@ -333,19 +333,7 @@ Figure~\ref{ontograf} shows the graph generated using OntoGraf for the survey on
     \label{ontograf}
 \end{figure}
 
-\subsection{WebVOWL}
-
-WebVOWL~\cite{lohmann2014webvowl}, the Web-based \ac{vowl}, one of the variety of forms in which the \ac{vowl} visualization tool is available, represents the \say{ontologies graphically using a force-directed graph layout}~\cite{antoniazz2018rdf}. \ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
-
-\begin{enumerate}
-  
-    \item Circles are used to denote classes. Also, different types are assigned different colors. For instance, \ac{owl} classes are denoted using \say{light blue circles}.
-
-    \item Black solid lines are used to represent \ac{owl} object and datatype properties. The object properties use light blue labels where as the datatype properties are labelled in green.
-  
-    \item The relationships between the classes and their subclasses are represented using dashed lines.
-
-\end{enumerate}
+\subsection{Representation of Survey Ontology in WebVOWL}
 
 Figure~\ref{webVOWL} shows the graphical representation of the survey ontology using Web\ac{vowl}. The figure focuses on only some of the class-subclass relationships and some of the object properties. The metadata and the statistics of the node (circle) or the edge (line) can be retrieved by clicked on them. The entities (classes) and their relationships (object and datatype properties) can be presented or restricted using filters. The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} code file.
 
