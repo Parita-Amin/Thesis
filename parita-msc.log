@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 AUG 2022 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  19 AUG 2022 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1501,10 +1501,11 @@ t line 306.
 urvey-sparql-query.png>] [73 <./images/ch4/survey/survey-snap-sparql-query.png>
 ] [74 <./images/ch4/survey/survey-rdf-skeleton.png>] [75 <./images/ch4/survey/s
 urvey-rdf-preview.png>]
-<images/ch4/ontograf.png, id=1399, 1202.4925pt x 617.30624pt>
-File: images/ch4/ontograf.png Graphic file (type png)
-<use images/ch4/ontograf.png>
-Package pdftex.def Info: images/ch4/ontograf.png  used on input line 331.
+<images/ch4/survey/ontograf.png, id=1399, 1202.4925pt x 617.30624pt>
+File: images/ch4/survey/ontograf.png Graphic file (type png)
+<use images/ch4/survey/ontograf.png>
+Package pdftex.def Info: images/ch4/survey/ontograf.png  used on input line 331
+.
 (pdftex.def)             Requested size: 426.79134pt x 219.09344pt.
  [76]
 Overfull \hbox (14.87338pt too wide) in paragraph at lines 350--351
@@ -1512,12 +1513,14 @@ Overfull \hbox (14.87338pt too wide) in paragraph at lines 350--351
 e sur-vey on-tol-ogy us-ing Web[]VOWL.
  []
 
-<images/ch4/webVOWL.png, id=1413, 870.25125pt x 692.5875pt>
-File: images/ch4/webVOWL.png Graphic file (type png)
-<use images/ch4/webVOWL.png>
-Package pdftex.def Info: images/ch4/webVOWL.png  used on input line 354.
+<images/ch4/survey/webVOWL.png, id=1413, 870.25125pt x 692.5875pt>
+File: images/ch4/survey/webVOWL.png Graphic file (type png)
+<use images/ch4/survey/webVOWL.png>
+Package pdftex.def Info: images/ch4/survey/webVOWL.png  used on input line 354.
+
 (pdftex.def)             Requested size: 426.79134pt x 339.66675pt.
-) [77 <./images/ch4/ontograf.png>] [78 <./images/ch4/webVOWL.png>]
+) [77 <./images/ch4/survey/ontograf.png>] [78 <./images/ch4/survey/webVOWL.png>
+]
 \openout2 = `ch5.aux'.
 
  (./ch5.tex
@@ -1590,8 +1593,8 @@ Package rerunfilecheck Info: File `parita-msc.out' has not changed.
 (rerunfilecheck)             Checksum: 7A985CD35C60D6B9E9CD07A586C2CEF8;4461.
  ) 
 Here is how much of TeX's memory you used:
- 19952 strings out of 480608
- 379064 string characters out of 5903631
+ 19951 strings out of 480608
+ 379123 string characters out of 5903631
  727700 words of memory out of 5000000
  35011 multiletter control sequences out of 15000+600000
  548800 words of font info for 65 fonts, out of 8000000 for 9000
