@@ -4,9 +4,9 @@
 
 \begin{doublespace}
 
-Chapter~\ref{chap:methodology} focuses on the methodology which has been followed to describe and publish the linked open vocabulary for survey in this chapter.
+This chapter provides the proof of concept for the methodology (see chapter~\ref{chap:methodology}) followed to describe and publish linked open data for survey.
 
-\section{Modeling OWL Ontology for Survey Using Protégé}
+\section{Modeling Ontology for Survey Using Protégé}
 
 Figure~\ref{feedback-form} shows the student feedback form for which the new vocabularies are described. 
 
@@ -233,7 +233,7 @@ The final class hierarchy of the \ac{owl} ontology in protégé, after using the
 
 The blue (\say{Survey} and \say{SurveyCollection} class) back arrow in front of the yellow solid dot, which indicates class, show parent/child relationship other than that of SubClassOf. This feature can be enabled and disabled by selecting \say{Display relationship in class hierarchy} option from the \say{View} menu of protégé. Figure~\ref{final-survey-classes} shows the relation indicated by the blue back arrow.
 
-\subsection{Using SHACL for Data Validation}
+\subsection{Data Validation Using SHACL}
 
 \ac{shacl}4P is a protégé plugin for \ac{shacl}, which uses \say{shapes} to describe constraints. \ac{shacl} can be used to validate the manually entered data which are stored in spreadsheets. For feedback survey, the likert answers can only have values 1, 2, 3, 4, 5, or No Answer (blank cell). To restrict the values of data properties corresponding to likert questions in Figure~\ref{survey-data-properties}, \ac{shacl}4P has been used.
 
@@ -255,15 +255,13 @@ On clicking the Validate button, the summary of violated constraints is displaye
     \label{shacl-constraint-violations}
 \end{figure}
 
-\subsection{Querying Survey Ontology in Protégé}
+\section{Querying Survey Ontology in Protégé}
 
-The ontology vocabularies can be queried using query languages like DL query and \ac{sparql}. A DL query is used to  such as `and' (corresponding to set intersection) and `some'.\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html}. \ac{sparql} query is used to express queries and optional graph patterns along with their conjunctions and disjunctions as well as aggregation, subqueries, negation, etc.\footnote{https://www.w3.org/TR/sparql11-query/} 
+The ontology vocabularies can be queried using query languages like DL query\footnote{https://protegewiki.stanford.edu/wiki/DL\_Query} and \ac{sparql}. Protégé offers a plugin for DL as well as SPARQL queries which are discussed in this section. 
 
-Protégé offers a plugin for DL as well as SPARQL queries. 
+\subsection{DL Query}
 
-\subsubsection{DL Query}
-
-\say{The DL Query tab allows users to quickly test definitions of classes to see that they subsume the appropriate subclasses. Or check for class membership of arbitrary descriptions without having to create named class placeholders.}\footnote{https://protegewiki.stanford.edu/wiki/DL\_Query} The DL Query tab can be opened using Tabs option under Windows menu. It is important to configure a reasoner to successfully express a DL query. Figure~\ref{survey-dl-query} shows expression of a sample DL query on the survey ontology in protégé. 
+Vasilevsky\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html} defines DL query as a class expression that is constructed using constructs such as `and’ (corresponding to set intersection) and `some’. Users can rapidly check that class definitions encompass the right subclasses by running them via the DL Query tab. Alternately, one can examine arbitrary descriptions for class membership without having to build placeholders for specified classes. The DL Query tab can be opened using Tabs option under Windows menu. It is important to configure a reasoner to successfully express a DL query. Figure~\ref{survey-dl-query} shows expression of a sample DL query on the survey ontology in protégé. 
 
 \begin{figure}[htp]
     \centering
@@ -272,17 +270,46 @@ Protégé offers a plugin for DL as well as SPARQL queries.
     \label{survey-dl-query}
 \end{figure}
 
-\subsubsection{SPARQL Query}
+\subsection{SPARQL Query}
 
-Protégé offers plugins to express \ac{sparql} as \say{\ac{sparql} Query} and \say{Snap \ac{sparql} Query}.
+According to \ac{w3c}~\cite{garlik2013sparql}, \ac{sparql} queries use conjunctions, disjunctions, aggregation, subqueries, negation, and other operations to define queries and optional graph patterns. Protégé offers plugins for \say{\ac{sparql} Query} and \say{Snap \ac{sparql} Query}.
 
+\subsubsection{Using \ac{sparql} Query Plugin}
+    
+\ac{sparql} plugin in protégé is used to express simple queries on ontologies like displaying classes and subclasses. For instance, consider the following query:
+
+\begin{lstlisting}
+
+	SELECT ?subject ?object 
+		WHERE { ?subject rdfs:subClassOf ?object }
+
+\end{lstlisting}
+       
+ Figure~\ref{survey-sparql-query} shows the result of expression of \ac{sparql} query on survey ontology. Here, the query is used to display \say{Class} and \say{subClassOf} with column titles subject and object respectively.
+    
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/survey/survey-sparql-query.png}
     \caption{SPARQL Query on Survey Ontology}
     \label{survey-sparql-query}
 \end{figure}
+    
+\subsubsection{Using Snap \ac{sparql} Query Plugin}
 
+The Snap \ac{sparql} plugin in protégé is generally used to express comparatively complex queries on ontologies like displaying description of individuals. For instance, consider the following query:    
+
+\begin{lstlisting}
+
+	SELECT (STR(?lab) AS ?Class) ?Individuals WHERE { 
+		?Individuals rdf:type owl:NamedIndividual .
+		OPTIONAL {?Individuals rdf:type ?lab}
+	} 
+	ORDER BY ?Class 
+   
+\end{lstlisting}
+
+Figure~\ref{survey-snap-sparql-query} shows the result of expression of Snap \ac{sparql} query on survey ontology. It is necessary to enable a reasoner for successful working of Snap \ac{sparql} query. Here, the query is used to display \say{Class} and \say{Individual} with column titles ?Class and ?Individuals respectively.
+ 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/survey/survey-snap-sparql-query.png}
@@ -292,31 +319,103 @@ Protégé offers plugins to express \ac{sparql} as \say{\ac{sparql} Query} and \
 
 \section{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}
 
-Primarily, OpenRefine\footnote{https://openrefine.org/} was used to convert the data stored in spreadsheets to Turtle and \ac{rdf} files.
+Primarily, OpenRefine\footnote{https://openrefine.org/} has been used to convert the data stored in spreadsheets to \ac{turtle} and \ac{rdf} files using the methodology described in section~\ref{sec:csvtolod}. Using survey ontology in OpenRefine, the \ac{csv} file consisting of survey responses is converted into \ac{turtle} and \ac{rdf}/\ac{xml} files.
+
+After importing the \ac{csv} and creating a new project, the next step is to manage \ac{rdf} Schema alignment to describe the data stored in \ac{csv} in terms of linked data vocabulary. On selecting \say{Edit \ac{rdf} Skeleton} from the menu of \ac{rdf} Extension, an \say{\ac{rdf} Schema alignment} dialog box appears which offers two options: \ac{rdf} Skeleton and \ac{rdf} Preview. The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
+ 
+\begin{lstlisting} 
+     Base URI: https://parita-amin.github.io/survey.owl# 
+\end{lstlisting}
+ 
+\subsection{RDF Skeleton}
+
+Figure~\ref{openrefine-rdf-skeleton} shows \ac{rdf} skeleton for \ac{csv} using survey ontology. It consists of a list of prefixes along with options for adding and managing prefixes; \ac{uri} for index count; and the fields in the project with an option of using linked data vocabularies to describe them
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/survey-rdf-skeleton.png}
+    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-rdf-skeleton.png}
     \caption{RDF Skeleton for CSV using Survey Ontology}
-    \label{survey-rdf-skeleton}
+    \label{openrefine-rdf-skeleton}
 \end{figure}
+
+\subsubsection{Prefixes}
+    
+    \begin{itemize}
+    
+        \item OpenRefine offers some default prefixes, namely, \say{rdf}, \say{owl}, \say{rdfs}, and \say{foaf}, which can be used and managed as necessary. 
+    
+        \item It also allows adding other prefixes which can be done by clicking on \say{+Add} option as shown in Figure~\ref{openrefine-add-prefix}. The prefix \say{survey} has been added to the list with \ac{uri} https://parita-amin.github.io/survey.owl\#.
+    
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-add-prefix.png}
+    \caption{Add New Prefix for Survey Ontology in OpenRefine}
+    \label{openrefine-add-prefix}
+\end{figure}
+    
+        \item The prefixes can be deleted and/or refreshed using \say{Manage} option as shown in Figure~\ref{openrefine-manage-prefix}.
+        
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-manage-prefix.png}
+    \caption{Manage Prefixes in OpenRefine}
+    \label{openrefine-manage-prefix}
+\end{figure}
+        
+    \end{itemize}
+
+\subsubsection{RDF Node for Index}
+    
+    Index is a unique identifier for the number of records in the table. Figure~\ref{openrefine-index} shows options available for the settings of the \ac{rdf} Node for index. For survey data, \ac{uri} for \say{ID} has been set as unique index.
+    
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-index.png}
+    \caption{RDF Node Settings for Index ID of Records in CSV in OpenRefine}
+    \label{openrefine-index}
+\end{figure}     
+    
+\subsubsection{Describing Fields in terms of Linked Data}
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/survey-rdf-preview.png}
+    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-index.png}
+    \caption{RDF Node Settings for Index ID of Records in CSV in OpenRefine}
+    \label{openrefine-index}
+\end{figure} 
+
+
+\subsection{RDF Preview}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-rdf-preview.png}
     \caption{RDF Preview for CSV using Survey Ontology}
-    \label{survey-rdf-preview}
+    \label{openrefine-rdf-preview}
 \end{figure}
 
-\section{Announcing Linked Data on the Web}
+\section{Publishing Survey Vocabulary with License}
 
-\subsection{Licensing Survey Vocabulary}
+As mentioned in section~\ref{sec:announcinglod}, it is necessary to specify an appropriate license for linked open data. When there is a clear declaration regarding the source, ownership, and conditions associated to the use of the public data, data reuse is more likely to happen.
 
+\begin{itemize}
+    
+    \item Publishing Survey Vocabulary:
+    
+    The linked open vocabulary for feedback survey that Dr. Hepting solicits from his students in the classes he teaches. The dataset can be accessed as \ac{turtle} file from my website\footnote{https://parita-amin.github.io/survey.ttl} or can be viewed by visiting the link to the \ac{turtle} file\footnote{https://parita-amin.github.io/evaluationofteaching.html} on my website (see Figure~\ref{survey-license}).
+    
+ \begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/survey/survey-license.png}
+    \caption{Link to Turtle File containing Survey Vocabulary}
+    \label{survey-license}
+\end{figure}       
+   
+    \item License:
+    
+    The linked open dataset discussed in this research has an open license: \say{Attribution-ShareAlike 4.0 International}\footnote{https://creativecommons.org/licenses/by-sa/4.0/} 
 
-
-\subsection{Publishing Linked Open Vocabulary for Survey}
-
-
+\end{itemize}
 
 \section{Visualizing Survey Ontology}
 
@@ -324,7 +423,9 @@ This section consists of the results of using two ontology visualizations tools 
 
 \subsection{Representation of Survey Ontology in OntoGraf}
 
-Figure~\ref{ontograf} shows the graph generated using OntoGraf for the survey ontology. To start with the graph formation, the classes \say{Thing}, \say{Domain\_entity}, \say{Independent\_entity} and \say{Value} were selected followed by expansion of \say{Independent\_entity} and \say{Value} classes by double-clicking them. This expansion adds all the classes that are connected to the classes. The classes connected includes both the subclasses as well as the ones linked through the object properties. Solid blue lines are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties.
+To start with the graph formation, the classes \say{owl:Thing}, \say{Survey}, \say{SurveyResponse}, \say{SurveyQuestions}, \say{SurveyAnswers}, \say{Respondent}, and \say{SurveyCollection} were selected followed by their expansion by double-clicking them. This expansion adds all the classes that are connected to the classes. The classes connected includes both the subclasses as well as the ones linked through the object properties and individuals. 
+
+Figure~\ref{ontograf} shows the graph generated using OntoGraf for survey ontology. Solid blue lines in the graph are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties. \say{Arc Types} represent symbols for different object properties. The classes are denoted by yellow solid dot followed by the class name where as individuals are denoted by purple solid diamond followed by the instance name.
 
 \begin{figure}[htp]
     \centering
@@ -335,7 +436,7 @@ Figure~\ref{ontograf} shows the graph generated using OntoGraf for the survey on
 
 \subsection{Representation of Survey Ontology in WebVOWL}
 
-Figure~\ref{webVOWL} shows the graphical representation of the survey ontology using Web\ac{vowl}. The figure focuses on only some of the class-subclass relationships and some of the object properties. The metadata and the statistics of the node (circle) or the edge (line) can be retrieved by clicked on them. The entities (classes) and their relationships (object and datatype properties) can be presented or restricted using filters. The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} code file.
+Figure~\ref{webVOWL} shows the graphical representation of the survey ontology using Web\ac{vowl}. The figure focuses on only some of the class-subclass relationships and some of the object properties. The metadata and the statistics of the node (circle) or the edge (line) can be retrieved by clicking on them. The entities (classes) and their relationships (object and datatype properties) can be presented or restricted using filters. The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} code file.
 
 \begin{figure}[htp]
     \centering
