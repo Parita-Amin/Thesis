@@ -163,6 +163,12 @@ Sean Falconer.
 \newblock {\em Available at: http://protegewiki.stanford.edu/wiki/OntoGraf},
   2010.
 
+\bibitem{garlik2013sparql}
+Steve~Harris Garlik and Andy Seaborne.
+\newblock {{SPARQL}} 1.1 {{Q}uery} {{L}anguage}.
+\newblock {\em W3C Recommendation}, March 2013.
+  https://www.w3.org/TR/sparql11-query/ , accessed November 15, 2021.
+
 \bibitem{gruber1995towards}
 Thomas~R Gruber.
 \newblock {{T}oward} {{P}rinciples} for the {{D}esign} of {{O}ntologies} used
@@ -196,6 +202,12 @@ Matthew Horridge, Simon Jupp, Georgina Moulton, Alan Rector, Robert Stevens,
 \newblock {{A}} {{P}ractical} {{G}uide} to {{B}uilding} {{OWL}} {{O}ntologies}
   using {{P}}rot{\'e}g{\'e} 4 and {{CO-ODE}} {{T}ools} {{E}dition} 1.3.
 \newblock {\em The University of Manchester}, March 2011.
+
+\bibitem{hyland2014bestpractices}
+Bernadette Hyland, Ghislain Atemezing, and Boris Villaz{\'o}n-Terrazas.
+\newblock {{B}est} {{P}ractices} for {{P}ublishing} {{L}inked} {{D}ata}.
+\newblock {\em W3C Recommendation}, January 2014. http://www.w3.org/TR/ld-bp/ ,
+  accessed February 23, 2022.
 
 \bibitem{jacob2003ontologies}
 Elin~K Jacob.
@@ -242,7 +254,7 @@ Jakob Nielsen.
 \newblock {\em Morgan Kaufmann Publichers Inc., San Franscisco, USA}, pages
   23--48, 1994.
 
-\bibitem{publishlod}
+\bibitem{irene2014publishlod}
 Irene Petrou, Marios Meimaris, and George Papastefanatos.
 \newblock {T}owards a {M}ethodology for {P}ublishing {L}inked {O}pen
   {S}tatistical {D}ata.
