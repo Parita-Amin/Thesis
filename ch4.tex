@@ -25,12 +25,12 @@ shows the student feedback form for which the new vocabularies are described.
 All the classes can be created and described using the steps described in section~\ref{subsec:classhierarchy}. 
 The resultant class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. 
 A survey can have 
-\say{Survey Response}, 
-\say{Respondent}, 
-\say{Response Date}, 
-\say{Type of Survey}, 
-\say{Survey Questions}, and 
-\say{Survey Answers}, 
+``Survey Response'', 
+``Respondent'', 
+``Response Date'', 
+``Type of Survey'', 
+``Survey Questions'', and 
+``Survey Answers'', 
 which are considered for this ontology as well. 
 
 \begin{figure}[htp]
@@ -41,17 +41,17 @@ which are considered for this ontology as well.
 \end{figure}
 
 Here, 
-the type of survey used is feedback survey (\say{FeedbackSurvey} class). 
-The \say{SurveyCollection} class corresponds to a collection of survey responses (\say{SurveyResponse} class) 
-that were collected for a particular course (\say{CourseID} class) 
-in a particular semester (\say{SemesterID} class) 
-with a specific collection ID (\say{CollectionID} class). 
+the type of survey used is feedback survey (``FeedbackSurvey'' class). 
+The ``SurveyCollection'' class corresponds to a collection of survey responses (``SurveyResponse'' class) 
+that were collected for a particular course (``CourseID'' class) 
+in a particular semester (``SemesterID'' class) 
+with a specific collection ID (``CollectionID'' class). 
 Furthermore, 
 the survey questions and survey answers have classes corresponding to various forms of question-answer. 
 Generally, 
 feedback surveys consist of two types of questions, 
 namely, 
-\say{Likert Questions} and \say{Open-ended Questions}. 
+``Likert Questions'' and ``Open-ended Questions''. 
 The type of questions might differ depending on the designer of the survey, 
 some of which, 
 as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} 
@@ -91,12 +91,12 @@ website, are listed below.
 
 The feedback survey in this research has Likert and Open-ended questions. 
 The classes described for the questions and answers are 
-\say{LikertScaleQuestions} and \say{OpenEndedQuestions} 
+``LikertScaleQuestions'' and ``OpenEndedQuestions'' 
 as sub-classes of 
-\say{SurveyQuestions} and 
-\say{LikertScaleAnswers} and \say{OpenEndedAnswers} 
+``SurveyQuestions'' and 
+``LikertScaleAnswers'' and ``OpenEndedAnswers'' 
 as sub-classes of 
-\say{SurveyAnswers}. 
+``SurveyAnswers''. 
 For all the survey questions, 
 there is a question and an answer, 
 where both of them are considered as distinct classes. 
@@ -107,12 +107,12 @@ Open-ended questions have unpredictable answers.
 Likert questions are the questions for which the answers are from the preset list of answers. 
 For the Likert questions, 
 the questions can be either of type 
-\say{Never-Always-4} or 
-\say{Never-Always-5} or 
-\say{Never-Always-7} or 
-\say{Never-Always-*}, 
+``Never-Always-4'' or 
+``Never-Always-5'' or 
+``Never-Always-7'' or 
+``Never-Always-*'', 
 of which Never-Always-5 has been used by Hepting~\cite{prof}. 
-The survey ontology consists of \say{LikertScaleQuestions} class for likert questions.
+The survey ontology consists of ``LikertScaleQuestions'' class for likert questions.
 
 In a Never-Always-5 type of survey, 
 5 degrees of agreement can be used. 
@@ -140,13 +140,13 @@ the field corresponding to the answer is left blank.
     \label{likert-degrees}
 \end{table}
 
-The \say{LikertScaleQuestions} class of survey ontology has a sub-class, 
-\say{LikertScale5}, 
+The ``LikertScaleQuestions'' class of survey ontology has a sub-class, 
+``LikertScale5'', 
 which represents the likert scale with the degrees of agreement from Table~\ref{likert-degrees}. 
-The \say{Equivalent To} 
+The ``Equivalent To'' 
 (from the description view of the class tab) 
 can be used to describe the 
-\say{LikertScale5} class in terms of a range containing degrees of agreement as shown in Figure~\ref{likertscale5-class}. 
+``LikertScale5'' class in terms of a range containing degrees of agreement as shown in Figure~\ref{likertscale5-class}. 
 Each of these degrees are treated as an individual 
 (section~\ref{subsec:individuals}) of the class.
 
@@ -166,9 +166,9 @@ shows the list of the object properties along with their domain and range classe
 Table~\ref{survey-object-properties-parent-nodes-and-inverse} 
 consists of the parent nodes and inverse properties of the object properties. 
 The three parent nodes involved in object property hierarchy are 
-\say{owl:TopObjectProperty}, 
-\say{hasContent}, and 
-\say{isContentOf}.
+``owl:TopObjectProperty'', 
+``hasContent'', and 
+``isContentOf''.
 
 \begin{figure}[htp]
     \centering
@@ -239,7 +239,7 @@ which are as shown in Figure~\ref{survey-data-properties}.
     \label{survey-data-properties}
 \end{figure}
 
-The parent node of all the data properties is \say{owl:topDataProperty} 
+The parent node of all the data properties is ``owl:topDataProperty'' 
 and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}. 
 The properties for likert answers restrict the datatype to positive integer and to string for open-ended answers.
 
@@ -267,12 +267,12 @@ The properties for likert answers restrict the datatype to positive integer and 
 \subsection{Individuals}\label{subsec:individuals}
 
 While dealing with ontologies, 
-an instance of class is termed as an \say{Individual}. 
+an instance of class is termed as an ``Individual''. 
 In protégé, 
 an individual can be described as an instance of class using the Description view of the Class tab. 
 For example, 
 Figure~\ref{instances-of-survey-class} 
-shows instances of \say{Survey} class.
+shows instances of ``Survey'' class.
 
 \begin{figure}[htp]
     \centering
@@ -306,7 +306,7 @@ shows a list of classes and individuals described in survey ontology.
 
 \subsection{Final Class Hierarchy for Survey Ontology}\label{subsec:finalsurveyclasses}
 
-The final class hierarchy of the \ac{owl} ontology in protégé, 
+The final class hierarchy in the \ac{owl} ontology for feedback survey using protégé, 
 after using the HermiT 1.4.3.456 reasoner, 
 would be as shown in Figure~\ref{final-survey-classes}.
 
@@ -318,20 +318,20 @@ would be as shown in Figure~\ref{final-survey-classes}.
 \end{figure}
 
 The blue back arrow 
-(\say{Survey} and \say{SurveyCollection} class) 
+(``Survey'' and ``SurveyCollection'' class) 
 in front of the yellow solid dot, 
 which indicates class, 
 show parent/child relationship other than that of SubClassOf. 
 This feature can be enabled and disabled by selecting 
-\say{Display relationship in class hierarchy} 
-option from the \say{View} menu of protégé. 
+``Display relationship in class hierarchy'' 
+option from the ``View'' menu of protégé. 
 Figure~\ref{final-survey-classes} 
 shows the relation indicated by the blue back arrow.
 
 \subsection{Data Validation Using SHACL}\label{subsec:shacl}
 
 \ac{shacl}4P is a protégé plugin for \ac{shacl}, 
-which uses \say{shapes} to describe constraints. 
+which uses ``shapes'' to describe constraints. 
 \ac{shacl} can be used to validate the manually entered data which are stored in spreadsheets. 
 For feedback survey, 
 the likert answers can only have values 
@@ -344,12 +344,14 @@ For successful working of \ac{shacl}4P,
 a reasoner should be enabled. 
 The \ac{shacl} editor provides three buttons, 
 namely, 
-\say{Open}, \say{Save} , and \say{Validate}. 
+``Open'', 
+``Save'' , and 
+``Validate''. 
 After opening the shapes file (Open button), 
 changes can be made and saved (Save button). 
 Where as the Validate button allows users to validate the data. 
 Figure~\ref{shacl-editor} 
-shows a sample \say{SurveyShapes.txt} 
+shows a sample ``SurveyShapes.txt'' 
 file opened in \ac{shacl} editor of protégé.
 
 \begin{figure}[htp]
@@ -362,12 +364,12 @@ file opened in \ac{shacl} editor of protégé.
 On clicking the Validate button, 
 the summary of violated constraints is displayed on the \ac{shacl} constraint violations view in protégé. 
 It contains the details like 
-\say{Severity}, 
-\say{SourceShape}, 
-\say{Message}, 
-\say{FocusNode}, 
-\say{Path}, and 
-\say{Value} 
+``Severity'', 
+``SourceShape'', 
+``Message'', 
+``FocusNode'', 
+``Path'', and 
+``Value'' 
 as shown in Figure~\ref{shacl-constraint-violations}.
 
 \begin{figure}[htp]
@@ -410,7 +412,7 @@ According to \ac{w3c}~\cite{garlik2013sparql},
 conjunctions, disjunctions, aggregation, subqueries, negation, and other operations 
 to define queries and optional graph patterns. 
 Protégé offers plugins for 
-\say{\ac{sparql} Query} and \say{Snap \ac{sparql} Query}.
+``\ac{sparql} Query'' and ``Snap \ac{sparql} Query''.
 
 \subsubsection{Using \ac{sparql} Query Plugin}\label{subsubsec:usingsparql}
     
@@ -429,7 +431,7 @@ consider the following query:
  shows the result of expression of \ac{sparql} query on survey ontology. 
  Here, 
  the query is used to display 
- \say{Class} and \say{subClassOf} 
+ ``Class'' and ``subClassOf'' 
  with column titles subject and object respectively.
     
 \begin{figure}[htp]
@@ -460,7 +462,7 @@ shows the result of expression of Snap \ac{sparql} query on survey ontology.
 It is necessary to enable a reasoner for successful working of Snap \ac{sparql} query. 
 Here, 
 the query is used to display 
-\say{Class} and \say{Individual} 
+``Class'' and ``Individual'' 
 with column titles ?Class and ?Individuals respectively.
  
 \begin{figure}[htp]
@@ -485,8 +487,8 @@ the next step is to manage \ac{rdf} Schema alignment
 to describe the data stored in \ac{csv} 
 in terms of linked data vocabulary. 
 On selecting 
-\say{Edit \ac{rdf} Skeleton} from the menu of \ac{rdf} Extension, 
-an \say{\ac{rdf} Schema alignment} dialog box 
+``Edit \ac{rdf} Skeleton'' from the menu of \ac{rdf} Extension, 
+an ``\ac{rdf} Schema alignment'' dialog box 
 appears which offers two options: 
 \ac{rdf} Skeleton and \ac{rdf} Preview. 
 The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
@@ -499,7 +501,8 @@ The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
 
 Figure~\ref{openrefine-rdf-skeleton} 
 shows \ac{rdf} skeleton for \ac{csv} using survey ontology. 
-It consists of a list of prefixes along with options for adding and managing prefixes; 
+It consists of a list of 
+prefixes along with options for adding and managing prefixes; 
 \ac{uri} for index count; 
 and the fields in the project with an option of using linked data vocabularies to describe them.
 
@@ -516,13 +519,13 @@ and the fields in the project with an option of using linked data vocabularies t
     
         \item OpenRefine offers some default prefixes, 
         namely, 
-        \say{rdf}, \say{owl}, \say{rdfs}, and \say{foaf}, 
+        ``rdf'', ``owl'', ``rdfs'', and ``foaf'', 
         which can be used and managed as necessary. 
     
         \item It also allows adding other prefixes which can be done by clicking on 
-        \say{+Add} option 
+        ``+Add'' option 
         as shown in Figure~\ref{openrefine-add-prefix}. 
-        The prefix \say{survey} 
+        The prefix ``survey'' 
         has been added to the list with \ac{uri} https://parita-amin.github.io/survey.owl\#.
     
         \begin{figure}[htp]
@@ -532,7 +535,7 @@ and the fields in the project with an option of using linked data vocabularies t
             \label{openrefine-add-prefix}
         \end{figure}
     
-        \item The prefixes can be deleted and/or refreshed using \say{Manage} option 
+        \item The prefixes can be deleted and/or refreshed using ``Manage'' option 
         as shown in Figure~\ref{openrefine-manage-prefix}.
         
         \begin{figure}[htp]
@@ -549,18 +552,14 @@ and the fields in the project with an option of using linked data vocabularies t
 Index is a unique identifier for the number of records in the table. 
 Figure~\ref{openrefine-index} 
 shows options available for the settings of the \ac{rdf} Node for index. 
+It offers options for 
+``Use content...'', 
+``Content used...'', and 
+``Use expression...''.
 For survey data, 
-\ac{uri} for \say{ID} has been set as unique index.
-    
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-index.png}
-    \caption{RDF Node Settings for Index ID of Records in CSV in OpenRefine}
-    \label{openrefine-index}
-\end{figure}     
-%TODO...    
-\subsubsection{Describing Fields in terms of Linked Data}\label{subsubsec:describingfields}
-
+\ac{uri} for ``ID'' has been set as unique index. 
+On clicking ``Preview edit'', format of expression to display ``ID'' can be modified.
+       
 \begin{figure}[htp]
     \centering
     \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-index.png}
@@ -568,8 +567,48 @@ For survey data,
     \label{openrefine-index}
 \end{figure} 
 
+\subsubsection{Describing Fields in terms of Linked Data}\label{subsubsec:describingfields}
+
+The next step is describing the \ac{csv} data
+in terms of linked open vocabularies. 
+``Available prefixes'' 
+allows using vocabularies described in the list of ontologies. 
+Figure~\ref{openrefine-selecting-property} 
+shows the list of classes and properties along with the ontology prefix that match the input string. 
+The vocabulary can be selected for each field of the \ac{csv} 
+to represent the data. 
+
+For instance, 
+``survey:hasLikertAns\_is\_well\_prepared\_for\_class'' 
+property can be assigned to the data corresponding to the field, 
+``Q01\_Rate instructor->1. The instructor is well-prepared for class'' 
+of the \ac{csv}. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-selecting-property.png}
+    \caption{Using Linked Data to Describe the Fields in CSV for Feedback Responses}
+    \label{openrefine-selecting-property}
+\end{figure}
 
 \subsection{RDF Preview}\label{subsec:rdfpreview}
+
+Once the \ac{rdf} skeleton is set, 
+``\ac{rdf} Preview'' 
+can be used to view the description of \ac{csv} data. 
+The fields of data that were not described in \ac{rdf} skeleton, 
+do not appear in \ac{rdf} Preview. 
+It consists of a \ac{turtle} representation 
+of the first 10 rows of the resultant linked data. 
+
+Figure~\ref{openrefine-rdf-preview} 
+depicts an \ac{rdf} Preview 
+of using survey vocabulary to describe the data stored in \ac{csv}. 
+It includes 
+all the prefixes for vocabularies from ``Available prefixes'' 
+along with their \ac{uri}s; 
+a \ac{uri} for the ``ID'' for each record;
+the vocabulary and value for the fields corresponding to the responses to all the likert-scale as well as open-ended questions for each record.
 
 \begin{figure}[htp]
     \centering
@@ -577,6 +616,12 @@ For survey data,
     \caption{RDF Preview for CSV using Survey Ontology}
     \label{openrefine-rdf-preview}
 \end{figure}
+
+Any modifications in \ac{rdf} skeleton will reflect on the \ac{rdf} preview. 
+Once the data in \ac{csv} 
+has been converted to linked data, 
+it can be stored as 
+\ac{rdf}/\ac{xml} and \ac{turtle}.
 
 \section{Publishing Survey Vocabulary with License}\label{sec:publishingsurveyvocabulary}
 
@@ -592,7 +637,8 @@ data reuse is more likely to happen.
     \item Publishing Survey Vocabulary:
     
     The linked open vocabulary for feedback survey that Dr. Hepting solicits from his students in the classes he teaches. 
-    The dataset can be accessed as \ac{turtle} file from my website\footnote{https://parita-amin.github.io/survey.ttl} 
+    The dataset can be accessed as \ac{turtle} 
+    file from my website\footnote{https://parita-amin.github.io/survey.ttl} 
     or can be viewed by visiting the link to the \ac{turtle} 
     file\footnote{https://parita-amin.github.io/evaluationofteaching.html} 
     on my website (see Figure~\ref{survey-license}).
@@ -607,7 +653,9 @@ data reuse is more likely to happen.
     \item License:
     
     The linked open dataset discussed in this research has an open license: 
-    \say{Attribution-ShareAlike 4.0 International}\footnote{https://creativecommons.org/licenses/by-sa/4.0/} 
+    ``Attribution-ShareAlike 4.0 International''\footnote{https://creativecommons.org/licenses/by-sa/4.0/}. 
+    The degree of transparency increases as more data become available under an open license. 
+    This makes it possible for the user to investigate the relationships in the data and use it effectively. 
 
 \end{itemize}
 
@@ -621,13 +669,13 @@ OntoGraf and Web\ac{vowl}.
 
 To start with the graph formation, 
 the classes 
-\say{owl:Thing}, 
-\say{Survey}, 
-\say{SurveyResponse}, 
-\say{SurveyQuestions}, 
-\say{SurveyAnswers}, 
-\say{Respondent}, and 
-\say{SurveyCollection} 
+``owl:Thing'', 
+``Survey'', 
+``SurveyResponse'', 
+``SurveyQuestions'', 
+``SurveyAnswers'', 
+``Respondent'', and 
+``SurveyCollection'' 
 were selected followed by their expansion by double-clicking them. 
 This expansion adds all the classes that are connected to the classes. 
 The classes connected includes both the subclasses as well as the ones linked through the object properties and individuals. 
@@ -635,7 +683,7 @@ The classes connected includes both the subclasses as well as the ones linked th
 Figure~\ref{ontograf} 
 shows the graph generated using OntoGraf for survey ontology. 
 Solid blue lines in the graph are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties. 
-\say{Arc Types} 
+``Arc Types'' 
 represent symbols for different object properties. 
 The classes are denoted by yellow solid dot followed by the class name where as individuals are denoted by purple solid diamond followed by the instance name.
 
