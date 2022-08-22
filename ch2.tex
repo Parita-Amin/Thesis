@@ -11,7 +11,7 @@ focusing on the semantic web and linked open data from the perspectives of techn
 
 The idea of the Web, as described by Berners Lee~\cite{bernersreadings}, 
 came from the positive experience of a small 
-\say{home-brew} personal hypertext system.
+``home-brew'' personal hypertext system.
 
 The web was first designed by Berners-Lee in 1989\footnote{https://www.w3.org/History/1989/proposal.html} while working at the \ac{cern}. 
 
@@ -36,8 +36,9 @@ The latest generation of web that is still at its research and development stage
 This version of the web is intended to work with artificial intelligence to give users an exceptional quality of experience. 
 While describing how Web 4.0 would be, 
 Berners Lee~\cite{bernerslee1999weaving} stated 
-\say{if \ac{html} and the Web made all the online documents look like one huge book, 
-\ac{rdf}, schema, and inference languages will make all the data in the world look like one huge database}.
+``if \ac{html} 
+and the Web made all the online documents look like one huge book, 
+\ac{rdf}, schema, and inference languages will make all the data in the world look like one huge database''.
 
 \subsection{The Semantic Web Stack}\label{subsec:semanticwebstack}
 
@@ -65,8 +66,8 @@ self-descriptive document, data and rules.
 \section{Linked Open Data}\label{sec:linkedopendata}
 
 According to Berners-Lee et al.~\cite{aghaei2012evolution}, 
-\say{Semantic web is not limited to publication of data on the web; 
-it is about making links to connect related data.} 
+``Semantic web is not limited to publication of data on the web; 
+it is about making links to connect related data.'' 
 The concept of Linked Open Data\footnote{https://www.ontotext.com/knowledgehub/fundamentals/linked-data-linked-open-data/} 
 is an amalgamation of two technologies, 
 Linked Data and Open Data.
@@ -150,10 +151,10 @@ accessible/available linked datasets.
 
 According to a handbook\footnote{https://opendatahandbook.org/guide/en/what-is-open-data/} 
 by the Open Knowledge Foundation, 
-\say{Open Data is data that can be freely used, 
+``Open Data is data that can be freely used, 
 re-used and redistributed by anyone - subject only, 
 at most, 
-to the requirement to attribute and share-alike}. 
+to the requirement to attribute and share-alike''. 
 To make open data available to everyone on the web, 
 the data don't need to be interlinked. 
 Important features of open data are:
@@ -177,14 +178,14 @@ initially designed as a metadata data model,
 is a computer-understandable specification written in a particular format. 
 According to a proposal by \ac{w3c}\footnote{https://www.w3.org/TR/PR-rdf-syntax/Overview.html}, 
 \ac{rdf} plays an important role in their 
-\say{Semantic Web Vision}. 
+``Semantic Web Vision''. 
 \ac{rdf} describes an entity (or resources) and the relationships among them on the web using basic data models like the \ac{er} model.
 
 \ac{rdf} is a \ac{w3c}\footnote{https://www.w3schools.com/xml/xml\_rdf.asp} 
 specification for describing resources on the web. 
 \ac{rdf} uses 
-\say{properties} and 
-\say{property values} 
+``properties'' and 
+``property values'' 
 to describe the resource which is identified by web identifiers called \ac{uri} (section~\ref{subsec:uri}). 
 There are three types of objects in \ac{rdf}, 
 namely, 
@@ -194,13 +195,13 @@ with an optional ID.
 To search for the resources on the web, 
 the resources must be named using the \ac{http}/\ac{https} \ac{uri}s. 
 The \ac{w3c} has defined the 
-\say{rdf:type} 
+``rdf:type'' 
 property to represent the 
-\say{object of one or more classes}~\cite{cyganiak2014rdf}. 
+``object of one or more classes''~\cite{cyganiak2014rdf}. 
 Resources are described by their characteristics, 
-called \say{property}. 
+called ``property''. 
 The object of \ac{rdf} 
-that is used to combine a resource with a property of its value is a \say{statement}. 
+that is used to combine a resource with a property of its value is a ``statement''. 
 A statement, 
 in general terms, 
 can be seen as building blocks of a statement in English, 
@@ -224,10 +225,10 @@ Figure~\ref{rdf-xml-doc}
 shows an example of an \ac{rdf}/\ac{xml}\footnote{\ac{rdf} written using \ac{xml}} 
 document. 
 The resource being described is 
-\say{https://www.semanticweb.org/pda324/ontologies/survey} and 
-\say{Survey Details} 
+``https://www.semanticweb.org/pda324/ontologies/survey'' and 
+``Survey Details'' 
 is the property value. 
-The document consists of various \ac{xml} tags enclosed between the angular brackets (\say{<} and \say{>}). 
+The document consists of various \ac{xml} tags enclosed between the angular brackets (``<'' and ``>''). 
 An \ac{rdf}/\ac{xml} 
 document starts and ends with <rdf : \ac{rdf}> and </rdf : \ac{rdf}> respectively. 
 <rdf : Description> 
@@ -247,9 +248,9 @@ An \ac{rdf} triple,
 generally, 
 follows subject-predicate-object format. 
 For the illustration in the figure, 
-the subject is \say{https://www.semanticweb.org/pda324/ontologies/survey}, 
-predicate is \say{includes} 
-and the object is \say{Survey Details}.
+the subject is ``https://www.semanticweb.org/pda324/ontologies/survey'', 
+predicate is ``includes`` 
+and the object is ``Survey Details''.
 
 \begin{figure}[htp]
     \centering
@@ -324,12 +325,12 @@ is the graphical representation of an \ac{rdf}
 with schema as well as data. 
 In the graph, 
 the rdf:type of 
-\say{Romeo and Juliet} is \say{Play} 
-which in turn is an rdf:subClassOf \say{Literature}. 
+``Romeo and Juliet'' is ``Play'' 
+which in turn is an rdf:subClassOf ``Literature''. 
 Also, 
-the rdf:type of \say{William Shakespeare} is \say{Person} which, 
+the rdf:type of ``William Shakespeare'' is ``Person'' which, 
 further, 
-is an rdfs:range of \say{is written by} of rdfs:domain \say{Literature}.
+is an rdfs:range of ``is written by'' of rdfs:domain ``Literature''.
 
 \begin{figure}[htp]
     \centering
@@ -344,11 +345,11 @@ looks quite different from the previous example
 For the representation of an actual \ac{rdf}, 
 consider Figure~\ref{statement-for-rdf} 
 for the corresponding English statement. 
-\say{http://www.semanticweb.org/survey.html} 
+``http://www.semanticweb.org/survey.html'' 
 is a subject \ac{uri} 
 with respondent and Robert James having \ac{uri}s as 
-\say{http://xyz.org/1/respondent} and 
-\say{http://www.semanticweb.org/responseID/1234} respectively. 
+``http://xyz.org/1/respondent'' and 
+``http://www.semanticweb.org/responseID/1234'' respectively. 
 The example represents a survey system which has responses as well as respondents and related details as a part of the environment.
 
 \begin{figure}[htp]
@@ -386,7 +387,7 @@ Suppose the new statement added is:
     \emph{http://www.semanticweb.org/survey.html} has a \emph{date} with value \emph{Sept. 08, 2020}    
 \end{center} 
 and the \ac{uri} for the date is 
-\say{http://www.semanticweb.org/respDetails/date}.
+``http://www.semanticweb.org/respDetails/date''.
 
 \begin{figure}[htp]
     \centering
@@ -442,12 +443,12 @@ shows a graphical representation of this \ac{rdf} system.
 For name, 
 the respondent is subject and Robert James acts as object whereas respName is the predicate. 
 The \ac{uri} for respName is 
-\say{http://www.semanticweb.org/respDe- tails/name} 
+``http://www.semanticweb.org/respDe- tails/name'' 
 and the value, Robert James, is the object. 
 On the other hand, 
 respondent (subject) is connected to address (object) node, 
-with \ac{uri} \say{http://www.semanticwe- b.org/addressID/1234}, 
-through respAddress (predicate) with \ac{uri} \say{http://www.sema- nticweb.org/respDetails/address}. 
+with \ac{uri} ``http://www.semanticwe- b.org/addressID/1234'', 
+through respAddress (predicate) with \ac{uri} ``http://www.sema- nticweb.org/respDetails/address''. 
 Further, 
 the address node has multiple child nodes, 
 namely, 
@@ -458,10 +459,10 @@ is connected to the values of four different object values,
 Regina (city), 
 Saskatchewan (state) and S4S 5N2 (postalCode) 
 where the \ac{uri}s for the predicates are 
-\say{http://www.semanticweb.org/respDetails/street}, 
-\say{http://www.semanticweb.org/res- pDetails/city}, 
-\say{http://www.semanticweb.org/respDetails/state} and 
-\say{http://www.se- manticweb.org/respDetails/postalCode} respectively. 
+``http://www.semanticweb.org/respDetails/street'', 
+``http://www.semanticweb.org/res- pDetails/city'', 
+``http://www.semanticweb.org/respDetails/state'' and 
+``http://www.se- manticweb.org/respDetails/postalCode'' respectively. 
 Instead of using an unnecessary \ac{uri} 
 for the address entity, 
 a blank node can be used to denote the entity, 
@@ -481,11 +482,11 @@ In 2004,
 is to be designed. 
 According to the \ac{w3c}Recommendation\footnote{https://www.w3.org/TR/rdf-concepts/}, 
 the design should 
-\say{have a simple data model; 
+``have a simple data model; 
 formal semantics and provable inference; 
 should use an extensible \ac{uri}-based vocabulary and an \ac{xml}-based syntax; 
 should support the use of \ac{xml} schema datatypes; 
-and should allow any one to make statements about any resource}.
+and should allow any one to make statements about any resource''.
 
 \subsection{Uniform Resource Identifier}\label{subsec:uri}
 
@@ -499,12 +500,12 @@ and determining a process for \ac{uri} references' resolution.
 As mentioned by \ac{w3c}, 
 for the operating systems on \ac{uri}s, 
 some specific 
-\say{protocols are defined depending on the UriScheme\footnote{https://www.w3.org/2001/tag/doc/SchemeProtocols.html}}. 
+``protocols are defined depending on the UriScheme\footnote{https://www.w3.org/2001/tag/doc/SchemeProtocols.html}''. 
 A system can perform multiple operations like 
-\say{access}, 
-\say{update}, 
-\say{replace} and 
-\say{find attributes} on the identified resources. 
+``access'', 
+``update'', 
+``replace'' and 
+``find attributes'' on the identified resources. 
 In RFC 2396, 
 Berners-Lee et al.~\cite{fielding1998uri} 
 characterized \ac{uri} using three definitions, 
@@ -518,7 +519,7 @@ as shown in Table~\ref{definitions-for-uri}.
      \multirow{9}{0em}{Resource} & Anything on the web that can be uniquely identified is referred to as\\ & a resource. 
      Some day-to-day examples of a resource are a computeri-\\ & zed file or folder, weather-broadcasting service, an image, and a set of\\ & other resources. 
      Some resources like books in a library, an animal, a\\ & human being,and a corporation are a set of resources that cannot be\\ & retrieved over the network. 
-     A resource is the \say{conceptual mapping}\\ &~\cite{fielding1998uri} to a set of entities independent of the corresponding entities at a\\ & particular time. 
+     A resource is the ``conceptual mapping''\\ &~\cite{fielding1998uri} to a set of entities independent of the corresponding entities at a\\ & particular time. 
      Hence, if the conceptual mapping isn't changed, a\\ & resource can remain constant irrespective of the changes in its content.\\ \hline
      \multirow{3}{0em}{Identifier} & An object which is used as a reference to a thing with unique identity\\ & on the web is termed as an identifier. 
      In \ac{uri}, a string of ASCII char-\\ & acters restricted by a specific syntax is object.\\ \hline
@@ -610,17 +611,17 @@ In other words,
 Ontology is a form of defining a set of concepts for representing the subject properties and the relationships shared among them. 
 According to Tom Gruber~\cite{gruber1995towards}, 
 ontology is 
-\say{an explicit specification of a conceptualization}, 
+``an explicit specification of a conceptualization'', 
 where conceptualization is 
-\say{an abstract, simplified view of the world 
+``an abstract, simplified view of the world 
 (includes objects, concepts and other entities that are assumed to exist in some area of interest and the relationships that hold among them) 
-that we wish to represent for some purpose}. 
+that we wish to represent for some purpose''. 
 In web semantics, 
 an ontology is used to define the semantics of the resources briefly and methodically. 
 The ontologies have have been used to 
-\say{specify the physical as well as conceptual characteristics of resources, 
+``specify the physical as well as conceptual characteristics of resources, 
 in the form of metadata schema on the semantic web, 
-for a fixed set of users}~\cite{jacob2003ontologies}.
+for a fixed set of users''~\cite{jacob2003ontologies}.
 
 \section{OWL Ontologies}\label{sec:owlontologies}
 
@@ -640,7 +641,7 @@ are briefly explained in this section.
 \subsubsection{Individuals}\label{subsubsec:individuals}
 
 According to Horridge et al.~\cite{horridge2009practical}, 
-\say{Individuals represent objects in the domain in which we are interested}. 
+``Individuals represent objects in the domain in which we are interested''. 
 Individuals are the objects of classes. 
 Figure~\ref{owl-individuals} 
 shows the representation of different individuals in various domains. 
@@ -659,19 +660,19 @@ The Binary Relationships\footnote{links shared by two individuals}
 between the individuals (things) are called properties. 
 For instance, 
 the individuals 
-\say{Max} and \say{Kieron} from Figure~\ref{owl-individuals} 
-are linked to each other by the property \say{hasSibling}. 
+``Max'' and ``Kieron'' from Figure~\ref{owl-individuals} 
+are linked to each other by the property ``hasSibling''. 
 Each property can have its inverse. 
 For instance, 
-\say{hasSibling} 
-can have an inverse property \say{isSiblingOf}. 
+``hasSibling'' 
+can have an inverse property ``isSiblingOf''. 
 The properties can be symmetric or transitive. 
 It is possible to have functional properties where the properties can be restricted to having only one value.
 
 Figure~\ref{owl-properties} 
-shows representation of properties between the individuals \say{Max} and \say{India}, 
-and \say{Max} and \say{hasSibling}. 
-The relation between \say{Max} and \say{India} is \say{livesIn}. 
+shows representation of properties between the individuals ``Max'' and ``India'', 
+and ``Max'' and ``hasSibling''. 
+The relation between ``Max'' and ``India'' is ``livesIn''. 
 The arrow between two individuals in the figure denotes the property (relationship) between them.
 
 \begin{figure}[htp]
@@ -688,25 +689,25 @@ the sets consisting of individuals are called \ac{owl} classes.
 Mathematical (formal) descriptions are used to describe the \ac{owl} classes. 
 These descriptions include accurate statements on the requirements for the class membership. 
 For instance, 
-the class \say{Country} 
+the class ``Country'' 
 consists of all the individuals that are countries in the Domain of Discourse\footnote{can contain one or more classes}. 
 Inheritance in \ac{owl} classes (Class Hierarchy) 
 may exist with the classes having subclasses and/or super-classes which is technically termed as taxonomy. 
-\say{Subclasses specialise (\say{are subsumed by}) their super-classes}~\cite{horridge2009practical}. 
+``Subclasses specialise (``are subsumed by'') their super-classes''~\cite{horridge2009practical}. 
 For instance, 
-consider the classes \say{Lady} and \say{Human}, 
-where \say{Lady} is a subclass of \say{Human}. 
+consider the classes ``Lady'' and ``Human'', 
+where ``Lady'' is a subclass of ``Human''. 
 This implies the following statements:
 
 \begin{itemize}
 
     \item All ladies are humans
     
-    \item All members of class \say{Lady} are members of class \say{Human}
+    \item All members of class ``Lady'' are members of class ``Human''
     
-    \item Being a \say{Lady} implies that individual is \say{Human}
+    \item Being a ``Lady'' implies that individual is ``Human''
     
-    \item \say{Lady} is subsumed by \say{Human}
+    \item ``Lady'' is subsumed by ``Human''
     
 \end{itemize}
 
@@ -803,8 +804,8 @@ or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}.
 
 \subsection{Conversion Using RML}\label{subsec:rmlconversion}
 
-\say{An \ac{rml} mapping defines a mapping from any logical source to \ac{rdf}. 
-It is a structure that consists of one or more triples maps.}\footnote{https://rml.io/specs/rml/\#example-XML} 
+``An \ac{rml} mapping defines a mapping from any logical source to \ac{rdf}. 
+It is a structure that consists of one or more triples maps.''\footnote{https://rml.io/specs/rml/\#example-XML} 
 The \ac{rml} rules can be written and tested using tools like the Matey Web UI \footnote{https://rml.io/yarrrml/matey/}.
 
 \subsubsection{Tools for RML Conversion}\label{subsubsec:rmlconversiontools}
@@ -869,7 +870,7 @@ This section consists of a brief description of both applications.
 According to a report by Krotzsch and Vrandecic~\cite{denny2014wikidata}, 
 Wikidata was introduced to the world of information engineering in 2012 by Wikimedia. 
 Wikidata can be defined as 
-\say{the community-created knowledge base of Wikipedia and the central data management platform for Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others}}, 
+``the community-created knowledge base of Wikipedia and the central data management platform for Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others}'', 
 according to Erxleben et al.~\cite{fredo2014intro}. 
 Wikidata was established for the collection and integration of data on the semantic web with Wikipedia. 
 Wikidata is a free open-source tool that handles a large amount of structured data and maintains pages that store the data. 
@@ -899,22 +900,22 @@ which are used as the labels of the item pages instead of the actual names of th
 These identifiers are a string starting with a capital Q followed by a sequence of digits. 
 The identifiers are assigned irrespective of the language as the Wikidata website supports multiple languages. 
 For the University of Regina, 
-the label used is \say{Q3104287}. 
+the label used is ``Q3104287''. 
 The item page on Wikidata consists of multiple sections:
 
 \begin{itemize}
     
     \item label: The name of the subject that is treated as an entity. 
     For the instance in Figure~\ref{wikidata-uofr}, 
-    the label is \say{University of Regina} 
-    along with the unique identifier \say{Q3104287}. 
+    the label is ``University of Regina'' 
+    along with the unique identifier ``Q3104287''. 
     
      \item description: This section consists of general introductory details about the subject. 
      For the University of Regina, 
      the description on wikidata is 
-     \say{university in Saskatchewan, Canada}.
+     ``university in Saskatchewan, Canada''.
   
-    \item statements: This section consists of a list of subsections called \say{property}. 
+    \item statements: This section consists of a list of subsections called ``property''. 
     The properties along with their property IDs for the University of Regina are listed in Table~\ref{uofr-statement-properties-and-id}.
   
     \begin{table}[h!]
@@ -974,7 +975,7 @@ The item page on Wikidata consists of multiple sections:
         
 \end{itemize}
 
-The \ac{uri} for an entity on Wikidata is \say{https://www.wikidata.org/wiki/<id>}, 
+The \ac{uri} for an entity on Wikidata is ``https://www.wikidata.org/wiki/<id>'', 
 where <id> stands for the unique identifier. 
 For the University of Regina, 
 the <id> is the label identifier—Q3104287. 
@@ -1013,8 +1014,11 @@ On the other hand,
 the common units of data are recognized  and assigned appropriate datatypes whereas \ac{rdf} 
 lists are created for the object lists. 
 According to Auer et al.~\cite{auer2007dbpedia}, 
-DBpedia in 2007 was a platform that delivered information on 
-\say{more than 1.95 million \say{things} that includes at least 80,000 persons, 70,000 places, 35,000 music albums, 12,000 films}. 
+DBpedia in 2007 
+was a platform that delivered information on 
+``more than 1.95 million `things' 
+that includes at least 
+80,000 persons, 70,000 places, 35,000 music albums, 12,000 films''. 
 
 The DBpedia semantic web services are handled using the GNU Free Documentation License terms and policies. 
 The data on DBpedia is easily accessible in different ways like accessing the datasets as linked data; 
@@ -1022,7 +1026,7 @@ using \ac{sparql} queries for data extraction and accessibility;
 and in the form of a downloadable \ac{rdf} snippets~\cite{bizer2009dbpedia}. 
 Figure~\ref{dbpedia-uofr} 
 shows DBpedia entry for the 
-\say{University of Regina, Regina, SK}. 
+``University of Regina, Regina, SK''. 
 Like Wikidata, 
 DBpedia also has a label, 
 a description section and a set of important property-value pairs that give information related to the entity that has been described.
