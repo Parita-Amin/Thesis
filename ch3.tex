@@ -52,25 +52,33 @@ open-source ontology development platform,
 Protégé\footnote{https://protege.stanford.edu}, 
 that offers a set of substantial tools\footnote{along with various plug-ins and Java-based \ac{api}} 
 to build ontologies for knowledge-based applications and to implement various 
-\say{knowledge-modeling structures and actions that support the creation, 
-visualization and manipulation of ontologies in various representation formats}~\cite{alatrish2013comparison}. 
+``knowledge-modeling structures and actions that support the creation, 
+visualization and manipulation of ontologies in various representation formats''~\cite{alatrish2013comparison}. 
 Protégé offers customization options to build knowledge models and to add data. 
 
 \subsection{Usability of Protégé}\label{subsec:usabilityofprotege}
 
 The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} 
 defines usability as 
-\say{the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, 
-and satisfaction in a specified context of use}. 
+``the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, 
+and satisfaction in a specified context of use''. 
 In usability engineering, 
 Jacob Neilson~\cite{neilson1994usability} 
 suggested five qualities of a usable product: 
-\say{learnability, efficiency, memorability, errors (low rate, easy to recover), and satisfaction}. 
+``learnability, 
+efficiency, 
+memorability, 
+errors (low rate, easy to recover), and 
+satisfaction''. 
 These were the original five dimensions of usability which were then re-termed as all five words starting with 
-\say{E} by Quesenbery~\cite{quesenbery2003dimensions}, 
+``E'' by Quesenbery~\cite{quesenbery2003dimensions}, 
 and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. 
 The new terms are 
-\say{Effective}, \say{Efficient}, \say{Engaging}, \say{Error-tolerant}, and \say{Easy to learn}.
+``Effective'', 
+``Efficient'', 
+``Engaging'', 
+``Error-tolerant'', and 
+``Easy to learn''.
 
 The five dimensions of usability can be considered while designing as well as for evaluation. 
 While designing, 
@@ -107,14 +115,14 @@ The five dimensions of usability were used to assess the usability of protégé 
   Protégé provides options for modifications, additions, and deletions of classes, objects, and properties, 
   which allow the users to correct the errors that were committed. 
   Also, 
-  the deleted classes can be recovered using \say{Undo} 
+  the deleted classes can be recovered using ``Undo'' 
   from the edit menu resulting in proving protégé as an error-tolerant design.
  
   \item Easy to learn: The interface should be easy to learn
   
   Protégé is easy to learn as it has a familiar look and commonly used names for the tools and menus making it easy for the users to adapt and know them nicely. 
   Also, 
-  the \say{Help} document 
+  the ``Help'' document 
   along with a list of some frequently asked questions is available which helps the users in the correct direction whenever they are lost.
   
 \end{itemize}
@@ -142,14 +150,17 @@ with the name and version of ontology.
 \subsection{Classes and Class Hierarchy}\label{subsec:classhierarchy}
 
 The next step is to create classes and build the hierarchy for the class nodes. 
-Each entity in protégé is directly or indirectly a child node of the \say{Thing} class. 
+Each entity in protégé is directly or indirectly a child node of the ``Thing'' class. 
 Also, 
 each object has a name-value pair, 
-which generally are the nodes of the \say{Domain\_Entity} class, 
+which generally are the nodes of the ``Domain\_Entity'' class, 
 an inherited class of Thing. 
 Initially, 
 four classes, 
-\say{Thing}, \say{Domain\_Entity}, \say{Independent\_Entity}, and \say{Value} 
+``Thing'', 
+``Domain\_Entity'', 
+``Independent\_Entity'', and 
+``Value'' 
 are created using class hierarchy, 
 as shown in Figure~\ref{class-hierarchy}. 
 To create a class hierarchy for the classes that represent entities in an ontology, 
@@ -164,10 +175,10 @@ there are three steps to be followed:
 
 \begin{enumerate}
 
-    \item Select \say{owl:Thing} in the Class Hierarchy View of the Classes tab from the Windows menu followed by selecting \say{Create class hierarchy...} 
+    \item Select ``owl:Thing'' in the Class Hierarchy View of the Classes tab from the Windows menu followed by selecting ``Create class hierarchy...'' 
     from the Tools menu, 
     as shown in Figure~\ref{tools-menu-class-hierarchy} 
-    to open a \say{Enter hierarchy} pop-up window 
+    to open a ``Enter hierarchy'' pop-up window 
     which allows the users to add classes to the ontology.
     
     \begin{figure}[htp]
@@ -190,7 +201,7 @@ there are three steps to be followed:
         \label{enter-hierarchy-pop-up}
     \end{figure}
     
-    \item On clicking \say{Continue} 
+    \item On clicking ``Continue'' 
     on the pop-up window in Figure~\ref{enter-hierarchy-pop-up}, 
     it opens up a new pop-up window.
     Here, 
@@ -212,7 +223,10 @@ there are three steps to be followed:
 Once the classes are added, 
 the next step is to describe the classes. 
 Descriptions of classes like 
-\say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on 
+``Equivalent to'', 
+``SubClass Of'', 
+``Instances'', 
+``Disjoint With'' and so on 
 can be added using the Description view of the Class tab 
 (shown in Figure~\ref{class-hierarchy}). 
 Each class can be described individually by selecting a particular class and adding details to the description view. 
@@ -221,9 +235,9 @@ Each class can be described individually by selecting a particular class and add
 
 The next step in building the ontology, 
 after describing the classes, 
-is describing the \say{Object Properties}. 
+is describing the ``Object Properties''. 
 Object properties are used to link the entities (classes in protégé). 
-The \say{owl:topObjectProperty} 
+The ``owl:topObjectProperty'' 
 is the root node of the object properties' hierarchy. 
 The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-object-property-hierarchy}. 
 The remaining steps are similar to the ones that are followed for building class hierarchy 
@@ -239,20 +253,20 @@ The remaining steps are similar to the ones that are followed for building class
 Also, 
 the description view of object properties hierarchy allows the user to describe the object properties. 
 The details that can be added or modified using the description view are 
-\say{Equivalent To}, 
-\say{SubProperty Of}, 
-\say{Inverse Of}, 
-\say{Domains (intersection)}, 
-\say{Ranges (intersection)}, 
-\say{Disjoint With}, and 
-\say{SuperProperty Of (Chain)}. 
+``Equivalent To'', 
+``SubProperty Of'', 
+``Inverse Of'', 
+``Domains (intersection)'', 
+``Ranges (intersection)'', 
+``Disjoint With'', and 
+``SuperProperty Of (Chain)''. 
 
-The names of the object properties usually start with an \say{is} or a \say{has}. 
+The names of the object properties usually start with an ``is'' or a ``has''. 
 For instance, 
 consider two classes: 
-\say{Lady} (class 1) and \say{Parita} (class 2). 
+``Lady'' (class 1) and ``Parita'' (class 2). 
 To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, 
-the properties \say{hasName} and \say{isNameOf} would be used respectively, 
+the properties ``hasName'' and ``isNameOf'' would be used respectively, 
 as shown in Figure~\ref{object-properties-for-lady-and-parita}. 
 
 \begin{figure}[htp]
@@ -271,22 +285,22 @@ it can be said that:
 \end{center}
 
 Here, 
-\say{hasName} is inverse of \say{isNameOf} 
-and \say{isNameOf} is inverse of \say{hasName}. 
+``hasName'' is inverse of ``isNameOf'' 
+and ``isNameOf'' is inverse of ``hasName''. 
 Apart from inverse, 
 domain and range\footnote{http://protegeproject.github.io/protege/views/object-property-description/} 
 are two other important parts of description of object properties. 
 According to Horridge et al.~\cite{horridge2009practical}, 
 in \ac{owl}, 
-\say{domain and range are not constraints to be checked. 
-They are axioms which are used by the reasoner to make inferences}. 
+``domain and range are not constraints to be checked. 
+They are axioms which are used by the reasoner to make inferences''. 
 As shown in Figure~\ref{domain-and-range-for-hasName-and-isNameOf}, 
-\say{Lady} acts as the \say{Domain} and 
-\say{Parita} acts as the \say{Range} 
-for \say{hasName} whereas 
-for \say{isNameOf}, 
-\say{Parita} is the \say{Domain} and 
-\say{Lady} is the \say{Range}. 
+``Lady'' acts as the ``Domain'' and 
+``Parita'' acts as the ``Range'' 
+for ``hasName'' whereas 
+for ``isNameOf'', 
+``Parita'' is the ``Domain'' and 
+``Lady'' is the ``Range''. 
 
 \begin{figure}[htp]
     \centering
@@ -298,14 +312,14 @@ for \say{isNameOf},
 \subsection{Data Properties and Data Property Hierarchy}\label{subsec:dataproperties}
 
 Furthermore, 
-the \say{Data Properties} 
+the ``Data Properties'' 
 can also be described for ontology.
-\say{An ontology data property provides a relation to attach an entity instance to some literal datatype value 
+``An ontology data property provides a relation to attach an entity instance to some literal datatype value 
 (an \ac{rdf} number, string or data for example) 
-that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/}
+that is a measure or estimate of what that data property is about.''\footnote{https://ddooley.github.io/docs/data-properties/}
 
 In protégé, 
-the \say{owl:topDataProperty} 
+the ``owl:topDataProperty'' 
 is the root node of the data properties' hierarchy. 
 The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property-hierarchy}. 
 The remaining steps are similar to the ones that are followed for building class and object property hierarchy 
@@ -319,11 +333,11 @@ The remaining steps are similar to the ones that are followed for building class
 \end{figure}
 
 Data properties can be described using the description view of data properties of hierarchy which included details like 
-\say{Equivalent To}, 
-\say{SubProperty Of}, 
-\say{Domains (intersection)}, 
-\say{Ranges}, and 
-\say{Disjoint With}.
+``Equivalent To'', 
+``SubProperty Of'', 
+``Domains (intersection)'', 
+``Ranges'', and 
+``Disjoint With''.
 
 \subsection{OWL Ontology Inconsistencies and Reasoner}\label{subsec:owlreasoner}
 
@@ -353,14 +367,14 @@ offers support for some built-in semantic reasoners which are listed below:
 Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. 
 It is important to validate the stored data so that the data only consist of acceptable values. 
 According to Ekaputra and Xiashuo~\cite{shacl4protege}, 
-\say{One of the challenges of adopting \ac{swt} 
-for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.} 
+``One of the challenges of adopting \ac{swt} 
+for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.'' 
 To address this challenge, 
 they developed SHACL4P, 
 a protégé plugin. 
 SHACL4P is used for defining and validating \ac{shacl}, 
 which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. 
-\ac{shacl} uses \say{shapes} to describe constraints.
+\ac{shacl} uses ``shapes'' to describe constraints.
 
 \section{Conversion of Tabular Data into Linked Data}\label{sec:csvtolodconversion}
 
@@ -388,14 +402,14 @@ shows the homepage of OpenRefine.
 \end{figure}
 
  OpenRefine offers options to create a new project as well as to open an existing project. 
- The users can open an existing project using \say{Open Project} 
+ The users can open an existing project using ``Open Project'' 
  and continue working on the data. 
  Creating a new project includes following steps:
 
 \begin{enumerate}
    
-    \item Click on \say{Create Project}, 
-    select the type on sources of dataset and then click on \say{Choose Files} button
+    \item Click on ``Create Project'', 
+    select the type on sources of dataset and then click on ``Choose Files'' button
      to select data sources as shown in Figure~\ref{openrefine-new-project}. 
     OpenRefine supports imports from 
     \ac{tsv}, \ac{csv}, \ac{json}, \ac{xml}, \ac{rdf}/\ac{xml}, Excel, and Google Data documents 
@@ -409,7 +423,7 @@ shows the homepage of OpenRefine.
     \end{figure}
 
     \item The next step is to decide the orientation of the data to be displayed using various options as shown in Figure~\ref{openrefine-update-preview}. 
-    The \say{Update Preview} 
+    The ``Update Preview'' 
     button allows viewing the results of these modifications. 
 
     \begin{figure}[htp] 
@@ -420,7 +434,7 @@ shows the homepage of OpenRefine.
     \end{figure}
 
     \item The final step is to mention the name of the project and click on the 
-    \say{Create Project >>} button as shown in Figure~\ref{openrefine-name-project}.
+    ``Create Project >>'' button as shown in Figure~\ref{openrefine-name-project}.
 
      \begin{figure}[htp] 
         \centering
@@ -438,11 +452,11 @@ OpenRefine provides support for following tasks:
     \item Exploring Data: 
     
     Large data sets can be explored with ease using OpenRefine. 
-    The \say{Facet} option allows users to explore values of particular type by offering options like 
-    \say{Text facet}, 
-    \say{Numeric facet}, 
-    \say{Timeline facet}, 
-    \say{Scatterplot facet}, and other custom facet. 
+    The ``Facet'' option allows users to explore values of particular type by offering options like 
+    ``Text facet'', 
+    ``Numeric facet'', 
+    ``Timeline facet'', 
+    ``Scatterplot facet'', and other custom facet. 
     Figure~\ref{openrefine-facet} 
     shows the facet options offered by OpenRefine for a field.
     
@@ -455,12 +469,12 @@ OpenRefine provides support for following tasks:
 
     The left side of the screen in Figure~\ref{openrefine-facet-result} 
     shows the result of using 
-    \say{Text facet} for \say{Response} column. 
+    ``Text facet'' for ``Response'' column. 
     It also offers an option to 
-    \say{edit} and \say{include} the results of the facet. 
+    ``edit'' and ``include'' the results of the facet. 
     Figure~\ref{openrefine-include-result} 
-    shows the result of using \say{include} 
-    for the record corresponding to the response \say{26480}.
+    shows the result of using ``include'' 
+    for the record corresponding to the response ``26480''.
         
     \begin{figure}[htp] 
         \centering
@@ -484,9 +498,9 @@ OpenRefine provides support for following tasks:
         
         While dealing with messy data, 
         OpenRefine can be used to clean the data using the 
-        \say{Text filter} option. 
+        ``Text filter'' option. 
         Figure~\ref{openrefine-clean-data} 
-        shows the \say{Text filter} option offered by OpenRefine for a field. 
+        shows the ''Text filter'' option offered by OpenRefine for a field. 
                 
         \begin{figure}[htp] 
             \centering
@@ -497,8 +511,8 @@ OpenRefine provides support for following tasks:
 
         Figure~\ref{openrefine-textfilter-result} 
         shows the result of applying the 
-        \say{Text filter} option for the \say{Q01\_Rate instructor->1.} 
-        field and using \say{-999} as argument.  
+        ``Text filter'' option for the ``Q01\_Rate instructor->1.'' 
+        field and using ``-999'' as argument.  
         
         \begin{figure}[htp] 
             \centering
@@ -510,9 +524,9 @@ OpenRefine provides support for following tasks:
         \item Transforming Data: 
         
         OpenRefine allows transforming data from one format to another using 
-        \say{Edit cells} option under which 
-        \say{Transform...} and 
-        \say{Common transform} 
+        ``Edit cells'' option under which 
+        ``Transform...'' and 
+        ``Common transform'' 
         offers different options for transforming data. 
         Figure~\ref{openrefine-transform} 
         shows all the options offered by OpenRefine for transforming data.
@@ -526,10 +540,10 @@ OpenRefine provides support for following tasks:
 
         Figure~\ref{openrefine-custom-text-transform} 
         shows the result of selecting 
-        \say{Transform...} option for 
-        \say{Response} 
+        ``Transform...'' option for 
+        ``Response'' 
         field and modifying the Expression to 
-        \say{Response:} + value. 
+        ``Response:'' + value. 
         It also offers preview of the result of the \ac{grel} expression.
 
         \begin{figure}[htp] 
@@ -540,13 +554,13 @@ OpenRefine provides support for following tasks:
         \end{figure}
 
         As a result of using the 
-        \say{Custom text transform on column Response} in OpenRefine, 
-        the text of all the records for \say{Response} 
+        ``Custom text transform on column Response'' in OpenRefine, 
+        the text of all the records for ``Response'' 
         field would be transformed from one format to another. 
         For instance, 
         the value of 
-        \say{Response} for the first record is transformed from 
-        \say{26660} to \say{Response:26660} 
+        ``Response'' for the first record is transformed from 
+        ``26660'' to ``Response:26660'' 
         as shown in Figure~\ref{openrefine-transform-result}. 
 
         \begin{figure}[htp] 
@@ -563,7 +577,10 @@ OpenRefine provides support for following tasks:
     OpenRefine can be used to link and extend dataset with various web services. 
     It also supports services 
     (using extensions and plugins) 
-    that can be used to upload the cleaned data to central databases like Wikidata.
+    that can be used to upload the cleaned data to central databases like Wikidata. 
+    The data can be converted to linked data 
+    (as in this research) 
+    which can be then uploaded to central databases.
    
 \end{enumerate}
 
@@ -609,9 +626,46 @@ or through the faceted browsing feature,
 which allows users to search resources and move between them.
 
 Publishing datasets to international or national open data portals 
-(e.g. open.canada.ca\footnote{https://open.canada.ca/en/open-data}) 
+(e.g. LicenceCanada\footnote{https://open.canada.ca/en/open-government-licence-canada}) 
 might further 
-\say{announce} them to the public and make them discoverable.
+``announce'' them to the public and make them discoverable.
+
+\subsection{5-star Rating System}\label{subsec:5-star}
+
+Tim Berners-Lee, 
+the creator of the web and the linked data project's founder, 
+proposed a five-star deployment strategy for linked data. 
+The system of 5-star\footnote{https://www.w3.org/2011/gld/wiki/5\_Star\_Linked\_Data} 
+linked data is cumulative. 
+In this system, 
+the authors of the online data link their data to the already linked data to serve as a reference and make it searchable using the linked data principles. 
+For the 5-star system to accept the linked data on the web as 5-star the data should be:
+
+\begin{itemize}
+
+  \item structured (machine-readable)
+  
+  \item open-licensed for access
+  
+  \item described and linked to other data using \ac{uri}s
+  
+\end{itemize}
+
+Each successive star implies that the data satisfies the requirements of the preceding phase(s) as explained in Table~\ref{5-star-system}.
+
+\begin{table}[h!]
+        \centering
+        \begin{tabular}{|l|l|} \hline 
+             \ \ \ \ \ Stars \ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explanation \\ \hline
+             \FiveStarOpen & The data is accessible on the web with open license, regardless \\& of the format.\\ \hline
+             \FiveStarOpen \ \FiveStarOpen & AND the open data is accessible on the web as structured data \\& that can be read by machines. For example, using Microsoft \\& Excel instead of a screenshot of a Microsoft Excel workbook.\\ \hline
+             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the data is accessible in a non-proprietary format with \\& open-license. For instance, storing data in \ac{csv} instead of \\& Microsoft Excel.\\ \hline
+             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND \ac{w3c} open standards were used for publication of the linked \\& open data on the web. For example, \ac{rdf}, \ac{uri}s, and \ac{sparql}.\\ \hline
+             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the open data is linked to other web-based data for context.\\ \hline
+        \end{tabular}
+        \caption{5-star Rating System for Linked Data Implementation}
+        \label{5-star-system}
+\end{table}  
 
 \section{Visualizing Linked Data}\label{sec:visualizinglinkeddata}
 
@@ -638,7 +692,7 @@ Spring Layout, and
 Tree Layout\footnote{both horizontal and vertical}. 
 Antoniazzi and Viola~\cite{antoniazz2018rdf} 
 stated that the 
-\say{individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements}. 
+``individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements''. 
 The graphs generated using OntoGraf can be exported as image files of various formats such as 
 \ac{png}, \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
 
@@ -648,7 +702,7 @@ WebVOWL~\cite{lohmann2014webvowl},
 the Web-based \ac{vowl}, 
 one of the variety of forms in which the \ac{vowl} visualization tool is available, 
 represents the 
-\say{ontologies graphically using a force-directed graph layout}~\cite{antoniazz2018rdf}. 
+``ontologies graphically using a force-directed graph layout''~\cite{antoniazz2018rdf}. 
 \ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
 
 \begin{enumerate}
@@ -657,7 +711,7 @@ represents the
     Also, 
     different types are assigned different colors. 
     For instance, 
-    \ac{owl} classes are denoted using \say{light blue circles}.
+    \ac{owl} classes are denoted using ``light blue circles''.
 
     \item Black solid lines are used to represent \ac{owl} object and datatype properties. 
     The object properties use light blue labels where as the datatype properties are labelled in green.
