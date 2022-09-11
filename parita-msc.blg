@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: parita-msc.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: ack.aux
+A level-1 auxiliary file: pd-ack.aux
+A level-1 auxiliary file: ch1.aux
+A level-1 auxiliary file: ch2.aux
+A level-1 auxiliary file: ch3.aux
+A level-1 auxiliary file: ch4.aux
+A level-1 auxiliary file: ch5.aux
+A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
+A level-1 auxiliary file: appendix3.aux
+The style file: plain.bst
+Database file #1: parita.bib
+You've used 43 entries,
+            2118 wiz_defined-function locations,
+            748 strings with 12918 characters,
+and the built_in function-call counts, 15575 in all, are:
+= -- 1570
+> -- 707
+< -- 16
++ -- 280
+- -- 236
+* -- 1058
+:= -- 2529
+add.period$ -- 136
+call.type$ -- 43
+change.case$ -- 246
+chr.to.int$ -- 0
+cite$ -- 43
+duplicate$ -- 614
+empty$ -- 1206
+format.name$ -- 236
+if$ -- 3302
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 44
+newline$ -- 218
+num.names$ -- 86
+pop$ -- 254
+preamble$ -- 1
+purify$ -- 204
+quote$ -- 0
+skip$ -- 458
+stack$ -- 0
+substring$ -- 1017
+swap$ -- 166
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 170
+warning$ -- 0
+while$ -- 161
+width$ -- 45
+write$ -- 470
