@@ -6,42 +6,42 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces An Illustration of Code in an RDF/XML Document\relax }}{12}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces An Example of an \ac {rdf} Triple\relax }}{12}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Graphical Representation of an \ac {rdf}\relax }}{13}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Graphical Representation of an RDFS for a Comparatively Complex Illustration, after McBride\nobreakspace {}\cite {mcbride2004resource}\relax }}{15}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Graphical Representation of an RDFS for a Comparatively Complex Illustration, after McBride\nobreakspace {}\cite {mcbride2004resource}\relax }}{14}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces English Statement for an Example of Actual \ac {rdf}\relax }}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces \ac {rdf} Triple for English Statement in Figure\nobreakspace {}\ref {fig:2.8}, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{16}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces \ac {rdf} Graph for English Statement in Figure\nobreakspace {}\ref {fig:2.8}, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{17}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces \ac {rdf} Graph for Two Relative Statements, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{17}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Graphical Representation of \ac {rdf} with Details of the Respondent of the Survey, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{18}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces \ac {rdf} Representation in Figure\nobreakspace {}\ref {fig:2.12} without a URI (blank node) for Address Entity, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces \ac {rdf} Triple for English Statement in Figure\nobreakspace {}\ref {fig:2.8}, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{15}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces \ac {rdf} Graph for English Statement in Figure\nobreakspace {}\ref {fig:2.8}, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{16}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces \ac {rdf} Graph for Two Relative Statements, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{16}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Graphical Representation of \ac {rdf} with Details of the Respondent of the Survey, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces \ac {rdf} Representation in Figure\nobreakspace {}\ref {fig:2.12} without a URI (blank node) for Address Entity, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{18}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Syntax Diagram of a Generic URI, after Berners-Lee et al.\nobreakspace {}\cite {berners1998uri}\relax }}{21}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Components of an Example of URL, after Berners-Lee et al.\nobreakspace {}\cite {berners1998uri}\relax }}{22}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Details of University of Regina, Regina, SK on Wikidata\relax }}{27}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Wikidata Entry (RDF/XML) for University of Regina, Regina, SK\relax }}{29}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Description of University of Regina, Regina, SK on DBpedia\relax }}{32}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces DBpedia Data Architecture\relax }}{33}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Components of an Example of URL, after Berners-Lee et al.\nobreakspace {}\cite {berners1998uri}\relax }}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Details of University of Regina, Regina, SK on Wikidata\relax }}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Wikidata Entry (RDF/XML) for University of Regina, Regina, SK\relax }}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Description of University of Regina, Regina, SK on DBpedia\relax }}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces DBpedia Data Architecture\relax }}{31}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Representation of Individuals in OWL\relax }}{36}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Representation of Properties in OWL\relax }}{36}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Representation of OWL Classes Consisting of Individuals and Properties\relax }}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Representation of Individuals in OWL\relax }}{34}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Representation of Properties in OWL\relax }}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Representation of OWL Classes Consisting of Individuals and Properties\relax }}{36}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Five Es of Usability\relax }}{42}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The Student Feedback Form, from Hepting\nobreakspace {}\cite {prof}\relax }}{46}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Protégé Home-screen for a New Project with an Ontology Name and an IRI\relax }}{47}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value\relax }}{48}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Tools Menu to Create Class Hierarchy\relax }}{48}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \enquote {Enter hierarchy} Pop-up Window\relax }}{49}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Pop-up Window to Create Disjoint Sibling Classes\relax }}{50}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Class Hierarchy in Survey Ontology\relax }}{51}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Tools Menu to Create Object Property Hierarchy\relax }}{53}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Object Properties for Classes \enquote {Lady} and \enquote {Parita}\relax }}{54}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Domain and Range Classes for \enquote {hasName} and \enquote {isNameOf}\relax }}{55}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Object Property Hierarchies, Domain and Range for Classes\relax }}{56}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Tools Menu to Create Data Property Hierarchy\relax }}{58}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Data Property Hierarchies, Domain and Range for Classes\relax }}{58}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Class Hierarchy for the Final Version of Survey Ontology\relax }}{60}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Parent/Child Relation indicated by "Blue Back" Arrow\relax }}{60}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces OntoGraf for Survey Ontology\relax }}{62}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces WebVOWL for Survey Ontology\relax }}{63}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Five Es of Usability\relax }}{40}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The Student Feedback Form, from Hepting\nobreakspace {}\cite {prof}\relax }}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Protégé Home-screen for a New Project with an Ontology Name and an IRI\relax }}{45}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value\relax }}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Tools Menu to Create Class Hierarchy\relax }}{46}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \enquote {Enter hierarchy} Pop-up Window\relax }}{47}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Pop-up Window to Create Disjoint Sibling Classes\relax }}{48}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Class Hierarchy in Survey Ontology\relax }}{49}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Tools Menu to Create Object Property Hierarchy\relax }}{51}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Object Properties for Classes \enquote {Lady} and \enquote {Parita}\relax }}{52}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Domain and Range Classes for \enquote {hasName} and \enquote {isNameOf}\relax }}{53}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Object Property Hierarchies, Domain and Range for Classes\relax }}{54}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Tools Menu to Create Data Property Hierarchy\relax }}{56}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Data Property Hierarchies, Domain and Range for Classes\relax }}{56}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Class Hierarchy for the Final Version of Survey Ontology\relax }}{58}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Parent/Child Relation indicated by "Blue Back" Arrow\relax }}{58}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces OntoGraf for Survey Ontology\relax }}{60}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces WebVOWL for Survey Ontology\relax }}{61}{figure.caption.53}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
