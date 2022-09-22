@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  16 SEP 2022 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 SEP 2022 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -999,7 +999,7 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 ]
-Overfull \vbox (39.24597pt too high) has occurred while \output is active []
+Overfull \vbox (24.74599pt too high) has occurred while \output is active []
 
 
 [11]
@@ -1021,7 +1021,7 @@ l.36
 
  (./ch2.tex
 Chapter 2.
-<images/ch2/semantic-web.png, id=697, 626.34pt x 318.18875pt>
+<images/ch2/semantic-web.png, id=693, 626.34pt x 318.18875pt>
 File: images/ch2/semantic-web.png Graphic file (type png)
 <use images/ch2/semantic-web.png>
 Package pdftex.def Info: images/ch2/semantic-web.png  used on input line 30.
@@ -1031,7 +1031,7 @@ Package pdftex.def Info: images/ch2/semantic-web.png  used on input line 30.
 
 
 ]
-<images/ch2/web-stack.png, id=712, 601.24625pt x 327.2225pt>
+<images/ch2/web-stack.png, id=708, 601.24625pt x 327.2225pt>
 File: images/ch2/web-stack.png Graphic file (type png)
 <use images/ch2/web-stack.png>
 Package pdftex.def Info: images/ch2/web-stack.png  used on input line 53.
@@ -1044,18 +1044,18 @@ a computer-understandable
  []
 
 [10]
-<images/ch2/rdf-xml-doc.png, id=776, 601.24625pt x 130.4875pt>
+<images/ch2/rdf-xml-doc.png, id=771, 601.24625pt x 130.4875pt>
 File: images/ch2/rdf-xml-doc.png Graphic file (type png)
 <use images/ch2/rdf-xml-doc.png>
 Package pdftex.def Info: images/ch2/rdf-xml-doc.png  used on input line 240.
 (pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
-<images/ch2/rdf-triple.png, id=778, 568.1225pt x 107.40125pt>
+<images/ch2/rdf-triple.png, id=773, 568.1225pt x 107.40125pt>
 File: images/ch2/rdf-triple.png Graphic file (type png)
 <use images/ch2/rdf-triple.png>
 Package pdftex.def Info: images/ch2/rdf-triple.png  used on input line 257.
 (pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
  [11]
-<images/ch2/rdf-graph.png, id=790, 572.1375pt x 188.705pt>
+<images/ch2/rdf-graph.png, id=786, 572.1375pt x 188.705pt>
 File: images/ch2/rdf-graph.png Graphic file (type png)
 <use images/ch2/rdf-graph.png>
 Package pdftex.def Info: images/ch2/rdf-graph.png  used on input line 269.
@@ -1072,26 +1072,26 @@ Overfull \hbox (4.60803pt too wide) in paragraph at lines 323--334
 h in turn is an rdf:subClassOf
  []
 
-<images/ch2/rdfs-graph-for-complex.png, id=815, 739.76375pt x 411.5375pt>
+<images/ch2/rdfs-graph-for-complex.png, id=811, 739.76375pt x 411.5375pt>
 File: images/ch2/rdfs-graph-for-complex.png Graphic file (type png)
 <use images/ch2/rdfs-graph-for-complex.png>
 Package pdftex.def Info: images/ch2/rdfs-graph-for-complex.png  used on input l
 ine 337.
 (pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
-<images/ch2/statement-for-rdf.png, id=823, 501.875pt x 88.33pt>
+<images/ch2/statement-for-rdf.png, id=819, 501.875pt x 88.33pt>
 File: images/ch2/statement-for-rdf.png Graphic file (type png)
 <use images/ch2/statement-for-rdf.png>
 Package pdftex.def Info: images/ch2/statement-for-rdf.png  used on input line 3
 57.
 (pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
 [14 <./images/ch2/rdfs-graph-for-complex.png>]
-<images/ch2/triple-for-rdf-statement.png, id=831, 501.875pt x 104.39pt>
+<images/ch2/triple-for-rdf-statement.png, id=827, 501.875pt x 104.39pt>
 File: images/ch2/triple-for-rdf-statement.png Graphic file (type png)
 <use images/ch2/triple-for-rdf-statement.png>
 Package pdftex.def Info: images/ch2/triple-for-rdf-statement.png  used on input
  line 370.
 (pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
-<images/ch2/rdf-graph-for-statement.png, id=839, 400.49625pt x 206.7725pt>
+<images/ch2/rdf-graph-for-statement.png, id=835, 400.49625pt x 206.7725pt>
 File: images/ch2/rdf-graph-for-statement.png Graphic file (type png)
 <use images/ch2/rdf-graph-for-statement.png>
 Package pdftex.def Info: images/ch2/rdf-graph-for-statement.png  used on input 
@@ -1099,7 +1099,7 @@ line 394.
 (pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
  [15 <./images/ch2/statement-for-rdf.png> <./images/ch2/triple-for-rdf-statemen
 t.png>]
-<images/ch2/graph-for-relative-statements.png, id=853, 618.31pt x 158.5925pt>
+<images/ch2/graph-for-relative-statements.png, id=849, 618.31pt x 158.5925pt>
 File: images/ch2/graph-for-relative-statements.png Graphic file (type png)
 <use images/ch2/graph-for-relative-statements.png>
 Package pdftex.def Info: images/ch2/graph-for-relative-statements.png  used on 
@@ -1107,7 +1107,7 @@ input line 414.
 (pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
  [16 <./images/ch2/rdf-graph-for-statement.png> <./images/ch2/graph-for-relativ
 e-statements.png>]
-<images/ch2/graph-for-respondent-details.png, id=867, 687.56876pt x 386.44376pt
+<images/ch2/graph-for-respondent-details.png, id=863, 687.56876pt x 386.44376pt
 >
 File: images/ch2/graph-for-respondent-details.png Graphic file (type png)
 <use images/ch2/graph-for-respondent-details.png>
@@ -1127,7 +1127,7 @@ semanticweb.org/res-
  []
 
 [17 <./images/ch2/graph-for-respondent-details.png>]
-<images/ch2/blank-node-for-rdf.png, id=877, 687.56876pt x 400.49625pt>
+<images/ch2/blank-node-for-rdf.png, id=873, 687.56876pt x 400.49625pt>
 File: images/ch2/blank-node-for-rdf.png Graphic file (type png)
 <use images/ch2/blank-node-for-rdf.png>
 Package pdftex.def Info: images/ch2/blank-node-for-rdf.png  used on input line 
@@ -1146,13 +1146,13 @@ Overfull \hbox (46.34317pt too wide) in paragraph at lines 524--524
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/syntax-diagram.png, id=901, 733.74126pt x 115.43124pt>
+<images/ch2/syntax-diagram.png, id=897, 733.74126pt x 115.43124pt>
 File: images/ch2/syntax-diagram.png Graphic file (type png)
 <use images/ch2/syntax-diagram.png>
 Package pdftex.def Info: images/ch2/syntax-diagram.png  used on input line 552.
 
 (pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
-<images/ch2/components-of-url-example.png, id=905, 696.6025pt x 182.6825pt>
+<images/ch2/components-of-url-example.png, id=901, 696.6025pt x 182.6825pt>
 File: images/ch2/components-of-url-example.png Graphic file (type png)
 <use images/ch2/components-of-url-example.png>
 Package pdftex.def Info: images/ch2/components-of-url-example.png  used on inpu
@@ -1164,20 +1164,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20] [21 <./images/ch2/syntax-diagram.png> <./images/ch2/components-of-url-exam
 ple.png>] [22]
-<images/ch2/owl-individuals.png, id=951, 307.1475pt x 159.59625pt>
+<images/ch2/owl-individuals.png, id=947, 307.1475pt x 159.59625pt>
 File: images/ch2/owl-individuals.png Graphic file (type png)
 <use images/ch2/owl-individuals.png>
 Package pdftex.def Info: images/ch2/owl-individuals.png  used on input line 652
 .
 (pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
-<images/ch2/owl-properties.png, id=955, 307.1475pt x 201.75375pt>
+<images/ch2/owl-properties.png, id=951, 307.1475pt x 201.75375pt>
 File: images/ch2/owl-properties.png Graphic file (type png)
 <use images/ch2/owl-properties.png>
 Package pdftex.def Info: images/ch2/owl-properties.png  used on input line 680.
 
 (pdftex.def)             Requested size: 227.62204pt x 149.51707pt.
  [23 <./images/ch2/owl-individuals.png>] [24 <./images/ch2/owl-properties.png>]
-<images/ch2/owl-classes-with-individuals-and-properties.png, id=975, 307.1475pt
+<images/ch2/owl-classes-with-individuals-and-properties.png, id=971, 307.1475pt
  x 312.16624pt>
 File: images/ch2/owl-classes-with-individuals-and-properties.png Graphic file (
 type png)
@@ -1187,7 +1187,7 @@ Package pdftex.def Info: images/ch2/owl-classes-with-individuals-and-properties
 (pdftex.def)             Requested size: 227.62204pt x 231.34236pt.
  [25 <./images/ch2/owl-classes-with-individuals-and-properties.png>] [26] [27] 
 [28] [29]
-<images/ch2/wikidata-uofr.png, id=1050, 615.29875pt x 792.9625pt>
+<images/ch2/wikidata-uofr.png, id=1046, 615.29875pt x 792.9625pt>
 File: images/ch2/wikidata-uofr.png Graphic file (type png)
 <use images/ch2/wikidata-uofr.png>
 Package pdftex.def Info: images/ch2/wikidata-uofr.png  used on input line 893.
@@ -1200,7 +1200,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/rdf-xml-uofr.png, id=1064, 626.34pt x 485.815pt>
+<images/ch2/rdf-xml-uofr.png, id=1060, 626.34pt x 485.815pt>
 File: images/ch2/rdf-xml-uofr.png Graphic file (type png)
 <use images/ch2/rdf-xml-uofr.png>
 Package pdftex.def Info: images/ch2/rdf-xml-uofr.png  used on input line 988.
@@ -1212,12 +1212,12 @@ how-pattern-matching-works-
  []
 
 [34]
-<images/ch2/dbpedia-uofr.png, id=1093, 679.53876pt x 664.4825pt>
+<images/ch2/dbpedia-uofr.png, id=1089, 679.53876pt x 664.4825pt>
 File: images/ch2/dbpedia-uofr.png Graphic file (type png)
 <use images/ch2/dbpedia-uofr.png>
 Package pdftex.def Info: images/ch2/dbpedia-uofr.png  used on input line 1036.
 (pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
-<images/ch2/depedia-architecture.png, id=1096, 626.34pt x 321.2pt>
+<images/ch2/depedia-architecture.png, id=1092, 626.34pt x 321.2pt>
 File: images/ch2/depedia-architecture.png Graphic file (type png)
 <use images/ch2/depedia-architecture.png>
 Package pdftex.def Info: images/ch2/depedia-architecture.png  used on input lin
@@ -1234,21 +1234,21 @@ Chapter 3.
 
 
 ] [39] [40] [41]
-<images/ch3/protege/protege-homescreen.png, id=1152, 1439.3775pt x 791.95876pt>
+<images/ch3/protege/protege-homescreen.png, id=1148, 1439.3775pt x 791.95876pt>
 
 File: images/ch3/protege/protege-homescreen.png Graphic file (type png)
 <use images/ch3/protege/protege-homescreen.png>
 Package pdftex.def Info: images/ch3/protege/protege-homescreen.png  used on inp
 ut line 145.
 (pdftex.def)             Requested size: 426.79134pt x 234.82216pt.
-<images/ch3/protege/class-hierarchy.png, id=1154, 821.0675pt x 448.67625pt>
+<images/ch3/protege/class-hierarchy.png, id=1150, 821.0675pt x 448.67625pt>
 File: images/ch3/protege/class-hierarchy.png Graphic file (type png)
 <use images/ch3/protege/class-hierarchy.png>
 Package pdftex.def Info: images/ch3/protege/class-hierarchy.png  used on input 
 line 171.
 (pdftex.def)             Requested size: 426.79134pt x 233.21715pt.
  [42 <./images/ch3/protege/protege-homescreen.png>]
-<images/ch3/protege/tools-menu-class-hierarchy.png, id=1163, 541.02126pt x 199.
+<images/ch3/protege/tools-menu-class-hierarchy.png, id=1159, 541.02126pt x 199.
 74625pt>
 File: images/ch3/protege/tools-menu-class-hierarchy.png Graphic file (type png)
 
@@ -1256,7 +1256,7 @@ File: images/ch3/protege/tools-menu-class-hierarchy.png Graphic file (type png)
 Package pdftex.def Info: images/ch3/protege/tools-menu-class-hierarchy.png  use
 d on input line 186.
 (pdftex.def)             Requested size: 426.79134pt x 157.5753pt.
-<images/ch3/protege/enter-hierarchy-pop-up.png, id=1165, 523.9575pt x 364.36125
+<images/ch3/protege/enter-hierarchy-pop-up.png, id=1161, 523.9575pt x 364.36125
 pt>
 File: images/ch3/protege/enter-hierarchy-pop-up.png Graphic file (type png)
 <use images/ch3/protege/enter-hierarchy-pop-up.png>
@@ -1265,7 +1265,7 @@ Package pdftex.def Info: images/ch3/protege/enter-hierarchy-pop-up.png  used on
 (pdftex.def)             Requested size: 426.79134pt x 296.7989pt.
  [43 <./images/ch3/protege/class-hierarchy.png> <./images/ch3/protege/tools-men
 u-class-hierarchy.png>] [44 <./images/ch3/protege/enter-hierarchy-pop-up.png>]
-<images/ch3/protege/create-disjoint-siblings.png, id=1181, 658.46pt x 364.36125
+<images/ch3/protege/create-disjoint-siblings.png, id=1177, 658.46pt x 364.36125
 pt>
 File: images/ch3/protege/create-disjoint-siblings.png Graphic file (type png)
 <use images/ch3/protege/create-disjoint-siblings.png>
@@ -1273,7 +1273,7 @@ Package pdftex.def Info: images/ch3/protege/create-disjoint-siblings.png  used
 on input line 216.
 (pdftex.def)             Requested size: 426.79134pt x 236.1704pt.
  [45 <./images/ch3/protege/create-disjoint-siblings.png>]
-<images/ch3/protege/tools-menu-object-property-hierarchy.png, id=1192, 537.0062
+<images/ch3/protege/tools-menu-object-property-hierarchy.png, id=1188, 537.0062
 6pt x 195.73125pt>
 File: images/ch3/protege/tools-menu-object-property-hierarchy.png Graphic file 
 (type png)
@@ -1281,7 +1281,7 @@ File: images/ch3/protege/tools-menu-object-property-hierarchy.png Graphic file
 Package pdftex.def Info: images/ch3/protege/tools-menu-object-property-hierarch
 y.png  used on input line 248.
 (pdftex.def)             Requested size: 426.79134pt x 155.56079pt.
-<images/ch3/protege/object-properties-for-lady-and-parita.png, id=1194, 474.773
+<images/ch3/protege/object-properties-for-lady-and-parita.png, id=1190, 474.773
 74pt x 179.67125pt>
 File: images/ch3/protege/object-properties-for-lady-and-parita.png Graphic file
  (type png)
@@ -1290,7 +1290,7 @@ Package pdftex.def Info: images/ch3/protege/object-properties-for-lady-and-pari
 ta.png  used on input line 274.
 (pdftex.def)             Requested size: 426.79134pt x 161.51892pt.
  [46 <./images/ch3/protege/tools-menu-object-property-hierarchy.png>]
-<images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png, id=1203, 474
+<images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png, id=1199, 474
 .77374pt x 320.19624pt>
 File: images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png Graphic 
 file (type png)
@@ -1299,7 +1299,7 @@ Package pdftex.def Info: images/ch3/protege/domain-and-range-for-hasName-and-is
 NameOf.png  used on input line 307.
 (pdftex.def)             Requested size: 341.43306pt x 230.27727pt.
  [47 <./images/ch3/protege/object-properties-for-lady-and-parita.png>]
-<images/ch3/protege/tools-menu-data-property-hierarchy.png, id=1215, 538.01pt x
+<images/ch3/protege/tools-menu-data-property-hierarchy.png, id=1211, 538.01pt x
  196.735pt>
 File: images/ch3/protege/tools-menu-data-property-hierarchy.png Graphic file (t
 ype png)
@@ -1309,26 +1309,26 @@ png  used on input line 330.
 (pdftex.def)             Requested size: 426.79134pt x 156.06734pt.
  [48 <./images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png> <./im
 ages/ch3/protege/tools-menu-data-property-hierarchy.png>] [49]
-<images/ch3/openrefine/homepage.png, id=1245, 542.025pt x 308.15125pt>
+<images/ch3/openrefine/homepage.png, id=1241, 542.025pt x 308.15125pt>
 File: images/ch3/openrefine/homepage.png Graphic file (type png)
 <use images/ch3/openrefine/homepage.png>
 Package pdftex.def Info: images/ch3/openrefine/homepage.png  used on input line
  399.
 (pdftex.def)             Requested size: 426.79134pt x 242.64687pt.
  [50]
-<images/ch3/openrefine/new-project.png, id=1255, 700.6175pt x 323.2075pt>
+<images/ch3/openrefine/new-project.png, id=1250, 700.6175pt x 323.2075pt>
 File: images/ch3/openrefine/new-project.png Graphic file (type png)
 <use images/ch3/openrefine/new-project.png>
 Package pdftex.def Info: images/ch3/openrefine/new-project.png  used on input l
 ine 420.
 (pdftex.def)             Requested size: 426.79134pt x 196.88997pt.
-<images/ch3/openrefine/update-preview.png, id=1257, 1270.7475pt x 293.095pt>
+<images/ch3/openrefine/update-preview.png, id=1252, 1270.7475pt x 293.095pt>
 File: images/ch3/openrefine/update-preview.png Graphic file (type png)
 <use images/ch3/openrefine/update-preview.png>
 Package pdftex.def Info: images/ch3/openrefine/update-preview.png  used on inpu
 t line 431.
 (pdftex.def)             Requested size: 426.79134pt x 98.43898pt.
-<images/ch3/openrefine/name-project.png, id=1259, 1075.01625pt x 138.5175pt>
+<images/ch3/openrefine/name-project.png, id=1254, 1075.01625pt x 138.5175pt>
 File: images/ch3/openrefine/name-project.png Graphic file (type png)
 <use images/ch3/openrefine/name-project.png>
 Package pdftex.def Info: images/ch3/openrefine/name-project.png  used on input 
@@ -1337,25 +1337,25 @@ line 441.
  [51 <./images/ch3/openrefine/homepage.png>] [52 <./images/ch3/openrefine/new-p
 roject.png> <./images/ch3/openrefine/update-preview.png> <./images/ch3/openrefi
 ne/name-project.png>]
-<images/ch3/openrefine/facet.png, id=1275, 693.59125pt x 318.18875pt>
+<images/ch3/openrefine/facet.png, id=1271, 693.59125pt x 318.18875pt>
 File: images/ch3/openrefine/facet.png Graphic file (type png)
 <use images/ch3/openrefine/facet.png>
 Package pdftex.def Info: images/ch3/openrefine/facet.png  used on input line 46
 5.
 (pdftex.def)             Requested size: 426.79134pt x 195.799pt.
-<images/ch3/openrefine/facet-result.png, id=1278, 778.91pt x 400.49625pt>
+<images/ch3/openrefine/facet-result.png, id=1274, 778.91pt x 400.49625pt>
 File: images/ch3/openrefine/facet-result.png Graphic file (type png)
 <use images/ch3/openrefine/facet-result.png>
 Package pdftex.def Info: images/ch3/openrefine/facet-result.png  used on input 
 line 481.
 (pdftex.def)             Requested size: 426.79134pt x 219.4425pt.
-<images/ch3/openrefine/include-result.png, id=1279, 822.07124pt x 238.8925pt>
+<images/ch3/openrefine/include-result.png, id=1275, 822.07124pt x 238.8925pt>
 File: images/ch3/openrefine/include-result.png Graphic file (type png)
 <use images/ch3/openrefine/include-result.png>
 Package pdftex.def Info: images/ch3/openrefine/include-result.png  used on inpu
 t line 488.
 (pdftex.def)             Requested size: 426.79134pt x 124.02432pt.
-<images/ch3/openrefine/clean-data.png, id=1281, 954.56625pt x 110.4125pt>
+<images/ch3/openrefine/clean-data.png, id=1277, 954.56625pt x 110.4125pt>
 File: images/ch3/openrefine/clean-data.png Graphic file (type png)
 <use images/ch3/openrefine/clean-data.png>
 Package pdftex.def Info: images/ch3/openrefine/clean-data.png  used on input li
@@ -1364,27 +1364,27 @@ ne 507.
  [53 <./images/ch3/openrefine/facet.png>]
 [54 <./images/ch3/openrefine/facet-result.png> <./images/ch3/openrefine/include
 -result.png> <./images/ch3/openrefine/clean-data.png>]
-<images/ch3/openrefine/textfilter-result.png, id=1297, 1259.70625pt x 178.6675p
+<images/ch3/openrefine/textfilter-result.png, id=1293, 1259.70625pt x 178.6675p
 t>
 File: images/ch3/openrefine/textfilter-result.png Graphic file (type png)
 <use images/ch3/openrefine/textfilter-result.png>
 Package pdftex.def Info: images/ch3/openrefine/textfilter-result.png  used on i
 nput line 519.
 (pdftex.def)             Requested size: 426.79134pt x 60.5335pt.
-<images/ch3/openrefine/transform.png, id=1299, 552.0625pt x 437.635pt>
+<images/ch3/openrefine/transform.png, id=1295, 552.0625pt x 437.635pt>
 File: images/ch3/openrefine/transform.png Graphic file (type png)
 <use images/ch3/openrefine/transform.png>
 Package pdftex.def Info: images/ch3/openrefine/transform.png  used on input lin
 e 536.
 (pdftex.def)             Requested size: 426.79134pt x 338.34225pt.
-<images/ch3/openrefine/custom-text-transform.png, id=1301, 577.15625pt x 337.26
+<images/ch3/openrefine/custom-text-transform.png, id=1297, 577.15625pt x 337.26
 pt>
 File: images/ch3/openrefine/custom-text-transform.png Graphic file (type png)
 <use images/ch3/openrefine/custom-text-transform.png>
 Package pdftex.def Info: images/ch3/openrefine/custom-text-transform.png  used 
 on input line 551.
 (pdftex.def)             Requested size: 426.79134pt x 249.40381pt.
-<images/ch3/openrefine/transform-result.png, id=1303, 1040.88875pt x 230.8625pt
+<images/ch3/openrefine/transform-result.png, id=1299, 1040.88875pt x 230.8625pt
 >
 File: images/ch3/openrefine/transform-result.png Graphic file (type png)
 <use images/ch3/openrefine/transform-result.png>
@@ -1414,13 +1414,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  (./ch4.tex
 Chapter 4.
-<images/ch4/survey/feedback-form.png, id=1380, 558.085pt x 641.39626pt>
+<images/ch4/survey/feedback-form.png, id=1376, 558.085pt x 641.39626pt>
 File: images/ch4/survey/feedback-form.png Graphic file (type png)
 <use images/ch4/survey/feedback-form.png>
 Package pdftex.def Info: images/ch4/survey/feedback-form.png  used on input lin
 e 18.
 (pdftex.def)             Requested size: 426.79134pt x 490.51973pt.
-<images/ch4/survey/survey-class-hierarchy.png, id=1385, 597.23125pt x 453.695pt
+<images/ch4/survey/survey-class-hierarchy.png, id=1381, 597.23125pt x 453.695pt
 >
 File: images/ch4/survey/survey-class-hierarchy.png Graphic file (type png)
 <use images/ch4/survey/survey-class-hierarchy.png>
@@ -1433,7 +1433,7 @@ input line 38.
 
 ] [63 <./images/ch4/survey/feedback-form.png>] [64 <./images/ch4/survey/survey-
 class-hierarchy.png>] [65]
-<images/ch4/survey/likertscale5-class.png, id=1412, 725.71124pt x 384.43625pt>
+<images/ch4/survey/likertscale5-class.png, id=1408, 725.71124pt x 384.43625pt>
 File: images/ch4/survey/likertscale5-class.png Graphic file (type png)
 <use images/ch4/survey/likertscale5-class.png>
 Package pdftex.def Info: images/ch4/survey/likertscale5-class.png  used on inpu
@@ -1446,7 +1446,7 @@ Overfull \hbox (0.89482pt too wide) in paragraph at lines 162--172
  []
 
 [66]
-<images/ch4/survey/survey-object-properties.png, id=1421, 697.60625pt x 389.455
+<images/ch4/survey/survey-object-properties.png, id=1417, 697.60625pt x 389.455
 pt>
 File: images/ch4/survey/survey-object-properties.png Graphic file (type png)
 <use images/ch4/survey/survey-object-properties.png>
@@ -1457,7 +1457,7 @@ n input line 175.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/survey/survey-data-properties.png, id=1424, 1012.78375pt x 462.7287
+<images/ch4/survey/survey-data-properties.png, id=1420, 1012.78375pt x 462.7287
 4pt>
 File: images/ch4/survey/survey-data-properties.png Graphic file (type png)
 <use images/ch4/survey/survey-data-properties.png>
@@ -1496,7 +1496,7 @@ Overfull \hbox (20.58328pt too wide) in paragraph at lines 248--263
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/survey/instances-of-survey-class.png, id=1438, 672.5125pt x 313.17p
+<images/ch4/survey/instances-of-survey-class.png, id=1434, 672.5125pt x 313.17p
 t>
 File: images/ch4/survey/instances-of-survey-class.png Graphic file (type png)
 <use images/ch4/survey/instances-of-survey-class.png>
@@ -1506,7 +1506,7 @@ on input line 279.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/survey/final-survey-classes.png, id=1441, 815.045pt x 605.26125pt>
+<images/ch4/survey/final-survey-classes.png, id=1437, 815.045pt x 605.26125pt>
 File: images/ch4/survey/final-survey-classes.png Graphic file (type png)
 <use images/ch4/survey/final-survey-classes.png>
 Package pdftex.def Info: images/ch4/survey/final-survey-classes.png  used on in
@@ -1515,13 +1515,13 @@ put line 315.
 [69 <./images/ch4/survey/survey-data-properties.png>] [70] [71 <./images/ch4/su
 rvey/instances-of-survey-class.png> <./images/ch4/survey/final-survey-classes.p
 ng>]
-<images/ch4/survey/shacl-editor.png, id=1460, 1011.78pt x 468.75125pt>
+<images/ch4/survey/shacl-editor.png, id=1456, 1011.78pt x 468.75125pt>
 File: images/ch4/survey/shacl-editor.png Graphic file (type png)
 <use images/ch4/survey/shacl-editor.png>
 Package pdftex.def Info: images/ch4/survey/shacl-editor.png  used on input line
  359.
 (pdftex.def)             Requested size: 426.79134pt x 197.73248pt.
-<images/ch4/survey/shacl-constraint-violations.png, id=1462, 1275.76625pt x 392
+<images/ch4/survey/shacl-constraint-violations.png, id=1458, 1275.76625pt x 392
 .46625pt>
 File: images/ch4/survey/shacl-constraint-violations.png Graphic file (type png)
 
@@ -1531,21 +1531,21 @@ d on input line 377.
 (pdftex.def)             Requested size: 426.79134pt x 131.29285pt.
  [72] [73 <./images/ch4/survey/shacl-editor.png> <./images/ch4/survey/shacl-con
 straint-violations.png>]
-<images/ch4/survey/survey-dl-query.png, id=1478, 443.6575pt x 410.53375pt>
+<images/ch4/survey/survey-dl-query.png, id=1474, 443.6575pt x 410.53375pt>
 File: images/ch4/survey/survey-dl-query.png Graphic file (type png)
 <use images/ch4/survey/survey-dl-query.png>
 Package pdftex.def Info: images/ch4/survey/survey-dl-query.png  used on input l
 ine 403.
 (pdftex.def)             Requested size: 426.79134pt x 394.92227pt.
  [74] [75 <./images/ch4/survey/survey-dl-query.png>]
-<images/ch4/survey/survey-sparql-query.png, id=1498, 612.2875pt x 525.965pt>
+<images/ch4/survey/survey-sparql-query.png, id=1494, 612.2875pt x 525.965pt>
 File: images/ch4/survey/survey-sparql-query.png Graphic file (type png)
 <use images/ch4/survey/survey-sparql-query.png>
 Package pdftex.def Info: images/ch4/survey/survey-sparql-query.png  used on inp
 ut line 439.
 (pdftex.def)             Requested size: 426.79134pt x 366.61601pt.
  [76 <./images/ch4/survey/survey-sparql-query.png>]
-<images/ch4/survey/survey-snap-sparql-query.png, id=1508, 682.55pt x 437.635pt>
+<images/ch4/survey/survey-snap-sparql-query.png, id=1504, 682.55pt x 437.635pt>
 
 File: images/ch4/survey/survey-snap-sparql-query.png Graphic file (type png)
 <use images/ch4/survey/survey-snap-sparql-query.png>
@@ -1553,7 +1553,7 @@ Package pdftex.def Info: images/ch4/survey/survey-snap-sparql-query.png  used o
 n input line 470.
 (pdftex.def)             Requested size: 426.79134pt x 273.65475pt.
  [77 <./images/ch4/survey/survey-snap-sparql-query.png>]
-<images/ch4/openrefine/openrefine-rdf-skeleton.png, id=1522, 637.38126pt x 609.
+<images/ch4/openrefine/openrefine-rdf-skeleton.png, id=1518, 637.38126pt x 609.
 27625pt>
 File: images/ch4/openrefine/openrefine-rdf-skeleton.png Graphic file (type png)
 
@@ -1562,14 +1562,14 @@ Package pdftex.def Info: images/ch4/openrefine/openrefine-rdf-skeleton.png  use
 d on input line 511.
 (pdftex.def)             Requested size: 426.79134pt x 407.97124pt.
  [78] [79 <./images/ch4/openrefine/openrefine-rdf-skeleton.png>]
-<images/ch4/openrefine/openrefine-add-prefix.png, id=1538, 393.47pt x 155.58125
+<images/ch4/openrefine/openrefine-add-prefix.png, id=1534, 393.47pt x 155.58125
 pt>
 File: images/ch4/openrefine/openrefine-add-prefix.png Graphic file (type png)
 <use images/ch4/openrefine/openrefine-add-prefix.png>
 Package pdftex.def Info: images/ch4/openrefine/openrefine-add-prefix.png  used 
 on input line 533.
 (pdftex.def)             Requested size: 426.79134pt x 168.75641pt.
-<images/ch4/openrefine/openrefine-manage-prefix.png, id=1540, 441.65pt x 225.84
+<images/ch4/openrefine/openrefine-manage-prefix.png, id=1536, 441.65pt x 225.84
 375pt>
 File: images/ch4/openrefine/openrefine-manage-prefix.png Graphic file (type png
 )
@@ -1579,14 +1579,14 @@ ed on input line 543.
 (pdftex.def)             Requested size: 426.79134pt x 218.25488pt.
  [80 <./images/ch4/openrefine/openrefine-add-prefix.png> <./images/ch4/openrefi
 ne/openrefine-manage-prefix.png>]
-<images/ch4/openrefine/openrefine-index.png, id=1548, 610.28pt x 436.63126pt>
+<images/ch4/openrefine/openrefine-index.png, id=1544, 610.28pt x 436.63126pt>
 File: images/ch4/openrefine/openrefine-index.png Graphic file (type png)
 <use images/ch4/openrefine/openrefine-index.png>
 Package pdftex.def Info: images/ch4/openrefine/openrefine-index.png  used on in
 put line 565.
 (pdftex.def)             Requested size: 426.79134pt x 305.35997pt.
  [81 <./images/ch4/openrefine/openrefine-index.png>]
-<images/ch4/openrefine/openrefine-selecting-property.png, id=1557, 799.98875pt 
+<images/ch4/openrefine/openrefine-selecting-property.png, id=1553, 799.98875pt 
 x 557.08125pt>
 File: images/ch4/openrefine/openrefine-selecting-property.png Graphic file (typ
 e png)
@@ -1595,7 +1595,7 @@ Package pdftex.def Info: images/ch4/openrefine/openrefine-selecting-property.pn
 g  used on input line 589.
 (pdftex.def)             Requested size: 426.79134pt x 297.20674pt.
  [82 <./images/ch4/openrefine/openrefine-selecting-property.png>]
-<images/ch4/openrefine/openrefine-rdf-preview.png, id=1564, 765.86125pt x 527.9
+<images/ch4/openrefine/openrefine-rdf-preview.png, id=1560, 765.86125pt x 527.9
 725pt>
 File: images/ch4/openrefine/openrefine-rdf-preview.png Graphic file (type png)
 <use images/ch4/openrefine/openrefine-rdf-preview.png>
@@ -1603,7 +1603,7 @@ Package pdftex.def Info: images/ch4/openrefine/openrefine-rdf-preview.png  used
  on input line 615.
 (pdftex.def)             Requested size: 426.79134pt x 294.22858pt.
  [83 <./images/ch4/openrefine/openrefine-rdf-preview.png>]
-<images/ch4/survey/survey-license.png, id=1574, 674.52pt x 210.7875pt>
+<images/ch4/survey/survey-license.png, id=1570, 674.52pt x 210.7875pt>
 File: images/ch4/survey/survey-license.png Graphic file (type png)
 <use images/ch4/survey/survey-license.png>
 Package pdftex.def Info: images/ch4/survey/survey-license.png  used on input li
@@ -1616,7 +1616,7 @@ en li-cense: ``Attribution-
  []
 
 [84 <./images/ch4/survey/survey-license.png>]
-<images/ch4/survey/ontograf.png, id=1585, 1202.4925pt x 617.30624pt>
+<images/ch4/survey/ontograf.png, id=1581, 1202.4925pt x 617.30624pt>
 File: images/ch4/survey/ontograf.png Graphic file (type png)
 <use images/ch4/survey/ontograf.png>
 Package pdftex.def Info: images/ch4/survey/ontograf.png  used on input line 692
@@ -1628,7 +1628,7 @@ Overfull \hbox (14.97987pt too wide) in paragraph at lines 699--707
 e sur-vey on-tol-ogy us-ing Web[]VOWL.
  []
 
-<images/ch4/survey/webVOWL.png, id=1587, 870.25125pt x 692.5875pt>
+<images/ch4/survey/webVOWL.png, id=1583, 870.25125pt x 692.5875pt>
 File: images/ch4/survey/webVOWL.png Graphic file (type png)
 <use images/ch4/survey/webVOWL.png>
 Package pdftex.def Info: images/ch4/survey/webVOWL.png  used on input line 710.
@@ -5127,10 +5127,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 23053 strings out of 480608
- 428535 string characters out of 5903631
- 1050927 words of memory out of 5000000
- 35979 multiletter control sequences out of 15000+600000
+ 23049 strings out of 480608
+ 428463 string characters out of 5903631
+ 1050758 words of memory out of 5000000
+ 35976 multiletter control sequences out of 15000+600000
  604145 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,11n,84p,1754b,1992s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5149,10 +5149,10 @@ onts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 /public/lm/lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm
 /lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt10.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on parita-msc.pdf (176 pages, 3208869 bytes).
+Output written on parita-msc.pdf (176 pages, 3207639 bytes).
 PDF statistics:
- 4457 PDF objects out of 5155 (max. 8388607)
- 4083 compressed objects within 41 object streams
- 2444 named destinations out of 2487 (max. 500000)
+ 4453 PDF objects out of 5155 (max. 8388607)
+ 4079 compressed objects within 41 object streams
+ 2443 named destinations out of 2487 (max. 500000)
  908 words of extra memory for PDF output out of 10000 (max. 10000000)
 
