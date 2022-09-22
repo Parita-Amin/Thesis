@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.4)  21 SEP 2022 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.4)  22 SEP 2022 16:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -675,800 +675,35 @@ Loading module `definitions' ...
 Loading module `upgrade' ...
 )
 
-./parita-msc.tex:46: LaTeX3 Error: The key 'acro/list-style' is unknown and is 
-being ignored.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.46 }
-      
-? r
-OK, entering \nonstopmode...
-
-./parita-msc.tex:46: LaTeX3 Error: The key 'acro/only-used' is unknown and is b
-eing ignored.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.46 }
-      
-
-The module 'acro' does not have a key called 'acro/only-used'.
-Check that you have spelled the key name correctly.
-
-
-
-./parita-msc.tex:46: LaTeX3 Error: The key 'acro/sort' is unknown and is being 
-ignored.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.46 }
-      
-
-The module 'acro' does not have a key called 'acro/sort'.
-Check that you have spelled the key name correctly.
-
-
-
-./parita-msc.tex:46: LaTeX3 Error: The key 'acro/page-style' is unknown and is 
-being ignored.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.46 }
-      
-
-The module 'acro' does not have a key called 'acro/page-style'.
-Check that you have spelled the key name correctly.
-
-
-
-./parita-msc.tex:46: LaTeX3 Error: The key 'acro/pages' is unknown and is being
- ignored.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.46 }
-      
-
-The module 'acro' does not have a key called 'acro/pages'.
-Check that you have spelled the key name correctly.
-
-
-
 LaTeX Warning: \include should only be used after \begin{document} on input lin
 e 47.
 
 (./abbrev.tex
 \g__acro_uri_int=\count346
-
-
-./abbrev.tex:6: Package acro Error: You tried to set the property `class' on li
-ne 6.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.6 }
-     
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
 \g__acro_http_int=\count347
-
-./abbrev.tex:11: Package acro Error: You tried to set the property `class' on l
-ine 11.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.11 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
 \g__acro_https_int=\count348
-
-./abbrev.tex:16: Package acro Error: You tried to set the property `class' on l
-ine 16.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.16 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_ssl_int=\count349
-
-./abbrev.tex:21: Package acro Error: You tried to set the property `class' on l
-ine 21.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.21 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_sparql_int=\count350
-
-./abbrev.tex:26: Package acro Error: You tried to set the property `class' on l
-ine 26.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.26 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_rdf_int=\count351
-
-./abbrev.tex:31: Package acro Error: You tried to set the property `class' on l
-ine 31.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.31 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_www_int=\count352
-
-./abbrev.tex:36: Package acro Error: You tried to set the property `class' on l
-ine 36.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.36 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_w3c_int=\count353
-
-./abbrev.tex:41: Package acro Error: You tried to set the property `class' on l
-ine 41.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.41 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_html_int=\count354
-
-./abbrev.tex:46: Package acro Error: You tried to set the property `class' on l
-ine 46.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.46 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_url_int=\count355
-
-./abbrev.tex:51: Package acro Error: You tried to set the property `class' on l
-ine 51.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.51 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_urn_int=\count356
-
-./abbrev.tex:56: Package acro Error: You tried to set the property `class' on l
-ine 56.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.56 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_xml_int=\count357
-
-./abbrev.tex:61: Package acro Error: You tried to set the property `class' on l
-ine 61.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.61 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_rdfs_int=\count358
-
-./abbrev.tex:66: Package acro Error: You tried to set the property `class' on l
-ine 66.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.66 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_lod_int=\count359
-
-./abbrev.tex:71: Package acro Error: You tried to set the property `class' on l
-ine 71.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.71 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_lov_int=\count360
-
-./abbrev.tex:76: Package acro Error: You tried to set the property `class' on l
-ine 76.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.76 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_sql_int=\count361
-
-./abbrev.tex:81: Package acro Error: You tried to set the property `class' on l
-ine 81.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.81 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_csv_int=\count362
-
-./abbrev.tex:86: Package acro Error: You tried to set the property `class' on l
-ine 86.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.86 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_owl_int=\count363
-
-./abbrev.tex:91: Package acro Error: You tried to set the property `class' on l
-ine 91.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.91 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_tsv_int=\count364
-
-./abbrev.tex:96: Package acro Error: You tried to set the property `class' on l
-ine 96.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.96 }
-      
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_gdpr_int=\count365
-
-./abbrev.tex:101: Package acro Error: You tried to set the property `class' on 
-line 101.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.101 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_cern_int=\count366
-
-./abbrev.tex:107: Package acro Error: You tried to set the property `class' on 
-line 107.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.107 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_er_int=\count367
-
-./abbrev.tex:112: Package acro Error: You tried to set the property `class' on 
-line 112.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.112 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_turtle_int=\count368
-
-./abbrev.tex:117: Package acro Error: You tried to set the property `class' on 
-line 117.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.117 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_n3_int=\count369
-
-./abbrev.tex:122: Package acro Error: You tried to set the property `class' on 
-line 122.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.122 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_vowl_int=\count370
-
-./abbrev.tex:127: Package acro Error: You tried to set the property `class' on 
-line 127.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.127 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_svg_int=\count371
-
-./abbrev.tex:132: Package acro Error: You tried to set the property `class' on 
-line 132.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.132 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_json_int=\count372
-
-./abbrev.tex:137: Package acro Error: You tried to set the property `class' on 
-line 137.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.137 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_ide_int=\count373
-
-./abbrev.tex:142: Package acro Error: You tried to set the property `class' on 
-line 142.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.142 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_png_int=\count374
-
-./abbrev.tex:147: Package acro Error: You tried to set the property `class' on 
-line 147.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.147 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_jpeg_int=\count375
-
-./abbrev.tex:152: Package acro Error: You tried to set the property `class' on 
-line 152.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.152 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_gif_int=\count376
-
-./abbrev.tex:157: Package acro Error: You tried to set the property `class' on 
-line 157.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.157 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_api_int=\count377
-
-./abbrev.tex:162: Package acro Error: You tried to set the property `class' on 
-line 162.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.162 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_iri_int=\count378
-
-./abbrev.tex:167: Package acro Error: You tried to set the property `class' on 
-line 167.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.167 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_iso_int=\count379
-
-./abbrev.tex:172: Package acro Error: You tried to set the property `class' on 
-line 172.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.172 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_gui_int=\count380
-
-./abbrev.tex:177: Package acro Error: You tried to set the property `class' on 
-line 177.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.177 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_grel_int=\count381
-
-./abbrev.tex:182: Package acro Error: You tried to set the property `class' on 
-line 182.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.182 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_dl_int=\count382
-
-./abbrev.tex:187: Package acro Error: You tried to set the property `class' on 
-line 187.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.187 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-\g__acro_obda_int=\count383
-
-./abbrev.tex:192: Package acro Error: You tried to set the property `class' on 
-line 192.
-(acro)                This property does not exist. Check for a typo or 
-(acro)                define the property yourself.
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.192 }
-       
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
+\g__acro_sparql_int=\count349
+\g__acro_rdf_int=\count350
+\g__acro_www_int=\count351
+\g__acro_w3c_int=\count352
+\g__acro_html_int=\count353
+\g__acro_url_int=\count354
+\g__acro_urn_int=\count355
+\g__acro_xml_int=\count356
+\g__acro_rdfs_int=\count357
+\g__acro_lod_int=\count358
+\g__acro_lov_int=\count359
+\g__acro_owl_int=\count360
+\g__acro_cern_int=\count361
+\g__acro_er_int=\count362
+\g__acro_turtle_int=\count363
+\g__acro_n3_int=\count364
+\g__acro_vowl_int=\count365
+\g__acro_api_int=\count366
+\g__acro_iri_int=\count367
+\g__acro_iso_int=\count368
+\g__acro_grel_int=\count369
+\g__acro_dl_int=\count370
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks33
@@ -1481,10 +716,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip100
 \dth@everypar=\toks38
 )
-\c@definition=\count384
+\c@definition=\count371
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-
 
 Package csquotes Warning: No multilingual support.
 (csquotes)                Cannot enable multilingual quotes on input line 59.
@@ -1492,8 +726,8 @@ Package csquotes Warning: No multilingual support.
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 59.
 (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux) (./ch1.aux)
-(./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix1.aux)
-(./appendix2.aux) (./appendix3.aux))
+(./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix2.aux)
+(./appendix3.aux))
 \openout1 = `parita-msc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
@@ -1523,16 +757,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count385
+\scratchcounter=\count372
 \scratchdimen=\dimen261
 \scratchbox=\box108
-\nofMPsegments=\count386
-\nofMParguments=\count387
+\nofMPsegments=\count373
+\nofMParguments=\count374
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count388
+\MPscratchCnt=\count375
 \MPscratchDim=\dimen262
-\MPnumerator=\count389
-\makeMPintoPDFobject=\count390
+\MPnumerator=\count376
+\makeMPintoPDFobject=\count377
 \everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1577,7 +811,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count391
+\c@lstlisting=\count378
 Package hyperref Info: Link coloring OFF on input line 59.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1589,7 +823,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count392
+\c@section@level=\count379
 )
 LaTeX Info: Redefining \ref on input line 59.
 LaTeX Info: Redefining \pageref on input line 59.
@@ -1629,49 +863,13 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-
-./abstract.tex:39: Package acro Error: You've requested acronym `LOD' on line 3
-9 but you
-(acro)                apparently haven't defined it, yet!
-(acro)                Maybe you've misspelled `LOD'?
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.39 ...es to the practice of publishing \ac{LOD} 
-                                                  by following
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-
-./abstract.tex:40: Package acro Error: You've requested acronym `LOD' on line 4
-0 but you
-(acro)                apparently haven't defined it, yet!
-(acro)                Maybe you've misspelled `LOD'?
-
-Type <return> to continue.
- ...                                              
-                                                  
-l.40 ...ular dataset from spreadsheet to \ac{LOD} 
-                                                  that is
-
-LaTeX does not know anything more about this error, sorry.
-
-Try typing <return> to proceed.
-If that doesn't work, type X <return> to quit.
-
-
-) [1
+)) [1
 
 ]
 \openout2 = `ack.aux'.
 
- (./ack.tex) [2
+ (./ack.tex)
+[2
 
 
 
@@ -1690,8 +888,13 @@ If that doesn't work, type X <return> to quit.
 \tf@toc=\write4
 \openout4 = `parita-msc.toc'.
 
- [5]
-(./parita-msc.lof [6
+ [5] (./parita-msc.lof
+Overfull \hbox (89.47588pt too wide) in paragraph at lines 4--4
+ [][] [][]\T1/cmr/m/n/12 Semantic Web Stack, from https://www.cs.helsinki.fi/u/
+eahyvone/stes/semanticweb/kick- 
+ []
+
+[6
 
 
 ])
@@ -1705,23 +908,7 @@ If that doesn't work, type X <return> to quit.
  [8
 
 
-]
-
-./parita-msc.tex:128: LaTeX3 Error: The key 'acro/list/include-classes' is unkn
-own and is being
-(LaTeX3)        ignored.
-
-For immediate help type H <return>.
- ...                                              
-                                                  
-l.128 ...ist of Abbreviations},heading={chapter*}]
-                                                  
-
-The module 'acro/list' does not have a key called 'acro/list/include-classes'.
-Check that you have spelled the key name correctly.
-
-
-[9
+] [9
 
 
 ] [10]
@@ -1763,9 +950,22 @@ Overfull \hbox (3.14124pt too wide) in paragraph at lines 85--85
 
  (./ch2.tex
 Chapter 2.
+<images/ch2/semantic-web-stack.png, id=467, 601.24625pt x 327.2225pt>
+File: images/ch2/semantic-web-stack.png Graphic file (type png)
+<use images/ch2/semantic-web-stack.png>
+Package pdftex.def Info: images/ch2/semantic-web-stack.png  used on input line 
+33.
+(pdftex.def)             Requested size: 443.57848pt x 241.42186pt.
 
-Underfull \hbox (badness 2126) in paragraph at lines 28--28
-\T1/cmr/m/n/12 tence is
+Overfull \hbox (73.45192pt too wide) in paragraph at lines 34--34
+[]\T1/cmr/m/n/12 Figure 2.1: |Se-man-tic Web Stack, from https://www.cs.helsink
+i.fi/u/eahyvone/stes/semanticweb/kick-
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 34--34
+\T1/cmr/m/n/12 off/proceedings.pdf, etc. -- cite this source in-stead of mak-in
+g a foot-note to
  []
 
 [5
@@ -1774,123 +974,142 @@ Underfull \hbox (badness 2126) in paragraph at lines 28--28
 
 
 ]
-<images/ch2/Figure2.png, id=481, 626.34pt x 318.18875pt>
-File: images/ch2/Figure2.png Graphic file (type png)
-<use images/ch2/Figure2.png>
-Package pdftex.def Info: images/ch2/Figure2.png  used on input line 51.
-(pdftex.def)             Requested size: 426.79134pt x 216.82185pt.
-<images/ch2/Figure3.png, id=490, 601.24625pt x 327.2225pt>
-File: images/ch2/Figure3.png Graphic file (type png)
-<use images/ch2/Figure3.png>
-Package pdftex.def Info: images/ch2/Figure3.png  used on input line 63.
-(pdftex.def)             Requested size: 426.79134pt x 232.28465pt.
- [6 <./images/ch2/Figure2.png>] [7 <./images/ch2/Figure3.png>] [8] [9]
-Overfull \hbox (1.21146pt too wide) in paragraph at lines 93--94
+
+LaTeX Warning: Citation `FIND A BETTER SOURCE' on page 6 undefined on input lin
+e 42.
+
+
+Overfull \hbox (452.13991pt too wide) in paragraph at lines 42--45
+\T1/cmr/m/n/12 data on the web; it is about mak-ing links to con-nect re-lated 
+data.'' https://www.google.com/search?q=Semantic+web+is+not+limited+to+publicat
+ion+of+data+on+the+web 
+ []
+
+[6 <./images/ch2/semantic-web-stack.png>]
+
+LaTeX Warning: Reference `sec:principles' on page 7 undefined on input line 59.
+
+
+[7] [8]
+Overfull \hbox (1.21146pt too wide) in paragraph at lines 83--84
 []\T1/cmr/m/n/12 The RDF, ini-tially de-signed as a meta-data data model, is a 
 computer-understandable
  []
 
-[10]
-<images/ch2/Figure4.png, id=554, 601.24625pt x 130.4875pt>
+[9]
+<images/ch2/Figure4.png, id=527, 601.24625pt x 130.4875pt>
 File: images/ch2/Figure4.png Graphic file (type png)
 <use images/ch2/Figure4.png>
-Package pdftex.def Info: images/ch2/Figure4.png  used on input line 103.
+Package pdftex.def Info: images/ch2/Figure4.png  used on input line 93.
 (pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
-<images/ch2/Figure5.png, id=556, 568.1225pt x 107.40125pt>
+<images/ch2/Figure5.png, id=529, 568.1225pt x 107.40125pt>
 File: images/ch2/Figure5.png Graphic file (type png)
 <use images/ch2/Figure5.png>
-Package pdftex.def Info: images/ch2/Figure5.png  used on input line 110.
+Package pdftex.def Info: images/ch2/Figure5.png  used on input line 101.
 (pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
- [11]
-<images/ch2/Figure6.png, id=569, 572.1375pt x 188.705pt>
+ [10]
+<images/ch2/Figure6.png, id=542, 572.1375pt x 188.705pt>
 File: images/ch2/Figure6.png Graphic file (type png)
 <use images/ch2/Figure6.png>
-Package pdftex.def Info: images/ch2/Figure6.png  used on input line 117.
+Package pdftex.def Info: images/ch2/Figure6.png  used on input line 110.
 (pdftex.def)             Requested size: 426.79134pt x 140.76823pt.
 
-Overfull \hbox (1.08981pt too wide) in paragraph at lines 124--142
+Overfull \hbox (1.08981pt too wide) in paragraph at lines 117--135
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./images/ch2/Figure4.png> <./images/ch2/Figure5.png>] [13 <./images/ch2/Fi
+[11 <./images/ch2/Figure4.png> <./images/ch2/Figure5.png>] [12 <./images/ch2/Fi
 gure6.png>]
-<images/ch2/Figure7.png, id=593, 739.76375pt x 411.5375pt>
+<images/ch2/Figure7.png, id=566, 739.76375pt x 411.5375pt>
 File: images/ch2/Figure7.png Graphic file (type png)
 <use images/ch2/Figure7.png>
-Package pdftex.def Info: images/ch2/Figure7.png  used on input line 153.
+Package pdftex.def Info: images/ch2/Figure7.png  used on input line 147.
 (pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
-<images/ch2/Figure8.png, id=601, 501.875pt x 88.33pt>
+ [13 <./images/ch2/Figure7.png>]
+<images/ch2/Figure8.png, id=579, 501.875pt x 88.33pt>
 File: images/ch2/Figure8.png Graphic file (type png)
 <use images/ch2/Figure8.png>
-Package pdftex.def Info: images/ch2/Figure8.png  used on input line 160.
+Package pdftex.def Info: images/ch2/Figure8.png  used on input line 155.
 (pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
- [14 <./images/ch2/Figure7.png>]
-<images/ch2/Figure9.png, id=611, 501.875pt x 104.39pt>
+<images/ch2/Figure9.png, id=582, 501.875pt x 104.39pt>
 File: images/ch2/Figure9.png Graphic file (type png)
 <use images/ch2/Figure9.png>
-Package pdftex.def Info: images/ch2/Figure9.png  used on input line 167.
+Package pdftex.def Info: images/ch2/Figure9.png  used on input line 163.
 (pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
-<images/ch2/Figure10.png, id=619, 400.49625pt x 206.7725pt>
+<images/ch2/Figure10.png, id=590, 400.49625pt x 206.7725pt>
 File: images/ch2/Figure10.png Graphic file (type png)
 <use images/ch2/Figure10.png>
 Package pdftex.def Info: images/ch2/Figure10.png  used on input line 177.
 (pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
-<images/ch2/Figure11.png, id=627, 618.31pt x 158.5925pt>
+ [14 <./images/ch2/Figure8.png> <./images/ch2/Figure9.png>]
+<images/ch2/Figure11.png, id=605, 618.31pt x 158.5925pt>
 File: images/ch2/Figure11.png Graphic file (type png)
 <use images/ch2/Figure11.png>
-Package pdftex.def Info: images/ch2/Figure11.png  used on input line 184.
+Package pdftex.def Info: images/ch2/Figure11.png  used on input line 197.
 (pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
- [15 <./images/ch2/Figure8.png> <./images/ch2/Figure9.png>]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure12.png, id=641, 687.56876pt x 386.44376pt>
+[15 <./images/ch2/Figure10.png> <./images/ch2/Figure11.png>]
+<images/ch2/Figure12.png, id=620, 687.56876pt x 386.44376pt>
 File: images/ch2/Figure12.png Graphic file (type png)
 <use images/ch2/Figure12.png>
-Package pdftex.def Info: images/ch2/Figure12.png  used on input line 201.
+Package pdftex.def Info: images/ch2/Figure12.png  used on input line 216.
 (pdftex.def)             Requested size: 426.79134pt x 239.87569pt.
-[16 <./images/ch2/Figure10.png> <./images/ch2/Figure11.png>]
-<images/ch2/Figure13.png, id=652, 687.56876pt x 400.49625pt>
+ [16 <./images/ch2/Figure12.png>]
+<images/ch2/Figure13.png, id=630, 687.56876pt x 400.49625pt>
 File: images/ch2/Figure13.png Graphic file (type png)
 <use images/ch2/Figure13.png>
-Package pdftex.def Info: images/ch2/Figure13.png  used on input line 209.
+Package pdftex.def Info: images/ch2/Figure13.png  used on input line 227.
 (pdftex.def)             Requested size: 426.79134pt x 248.59843pt.
- [17 <./images/ch2/Figure12.png>] [18 <./images/ch2/Figure13.png>]
-Overfull \hbox (45.9096pt too wide) in paragraph at lines 223--223
+ [17 <./images/ch2/Figure13.png>]
+Overfull \hbox (45.9096pt too wide) in paragraph at lines 245--245
 []|\T1/cmr/m/n/12 Resource|  
  []
 
 
-Overfull \hbox (46.33174pt too wide) in paragraph at lines 224--224
+Overfull \hbox (46.33174pt too wide) in paragraph at lines 246--246
 []|\T1/cmr/m/n/12 Identifier|  
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure14.png, id=682, 733.74126pt x 115.43124pt>
+<images/ch2/Figure14.png, id=655, 733.74126pt x 115.43124pt>
 File: images/ch2/Figure14.png Graphic file (type png)
 <use images/ch2/Figure14.png>
-Package pdftex.def Info: images/ch2/Figure14.png  used on input line 244.
+Package pdftex.def Info: images/ch2/Figure14.png  used on input line 272.
 (pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
-<images/ch2/Figure15.png, id=685, 696.6025pt x 182.6825pt>
+<images/ch2/Figure15.png, id=658, 696.6025pt x 182.6825pt>
 File: images/ch2/Figure15.png Graphic file (type png)
 <use images/ch2/Figure15.png>
-Package pdftex.def Info: images/ch2/Figure15.png  used on input line 250.
+Package pdftex.def Info: images/ch2/Figure15.png  used on input line 279.
 (pdftex.def)             Requested size: 426.79134pt x 111.92397pt.
-[19]
+
+LaTeX Warning: Reference `table:2.4' on page 18 undefined on input line 286.
+
+[18]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20] [21 <./images/ch2/Figure14.png> <./images/ch2/Figure15.png>] [22] [23]
-[24]
-<images/ch2/Figure16.png, id=758, 615.29875pt x 792.9625pt>
+
+LaTeX Warning: Reference `chap:appendix1' on page 19 undefined on input line 31
+0.
+
+
+LaTeX Warning: Reference `chap:appendix1' on page 19 undefined on input line 31
+1.
+
+[19] [20 <./images/ch2/Figure14.png> <./images/ch2/Figure15.png>] [21] [22]
+[23]
+<images/ch2/Figure16.png, id=728, 615.29875pt x 792.9625pt>
 File: images/ch2/Figure16.png Graphic file (type png)
 <use images/ch2/Figure16.png>
-Package pdftex.def Info: images/ch2/Figure16.png  used on input line 304.
+Package pdftex.def Info: images/ch2/Figure16.png  used on input line 353.
 (pdftex.def)             Requested size: 426.79134pt x 550.03651pt.
 
 
@@ -1899,160 +1118,160 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch2/Figure17.png, id=762, 626.34pt x 485.815pt>
-File: images/ch2/Figure17.png Graphic file (type png)
-<use images/ch2/Figure17.png>
-Package pdftex.def Info: images/ch2/Figure17.png  used on input line 364.
-(pdftex.def)             Requested size: 426.79134pt x 331.04665pt.
 
-Overfull \hbox (0.74484pt too wide) in paragraph at lines 361--368
+Overfull \hbox (0.74484pt too wide) in paragraph at lines 415--416
 []\T1/cmr/m/n/12 The URI for an en-tity on Wiki-data is ``https://www.wikidata.
 org/wiki/<id>'', where
  []
 
-[25] [26 <./images/ch2/Figure16.png>] [27 <./images/ch2/Figure17.png>]
+<images/ch2/Figure17.png, id=732, 626.34pt x 485.815pt>
+File: images/ch2/Figure17.png Graphic file (type png)
+<use images/ch2/Figure17.png>
+Package pdftex.def Info: images/ch2/Figure17.png  used on input line 419.
+(pdftex.def)             Requested size: 426.79134pt x 331.04665pt.
+[24] [25 <./images/ch2/Figure16.png>] [26 <./images/ch2/Figure17.png>]
 
-LaTeX Warning: Text page 28 contains only floats.
+LaTeX Warning: Text page 27 contains only floats.
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 370--370
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 428--428
 [][][]\T1/cmr/m/n/10 https://www.dummies.com/programming/big-data/data-science/
 how-pattern-matching-works-
  []
 
-<images/ch2/Figure18.png, id=790, 679.53876pt x 664.4825pt>
+[28]
+<images/ch2/Figure18.png, id=772, 679.53876pt x 664.4825pt>
 File: images/ch2/Figure18.png Graphic file (type png)
 <use images/ch2/Figure18.png>
-Package pdftex.def Info: images/ch2/Figure18.png  used on input line 373.
+Package pdftex.def Info: images/ch2/Figure18.png  used on input line 432.
 (pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
-[29]
-<images/ch2/Figure19.png, id=805, 626.34pt x 321.2pt>
+<images/ch2/Figure19.png, id=775, 626.34pt x 321.2pt>
 File: images/ch2/Figure19.png Graphic file (type png)
 <use images/ch2/Figure19.png>
-Package pdftex.def Info: images/ch2/Figure19.png  used on input line 380.
+Package pdftex.def Info: images/ch2/Figure19.png  used on input line 440.
 (pdftex.def)             Requested size: 426.79134pt x 218.87381pt.
- [30 <./images/ch2/Figure18.png>]) [31 <./images/ch2/Figure19.png>]
+ [29 <./images/ch2/Figure18.png>]) [30 <./images/ch2/Figure19.png>]
 \openout2 = `ch3.aux'.
 
 
 (./ch3.tex
 Chapter 3.
-[32
+[31
 
 
 
 
 ]
-<images/ch3/Figure1.png, id=832, 307.1475pt x 159.59625pt>
+<images/ch3/Figure1.png, id=801, 307.1475pt x 159.59625pt>
 File: images/ch3/Figure1.png Graphic file (type png)
 <use images/ch3/Figure1.png>
 Package pdftex.def Info: images/ch3/Figure1.png  used on input line 17.
 (pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
-<images/ch3/Figure2.png, id=836, 307.1475pt x 201.75375pt>
+<images/ch3/Figure2.png, id=805, 307.1475pt x 201.75375pt>
 File: images/ch3/Figure2.png Graphic file (type png)
 <use images/ch3/Figure2.png>
 Package pdftex.def Info: images/ch3/Figure2.png  used on input line 25.
 (pdftex.def)             Requested size: 227.62204pt x 149.51707pt.
- [33] [34 <./images/ch3/Figure1.png> <./images/ch3/Figure2.png>]
-<images/ch3/Figure3.png, id=857, 307.1475pt x 312.16624pt>
+ [32] [33 <./images/ch3/Figure1.png> <./images/ch3/Figure2.png>]
+<images/ch3/Figure3.png, id=826, 307.1475pt x 312.16624pt>
 File: images/ch3/Figure3.png Graphic file (type png)
 <use images/ch3/Figure3.png>
 Package pdftex.def Info: images/ch3/Figure3.png  used on input line 40.
 (pdftex.def)             Requested size: 227.62204pt x 231.34236pt.
- [35]
-[36 <./images/ch3/Figure3.png>]) [37]
+ [34]
+[35 <./images/ch3/Figure3.png>]) [36]
 \openout2 = `ch4.aux'.
 
  (./ch4.tex
 Chapter 4.
-[38
+[37
 
 
 
 
 ]
-<images/ch4/Figure1.png, id=902, 271.0125pt x 240.9pt>
+<images/ch4/Figure1.png, id=871, 271.0125pt x 240.9pt>
 File: images/ch4/Figure1.png Graphic file (type png)
 <use images/ch4/Figure1.png>
 Package pdftex.def Info: images/ch4/Figure1.png  used on input line 25.
 (pdftex.def)             Requested size: 341.43306pt x 303.50618pt.
- [39] [40 <./images/ch4/Figure1.png>] [41] [42]
-<images/ch4/Figure2.png, id=927, 558.085pt x 641.39626pt>
+ [38] [39 <./images/ch4/Figure1.png>] [40] [41]
+<images/ch4/Figure2.png, id=897, 558.085pt x 641.39626pt>
 File: images/ch4/Figure2.png Graphic file (type png)
 <use images/ch4/Figure2.png>
 Package pdftex.def Info: images/ch4/Figure2.png  used on input line 53.
 (pdftex.def)             Requested size: 426.79134pt x 490.51973pt.
-<images/ch4/Figure3.png, id=932, 1439.3775pt x 791.95876pt>
+<images/ch4/Figure3.png, id=902, 1439.3775pt x 791.95876pt>
 File: images/ch4/Figure3.png Graphic file (type png)
 <use images/ch4/Figure3.png>
 Package pdftex.def Info: images/ch4/Figure3.png  used on input line 60.
 (pdftex.def)             Requested size: 426.79134pt x 234.82216pt.
-<images/ch4/Figure4.png, id=934, 821.0675pt x 448.67625pt>
+<images/ch4/Figure4.png, id=904, 821.0675pt x 448.67625pt>
 File: images/ch4/Figure4.png Graphic file (type png)
 <use images/ch4/Figure4.png>
 Package pdftex.def Info: images/ch4/Figure4.png  used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 233.21715pt.
- [43] [44 <./images/ch4/Figure2.png>]
-<images/ch4/Figure5.png, id=948, 600.2425pt x 380.42125pt>
+ [42] [43 <./images/ch4/Figure2.png>]
+<images/ch4/Figure5.png, id=917, 600.2425pt x 380.42125pt>
 File: images/ch4/Figure5.png Graphic file (type png)
 <use images/ch4/Figure5.png>
 Package pdftex.def Info: images/ch4/Figure5.png  used on input line 76.
 (pdftex.def)             Requested size: 426.79134pt x 270.5015pt.
-<images/ch4/Figure6.png, id=950, 1158.3275pt x 707.64375pt>
+<images/ch4/Figure6.png, id=919, 1158.3275pt x 707.64375pt>
 File: images/ch4/Figure6.png Graphic file (type png)
 <use images/ch4/Figure6.png>
 Package pdftex.def Info: images/ch4/Figure6.png  used on input line 83.
 (pdftex.def)             Requested size: 426.79134pt x 260.73352pt.
-<images/ch4/Figure7.png, id=953, 1153.30875pt x 707.64375pt>
+<images/ch4/Figure7.png, id=922, 1153.30875pt x 707.64375pt>
 File: images/ch4/Figure7.png Graphic file (type png)
 <use images/ch4/Figure7.png>
 Package pdftex.def Info: images/ch4/Figure7.png  used on input line 90.
 (pdftex.def)             Requested size: 426.79134pt x 261.86728pt.
- [45 <./images/ch4/Figure3.png>] [46 <./images/ch4/Figure4.png> <./images/ch4/F
+ [44 <./images/ch4/Figure3.png>] [45 <./images/ch4/Figure4.png> <./images/ch4/F
 igure5.png>]
-<images/ch4/Figure8.png, id=971, 765.86125pt x 581.17125pt>
+<images/ch4/Figure8.png, id=941, 765.86125pt x 581.17125pt>
 File: images/ch4/Figure8.png Graphic file (type png)
 <use images/ch4/Figure8.png>
 Package pdftex.def Info: images/ch4/Figure8.png  used on input line 99.
 (pdftex.def)             Requested size: 426.79134pt x 323.87518pt.
- [47 <./images/ch4/Figure6.png>]
+ [46 <./images/ch4/Figure6.png>]
 Overfull \vbox (6.29114pt too high) has occurred while \output is active []
 
 
-[48 <./images/ch4/Figure7.png>] [49 <./images/ch4/Figure8.png>]
-<images/ch4/Figure9.png, id=995, 594.22pt x 399.4925pt>
+[47 <./images/ch4/Figure7.png>] [48 <./images/ch4/Figure8.png>]
+<images/ch4/Figure9.png, id=964, 594.22pt x 399.4925pt>
 File: images/ch4/Figure9.png Graphic file (type png)
 <use images/ch4/Figure9.png>
 Package pdftex.def Info: images/ch4/Figure9.png  used on input line 139.
 (pdftex.def)             Requested size: 426.79134pt x 286.94556pt.
- [50]
-<images/ch4/Figure10.png, id=1002, 474.77374pt x 179.67125pt>
+ [49]
+<images/ch4/Figure10.png, id=970, 474.77374pt x 179.67125pt>
 File: images/ch4/Figure10.png Graphic file (type png)
 <use images/ch4/Figure10.png>
 Package pdftex.def Info: images/ch4/Figure10.png  used on input line 147.
 (pdftex.def)             Requested size: 426.79134pt x 161.51892pt.
- [51 <./images/ch4/Figure9.png>]
-<images/ch4/Figure11.png, id=1011, 474.77374pt x 320.19624pt>
+ [50 <./images/ch4/Figure9.png>]
+<images/ch4/Figure11.png, id=981, 474.77374pt x 320.19624pt>
 File: images/ch4/Figure11.png Graphic file (type png)
 <use images/ch4/Figure11.png>
 Package pdftex.def Info: images/ch4/Figure11.png  used on input line 158.
 (pdftex.def)             Requested size: 341.43306pt x 230.27727pt.
-<images/ch4/Figure12.png, id=1015, 727.71875pt x 491.8375pt>
+<images/ch4/Figure12.png, id=985, 727.71875pt x 491.8375pt>
 File: images/ch4/Figure12.png Graphic file (type png)
 <use images/ch4/Figure12.png>
 Package pdftex.def Info: images/ch4/Figure12.png  used on input line 165.
 (pdftex.def)             Requested size: 426.79134pt x 288.463pt.
- [52 <./images/ch4/Figure10.png>]
+ [51 <./images/ch4/Figure10.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/Figure13.png, id=1027, 558.085pt x 429.605pt>
+<images/ch4/Figure13.png, id=997, 558.085pt x 429.605pt>
 File: images/ch4/Figure13.png Graphic file (type png)
 <use images/ch4/Figure13.png>
 Package pdftex.def Info: images/ch4/Figure13.png  used on input line 211.
 (pdftex.def)             Requested size: 426.79134pt x 328.54842pt.
-[53 <./images/ch4/Figure11.png>] [54 <./images/ch4/Figure12.png>]
-<images/ch4/Figure14.png, id=1040, 1062.97125pt x 565.11125pt>
+[52 <./images/ch4/Figure11.png>] [53 <./images/ch4/Figure12.png>]
+<images/ch4/Figure14.png, id=1010, 1062.97125pt x 565.11125pt>
 File: images/ch4/Figure14.png Graphic file (type png)
 <use images/ch4/Figure14.png>
 Package pdftex.def Info: images/ch4/Figure14.png  used on input line 218.
@@ -2105,179 +1324,138 @@ Overfull \hbox (1.53156pt too wide) in paragraph at lines 234--234
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/ch4/Figure15.png, id=1042, 505.89pt x 342.27875pt>
+<images/ch4/Figure15.png, id=1012, 505.89pt x 342.27875pt>
 File: images/ch4/Figure15.png Graphic file (type png)
 <use images/ch4/Figure15.png>
 Package pdftex.def Info: images/ch4/Figure15.png  used on input line 244.
 (pdftex.def)             Requested size: 426.79134pt x 288.76563pt.
-[55] [56 <./images/ch4/Figure13.png> <./images/ch4/Figure14.png>]
-<images/ch4/Figure16.png, id=1056, 1109.14375pt x 613.29124pt>
+[54] [55 <./images/ch4/Figure13.png> <./images/ch4/Figure14.png>]
+<images/ch4/Figure16.png, id=1025, 1109.14375pt x 613.29124pt>
 File: images/ch4/Figure16.png Graphic file (type png)
 <use images/ch4/Figure16.png>
 Package pdftex.def Info: images/ch4/Figure16.png  used on input line 251.
 (pdftex.def)             Requested size: 426.79134pt x 235.99152pt.
- [57] [58 <./images/ch4/Figure15.png> <./images/ch4/Figure16.png>]
-<images/ch4/Figure17.png, id=1073, 1444.39626pt x 605.26125pt>
+ [56] [57 <./images/ch4/Figure15.png> <./images/ch4/Figure16.png>]
+<images/ch4/Figure17.png, id=1042, 1444.39626pt x 605.26125pt>
 File: images/ch4/Figure17.png Graphic file (type png)
 <use images/ch4/Figure17.png>
-Package pdftex.def Info: images/ch4/Figure17.png  used on input line 262.
+Package pdftex.def Info: images/ch4/Figure17.png  used on input line 263.
 (pdftex.def)             Requested size: 426.79134pt x 178.8368pt.
- [59]
-<images/ch4/Figure18.png, id=1086, 1398.22375pt x 581.17125pt>
+ [58]
+<images/ch4/Figure18.png, id=1054, 1398.22375pt x 581.17125pt>
 File: images/ch4/Figure18.png Graphic file (type png)
 <use images/ch4/Figure18.png>
-Package pdftex.def Info: images/ch4/Figure18.png  used on input line 276.
+Package pdftex.def Info: images/ch4/Figure18.png  used on input line 278.
 (pdftex.def)             Requested size: 441.01772pt x 183.30048pt.
- [60 <./images/ch4/Figure17.png>]) [61 <./images/ch4/Figure18.png>]
+ [59 <./images/ch4/Figure17.png>]) [60 <./images/ch4/Figure18.png>]
 \openout2 = `ch5.aux'.
 
  (./ch5.tex
 Chapter 5.
-[62
+[61
 
 
 
 
-]) [63]
-\openout2 = `appendix1.aux'.
-
- (./appendix1.tex
-Appendix A.
-
-Overfull \hbox (49.80531pt too wide) in paragraph at lines 7--8
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (28.6603pt too wide) in paragraph at lines 9--10
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (70.95033pt too wide) in paragraph at lines 12--13
-[][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (7.51527pt too wide) in paragraph at lines 13--14
-[][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (7.51527pt too wide) in paragraph at lines 16--17
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.80531pt too wide) in paragraph at lines 18--19
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[64
-
-
-
-
-] [65] [66]) [67]
+]) [62]
 \openout2 = `appendix2.aux'.
 
  (./appendix2.tex
-Appendix B.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [68
+Appendix A.
+) [63
 
 
 
 
 ]
-[69] [70]) [71]
 \openout2 = `appendix3.aux'.
 
  (./appendix3.tex
-Appendix C.
-[72
+Appendix B.
+) [64
 
 
 
 
-] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85]) [86]
-(./parita-msc.bbl
-Underfull \hbox (badness 5231) in paragraph at lines 42--47
+] (./parita-msc.bbl
+Underfull \hbox (badness 5231) in paragraph at lines 35--40
 []\T1/cmr/m/n/12 David Beck-ett.  RDF 1.1 N-Triples.  \T1/cmr/m/it/12 W3C Rec-o
 m-men-da-tion\T1/cmr/m/n/12 , 2014.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--53
+Underfull \hbox (badness 10000) in paragraph at lines 42--46
 []\T1/cmr/m/n/12 Tim Berners-Lee.  Linked Data.  \T1/cmr/m/it/12 W3C Rec-om-men
 -da-tion\T1/cmr/m/n/12 , 1996.
  []
 
-[87
+[65
 
 
 
-] [88]
-Underfull \hbox (badness 10000) in paragraph at lines 154--158
+]
+Underfull \hbox (badness 10000) in paragraph at lines 134--138
 []\T1/cmr/m/n/12 Sean Fal-coner.  On-tograf Pro-tege Plu-gin.  \T1/cmr/m/it/12 
 Avail-able at:
  []
 
-
-Underfull \hbox (badness 3449) in paragraph at lines 180--185
+[66]
+Underfull \hbox (badness 3449) in paragraph at lines 160--165
 []\T1/cmr/m/n/12 Daryl Hep-t-ing.  Stu-dent Feed-back In-stru-ment.  \T1/cmr/m/
 it/12 Avail-able at: []$\T1/cmtt/m/it/12 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--185
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
 \T1/cmtt/m/it/12 / / www2\OML/cmm/m/it/12 :\T1/cmtt/m/it/12 cs\OML/cmm/m/it/12 
 :\T1/cmtt/m/it/12 uregina\OML/cmm/m/it/12 :\T1/cmtt/m/it/12 ca / ~hepting / ass
 ets / teaching / pdf / feedback -[]
  []
 
-[89]) [90] (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux)
-(./ch1.aux) (./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix1.aux)
-(./appendix2.aux) (./appendix3.aux))
+[67])
+
+Package acro Warning: Acronym properties may have changed. Rerun to get them
+(acro)                synchronized.
+
+[68] (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux) (./ch1.aux)
+(./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix2.aux)
+(./appendix3.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `parita-msc.out' has not changed.
-(rerunfilecheck)             Checksum: B8BB3DFC16326B60E4C469F4656C865D;8172.
+(rerunfilecheck)             Checksum: C60D2CC5306AD929AA5879EDD2DD885D;8040.
  ) 
 Here is how much of TeX's memory you used:
- 27062 strings out of 478276
- 567869 string characters out of 5846491
- 1424785 words of memory out of 5000000
- 43566 multiletter control sequences out of 15000+600000
- 499727 words of font info for 112 fonts, out of 8000000 for 9000
+ 24519 strings out of 478276
+ 502275 string characters out of 5846491
+ 850964 words of memory out of 5000000
+ 42048 multiletter control sequences out of 15000+600000
+ 493617 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,80p,1762b,1974s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{lstnumber.-3.722} has been referenced but does no
-t exist, replaced by a fixed one
-
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/lo
-cal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/loca
-l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texl
-ive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texliv
-e/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
-21/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/tex
-mf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf
--dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on parita-msc.pdf (101 pages, 2207978 bytes).
+ 68i,12n,80p,1757b,769s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on parita-msc.pdf (79 pages, 2078219 bytes).
 PDF statistics:
- 2563 PDF objects out of 2984 (max. 8388607)
- 2309 compressed objects within 24 object streams
- 1291 named destinations out of 1440 (max. 500000)
- 588 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1236 PDF objects out of 1440 (max. 8388607)
+ 1026 compressed objects within 11 object streams
+ 282 named destinations out of 1000 (max. 500000)
+ 575 words of extra memory for PDF output out of 10000 (max. 10000000)
 
