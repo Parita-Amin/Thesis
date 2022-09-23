@@ -26,7 +26,8 @@ The original
 Is this next web sufficiently attractive to use?
 This thesis will examine this question in the context of an example.
 
-\section{Motivation}\label{sec:motivation}
+\section{Motivation}
+\label{sec:motivation}
 
 In his teaching practise, 
 my supervisor collects feedback from students in his classes each semester and makes the responses available on his website\footnote{\tt http://www2.cs.uregina.ca/$\sim$hepting/teaching/evaluation.html}. 
@@ -36,19 +37,19 @@ Data collection since the start of the COVID-19 pandemic has changed.
 
 Although it is valuable to have this data available on the web, 
 it is not published as \ac{lod}. 
-The motivation for the research presented here was to examine the process by which existing data can be published as \ac{lod} 
+The motivation for the research presented here was to examine the process 
+by which existing data can be published as \ac{lod} 
 and to consider whether that process is ``sufficiently attractive to use''.
 
-The published linked (structured) data which is available on the web can be efficiently retrieved and reused as, 
-according to Ngomo et al.~\cite{ngomo2014introduction}, 
+%The published linked (structured) data which is available on the web can be efficiently 
+%retrieved and reused as, 
+According to Ngomo et al.~\cite{ngomo2014introduction}, 
 linked data is 
-``a set of best practices for publishing and connecting structured data on the web''. 
-After the introduction of the semantic web and the four principles of linked data for publishing and connecting structured datasets on the web by Berners-Lee, 
-the web of documents has been gradually moving towards the development of the web of data. 
-With time, 
-these principles have been accepted and considered as the standard to publish structured data on the semantic web~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}. 
-The four principles of linked data by Berners-Lee~\cite{berners1996linked}\label{principles} 
-are as follows:
+``a set of best practices for publishing and connecting structured data on the web''.
+The principles of linked data have been articulated by 
+Berners-Lee~\cite{berners1996linked} 
+and enhanced by others
+~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}. 
 
 \begin{itemize}
  
@@ -62,14 +63,8 @@ are as follows:
   
 \end{itemize}
 
-After the development of Linked Data for the semantic web, 
-Berners-Lee also contributed to web engineering by introducing a 5-star rating system for the rating of linked data implementations. 
-In this system, 
-using the linked data principles, 
-the publishers of the data on the web link their data to the existing linked data to provide reference and make it available for lookup. 
-The data on the web, 
-according to the 5-star system, 
-is accepted to be 5-star data if the data:
+Berners-Lee introduced the concept of 5-star linked data,
+which requires: 
 
 \begin{itemize}
 
@@ -93,41 +88,36 @@ Various semantic web technologies have been developed for data retrieval on the 
 \ac{sparql} is one of the semantic web technologies used for web queries, 
 where it gathers all the data from different domains and treats all those datasets as local.
 
-\section{Contribution}\label{sec:contribution}
+\section{Contribution}
+\label{sec:contribution}
 
-The application of data science in the real world, 
-till today, 
-has been limited to technology firms and industries. 
-The field is still being explored and hence, 
-a lot of research work is going on as the focus is on the development of the technology. 
-The use of data science in day-to-day life still requires a lot of research and development work. 
-This research work is a small trial towards using the semantic web for non-computer-related tasks. 
-There exists almost negligible work done related to the development of linked open vocabularies for a survey that include likert items. 
-An open-source ontology development tool, Protégé, 
-has been used for the development of the new vocabularies. 
-Also, OpenRefine is used to describe the CSV file in terms of linked data.
-For this research, 
-the vocabulary mentioned is for the feedback survey form that Dr. Hepting uses 
-to solicit responses from his students.
+Real-world application of data science principles has not been
+meaningfully available to citizens. 
+ 
+This research work is a small trial towards using the semantic web for 
+non-computer-related tasks. 
+There is a scarcity of work related to the development of linked open vocabularies for a survey that include Likert items. 
+Protégé, an open-source ontology development tool, 
+has been used for the development of a vocabulary. 
+OpenRefine, an open-source ... is used to describe the CSV file in terms of linked data.
 
 \section{Organization}
 
-Following the introduction, the rest of the thesis is organized as follows. 
-Chapter 2 describes earlier research that is pertinent to the thesis. 
-The concepts of the 
+Following this introduction, 
+the rest of the thesis is organized as follows. 
+Chapter 2 describes related work that is pertinent to the thesis. 
+In particular, concepts of the 
 semantic web, linked data, and related standards and technologies 
-are presented in particular. 
-
-Chapter 3 describes the methodology that has been put in, 
-to describe and query survey vocabulary, 
-convert CSV to linked data, 
-publish linked data with open license, and
-visualize survey ontology. 
-It also focuses on the usability of tools like 
-Protégé, SHACL4P, \ac{sparql}, OpenRefine, OntoGraf, and WebVOWL.
-
-Chapter 4 consists of the proof of concept for the methodology discussed.
-
+are presented. 
+Chapter 3 describes the linked data lifecycle and some of the tools
+required. 
+%to describe and query survey vocabulary, 
+%convert CSV to linked data, 
+%publish linked data with open license, and
+%visualize survey ontology. 
+%It also focuses on the usability of tools like 
+%Protégé, SHACL4P, \ac{sparql}, OpenRefine, OntoGraf, and WebVOWL.
+Chapter 4 details the experience of applying the linked data lifecycle to real data.
 Finally, Chapter 5 presents some conclusions and opportunities for future work.
 
 \end{doublespace}

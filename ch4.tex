@@ -3,25 +3,26 @@
 \chapter{Proof of Concept}\label{chap:proofOfConcept}
 
 \begin{doublespace}
-<<<<<<< Updated upstream
 
-This chapter provides the proof of concept for the methodology 
+This Chapter provides the proof of concept for the methodology 
 (see chapter~\ref{chap:methodology}) 
 followed to describe and publish linked open data for survey.
 
-\section{Modeling Ontology for Survey Using Protégé}\label{sec:modelingontology}
+\section{Modelling Ontology for Survey Using Protégé}
+\label{sec:modelingontology}
 
 Figure~\ref{feedback-form} 
 shows the student feedback form for which the new vocabularies are described. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/feedback-form.png}
+    \includegraphics[width=\coumnwidth]{images/ch4/survey/feedback-form.png}
     \caption{The Student Feedback Form, from Hepting~\cite{prof}}
     \label{feedback-form}
 \end{figure}
 
-\subsection{Classes for Survey Ontology}\label{subsec:surveyclasses}
+\subsection{Classes for Survey Ontology}
+\label{subsec:surveyclasses}
 
 All the classes can be created and described using the steps described in section~\ref{subsec:classhierarchy}. 
 The resultant class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. 
@@ -36,10 +37,11 @@ which are considered for this ontology as well.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/survey-class-hierarchy.png}
-=======
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-class-hierarchy.png}
+
 \section{Development Tool for the Creation of New \ac{owl} Vocabularies}
-\par In data science, for a fresh and developing branch like ontology engineering, it is difficult to find enough knowledge that can be reused. The field is still growing with research and development in progress as well as a lot still required to be explored in the future. As a result of this, linked open vocabularies are limited currently, and hence, the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
+
+In data science, for a fresh and developing branch like ontology engineering, it is difficult to find enough knowledge that can be reused. The field is still growing with research and development in progress as well as a lot still required to be explored in the future. As a result of this, linked open vocabularies are limited currently, and hence, the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
 \par There are editors available today that help the publishers to create their own linked open vocabularies. Alatrish at the University of Belgrad~\cite{alatrish2013comparison}, in 2013, compared the most used ontology editors, namely, Apollo, OntoStudio, Protégé, Swoop, and TopBraid Composer. The editors were compared based on the following features:
 \begin{itemize}
   \item General description: developers' details, and accessibility on the internet (open source or software licensed)
@@ -49,9 +51,12 @@ which are considered for this ontology as well.
   \item Inference services: built-in inference engine, other attached inference engines, and constraint/consistency checking
   \item Usability: graphical taxonomy, graphical views, zooms, collaborative working, and ontology libraries
 \end{itemize}
-\par After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, Protégé has been used for the development of the instrument to support this research and thesis work.
+
+After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, Protégé has been used for the development of the instrument to support this research and thesis work.
+
 \section{Protégé}
-\par Stanford University developed a free, open-source ontology development platform, Protégé\footnote{https://protege.stanford.edu}, that offers a set of substantial tools\footnote{along with various plug-ins and Java-based \ac{api}} to build ontologies for knowledge-based applications and to implement various \say{knowledge-modeling structures and actions that support the creation, visualization and manipulation of ontologies in various representation formats}~\cite{alatrish2013comparison}. Protégé offers customization options to build knowledge models and to add data. 
+
+Stanford University developed a free, open-source ontology development platform, Protégé\footnote{https://protege.stanford.edu}, that offers a set of substantial tools\footnote{along with various plug-ins and Java-based \ac{api}} to build ontologies for knowledge-based applications and to implement various \say{knowledge-modeling structures and actions that support the creation, visualization and manipulation of ontologies in various representation formats}~\cite{alatrish2013comparison}. Protégé offers customization options to build knowledge models and to add data. 
 \subsection{Usability of Protégé}
 \par The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} defines usability as \say{the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use}. In usability engineering, Jacob Neilson~\cite{neilson1994usability} suggested five qualities of a usable product: \say{learnability, efficiency, memorability, errors (low rate,
 easy to recover), and satisfaction}. These were the original five dimensions of usability which were then re-termed as all five words starting with \say{E} by Quesenbery~\cite{quesenbery2003dimensions}, and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. The new terms are as shown in Figure~\ref{fig:4.1}.
@@ -129,12 +134,12 @@ easy to recover), and satisfaction}. These were the original five dimensions of 
 \end{enumerate}
 \par Once the classes are added, the next step is to describe the classes. Descriptions of classes like \say{Equivalent to}, \say{SubClass Of}, \say{Instances}, \say{Disjoint With} and so on can be added using the Description view of the Class tab (shown in Figure~\ref{fig:4.4}). Each class can be described individually by selecting a particular class and adding details to the description view. 
 \par All the classes can be created and described using the above steps. In the end, the class hierarchy for the survey ontology would be as shown in Figure~\ref{fig:4.8}. The survey can have \say{Respondent}, \say{Response Date}, \say{Type of Survey}, \say{Survey Questions}, \say{Survey Answers}, and \say{Likert Scale}, which are considered for this ontology as well. Here, the type of survey used is \say{feedback survey}. The survey questions and survey answers would further have entities corresponding to various forms of question-answer. Generally, feedback surveys consist of two types of questions, namely, \say{Likert Questions} and \say{Open-ended Questions}. The type of questions might differ depending on the designer of the survey, some of which, as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} website, are listed below. 
+
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=\columnwidth]{images/ch4/Figure8.png}
->>>>>>> Stashed changes
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-class-hierarchy.png}
     \caption{Class Hierarchy in Survey Ontology}
-    \label{survey-class-hierarchy}
+    \label{fig:survey-class-hierarchy}
 \end{figure}
 
 Here, 
@@ -236,7 +241,6 @@ the field corresponding to the answer is left blank.
     \caption{Degrees of Agreement for Likert-scale Questions}
     \label{likert-degrees}
 \end{table}
-<<<<<<< Updated upstream
 
 The ``LikertScaleQuestions'' class of survey ontology has a sub-class, 
 ``LikertScale5'', 
@@ -250,27 +254,47 @@ Each of these degrees are treated as an individual
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/likertscale5-class.png}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/likertscale5-class.png}
     \caption{``LikertScale5'' class in Survey Ontology}
     \label{likertscale5-class}
-=======
+
 \subsection{Object Properties and Object Property Hierarchy}
-\par The next step in building the ontology, after describing the classes, is describing the \say{Object Properties}. Object properties are used to link the entities (classes in Protégé). The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{fig:4.9}. The remaining steps are similar to the ones that are followed for building class hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}).
+
+The next step in building the ontology, after describing the classes, 
+is describing the \say{Object Properties}. 
+Object properties are used to link the entities (classes in Protégé). 
+The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. 
+The hierarchy for object properties can be built by selecting a 
+property in the Object Property Hierarchy view of the Object Property Views tab 
+and then going to the tools menu as shown in Figure~\ref{fig:4.9}. 
+The remaining steps are similar to the ones that are followed for 
+building class hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}).
+
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/Figure9.png}
     \caption{Tools Menu to Create Object Property Hierarchy}
     \label{fig:4.9}
 \end{figure}
-\par Also, the description view of object properties hierarchy allows the user to describe the object properties. The details that can be added or modified using the description view are \say{Equivalent To}, \say{SubProperty Of}, \say{Inverse Of}, \say{Domains (intersection)}, \say{Ranges (intersection)}, \say{Disjoint With}, and \say{SuperProperty Of (Chain)}. 
+
+Also, the description view of object properties hierarchy allows the user to describe the object properties. 
+The details that can be added or modified using the description view are 
+\say{Equivalent To}, 
+\say{SubProperty Of}, 
+\say{Inverse Of}, 
+\say{Domains (intersection)}, \say{Ranges (intersection)}, \say{Disjoint With}, and \say{SuperProperty Of (Chain)}. 
+
 \par The names of the object properties usually start with an \say{is} or a \say{has}. For instance, consider two classes: \say{Lady} (class 1) and \say{Parita} (class 2). To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, the properties \say{hasName} and \say{isNameOf} would be used respectively, as shown in Figure~\ref{fig:4.10}. 
+
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/Figure10.png}
     \caption{Object Properties for Classes \enquote{Lady} and \enquote{Parita}}
     \label{fig:4.10}
 \end{figure}
-\par Each object property might have a corresponding inverse property. For the above instance, it can be said that:
+
+Each object property might have a corresponding inverse property. 
+For the above instance, it can be said that:
 \begin{center}
     \par Lady hasName Parita \textbf{is equivalent to} Parita isNameOf Lady
 \end{center}
@@ -280,10 +304,10 @@ Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse o
     \includegraphics[width=\columnwidth]{images/ch4/Figure11.png}
     \caption{Domain and Range Classes for \enquote{hasName} and \enquote{isNameOf}}
     \label{fig:4.11}
->>>>>>> Stashed changes
 \end{figure}
 
-\subsection{Object Properties for Survey Ontology}\label{subsec:surveyobjectproperties}
+\subsection{Object Properties for Survey Ontology}
+\label{subsec:surveyobjectproperties}
 
 Using the method of naming and building object properties described in section~\ref{subsec:objectproperties}, 
 some of the primary object properties are described for the survey ontology as shown in Figure~\ref{survey-object-properties} 
@@ -298,13 +322,9 @@ The three parent nodes involved in object property hierarchy are
 
 \begin{figure}[htp]
     \centering
-<<<<<<< Updated upstream
-    \includegraphics[width=15cm]{images/ch4/survey/survey-object-properties.png}
-=======
-    \includegraphics[width=\columnwidth]{images/ch4/Figure12.png}
->>>>>>> Stashed changes
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-object-properties.png}
     \caption{Object Property Hierarchies, Domain and Range for Classes}
-    \label{survey-object-properties}
+    \label{fig:survey-object-properties}
 \end{figure}
 
 \begin{table}[h!]
@@ -354,7 +374,6 @@ The three parent nodes involved in object property hierarchy are
      isSurveyAnswerOf & isContentOf & hasSurveyAnswer\\ \hline
     \end{tabular}
     \caption{Object Properties with Their Parent Nodes and Inverse Properties}
-<<<<<<< Updated upstream
     \label{survey-object-properties-parent-nodes-and-inverse}
 \end{table}
 
@@ -365,25 +384,28 @@ which are as shown in Figure~\ref{survey-data-properties}.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/survey-data-properties.png}
-=======
-    \label{table:4.3}
-    \end{table}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-data-properties.png}
+    \label{fig:survey-data-properties}
+    \end{figure}
+    
 \subsection{Data Properties and Data Property Hierarchy}
-\par Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/} In Protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{fig:4.13}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}). 
+
+Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/} In Protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{fig:4.13}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}).
+ 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/Figure13.png}
     \caption{Tools Menu to Create Data Property Hierarchy}
     \label{fig:4.13}
-\end{figure}
-\par Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{fig:4.14} shows the data properties described for the survey ontology. The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are \say{Respondent} and \say{xsd:positiveInteger} respectively. Table~\ref{table:4.4} consists of list of data properties along with their domain and range classes (entities).
+\end{figure
+}
+Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{fig:4.14} shows the data properties described for the survey ontology. The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are \say{Respondent} and \say{xsd:positiveInteger} respectively. Table~\ref{table:4.4} consists of list of data properties along with their domain and range classes (entities).
+
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/Figure14.png}
->>>>>>> Stashed changes
     \caption{Data Property Hierarchies, Domain and Range for Classes}
-    \label{survey-data-properties}
+    \label{data-property-hierarchies}
 \end{figure}
 
 The parent node of all the data properties is ``owl:topDataProperty'' 
@@ -424,8 +446,7 @@ shows instances of ``Survey'' class.
 
 \begin{figure}[htp]
     \centering
-<<<<<<< Updated upstream
-    \includegraphics[width=15cm]{images/ch4/survey/instances-of-survey-class.png}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/instances-of-survey-class.png}
     \caption{Individuals for Survey Class}
     \label{instances-of-survey-class}
 \end{figure}
@@ -453,20 +474,18 @@ shows a list of classes and individuals described in survey ontology.
     \label{survey-individuals}
 \end{table}
 
-\subsection{Final Class Hierarchy for Survey Ontology}\label{subsec:finalsurveyclasses}
+\subsection{Final Class Hierarchy for Survey Ontology}
+\label{subsec:finalsurveyclasses}
 
 The final class hierarchy in the \ac{owl} ontology for feedback survey using protégé, 
 after using the HermiT 1.4.3.456 reasoner, 
-would be as shown in Figure~\ref{final-survey-classes}.
+would be as shown in Figure~\ref{fig:final-survey-classes}.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/final-survey-classes.png}
-=======
-    \includegraphics[width=\columnwidth]{images/ch4/Figure15.png}
->>>>>>> Stashed changes
+    \includegraphics[width=\columnwidth]{images/ch4/survey/final-survey-classes.png}
     \caption{Class Hierarchy for the Final Version of Survey Ontology}
-    \label{final-survey-classes}
+    \label{fig:final-survey-classes}
 \end{figure}
 
 The blue back arrow 
@@ -619,15 +638,9 @@ with column titles ?Class and ?Individuals respectively.
  
 \begin{figure}[htp]
     \centering
-<<<<<<< Updated upstream
-    \includegraphics[width=15cm]{images/ch4/survey/survey-snap-sparql-query.png}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-snap-sparql-query.png}
     \caption{Snap SPARQL Query on Survey Ontology}
-    \label{survey-snap-sparql-query}
-=======
-    \includegraphics[width=\columnwidth]{images/ch4/Figure16.png}
-    \caption{Parent/Child Relation indicated by "Blue Back" Arrow}
-    \label{fig:4.16}
->>>>>>> Stashed changes
+    \label{fig:survey-snap-sparql-query}
 \end{figure}
 
 \section{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}\label{sec:surveycsvtolod}
@@ -666,8 +679,7 @@ and the fields in the project with an option of using linked data vocabularies t
 
 \begin{figure}[htp]
     \centering
-<<<<<<< Updated upstream
-    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-rdf-skeleton.png}
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-skeleton.png}
     \caption{RDF Skeleton for CSV using Survey Ontology}
     \label{openrefine-rdf-skeleton}
 \end{figure}
@@ -706,7 +718,8 @@ and the fields in the project with an option of using linked data vocabularies t
         
     \end{itemize}
 
-\subsubsection{RDF Node for Index}\label{subsubsec:rdfnode}
+\subsubsection{RDF Node for Index}
+\label{subsubsec:rdfnode}
     
 Index is a unique identifier for the number of records in the table. 
 Figure~\ref{openrefine-index} 
@@ -726,7 +739,8 @@ On clicking ``Preview edit'', format of expression to display ``ID'' can be modi
     \label{openrefine-index}
 \end{figure} 
 
-\subsubsection{Describing Fields in terms of Linked Data}\label{subsubsec:describingfields}
+\subsubsection{Describing Fields in terms of Linked Data}
+\label{subsubsec:describingfields}
 
 The next step is describing the \ac{csv} data
 in terms of linked open vocabularies. 
@@ -848,12 +862,9 @@ The classes are denoted by yellow solid dot followed by the class name where as 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/ontograf.png}
-=======
-    \includegraphics[width=\columnwidth]{images/ch4/Figure17.png}
->>>>>>> Stashed changes
+    \includegraphics[width=\columnwidth]{images/ch4/survey/ontograf.png}
     \caption{OntoGraf for Survey Ontology}
-    \label{ontograf}
+    \label{fig:ontograf}
 \end{figure}
 
 \subsection{Representation of Survey Ontology in WebVOWL}\label{subsec:surveywebvowl}
@@ -869,13 +880,9 @@ The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} cod
 
 \begin{figure}[htp]
     \centering
-<<<<<<< Updated upstream
-    \includegraphics[width=15cm]{images/ch4/survey/webVOWL.png}
-=======
-    \includegraphics[width=\columnwidth]{images/ch4/Figure18.png}
->>>>>>> Stashed changes
+    \includegraphics[width=\columnwidth]{images/ch4/survey/webVOWL.png}
     \caption{WebVOWL for Survey Ontology}
-    \label{webVOWL}
+    \label{fig:webVOWL}
 \end{figure}
 
 \end{doublespace}
