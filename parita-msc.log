@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.4)  23 SEP 2022 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.4)  23 SEP 2022 14:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1352,8 +1352,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 61
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./parita-msc.aux
-(./abstract.aux) (./ack.aux) (./pd-ack.aux) (./ch1.aux) (./ch2.aux) (./ch3.aux)
-(./ch4.aux) (./ch5.aux) (./appendix-owl.aux) (./appendix-data.aux))
+(./abstract.aux) (./ack.aux) (./pd-ack.aux) (./ch4.aux))
 \openout1 = `parita-msc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -1547,27 +1546,27 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 
-] (./parita-msc.toc [4
-
-
-
-])
+] (./parita-msc.toc)
 \tf@toc=\write4
 \openout4 = `parita-msc.toc'.
 
- [5] (./parita-msc.lof [6
+ [4
 
 
-])
+
+] (./parita-msc.lof)
 \tf@lof=\write5
 \openout5 = `parita-msc.lof'.
 
+ [5
 
-[7] (./parita-msc.lot)
+
+]
+(./parita-msc.lot)
 \tf@lot=\write6
 \openout6 = `parita-msc.lot'.
 
- [8
+ [6
 
 
 ]
@@ -1586,18 +1585,2131 @@ The module 'acro/list' does not have a key called 'acro/list/include-classes'.
 Check that you have spelled the key name correctly.
 
 
-[9
+[7
 
 
-] [10]
-\openout2 = `appendix-owl.aux'.
+]
+\openout2 = `ch1.aux'.
 
- (./appendix-owl.texpdfTeX warning (ext4): destination with the same identifier
- (name{page.1}) has been already used, duplicate ignored
+ (./ch1.tex
+Chapter 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3 \chapter
-            {CSV to Linked Data: sample.ttl}\label{chap:appendix3} [1
+l.37 
+      [1
+
+
+
+] [2] [3]) [4]
+\openout2 = `ch2.aux'.
+
+ (./ch2.tex
+Chapter 2.
+
+LaTeX Warning: Reference `semantic-web' on page 5 undefined on input line 30.
+
+<images/ch2/semantic-web.png, id=217, 626.34pt x 318.18875pt>
+File: images/ch2/semantic-web.png Graphic file (type png)
+<use images/ch2/semantic-web.png>
+Package pdftex.def Info: images/ch2/semantic-web.png  used on input line 34.
+(pdftex.def)             Requested size: 426.79134pt x 216.82185pt.
+[5
+
+
+
+
+]
+
+LaTeX Warning: Reference `web-stack' on page 6 undefined on input line 52.
+
+<images/ch2/web-stack.png, id=235, 601.24625pt x 327.2225pt>
+File: images/ch2/web-stack.png Graphic file (type png)
+<use images/ch2/web-stack.png>
+Package pdftex.def Info: images/ch2/web-stack.png  used on input line 57.
+(pdftex.def)             Requested size: 426.79134pt x 232.28465pt.
+[6 <./images/ch2/semantic-web.png>] [7 <./images/ch2/web-stack.png>]
+
+LaTeX Warning: Reference `principles' on page 8 undefined on input line 95.
+
+
+LaTeX Warning: Reference `sec:rdf' on page 8 undefined on input line 125.
+
+[8] [9]
+Overfull \hbox (1.31747pt too wide) in paragraph at lines 180--187
+[]\T1/lmr/m/n/12 The RDF, ini-tially de-signed as a meta-data data model, is a 
+computer-understandable
+ []
+
+
+LaTeX Warning: Reference `subsec:uri' on page 10 undefined on input line 193.
+
+[10]
+
+LaTeX Warning: Reference `rdf-xml-doc' on page 11 undefined on input line 228.
+
+<images/ch2/rdf-xml-doc.png, id=302, 601.24625pt x 130.4875pt>
+File: images/ch2/rdf-xml-doc.png Graphic file (type png)
+<use images/ch2/rdf-xml-doc.png>
+Package pdftex.def Info: images/ch2/rdf-xml-doc.png  used on input line 244.
+(pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
+
+LaTeX Warning: Reference `rdf-triple' on page 11 undefined on input line 249.
+
+<images/ch2/rdf-triple.png, id=303, 568.1225pt x 107.40125pt>
+File: images/ch2/rdf-triple.png Graphic file (type png)
+<use images/ch2/rdf-triple.png>
+Package pdftex.def Info: images/ch2/rdf-triple.png  used on input line 261.
+(pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
+
+LaTeX Warning: Reference `rdf-graph' on page 11 undefined on input line 266.
+
+[11]
+<images/ch2/rdf-graph.png, id=315, 572.1375pt x 188.705pt>
+File: images/ch2/rdf-graph.png Graphic file (type png)
+<use images/ch2/rdf-graph.png>
+Package pdftex.def Info: images/ch2/rdf-graph.png  used on input line 273.
+(pdftex.def)             Requested size: 426.79134pt x 140.76823pt.
+ [12 <./images/ch2/rdf-xml-doc.png> <./images/ch2/rdf-triple.png> <./images/ch2
+/rdf-graph.png>]
+Overfull \hbox (1.19057pt too wide) in paragraph at lines 288--305
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `rdfs-classes-and-properties' on page 13 undefined on 
+input line 316.
+
+
+LaTeX Warning: Reference `rdfs-graph-for-complex' on page 13 undefined on input
+ line 318.
+
+[13]
+
+LaTeX Warning: Reference `rdfs-graph-for-complex' on page 14 undefined on input
+ line 327.
+
+
+Overfull \hbox (4.60803pt too wide) in paragraph at lines 327--338
+\T1/lmr/m/n/12 the graph, the rdf:type of ``Romeo and Juliet'' is ``Play'' whic
+h in turn is an rdf:subClassOf
+ []
+
+<images/ch2/rdfs-graph-for-complex.png, id=339, 739.76375pt x 411.5375pt>
+File: images/ch2/rdfs-graph-for-complex.png Graphic file (type png)
+<use images/ch2/rdfs-graph-for-complex.png>
+Package pdftex.def Info: images/ch2/rdfs-graph-for-complex.png  used on input l
+ine 341.
+(pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
+
+LaTeX Warning: Reference `rdf-xml-doc' on page 14 undefined on input line 348.
+
+
+LaTeX Warning: Reference `rdf-triple' on page 14 undefined on input line 348.
+
+
+LaTeX Warning: Reference `rdf-graph' on page 14 undefined on input line 348.
+
+
+LaTeX Warning: Reference `rdfs-graph-for-complex' on page 14 undefined on input
+ line 348.
+
+
+LaTeX Warning: Reference `statement-for-rdf' on page 14 undefined on input line
+ 350.
+
+<images/ch2/statement-for-rdf.png, id=342, 501.875pt x 88.33pt>
+File: images/ch2/statement-for-rdf.png Graphic file (type png)
+<use images/ch2/statement-for-rdf.png>
+Package pdftex.def Info: images/ch2/statement-for-rdf.png  used on input line 3
+61.
+(pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
+[14 <./images/ch2/rdfs-graph-for-complex.png>]
+
+LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
+ 367.
+
+
+LaTeX Warning: Reference `triple-for-rdf-statement' on page 15 undefined on inp
+ut line 368.
+
+<images/ch2/triple-for-rdf-statement.png, id=348, 501.875pt x 104.39pt>
+File: images/ch2/triple-for-rdf-statement.png Graphic file (type png)
+<use images/ch2/triple-for-rdf-statement.png>
+Package pdftex.def Info: images/ch2/triple-for-rdf-statement.png  used on input
+ line 374.
+(pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
+
+LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
+ 375.
+
+
+LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
+ 375.
+
+
+LaTeX Warning: Reference `rdf-graph-for-statement' on page 15 undefined on inpu
+t line 379.
+
+
+LaTeX Warning: Reference `triple-for-rdf-statement' on page 15 undefined on inp
+ut line 381.
+
+
+LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
+ 387.
+
+<images/ch2/rdf-graph-for-statement.png, id=351, 400.49625pt x 206.7725pt>
+File: images/ch2/rdf-graph-for-statement.png Graphic file (type png)
+<use images/ch2/rdf-graph-for-statement.png>
+Package pdftex.def Info: images/ch2/rdf-graph-for-statement.png  used on input 
+line 398.
+(pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
+
+LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
+ 399.
+
+
+LaTeX Warning: Reference `statement-for-rdf' on page 15 undefined on input line
+ 399.
+
+
+LaTeX Warning: Reference `graph-for-relative-statements' on page 15 undefined o
+n input line 403.
+
+
+LaTeX Warning: Reference `rdf-notations' on page 15 undefined on input line 404
+.
+
+
+LaTeX Warning: Reference `graph-for-relative-statements' on page 15 undefined o
+n input line 405.
+
+[15 <./images/ch2/statement-for-rdf.png> <./images/ch2/triple-for-rdf-statement
+.png>]
+<images/ch2/graph-for-relative-statements.png, id=360, 618.31pt x 158.5925pt>
+File: images/ch2/graph-for-relative-statements.png Graphic file (type png)
+<use images/ch2/graph-for-relative-statements.png>
+Package pdftex.def Info: images/ch2/graph-for-relative-statements.png  used on 
+input line 418.
+(pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
+
+
+LaTeX Warning: Reference `graph-for-relative-statements' on page 16 undefined o
+n input line 429.
+
+
+LaTeX Warning: Reference `graph-for-relative-statements' on page 16 undefined o
+n input line 429.
+
+
+LaTeX Warning: Reference `graph-for-respondent-details' on page 16 undefined on
+ input line 437.
+
+[16 <./images/ch2/rdf-graph-for-statement.png> <./images/ch2/graph-for-relative
+-statements.png>]
+<images/ch2/graph-for-respondent-details.png, id=373, 687.56876pt x 386.44376pt
+>
+File: images/ch2/graph-for-respondent-details.png Graphic file (type png)
+<use images/ch2/graph-for-respondent-details.png>
+Package pdftex.def Info: images/ch2/graph-for-respondent-details.png  used on i
+nput line 442.
+(pdftex.def)             Requested size: 426.79134pt x 239.87569pt.
+
+
+LaTeX Warning: Reference `blank-node-for-rdf' on page 17 undefined on input lin
+e 473.
+
+
+Overfull \hbox (1.1465pt too wide) in paragraph at lines 447--476
+\T1/lmr/m/n/12 Name is the pred-i-cate. The URI for re-sp-Name is ``http://www.
+semanticweb.org/respDe-
+ []
+
+
+Overfull \hbox (0.4409pt too wide) in paragraph at lines 447--476
+\T1/lmr/m/n/12 ``http://www.semanticweb.org/respDetails/street'', ``http://www.
+semanticweb.org/res-
+ []
+
+[17 <./images/ch2/graph-for-respondent-details.png>]
+<images/ch2/blank-node-for-rdf.png, id=383, 687.56876pt x 400.49625pt>
+File: images/ch2/blank-node-for-rdf.png Graphic file (type png)
+<use images/ch2/blank-node-for-rdf.png>
+Package pdftex.def Info: images/ch2/blank-node-for-rdf.png  used on input line 
+479.
+(pdftex.def)             Requested size: 426.79134pt x 248.59843pt.
+
+
+LaTeX Warning: Reference `graph-for-respondent-details' on page 18 undefined on
+ input line 480.
+
+
+LaTeX Warning: Reference `graph-for-respondent-details' on page 18 undefined on
+ input line 480.
+
+
+LaTeX Warning: Reference `definitions-for-uri' on page 18 undefined on input li
+ne 516.
+
+[18 <./images/ch2/blank-node-for-rdf.png>]
+Overfull \hbox (45.91994pt too wide) in paragraph at lines 523--523
+[]|\T1/lmr/m/n/12 Resource|  
+ []
+
+
+Overfull \hbox (46.34317pt too wide) in paragraph at lines 528--528
+[]|\T1/lmr/m/n/12 Identifier|  
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `syntax-diagram' on page 19 undefined on input line 55
+2.
+
+<images/ch2/syntax-diagram.png, id=403, 733.74126pt x 115.43124pt>
+File: images/ch2/syntax-diagram.png Graphic file (type png)
+<use images/ch2/syntax-diagram.png>
+Package pdftex.def Info: images/ch2/syntax-diagram.png  used on input line 556.
+
+(pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
+
+LaTeX Warning: Reference `components-of-url-example' on page 19 undefined on in
+put line 562.
+
+<images/ch2/components-of-url-example.png, id=406, 696.6025pt x 182.6825pt>
+File: images/ch2/components-of-url-example.png Graphic file (type png)
+<use images/ch2/components-of-url-example.png>
+Package pdftex.def Info: images/ch2/components-of-url-example.png  used on inpu
+t line 571.
+(pdftex.def)             Requested size: 426.79134pt x 111.92397pt.
+
+LaTeX Warning: Reference `table:linked-data-lifecycle' on page 19 undefined on 
+input line 582.
+
+
+LaTeX Warning: Reference `table:linked-data-lifecycle' on page 19 undefined on 
+input line 594.
+
+[19]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20] [21 <./images/ch2/syntax-diagram.png> <./images/ch2/components-of-url-exam
+ple.png>] [22]
+
+LaTeX Warning: Reference `owl-individuals' on page 23 undefined on input line 6
+57.
+
+<images/ch2/owl-individuals.png, id=457, 307.1475pt x 159.59625pt>
+File: images/ch2/owl-individuals.png Graphic file (type png)
+<use images/ch2/owl-individuals.png>
+Package pdftex.def Info: images/ch2/owl-individuals.png  used on input line 663
+.
+(pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
+
+LaTeX Warning: Reference `owl-individuals' on page 23 undefined on input line 6
+74.
+
+
+LaTeX Warning: Reference `owl-properties' on page 23 undefined on input line 68
+3.
+
+<images/ch2/owl-properties.png, id=459, 307.1475pt x 201.75375pt>
+File: images/ch2/owl-properties.png Graphic file (type png)
+<use images/ch2/owl-properties.png>
+Package pdftex.def Info: images/ch2/owl-properties.png  used on input line 691.
+
+(pdftex.def)             Requested size: 227.62204pt x 149.51707pt.
+[23 <./images/ch2/owl-individuals.png>] [24 <./images/ch2/owl-properties.png>]
+
+LaTeX Warning: Reference `owl-classes-with-individuals-and-properties' on page 
+25 undefined on input line 725.
+
+
+LaTeX Warning: Reference `owl-properties' on page 25 undefined on input line 72
+6.
+
+<images/ch2/owl-classes-with-individuals-and-properties.png, id=480, 307.1475pt
+ x 312.16624pt>
+File: images/ch2/owl-classes-with-individuals-and-properties.png Graphic file (
+type png)
+<use images/ch2/owl-classes-with-individuals-and-properties.png>
+Package pdftex.def Info: images/ch2/owl-classes-with-individuals-and-properties
+.png  used on input line 730.
+(pdftex.def)             Requested size: 227.62204pt x 231.34236pt.
+[25 <./images/ch2/owl-classes-with-individuals-and-properties.png>]
+
+./ch2.tex:750: Package acro Error: You've requested acronym `csv' on line 750 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.750 ... to store and publish data using \ac{csv}
+                                                  
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch2.tex:770: Package acro Error: You've requested acronym `csv' on line 770 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.770     \ac{csv},
+                    Excel, spreadsheets and other tabular data into \ac{rdf}
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch2.tex:771: Package acro Error: You've requested acronym `gui' on line 771 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `gui'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.771     where a \ac{gui} 
+                           is used to define schema mapping.
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch2.tex:776: Package acro Error: You've requested acronym `csv' on line 776 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.776 ...nd servlet for the conversion of \ac{csv}
+                                                  
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+[26]
+
+./ch2.tex:801: Package acro Error: You've requested acronym `csv' on line 801 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.801 ...ata like Excel, OpenDocument and \ac{csv}
+                                                  
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch2.tex:814: Package acro Error: You've requested acronym `csv' on line 814 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.814 ...plication for the conversion of \ac{csv} 
+                                                  to \ac{rdf}
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+[27] [28] [29]
+
+LaTeX Warning: Reference `wikidata-uofr' on page 30 undefined on input line 903
+.
+
+<images/ch2/wikidata-uofr.png, id=560, 615.29875pt x 792.9625pt>
+File: images/ch2/wikidata-uofr.png Graphic file (type png)
+<use images/ch2/wikidata-uofr.png>
+Package pdftex.def Info: images/ch2/wikidata-uofr.png  used on input line 909.
+(pdftex.def)             Requested size: 426.79134pt x 550.03651pt.
+
+LaTeX Warning: Reference `wikidata-uofr' on page 30 undefined on input line 925
+.
+
+
+LaTeX Warning: Reference `uofr-statement-properties-and-id' on page 30 undefine
+d on input line 935.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `uofr-identifier-properties-and-id' on page 30 undefin
+ed on input line 962.
+
+[30] [31 <./images/ch2/wikidata-uofr.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `rdf-xml-uofr' on page 32 undefined on input line 998.
+
+
+<images/ch2/rdf-xml-uofr.png, id=570, 626.34pt x 485.815pt>
+File: images/ch2/rdf-xml-uofr.png Graphic file (type png)
+<use images/ch2/rdf-xml-uofr.png>
+Package pdftex.def Info: images/ch2/rdf-xml-uofr.png  used on input line 1004.
+(pdftex.def)             Requested size: 426.79134pt x 331.04665pt.
+[32] [33 <./images/ch2/rdf-xml-uofr.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1024--1024
+[][][]\T1/lmr/m/n/10 https://www.dummies.com/programming/big-data/data-science/
+how-pattern-matching-works-
+ []
+
+[34]
+
+LaTeX Warning: Reference `dbpedia-uofr' on page 35 undefined on input line 1043
+.
+
+<images/ch2/dbpedia-uofr.png, id=603, 679.53876pt x 664.4825pt>
+File: images/ch2/dbpedia-uofr.png Graphic file (type png)
+<use images/ch2/dbpedia-uofr.png>
+Package pdftex.def Info: images/ch2/dbpedia-uofr.png  used on input line 1052.
+(pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
+
+LaTeX Warning: Reference `depedia-architecture' on page 35 undefined on input l
+ine 1057.
+
+<images/ch2/depedia-architecture.png, id=605, 626.34pt x 321.2pt>
+File: images/ch2/depedia-architecture.png Graphic file (type png)
+<use images/ch2/depedia-architecture.png>
+Package pdftex.def Info: images/ch2/depedia-architecture.png  used on input lin
+e 1068.
+(pdftex.def)             Requested size: 426.79134pt x 218.87381pt.
+) [35] [36 <./images/ch2/dbpedia-uofr.png>] [37 <./images/ch2/depedia-architect
+ure.png>]
+\openout2 = `ch3.aux'.
+
+ (./ch3.tex
+Chapter 3.
+[38
+
+
+
+
+] [39] [40]
+
+LaTeX Warning: Reference `protege-homescreen' on page 41 undefined on input lin
+e 139.
+
+[41]
+<images/ch3/protege/protege-homescreen.png, id=667, 1439.3775pt x 791.95876pt>
+File: images/ch3/protege/protege-homescreen.png Graphic file (type png)
+<use images/ch3/protege/protege-homescreen.png>
+Package pdftex.def Info: images/ch3/protege/protege-homescreen.png  used on inp
+ut line 145.
+(pdftex.def)             Requested size: 426.79134pt x 234.82216pt.
+
+
+LaTeX Warning: Reference `class-hierarchy' on page 42 undefined on input line 1
+65.
+
+<images/ch3/protege/class-hierarchy.png, id=668, 821.0675pt x 448.67625pt>
+File: images/ch3/protege/class-hierarchy.png Graphic file (type png)
+<use images/ch3/protege/class-hierarchy.png>
+Package pdftex.def Info: images/ch3/protege/class-hierarchy.png  used on input 
+line 171.
+(pdftex.def)             Requested size: 426.79134pt x 233.21715pt.
+
+LaTeX Warning: Reference `tools-menu-class-hierarchy' on page 42 undefined on i
+nput line 180.
+
+[42 <./images/ch3/protege/protege-homescreen.png>]
+<images/ch3/protege/tools-menu-class-hierarchy.png, id=678, 541.02126pt x 199.7
+4625pt>
+File: images/ch3/protege/tools-menu-class-hierarchy.png Graphic file (type png)
+
+<use images/ch3/protege/tools-menu-class-hierarchy.png>
+Package pdftex.def Info: images/ch3/protege/tools-menu-class-hierarchy.png  use
+d on input line 186.
+(pdftex.def)             Requested size: 426.79134pt x 157.5753pt.
+
+
+LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 43 undefined on input
+ line 195.
+
+<images/ch3/protege/enter-hierarchy-pop-up.png, id=679, 523.9575pt x 364.36125p
+t>
+File: images/ch3/protege/enter-hierarchy-pop-up.png Graphic file (type png)
+<use images/ch3/protege/enter-hierarchy-pop-up.png>
+Package pdftex.def Info: images/ch3/protege/enter-hierarchy-pop-up.png  used on
+ input line 199.
+(pdftex.def)             Requested size: 426.79134pt x 296.7989pt.
+
+LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 43 undefined on input
+ line 205.
+
+
+LaTeX Warning: Reference `create-disjoint-siblings' on page 43 undefined on inp
+ut line 212.
+
+[43 <./images/ch3/protege/class-hierarchy.png> <./images/ch3/protege/tools-menu
+-class-hierarchy.png>] [44 <./images/ch3/protege/enter-hierarchy-pop-up.png>]
+<images/ch3/protege/create-disjoint-siblings.png, id=695, 658.46pt x 364.36125p
+t>
+File: images/ch3/protege/create-disjoint-siblings.png Graphic file (type png)
+<use images/ch3/protege/create-disjoint-siblings.png>
+Package pdftex.def Info: images/ch3/protege/create-disjoint-siblings.png  used 
+on input line 216.
+(pdftex.def)             Requested size: 426.79134pt x 236.1704pt.
+
+
+LaTeX Warning: Reference `class-hierarchy' on page 45 undefined on input line 2
+31.
+
+
+LaTeX Warning: Reference `tools-menu-object-property-hierarchy' on page 45 unde
+fined on input line 242.
+
+
+LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 45 undefined on input
+ line 244.
+
+
+LaTeX Warning: Reference `create-disjoint-siblings' on page 45 undefined on inp
+ut line 244.
+
+[45 <./images/ch3/protege/create-disjoint-siblings.png>]
+<images/ch3/protege/tools-menu-object-property-hierarchy.png, id=704, 537.00626
+pt x 195.73125pt>
+File: images/ch3/protege/tools-menu-object-property-hierarchy.png Graphic file 
+(type png)
+<use images/ch3/protege/tools-menu-object-property-hierarchy.png>
+Package pdftex.def Info: images/ch3/protege/tools-menu-object-property-hierarch
+y.png  used on input line 248.
+(pdftex.def)             Requested size: 426.79134pt x 155.56079pt.
+
+
+LaTeX Warning: Reference `object-properties-for-lady-and-parita' on page 46 und
+efined on input line 270.
+
+<images/ch3/protege/object-properties-for-lady-and-parita.png, id=705, 474.7737
+4pt x 179.67125pt>
+File: images/ch3/protege/object-properties-for-lady-and-parita.png Graphic file
+ (type png)
+<use images/ch3/protege/object-properties-for-lady-and-parita.png>
+Package pdftex.def Info: images/ch3/protege/object-properties-for-lady-and-pari
+ta.png  used on input line 274.
+(pdftex.def)             Requested size: 426.79134pt x 161.51892pt.
+
+LaTeX Warning: Reference `domain-and-range-for-hasName-and-isNameOf' on page 46
+ undefined on input line 297.
+
+[46 <./images/ch3/protege/tools-menu-object-property-hierarchy.png>]
+<images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png, id=714, 474.
+77374pt x 320.19624pt>
+File: images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png Graphic 
+file (type png)
+<use images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png>
+Package pdftex.def Info: images/ch3/protege/domain-and-range-for-hasName-and-is
+NameOf.png  used on input line 307.
+(pdftex.def)             Requested size: 341.43306pt x 230.27727pt.
+
+
+LaTeX Warning: Reference `tools-menu-data-property-hierarchy' on page 47 undefi
+ned on input line 324.
+
+
+LaTeX Warning: Reference `enter-hierarchy-pop-up' on page 47 undefined on input
+ line 326.
+
+
+LaTeX Warning: Reference `create-disjoint-siblings' on page 47 undefined on inp
+ut line 326.
+
+[47 <./images/ch3/protege/object-properties-for-lady-and-parita.png>]
+<images/ch3/protege/tools-menu-data-property-hierarchy.png, id=727, 538.01pt x 
+196.735pt>
+File: images/ch3/protege/tools-menu-data-property-hierarchy.png Graphic file (t
+ype png)
+<use images/ch3/protege/tools-menu-data-property-hierarchy.png>
+Package pdftex.def Info: images/ch3/protege/tools-menu-data-property-hierarchy.
+png  used on input line 330.
+(pdftex.def)             Requested size: 426.79134pt x 156.06734pt.
+
+
+./ch3.tex:346: Package acro Error: You've requested acronym `ide' on line 346 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `ide'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.346 ...current version of the protÃ©gÃ© \ac{ide}
+                                                  
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+[48 <./images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png> <./ima
+ges/ch3/protege/tools-menu-data-property-hierarchy.png>]
+
+./ch3.tex:357: Package acro Error: You've requested acronym `obda' on line 357 
+but you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `obda'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.357 ...astro\_DL-Lite\_Reasoner} : An \ac{obda} 
+                                                  management system in which...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+[49]
+
+LaTeX Warning: Reference `openrefine-homepage' on page 50 undefined on input li
+ne 394.
+
+<images/ch3/openrefine/homepage.png, id=758, 542.025pt x 308.15125pt>
+File: images/ch3/openrefine/homepage.png Graphic file (type png)
+<use images/ch3/openrefine/homepage.png>
+Package pdftex.def Info: images/ch3/openrefine/homepage.png  used on input line
+ 399.
+(pdftex.def)             Requested size: 426.79134pt x 242.64687pt.
+[50]
+
+LaTeX Warning: Reference `openrefine-new-project' on page 51 undefined on input
+ line 413.
+
+
+./ch3.tex:415: Package acro Error: You've requested acronym `tsv' on line 415 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `tsv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.415     \ac{tsv},
+                    \ac{csv}, \ac{json}, \ac{xml}, \ac{rdf}/\ac{xml}, Excel,...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch3.tex:415: Package acro Error: You've requested acronym `csv' on line 415 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.415     \ac{tsv}, \ac{csv},
+                              \ac{json}, \ac{xml}, \ac{rdf}/\ac{xml}, Excel,...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch3.tex:415: Package acro Error: You've requested acronym `json' on line 415 
+but you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `json'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.415     \ac{tsv}, \ac{csv}, \ac{json},
+                                         \ac{xml}, \ac{rdf}/\ac{xml}, Excel,...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+<images/ch3/openrefine/new-project.png, id=769, 700.6175pt x 323.2075pt>
+File: images/ch3/openrefine/new-project.png Graphic file (type png)
+<use images/ch3/openrefine/new-project.png>
+Package pdftex.def Info: images/ch3/openrefine/new-project.png  used on input l
+ine 420.
+(pdftex.def)             Requested size: 426.79134pt x 196.88997pt.
+
+LaTeX Warning: Reference `openrefine-update-preview' on page 51 undefined on in
+put line 425.
+
+<images/ch3/openrefine/update-preview.png, id=770, 1270.7475pt x 293.095pt>
+File: images/ch3/openrefine/update-preview.png Graphic file (type png)
+<use images/ch3/openrefine/update-preview.png>
+Package pdftex.def Info: images/ch3/openrefine/update-preview.png  used on inpu
+t line 431.
+(pdftex.def)             Requested size: 426.79134pt x 98.43898pt.
+
+LaTeX Warning: Reference `openrefine-name-project' on page 51 undefined on inpu
+t line 437.
+
+<images/ch3/openrefine/name-project.png, id=771, 1075.01625pt x 138.5175pt>
+File: images/ch3/openrefine/name-project.png Graphic file (type png)
+<use images/ch3/openrefine/name-project.png>
+Package pdftex.def Info: images/ch3/openrefine/name-project.png  used on input 
+line 441.
+(pdftex.def)             Requested size: 426.79134pt x 54.99174pt.
+[51 <./images/ch3/openrefine/homepage.png>] [52 <./images/ch3/openrefine/new-pr
+oject.png> <./images/ch3/openrefine/update-preview.png> <./images/ch3/openrefin
+e/name-project.png>]
+
+LaTeX Warning: Reference `openrefine-facet' on page 53 undefined on input line 
+460.
+
+<images/ch3/openrefine/facet.png, id=790, 693.59125pt x 318.18875pt>
+File: images/ch3/openrefine/facet.png Graphic file (type png)
+<use images/ch3/openrefine/facet.png>
+Package pdftex.def Info: images/ch3/openrefine/facet.png  used on input line 46
+5.
+(pdftex.def)             Requested size: 426.79134pt x 195.799pt.
+
+LaTeX Warning: Reference `openrefine-facet-result' on page 53 undefined on inpu
+t line 470.
+
+
+LaTeX Warning: Reference `openrefine-include-result' on page 53 undefined on in
+put line 475.
+
+<images/ch3/openrefine/facet-result.png, id=791, 778.91pt x 400.49625pt>
+File: images/ch3/openrefine/facet-result.png Graphic file (type png)
+<use images/ch3/openrefine/facet-result.png>
+Package pdftex.def Info: images/ch3/openrefine/facet-result.png  used on input 
+line 481.
+(pdftex.def)             Requested size: 426.79134pt x 219.4425pt.
+<images/ch3/openrefine/include-result.png, id=792, 822.07124pt x 238.8925pt>
+File: images/ch3/openrefine/include-result.png Graphic file (type png)
+<use images/ch3/openrefine/include-result.png>
+Package pdftex.def Info: images/ch3/openrefine/include-result.png  used on inpu
+t line 488.
+(pdftex.def)             Requested size: 426.79134pt x 124.02432pt.
+
+LaTeX Warning: Reference `openrefine-clean-data' on page 53 undefined on input 
+line 502.
+
+<images/ch3/openrefine/clean-data.png, id=793, 954.56625pt x 110.4125pt>
+File: images/ch3/openrefine/clean-data.png Graphic file (type png)
+<use images/ch3/openrefine/clean-data.png>
+Package pdftex.def Info: images/ch3/openrefine/clean-data.png  used on input li
+ne 507.
+(pdftex.def)             Requested size: 426.79134pt x 49.36505pt.
+
+LaTeX Warning: Reference `openrefine-textfilter-result' on page 53 undefined on
+ input line 512.
+
+<images/ch3/openrefine/textfilter-result.png, id=794, 1259.70625pt x 178.6675pt
+>
+File: images/ch3/openrefine/textfilter-result.png Graphic file (type png)
+<use images/ch3/openrefine/textfilter-result.png>
+Package pdftex.def Info: images/ch3/openrefine/textfilter-result.png  used on i
+nput line 519.
+(pdftex.def)             Requested size: 426.79134pt x 60.5335pt.
+[53 <./images/ch3/openrefine/facet.png>] [54 <./images/ch3/openrefine/facet-res
+ult.png> <./images/ch3/openrefine/include-result.png> <./images/ch3/openrefine/
+clean-data.png>]
+
+LaTeX Warning: Reference `openrefine-transform' on page 55 undefined on input l
+ine 531.
+
+<images/ch3/openrefine/transform.png, id=814, 552.0625pt x 437.635pt>
+File: images/ch3/openrefine/transform.png Graphic file (type png)
+<use images/ch3/openrefine/transform.png>
+Package pdftex.def Info: images/ch3/openrefine/transform.png  used on input lin
+e 536.
+(pdftex.def)             Requested size: 426.79134pt x 338.34225pt.
+
+LaTeX Warning: Reference `openrefine-custom-text-transform' on page 55 undefine
+d on input line 541.
+
+<images/ch3/openrefine/custom-text-transform.png, id=815, 577.15625pt x 337.26p
+t>
+File: images/ch3/openrefine/custom-text-transform.png Graphic file (type png)
+<use images/ch3/openrefine/custom-text-transform.png>
+Package pdftex.def Info: images/ch3/openrefine/custom-text-transform.png  used 
+on input line 551.
+(pdftex.def)             Requested size: 426.79134pt x 249.40381pt.
+
+LaTeX Warning: Reference `openrefine-transform-result' on page 55 undefined on 
+input line 564.
+
+<images/ch3/openrefine/transform-result.png, id=816, 1040.88875pt x 230.8625pt>
+
+File: images/ch3/openrefine/transform-result.png Graphic file (type png)
+<use images/ch3/openrefine/transform-result.png>
+Package pdftex.def Info: images/ch3/openrefine/transform-result.png  used on in
+put line 568.
+(pdftex.def)             Requested size: 426.79134pt x 94.65775pt.
+[55 <./images/ch3/openrefine/textfilter-result.png>] [56 <./images/ch3/openrefi
+ne/transform.png>] [57 <./images/ch3/openrefine/custom-text-transform.png> <./i
+mages/ch3/openrefine/transform-result.png>]
+Overfull \hbox (35.20663pt too wide) in paragraph at lines 603--613
+\T1/lmr/m/n/12 Attribution-ShareAlike 2.5 Generic[][][], Attribution-ShareAlike
+ 3.0 Un-ported[][][], and Attribution-
+ []
+
+[58]
+
+LaTeX Warning: Reference `5-star-system' on page 59 undefined on input line 654
+.
+
+LaTeX Font Info:    Trying to load font information for U+ding on input line 66
+0.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/bbding/Uding.fd
+File: Uding.fd 1996/02/01 v1.0 BBding font definitions
+)
+
+./ch3.tex:662: Package acro Error: You've requested acronym `csv' on line 662 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.662 .... For instance, storing data in \ac{csv} 
+                                                  instead of \\& Microsoft E...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[59]
+
+./ch3.tex:697: Package acro Error: You've requested acronym `png' on line 697 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `png'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.697 \ac{png},
+                \ac{jpeg}, \ac{gif} and as a dot file\footnote{a Microsoft W...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch3.tex:697: Package acro Error: You've requested acronym `jpeg' on line 697 
+but you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `jpeg'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.697 \ac{png}, \ac{jpeg},
+                           \ac{gif} and as a dot file\footnote{a Microsoft W...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch3.tex:697: Package acro Error: You've requested acronym `gif' on line 697 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `gif'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.697 \ac{png}, \ac{jpeg}, \ac{gif} 
+                                    and as a dot file\footnote{a Microsoft W...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+[60]) [61]
+\openout2 = `ch4.aux'.
+
+ (./ch4.tex
+Chapter 4.
+
+LaTeX Warning: Reference `chap:methodology' on page 62 undefined on input line 
+8.
+
+
+LaTeX Warning: Reference `feedback-form' on page 62 undefined on input line 14.
+
+
+<images/ch4/survey/feedback-form.png, id=901, 558.085pt x 641.39626pt>
+./ch4.tex:19: Undefined control sequence.
+\Gin@@ewidth ->\coumnwidth 
+                           
+l.19 ...idth]{images/ch4/survey/feedback-form.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./ch4.tex:19: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.19 ...idth]{images/ch4/survey/feedback-form.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./ch4.tex:19: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.19 ...idth]{images/ch4/survey/feedback-form.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./ch4.tex:19: Undefined control sequence.
+\Gin@@ewidth ->\coumnwidth 
+                           
+l.19 ...idth]{images/ch4/survey/feedback-form.png}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./ch4.tex:19: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.19 ...idth]{images/ch4/survey/feedback-form.png}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./ch4.tex:19: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.19 ...idth]{images/ch4/survey/feedback-form.png}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: images/ch4/survey/feedback-form.png Graphic file (type png)
+<use images/ch4/survey/feedback-form.png>
+Package pdftex.def Info: images/ch4/survey/feedback-form.png  used on input lin
+e 19.
+(pdftex.def)             Requested size: 0.0pt x 0.0pt.
+
+LaTeX Warning: Reference `subsec:classhierarchy' on page 62 undefined on input 
+line 27.
+
+
+LaTeX Warning: Reference `survey-class-hierarchy' on page 62 undefined on input
+ line 28.
+
+<images/ch4/survey/survey-class-hierarchy.png, id=904, 597.23125pt x 453.695pt>
+
+File: images/ch4/survey/survey-class-hierarchy.png Graphic file (type png)
+<use images/ch4/survey/survey-class-hierarchy.png>
+Package pdftex.def Info: images/ch4/survey/survey-class-hierarchy.png  used on 
+input line 40.
+(pdftex.def)             Requested size: 443.57848pt x 336.97514pt.
+
+Overfull \hbox (3.59225pt too wide) in paragraph at lines 43--43
+[]\T1/lmr/bx/n/17.28 Development Tool for the Cre-ation of New OWL
+ []
+
+[62
+
+
+
+
+] [63 <./images/ch4/survey/survey-class-hierarchy.png>] [64]
+
+LaTeX Warning: File `images/ch4/Figure1.png' not found on input line 66.
+
+
+./ch4.tex:66: Package pdftex.def Error: File `images/ch4/Figure1.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...idth=\columnwidth]{images/ch4/Figure1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[65] [66] [67] [68]
+
+LaTeX Warning: File `images/ch4/Figure2.png' not found on input line 94.
+
+
+./ch4.tex:94: Package pdftex.def Error: File `images/ch4/Figure2.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 ...idth=\columnwidth]{images/ch4/Figure2.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/ch4/Figure3.png' not found on input line 101.
+
+
+./ch4.tex:101: Package pdftex.def Error: File `images/ch4/Figure3.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 ...dth=\columnwidth]{images/ch4/Figure3.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/ch4/Figure4.png' not found on input line 109.
+
+
+./ch4.tex:109: Package pdftex.def Error: File `images/ch4/Figure4.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 ...dth=\columnwidth]{images/ch4/Figure4.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[69] [70] [71]
+
+LaTeX Warning: File `images/ch4/Figure5.png' not found on input line 117.
+
+
+./ch4.tex:117: Package pdftex.def Error: File `images/ch4/Figure5.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...dth=\columnwidth]{images/ch4/Figure5.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[72]
+
+LaTeX Warning: File `images/ch4/Figure6.png' not found on input line 124.
+
+
+./ch4.tex:124: Package pdftex.def Error: File `images/ch4/Figure6.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...dth=\columnwidth]{images/ch4/Figure6.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[73]
+
+LaTeX Warning: File `images/ch4/Figure7.png' not found on input line 131.
+
+
+./ch4.tex:131: Package pdftex.def Error: File `images/ch4/Figure7.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 ...dth=\columnwidth]{images/ch4/Figure7.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[74]
+
+LaTeX Warning: Reference `fig:4.8' on page 75 undefined on input line 137.
+
+[75]
+File: images/ch4/survey/survey-class-hierarchy.png Graphic file (type png)
+<use images/ch4/survey/survey-class-hierarchy.png>
+Package pdftex.def Info: images/ch4/survey/survey-class-hierarchy.png  used on 
+input line 141.
+(pdftex.def)             Requested size: 443.57848pt x 336.97514pt.
+ [76] [77]
+
+LaTeX Warning: Reference `subsec:individuals' on page 78 undefined on input lin
+e 254.
+
+<images/ch4/survey/likertscale5-class.png, id=1030, 725.71124pt x 384.43625pt>
+File: images/ch4/survey/likertscale5-class.png Graphic file (type png)
+<use images/ch4/survey/likertscale5-class.png>
+Package pdftex.def Info: images/ch4/survey/likertscale5-class.png  used on inpu
+t line 258.
+(pdftex.def)             Requested size: 443.57848pt x 234.98677pt.
+[78]
+
+LaTeX Warning: File `images/ch4/Figure9.png' not found on input line 277.
+
+
+./ch4.tex:277: Package pdftex.def Error: File `images/ch4/Figure9.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.277 ...dth=\columnwidth]{images/ch4/Figure9.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[79 <./images/ch4/survey/likertscale5-class.png>] [80]
+
+LaTeX Warning: File `images/ch4/Figure10.png' not found on input line 293.
+
+
+./ch4.tex:293: Package pdftex.def Error: File `images/ch4/Figure10.png' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.293 ...th=\columnwidth]{images/ch4/Figure10.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/ch4/Figure11.png' not found on input line 306.
+
+
+./ch4.tex:306: Package pdftex.def Error: File `images/ch4/Figure11.png' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ...th=\columnwidth]{images/ch4/Figure11.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[81]
+
+LaTeX Warning: Reference `subsec:objectproperties' on page 82 undefined on inpu
+t line 314.
+
+
+LaTeX Warning: Reference `survey-object-properties' on page 82 undefined on inp
+ut line 315.
+
+<images/ch4/survey/survey-object-properties.png, id=1064, 697.60625pt x 389.455
+pt>
+File: images/ch4/survey/survey-object-properties.png Graphic file (type png)
+<use images/ch4/survey/survey-object-properties.png>
+Package pdftex.def Info: images/ch4/survey/survey-object-properties.png  used o
+n input line 327.
+(pdftex.def)             Requested size: 443.57848pt x 247.6399pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `subsec:dataproperties' on page 82 undefined on input 
+line 384.
+
+
+LaTeX Warning: Reference `survey-data-properties' on page 82 undefined on input
+ line 385.
+
+<images/ch4/survey/survey-data-properties.png, id=1065, 1012.78375pt x 462.7287
+4pt>
+File: images/ch4/survey/survey-data-properties.png Graphic file (type png)
+<use images/ch4/survey/survey-data-properties.png>
+Package pdftex.def Info: images/ch4/survey/survey-data-properties.png  used on 
+input line 389.
+(pdftex.def)             Requested size: 443.57848pt x 202.6622pt.
+
+LaTeX Warning: Reference `fig:4.13' on page 82 undefined on input line 395.
+
+[82] [83] [84 <./images/ch4/survey/survey-object-properties.png> <./images/ch4/
+survey/survey-data-properties.png>]
+
+LaTeX Warning: Text page 85 contains only floats.
+
+[85]
+
+LaTeX Warning: File `images/ch4/Figure13.png' not found on input line 399.
+
+
+./ch4.tex:399: Package pdftex.def Error: File `images/ch4/Figure13.png' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.399 ...th=\columnwidth]{images/ch4/Figure13.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./ch4.tex:403: LaTeX Error: \begin{figure} on input line 397 ended by \end{figu
+re }.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.403 }
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./ch4.tex:403: Missing } inserted.
+<inserted text> 
+                }
+l.403 }
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Reference `fig:4.14' on page 86 undefined on input line 404.
+
+
+LaTeX Warning: Reference `table:4.4' on page 86 undefined on input line 404.
+
+
+./ch4.tex:406: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.406 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/ch4/Figure14.png' not found on input line 408.
+
+
+./ch4.tex:408: Package pdftex.def Error: File `images/ch4/Figure14.png' not fou
+nd: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.408 ...th=\columnwidth]{images/ch4/Figure14.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./ch4.tex:409: Package floatrow Error: Caption(s) lost.
+
+See the floatrow package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.409 ...ierarchies, Domain and Range for Classes}
+                                                  
+If you do not understand this error, please take look
+at `floatrow' and `caption' package documentations.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `survey-data-properties-domains-and-ranges' on page 86
+ undefined on input line 414.
+
+
+./ch4.tex:417: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.417 \begin{table}[h!]
+                       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (1.53273pt too wide) in paragraph at lines 423--423
+[]|\T1/lmr/m/n/12 Respondent|  
+ []
+
+
+Overfull \hbox (1.53273pt too wide) in paragraph at lines 425--425
+[]|\T1/lmr/m/n/12 Respondent|  
+ []
+
+
+Overfull \hbox (1.53273pt too wide) in paragraph at lines 429--429
+[]|\T1/lmr/m/n/12 Respondent|  
+ []
+
+
+Overfull \hbox (1.53273pt too wide) in paragraph at lines 430--430
+[]|\T1/lmr/m/n/12 Respondent|  
+ []
+
+
+Overfull \hbox (20.58328pt too wide) in paragraph at lines 420--435
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `instances-of-survey-class' on page 86 undefined on in
+put line 446.
+
+
+./ch4.tex:449: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/instances-of-survey-class.png, id=1098, 672.5125pt x 313.17p
+t>
+File: images/ch4/survey/instances-of-survey-class.png Graphic file (type png)
+<use images/ch4/survey/instances-of-survey-class.png>
+Package pdftex.def Info: images/ch4/survey/instances-of-survey-class.png  used 
+on input line 451.
+(pdftex.def)             Requested size: 443.57848pt x 206.5638pt.
+
+LaTeX Warning: Reference `survey-individuals' on page 86 undefined on input lin
+e 457.
+
+
+./ch4.tex:460: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.460 \begin{table}[h!]
+                       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:final-survey-classes' on page 86 undefined on inp
+ut line 484.
+
+
+./ch4.tex:486: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.486 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/final-survey-classes.png, id=1099, 815.045pt x 605.26125pt>
+File: images/ch4/survey/final-survey-classes.png Graphic file (type png)
+<use images/ch4/survey/final-survey-classes.png>
+Package pdftex.def Info: images/ch4/survey/final-survey-classes.png  used on in
+put line 488.
+(pdftex.def)             Requested size: 443.57848pt x 329.40367pt.
+
+LaTeX Warning: Reference `final-survey-classes' on page 86 undefined on input l
+ine 501.
+
+
+LaTeX Warning: Reference `survey-data-properties' on page 86 undefined on input
+ line 512.
+
+
+LaTeX Warning: Reference `shacl-editor' on page 86 undefined on input line 526.
+
+
+
+./ch4.tex:530: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.530 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/shacl-editor.png, id=1100, 1011.78pt x 468.75125pt>
+File: images/ch4/survey/shacl-editor.png Graphic file (type png)
+<use images/ch4/survey/shacl-editor.png>
+Package pdftex.def Info: images/ch4/survey/shacl-editor.png  used on input line
+ 532.
+(pdftex.def)             Requested size: 426.79134pt x 197.73248pt.
+
+LaTeX Warning: Reference `shacl-constraint-violations' on page 86 undefined on 
+input line 546.
+
+
+./ch4.tex:548: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.548 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/shacl-constraint-violations.png, id=1101, 1275.76625pt x 392
+.46625pt>
+File: images/ch4/survey/shacl-constraint-violations.png Graphic file (type png)
+
+<use images/ch4/survey/shacl-constraint-violations.png>
+Package pdftex.def Info: images/ch4/survey/shacl-constraint-violations.png  use
+d on input line 550.
+(pdftex.def)             Requested size: 426.79134pt x 131.29285pt.
+
+LaTeX Warning: Reference `survey-dl-query' on page 86 undefined on input line 5
+71.
+
+
+./ch4.tex:574: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.574 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/survey-dl-query.png, id=1104, 443.6575pt x 410.53375pt>
+File: images/ch4/survey/survey-dl-query.png Graphic file (type png)
+<use images/ch4/survey/survey-dl-query.png>
+Package pdftex.def Info: images/ch4/survey/survey-dl-query.png  used on input l
+ine 576.
+(pdftex.def)             Requested size: 426.79134pt x 394.92227pt.
+
+LaTeX Warning: Reference `survey-sparql-query' on page 86 undefined on input li
+ne 603.
+
+
+./ch4.tex:610: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.610 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/survey-sparql-query.png, id=1106, 612.2875pt x 525.965pt>
+File: images/ch4/survey/survey-sparql-query.png Graphic file (type png)
+<use images/ch4/survey/survey-sparql-query.png>
+Package pdftex.def Info: images/ch4/survey/survey-sparql-query.png  used on inp
+ut line 612.
+(pdftex.def)             Requested size: 426.79134pt x 366.61601pt.
+
+LaTeX Warning: Reference `survey-snap-sparql-query' on page 86 undefined on inp
+ut line 633.
+
+
+./ch4.tex:641: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.641 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/survey-snap-sparql-query.png, id=1107, 682.55pt x 437.635pt>
+
+File: images/ch4/survey/survey-snap-sparql-query.png Graphic file (type png)
+<use images/ch4/survey/survey-snap-sparql-query.png>
+Package pdftex.def Info: images/ch4/survey/survey-snap-sparql-query.png  used o
+n input line 643.
+(pdftex.def)             Requested size: 443.57848pt x 284.41263pt.
+
+LaTeX Warning: Reference `sec:csvtolodconversion' on page 86 undefined on input
+ line 653.
+
+
+./ch4.tex:655: Package acro Error: You've requested acronym `csv' on line 655 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.655 the \ac{csv} 
+                   file consisting of survey responses is converted into
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:658: Package acro Error: You've requested acronym `csv' on line 658 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.658 After importing the \ac{csv} 
+                                   and creating a new project,
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:660: Package acro Error: You've requested acronym `csv' on line 660 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.660 to describe the data stored in \ac{csv}
+                                             
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+LaTeX Warning: Reference `openrefine-rdf-skeleton' on page 86 undefined on inpu
+t line 675.
+
+
+./ch4.tex:676: Package acro Error: You've requested acronym `csv' on line 676 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.676 shows \ac{rdf} skeleton for \ac{csv} 
+                                           using survey ontology.
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:682: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.682 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/openrefine/openrefine-rdf-skeleton.png, id=1109, 637.38126pt x 609.
+27625pt>
+File: images/ch4/openrefine/openrefine-rdf-skeleton.png Graphic file (type png)
+
+<use images/ch4/openrefine/openrefine-rdf-skeleton.png>
+Package pdftex.def Info: images/ch4/openrefine/openrefine-rdf-skeleton.png  use
+d on input line 684.
+(pdftex.def)             Requested size: 443.57848pt x 424.01752pt.
+
+LaTeX Warning: Reference `openrefine-add-prefix' on page 86 undefined on input 
+line 700.
+
+
+./ch4.tex:704: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.704         \begin{figure}[htp]
+                                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/openrefine/openrefine-add-prefix.png, id=1110, 393.47pt x 155.58125
+pt>
+File: images/ch4/openrefine/openrefine-add-prefix.png Graphic file (type png)
+<use images/ch4/openrefine/openrefine-add-prefix.png>
+Package pdftex.def Info: images/ch4/openrefine/openrefine-add-prefix.png  used 
+on input line 706.
+(pdftex.def)             Requested size: 426.79134pt x 168.75641pt.
+
+LaTeX Warning: Reference `openrefine-manage-prefix' on page 86 undefined on inp
+ut line 712.
+
+
+./ch4.tex:714: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.714         \begin{figure}[htp]
+                                 
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/openrefine/openrefine-manage-prefix.png, id=1111, 441.65pt x 225.84
+375pt>
+File: images/ch4/openrefine/openrefine-manage-prefix.png Graphic file (type png
+)
+<use images/ch4/openrefine/openrefine-manage-prefix.png>
+Package pdftex.def Info: images/ch4/openrefine/openrefine-manage-prefix.png  us
+ed on input line 716.
+(pdftex.def)             Requested size: 426.79134pt x 218.25488pt.
+
+LaTeX Warning: Reference `openrefine-index' on page 86 undefined on input line 
+727.
+
+
+./ch4.tex:737: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.737 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/openrefine/openrefine-index.png, id=1112, 610.28pt x 436.63126pt>
+File: images/ch4/openrefine/openrefine-index.png Graphic file (type png)
+<use images/ch4/openrefine/openrefine-index.png>
+Package pdftex.def Info: images/ch4/openrefine/openrefine-index.png  used on in
+put line 739.
+(pdftex.def)             Requested size: 426.79134pt x 305.35997pt.
+
+./ch4.tex:747: Package acro Error: You've requested acronym `csv' on line 747 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.747 The next step is describing the \ac{csv} 
+                                               data
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+LaTeX Warning: Reference `openrefine-selecting-property' on page 86 undefined o
+n input line 751.
+
+
+./ch4.tex:753: Package acro Error: You've requested acronym `csv' on line 753 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.753 ...e selected for each field of the \ac{csv}
+                                                  
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:760: Package acro Error: You've requested acronym `csv' on line 760 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.760 of the \ac{csv}.
+                      
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:762: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.762 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/openrefine/openrefine-selecting-property.png, id=1113, 799.98875pt 
+x 557.08125pt>
+File: images/ch4/openrefine/openrefine-selecting-property.png Graphic file (typ
+e png)
+<use images/ch4/openrefine/openrefine-selecting-property.png>
+Package pdftex.def Info: images/ch4/openrefine/openrefine-selecting-property.pn
+g  used on input line 764.
+(pdftex.def)             Requested size: 426.79134pt x 297.20674pt.
+
+./ch4.tex:773: Package acro Error: You've requested acronym `csv' on line 773 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.773 ...used to view the description of \ac{csv} 
+                                                  data.
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+LaTeX Warning: Reference `openrefine-rdf-preview' on page 86 undefined on input
+ line 779.
+
+
+./ch4.tex:781: Package acro Error: You've requested acronym `csv' on line 781 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.781 ... to describe the data stored in \ac{csv}.
+                                                  
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:788: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.788 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/openrefine/openrefine-rdf-preview.png, id=1114, 765.86125pt x 527.9
+725pt>
+File: images/ch4/openrefine/openrefine-rdf-preview.png Graphic file (type png)
+<use images/ch4/openrefine/openrefine-rdf-preview.png>
+Package pdftex.def Info: images/ch4/openrefine/openrefine-rdf-preview.png  used
+ on input line 790.
+(pdftex.def)             Requested size: 426.79134pt x 294.22858pt.
+
+./ch4.tex:796: Package acro Error: You've requested acronym `csv' on line 796 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `csv'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.796 Once the data in \ac{csv}
+                               
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+LaTeX Warning: Reference `sec:announcinglod' on page 86 undefined on input line
+ 803.
+
+
+LaTeX Warning: Reference `survey-license' on page 86 undefined on input line 81
+9.
+
+
+./ch4.tex:821: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.821     \begin{figure}[htp]
+                             
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/survey-license.png, id=1117, 674.52pt x 210.7875pt>
+File: images/ch4/survey/survey-license.png Graphic file (type png)
+<use images/ch4/survey/survey-license.png>
+Package pdftex.def Info: images/ch4/survey/survey-license.png  used on input li
+ne 823.
+(pdftex.def)             Requested size: 426.79134pt x 133.37576pt.
+
+Overfull \hbox (7.99878pt too wide) in paragraph at lines 830--834
+[]\T1/lmr/m/n/12 The linked open dataset dis-cussed in this re-search has an op
+en li-cense: ``Attribution-
+ []
+
+
+LaTeX Warning: Reference `ontograf' on page 86 undefined on input line 858.
+
+
+./ch4.tex:865: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.865 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/ontograf.png, id=1119, 1202.4925pt x 617.30624pt>
+File: images/ch4/survey/ontograf.png Graphic file (type png)
+<use images/ch4/survey/ontograf.png>
+Package pdftex.def Info: images/ch4/survey/ontograf.png  used on input line 867
+.
+(pdftex.def)             Requested size: 443.57848pt x 227.71211pt.
+
+LaTeX Warning: Reference `webVOWL' on page 86 undefined on input line 874.
+
+
+./ch4.tex:881: Package acro Error: You've requested acronym `svg' on line 881 b
+ut you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `svg'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.881 ...wl} graph can be exported as an \ac{svg} 
+                                                  image file or a \ac{json} ...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:881: Package acro Error: You've requested acronym `json' on line 881 
+but you
+(acro)                apparently haven't defined it, yet!
+(acro)                Maybe you've misspelled `json'?
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.881 ...as an \ac{svg} image file or a \ac{json} 
+                                                  code file.
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+./ch4.tex:883: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.883 \begin{figure}[htp]
+                         
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/ch4/survey/webVOWL.png, id=1120, 870.25125pt x 692.5875pt>
+File: images/ch4/survey/webVOWL.png Graphic file (type png)
+<use images/ch4/survey/webVOWL.png>
+Package pdftex.def Info: images/ch4/survey/webVOWL.png  used on input line 885.
+
+(pdftex.def)             Requested size: 443.57848pt x 353.02472pt.
+./ch4.tex:890: Missing } inserted.
+<inserted text> 
+                }
+l.890 \end{doublespace}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [86]
+\openout2 = `ch5.aux'.
+
+ (./ch5.tex
+Chapter 5.
+
+LaTeX Warning: Reference `chap:methodology' on page 87 undefined on input line 
+25.
+
+[87
+
+
+
+
+]) [88]
+\openout2 = `appendix-owl.aux'.
+
+ (./appendix-owl.tex [89
+
 
 
 ]
@@ -1652,7 +3764,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 56--57
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[2
+[90
 
 ]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 58--59
@@ -1709,7 +3821,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 80--81
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[3]
+[91]
 Overfull \hbox (30.42635pt too wide) in paragraph at lines 86--87
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1774,7 +3886,7 @@ Overfull \hbox (38.42622pt too wide) in paragraph at lines 107--108
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[4]
+[92]
 Overfull \hbox (56.4264pt too wide) in paragraph at lines 109--110
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -1829,7 +3941,7 @@ Overfull \hbox (56.4264pt too wide) in paragraph at lines 130--131
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[5]
+[93]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 132--133
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -1874,7 +3986,7 @@ Overfull \hbox (38.42622pt too wide) in paragraph at lines 150--151
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[6]
+[94]
 Overfull \hbox (56.4264pt too wide) in paragraph at lines 152--153
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -1934,7 +4046,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 176--177
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[7]
+[95]
 Overfull \hbox (26.4261pt too wide) in paragraph at lines 178--179
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2004,7 +4116,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 203--204
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[8]
+[96]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 205--206
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2069,7 +4181,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 230--231
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[9]
+[97]
 Overfull \hbox (38.42622pt too wide) in paragraph at lines 232--233
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2129,7 +4241,7 @@ Overfull \hbox (56.4264pt too wide) in paragraph at lines 256--257
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[10]
+[98]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 258--259
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2189,7 +4301,7 @@ Overfull \hbox (26.4261pt too wide) in paragraph at lines 282--283
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[11]
+[99]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 284--285
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2244,7 +4356,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 306--307
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[12]
+[100]
 Overfull \hbox (14.42598pt too wide) in paragraph at lines 308--309
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2304,7 +4416,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 332--333
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[13]
+[101]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 334--335
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2369,7 +4481,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 359--360
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[14]
+[102]
 Overfull \hbox (38.42622pt too wide) in paragraph at lines 361--362
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2434,7 +4546,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 384--385
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[15]
+[103]
 Overfull \hbox (26.4261pt too wide) in paragraph at lines 386--387
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2494,7 +4606,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 410--411
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[16]
+[104]
 Overfull \hbox (14.42598pt too wide) in paragraph at lines 412--413
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2544,7 +4656,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 432--433
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[17]
+[105]
 Overfull \hbox (14.42598pt too wide) in paragraph at lines 434--435
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2599,7 +4711,7 @@ Overfull \hbox (14.42598pt too wide) in paragraph at lines 456--457
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[18]
+[106]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 458--459
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2654,7 +4766,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 480--481
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[19]
+[107]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 482--483
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2709,7 +4821,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 504--505
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[20]
+[108]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 508--509
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -2774,7 +4886,7 @@ Overfull \hbox (38.42622pt too wide) in paragraph at lines 532--533
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[21]
+[109]
 Overfull \hbox (56.4264pt too wide) in paragraph at lines 534--535
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2829,7 +4941,7 @@ Overfull \hbox (56.4264pt too wide) in paragraph at lines 556--557
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[22]
+[110]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 558--559
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2884,7 +4996,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 580--581
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[23]
+[111]
 Overfull \hbox (26.4261pt too wide) in paragraph at lines 582--583
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -2944,7 +5056,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 606--607
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[24]
+[112]
 Overfull \hbox (14.42598pt too wide) in paragraph at lines 608--609
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3009,7 +5121,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 631--632
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[25]
+[113]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 634--635
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3074,7 +5186,7 @@ Overfull \hbox (38.42622pt too wide) in paragraph at lines 658--659
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[26]
+[114]
 Overfull \hbox (56.4264pt too wide) in paragraph at lines 660--661
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3134,7 +5246,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 684--685
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[27]
+[115]
 Overfull \hbox (26.4261pt too wide) in paragraph at lines 686--687
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3189,7 +5301,7 @@ Overfull \hbox (26.4261pt too wide) in paragraph at lines 708--709
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[28]
+[116]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 710--711
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3244,7 +5356,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 732--733
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[29]
+[117]
 Overfull \hbox (14.42598pt too wide) in paragraph at lines 734--735
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3309,7 +5421,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 760--761
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[30]
+[118]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 766--767
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3359,7 +5471,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 782--783
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[31]
+[119]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 788--789
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3409,7 +5521,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 804--805
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[32]
+[120]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 810--811
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3459,7 +5571,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 826--827
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[33]
+[121]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 832--833
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3524,7 +5636,7 @@ Overfull \hbox (38.42622pt too wide) in paragraph at lines 856--857
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[34]
+[122]
 Overfull \hbox (56.4264pt too wide) in paragraph at lines 858--859
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3579,7 +5691,7 @@ Overfull \hbox (56.4264pt too wide) in paragraph at lines 880--881
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[35]
+[123]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 882--883
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3634,7 +5746,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 904--905
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[36]
+[124]
 Overfull \hbox (26.4261pt too wide) in paragraph at lines 906--907
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3684,7 +5796,7 @@ Overfull \hbox (50.42635pt too wide) in paragraph at lines 926--927
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[37]
+[125]
 Overfull \hbox (26.4261pt too wide) in paragraph at lines 928--929
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3739,7 +5851,7 @@ Overfull \hbox (26.4261pt too wide) in paragraph at lines 950--951
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[38]
+[126]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 952--953
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -3809,7 +5921,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 977--978
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[39]
+[127]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 983--984
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3859,7 +5971,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 999--1000
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[40]
+[128]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 1005--1006
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3909,7 +6021,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1021--1022
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[41]
+[129]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 1027--1028
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -3969,7 +6081,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1048--1049
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[42]
+[130]
 Overfull \hbox (38.42622pt too wide) in paragraph at lines 1050--1051
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -4039,7 +6151,7 @@ Overfull \hbox (26.4261pt too wide) in paragraph at lines 1075--1076
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[43]
+[131]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 1077--1078
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -4104,7 +6216,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1102--1103
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[44]
+[132]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 1104--1105
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -4159,7 +6271,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1126--1127
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[45]
+[133]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 1132--1133
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -4204,7 +6316,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1146--1147
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[46]
+[134]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 1148--1149
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -4259,7 +6371,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1170--1171
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[47]
+[135]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 1176--1177
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -4309,7 +6421,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1192--1193
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[48]
+[136]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 1198--1199
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -4359,7 +6471,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1214--1215
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[49]
+[137]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 1219--1220
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -4419,7 +6531,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1241--1242
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[50]
+[138]
 Overfull \hbox (38.42622pt too wide) in paragraph at lines 1243--1244
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -4459,7 +6571,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1257--1258
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[51]
+[139]
 Overfull \hbox (36.4264pt too wide) in paragraph at lines 1263--1264
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -4529,7 +6641,7 @@ Overfull \hbox (56.4264pt too wide) in paragraph at lines 1286--1287
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[52]
+[140]
 Overfull \hbox (50.42635pt too wide) in paragraph at lines 1288--1289
 [][][][][][][][][][][][][][][][][][] 
  []
@@ -4559,21 +6671,21 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 1298--1299
 [][][][][][][][][][][][][][][][][][] 
  []
 
-[53] [54]
+[141] [142]
 Appendix B.
-) [55
+) [143
 
 ]
 \openout2 = `appendix-data.aux'.
 
  (./appendix-data.tex
 Appendix C.
-[56
+[144
 
 
 
 
-] [57]) [58] (./parita-msc.bbl
+] [145]) [146] (./parita-msc.bbl
 Underfull \hbox (badness 5203) in paragraph at lines 42--47
 []\T1/lmr/m/n/12 David Beck-ett.  RDF 1.1 N-Triples.  \T1/lmr/m/it/12 W3C Rec-o
 m-men-da-tion\T1/lmr/m/n/12 , 2014.
@@ -4585,11 +6697,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--53
 -da-tion\T1/lmr/m/n/12 , 1996.
  []
 
-[59
+[147
 
 
 
-] [60]
+] [148]
 Underfull \hbox (badness 10000) in paragraph at lines 161--165
 []\T1/lmr/m/n/12 Sean Fal-coner.  On-tograf Pro-tégé Plu-gin.  \T1/lmr/m/it/12 
 Avail-able at:
@@ -4608,13 +6720,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--198
 ets / teaching / pdf / feedback -[]
  []
 
-[61])
+[149])
 
 Package acro Warning: Acronym properties may have changed. Rerun to get them
 (acro)                synchronized.
 
-[62] (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux)
-(./appendix-owl.aux) (./appendix-data.aux))
+
+./parita-msc.tex:142: LaTeX Error: \begin{doublespace} on input line 5 ended by
+ \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[150] (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux) (./ch1.aux)
+(./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix-owl.aux)
+(./appendix-data.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -4624,308 +6754,79 @@ Package rerunfilecheck Warning: File `parita-msc.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `parita-msc.out':
-(rerunfilecheck)             Before: 63DF3BC7B2ABA9F8BB8AD319DA24009C;8346
-(rerunfilecheck)             After:  DAFC16AB21173EB7B7CC847214E6FD04;1677.
- ) 
+(rerunfilecheck)             Before: 9B6883DBE1897A03A5AB8800F634F8A7;3881
+(rerunfilecheck)             After:  6FD2EA7C75E479F0D8AAFBBAB653F68F;12635.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 5 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 26238 strings out of 478276
- 534434 string characters out of 5846491
- 1285395 words of memory out of 5000000
- 42485 multiletter control sequences out of 15000+600000
- 533026 words of font info for 103 fonts, out of 8000000 for 9000
+ 27790 strings out of 478276
+ 575213 string characters out of 5846491
+ 1337317 words of memory out of 5000000
+ 43668 multiletter control sequences out of 15000+600000
+ 542467 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,80p,1594b,2063s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{table.caption.53} has been referenced but does no
-t exist, replaced by a fixed one
+ 68i,12n,80p,1630b,2627s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.21} has been referenc
+ed but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.15} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.27} has been referenced but does not 
+pdfTeX warning (dest): name{figure.caption.19} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.4.5} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.22} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.4.4} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.19} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.4.3} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.4.2} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.10} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.4.1} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.51} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.50} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.49} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.48} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.47} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.46} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.45} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.44} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.43} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.41} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.40} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.39} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.38} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.36} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.34} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.33} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.32} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.31} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.24} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.18} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.15} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.14} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.8} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.3.4.3} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.3.1} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.3.4.2} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.1.1.1} has been referenced but does not 
 exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.8.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.8.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.8} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.7.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.7.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.6.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.6.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
-replaced by a fixed one
 
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/loca
 l/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021
-/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm
-/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/
-texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021
-/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dis
-t/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
-pe1/public/lm/lmtti10.pfb>
-Output written on parita-msc.pdf (73 pages, 415979 bytes).
+/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/f
+onts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1
+/public/niceframe-type1/bbding10.pfb></usr/local/texlive/2021/texmf-dist/fonts/
+type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
+ic/lm/lmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr1
+0.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr
+/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texli
+ve/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2021/texmf-dist/fon
+ts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/l
+mtt12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtti10.pfb
+>
+Output written on parita-msc.pdf (158 pages, 2008836 bytes).
 PDF statistics:
- 2474 PDF objects out of 2487 (max. 8388607)
- 2355 compressed objects within 24 object streams
- 1567 named destinations out of 1728 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3212 PDF objects out of 3580 (max. 8388607)
+ 2868 compressed objects within 29 object streams
+ 1816 named destinations out of 2073 (max. 500000)
+ 468 words of extra memory for PDF output out of 10000 (max. 10000000)
 
