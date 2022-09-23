@@ -10,6 +10,7 @@
 \contentsline {section}{\numberline {1.3}Organization}{4}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Related Work}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The Web}{5}{section.2.1}%
+<<<<<<< Updated upstream
 \contentsline {subsection}{\numberline {2.1.1}Semantic Web}{5}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}The Semantic Web Stack}{6}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Linked Open Data}{7}{section.2.2}%
@@ -83,3 +84,40 @@
 \contentsline {chapter}{\numberline {B}SHACL Shapes for Data Validation: SurveyShapes.txt}{106}{appendix.B}%
 \contentsline {chapter}{\numberline {C}CSV to Linked Data: sample.ttl}{108}{appendix.C}%
 \contentsline {chapter}{References}{161}{lstnumber.-6.1268}%
+=======
+\contentsline {section}{\numberline {2.2}Semantic Web}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Semantic Web Stack}{6}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Linked Open Data}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Linked Data}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Linked (Open) Data}{9}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Resource Description Framework}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Uniform Resource Identifier}{18}{subsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Syntax of a \ac {uri}}{18}{subsubsection.2.4.1.1}%
+\contentsline {section}{\numberline {2.5}Linked Data Life Cycle}{19}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Conversion of Data from CSV to RDF}{20}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Ontology Editors}{22}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Applications of Linked Open Data}{23}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Wikidata}{23}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}DBpedia}{28}{subsection.2.8.2}%
+\contentsline {chapter}{\numberline {3}Proof Of Concept}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ontology in Web Semantics}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}\ac {owl} Ontologies}{32}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Components of \ac {owl} Ontologies}{32}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}\ac {owl} Ontology Inconsistencies and Reasoner}{34}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\ac {owl} Ontology for Survey}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Development Tool for the Creation of New \ac {owl} Vocabularies}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Protégé}{38}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Usability of Protégé}{39}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{42}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Classes and Class Hierarchy}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Object Properties and Object Property Hierarchy}{50}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Data Properties and Data Property Hierarchy}{54}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Individuals}{56}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Visualization Tools for \ac {owl} Ontology}{58}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}OntoGraf}{58}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}WebVOWL}{60}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{62}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{62}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{63}{section.5.2}%
+\contentsline {chapter}{References}{64}{section.5.2}%
+>>>>>>> Stashed changes

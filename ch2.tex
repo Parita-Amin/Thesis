@@ -571,6 +571,7 @@ shows its components.
 
 \section{Linked Data Life Cycle}\label{sec:linkeddatalifecycle}
 
+<<<<<<< Updated upstream
 The Linked Data Life Cycle includes multiple stages as described by Ngomo et al.~\cite{ngomo2014introduction} 
 which are listed in Table~\ref{ldlc-stages}. 
 Each stage of this life cycle is independent yet linked to one another. 
@@ -584,6 +585,17 @@ is data extraction along with conversion of the extracted data
 Once the data is in \ac{rdf} form, 
 any or all of the other stages listed in Table~\ref{ldlc-stages} 
 can be performed.
+=======
+The Linked Data Life Cycle includes multiple stages as described by 
+Ngomo et al.~\cite{ngomo2014introduction} which are listed in 
+Table~\ref{table:linked-data-lifecycle}. 
+Each stage of this life cycle is independent yet linked to one another. 
+So, it is not mandatory to go through all the stages sequentially to 
+publish the data on the web. 
+It is necessary to use a procedure that follows the life cycle to ensure the quality of data to be published as linked data. 
+The first stage, generally, is data extraction along with conversion of the extracted data (in forms other than \ac{rdf}) into \ac{rdf}. 
+Once the data is in \ac{rdf} form, any or all of the other stages listed in Table~\ref{table:linked-data-lifecycle} can be performed.
+>>>>>>> Stashed changes
 
 \begin{table}[h!]
     \centering
@@ -703,6 +715,7 @@ This implies the following statements:
 
     \item All ladies are humans
     
+<<<<<<< Updated upstream
     \item All members of class ``Lady'' are members of class ``Human''
     
     \item Being a ``Lady'' implies that individual is ``Human''
@@ -744,6 +757,17 @@ recommended by \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf}
 or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}. 
 
 \subsection{Open-source Tools Recommended by W3C}\label{subsec:w3ctools}
+=======
+\section{Conversion of Data from CSV to RDF}
+
+The preferred format of the data published on the semantic web is \ac{rdf} format. 
+Many data scientists use tables and spreadsheets to store and publish data 
+using CSV files over \ac{rdf} format as conversion of data to \ac{rdf} 
+is comparatively difficult. 
+The data used by Dr. Hepting has been stored in tabular format . To convert tabular data into \ac{rdf} 
+(Appendix~\ref{chap:appendix-data} consists of \ac{rdf} code for the survey data, 
+\ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} recommends the following open source tools~\cite{ermilov2013csv},
+>>>>>>> Stashed changes
 
 \begin{itemize}
    

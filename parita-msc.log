@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  21 SEP 2022 18:47
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.4)  23 SEP 2022 11:53
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1138,6 +1142,17 @@ Overfull \hbox (45.91994pt too wide) in paragraph at lines 519--519
 []|\T1/lmr/m/n/12 Resource|  
  []
 
+<<<<<<< Updated upstream
+=======
+ (./ch2.tex
+Chapter 2.
+<images/ch2/semantic-web-stack.png, id=457, 601.24625pt x 327.2225pt>
+File: images/ch2/semantic-web-stack.png Graphic file (type png)
+<use images/ch2/semantic-web-stack.png>
+Package pdftex.def Info: images/ch2/semantic-web-stack.png  used on input line 
+33.
+(pdftex.def)             Requested size: 443.57848pt x 241.42186pt.
+>>>>>>> Stashed changes
 
 Overfull \hbox (46.34317pt too wide) in paragraph at lines 524--524
 []|\T1/lmr/m/n/12 Identifier|  
@@ -1483,6 +1498,26 @@ Overfull \hbox (1.53273pt too wide) in paragraph at lines 257--257
 []|\T1/lmr/m/n/12 Respondent|  
  []
 
+<<<<<<< Updated upstream
+=======
+[9]
+<images/ch2/Figure4.png, id=517, 601.24625pt x 130.4875pt>
+File: images/ch2/Figure4.png Graphic file (type png)
+<use images/ch2/Figure4.png>
+Package pdftex.def Info: images/ch2/Figure4.png  used on input line 93.
+(pdftex.def)             Requested size: 426.79134pt x 92.62883pt.
+<images/ch2/Figure5.png, id=519, 568.1225pt x 107.40125pt>
+File: images/ch2/Figure5.png Graphic file (type png)
+<use images/ch2/Figure5.png>
+Package pdftex.def Info: images/ch2/Figure5.png  used on input line 101.
+(pdftex.def)             Requested size: 426.79134pt x 80.68674pt.
+ [10]
+<images/ch2/Figure6.png, id=532, 572.1375pt x 188.705pt>
+File: images/ch2/Figure6.png Graphic file (type png)
+<use images/ch2/Figure6.png>
+Package pdftex.def Info: images/ch2/Figure6.png  used on input line 110.
+(pdftex.def)             Requested size: 426.79134pt x 140.76823pt.
+>>>>>>> Stashed changes
 
 Overfull \hbox (1.53273pt too wide) in paragraph at lines 258--258
 []|\T1/lmr/m/n/12 Respondent|  
@@ -1496,6 +1531,7 @@ Overfull \hbox (20.58328pt too wide) in paragraph at lines 248--263
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<<<<<<< Updated upstream
 <images/ch4/survey/instances-of-survey-class.png, id=1434, 672.5125pt x 313.17p
 t>
 File: images/ch4/survey/instances-of-survey-class.png Graphic file (type png)
@@ -1626,6 +1662,56 @@ Package pdftex.def Info: images/ch4/survey/ontograf.png  used on input line 692
 Overfull \hbox (14.97987pt too wide) in paragraph at lines 699--707
 []\T1/lmr/m/n/12 Figure []4.21[] shows the graph-i-cal rep-re-sen-ta-tion of th
 e sur-vey on-tol-ogy us-ing Web[]VOWL.
+=======
+[11 <./images/ch2/Figure4.png> <./images/ch2/Figure5.png>] [12 <./images/ch2/Fi
+gure6.png>]
+<images/ch2/Figure7.png, id=556, 739.76375pt x 411.5375pt>
+File: images/ch2/Figure7.png Graphic file (type png)
+<use images/ch2/Figure7.png>
+Package pdftex.def Info: images/ch2/Figure7.png  used on input line 147.
+(pdftex.def)             Requested size: 426.79134pt x 237.42973pt.
+ [13 <./images/ch2/Figure7.png>]
+<images/ch2/Figure8.png, id=569, 501.875pt x 88.33pt>
+File: images/ch2/Figure8.png Graphic file (type png)
+<use images/ch2/Figure8.png>
+Package pdftex.def Info: images/ch2/Figure8.png  used on input line 155.
+(pdftex.def)             Requested size: 426.79134pt x 75.11858pt.
+<images/ch2/Figure9.png, id=572, 501.875pt x 104.39pt>
+File: images/ch2/Figure9.png Graphic file (type png)
+<use images/ch2/Figure9.png>
+Package pdftex.def Info: images/ch2/Figure9.png  used on input line 163.
+(pdftex.def)             Requested size: 426.79134pt x 88.77649pt.
+<images/ch2/Figure10.png, id=580, 400.49625pt x 206.7725pt>
+File: images/ch2/Figure10.png Graphic file (type png)
+<use images/ch2/Figure10.png>
+Package pdftex.def Info: images/ch2/Figure10.png  used on input line 177.
+(pdftex.def)             Requested size: 398.33858pt x 205.67085pt.
+ [14 <./images/ch2/Figure8.png> <./images/ch2/Figure9.png>]
+<images/ch2/Figure11.png, id=595, 618.31pt x 158.5925pt>
+File: images/ch2/Figure11.png Graphic file (type png)
+<use images/ch2/Figure11.png>
+Package pdftex.def Info: images/ch2/Figure11.png  used on input line 197.
+(pdftex.def)             Requested size: 426.79134pt x 109.47247pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <./images/ch2/Figure10.png> <./images/ch2/Figure11.png>]
+<images/ch2/Figure12.png, id=610, 687.56876pt x 386.44376pt>
+File: images/ch2/Figure12.png Graphic file (type png)
+<use images/ch2/Figure12.png>
+Package pdftex.def Info: images/ch2/Figure12.png  used on input line 216.
+(pdftex.def)             Requested size: 426.79134pt x 239.87569pt.
+ [16 <./images/ch2/Figure12.png>]
+<images/ch2/Figure13.png, id=620, 687.56876pt x 400.49625pt>
+File: images/ch2/Figure13.png Graphic file (type png)
+<use images/ch2/Figure13.png>
+Package pdftex.def Info: images/ch2/Figure13.png  used on input line 227.
+(pdftex.def)             Requested size: 426.79134pt x 248.59843pt.
+ [17 <./images/ch2/Figure13.png>]
+Overfull \hbox (45.9096pt too wide) in paragraph at lines 245--245
+[]|\T1/cmr/m/n/12 Resource|  
+>>>>>>> Stashed changes
  []
 
 <images/ch4/survey/webVOWL.png, id=1583, 870.25125pt x 692.5875pt>
@@ -1664,6 +1750,19 @@ Overfull \hbox (38.42622pt too wide) in paragraph at lines 37--38
 [][][][][][][][][][][][][][][][][][][][][]  
  []
 
+<<<<<<< Updated upstream
+=======
+<images/ch2/Figure14.png, id=645, 733.74126pt x 115.43124pt>
+File: images/ch2/Figure14.png Graphic file (type png)
+<use images/ch2/Figure14.png>
+Package pdftex.def Info: images/ch2/Figure14.png  used on input line 272.
+(pdftex.def)             Requested size: 426.79134pt x 67.1439pt.
+<images/ch2/Figure15.png, id=648, 696.6025pt x 182.6825pt>
+File: images/ch2/Figure15.png Graphic file (type png)
+<use images/ch2/Figure15.png>
+Package pdftex.def Info: images/ch2/Figure15.png  used on input line 279.
+(pdftex.def)             Requested size: 426.79134pt x 111.92397pt.
+>>>>>>> Stashed changes
 
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 57--58
 [][][][][][][][][][][][][][][][][][][][][][]  
@@ -1673,6 +1772,7 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 57--58
 
 
 
+<<<<<<< Updated upstream
 ]
 Overfull \hbox (8.42592pt too wide) in paragraph at lines 70--71
 [][][][][][][][][][][][][][][][][][][][][][]  
@@ -1717,6 +1817,48 @@ Overfull \hbox (20.42604pt too wide) in paragraph at lines 97--98
 Overfull \hbox (32.42616pt too wide) in paragraph at lines 98--99
 [][][][][][][][][][][][][][][][][][][][][][]  
  []
+=======
+LaTeX Warning: Reference `chap:appendix-data' on page 19 undefined on input lin
+e 315.
+
+[19] [20 <./images/ch2/Figure14.png> <./images/ch2/Figure15.png>] [21] [22]
+[23]
+<images/ch2/Figure16.png, id=716, 615.29875pt x 792.9625pt>
+File: images/ch2/Figure16.png Graphic file (type png)
+<use images/ch2/Figure16.png>
+Package pdftex.def Info: images/ch2/Figure16.png  used on input line 357.
+(pdftex.def)             Requested size: 426.79134pt x 550.03651pt.
+ [24] [25 <./images/ch2/Figure16.png>]
+Overfull \hbox (0.74484pt too wide) in paragraph at lines 419--420
+[]\T1/cmr/m/n/12 The URI for an en-tity on Wiki-data is ``https://www.wikidata.
+org/wiki/<id>'', where
+ []
+
+<images/ch2/Figure17.png, id=729, 626.34pt x 485.815pt>
+File: images/ch2/Figure17.png Graphic file (type png)
+<use images/ch2/Figure17.png>
+Package pdftex.def Info: images/ch2/Figure17.png  used on input line 423.
+(pdftex.def)             Requested size: 426.79134pt x 331.04665pt.
+[26] [27 <./images/ch2/Figure17.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
+[][][]\T1/cmr/m/n/10 https://www.dummies.com/programming/big-data/data-science/
+how-pattern-matching-works-
+ []
+
+[28]
+<images/ch2/Figure18.png, id=761, 679.53876pt x 664.4825pt>
+File: images/ch2/Figure18.png Graphic file (type png)
+<use images/ch2/Figure18.png>
+Package pdftex.def Info: images/ch2/Figure18.png  used on input line 436.
+(pdftex.def)             Requested size: 426.79134pt x 417.3385pt.
+<images/ch2/Figure19.png, id=764, 626.34pt x 321.2pt>
+File: images/ch2/Figure19.png Graphic file (type png)
+<use images/ch2/Figure19.png>
+Package pdftex.def Info: images/ch2/Figure19.png  used on input line 444.
+(pdftex.def)             Requested size: 426.79134pt x 218.87381pt.
+ [29 <./images/ch2/Figure18.png>]) [30 <./images/ch2/Figure19.png>]
+\openout2 = `ch3.aux'.
+>>>>>>> Stashed changes
 
 
 Overfull \hbox (20.42604pt too wide) in paragraph at lines 99--100
@@ -1729,9 +1871,32 @@ Overfull \hbox (26.4261pt too wide) in paragraph at lines 104--105
  []
 
 
+<<<<<<< Updated upstream
 Overfull \hbox (32.42616pt too wide) in paragraph at lines 105--106
 [][][][][][][][][][][][][][][][][][][][][][]  
  []
+=======
+]
+<images/ch3/Figure1.png, id=790, 307.1475pt x 159.59625pt>
+File: images/ch3/Figure1.png Graphic file (type png)
+<use images/ch3/Figure1.png>
+Package pdftex.def Info: images/ch3/Figure1.png  used on input line 17.
+(pdftex.def)             Requested size: 227.62204pt x 118.27469pt.
+<images/ch3/Figure2.png, id=794, 307.1475pt x 201.75375pt>
+File: images/ch3/Figure2.png Graphic file (type png)
+<use images/ch3/Figure2.png>
+Package pdftex.def Info: images/ch3/Figure2.png  used on input line 25.
+(pdftex.def)             Requested size: 227.62204pt x 149.51707pt.
+ [32] [33 <./images/ch3/Figure1.png> <./images/ch3/Figure2.png>]
+<images/ch3/Figure3.png, id=815, 307.1475pt x 312.16624pt>
+File: images/ch3/Figure3.png Graphic file (type png)
+<use images/ch3/Figure3.png>
+Package pdftex.def Info: images/ch3/Figure3.png  used on input line 40.
+(pdftex.def)             Requested size: 227.62204pt x 231.34236pt.
+ [34]
+[35 <./images/ch3/Figure3.png>]) [36]
+\openout2 = `ch4.aux'.
+>>>>>>> Stashed changes
 
 
 Overfull \hbox (20.42604pt too wide) in paragraph at lines 106--107
@@ -1743,16 +1908,111 @@ Overfull \hbox (8.42592pt too wide) in paragraph at lines 112--113
 [][][][][][][][][][][][][][][][][][][][][][]  
  []
 
+<<<<<<< Updated upstream
+=======
+]
+<images/ch4/Figure1.png, id=860, 271.0125pt x 240.9pt>
+File: images/ch4/Figure1.png Graphic file (type png)
+<use images/ch4/Figure1.png>
+Package pdftex.def Info: images/ch4/Figure1.png  used on input line 25.
+(pdftex.def)             Requested size: 443.57848pt x 394.30661pt.
+ [38] [39] [40 <./images/ch4/Figure1.png>] [41]
+<images/ch4/Figure2.png, id=886, 558.085pt x 641.39626pt>
+File: images/ch4/Figure2.png Graphic file (type png)
+<use images/ch4/Figure2.png>
+Package pdftex.def Info: images/ch4/Figure2.png  used on input line 53.
+(pdftex.def)             Requested size: 443.57848pt x 509.80972pt.
+ [42]
+<images/ch4/Figure3.png, id=896, 1439.3775pt x 791.95876pt>
+File: images/ch4/Figure3.png Graphic file (type png)
+<use images/ch4/Figure3.png>
+Package pdftex.def Info: images/ch4/Figure3.png  used on input line 60.
+(pdftex.def)             Requested size: 443.57848pt x 244.05457pt.
+<images/ch4/Figure4.png, id=898, 821.0675pt x 448.67625pt>
+File: images/ch4/Figure4.png Graphic file (type png)
+<use images/ch4/Figure4.png>
+Package pdftex.def Info: images/ch4/Figure4.png  used on input line 68.
+(pdftex.def)             Requested size: 443.57848pt x 242.3911pt.
+<images/ch4/Figure5.png, id=900, 600.2425pt x 380.42125pt>
+File: images/ch4/Figure5.png Graphic file (type png)
+<use images/ch4/Figure5.png>
+Package pdftex.def Info: images/ch4/Figure5.png  used on input line 76.
+(pdftex.def)             Requested size: 443.57848pt x 281.1358pt.
+<images/ch4/Figure6.png, id=902, 1158.3275pt x 707.64375pt>
+File: images/ch4/Figure6.png Graphic file (type png)
+<use images/ch4/Figure6.png>
+Package pdftex.def Info: images/ch4/Figure6.png  used on input line 83.
+(pdftex.def)             Requested size: 443.57848pt x 270.99138pt.
+<images/ch4/Figure7.png, id=905, 1153.30875pt x 707.64375pt>
+File: images/ch4/Figure7.png Graphic file (type png)
+<use images/ch4/Figure7.png>
+Package pdftex.def Info: images/ch4/Figure7.png  used on input line 90.
+(pdftex.def)             Requested size: 443.57848pt x 272.16833pt.
+ [43] [44 <./images/ch4/Figure2.png>] [45 <./images/ch4/Figure3.png> <./images/
+ch4/Figure4.png>]
+[46 <./images/ch4/Figure5.png> <./images/ch4/Figure6.png>]
+<images/ch4/Figure8.png, id=935, 765.86125pt x 581.17125pt>
+File: images/ch4/Figure8.png Graphic file (type png)
+<use images/ch4/Figure8.png>
+Package pdftex.def Info: images/ch4/Figure8.png  used on input line 99.
+(pdftex.def)             Requested size: 443.57848pt x 336.60956pt.
+ [47 <./images/ch4/Figure7.png>]
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 48 might be wrong on input line 115
+.
+
+[48 <./images/ch4/Figure8.png>]
+<images/ch4/Figure9.png, id=953, 594.22pt x 399.4925pt>
+File: images/ch4/Figure9.png Graphic file (type png)
+<use images/ch4/Figure9.png>
+Package pdftex.def Info: images/ch4/Figure9.png  used on input line 139.
+(pdftex.def)             Requested size: 443.57848pt x 298.22879pt.
+ [49] [50 <./images/ch4/Figure9.png>]
+<images/ch4/Figure10.png, id=966, 474.77374pt x 179.67125pt>
+File: images/ch4/Figure10.png Graphic file (type png)
+<use images/ch4/Figure10.png>
+Package pdftex.def Info: images/ch4/Figure10.png  used on input line 147.
+(pdftex.def)             Requested size: 443.57848pt x 167.87111pt.
+<images/ch4/Figure11.png, id=970, 474.77374pt x 320.19624pt>
+File: images/ch4/Figure11.png Graphic file (type png)
+<use images/ch4/Figure11.png>
+Package pdftex.def Info: images/ch4/Figure11.png  used on input line 158.
+(pdftex.def)             Requested size: 443.57848pt x 299.16698pt.
+<images/ch4/Figure12.png, id=974, 727.71875pt x 491.8375pt>
+File: images/ch4/Figure12.png Graphic file (type png)
+<use images/ch4/Figure12.png>
+Package pdftex.def Info: images/ch4/Figure12.png  used on input line 165.
+(pdftex.def)             Requested size: 443.57848pt x 299.8028pt.
+ [51 <./images/ch4/Figure10.png>] [52 <./images/ch4/Figure11.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+>>>>>>> Stashed changes
 
 Overfull \hbox (20.42604pt too wide) in paragraph at lines 120--121
 [][][][][][][][][][][][][][][][][][][][][][]  
  []
 
+<<<<<<< Updated upstream
 
 Overfull \hbox (2.42586pt too wide) in paragraph at lines 122--123
 [][][][][][][][][][][][][][][][][][][][][][]  
  []
 
+=======
+<images/ch4/Figure13.png, id=991, 558.085pt x 429.605pt>
+File: images/ch4/Figure13.png Graphic file (type png)
+<use images/ch4/Figure13.png>
+Package pdftex.def Info: images/ch4/Figure13.png  used on input line 211.
+(pdftex.def)             Requested size: 443.57848pt x 341.46878pt.
+[53 <./images/ch4/Figure12.png>] [54]
+<images/ch4/Figure14.png, id=1004, 1062.97125pt x 565.11125pt>
+File: images/ch4/Figure14.png Graphic file (type png)
+<use images/ch4/Figure14.png>
+Package pdftex.def Info: images/ch4/Figure14.png  used on input line 218.
+(pdftex.def)             Requested size: 443.57848pt x 235.82747pt.
+>>>>>>> Stashed changes
 
 Overfull \hbox (2.42586pt too wide) in paragraph at lines 127--128
 [][][][][][][][][][][][][][][][][][][][][]  
@@ -1804,6 +2064,7 @@ Overfull \hbox (2.42586pt too wide) in paragraph at lines 178--179
  []
 
 
+<<<<<<< Updated upstream
 Overfull \hbox (56.4264pt too wide) in paragraph at lines 189--191
 [][][][][][][][][][][][][][][][][] 
  []
@@ -1823,6 +2084,45 @@ Overfull \hbox (452.43044pt too wide) in paragraph at lines 198--199
 [][][][][][][][][][][][][][][][][][][][][]  
  []
 
+=======
+Overfull \hbox (1.53156pt too wide) in paragraph at lines 235--235
+[]|\T1/cmr/m/n/12 Respondent|  
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/ch4/Figure15.png, id=1006, 505.89pt x 342.27875pt>
+File: images/ch4/Figure15.png Graphic file (type png)
+<use images/ch4/Figure15.png>
+Package pdftex.def Info: images/ch4/Figure15.png  used on input line 245.
+(pdftex.def)             Requested size: 443.57848pt x 300.1251pt.
+[55 <./images/ch4/Figure13.png>]
+<images/ch4/Figure16.png, id=1013, 1109.14375pt x 613.29124pt>
+File: images/ch4/Figure16.png Graphic file (type png)
+<use images/ch4/Figure16.png>
+Package pdftex.def Info: images/ch4/Figure16.png  used on input line 252.
+(pdftex.def)             Requested size: 443.57848pt x 245.2747pt.
+ [56 <./images/ch4/Figure14.png>] [57 <./images/ch4/Figure15.png> <./images/ch4
+/Figure16.png>] [58]
+<images/ch4/Figure17.png, id=1036, 1444.39626pt x 605.26125pt>
+File: images/ch4/Figure17.png Graphic file (type png)
+<use images/ch4/Figure17.png>
+Package pdftex.def Info: images/ch4/Figure17.png  used on input line 264.
+(pdftex.def)             Requested size: 443.57848pt x 185.87428pt.
+ [59 <./images/ch4/Figure17.png>]
+<images/ch4/Figure18.png, id=1048, 1398.22375pt x 581.17125pt>
+File: images/ch4/Figure18.png Graphic file (type png)
+<use images/ch4/Figure18.png>
+Package pdftex.def Info: images/ch4/Figure18.png  used on input line 279.
+(pdftex.def)             Requested size: 443.57848pt x 184.36462pt.
+) [60] [61 <./images/ch4/Figure18.png>]
+\openout2 = `ch5.aux'.
+
+ (./ch5.tex
+Chapter 5.
+[62
+>>>>>>> Stashed changes
 
 Overfull \hbox (176.42763pt too wide) in paragraph at lines 203--205
 [][][][][][][][][][][][][][][][][] 
@@ -1838,19 +2138,38 @@ Overfull \hbox (296.42885pt too wide) in paragraph at lines 210--212
 [][][][][][][][][][][][][][][][][] 
  []
 
+<<<<<<< Updated upstream
 
 Overfull \hbox (368.42958pt too wide) in paragraph at lines 212--213
 [][][][][][][][][][][][][][][][][][][][][]  
  []
+=======
+]
 
+LaTeX Warning: Reference `chap:appendix3' on page 63 undefined on input line 17
+.
+>>>>>>> Stashed changes
+
+) [63]
+\openout2 = `appendix2.aux'.
 
 Overfull \hbox (98.42683pt too wide) in paragraph at lines 217--219
 [][][][][][][][][][][][][][][][][] 
  []
 
+No file appendix2.tex.
+\openout2 = `appendix3.aux'.
 
+<<<<<<< Updated upstream
 Overfull \hbox (170.42757pt too wide) in paragraph at lines 219--220
 [][][][][][][][][][][][][][][][][][][][][]  
+=======
+No file appendix3.tex.
+(./parita-msc.bbl
+Underfull \hbox (badness 5231) in paragraph at lines 35--40
+[]\T1/cmr/m/n/12 David Beck-ett.  RDF 1.1 N-Triples.  \T1/cmr/m/it/12 W3C Rec-o
+m-men-da-tion\T1/cmr/m/n/12 , 2014.
+>>>>>>> Stashed changes
  []
 
 
@@ -1858,6 +2177,16 @@ Overfull \hbox (146.42732pt too wide) in paragraph at lines 224--226
 [][][][][][][][][][][][][][][][][] 
  []
 
+<<<<<<< Updated upstream
+=======
+[64
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 Overfull \hbox (218.42805pt too wide) in paragraph at lines 226--227
 [][][][][][][][][][][][][][][][][][][][][]  
@@ -1868,9 +2197,16 @@ Overfull \hbox (62.42647pt too wide) in paragraph at lines 231--233
 [][][][][][][][][][][][][][][][][][][] 
  []
 
+<<<<<<< Updated upstream
 
 Overfull \hbox (134.4272pt too wide) in paragraph at lines 233--234
 [][][][][][][][][][][][][][][][][][][][][][][]  
+=======
+[65]
+Underfull \hbox (badness 3449) in paragraph at lines 160--165
+[]\T1/cmr/m/n/12 Daryl Hep-t-ing.  Stu-dent Feed-back In-stru-ment.  \T1/cmr/m/
+it/12 Avail-able at: []$\T1/cmtt/m/it/12 http :
+>>>>>>> Stashed changes
  []
 
 [94]
@@ -1883,6 +2219,17 @@ Overfull \hbox (146.42732pt too wide) in paragraph at lines 240--241
 [][][][][][][][][][][][][][][][][][][][][]  
  []
 
+<<<<<<< Updated upstream
+=======
+[66])
+
+Package acro Warning: Acronym properties may have changed. Rerun to get them
+(acro)                synchronized.
+
+[67] (./parita-msc.aux (./abstract.aux) (./ack.aux) (./pd-ack.aux) (./ch1.aux)
+(./ch2.aux) (./ch3.aux) (./ch4.aux) (./ch5.aux) (./appendix2.aux)
+(./appendix3.aux))
+>>>>>>> Stashed changes
 
 Overfull \hbox (68.42653pt too wide) in paragraph at lines 245--247
 [][][][][][][][][][][][][][][][][] 
@@ -5125,6 +5472,7 @@ Package rerunfilecheck Info: File `parita-msc.out' has not changed.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
+<<<<<<< Updated upstream
  ) 
 Here is how much of TeX's memory you used:
  23049 strings out of 480608
@@ -5155,4 +5503,41 @@ PDF statistics:
  4079 compressed objects within 41 object streams
  2443 named destinations out of 2487 (max. 500000)
  908 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `parita-msc.out' has not changed.
+(rerunfilecheck)             Checksum: E6EC36ED4F8D06EF1205BD861CEEC0F8;7560.
+ ) 
+Here is how much of TeX's memory you used:
+ 24512 strings out of 478276
+ 502234 string characters out of 5846491
+ 848587 words of memory out of 5000000
+ 42048 multiletter control sequences out of 15000+600000
+ 493616 words of font info for 95 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,12n,80p,1757b,769s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/
+texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/
+2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on parita-msc.pdf (78 pages, 2076150 bytes).
+PDF statistics:
+ 1219 PDF objects out of 1440 (max. 8388607)
+ 1010 compressed objects within 11 object streams
+ 279 named destinations out of 1000 (max. 500000)
+ 559 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> Stashed changes
 

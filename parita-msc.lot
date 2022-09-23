@@ -1,11 +1,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+<<<<<<< Updated upstream
 \contentsline {table}{\numberline {2.1}{\ignorespaces Commonly used Classes and Properties of RDFS\relax }}{13}{table.caption.10}%
 \contentsline {table}{\numberline {2.2}{\ignorespaces \ac {rdf} Notations for Figure\nobreakspace {}\ref {graph-for-relative-statements}, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{16}{table.caption.16}%
 \contentsline {table}{\numberline {2.3}{\ignorespaces Definitions Used for Characterizing URI, by Berners-Lee et al.\nobreakspace {}\cite {fielding1998uri}\relax }}{20}{table.caption.19}%
 \contentsline {table}{\numberline {2.4}{\ignorespaces Stages in Linked Data Life Cycle, after Ngomo et al.\nobreakspace {}\cite {ngomo2014introduction}\relax }}{21}{table.caption.22}%
 \contentsline {table}{\numberline {2.5}{\ignorespaces Statement Properties and Property IDs for the University of Regina on Wikidata\relax }}{32}{table.caption.27}%
 \contentsline {table}{\numberline {2.6}{\ignorespaces Identifier Properties and Property IDs for University of Regina on Wikidata\relax }}{34}{table.caption.28}%
+=======
+\contentsline {table}{\numberline {2.1}{\ignorespaces Commonly used Classes and Properties of RDFS\relax }}{12}{table.caption.9}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces \ac {rdf} Notations for Figure\nobreakspace {}\ref {fig:2.11}, after \ac {rdf} Primer\nobreakspace {}\cite {manola2004rdf}\relax }}{16}{table.caption.15}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Definitions Used for Characterizing URI, by Berners-Lee et al.\nobreakspace {}\cite {fielding1998uri}\relax }}{19}{table.caption.18}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Stages in Linked Data Life Cycle, after Ngomo et al.\nobreakspace {}\cite {ngomo2014introduction}\relax }}{20}{table.caption.21}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Statement Properties and Property IDs for the University of Regina on Wikidata\relax }}{24}{table.caption.23}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Identifier Properties and Property IDs for University of Regina on Wikidata\relax }}{26}{table.caption.24}%
+>>>>>>> Stashed changes
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces 5-star Rating System for Linked Data Implementation\relax }}{60}{table.caption.53}%
 \addvspace {10\p@ }
@@ -15,6 +24,13 @@
 \contentsline {table}{\numberline {4.4}{\ignorespaces Data Properties and Their Domain and Range\relax }}{70}{table.caption.62}%
 \contentsline {table}{\numberline {4.5}{\ignorespaces Classes and their Individuals\relax }}{70}{table.caption.64}%
 \addvspace {10\p@ }
+<<<<<<< Updated upstream
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+=======
+\contentsline {table}{\numberline {4.1}{\ignorespaces Degrees of Agreement for Likert-scale Questions\relax }}{49}{table.caption.39}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Object Properties and Their Domain and Range\relax }}{54}{table.caption.44}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Object Properties with Their Parent Nodes and Inverse Properties\relax }}{54}{table.caption.45}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Data Properties and Their Domain and Range\relax }}{58}{table.caption.48}%
+>>>>>>> Stashed changes
 \addvspace {10\p@ }
