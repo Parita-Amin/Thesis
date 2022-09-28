@@ -2,9 +2,9 @@
 \contentsline {chapter}{Abstract}{i}{Doc-Start}%
 \contentsline {chapter}{Acknowledgments}{ii}{Doc-Start}%
 \contentsline {chapter}{Post-Defense Acknowledgments}{iii}{Doc-Start}%
-\contentsline {chapter}{List of Figures}{v}{chapter*.1}%
-\contentsline {chapter}{List of Tables}{vi}{chapter*.2}%
-\contentsline {chapter}{List of Abbreviations}{vii}{chapter*.3}%
+\contentsline {chapter}{List of Figures}{vii}{chapter*.1}%
+\contentsline {chapter}{List of Tables}{ix}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{x}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Contribution}{3}{section.1.2}%
@@ -56,20 +56,20 @@
 \contentsline {chapter}{\numberline {4}Proof of Concept}{62}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Modelling Ontology for Survey Using Protégé}{62}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Classes for Survey Ontology}{62}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Development Tool for the Creation of New \ac {owl} Vocabularies}{64}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Protégé}{65}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Usability of Protégé}{65}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{69}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Classes and Class Hierarchy}{69}{subsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.1}The ``LikertScaleQuestions'' Class}{78}{subsubsection.4.4.1.1}%
-\contentsline {subsection}{\numberline {4.4.2}Object Properties and Object Property Hierarchy}{79}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Object Properties for Survey Ontology}{82}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Data Properties for Survey Ontology}{82}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Data Properties and Data Property Hierarchy}{82}{subsection.4.4.5}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{87}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{87}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{88}{section.5.2}%
-\contentsline {chapter}{\numberline {A}CSV to Linked Data: sample.ttl}{90}{appendix.A}%
-\contentsline {chapter}{\numberline {B}OWL Classes to be Used to Describe Surveys}{143}{appendix.B}%
-\contentsline {chapter}{\numberline {C}SHACL Shapes for Data Validation: SurveyShapes.txt}{144}{appendix.C}%
+\contentsline {section}{\numberline {4.2}Development Tool for the Creation of New \ac {owl} Vocabularies}{65}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Protégé}{66}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Usability of Protégé}{66}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{70}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Classes and Class Hierarchy}{70}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}The ``LikertScaleQuestions'' Class}{79}{subsubsection.4.4.1.1}%
+\contentsline {subsection}{\numberline {4.4.2}Object Properties and Object Property Hierarchy}{80}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Object Properties for Survey Ontology}{83}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Data Properties for Survey Ontology}{83}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Data Properties and Data Property Hierarchy}{83}{subsection.4.4.5}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{88}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{88}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{89}{section.5.2}%
+\contentsline {chapter}{\numberline {A}OWL Vocabulary for Survey Data}{90}{appendix.A}%
+\contentsline {chapter}{\numberline {B}CSV to Linked Data: sample.ttl}{91}{appendix.B}%
+\contentsline {chapter}{\numberline {C}SHACL Shapes for Data Validation}{144}{appendix.C}%
 \contentsline {chapter}{References}{147}{lstnumber.-5.81}%
