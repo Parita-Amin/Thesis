@@ -1,4 +1,3 @@
-\acswitchoff 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The Web to Semantic Web, according to Aghaei et al.\nobreakspace {}\cite {aghaei2012evolution}\relax }}{6}{figure.caption.5}%
@@ -46,19 +45,25 @@
 \contentsline {figure}{\numberline {3.21}{\ignorespaces Transforming Data in OpenRefine - 3 of 3\relax }}{57}{figure.caption.52}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The Student Feedback Form, from Hepting\nobreakspace {}\cite {prof}\relax }}{63}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Five Es of Usability\relax }}{67}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The Student Feedback Form, from Hepting\nobreakspace {}\cite {prof}\relax }}{71}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Protégé Home-screen for a New Project with an Ontology Name and an IRI\relax }}{72}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Class Hierarchy of Thing, Domain\_Entity, Independent\_Entity, and Value\relax }}{73}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tools Menu to Create Class Hierarchy\relax }}{74}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces \enquote {Enter hierarchy} Pop-up Window\relax }}{75}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Pop-up Window to Create Disjoint Sibling Classes\relax }}{76}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Class Hierarchy in Survey Ontology\relax }}{77}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces ``LikertScale5'' class in Survey Ontology\relax }}{80}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Tools Menu to Create Object Property Hierarchy\relax }}{81}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Object Properties for Classes \enquote {Lady} and \enquote {Parita}\relax }}{82}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Domain and Range Classes for \enquote {hasName} and \enquote {isNameOf}\relax }}{84}{figure.caption.68}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Object Property Hierarchies, Domain and Range for Classes\relax }}{85}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Class Hierarchy in Survey Ontology\relax }}{64}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces ``LikertScale5'' class in Survey Ontology\relax }}{67}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Object Property Hierarchies, Domain and Range for Classes\relax }}{68}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Individuals for Survey Class\relax }}{69}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Class Hierarchy for the Final Version of Survey Ontology\relax }}{71}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Data Validation using SHACL Editor\relax }}{73}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces SHACL Constraint Violations\relax }}{74}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces DL Query on Survey Ontology\relax }}{75}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces SPARQL Query on Survey Ontology\relax }}{77}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Snap SPARQL Query on Survey Ontology\relax }}{78}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces RDF Skeleton for CSV using Survey Ontology\relax }}{80}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Add New Prefix for Survey Ontology in OpenRefine\relax }}{81}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Manage Prefixes in OpenRefine\relax }}{81}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces RDF Node Settings for Index ID of Records in CSV in OpenRefine\relax }}{82}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Using Linked Data to Describe the Fields in CSV for Feedback Responses\relax }}{83}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces RDF Preview for CSV using Survey Ontology\relax }}{84}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Link to Turtle File containing Survey Vocabulary\relax }}{85}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces OntoGraf for Survey Ontology\relax }}{87}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces WebVOWL for Survey Ontology\relax }}{88}{figure.caption.79}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
