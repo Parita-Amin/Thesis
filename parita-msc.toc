@@ -1,4 +1,3 @@
-\acswitchoff 
 \contentsline {chapter}{Abstract}{i}{Doc-Start}%
 \contentsline {chapter}{Acknowledgments}{ii}{Doc-Start}%
 \contentsline {chapter}{Post-Defense Acknowledgments}{iii}{Doc-Start}%
@@ -56,20 +55,31 @@
 \contentsline {chapter}{\numberline {4}Proof of Concept}{62}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Modelling Ontology for Survey Using Protégé}{62}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Classes for Survey Ontology}{62}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Development Tool for the Creation of New \ac {owl} Vocabularies}{65}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Protégé}{66}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Usability of Protégé}{66}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Procedure to Model the Survey Ontology in \ac {owl} Using Protégé Tools}{70}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Classes and Class Hierarchy}{70}{subsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.1.1}The ``LikertScaleQuestions'' Class}{79}{subsubsection.4.4.1.1}%
-\contentsline {subsection}{\numberline {4.4.2}Object Properties and Object Property Hierarchy}{80}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Object Properties for Survey Ontology}{83}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Data Properties for Survey Ontology}{83}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Data Properties and Data Property Hierarchy}{83}{subsection.4.4.5}%
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{88}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{88}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Work}{89}{section.5.2}%
-\contentsline {chapter}{\numberline {A}OWL Vocabulary for Survey Data}{90}{appendix.A}%
-\contentsline {chapter}{\numberline {B}CSV to Linked Data: sample.ttl}{91}{appendix.B}%
-\contentsline {chapter}{\numberline {C}SHACL Shapes for Data Validation}{144}{appendix.C}%
-\contentsline {chapter}{References}{147}{lstnumber.-5.81}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}The ``LikertScaleQuestions'' Class}{65}{subsubsection.4.1.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Object Properties for Survey Ontology}{66}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Data Properties for Survey Ontology}{68}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Individuals}{68}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Final Class Hierarchy for Survey Ontology}{70}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Data Validation Using SHACL}{72}{subsection.4.1.6}%
+\contentsline {section}{\numberline {4.2}Querying Survey Ontology in Protégé}{74}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}DL Query}{74}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}SPARQL Query}{76}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Using \ac {sparql} Query Plugin}{76}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Using Snap \ac {sparql} Query Plugin}{76}{subsubsection.4.2.2.2}%
+\contentsline {section}{\numberline {4.3}Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}{78}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}RDF Skeleton}{79}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}Prefixes}{79}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.2}RDF Node for Index}{82}{subsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.1.3}Describing Fields in terms of Linked Data}{82}{subsubsection.4.3.1.3}%
+\contentsline {subsection}{\numberline {4.3.2}RDF Preview}{83}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Publishing Survey Vocabulary with License}{84}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Visualizing Survey Ontology}{86}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Representation of Survey Ontology in OntoGraf}{86}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Representation of Survey Ontology in WebVOWL}{86}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{89}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{89}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{90}{section.5.2}%
+\contentsline {chapter}{\numberline {A}OWL Vocabulary for Survey Data}{91}{appendix.A}%
+\contentsline {chapter}{\numberline {B}CSV to Linked Data: sample.ttl}{92}{appendix.B}%
+\contentsline {chapter}{\numberline {C}SHACL Shapes for Data Validation}{145}{appendix.C}%
+\contentsline {chapter}{References}{147}{lstnumber.-5.79}%
