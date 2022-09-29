@@ -105,7 +105,8 @@ there is a question and an answer,
 where both of them are considered as distinct classes. 
 Open-ended questions have unpredictable answers.
 
-\subsubsection{The ``LikertScaleQuestions'' Class}\label{subsubsec:likertclass}
+\subsubsection{The ``LikertScaleQuestions'' Class}
+\label{subsubsec:likertclass}
 
 Likert questions are the questions for which the answers are from the preset list of answers. 
 For the Likert questions, 
@@ -158,54 +159,6 @@ Each of these degrees are treated as an individual
     \includegraphics[width=\columnwidth]{images/ch4/survey/likertscale5-class.png}
     \caption{``LikertScale5'' class in Survey Ontology}
     \label{likertscale5-class}
-\end{figure}
-
-\subsection{Object Properties and Object Property Hierarchy}
-
-The next step in building the ontology, after describing the classes, 
-is describing the \say{Object Properties}. 
-Object properties are used to link the entities (classes in Protégé). 
-The \say{owl:topObjectProperty} is the root node of the object properties' hierarchy. 
-The hierarchy for object properties can be built by selecting a 
-property in the Object Property Hierarchy view of the Object Property Views tab 
-and then going to the tools menu as shown in Figure~\ref{fig:4.9}. 
-The remaining steps are similar to the ones that are followed for 
-building class hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}).
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/Figure9.png}
-    \caption{Tools Menu to Create Object Property Hierarchy}
-    \label{fig:4.9}
-\end{figure}
-
-Also, the description view of object properties hierarchy allows the user to describe the object properties. 
-The details that can be added or modified using the description view are 
-\say{Equivalent To}, 
-\say{SubProperty Of}, 
-\say{Inverse Of}, 
-\say{Domains (intersection)}, \say{Ranges (intersection)}, \say{Disjoint With}, and \say{SuperProperty Of (Chain)}. 
-
-\par The names of the object properties usually start with an \say{is} or a \say{has}. For instance, consider two classes: \say{Lady} (class 1) and \say{Parita} (class 2). To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, the properties \say{hasName} and \say{isNameOf} would be used respectively, as shown in Figure~\ref{fig:4.10}. 
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/Figure10.png}
-    \caption{Object Properties for Classes \enquote{Lady} and \enquote{Parita}}
-    \label{fig:4.10}
-\end{figure}
-
-Each object property might have a corresponding inverse property. 
-For the above instance, it can be said that:
-\begin{center}
-    \par Lady hasName Parita \textbf{is equivalent to} Parita isNameOf Lady
-\end{center}
-Here, \say{hasName} is inverse of \say{isNameOf} and \say{isNameOf} is inverse of \say{hasName}. Apart from inverse, domain and range\footnote{http://protegeproject.github.io/protege/views/object-property-description/} are two other important parts of description of object properties. According to Horridge et al.~\cite{horridge2009practical}, in \ac{owl}, \say{domain and range are not constraints to be checked. They are axioms which are used by the reasoner to make inferences}. As shown in Figure~\ref{fig:4.11}, \say{Lady} acts as the \say{Domain} and \say{Parita} acts as the \say{Range} for \say{hasName} whereas for \say{isNameOf}, \say{Parita} is the \say{Domain} and \say{Lady} is the \say{Range}. 
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/Figure11.png}
-    \caption{Domain and Range Classes for \enquote{hasName} and \enquote{isNameOf}}
-    \label{fig:4.11}
 \end{figure}
 
 \subsection{Object Properties for Survey Ontology}
@@ -280,6 +233,7 @@ The three parent nodes involved in object property hierarchy are
 \end{table}
 
 \subsection{Data Properties for Survey Ontology}
+\label{subsec:surveydataproperties}
 
 Data properties for survey ontology have been described following the method described in section~\ref{subsec:dataproperties} 
 which are as shown in Figure~\ref{survey-data-properties}.
@@ -289,26 +243,6 @@ which are as shown in Figure~\ref{survey-data-properties}.
     \includegraphics[width=\columnwidth]{images/ch4/survey/survey-data-properties.png}
     \label{fig:survey-data-properties}
     \end{figure}
-    
-\subsection{Data Properties and Data Property Hierarchy}
-
-Furthermore, the \say{Data Properties} can also be described for ontology. \say{An ontology data property provides a relation to attach an entity instance to some literal datatype value (an \ac{rdf} number, string or data for example) that is a measure or estimate of what that data property is about.}\footnote{https://ddooley.github.io/docs/data-properties/} In Protégé, the \say{owl:topDataProperty} is the root node of the data properties' hierarchy. The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{fig:4.13}. The remaining steps are similar to the ones that are followed for building class and object property hierarchy (Figure~\ref{fig:4.5}, ~\ref{fig:4.6}, and ~\ref{fig:4.7}).
- 
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/Figure13.png}
-    \caption{Tools Menu to Create Data Property Hierarchy}
-    \label{fig:4.13}
-\end{figure
-}
-Data properties can be described using the description view of data properties of hierarchy which included details like \say{Equivalent To}, \say{SubProperty Of}, \say{Domains (intersection)}, \say{Ranges}, and  \say{Disjoint With}. Figure~\ref{fig:4.14} shows the data properties described for the survey ontology. The parent node of all the data properties is \say{owl:topDataProperty} and the domain and range for all the data properties are \say{Respondent} and \say{xsd:positiveInteger} respectively. Table~\ref{table:4.4} consists of list of data properties along with their domain and range classes (entities).
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/Figure14.png}
-    \caption{Data Property Hierarchies, Domain and Range for Classes}
-    \label{data-property-hierarchies}
-\end{figure}
 
 The parent node of all the data properties is ``owl:topDataProperty'' 
 and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}. 
@@ -336,7 +270,8 @@ The properties for likert answers restrict the datatype to positive integer and 
     \label{survey-data-properties-domains-and-ranges}
 \end{table}
 
-\subsection{Individuals}\label{subsec:individuals}
+\subsection{Individuals}
+\label{subsec:individuals}
 
 While dealing with ontologies, 
 an instance of class is termed as an ``Individual''. 
@@ -401,7 +336,8 @@ option from the ``View'' menu of protégé.
 Figure~\ref{final-survey-classes} 
 shows the relation indicated by the blue back arrow.
 
-\subsection{Data Validation Using SHACL}\label{subsec:shacl}
+\subsection{Data Validation Using SHACL}
+\label{subsec:shacl}
 
 \ac{shacl}4P is a protégé plugin for \ac{shacl}, 
 which uses ``shapes'' to describe constraints. 
@@ -452,13 +388,16 @@ as shown in Figure~\ref{shacl-constraint-violations}.
     \label{shacl-constraint-violations}
 \end{figure}
 
-\section{Querying Survey Ontology in Protégé}\label{sec:queryingontology}
+\section{Querying Survey Ontology in Protégé}
+\label{sec:queryingontology}
 
-The ontology vocabularies can be queried using query languages like DL query\footnote{https://protegewiki.stanford.edu/wiki/DL\_Query} 
+The ontology vocabularies can be queried using query languages like 
+DL query\footnote{https://protegewiki.stanford.edu/wiki/DL\_Query} 
 and \ac{sparql}. 
 Protégé offers a plugin for DL as well as SPARQL queries which are discussed in this section. 
 
-\subsection{DL Query}\label{subsec:dlquery}
+\subsection{DL Query}
+\label{subsec:dlquery}
 
 Vasilevsky\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html} 
 defines DL query as a class expression that is constructed using constructs such as 
@@ -478,7 +417,8 @@ shows expression of a sample DL query on the survey ontology in protégé.
     \label{survey-dl-query}
 \end{figure}
 
-\subsection{SPARQL Query}\label{subsec:sparql}
+\subsection{SPARQL Query}
+\label{subsec:sparql}
 
 According to \ac{w3c}~\cite{garlik2013sparql}, 
 \ac{sparql} queries use 
@@ -487,7 +427,8 @@ to define queries and optional graph patterns.
 Protégé offers plugins for 
 ``\ac{sparql} Query'' and ``Snap \ac{sparql} Query''.
 
-\subsubsection{Using \ac{sparql} Query Plugin}\label{subsubsec:usingsparql}
+\subsubsection{Using \ac{sparql} Query Plugin}
+\label{subsubsec:usingsparql}
     
 \ac{sparql} plugin in protégé is used to express simple queries on ontologies like displaying classes and subclasses. 
 For instance, 
@@ -514,7 +455,8 @@ consider the following query:
     \label{survey-sparql-query}
 \end{figure}
     
-\subsubsection{Using Snap \ac{sparql} Query Plugin}\label{subsubsec:usingsnapsparql}
+\subsubsection{Using Snap \ac{sparql} Query Plugin}
+\label{subsubsec:usingsnapsparql}
 
 The Snap \ac{sparql} plugin in protégé is generally used to express comparatively complex queries on ontologies like displaying description of individuals. 
 For instance, 
@@ -545,19 +487,20 @@ with column titles ?Class and ?Individuals respectively.
     \label{fig:survey-snap-sparql-query}
 \end{figure}
 
-\section{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}\label{sec:surveycsvtolod}
+\section{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}
+\label{sec:surveycsvtolod}
 
 Primarily, 
 OpenRefine\footnote{https://openrefine.org/} 
 has been used to convert the data stored in spreadsheets to \ac{turtle} and \ac{rdf} files using the methodology 
 described in section~\ref{sec:csvtolodconversion}. 
 Using survey ontology in OpenRefine, 
-the \ac{csv} file consisting of survey responses is converted into 
+the CSV file consisting of survey responses is converted into 
 \ac{turtle} and \ac{rdf}/\ac{xml} files.
 
-After importing the \ac{csv} and creating a new project, 
+After importing the CSV and creating a new project, 
 the next step is to manage \ac{rdf} Schema alignment 
-to describe the data stored in \ac{csv} 
+to describe the data stored in CSV 
 in terms of linked data vocabulary. 
 On selecting 
 ``Edit \ac{rdf} Skeleton'' from the menu of \ac{rdf} Extension, 
@@ -570,10 +513,11 @@ The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
      Base URI: https://parita-amin.github.io/survey.owl# 
 \end{lstlisting}
  
-\subsection{RDF Skeleton}\label{subsec:rdfskeleton}
+\subsection{RDF Skeleton}
+\label{subsec:rdfskeleton}
 
 Figure~\ref{openrefine-rdf-skeleton} 
-shows \ac{rdf} skeleton for \ac{csv} using survey ontology. 
+shows \ac{rdf} skeleton for CSV using survey ontology. 
 It consists of a list of 
 prefixes along with options for adding and managing prefixes; 
 \ac{uri} for index count; 
@@ -586,7 +530,8 @@ and the fields in the project with an option of using linked data vocabularies t
     \label{openrefine-rdf-skeleton}
 \end{figure}
 
-\subsubsection{Prefixes}\label{subsubsec:prefixes}
+\subsubsection{Prefixes}
+\label{subsubsec:prefixes}
     
     \begin{itemize}
     
@@ -644,20 +589,20 @@ On clicking ``Preview edit'', format of expression to display ``ID'' can be modi
 \subsubsection{Describing Fields in terms of Linked Data}
 \label{subsubsec:describingfields}
 
-The next step is describing the \ac{csv} data
+The next step is describing the CSV data
 in terms of linked open vocabularies. 
 ``Available prefixes'' 
 allows using vocabularies described in the list of ontologies. 
 Figure~\ref{openrefine-selecting-property} 
 shows the list of classes and properties along with the ontology prefix that match the input string. 
-The vocabulary can be selected for each field of the \ac{csv} 
+The vocabulary can be selected for each field of the CSV 
 to represent the data. 
 
 For instance, 
 ``survey:hasLikertAns\_is\_well\_prepared\_for\_class'' 
 property can be assigned to the data corresponding to the field, 
 ``Q01\_Rate instructor->1. The instructor is well-prepared for class'' 
-of the \ac{csv}. 
+of the CSV. 
 
 \begin{figure}[htp]
     \centering
@@ -670,7 +615,7 @@ of the \ac{csv}.
 
 Once the \ac{rdf} skeleton is set, 
 ``\ac{rdf} Preview'' 
-can be used to view the description of \ac{csv} data. 
+can be used to view the description of CSV data. 
 The fields of data that were not described in \ac{rdf} skeleton, 
 do not appear in \ac{rdf} Preview. 
 It consists of a \ac{turtle} representation 
@@ -678,7 +623,7 @@ of the first 10 rows of the resultant linked data.
 
 Figure~\ref{openrefine-rdf-preview} 
 depicts an \ac{rdf} Preview 
-of using survey vocabulary to describe the data stored in \ac{csv}. 
+of using survey vocabulary to describe the data stored in CSV. 
 It includes 
 all the prefixes for vocabularies from ``Available prefixes'' 
 along with their \ac{uri}s; 
@@ -693,12 +638,13 @@ the vocabulary and value for the fields corresponding to the responses to all th
 \end{figure}
 
 Any modifications in \ac{rdf} skeleton will reflect on the \ac{rdf} preview. 
-Once the data in \ac{csv} 
+Once the data in CSV 
 has been converted to linked data, 
 it can be stored as 
 \ac{rdf}/\ac{xml} and \ac{turtle}.
 
-\section{Publishing Survey Vocabulary with License}\label{sec:publishingsurveyvocabulary}
+\section{Publishing Survey Vocabulary with License}
+\label{sec:publishingsurveyvocabulary}
 
 As mentioned in section~\ref{sec:announcinglod}, 
 it is necessary to specify an appropriate license for linked open data. 
@@ -734,13 +680,15 @@ data reuse is more likely to happen.
 
 \end{itemize}
 
-\section{Visualizing Survey Ontology}\label{sec:visualizingsurveyontology}
+\section{Visualizing Survey Ontology}
+\label{sec:visualizingsurveyontology}
 
 This section consists of the results of using two ontology visualizations tools for survey vocabulary, 
 namely, 
 OntoGraf and Web\ac{vowl}.
 
-\subsection{Representation of Survey Ontology in OntoGraf}\label{subsec:surveyontograf}
+\subsection{Representation of Survey Ontology in OntoGraf}
+\label{subsec:surveyontograf}
 
 To start with the graph formation, 
 the classes 
@@ -769,7 +717,8 @@ The classes are denoted by yellow solid dot followed by the class name where as 
     \label{fig:ontograf}
 \end{figure}
 
-\subsection{Representation of Survey Ontology in WebVOWL}\label{subsec:surveywebvowl}
+\subsection{Representation of Survey Ontology in WebVOWL}
+\label{subsec:surveywebvowl}
 
 Figure~\ref{webVOWL} 
 shows the graphical representation of the survey ontology using Web\ac{vowl}. 
@@ -778,7 +727,7 @@ The metadata and the statistics of the node (circle) or the edge (line)
 can be retrieved by clicking on them. 
 The entities (classes) and their relationships (object and datatype properties) 
 can be presented or restricted using filters. 
-The \ac{vowl} graph can be exported as an \ac{svg} image file or a \ac{json} code file.
+The \ac{vowl} graph can be exported as an SVG image file or a JSON code file.
 
 \begin{figure}[htp]
     \centering
