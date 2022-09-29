@@ -1,10 +1,13 @@
 *.aux
 *.pdf
 *.log
+ch1.aux
+ch2.aux
+ch3.aux
 ch4.aux
-*.aux
-*.aux
 ch5.aux
+*.aux
+*.aux
 parita-msc.toc
 *.toc
 *.gz
