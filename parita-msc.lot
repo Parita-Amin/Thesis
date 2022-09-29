@@ -1,4 +1,3 @@
-\acswitchoff 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Commonly used Classes and Properties of RDFS\relax }}{13}{table.caption.10}%
@@ -10,9 +9,11 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces 5-star Rating System for Linked Data Implementation\relax }}{60}{table.caption.53}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Degrees of Agreement for Likert-scale Questions\relax }}{79}{table.caption.64}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Object Properties and Their Domain and Range\relax }}{86}{table.caption.70}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Object Properties with Their Parent Nodes and Inverse Properties\relax }}{86}{table.caption.71}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Degrees of Agreement for Likert-scale Questions\relax }}{66}{table.caption.56}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Object Properties and Their Domain and Range\relax }}{67}{table.caption.59}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Object Properties with Their Parent Nodes and Inverse Properties\relax }}{70}{table.caption.60}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Data Properties and Their Domain and Range\relax }}{72}{table.caption.62}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Classes and their Individuals\relax }}{72}{table.caption.64}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
