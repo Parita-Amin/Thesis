@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2020)
+This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: parita-msc.aux
 A level-1 auxiliary file: abstract.aux
@@ -9,49 +9,56 @@ A level-1 auxiliary file: ch2.aux
 A level-1 auxiliary file: ch3.aux
 A level-1 auxiliary file: ch4.aux
 A level-1 auxiliary file: ch5.aux
+The style file: plain.bst
 A level-1 auxiliary file: appendix-owl.aux
 A level-1 auxiliary file: appendix-data.aux
 A level-1 auxiliary file: appendix-shacl.aux
-The style file: plain.bst
 Database file #1: parita.bib
-You've used 42 entries,
+Warning--I didn't find a database entry for "BL"
+Warning--I didn't find a database entry for "your-source-for-principles"
+Warning--I didn't find a database entry for "something-more-recent"
+Warning--I didn't find a database entry for "one-of-their-pubs-if-possible"
+Warning--I didn't find a database entry for "anything-more-recent"
+Warning--I didn't find a database entry for "what-is-Likert"
+You've used 41 entries,
             2118 wiz_defined-function locations,
-            742 strings with 12659 characters,
-and the built_in function-call counts, 15178 in all, are:
-= -- 1531
-> -- 684
+            745 strings with 12597 characters,
+and the built_in function-call counts, 14863 in all, are:
+= -- 1497
+> -- 677
 < -- 16
-+ -- 271
-- -- 228
-* -- 1021
-:= -- 2462
-add.period$ -- 133
-call.type$ -- 42
-change.case$ -- 239
++ -- 268
+- -- 226
+* -- 997
+:= -- 2411
+add.period$ -- 130
+call.type$ -- 41
+change.case$ -- 235
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 603
-empty$ -- 1179
-format.name$ -- 228
-if$ -- 3224
+cite$ -- 41
+duplicate$ -- 592
+empty$ -- 1150
+format.name$ -- 226
+if$ -- 3159
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 43
-newline$ -- 213
-num.names$ -- 84
-pop$ -- 249
+int.to.str$ -- 41
+missing$ -- 42
+newline$ -- 208
+num.names$ -- 82
+pop$ -- 247
 preamble$ -- 1
-purify$ -- 198
+purify$ -- 195
 quote$ -- 0
-skip$ -- 451
+skip$ -- 444
 stack$ -- 0
-substring$ -- 987
-swap$ -- 165
+substring$ -- 951
+swap$ -- 164
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 166
+type$ -- 162
 warning$ -- 0
-while$ -- 157
-width$ -- 44
-write$ -- 459
+while$ -- 153
+width$ -- 43
+write$ -- 448
+(There were 6 warnings)

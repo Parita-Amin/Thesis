@@ -5,12 +5,149 @@
 
 \begin{doublespace}
 
-This Chapter reviews the theoretical and practical work 
-focused on the Semantic Web and \ac{lod} 
-from the perspectives of technology and usability
-that form the foundation for this thesis. 
+This Chapter reviews the theoretical and practical work
+%focused on the Semantic Web and \ac{lod}
+on the semantic web and \ac{lod},
+from the perspectives of technology and usability,
+that form the foundation of this thesis. 
 
-\section{The Web}
+\section{Linked Open Data}
+\label{sec:linkedopendata}
+
+According to Berners-Lee et al.~\cite{BL}, %~\cite{aghaei2012evolution}, 
+``Semantic web is not limited to publication of data on the web; 
+it is about making links to connect related data.'' 
+The concept of Linked Open Data
+%\footnote{https://www.ontotext.com/knowledgehub/fundamentals/linked-data-linked-open-data/} 
+is an amalgamation of two technologies, 
+Linked Data and Open Data.
+\marginpar{Find reputable peer-reviewed sources for this discussion :-) }
+%GraphDB\footnote{https://www.ontotext.com/knowledgehub/fundamentals/linked-data-linked-open-data/} 
+%by Ontotext, an \ac{rdf} database, 
+%is an example of \ac{lod}. 
+%GraphDB promotes knowledge-discovery and efficient data-driven analytics by linking large datasets from distinct sources to Open Data.
+
+%\subsection{Linked Data}
+%\label{subsec:linkeddata}
+
+The relationships shared among the data from different sources on the web are equally important as the access to the data for efficient working of the semantic web. 
+The technique used to manage these datasets and their relationships is referred to as Linked Data. 
+In other words, 
+Linked Data
+%\footnote{https://www.w3.org/wiki/LinkedData} 
+can be termed as a set of various techniques of publishing structured data on the web. 
+The \ac{w3c} 
+standards and various semantic web technologies handle the distribution and engagement of the structured data across the web to aggregate the data available on the web into one huge database~\cite{bernerslee1999weaving}.
+
+In 2006, 
+Berners-Lee~\cite{bizer2009linked} 
+%framed 
+described four basic rules 
+%(mentioned in section \ref{principles}) 
+for publishing and connecting %the 
+\marginpar{a comment about structured vs. unstructured vs. semi-structured would be helpful :-) }
+structured datasets across the web. 
+These rules became known as the linked data principles~\cite{your-source-for-principles}:
+
+\begin{enumerate}
+	\item Use \ac{uri}s as names for things:
+	
+	\ac{uri}s should be used to give unique names to all the things on the web,
+	so that \ac{uri} of a thing used in different datasets is understood to signify
+	the same thing.
+  
+  	\item Use \ac{http}\footnote{Both \ac{http} and \ac{https}} 
+  	\ac{uri}s to look up those names:
+  	
+	The hypertext transfer protocols allow easy retrieval of resources. 
+  	This promotes the publication of data on the web and its addition 
+	to the global data space.
+  
+  	\item Provide useful information, using the standards
+  	(\ac{rdf}\footnote{includes all the standards belonging to \ac{rdf} family}, 
+  	\ac{sparql}) to look up for a \ac{uri}:
+  
+  	When an entity is searched using the \ac{uri} associated with it, 
+  	it is beneficial to use standards like \ac{rdf} 
+  	and \ac{sparql} to query the datasets.
+	\ac{rdf} is a framework used for graphical representation of publication and
+	distribution of data on the web,
+	as described in detail in section~\ref{sec:rdf}. 
+  	On the contrary, \marginpar{???}
+  	\ac{sparql} is a query language used for retrieval and 
+  	manipulation of data (in \ac{rdf} format) on the web. 
+  	It also helps with the information on relationships related to the 
+	data being searched.
+  
+  	\item Include links to other \ac{uri}s to discover more things:
+  
+  	In the semantic web, 
+  	links between two entity defines the relationship using the basic 
+	entity-relationship model.
+  	Using links for \ac{uri}s of the entities promotes interconnection of the data 
+	and search of things on the web.
+	Connecting new data to already existing entities increases the reuse and 
+	interlinking within the domain and creates a computer-understandable network.
+\end{enumerate}
+
+Publishing data according to these linked data principles 
+can benefit the data providers by allowing them to use one 
+global space to add all their data. 
+An \ac{rdf}
+\marginpar{more discussion and clarity around data modelling, ER, etc. please}
+data model and \ac{uri}s 
+are used by the linked data to name the things (entities). 
+\marginpar{???}
+The linked datasets publish and locate the class-object data 
+which in turn is accessed using 
+%the 
+\ac{http}/\ac{https} 
+and maintains the connection among them~\cite{bauer2011linked}. 
+
+A wide network of structured data, 
+from a variety of domains, 
+on the web has been formed obeying the principles of linked data by Berners-Lee. 
+This has resulted in the formation of a huge database of structured linked data 
+\marginpar{seems a bit repetitive}
+on the web which has further led to the concept of the \ac{lod} Cloud. 
+The \ac{lod} 
+cloud is a set of publicly~\cite{berners1998universal,something-more-recent} 
+accessible/available linked datasets.
+
+%\subsection{Linked (Open) Data}
+%\label{subsec:linked(open)data}
+
+According to the Open Knowledge Foundation~\cite{one-of-their-pubs-if-possible}
+%handbook\footnote{https://opendatahandbook.org/guide/en/what-is-open-data/} 
+%by the Open Knowledge Foundation, 
+``Open Data is data that can be freely used, 
+re-used and redistributed by anyone - subject only, 
+at most, 
+to the requirement to attribute and share-alike''. 
+To make open data available to everyone on the web, 
+the data don't need to be interlinked. 
+Important features of open data are:
+\marginpar{include FAIR, etc. as well -- and licenses}
+
+\begin{itemize}
+	\item Availability and access: 
+	the data should be available on the web. 
+  	The users should be able to access the data easily by downloading 
+	them over the internet.
+	It should be easy to access and modify the data.
+  
+  	\item Re-use and redistribution: 
+	the data on the web must have permissions to re-use and 
+	redistribute in combination to other datasets.
+ 
+	\item Universal participation: 
+	the data should be available to use, re-use, 
+	and redistribute for all the users without any 
+	discrimination to an individual or a group.
+\end{itemize}
+
+
+\section{The Web of Documents and the Web of Data}
 \label{sec:web}
 
 The idea of the Web, as described by Berners Lee~\cite{bernersreadings}, 
@@ -21,15 +158,16 @@ The web was first designed by Berners-Lee in
 1989\footnote{https://www.w3.org/History/1989/proposal.html} 
 while working at the \ac{cern}. 
 
-\subsection{Semantic Web}
-\label{subsec:semanticweb}
+%\subsection{Semantic Web}
+%\label{subsec:semanticweb}
 
 The web pages for the semantic web can be written using \ac{html} and \ac{rdf} 
 as it is the web of data, contrary to the web of documents, 
 where the web pages were written using \ac{html} 
 and the links were described using hyperlinks. 
 In the web of data, 
-arbitrary things can be expressed using links to represent the relationship between two entities, 
+arbitrary things can be expressed using links to 
+represent the relationship between two entities, 
 as shown in Figure~\ref{semantic-web}.
 
 \begin{figure}[htp]
@@ -39,161 +177,57 @@ as shown in Figure~\ref{semantic-web}.
     \label{semantic-web}
 \end{figure}
 
-The latest generation of web that is still at its research and development stage is Web 4.0 which is supposed to be read-write-execute with the property of concurrency~\cite{choudhury2014}. 
-This version of the web is intended to work with artificial intelligence to give users an exceptional quality of experience. 
-While describing how Web 4.0 would be, 
-Berners Lee~\cite{bernerslee1999weaving} stated 
-``if \ac{html} 
-and the Web made all the online documents look like one huge book, 
-\ac{rdf}, schema, and inference languages will make all the data in the world look like one huge database''.
+%The latest generation of web that is still at its 
+%research and development stage is Web 4.0 which is supposed to be read-write-execute with the property of concurrency~\cite{choudhury2014}. 
+%This version of the web is intended to work with artificial intelligence to give users an exceptional quality of experience. 
+%While describing how Web 4.0 would be, 
+%Berners Lee~\cite{bernerslee1999weaving} stated 
+%``if \ac{html} 
+%and the Web made all the online documents look like one huge book, 
+%\ac{rdf}, schema, and inference languages will make all the data in the world look like one huge database''.
 
-\subsection{The Semantic Web Stack}
-\label{subsec:semanticwebstack}
+%\subsection{The Semantic Web Stack}
+%\label{subsec:semanticwebstack}
 
-The Semantic Web Stack\footnote{https://en.wikipedia.org/wiki/Semantic\_Web\_Stack} 
-is also known as Semantic Web Cake or Semantic Web Layer Cake. 
-The stack represents the architecture of semantic web. 
+%The Semantic Web Stack\footnote{https://en.wikipedia.org/wiki/Semantic\_Web\_Stack} 
+%is also known as Semantic Web Cake or Semantic Web Layer Cake. 
+The 
+semantic web
+stack represents the architecture of semantic web. 
 Figure~\ref{web-stack}\footnote{https://www.w3.org/2001/12/semweb-fin/w3csw} 
 shows how semantic web principles are implemented in the layers of technologies.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/web-stack.png}
+    \includegraphics[width=\columnwidth]{images/ch2/web-stack.png}
     \caption{Semantic Web Stack}
     \label{web-stack}
 \end{figure}
 
 The layers in the stack consist of different technologies. 
-Going from the lowest level to the top level, 
+%Going f
+From the lowest level to the highest level, 
 the technologies are Unicode and \ac{uri}; \ac{xml}, NS and xmlschema; \ac{rdf} and rdfschema; Ontology vocabulary; Logic; Proof; and Trust. 
 Digital signatures are used as security at different levels. 
 The layers belong to three different groups, 
 namely, 
 self-descriptive document, data and rules.
 
-\section{Linked Open Data}
-\label{sec:linkedopendata}
 
-According to Berners-Lee et al.~\cite{aghaei2012evolution}, 
-``Semantic web is not limited to publication of data on the web; 
-it is about making links to connect related data.'' 
-The concept of Linked Open Data\footnote{https://www.ontotext.com/knowledgehub/fundamentals/linked-data-linked-open-data/} 
-is an amalgamation of two technologies, 
-Linked Data and Open Data.
-GraphDB\footnote{https://www.ontotext.com/knowledgehub/fundamentals/linked-data-linked-open-data/} 
-by Ontotext, an \ac{rdf} database, 
-is an example of \ac{lod}. 
-GraphDB promotes knowledge-discovery and efficient data-driven analytics by linking large datasets from distinct sources to Open Data.
-
-\subsection{Linked Data}
-\label{subsec:linkeddata}
-
-The relationships shared among the data from different sources on the web are equally important as the access to the data for efficient working of the semantic web. 
-The technique used to manage these datasets and their relationships is referred to as Linked Data. 
-In other words, 
-Linked Data\footnote{https://www.w3.org/wiki/LinkedData} 
-can be termed as a set of various techniques of publishing structured data on the web. 
-The \ac{w3c} 
-standards and various semantic web technologies handle the distribution and engagement of the structured data across the web to aggregate the data available on the web into one huge database~\cite{bernerslee1999weaving}.
-
-In 2006, 
-Berners-Lee~\cite{bizer2009linked} 
-framed four basic rules (mentioned in section \ref{principles}) 
-to publish and connect the structured datasets across the web. 
-This set of rules was termed as Linked Data principles. 
-A brief description of these principles is as follows:
-
-\begin{enumerate}
- 
-  \item Use \ac{uri}s as names for things:
-  
-  The web identifiers, the (\ac{uri}s) should be used to give unique names to all the entities (or things) on the web.
-  \ac{uri} of an entity can be used to understand that the entity in this dataset is the same as the other entity in a disparate dataset. 
-  
-  \item Use \ac{http}\footnote{Both \ac{http} and \ac{https}} \ac{uri}s to look up for those names:
-  
-  The \ac{http}/\ac{https} protocols allow easy retrieval of resources. 
-  Hence, 
-  along with \ac{uri}s, 
-  either of the protocols can be used to search things (entities) easily. 
-  This promotes the publication of data on the web and its addition to the global data space.
-  
-  \item Provide useful information, 
-  using the standards (\ac{rdf}\footnote{includes all the standards belonging to \ac{rdf} family}, 
-  \ac{sparql}) 
-  to look up for a \ac{uri}:
-  
-  When an entity is searched using the \ac{uri} associated with it, 
-  it is beneficial to use standards like \ac{rdf} 
-  and \ac{sparql} 
-  to query the datasets. 
-  \ac{rdf} is a framework used for graphical representation of publication and distribution of data on the web, 
-  as described in detail in section~\ref{sec:rdf}. 
-  On the contrary, 
-  \ac{sparql} is a query language used for retrieval and manipulation of data (in \ac{rdf} format) on the web. 
-  It also helps with the information on relationships related to the data being searched.
-  
-  \item Include links to other \ac{uri}s to discover more thing:
-  
-  In the semantic web, 
-  links between two entity defines the relationship using the basic entity-relationship model.
-  Using links for \ac{uri}s of the entities promotes interconnection of the data and search of things on the web.
-  Connecting new data to already existing entities increases the reuse and interlinking within the domain and creates a computer-understandable network.
-
-\end{enumerate}
-
-Publishing data on the web as per linked data principles can benefit the data providers by allowing them to use one global space to add all their data. 
-An \ac{rdf} 
-data model and \ac{uri}s 
-are used by the linked data to name the things (entities). 
-The linked datasets publish and locate the class-object data which in turn is accessed using the \ac{http}/\ac{https} 
-and maintains the connection among them~\cite{bauer2011linked}. 
-
-A wide network of structured data, 
-from a variety of domains, 
-on the web has been formed obeying the principles of linked data by Berners-Lee. 
-This has resulted in the formation of a huge database of structured linked data on the web which has further led to the concept of the \ac{lod} Cloud. 
-The \ac{lod} 
-cloud is a set of publicly~\cite{berners1998universal} 
-accessible/available linked datasets.
-
-\subsection{Linked (Open) Data}
-\label{subsec:linked(open)data}
-
-According to a handbook\footnote{https://opendatahandbook.org/guide/en/what-is-open-data/} 
-by the Open Knowledge Foundation, 
-``Open Data is data that can be freely used, 
-re-used and redistributed by anyone - subject only, 
-at most, 
-to the requirement to attribute and share-alike''. 
-To make open data available to everyone on the web, 
-the data don't need to be interlinked. 
-Important features of open data are:
-
-\begin{itemize}
- 
-  \item Availability and access: the data should be available on the web. 
-  The users should be able to access the data easily by downloading them over the internet. 
-  It should be easy to access and modify the data.
-  
-  \item Re-use and redistribution: the data on the web must have permissions to re-use and redistribute in combination to other datasets.
- 
-  \item Universal participation: the data should be available to use, re-use, and redistribute for all the users without any discrimination to an individual or a group.
-  
-\end{itemize}
-
-\section{Resource Description Framework}
+\subsection{Resource Description Framework}
 \label{sec:rdf}
 
 The \ac{rdf}, 
 initially designed as a metadata data model, 
 is a computer-understandable specification written in a particular format. 
 According to a proposal by \ac{w3c}\footnote{https://www.w3.org/TR/PR-rdf-syntax/Overview.html}, 
+\marginpar{has not RDF gotten past the proposal stage? When was this proposal written? 1999! DO NOT USE THIS! -> https://www.w3.org/TR/rdf-syntax-grammar/ (2014)}
 \ac{rdf} plays an important role in their 
 ``Semantic Web Vision''. 
 \ac{rdf} describes an entity (or resources) and the relationships among them on the web using basic data models like the \ac{er} model.
 
-\ac{rdf} is a \ac{w3c}\footnote{https://www.w3schools.com/xml/xml\_rdf.asp} 
+\ac{rdf} is a \ac{w3c}%\footnote{https://www.w3schools.com/xml/xml\_rdf.asp} 
+\marginpar{W3Schools is NOT GOOD TO USE :-) W3C only!}
 specification for describing resources on the web. 
 \ac{rdf} uses 
 ``properties'' and 
@@ -220,7 +254,7 @@ can be seen as building blocks of a statement in English,
 which are a subject, an object, and a predicate. 
 An object in a statement can be either a property value, a resource, or a literal. 
 \ac{rdf}, 
-according to Swick and Lassila~\cite{beckett2004rdf}, 
+according to Swick and Lassila~\cite{beckett2004rdf,anything-more-recent}, 
 can be represented in three ways:
 
 \begin{enumerate}
@@ -255,14 +289,17 @@ Description tag holds an identification for the resource.
 \end{figure}
 
 Figure~\ref{rdf-triple} 
-shows an example of an \ac{rdf} as a triple. 
-An \ac{rdf} triple, 
+shows an example of an \ac{rdf} triple,
+which 
+%An \ac{rdf} triple, 
 generally, 
 follows subject-predicate-object format. 
-For the illustration in the figure, 
-the subject is ``https://www.semanticweb.org/pda324/ontologies/survey'', 
-predicate is ``includes`` 
+%For the illustration in the figure, 
+There,
+the subject is ``https://www.semanticweb.org/pda324/ontologies/survey'';
+the predicate is ``includes''; 
 and the object is ``Survey Details''.
+\marginpar{is this a real example?}
 
 \begin{figure}[htp]
     \centering
@@ -273,7 +310,8 @@ and the object is ``Survey Details''.
 
 Figure~\ref{rdf-graph} 
 shows an \ac{rdf} in graphical format. 
-Resource is indicated using an oval shape and a rectangle is used to represent a property value. 
+Resource is indicated using an oval shape and a rectangle is used to 
+represent a property value. 
 A connector (an arrow) is used to represent a property to show that property (predicate) connects the resource (subject) with the value (object).
 
 \begin{figure}[htp]
@@ -294,7 +332,8 @@ which is an extension of N-Triples (line based) and adds a graph label to each l
 \begin{table}[h!]
     \centering
     \begin{tabular}{| l | l |} \hline
-     \ \ \ Class/Property & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Description  \\  \hline
+%     \ \ \ Class/Property & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Description  \\  \hline
+		Class/Property & Description  \\  \hline
      rdfs:Resource & All things described by \ac{rdf} are called resources  \\ \hline
      rdfs:Class & The class of resources that are \ac{rdf} classes \\ \hline
      rdf:Property & The class of \ac{rdf} properties. 
@@ -583,44 +622,7 @@ shows its components.
     \label{components-of-url-example}
 \end{figure}
 
-\section{Linked Data Life Cycle}
-\label{sec:linkeddatalifecycle}
-
-The Linked Data Life Cycle includes multiple stages as described by 
-Ngomo et al.~\cite{ngomo2014introduction} 
-which are listed in
-Table~\ref{table:linked-data-lifecycle}.
-Each stage of this life cycle is independent yet linked to one another. 
-So, 
-it is not mandatory to go through all the stages sequentially 
-to publish the data on the web. 
-It is necessary to use a procedure that follows the life cycle to ensure the quality of data to be published as linked data. 
-The first stage, 
-generally, 
-is data extraction along with conversion of the extracted data 
-(in forms other than \ac{rdf}) into \ac{rdf}. 
-Once the data is in \ac{rdf} form, 
-any or all of the other stages listed in 
-Table~\ref{table:linked-data-lifecycle} 
-can be performed.
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|l|l|} \hline 
-     \ \ \ \ \ \ \ \ \ \ \ Stage \ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Description \\ \hline
-     Extraction & Extraction and conversion of unstructured and semi-\\ & structured data into \ac{rdf}\\ \hline
-     Storage \& Querying & Storing the \ac{rdf} data in a format that supports data\\ & querying efficiently\\ \hline
-     Authoring & Allowing the users to create new data or to access and\\ & modify the existing data\\ \hline
-     Linking & Creating links among the data belonging to various\\ & domains and users based on their entities\\ \hline
-     Enrichment & Data enrichment for efficient query support using\\ & various top-tier structures\\ \hline
-     Quality Analysis & Managing data using different strategies to ensure good\\ & quality of available data on the web\\ \hline
-     Browsing \& Exploration & Making the structured data available on the web for\\ & the users to browse and explore effectively\\ \hline
-    \end{tabular}
-    \caption{Stages in Linked Data Life Cycle, after Ngomo et al.~\cite{ngomo2014introduction}}
-    \label{ldlc-stages}
-\end{table}
-
-\section{Ontology in Web Semantics}
+\subsection{Ontology in Web Semantics}
 \label{sec:ontologyinwebsemantics}
 
 Ontology is a branch of information science 
@@ -643,8 +645,10 @@ The ontologies have have been used to
 in the form of metadata schema on the semantic web, 
 for a fixed set of users''~\cite{jacob2003ontologies}.
 
-\section{OWL Ontologies}
+\subsection{OWL Ontologies}
 \label{sec:owlontologies}
+
+Linked Open Vocabularies~\cite{LOV}.
 
 W3C developed a standard ontology language called \ac{owl}\footnote{ http://www.w3.org/TR/owl- guide/} 
 to define and describe concepts for ontology using different facilities and operations like intersection, union and negation. 
@@ -757,7 +761,48 @@ The page does not include valid links to the editors' websites.
 Protégé is the most popular ontology editor among researchers. 
 There exists negligible information about most of the editors in the list which has driven the decision of the use of protégé for ontology development and OntoGraf and WebVOWL for visualization which are discussed in detail in chapter~\ref{chap:proofOfConcept}.
 
-\section{Conversion of Data from Spreadsheets to RDF}
+\section{Linked Data Life Cycle}
+\label{sec:linkeddatalifecycle}
+
+I suggest that you present the tools as part of the linked data lifecycle.
+Maybe this lifecycle is lacking -- that's OK to say so...
+The Linked Data Life Cycle includes multiple stages as described by 
+Ngomo et al.~\cite{ngomo2014introduction} 
+which are listed in
+Table~\ref{table:linked-data-lifecycle}.
+Each stage of this life cycle is independent yet linked to one another. 
+So, 
+it is not mandatory to go through all the stages sequentially 
+to publish the data on the web. 
+It is necessary to use a procedure that follows the life cycle to ensure the quality of data to be published as linked data. 
+The first stage, 
+generally, 
+is data extraction along with conversion of the extracted data 
+(in forms other than \ac{rdf}) into \ac{rdf}. 
+Once the data is in \ac{rdf} form, 
+any or all of the other stages listed in 
+Table~\ref{table:linked-data-lifecycle} 
+can be performed.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|} \hline 
+     \ \ \ \ \ \ \ \ \ \ \ Stage \ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Description \\ \hline
+     Extraction & Extraction and conversion of unstructured and semi-\\ & structured data into \ac{rdf}\\ \hline
+     Storage \& Querying & Storing the \ac{rdf} data in a format that supports data\\ & querying efficiently\\ \hline
+     Authoring & Allowing the users to create new data or to access and\\ & modify the existing data\\ \hline
+     Linking & Creating links among the data belonging to various\\ & domains and users based on their entities\\ \hline
+     Enrichment & Data enrichment for efficient query support using\\ & various top-tier structures\\ \hline
+     Quality Analysis & Managing data using different strategies to ensure good\\ & quality of available data on the web\\ \hline
+     Browsing \& Exploration & Making the structured data available on the web for\\ & the users to browse and explore effectively\\ \hline
+    \end{tabular}
+    \caption{Stages in Linked Data Life Cycle, after Ngomo et al.~\cite{ngomo2014introduction}}
+    \label{ldlc-stages}
+\end{table}
+
+\subsection{Extraction}
+
+\subsection{Conversion of Data from Spreadsheets to RDF}
 \label{sec:csvtordf}
 
 The preferred format of the data published on the semantic web is \ac{rdf} format. 
@@ -770,7 +815,7 @@ using different open source tools~\cite{ermilov2013csv}
 recommended by \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} 
 or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}. 
 
-\subsection{Open-source Tools Recommended by W3C}
+\subsubsection{Open-source Tools Recommended by W3C}
 \label{subsec:w3ctools}
 
 \begin{itemize}
@@ -830,14 +875,14 @@ or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}.
     
 \end{itemize}
 
-\subsection{Conversion Using RML}
+\subsubsection{Conversion Using RML}
 \label{subsec:rmlconversion}
 
 ``An \ac{rml} mapping defines a mapping from any logical source to \ac{rdf}. 
 It is a structure that consists of one or more triples maps.''\footnote{https://rml.io/specs/rml/\#example-XML} 
 The \ac{rml} rules can be written and tested using tools like the Matey Web UI \footnote{https://rml.io/yarrrml/matey/}.
 
-\subsubsection{Tools for RML Conversion}
+\subsubsubsection{Tools for RML Conversion}
 \label{subsubsec:rmlconversiontools}
 
 Once the \ac{rml} rules have been defined, 
@@ -887,7 +932,16 @@ that can be used for \ac{rml} conversion.
         
 \end{itemize}
 
-\section{Applications of Linked Open Data}
+\subsection{Storage \& Querying}
+\subsection{Authoring}
+\subsection{Linking}
+\subsection{Enrichment}
+\subsection{Quality Analysis}
+\subsection{Browsing \& Exploration}
+
+
+
+\section{Applications that Use Linked Open Data}
 \label{sec:lodapplications}
 
 A variety of projects and websites, 
@@ -1086,5 +1140,7 @@ that supports the standard \ac{http} GET method calls from the web clients.
     \caption{DBpedia Data Architecture}
     \label{depedia-architecture}
 \end{figure}
+
+\subsection{Survey}
 
 \end{doublespace}
