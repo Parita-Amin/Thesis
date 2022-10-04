@@ -3,6 +3,7 @@ ch2.aux
 ch3.aux
 ch4.aux
 ch5.aux
+abbrev.aux
 abstract.aux
 ack.aux
 appendix-data.aux
@@ -18,5 +19,6 @@ parita-msc.synctex.gz
 parita-msc.lot
 parita-msc.lof
 parita-msc.blg
+parita-msc.bbl
 parita-msc.out
 .DS_Store
