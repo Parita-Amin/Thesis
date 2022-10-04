@@ -330,24 +330,22 @@ which is a subset of Turtle and N-Quads,
 which is an extension of N-Triples (line based) and adds a graph label to each line that allows multiple graph encoding~\cite{cyganiak2008n}.
 
 \begin{table}[h!]
-    \centering
-    \begin{tabular}{| l | l |} \hline
-%     \ \ \ Class/Property & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Description  \\  \hline
+	\centering
+    \begin{tabular}{| l | p{10cm} |} \hline
 		Class/Property & Description  \\  \hline
      rdfs:Resource & All things described by \ac{rdf} are called resources  \\ \hline
      rdfs:Class & The class of resources that are \ac{rdf} classes \\ \hline
      rdf:Property & The class of \ac{rdf} properties. 
      It is an instance of rdfs:Class  \\ \hline
      rdfs:Literal & The class of literal values like integers and strings  \\ \hline
-     rdfs:Datatype & The class of datatypes. 
-     All the objects of this class \\ & correspond to the \ac{rdf} model of datatype  \\ \hline
+     rdfs:Datatype & The class of datatypes. All the objects of this class correspond to the \ac{rdf} model of datatype  \\ \hline
      rdf:HTML & The class of \ac{html} literal values and subclass of rdfs:Literal  \\ \hline
-     rdfs:range & An instance of rdf:Property that is used to state that the \\ & values of a property are instances of one or more classes \\ \hline
-     rdfs:domain & An instance of rdf:Property that is used to state that any \\ & resource that has a given property is an instance of one or \\ & more classes \\ \hline
-     rdf:type & An instance of rdf:Property that is used to state that a \\ & resource is an instance of a class  \\ \hline
-     rdfs:subClassOf & An instance of rdf:Property that is used to state that all the \\ & instances of one class are instances of another  \\ \hline
-     rdfs:label & an instance of rdf:Property that may be used to provide a \\ &  human-readable version of a resource's name  \\ \hline
-     rdfs:subPropertyOf \ \ & An instance of rdf:Property that is used to state that all \\ & resources related by one property are also related by another  \\ \hline
+     rdfs:range & An instance of rdf:Property that is used to state that the values of a property are instances of one or more classes \\ \hline
+     rdfs:domain & An instance of rdf:Property that is used to state that any resource that has a given property is an instance of one or more classes \\ \hline
+     rdf:type & An instance of rdf:Property that is used to state that a resource is an instance of a class  \\ \hline
+     rdfs:subClassOf & An instance of rdf:Property that is used to state that all the instances of one class are instances of another  \\ \hline
+     rdfs:label & an instance of rdf:Property that may be used to provide a human-readable version of a resource's name  \\ \hline
+     rdfs:subPropertyOf \ \ & An instance of rdf:Property that is used to state that all resources related by one property are also related by another  \\ \hline
     \end{tabular}
     \caption{Commonly used Classes and Properties of RDFS}
     \label{rdfs-classes-and-properties}
@@ -939,7 +937,7 @@ that can be used for \ac{rml} conversion.
 \subsection{Quality Analysis}
 \subsection{Browsing \& Exploration}
 
-
+\section{Linked Open Usable Data}
 
 \section{Applications that Use Linked Open Data}
 \label{sec:lodapplications}
@@ -1141,6 +1139,6 @@ that supports the standard \ac{http} GET method calls from the web clients.
     \label{depedia-architecture}
 \end{figure}
 
-\subsection{Survey}
+\section{Surveys as LOD Applications}
 
 \end{doublespace}
