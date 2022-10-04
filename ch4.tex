@@ -164,8 +164,10 @@ Each of these degrees are treated as an individual
 \subsection{Object Properties for Survey Ontology}
 \label{subsec:surveyobjectproperties}
 
-Using the method of naming and building object properties described in section~\ref{subsec:objectproperties}, 
-some of the primary object properties are described for the survey ontology as shown in Figure~\ref{survey-object-properties} 
+Using the method of naming and building object properties described in
+Section~\ref{subsec:objectproperties}, 
+some of the primary object properties are described for the survey ontology 
+as shown in Figure~\ref{survey-object-properties} 
 where as Table~\ref{survey-object-properties-domains-and-ranges} 
 shows the list of the object properties along with their domain and range classes. 
 Table~\ref{survey-object-properties-parent-nodes-and-inverse} 
@@ -246,25 +248,47 @@ which are as shown in Figure~\ref{survey-data-properties}.
 
 The parent node of all the data properties is ``owl:topDataProperty'' 
 and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}. 
-The properties for likert answers restrict the datatype to positive integer and to string for open-ended answers.
+The properties for Likert answers restrict the datatype to positive integer and to string for open-ended answers.
 
 \begin{table}[h!]
     \centering
-    % smaller font size... \footnotesize?
-    \begin{tabular}{|l|l|l|} 
-    \hline \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Data Property &\ \ \ Domain &\ \ \ \ \ \ \ Range\\ \hline
-     hasLikertAns\_is\_well-prepared\_for\_class & Respondent & xsd:positiveInteger\\ \hline
-     hasLikertAns\_clearly\_communicates\_his\_expecta-&\\ tions\_for\_student\_preparation\_and\_participation & \multirow{-2}{5em}{Respondent} & \multirow{-2}{8.5em}{xsd:positiveInteger}\\ \hline
-     hasLikertAns\_uses\_class\_time\_effectively & Respondent & xsd:positiveInteger\\ \hline
-     hasLikertAns\_has\_clear\_expectations\_for&\\ \_assigned\_work & \multirow{-2}{5em}{Respondent} & \multirow{-2}{8.5em}{xsd:positiveInteger}\\ \hline
-     hasLikertAns\_encourages\_student\_participation & Respondent & xsd:positiveInteger\\ \hline
-     hasLikertAns\_clearly\_answers\_questions & Respondent & xsd:positiveInteger\\ \hline
-     hasLikertAns\_treats\_students\_with\_respect & Respondent & xsd:positiveInteger\\ \hline
-     hasLikertAns\_effectively\_directs\_and\_stimulates&\\ \_discussion & \multirow{-2}{5em}{Respondent} & \multirow{-2}{8.5em}{xsd:positiveInteger}\\ \hline
-     hasLikertAns\_effectively\_encourages\_students\_to&\\ \_ask\_questions\_and\_give\_answers & \multirow{-2}{5em}{Respondent} & \multirow{-2}{8.5em}{xsd:positiveInteger}\\ \hline
-     hasOEAnswer\_Change & Respondent & xsd:string\\ \hline
-     hasOEAnswer\_LikeBest & Respondent & xsd:string\\ \hline
-     hasOEAnswer\_Strengths & Respondent & xsd:string\\ \hline
+    % smaller font size... 
+    \footnotesize
+    \begin{tabular}{|p{8cm}|l|l|} 
+    \hline 
+    Data Property & Domain & Range\\ 
+    \hline
+    hasLikertAns\_is\_well-prepared\_for\_class & Respondent & xsd:positiveInteger\\ 
+    \hline
+    hasLikertAns\_clearly\_communicates\_his\-
+    \_expectations\_for\_student\_preparation\-
+    \_and\_participation & 
+    Respondent & xsd:positiveInteger\\ 
+    \hline
+    hasLikertAns\_uses\_class\_time\_effectively & Respondent & xsd:positiveInteger\\ 
+    \hline
+    hasLikertAns\_has\_clear\_expectations\_for\-\_assigned\_work &
+    Respondent & xsd:positiveInteger\\
+    \hline
+    hasLikertAns\_encourages\_student\_participation & Respondent & xsd:positiveInteger\\
+    \hline
+    hasLikertAns\_clearly\_answers\_questions & Respondent & xsd:positiveInteger\\ 
+    \hline
+    hasLikertAns\_treats\_students\_with\_respect & Respondent & xsd:positiveInteger\\ 
+    \hline
+    hasLikertAns\_effectively\_directs\_and\_stimulates\-\_discussion & 
+    Respondent & xsd:positiveInteger\\ 
+    \hline
+    hasLikertAns\_effectively\_encourages\_students\_to\- 
+    \_ask\_questions\_and\_give\_answers &
+    Respondent & xsd:positiveInteger\\ 
+    \hline
+    hasOEAnswer\_Change & Respondent & xsd:string\\ 
+    \hline
+    hasOEAnswer\_LikeBest & Respondent & xsd:string\\
+    \hline
+    hasOEAnswer\_Strengths & Respondent & xsd:string\\ 
+    \hline
     \end{tabular}
     \caption{Data Properties and Their Domain and Range}
     \label{survey-data-properties-domains-and-ranges}
@@ -365,7 +389,7 @@ file opened in \ac{shacl} editor of protégé.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/shacl-editor.png}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/shacl-editor.png}
     \caption{Data Validation using SHACL Editor}
     \label{shacl-editor}
 \end{figure}
@@ -383,7 +407,7 @@ as shown in Figure~\ref{shacl-constraint-violations}.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/shacl-constraint-violations.png}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/shacl-constraint-violations.png}
     \caption{SHACL Constraint Violations}
     \label{shacl-constraint-violations}
 \end{figure}
@@ -412,7 +436,7 @@ shows expression of a sample DL query on the survey ontology in protégé.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/survey-dl-query.png}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-dl-query.png}
     \caption{DL Query on Survey Ontology}
     \label{survey-dl-query}
 \end{figure}
@@ -450,7 +474,7 @@ consider the following query:
     
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/survey/survey-sparql-query.png}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-sparql-query.png}
     \caption{SPARQL Query on Survey Ontology}
     \label{survey-sparql-query}
 \end{figure}
@@ -548,7 +572,7 @@ and the fields in the project with an option of using linked data vocabularies t
     
         \begin{figure}[htp]
             \centering
-            \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-add-prefix.png}
+            \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-add-prefix.png}
             \caption{Add New Prefix for Survey Ontology in OpenRefine}
             \label{openrefine-add-prefix}
         \end{figure}
@@ -558,7 +582,7 @@ and the fields in the project with an option of using linked data vocabularies t
         
         \begin{figure}[htp]
             \centering
-            \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-manage-prefix.png}
+            \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-manage-prefix.png}
             \caption{Manage Prefixes in OpenRefine}
             \label{openrefine-manage-prefix}
         \end{figure}
@@ -581,7 +605,7 @@ On clicking ``Preview edit'', format of expression to display ``ID'' can be modi
        
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-index.png}
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-index.png}
     \caption{RDF Node Settings for Index ID of Records in CSV in OpenRefine}
     \label{openrefine-index}
 \end{figure} 
@@ -606,7 +630,7 @@ of the CSV.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-selecting-property.png}
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-selecting-property.png}
     \caption{Using Linked Data to Describe the Fields in CSV for Feedback Responses}
     \label{openrefine-selecting-property}
 \end{figure}
@@ -632,7 +656,7 @@ the vocabulary and value for the fields corresponding to the responses to all th
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch4/openrefine/openrefine-rdf-preview.png}
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-preview.png}
     \caption{RDF Preview for CSV using Survey Ontology}
     \label{openrefine-rdf-preview}
 \end{figure}
@@ -666,7 +690,7 @@ data reuse is more likely to happen.
     
     \begin{figure}[htp]
        \centering
-       \includegraphics[width=15cm]{images/ch4/survey/survey-license.png}
+       \includegraphics[width=\columnwidth]{images/ch4/survey/survey-license.png}
        \caption{Link to Turtle File containing Survey Vocabulary}
        \label{survey-license}
     \end{figure}       
