@@ -6,758 +6,575 @@ OWL Vocabulary for Survey Data.
 This is the OWL file that describes the feedback survey data received.
 
 \UseRawInputEncoding
-%%\begin{doublespace}
-%\lstset{ 
-%  %backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-%  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
-%  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-%  breaklines=true,                 % sets automatic line breaking
-%  captionpos=b,                    % sets the caption-position to bottom
-%  %commentstyle=\color{mygreen},    % comment style
-%  %deletekeywords={...},            % if you want to delete keywords from the given language
-%  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-%  %extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-%  firstnumber=1,                % start line enumeration with line 1000
-%  %frame=single,	                   % adds a frame around the code
-%  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-%  %keywordstyle=\color{blue},       % keyword style
-%  language=XML,                 % the language of the code
-%  %morekeywords={*,...},            % if you want to add more keywords to the set
-%  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-%  numbersep=5pt,                   % how far the line-numbers are from the code
-%  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-%  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-%  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-%  showstringspaces=false,          % underline spaces within strings only
-%  showtabs=false,                  % show tabs within strings adding particular underscores
-%  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-%  %stringstyle=\color{mymauve},     % string literal style
-%  tabsize=2,	                   % sets default tabsize to 2 spaces
-%  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
-%}
-%\begin{lstlisting}
-%<?xml version="1.0"?>
-%<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-%     xml:base="http://www.semanticweb.org/pda324/ontologies/survey"
-%     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-%     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-%     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-%     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-%     ontologyIRI="http://www.semanticweb.org/pda324/ontologies/survey"
-%     versionIRI="http://www.semanticweb.org/pda324/ontologies/survey/1.10">
-%    <Prefix name="" IRI="http://www.semanticweb.org/pda324/
-%    ontologies/survey"/>
-%    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-%    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-%    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-%    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-%    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-%    <Declaration>
-%        <Class IRI="#Always"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Domain_entity"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Independent_entity"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Likert_question"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Never"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Open_Ended_question"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Respondents"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Sample_Detail"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Survey"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Survey_Question"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#Value"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#feedback_survey"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#sample_courseID"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#sample_course_name"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#sample_max_responses"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#sample_name"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#sample_number"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#sample_semester"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#0"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#1"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#1_The_instructor_is_well-prepared_for_class"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#1_What_do_you_like_the_best_about_this_course?"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#2"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#2_The_instructor_clearly_communicates_his
-%        _expectations_for_student_preparation_and_participation"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#2_What_would_you_like_to_change_about_this_course?"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#3"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#3_The_instructor_uses_class_time_effectively"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#3_What_do_you_think_the_instructor's_greatest
-%        _strengths_are?"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#4"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#4_The_instructor_has_clear_expectations_for
-%        _assigned_work"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#5"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#5_The_instructor_encourages_student_participation"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#6_The_instructor_clearly_answers_questions"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#7_The_instructor_treats_students_with_respect"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#8_The_instructor_easily_directs_and_simulates
-%        _discussion"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#9_The_instructor_effectively_encourages_students
-%        _to_ask_questions_and_give_answers"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#[No_Answer]"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#[Often]"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#[Rarely]"/>
-%    </Declaration>
-%    <Declaration>
-%        <Class IRI="#[Sometimes]"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasCourseID"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasCourseName"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasMaxResponses"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasName"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasNumber"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasRespondent"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasSemester"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#hasSurveyQuestion"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isCourseIDOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isCourseNameOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isMaxResponseOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isNameOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isNumberOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isRespondentOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isSemesterOf"/>
-%    </Declaration>
-%    <Declaration>
-%        <ObjectProperty IRI="#isSurveyQuestionOf"/>
-%    </Declaration>
-%    <EquivalentClasses>
-%        <Class IRI="#Always"/>
-%        <Class IRI="#5"/>
-%    </EquivalentClasses>
-%    <EquivalentClasses>
-%        <Class IRI="#Never"/>
-%        <Class IRI="#1"/>
-%    </EquivalentClasses>
-%    <EquivalentClasses>
-%        <Class IRI="#0"/>
-%        <Class IRI="#[No_Answer]"/>
-%    </EquivalentClasses>
-%    <EquivalentClasses>
-%        <Class IRI="#2"/>
-%        <Class IRI="#[Rarely]"/>
-%    </EquivalentClasses>
-%    <EquivalentClasses>
-%        <Class IRI="#3"/>
-%        <Class IRI="#[Sometimes]"/>
-%    </EquivalentClasses>
-%    <EquivalentClasses>
-%        <Class IRI="#4"/>
-%        <Class IRI="#[Often]"/>
-%    </EquivalentClasses>
-%    <SubClassOf>
-%        <Class IRI="#Always"/>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Independent_entity"/>
-%        <Class IRI="#Domain_entity"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%        <Class IRI="#Likert_question"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Likert_question"/>
-%        <Class IRI="#Survey_Question"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Likert_question"/>
-%        <Class IRI="#Value"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Never"/>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Open_Ended_question"/>
-%        <Class IRI="#Survey_Question"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Open_Ended_question"/>
-%        <Class IRI="#Value"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Respondents"/>
-%        <Class IRI="#Independent_entity"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Sample_Detail"/>
-%        <Class IRI="#Independent_entity"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Survey"/>
-%        <Class IRI="#Independent_entity"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Survey_Question"/>
-%        <Class IRI="#Independent_entity"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#Value"/>
-%        <Class IRI="#Domain_entity"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#feedback_survey"/>
-%        <Class IRI="#Survey"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#sample_courseID"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#sample_course_name"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#sample_max_responses"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#sample_name"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#sample_number"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#sample_semester"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#0"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#1"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#1_The_instructor_is_well-prepared_for_class"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#1_What_do_you_like_the_best_about_this_course?"/>
-%        <Class IRI="#Open_Ended_question"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#2"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#2_The_instructor_clearly_communicates_his
-%        _expectations_for_student_preparation_and_participation"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#2_What_would_you_like_to_change_about_this_course?"/>
-%        <Class IRI="#Open_Ended_question"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#3"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#3_The_instructor_uses_class_time_effectively"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#3_What_do_you_think_the_instructor's_greatest
-%        _strengths_are?"/>
-%        <Class IRI="#Open_Ended_question"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#4"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#4_The_instructor_has_clear_expectations_for
-%        _assigned_work"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#5"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#5_The_instructor_encourages_student
-%        _participation"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#6_The_instructor_clearly_answers_questions"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#7_The_instructor_treats_students_with_respect"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#8_The_instructor_easily_directs_and_simulates
-%        _discussion"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#9_The_instructor_effectively_encourages_students
-%        _to_ask_questions_and_give_answers"/>
-%        <Class IRI="#Likert_NeverAlways5"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#[No_Answer]"/>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#[Often]"/>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#[Rarely]"/>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%    </SubClassOf>
-%    <SubClassOf>
-%        <Class IRI="#[Sometimes]"/>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%    </SubClassOf>
-%    <DisjointClasses>
-%        <Class IRI="#Always"/>
-%        <Class IRI="#Never"/>
-%        <Class IRI="#[No_Answer]"/>
-%        <Class IRI="#[Often]"/>
-%        <Class IRI="#[Rarely]"/>
-%        <Class IRI="#[Sometimes]"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#Independent_entity"/>
-%        <Class IRI="#Value"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#Likert_NeverAlways5_names"/>
-%        <Class IRI="#Likert_NeverAlways5_numbers"/>
-%        <Class IRI="#1_The_instructor_is_well-prepared_for_class"/>
-%        <Class IRI="#2_The_instructor_clearly_communicates_his
-%        _expectations_for_student_preparation_and_participation"/>
-%        <Class IRI="#3_The_instructor_uses_class_time_effectively"/>
-%        <Class IRI="#4_The_instructor_has_clear_expectations_for
-%        _assigned_work"/>
-%        <Class IRI="#5_The_instructor_encourages_student
-%        _participation"/>
-%        <Class IRI="#6_The_instructor_clearly_answers_questions"/>
-%        <Class IRI="#7_The_instructor_treats_students_with_respect"/>
-%        <Class IRI="#8_The_instructor_easily_directs_and_simulates
-%        _discussion"/>
-%        <Class IRI="#9_The_instructor_effectively_encourages_students
-%        _to_ask_questions_and_give_answers"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#Likert_question"/>
-%        <Class IRI="#Open_Ended_question"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#Respondents"/>
-%        <Class IRI="#Sample_Detail"/>
-%        <Class IRI="#Survey"/>
-%        <Class IRI="#Survey_Question"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#Sample_Detail"/>
-%        <Class IRI="#Survey"/>
-%        <Class IRI="#Survey_Question"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#sample_courseID"/>
-%        <Class IRI="#sample_course_name"/>
-%        <Class IRI="#sample_max_responses"/>
-%        <Class IRI="#sample_name"/>
-%        <Class IRI="#sample_number"/>
-%        <Class IRI="#sample_semester"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#sample_courseID"/>
-%        <Class IRI="#sample_max_responses"/>
-%        <Class IRI="#sample_name"/>
-%        <Class IRI="#sample_number"/>
-%        <Class IRI="#sample_semester"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#0"/>
-%        <Class IRI="#1"/>
-%        <Class IRI="#2"/>
-%        <Class IRI="#3"/>
-%        <Class IRI="#4"/>
-%        <Class IRI="#5"/>
-%    </DisjointClasses>
-%    <DisjointClasses>
-%        <Class IRI="#1_What_do_you_like_the_best_about_this_course?"/>
-%        <Class IRI="#2_What_would_you_like_to_change_about_this
-%        _course?"/>
-%        <Class IRI="#3_What_do_you_think_the_instructor's_greatest
-%        _strengths_are?"/>
-%    </DisjointClasses>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasCourseID"/>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasCourseName"/>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasMaxResponses"/>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasName"/>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasNumber"/>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasRespondent"/>
-%        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasSemester"/>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#hasSurveyQuestion"/>
-%        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isCourseIDOf"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isCourseNameOf"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isMaxResponseOf"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isNameOf"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isNumberOf"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isRespondentOf"/>
-%        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isSemesterOf"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </SubObjectPropertyOf>
-%    <SubObjectPropertyOf>
-%        <ObjectProperty IRI="#isSurveyQuestionOf"/>
-%        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-%    </SubObjectPropertyOf>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasCourseID"/>
-%        <ObjectProperty IRI="#isCourseIDOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasCourseName"/>
-%        <ObjectProperty IRI="#isCourseNameOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasMaxResponses"/>
-%        <ObjectProperty IRI="#isMaxResponseOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasName"/>
-%        <ObjectProperty IRI="#isNameOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasNumber"/>
-%        <ObjectProperty IRI="#isNumberOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasRespondent"/>
-%        <ObjectProperty IRI="#isRespondentOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasSemester"/>
-%        <ObjectProperty IRI="#isSemesterOf"/>
-%    </InverseObjectProperties>
-%    <InverseObjectProperties>
-%        <ObjectProperty IRI="#hasSurveyQuestion"/>
-%        <ObjectProperty IRI="#isSurveyQuestionOf"/>
-%    </InverseObjectProperties>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasCourseID"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasCourseName"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasMaxResponses"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasName"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasNumber"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasRespondent"/>
-%        <Class IRI="#Survey"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%        <Class IRI="#Survey"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasSemester"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#hasSurveyQuestion"/>
-%        <Class IRI="#Survey"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#isRespondentOf"/>
-%        <Class IRI="#Respondents"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyDomain>
-%        <ObjectProperty IRI="#isSurveyQuestionOf"/>
-%        <Class IRI="#Survey_Question"/>
-%    </ObjectPropertyDomain>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasCourseID"/>
-%        <Class IRI="#sample_courseID"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasCourseName"/>
-%        <Class IRI="#sample_course_name"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasMaxResponses"/>
-%        <Class IRI="#sample_max_responses"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasName"/>
-%        <Class IRI="#sample_name"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasNumber"/>
-%        <Class IRI="#sample_number"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasRespondent"/>
-%        <Class IRI="#Respondents"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%        <Class IRI="#Sample_Detail"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasSemester"/>
-%        <Class IRI="#sample_semester"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#hasSurveyQuestion"/>
-%        <Class IRI="#Survey_Question"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#isRespondentOf"/>
-%        <Class IRI="#Survey"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%        <Class IRI="#Survey"/>
-%    </ObjectPropertyRange>
-%    <ObjectPropertyRange>
-%        <ObjectProperty IRI="#isSurveyQuestionOf"/>
-%        <Class IRI="#Survey"/>
-%    </ObjectPropertyRange>
-%    <DisjointObjectProperties>
-%        <ObjectProperty IRI="#hasCourseID"/>
-%        <ObjectProperty IRI="#hasCourseName"/>
-%        <ObjectProperty IRI="#hasMaxResponses"/>
-%        <ObjectProperty IRI="#hasName"/>
-%        <ObjectProperty IRI="#hasNumber"/>
-%        <ObjectProperty IRI="#hasSemester"/>
-%    </DisjointObjectProperties>
-%    <DisjointObjectProperties>
-%        <ObjectProperty IRI="#hasRespondent"/>
-%        <ObjectProperty IRI="#hasSampleDetail"/>
-%        <ObjectProperty IRI="#hasSurveyQuestion"/>
-%        <ObjectProperty IRI="#isRespondentOf"/>
-%        <ObjectProperty IRI="#isSampleDetailOf"/>
-%        <ObjectProperty IRI="#isSurveyQuestionOf"/>
-%    </DisjointObjectProperties>
-%    <DisjointObjectProperties>
-%        <ObjectProperty IRI="#isCourseIDOf"/>
-%        <ObjectProperty IRI="#isCourseNameOf"/>
-%        <ObjectProperty IRI="#isMaxResponseOf"/>
-%        <ObjectProperty IRI="#isNameOf"/>
-%        <ObjectProperty IRI="#isNumberOf"/>
-%        <ObjectProperty IRI="#isSemesterOf"/>
-%    </DisjointObjectProperties>
-%</Ontology>
-%
-%<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z)
-%https://github.com/owlcs/owlapi -->
-%
-%\end{lstlisting}
+%\begin{doublespace}
+\lstset{ 
+  %backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=true,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  %commentstyle=\color{mygreen},    % comment style
+  %deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  %extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1,                % start line enumeration with line 1000
+  %frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  %keywordstyle=\color{blue},       % keyword style
+  language=XML,                 % the language of the code
+  %morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  %numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  %rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  %stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+\begin{lstlisting}
+@prefix : <https://parita-amin.github.io/survey.owl> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix survey: <https://parita-amin.github.io/survey.owl#> .
+@base <https://parita-amin.github.io/survey.owl> .
+
+<https://parita-amin.github.io/survey.owl> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://parita-amin.github.io/survey.owl/1.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://parita-amin.github.io/survey.owl#hasCollection
+survey:hasCollection rdf:type owl:ObjectProperty ;
+                     rdfs:domain survey:Course ;
+                     rdfs:range survey:SurveyCollection .
+
+
+###  https://parita-amin.github.io/survey.owl#hasContent
+survey:hasContent rdf:type owl:ObjectProperty .
+
+
+###  https://parita-amin.github.io/survey.owl#hasEligibleRespondents
+survey:hasEligibleRespondents rdf:type owl:ObjectProperty ;
+                              rdfs:domain survey:SurveyCollection ;
+                              rdfs:range survey:Respondent .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertItemAnswer
+survey:hasLikertItemAnswer rdf:type owl:ObjectProperty ;
+                           rdfs:domain survey:LikertScaleQuestions ;
+                           rdfs:range survey:LikertAns_Never1Always5 .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertItemLabel
+survey:hasLikertItemLabel rdf:type owl:ObjectProperty ;
+                          rdfs:domain survey:LikertItem ;
+                          rdfs:range survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEAnswer_Change
+survey:hasOEAnswer_Change rdf:type owl:ObjectProperty ;
+                          rdfs:domain survey:OpenEndedQuestions ;
+                          rdfs:range survey:OpenEndedAnswers .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEAnswer_LikeBest
+survey:hasOEAnswer_LikeBest rdf:type owl:ObjectProperty ;
+                            rdfs:domain survey:OpenEndedQuestions ;
+                            rdfs:range survey:OpenEndedAnswers .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEAnswer_Strengths
+survey:hasOEAnswer_Strengths rdf:type owl:ObjectProperty ;
+                             rdfs:domain survey:OpenEndedQuestions ;
+                             rdfs:range survey:OpenEndedAnswers .
+
+
+###  https://parita-amin.github.io/survey.owl#hasRespondent
+survey:hasRespondent rdf:type owl:ObjectProperty ;
+                     rdfs:domain survey:SurveyCollection ;
+                     rdfs:range survey:Respondent .
+
+
+###  https://parita-amin.github.io/survey.owl#hasSurveyAnswer
+survey:hasSurveyAnswer rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf survey:hasContent ;
+                       rdfs:domain survey:Survey ;
+                       rdfs:range survey:SurveyAnswers .
+
+
+###  https://parita-amin.github.io/survey.owl#hasSurveyQuestion
+survey:hasSurveyQuestion rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf survey:hasContent ;
+                         rdfs:domain survey:Survey ;
+                         rdfs:range survey:SurveyQuestions .
+
+
+###  https://parita-amin.github.io/survey.owl#isTypeOf
+survey:isTypeOf rdf:type owl:ObjectProperty ;
+                rdfs:domain survey:FeedbackSurvey ;
+                rdfs:range survey:Survey .
+
+
+###  https://parita-amin.github.io/survey.owl#respondedToSurvey
+survey:respondedToSurvey rdf:type owl:ObjectProperty ;
+                         rdfs:domain survey:Respondent ;
+                         rdfs:range survey:Survey .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ1Ans
+survey:hasLikertQ1Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q1_The_instructor_is_well-prepared_for_class ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ2Ans
+survey:hasLikertQ2Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q2_The_instructor_clearly_communicates_his_expectations _for_student_preparation_and_participation ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ3Ans
+survey:hasLikertQ3Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q3_The_instructor_uses_class_time_effectively ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ4Ans
+survey:hasLikertQ4Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q4_The_instructor_has_clear_expectations_for_assigned_work ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ5Ans
+survey:hasLikertQ5Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q5_The_instructor_encourages_student_participation ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ6Ans
+survey:hasLikertQ6Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q6_The_instructor_clearly_answers_questions ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ7Ans
+survey:hasLikertQ7Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q7_The_instructor_treats_students_with_respect ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ8Ans
+survey:hasLikertQ8Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q8_The_instructor_effectively_directs_and_stimulates_discussion ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasLikertQ9Ans
+survey:hasLikertQ9Ans rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain survey:Q9_The_instructor_effectively_encourages_students_to_ask _questions_and_give_answers ;
+                      rdfs:range xsd:positiveInteger .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEAns_Change
+survey:hasOEAns_Change rdf:type owl:DatatypeProperty ;
+                       rdfs:domain survey:Respondent ;
+                       rdfs:range xsd:string .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEAns_LikeBest
+survey:hasOEAns_LikeBest rdf:type owl:DatatypeProperty ;
+                         rdfs:domain survey:Respondent ;
+                         rdfs:range xsd:string .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEAns_Strengths
+survey:hasOEAns_Strengths rdf:type owl:DatatypeProperty ;
+                          rdfs:domain survey:Respondent ;
+                          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://parita-amin.github.io/survey.owl#Course
+survey:Course rdf:type owl:Class ;
+              rdfs:subClassOf survey:SurveyCollection .
+
+
+###  https://parita-amin.github.io/survey.owl#Event
+survey:Event rdf:type owl:Class ;
+             rdfs:subClassOf survey:SurveyCollection .
+
+
+###  https://parita-amin.github.io/survey.owl#FeedbackSurvey
+survey:FeedbackSurvey rdf:type owl:Class ;
+                      rdfs:subClassOf survey:Survey .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertAns_Never1Always5
+survey:LikertAns_Never1Always5 rdf:type owl:Class ;
+                               owl:equivalentClass [ rdf:type owl:Class ;
+                                                     owl:oneOf ( <https://parita-amin.github.io/survey.owl#1_Never>
+                                                                 <https://parita-amin.github.io/survey.owl#2_Rarely>
+                                                                 <https://parita-amin.github.io/survey.owl#3_Sometimes>
+                                                                 <https://parita-amin.github.io/survey.owl#4_Often>
+                                                                 <https://parita-amin.github.io/survey.owl#5_Always>
+                                                               )
+                                                   ] ;
+                               rdfs:subClassOf survey:LikertItemAnswer .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertItem
+survey:LikertItem rdf:type owl:Class ;
+                  rdfs:subClassOf survey:LikertScaleQuestions ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty survey:hasLikertItemAnswer ;
+                                    owl:someValuesFrom survey:LikertItemAnswer
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty survey:hasLikertItemLabel ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass survey:LikertItemLabel
+                                  ] ;
+                  owl:disjointWith survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertItemAnswer
+survey:LikertItemAnswer rdf:type owl:Class ;
+                        rdfs:subClassOf survey:SurveyAnswers ;
+                        owl:disjointWith survey:OpenEndedAnswers .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertItemLabel
+survey:LikertItemLabel rdf:type owl:Class ;
+                       rdfs:subClassOf survey:LikertScaleQuestions .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ1
+survey:LikertQ1 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ2
+survey:LikertQ2 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ3
+survey:LikertQ3 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ4
+survey:LikertQ4 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ5
+survey:LikertQ5 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ6
+survey:LikertQ6 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ7
+survey:LikertQ7 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ8
+survey:LikertQ8 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertQ9
+survey:LikertQ9 rdf:type owl:Class ;
+                rdfs:subClassOf survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertScaleQuestions
+survey:LikertScaleQuestions rdf:type owl:Class ;
+                            rdfs:subClassOf survey:SurveyQuestions ;
+                            owl:disjointWith survey:OpenEndedQuestions .
+
+
+###  https://parita-amin.github.io/survey.owl#OpenEndedAnswers
+survey:OpenEndedAnswers rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Class ;
+                                              owl:oneOf ( survey:OEAns_Change
+                                                          survey:OEAns_LikeBest
+                                                          survey:OEAns_Strengths
+                                                        )
+                                            ] ;
+                        rdfs:subClassOf survey:SurveyAnswers .
+
+
+###  https://parita-amin.github.io/survey.owl#OpenEndedQuestions
+survey:OpenEndedQuestions rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                owl:oneOf ( survey:OEQuestion_Change
+                                                            survey:OEQuestion_LikeBest
+                                                            survey:OEQuestion_Strengths
+                                                          )
+                                              ] ;
+                          rdfs:subClassOf survey:SurveyQuestions .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ1
+survey:Q1_The_instructor_is_well-prepared_for_class rdf:type owl:Class ;
+                                                    rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ2
+survey:Q2_The_instructor_clearly_communicates_his_expectations_for _student_preparation_and_participation rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ3
+survey:Q3_The_instructor_uses_class_time_effectively rdf:type owl:Class ;
+                                                     rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ4
+survey:Q4_The_instructor_has_clear_expectations_for_assigned_work rdf:type owl:Class ;
+                                                                  rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ5
+survey:Q5_The_instructor_encourages_student_participation rdf:type owl:Class ;
+                                                          rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ6
+survey:Q6_The_instructor_clearly_answers_questions rdf:type owl:Class ;
+                                                   rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ7
+survey:Q7_The_instructor_treats_students_with_respect rdf:type owl:Class ;
+                                                      rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ8
+survey:Q8_The_instructor_effectively_directs_and_stimulates_discussion rdf:type owl:Class ;
+                                                                       rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#LIQ9
+survey:Q9_The_instructor_effectively_encourages_students_to_ask_questions _and_give_answers rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#Respondent
+survey:Respondent rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( survey:Respondent
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty survey:respondedToSurvey ;
+                                                               owl:someValuesFrom survey:Survey
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] .
+
+
+###  https://parita-amin.github.io/survey.owl#Semester
+survey:Semester rdf:type owl:Class ;
+                rdfs:subClassOf survey:SurveyCollection .
+
+
+###  https://parita-amin.github.io/survey.owl#Survey
+survey:Survey rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty survey:hasSurveyQuestion ;
+                                owl:someValuesFrom survey:SurveyQuestions
+                              ] .
+
+
+###  https://parita-amin.github.io/survey.owl#SurveyAnswers
+survey:SurveyAnswers rdf:type owl:Class .
+
+
+###  https://parita-amin.github.io/survey.owl#SurveyCollection
+survey:SurveyCollection rdf:type owl:Class .
+
+
+###  https://parita-amin.github.io/survey.owl#SurveyQuestions
+survey:SurveyQuestions rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://parita-amin.github.io/survey.owl#C1R1
+survey:C1R1 rdf:type owl:NamedIndividual ,
+                     survey:Respondent .
+
+
+###  https://parita-amin.github.io/survey.owl#Collection1
+survey:Collection1 rdf:type owl:NamedIndividual ,
+                            survey:SurveyCollection .
+
+
+###  https://parita-amin.github.io/survey.owl#Midterm
+survey:Midterm rdf:type owl:NamedIndividual ,
+                        survey:Event .
+
+
+###  https://parita-amin.github.io/survey.owl#OEAns_Change
+survey:OEAns_Change rdf:type owl:NamedIndividual ,
+                             survey:OpenEndedAnswers ;
+                    survey:hasOEAns_Change "" .
+
+
+###  https://parita-amin.github.io/survey.owl#OEAns_LikeBest
+survey:OEAns_LikeBest rdf:type owl:NamedIndividual ,
+                               survey:OpenEndedAnswers ;
+                      survey:hasOEAns_LikeBest "" .
+
+
+###  https://parita-amin.github.io/survey.owl#OEAns_Strengths
+survey:OEAns_Strengths rdf:type owl:NamedIndividual ,
+                                survey:OpenEndedAnswers ;
+                       survey:hasOEAns_Strengths "" .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQuestion_Change
+survey:OEQuestion_Change rdf:type owl:NamedIndividual ,
+                                  survey:OpenEndedQuestions .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQuestion_LikeBest
+survey:OEQuestion_LikeBest rdf:type owl:NamedIndividual ,
+                                    survey:OpenEndedQuestions .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQuestion_Strengths
+survey:OEQuestion_Strengths rdf:type owl:NamedIndividual ,
+                                     survey:OpenEndedQuestions .
+
+
+###  https://parita-amin.github.io/survey.owl#Q1_LI
+survey:Q1_LI rdf:type owl:NamedIndividual ,
+                      survey:LikertItem .
+
+
+###  https://parita-amin.github.io/survey.owl#Q1_LI_Label
+survey:Q1_LI_Label rdf:type owl:NamedIndividual ,
+                            survey:LikertItemLabel .
+
+
+###  https://parita-amin.github.io/survey.owl#1_Never
+<https://parita-amin.github.io/survey.owl#1_Never> rdf:type owl:NamedIndividual ,
+                                                            survey:LikertAns_Never1Always5 .
+
+
+###  https://parita-amin.github.io/survey.owl#2_Rarely
+<https://parita-amin.github.io/survey.owl#2_Rarely> rdf:type owl:NamedIndividual ,
+                                                             survey:LikertAns_Never1Always5 .
+
+
+###  https://parita-amin.github.io/survey.owl#202210
+<https://parita-amin.github.io/survey.owl#202210> rdf:type owl:NamedIndividual ,
+                                                           survey:Semester .
+
+
+###  https://parita-amin.github.io/survey.owl#3_Sometimes
+<https://parita-amin.github.io/survey.owl#3_Sometimes> rdf:type owl:NamedIndividual ,
+                                                                survey:LikertAns_Never1Always5 .
+
+
+###  https://parita-amin.github.io/survey.owl#4_Often
+<https://parita-amin.github.io/survey.owl#4_Often> rdf:type owl:NamedIndividual ,
+                                                            survey:LikertAns_Never1Always5 .
+
+
+###  https://parita-amin.github.io/survey.owl#5_Always
+<https://parita-amin.github.io/survey.owl#5_Always> rdf:type owl:NamedIndividual ,
+                                                             survey:LikertAns_Never1Always5 .
+
+
+###  https://parita-amin.github.io/survey.owl#CS280/202210
+<https://parita-amin.github.io/survey.owl#CS280/202210> rdf:type owl:NamedIndividual ,
+                                                                 survey:Course .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( survey:LikertQ1
+                survey:LikertQ2
+                survey:LikertQ3
+                survey:LikertQ4
+                survey:LikertQ5
+                survey:LikertQ6
+                survey:LikertQ7
+                survey:LikertQ8
+                survey:LikertQ9
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( 
+  		survey:Q1_The_instructor_is_well-prepared_for_class
+  		survey:Q2_The_instructor_clearly_communicates_his_expectations _for_student_preparation_and_participation
+  		survey:Q3_The_instructor_uses_class_time_effectively
+  		survey:Q4_The_instructor_has_clear_expectations_for_assigned_work
+  		survey:Q5_The_instructor_encourages_student_participation
+  		survey:Q6_The_instructor_clearly_answers_questions
+  		survey:Q7_The_instructor_treats_students_with_respect
+  		survey:Q8_The_instructor_effectively_directs_and_stimulates_discussion
+  		survey:Q9_The_instructor_effectively_encourages_students_to_ask _questions_and_give_answers
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( survey:Survey
+                survey:SurveyAnswers
+                survey:SurveyQuestions
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( survey:hasOEAnswer_Change
+                survey:hasOEAnswer_LikeBest
+                survey:hasOEAnswer_Strengths
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+\end{lstlisting}
 
 %\end{doublespace}
