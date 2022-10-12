@@ -8,7 +8,8 @@ This Chapter focuses on the usability of protégé along with the methodology in
 Chapter~\ref{chap:proofOfConcept} 
 presents the proof of concept for this methodology.
 
-\section{Describing New OWL Vocabularies}\label{sec:describenewowlvocab}
+\section{Describing New OWL Vocabularies}
+\label{sec:describenewowlvocab}
 
 In data science, 
 for a fresh and developing branch like ontology engineering, 
@@ -46,7 +47,8 @@ The editors were compared based on the following features:
 After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, 
 protégé has been used for the development of the instrument to support this research and thesis work.
 
-\subsection{Protégé}\label{subsec:protege}
+\subsection{Protégé}
+\label{subsec:protege}
 
 Stanford University developed a free, 
 open-source ontology development platform, 
@@ -57,7 +59,8 @@ to build ontologies for knowledge-based applications and to implement various
 visualization and manipulation of ontologies in various representation formats''~\cite{alatrish2013comparison}. 
 Protégé offers customization options to build knowledge models and to add data. 
 
-\subsection{Usability of Protégé}\label{subsec:usabilityofprotege}
+\subsection{Usability of Protégé}
+\label{subsec:usabilityofprotege}
 
 The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} 
 defines usability as 
@@ -128,7 +131,8 @@ The five dimensions of usability were used to assess the usability of protégé 
   
 \end{itemize}
 
-\section{Procedure to Describe OWL Vocabularies Using Protégé}\label{sec:protegeprocedure}
+\section{Procedure to Describe OWL Vocabularies Using Protégé}
+\label{sec:protegeprocedure}
 
 This section focuses on a step-wise methodology that has been followed to create new \ac{owl} 
 vocabularies using protégé. 
@@ -148,7 +152,8 @@ with the name and version of ontology.
     \label{protege-homescreen}
 \end{figure}
 
-\subsection{Classes and Class Hierarchy}\label{subsec:classhierarchy}
+\subsection{Classes and Class Hierarchy}
+\label{subsec:classhierarchy}
 
 The next step is to create classes and build the hierarchy for the class nodes. 
 Each entity in protégé is directly or indirectly a child node of the ``Thing'' class. 
@@ -232,7 +237,8 @@ can be added using the Description view of the Class tab
 (shown in Figure~\ref{class-hierarchy}). 
 Each class can be described individually by selecting a particular class and adding details to the description view. 
 
-\subsection{Object Properties and Object Property Hierarchy}\label{subsec:objectproperties}
+\subsection{Object Properties and Object Property Hierarchy}
+\label{subsec:objectproperties}
 
 The next step in building the ontology, 
 after describing the classes, 
@@ -310,7 +316,8 @@ for ``isNameOf'',
     \label{domain-and-range-for-hasName-and-isNameOf}
 \end{figure}
 
-\subsection{Data Properties and Data Property Hierarchy}\label{subsec:dataproperties}
+\subsection{Data Properties and Data Property Hierarchy}
+\label{subsec:dataproperties}
 
 Furthermore, 
 the ``Data Properties'' 
@@ -340,7 +347,8 @@ Data properties can be described using the description view of data properties o
 ``Ranges'', and 
 ``Disjoint With''.
 
-\subsection{OWL Ontology Inconsistencies and Reasoner}\label{subsec:owlreasoner}
+\subsection{OWL Ontology Inconsistencies and Reasoner}
+\label{subsec:owlreasoner}
 
 After describing the classes, object properties, data properties, and individuals, 
 the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
@@ -363,7 +371,8 @@ offers support for some built-in semantic reasoners which are listed below:
 
 \end{itemize}
 
-\subsection{Data Validation}\label{subsec:datavalidation}
+\subsection{Data Validation}
+\label{subsec:datavalidation}
 
 Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. 
 It is important to validate the stored data so that the data only consist of acceptable values. 
@@ -377,7 +386,8 @@ SHACL4P is used for defining and validating \ac{shacl},
 which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. 
 \ac{shacl} uses ``shapes'' to describe constraints.
 
-\section{Conversion of Tabular Data into Linked Data}\label{sec:csvtolodconversion}
+\section{Conversion of Tabular Data into Linked Data}
+\label{sec:csvtolodconversion}
 
 After describing the best possible version of the ontology, 
 the next step is to convert the data stored in spreadsheets into linked data using either OpenRefine or RMLStreamer. 
@@ -475,7 +485,7 @@ OpenRefine provides support for following tasks:
     ``edit'' and ``include'' the results of the facet. 
     Figure~\ref{openrefine-include-result} 
     shows the result of using ``include'' 
-    for the record corresponding to the response ``26480''.
+    for the record corresponding to the response ``C1R1''.
         
     \begin{figure}[htp] 
         \centering
@@ -535,41 +545,41 @@ OpenRefine provides support for following tasks:
         \begin{figure}[htp] 
             \centering
             \includegraphics[width=15cm]{images/ch3/openrefine/transform.png}
-            \caption{Transforming Data in OpenRefine - 1 of 3}
+            \caption{Transforming Data in OpenRefine}
             \label{openrefine-transform}
         \end{figure}
 
-        Figure~\ref{openrefine-custom-text-transform} 
-        shows the result of selecting 
-        ``Transform...'' option for 
-        ``Response'' 
-        field and modifying the Expression to 
-        ``Response:'' + value. 
-        It also offers preview of the result of the \ac{grel} expression.
-
-        \begin{figure}[htp] 
-            \centering
-            \includegraphics[width=15cm]{images/ch3/openrefine/custom-text-transform.png}
-            \caption{Transforming Data in OpenRefine - 2 of 3}
-            \label{openrefine-custom-text-transform}
-        \end{figure}
-
-        As a result of using the 
-        ``Custom text transform on column Response'' in OpenRefine, 
-        the text of all the records for ``Response'' 
-        field would be transformed from one format to another. 
-        For instance, 
-        the value of 
-        ``Response'' for the first record is transformed from 
-        ``26660'' to ``Response:26660'' 
-        as shown in Figure~\ref{openrefine-transform-result}. 
-
-        \begin{figure}[htp] 
-            \centering
-            \includegraphics[width=15cm]{images/ch3/openrefine/transform-result.png}
-            \caption{Transforming Data in OpenRefine - 3 of 3}
-            \label{openrefine-transform-result}
-        \end{figure}
+%        Figure~\ref{openrefine-custom-text-transform} 
+%        shows the result of selecting 
+%        ``Transform...'' option for 
+%        ``Response'' 
+%        field and modifying the Expression to 
+%        ``Response:'' + value. 
+%        It also offers preview of the result of the \ac{grel} expression.
+%
+%        \begin{figure}[htp] 
+%            \centering
+%            \includegraphics[width=15cm]{images/ch3/openrefine/custom-text-transform.png}
+%            \caption{Transforming Data in OpenRefine - 2 of 3}
+%            \label{openrefine-custom-text-transform}
+%        \end{figure}
+%
+%        As a result of using the 
+%        ``Custom text transform on column Response'' in OpenRefine, 
+%        the text of all the records for ``Response'' 
+%        field would be transformed from one format to another. 
+%        For instance, 
+%        the value of 
+%        ``Response'' for the first record is transformed from 
+%        ``26660'' to ``Response:26660'' 
+%        as shown in Figure~\ref{openrefine-transform-result}. 
+%
+%        \begin{figure}[htp] 
+%            \centering
+%            \includegraphics[width=15cm]{images/ch3/openrefine/transform-result.png}
+%            \caption{Transforming Data in OpenRefine - 3 of 3}
+%            \label{openrefine-transform-result}
+%        \end{figure}
         
     \end{itemize}
    
@@ -585,14 +595,16 @@ OpenRefine provides support for following tasks:
    
 \end{enumerate}
 
-\section{Announcing Linked Open Data}\label{sec:announcinglod}
+\section{Announcing Linked Open Data}
+\label{sec:announcinglod}
 
 After the data is converted into linked data, 
 it can be made available on the web in two steps, 
 licensing the data and publishing on the web, 
 which are discussed in this section. 
 
-\subsection{Licensing Linked Data}\label{subsec:licensinglinkeddata}
+\subsection{Licensing Linked Data}
+\label{subsec:licensinglinkeddata}
 
 \ac{w3c}~\cite{hyland2014bestpractices} 
 advises that it's critical to identify the owner of any data published on the web and to explicitly link the licence to the data itself. 
@@ -612,7 +624,8 @@ developed, supported, and maintained by Creative Commons.
 %Attribution-ShareAlike 3.0 Unported\footnote{https://creativecommons.org/licenses/by-sa/3.0/}, and 
 %Attribution-ShareAlike 4.0 International\footnote{https://creativecommons.org/licenses/by-sa/4.0/}
 
-\subsection{Publishing Linked ``Open'' Data}\label{subsec:publishinglod}
+\subsection{Publishing Linked ``Open'' Data}
+\label{subsec:publishinglod}
 
 According to Petrou et al.~\cite{irene2014publishlod}, 
 the linked data principles state that dereferencable \ac{uri}s 
@@ -631,7 +644,8 @@ Publishing datasets to international or national open data portals
 might further 
 ``announce'' them to the public and make them discoverable.
 
-\subsection{5-star Rating System}\label{subsec:5-star}
+\subsection{5-star Rating System}
+\label{subsec:5-star}
 
 Tim Berners-Lee, 
 the creator of the web and the linked data project's founder, 
@@ -668,7 +682,8 @@ Each successive star implies that the data satisfies the requirements of the pre
         \label{5-star-system}
 \end{table}  
 
-\section{Visualizing Linked Data}\label{sec:visualizinglinkeddata}
+\section{Visualizing Linked Data}
+\label{sec:visualizinglinkeddata}
 
 The modelled ontology can be visualized using various visualization tools. 
 Protégé supports plug-ins for some visualization tools like 
@@ -680,7 +695,8 @@ This section focuses on the two tools,
 OntoGraf and WebVOWL, 
 used for the visualization of ontology in this research.
 
-\subsection{OntoGraf}\label{subsec:ontograf}
+\subsection{OntoGraf}
+\label{subsec:ontograf}
 
 Falconer~\cite{falconer2010ontograf} 
 introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. 
@@ -697,7 +713,8 @@ stated that the
 The graphs generated using OntoGraf can be exported as image files of various formats such as 
 PNG, JPEG, GIF and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
 
-\subsection{WebVOWL}\label{subsec:webvowl}
+\subsection{WebVOWL}
+\label{subsec:webvowl}
 
 WebVOWL~\cite{lohmann2014webvowl}, 
 the Web-based \ac{vowl}, 
