@@ -336,8 +336,9 @@ After opening the shapes file (Open button),
 changes can be made and saved (Save button). 
 Where as the Validate button allows users to validate the data. 
 Figure~\ref{shacl-editor} 
-shows a sample ``SurveyShapes.txt'' 
-file opened in \ac{shacl} editor of protégé.
+shows a part of ``SurveyShapes.txt'' 
+file opened in \ac{shacl} editor of protégé 
+for the data property ``hasLikertQ1Ans''. 
 
 \begin{figure}[htp]
     \centering
@@ -347,7 +348,8 @@ file opened in \ac{shacl} editor of protégé.
 \end{figure}
 
 On clicking the Validate button, 
-the summary of violated constraints is displayed on the \ac{shacl} constraint violations view in protégé. 
+the summary of violated constraints is displayed 
+on the \ac{shacl} constraint violations view in protégé. 
 It contains the details like 
 ``Severity'', 
 ``SourceShape'', 
@@ -377,14 +379,18 @@ Protégé offers a plugin for DL as well as SPARQL queries which are discussed i
 
 Vasilevsky\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html} 
 defines DL query as a class expression that is constructed using constructs such as 
-`and’ (corresponding to set intersection) and `some’. 
-Users can rapidly check that class definitions encompass the right subclasses by running them via the DL Query tab. 
+`and’, `or’ (corresponding to set intersection) and `some’. 
+Users can rapidly check that class definitions encompass the right subclasses 
+by running them via the DL Query tab. 
+
 Alternately, 
-one can examine arbitrary descriptions for class membership without having to build placeholders for specified classes. 
+one can examine arbitrary descriptions 
+for class membership without having to build 
+placeholders for specified classes. 
 The DL Query tab can be opened using Tabs option under Windows menu. 
 It is important to configure a reasoner to successfully express a DL query.
 Figure~\ref{survey-dl-query} 
-shows expression of a sample DL query on the survey ontology in protégé. 
+shows expression of a sample DL query using the survey ontology in protégé. 
 
 \begin{figure}[htp]
     \centering
@@ -412,8 +418,11 @@ consider the following query:
 
 \begin{lstlisting}
 
-	SELECT ?subject ?object 
-		WHERE { ?subject rdfs:subClassOf ?object }
+    SELECT * WHERE { ?Respondent 
+        survey:hasOEAnswer_LikeBest ?Answer_LikeBest
+	OPTIONAL { ?Respondent 
+	survey:hasOEAnswer_Strengths ?Answer_Strengths }
+    }
 
 \end{lstlisting}
        
@@ -421,8 +430,8 @@ consider the following query:
  shows the result of expression of \ac{sparql} query on survey ontology. 
  Here, 
  the query is used to display 
- ``Class'' and ``subClassOf'' 
- with column titles subject and object respectively.
+ ``Respondent'',  ``hasOEAnswer\_LikeBest'',  and ``hasOEAnswer\_Strengths'' 
+ with column titles Respondent, Answer\_LikeBest and Answer\_Strengths respectively.
     
 \begin{figure}[htp]
     \centering
@@ -434,17 +443,19 @@ consider the following query:
 \subsubsection{Using Snap \ac{sparql} Query Plugin}
 \label{subsubsec:usingsnapsparql}
 
-The Snap \ac{sparql} plugin in protégé is generally used to express comparatively complex queries on ontologies like displaying description of individuals. 
+The Snap \ac{sparql} plugin in protégé 
+is generally used to express comparatively complex queries 
+on ontologies 
+like displaying description of individuals. 
 For instance, 
 consider the following query:    
 
 \begin{lstlisting}
 
-	SELECT (STR(?lab) AS ?Class) ?Individuals WHERE { 
-		?Individuals rdf:type owl:NamedIndividual .
-		OPTIONAL {?Individuals rdf:type ?lab}
-	} 
-	ORDER BY ?Class 
+    SELECT * WHERE { ?Respondent rdf:type survey:Respondent .
+	OPTIONAL {?Respondent survey:hasLikertQ6Ans 
+		?The_instructor_clearly_answers_questions}
+    } ORDER BY ?Respondent 
    
 \end{lstlisting}
 
@@ -453,14 +464,14 @@ shows the result of expression of Snap \ac{sparql} query on survey ontology.
 It is necessary to enable a reasoner for successful working of Snap \ac{sparql} query. 
 Here, 
 the query is used to display 
-``Class'' and ``Individual'' 
-with column titles ?Class and ?Individuals respectively.
+``Respondent'' and ``hasLikertQ6Ans'' 
+with column titles ?Respondent and ?The\_instructor\_clearly\_answers\_questions respectively.
  
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/survey-snap-sparql-query.png}
     \caption{Snap SPARQL Query on Survey Ontology}
-    \label{fig:survey-snap-sparql-query}
+    \label{survey-snap-sparql-query}
 \end{figure}
 
 \section{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}
