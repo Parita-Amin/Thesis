@@ -183,7 +183,7 @@ as shown in Figure~\ref{semantic-web}.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/semantic-web.png}
+    \includegraphics[width=\columnwidth]{images/ch2/semantic-web.png}
     \caption{The Web to Semantic Web, according to Aghaei et al.~\cite{aghaei2012evolution}}
     \label{semantic-web}
 \end{figure}
@@ -287,7 +287,7 @@ https://parita-amin.github.io/survey.owl has Respondent
  
  \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/rdf-xml-doc.png}
+    \includegraphics[width=\columnwidth]{images/ch2/rdf-xml-doc.png}
     \caption{An Illustration of Code in an RDF/XML Document}
     \label{rdf-xml-doc}
 \end{figure}
@@ -318,7 +318,7 @@ and the object is ``Respondent''.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/rdf-triple.png}
+    \includegraphics[width=\columnwidth]{images/ch2/rdf-triple.png}
     \caption{An Example of an \ac{rdf} Triple}
     \label{rdf-triple}
 \end{figure}
@@ -331,7 +331,7 @@ A connector (an arrow) is used to represent a property to show that property (pr
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/rdf-graph.png}
+    \includegraphics[width=\columnwidth]{images/ch2/rdf-graph.png}
     \caption{Graphical Representation of an \ac{rdf}}
     \label{rdf-graph}
 \end{figure}
@@ -398,7 +398,7 @@ is an rdfs:range of ``is written by'' of rdfs:domain ``Literature''.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/rdfs-graph-for-complex.png}
+    \includegraphics[width=\columnwidth]{images/ch2/rdfs-graph-for-complex.png}
     \caption{Graphical Representation of an RDFS for a Comparatively Complex Illustration, after McBride~\cite{mcbride2004resource}}
     \label{rdfs-graph-for-complex}
 \end{figure} 
@@ -424,7 +424,7 @@ The example represents a survey system which has responses as well as respondent
 
 %\begin{figure}[htp]
 %    \centering
-%    \includegraphics[width=15cm]{images/ch2/statement-for-rdf.png}
+%    \includegraphics[width=\columnwidth]{images/ch2/statement-for-rdf.png}
 %    \caption{English Statement for an Example of Actual \ac{rdf}}
 %    \label{statement-for-rdf}
 %\end{figure}
@@ -447,7 +447,7 @@ can be represented as follows:
 
 %\begin{figure}[htp]
 %    \centering
-%    \includegraphics[width=15cm]{images/ch2/triple-for-rdf-statement.png}
+%    \includegraphics[width=\columnwidth]{images/ch2/triple-for-rdf-statement.png}
 %    \caption{\ac{rdf} Triple for English Statement in Figure~\ref{statement-for-rdf}, after \ac{rdf} Primer~\cite{manola2004rdf}}
 %    \label{triple-for-rdf-statement}
 %\end{figure}
@@ -487,7 +487,7 @@ shows the \ac{rdf} triple notation for Figure~\ref{graph-for-relative-statements
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/graph-for-relative-statements.png}
+    \includegraphics[width=\columnwidth]{images/ch2/graph-for-relative-statements.png}
     \caption{\ac{rdf} Graph for Two Relative Statements, after \ac{rdf} Primer~\cite{manola2004rdf}}
     \label{graph-for-relative-statements}
 \end{figure}
@@ -521,7 +521,7 @@ shows a graphical representation of this \ac{rdf} system.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/graph-for-respondent-details.png}
+    \includegraphics[width=\columnwidth]{images/ch2/graph-for-respondent-details.png}
     \caption{Graphical Representation of \ac{rdf} with Details of the Respondent of the Survey, after \ac{rdf} Primer~\cite{manola2004rdf}}
     \label{graph-for-respondent-details}
 \end{figure}
@@ -558,7 +558,7 @@ the node does not require a \ac{uri}reference\footnote{https://lists.w3.org/Arch
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/blank-node-for-rdf.png}
+    \includegraphics[width=\columnwidth]{images/ch2/blank-node-for-rdf.png}
     \caption{\ac{rdf} Representation in Figure~\ref{graph-for-respondent-details} without a URI (blank node) for Address Entity, after \ac{rdf} Primer~\cite{manola2004rdf}}
     \label{blank-node-for-rdf}
 \end{figure}
@@ -599,19 +599,38 @@ characterized \ac{uri} using three definitions,
 as shown in Table~\ref{definitions-for-uri}.
 
 \begin{table}[h!]
-    \centering
-    \begin{tabular}{| l | l |}  \hline
-     \ \ Term & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Definition  \\  \hline
-      \multirow{9}{4em}{Uniform} & There are various benefits of achieving uniformity, like, it facilitates\\ & different procedures to access resources in the same environment using\\ & different types of resource identifiers; new types of resource identifiers\\ & can be introduced without modifying the actual usage of the existing\\ & identifiers; common syntactic conventions can be interpreted uniformly\\ & for a variety of resource identifiers on the semantic web; and the new\\ & applications or protocols can utilize the already existing large and\\ & widely-used resource identifiers as the identifiers can be reused in\\ & different contexts. \\ \hline
-     \multirow{9}{0em}{Resource} & Anything on the web that can be uniquely identified is referred to as\\ & a resource. 
-     Some day-to-day examples of a resource are a computeri-\\ & zed file or folder, weather-broadcasting service, an image, and a set of\\ & other resources. 
-     Some resources like books in a library, an animal, a\\ & human being,and a corporation are a set of resources that cannot be\\ & retrieved over the network. 
-     A resource is the ``conceptual mapping''\\ &~\cite{fielding1998uri} to a set of entities independent of the corresponding entities at a\\ & particular time. 
-     Hence, if the conceptual mapping isn't changed, a\\ & resource can remain constant irrespective of the changes in its content.\\ \hline
-     \multirow{3}{0em}{Identifier} & An object which is used as a reference to a thing with unique identity\\ & on the web is termed as an identifier. 
-     In \ac{uri}, a string of ASCII char-\\ & acters restricted by a specific syntax is object.\\ \hline
+	\centering
+    \begin{tabular}{| l | p{10cm} |} \hline
+    Term & Definition\\ \hline
+    Uniform &	There are various benefits of achieving uniformity, 
+   				like???, it facilitates different procedures to 
+				access resources in the same environment using different types of 
+				resource identifiers; new types of resource identifiers
+				can be introduced without modifying the actual usage of the existing
+				identifiers; common syntactic conventions can be interpreted uniformly
+				for a variety of resource identifiers on the semantic web; and the new
+				applications or protocols can utilize the already existing large and
+				widely-used resource identifiers as the identifiers can be reused in
+				different contexts.\\ \hline
+     Resource &	Anything on the web that can be uniquely identified is referred to as
+     			a resource. Some day-to-day examples of a resource are a 
+				computerized file or folder, weather-broadcasting service, an image, 
+				and a set of other??? resources. 
+     			Some resources like books in a library, an animal, a human being,
+				and a corporation are a set of resources that cannot be 
+				retrieved over the network. A resource is the 
+				``conceptual mapping''
+				to a set of entities independent of the corresponding entities at a
+				particular time.
+				Hence, if the conceptual mapping isn't??? (is not) changed, 
+				a resource can remain constant irrespective of the changes 
+				in its content.\\ \hline
+	Identifier &	An object which is used as a reference to a thing with unique 
+				identity on the web is termed as an identifier. 
+     			In \ac{uri}, a string of ASCII characters restricted by a specific 
+				syntax is object.\\ \hline
     \end{tabular}
-    \caption{Definitions Used for Characterizing URI, by Berners-Lee et al.~\cite{fielding1998uri}}
+    \caption{Definitions used to characterize URIs, by Berners-Lee, Fielding and Masinter~\cite{fielding1998uri}.}
     \label{definitions-for-uri}
 \end{table}  
 
@@ -631,13 +650,13 @@ where the authority component consists of three more components which are:
     authority = [userinfo@] host [:port]
 \end{center}
 
-A syntax diagram can be modelled to represent the components of Generic Syntax\footnote{https://www.w3.org/Addressing/URL/uri-spec.html} 
+A syntax diagram can be modelled to represent the components of Generic Syntax\footnote{\tt https://www.w3.org/Addressing/URL/uri-spec.html} 
 of \ac{uri} 
 along with their hierarchy as shown in Figure~\ref{syntax-diagram}. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/syntax-diagram.png}
+    \includegraphics[width=\columnwidth]{images/ch2/syntax-diagram.png}
     \caption{Syntax Diagram of a Generic URI, after Berners-Lee et al.~\cite{berners1998uri}}
     \label{syntax-diagram}
 \end{figure}
@@ -652,7 +671,7 @@ shows its components.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/components-of-url-example.png}
+    \includegraphics[width=\columnwidth]{images/ch2/components-of-url-example.png}
     \caption{Components of an Example of URL, after Berners-Lee et al.~\cite{berners1998uri}}
     \label{components-of-url-example}
 \end{figure}
@@ -662,11 +681,15 @@ shows its components.
 
 Ontology is a branch of information science 
 that encloses representation, nomenclature, and 
-definition of various properties, categories, and relationships shared among the entities\footnote{includes all types of data, concepts and entities} 
-that support any number of domains the user is interested in. 
+definition of various properties, categories, and relationships shared among
+%the 
+entities, which includes all types of data, concepts and entities???,
+that support any number of domains %the user is interested in. 
+in which the user is interested.
 In other words, 
-Ontology is a form of defining a set of concepts for representing the subject properties and the relationships shared among them. 
-According to Tom Gruber~\cite{gruber1995towards}, 
+ontology is a form of defining a set of concepts for representing the subject 
+properties and the relationships shared among them. 
+According to Gruber~\cite{gruber1995towards}, 
 ontology is 
 ``an explicit specification of a conceptualization'', 
 where conceptualization is 
@@ -675,21 +698,31 @@ where conceptualization is
 that we wish to represent for some purpose''. 
 In web semantics, 
 an ontology is used to define the semantics of the resources briefly and methodically. 
-The ontologies have have been used to 
+According to Jacobs~\cite{jacob2003ontologies}, 
+(??? is Jacobs article a single page in a newsletter? How did you find it and it is well
+cited? Do you need it?)
+the ontologies have have been used to 
 ``specify the physical as well as conceptual characteristics of resources, 
 in the form of metadata schema on the semantic web, 
-for a fixed set of users''~\cite{jacob2003ontologies}.
+for a fixed set of users''.
 
 \subsection{OWL Ontologies}
 \label{sec:owlontologies}
 
 Linked Open Vocabularies~\cite{LOV}.
 
-W3C developed a standard ontology language called \ac{owl}\footnote{ http://www.w3.org/TR/owl- guide/} 
-to define and describe concepts for ontology using different facilities and operations like intersection, union and negation. 
-It is based on a logical model due to which a reasoner\footnote{maintains hierarchy accurately} 
-can be used to check the mutual consistency among the statements and definitions in the ontology. 
-The reasoner is also responsible for the identification of a suitable concept for particular definitions~\cite{horridge2009practical}.
+The \ac{w3c} developed a standard ontology language called 
+\ac{owl}\footnote{\tt https://www.w3.org/TR/owl-overview/} 
+to define and describe concepts for ontology???
+using different facilities and operations like intersection, union and negation. 
+It is based on a logical model 
+%due to 
+on which a reasoner (such as ... ~\cite{})
+%\footnote{maintains hierarchy accurately} 
+can be used to check the mutual consistency 
+among the statements and definitions in the ontology. 
+The reasoner is also responsible for the identification of a 
+suitable concept for particular definitions~\cite{horridge2009practical}. ???
 
 \subsection{Components of OWL Ontologies}
 \label{subsec:componentsofowlontologies}
@@ -719,8 +752,8 @@ The triangles are used here to denote the individuals in free space.
 \subsubsection{Properties}
 \label{subsubsec:properties}
 
-The Binary Relationships\footnote{links shared by two individuals} 
-between the individuals (things) are called properties. 
+Binary relationships, links shared by two individuals (things),
+are called properties. 
 For instance, 
 the individuals 
 ``Max'' and ``Kieron'' from Figure~\ref{owl-individuals} 
@@ -754,7 +787,9 @@ Mathematical (formal) descriptions are used to describe the \ac{owl} classes.
 These descriptions include accurate statements on the requirements for the class membership. 
 For instance, 
 the class ``Country'' 
-consists of all the individuals that are countries in the Domain of Discourse\footnote{can contain one or more classes}. 
+consists of all the individuals that are countries in the Domain of Discourse
+%\footnote{can contain one or more classes}. 
+which can contain one or more classes. 
 Inheritance in \ac{owl} classes (Class Hierarchy) 
 may exist with the classes having subclasses and/or super-classes which is technically termed as taxonomy. 
 ``Subclasses specialise (``are subsumed by'') their super-classes''~\cite{horridge2009practical}. 
@@ -789,10 +824,10 @@ shows the representation of the classes for the individuals and properties that 
 \label{subsec:ontologyeditors}
 
 Ontology editors are used by publishers to create new ontologies when the existing vocabulary is not suitable for their purpose. 
-\ac{w3c}\footnote{https://www.w3.org/wiki/Ontology\_editors} 
-has recommended a list of ontology editors that can be used to edit, manage, organize and visualize ontology. 
+\ac{w3c}\footnote{\tt https://www.w3.org/wiki/Ontology\_editors} 
+has recommended??? (created?) a list of ontology editors that can be used to edit, manage, organize and visualize ontology. 
 The list of editors includes Protégé, NeOn Toolkit, SWOOP, Neologism, TopBraid Composer, Vitro, Knoodl, Anzo for Excel, OWLGrEd, Fluent Editor, Semantic Turkey, VocBench. 
-The page does not include valid links to the editors' websites. 
+The page was last edited in 2021 but does not include valid links to all the editors' websites. Which ones are still active??? Just mention those!
 Protégé is the most popular ontology editor among researchers. 
 There exists negligible information about most of the editors in the list which has driven the decision of the use of protégé for ontology development and OntoGraf and WebVOWL for visualization which are discussed in detail in chapter~\ref{chap:proofOfConcept}.
 
@@ -847,19 +882,25 @@ as conversion of data to \ac{rdf}
 is comparatively difficult. 
 The data used by Dr. Hepting has been stored in tabular format which can be converted into \ac{rdf} 
 using different open source tools~\cite{ermilov2013csv} 
-recommended by \ac{w3c}\footnote{https://www.w3.org/wiki/ConverterToRdf} 
-or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}. 
+recommended by \ac{w3c}\footnote{\tt https://www.w3.org/wiki/ConverterToRdf} 
+or using \ac{rml}\footnote{\tt https://d2s.semanticscience.org/docs/convert-rml/}. 
 
-\subsubsection{Open-source Tools Recommended by W3C}
+\subsubsection{Open-source Tools Recommended??? by W3C}
 \label{subsec:w3ctools}
 
 \begin{itemize}
    
     \item OpenRefine:
     
-    OpenRefine\footnote{https://openrefine.org}, 
+    OpenRefine\footnote{\tt https://openrefine.org}, 
     an \ac{rdf} extension of Google Refine, 
-    is a powerful java-based set of tools that work with messy data using \ac{grel}\footnote{https://libjohn.github.io/openrefine/grel.html}. 
+    is a powerful??? Java-based set of tools that work with messy data using \ac{grel}
+    ??? see comment in source file ???
+    % not sure that this is needed -- who prefer a cited document \footnote{https://libjohn.github.io/openrefine/grel.html}.
+    % Maybe this:
+    %A publishing pipeline for linked government data
+	%F Maali, R Cyganiak, V Peristeras - Extended Semantic Web Conference, 2012
+ 	%Cite Cited by 69 Related articles All 6 versions
     It allows the users to extract, transform, export, and convert 
     CSV, Excel, spreadsheets and other tabular data into \ac{rdf} 
     where a GUI (Graphical User Interface) is used to define schema mapping.
@@ -867,7 +908,8 @@ or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}.
     \item RDF123:
     
     RDF123\footnote{https://ebiquity.umbc.edu/resource/html/id/237/RDF123-java-application-v1-0} 
-    is a java application and servlet for the conversion of CSV 
+    (??? is this still usable, from 2007???)
+    is a java???Java? application and servlet for the conversion of CSV 
     and spreadsheets to \ac{rdf} 
     which uses arbitrary graphs to define schema mapping. 
     According to Han et al.~\cite{han2008rdf}, 
@@ -885,6 +927,7 @@ or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}.
     \item XLWrap:
     
     XLWrap\footnote{https://xlwrap.sourceforge.io} 
+    ??? https://github.com/theandyl/xlwrap -- says please wait (for 10 years)! ???
     is a graphical template based application that allows execution of various \ac{sparql} 
     queries~\cite{andreas2009xlwrap}. 
     The spreadsheets are wrapped to arbitrary \ac{rdf} 
@@ -892,7 +935,7 @@ or using \ac{rml}\footnote{https://d2s.semanticscience.org/docs/convert-rml/}.
    
         \begin{itemize}
     	
-	        \item Streamed processing of tabluar data like Excel, OpenDocument and CSV
+	        \item Streamed processing of tabular data like Excel, OpenDocument and CSV
 	
 	        \item Loading Local/\ac{http}
 	
@@ -924,7 +967,8 @@ Once the \ac{rml} rules have been defined,
 the next step is generate \ac{rdf} 
 from the \ac{rml} mappings. 
 The list below shows multiple tools, 
-suggested by Data2Services\footnote{https://d2s.semanticscience.org/}, 
+suggested by Data2Services\footnote{\tt https://d2s.semanticscience.org/}, 
+??? Data2Services is reputable? Needs some critical analysis please!
 with various efficiency, stability, and features 
 that can be used for \ac{rml} conversion.
 
@@ -991,7 +1035,8 @@ This section consists of a brief description of both applications.
 According to a report by Krotzsch and Vrandecic~\cite{denny2014wikidata}, 
 Wikidata was introduced to the world of information engineering in 2012 by Wikimedia. 
 Wikidata can be defined as 
-``the community-created knowledge base of Wikipedia and the central data management platform for Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others}'', 
+``the community-created knowledge base of Wikipedia and the central data management platform for Wikipedia and most of its Sister Projects\footnote{Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others}'',
+??? most of ???
 according to Erxleben et al.~\cite{fredo2014intro}. 
 Wikidata was established for the collection and integration of data on the semantic web with Wikipedia. 
 Wikidata is a free open-source tool that handles a large amount of structured data and maintains pages that store the data. 
@@ -1011,7 +1056,7 @@ shows the Wikidata item page of the University of Regina
  
  \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/wikidata-uofr.png}
+    \includegraphics[width=\columnwidth]{images/ch2/wikidata-uofr.png}
     \caption{Details of University of Regina, Regina, SK on Wikidata}
     \label{wikidata-uofr}
 \end{figure}
@@ -1106,7 +1151,7 @@ description of the University of Regina on Wikidata.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/rdf-xml-uofr.png}
+    \includegraphics[width=\columnwidth]{images/ch2/rdf-xml-uofr.png}
     \caption{Wikidata Entry (RDF/XML) for University of Regina, Regina, SK}
     \label{rdf-xml-uofr}
 \end{figure}
@@ -1116,18 +1161,24 @@ description of the University of Regina on Wikidata.
 
 Jimmy Wales and Larry Sanger, 
 in 2001, 
-created the largest general reference work on the internet consisting of articles\footnote{include data comprising of templates, images, videos, categorizations, and links to other articles (pages) in multiple languages} 
+created the largest general reference work on the internet consisting of articles
+%\footnote{
+that include data comprising templates, images, videos, categorizations, and links,
+%to other articles (pages) in multiple languages} 
 in over 280 languages, 
 the Wikipedia\footnote{https://en.wikipedia.org/wiki/Main\_Page}, 
 which acts as a source of data for many web projects like DBpedia\footnote{https://wiki.dbpedia.org/}, 
 one of the major linked open data projects. 
 The main aim behind the development of DBpedia is the conversion of unstructured data on Wikipedia into structured datasets. 
+??? there must be a DBpedia publication to cite for the main aim???
 DBpedia enables querying the Wikipedia data as well as the generation of links among the structured datasets, 
 resulting in the establishment of a massive web of data.
 
 Initially, 
-the template of the page is discovered using a Template Extraction Algorithm\footnote{like Principle Components Analysis, Linear Discriminant Analysis, Logically Linear Embedding} 
-which results in the identification of the structure of the template using various Pattern Matching Techniques\footnote{https://www.dummies.com/programming/big-data/data-science/how-pattern-matching-works-in-data-science}. 
+the template of the page is discovered using a Template Extraction Algorithm
+%\footnote{like Principle Components Analysis, Linear Discriminant Analysis, Logically Linear Embedding} 
+which results in the identification of the structure of the template using various Pattern Matching Techniques
+%\footnote{https://www.dummies.com/programming/big-data/data-science/how-pattern-matching-works-in-data-science}. 
 Once the appropriate template is selected, 
 the template data is parsed using a suitable algorithm and transformed into \ac{rdf} triples.
 MediaWiki\footnote{https://www.mediawiki.org/wiki/MediaWiki} 
@@ -1155,7 +1206,7 @@ a description section and a set of important property-value pairs that give info
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/dbpedia-uofr.png}
+    \includegraphics[width=\columnwidth]{images/ch2/dbpedia-uofr.png}
     \caption{Description of University of Regina, Regina, SK on DBpedia}
     \label{dbpedia-uofr}
 \end{figure}
@@ -1171,7 +1222,7 @@ that supports the standard \ac{http} GET method calls from the web clients.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch2/depedia-architecture.png}
+    \includegraphics[width=\columnwidth]{images/ch2/depedia-architecture.png}
     \caption{DBpedia Data Architecture}
     \label{depedia-architecture}
 \end{figure}
