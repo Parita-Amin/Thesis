@@ -19,7 +19,7 @@ The result should be sufficiently attractive to use, that is,
 the information contained would grow past a critical threshold so that the usefulness of the scheme would, in turn, 
 encourage its increased use.''}
 
-In the more than 30 years that have followed that initial proposal,
+In the more than 30 years that have followed his initial proposal,
 a great deal of progress towards Berners-Lee's vision has been realized. 
 The original 
 ``web of documents'' is becoming the 
@@ -33,11 +33,11 @@ This thesis will examine this question in the context of an example.
 
 In his teaching practise, 
 my supervisor collects feedback from students in his classes each semester and makes the responses available on his website\footnote{\tt http://www2.cs.uregina.ca/$\sim$hepting/teaching/evaluation.html}. 
-Typically, student responses were collected on paper and then entered manually into
+Typically, student responses are collected on paper and then entered manually into
 computer-readable form. 
-Data collection since the start of the COVID-19 pandemic has changed. 
+Data collection was changed and interrupted during the COVID-19 pandemic. 
 
-Although it is valuable to have this data available on the web, 
+Although it is valuable to have this feedback data available on the web, 
 it is not published as \ac{lod}. 
 The motivation for the research presented here was to examine the process 
 by which existing data can be published as \ac{lod} 
@@ -50,34 +50,19 @@ linked data is
 ``a set of best practices for publishing and connecting structured data on the web''.
 The principles of linked data have been articulated by 
 Berners-Lee~\cite{berners1996linked} 
-and enhanced by others
-~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}. 
-
-\begin{itemize}
+and enhanced by Bizer, Heath (and other names of these cited works)~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}. 
+These principles encourage 
+use of \ac{uri}s as names for subjects, predicates, and objects;
+use \ac{https}} \ac{uri}s to look up those names;
+provision of useful information, using the (\ac{rdf} family of standards;
+and inclusion of links to other \ac{uri}s to discover more things.
  
-  \item Use \ac{uri} as names for things
-  
-  \item Use \ac{http}\footnote{Both \ac{http} and \ac{https}} \ac{uri}s to look up those names
-  
-  \item Provide useful information, using the standards (\ac{rdf}\footnote{includes all the standards belonging to \ac{rdf} family}, \ac{sparql})
-  
-  \item Include links to other \ac{uri}s to discover more things
-  
-\end{itemize}
+Berners-Lee introduced the concept of 5-star linked open 
+data\footnote{\tt https://www.w3.org/TR/ld-glossary/#x5-star-linked-open-data}
+to denote structured data on the web as \ac{rdf} wherein all identifiers are \ac{uri}s
+pointing to other useful data sources, with an open license for access.
 
-Berners-Lee introduced the concept of 5-star linked data,
-which requires: 
-
-\begin{itemize}
-
-  \item is structured (machine-readable)
-  
-  \item has open-license for access
-  
-  \item is described and linked to other data using \ac{uri}s
-  
-\end{itemize}
-
+\marginpar{the stuff about queries seems out of place}
 A query\footnote{https://en.wikipedia.org/wiki/SPARQL} 
 is used to retrieve information from a database that consists of multiple tables.
 
@@ -95,13 +80,23 @@ where it gathers all the data from different domains and treats all those datase
 
 Real-world application of data science principles has not been
 meaningfully available to citizens. 
+\marginpar{a bit more explanation needed}
  
 This research work is a small trial towards using the semantic web for 
-non-computer-related tasks. 
-There is a scarcity of work related to the development of linked open vocabularies for a survey that include Likert items. 
+non-computer-related tasks.
+\marginpar{??? non-computer-related ??? -->publishing data}
+It is not just about RDF but conveying the semantics in the data...
+Mention lifecycle.
+There is a scarcity of 
+%work related to the development of 
+linked open vocabularies for Likert items. 
+A sentence or two about Likert and terminology.
+
+Not sure that this is needed here:
 Protégé, an open-source ontology development tool, 
 has been used for the development of a vocabulary. 
-OpenRefine, an open-source ... is used to describe the CSV file in terms of linked data.
+OpenRefine, an open-source ... is used to describe 
+the CSV file in terms of linked data.
 
 \section{Organization}
 \label{sec:organization}
@@ -109,8 +104,8 @@ OpenRefine, an open-source ... is used to describe the CSV file in terms of link
 Following this introduction, 
 the rest of the thesis is organized as follows. 
 Chapter 2 describes related work that is pertinent to the thesis. 
-In particular, concepts of the 
-semantic web, linked data, and related standards and technologies 
+In particular, 
+concepts of the semantic web, linked data, and related standards and technologies 
 are presented. 
 Chapter 3 describes the linked data lifecycle and some of the tools
 required. 
