@@ -28,27 +28,26 @@ shows the student feedback form for which the new vocabularies are described.
 All the classes can be created and described using the steps described in section~\ref{subsec:classhierarchy}. 
 The resultant class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. 
 A survey can have 
-``Survey Response'', 
-``Respondent'', 
-``Response Date'', 
+``Survey Collection'', 
+``Respondent'',  
 ``Type of Survey'', 
 ``Survey Questions'', and 
 ``Survey Answers'', 
-which are considered for this ontology as well. 
+which have been considered for this ontology as well. 
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/survey-class-hierarchy.png}
     \caption{Class Hierarchy in Survey Ontology}
-    \label{fig:survey-class-hierarchy}
+    \label{survey-class-hierarchy}
 \end{figure}
 
 Here, 
 the type of survey used is feedback survey (``FeedbackSurvey'' class). 
-The ``SurveyCollection'' class corresponds to a collection of survey responses (``SurveyResponse'' class) 
-that were collected for a particular course (``CourseID'' class) 
-in a particular semester (``SemesterID'' class) 
-with a specific collection ID (``CollectionID'' class). 
+The ``SurveyCollection'' class corresponds to a collection of survey responses 
+that were collected for a particular course (``Course'' class)  
+at a specific time (``Event'' class) 
+in a particular semester (``Semester'' class). 
 Furthermore, 
 the survey questions and survey answers have classes corresponding to various forms of question-answer. 
 Generally, 
@@ -97,7 +96,7 @@ The classes described for the questions and answers are
 ``LikertScaleQuestions'' and ``OpenEndedQuestions'' 
 as sub-classes of 
 ``SurveyQuestions'' and 
-``LikertScaleAnswers'' and ``OpenEndedAnswers'' 
+``LikertItemAnswer'' and ``OpenEndedAnswers'' 
 as sub-classes of 
 ``SurveyAnswers''. 
 For all the survey questions, 
@@ -106,7 +105,7 @@ where both of them are considered as distinct classes.
 Open-ended questions have unpredictable answers.
 
 \subsubsection{The ``LikertScaleQuestions'' Class}
-\label{subsubsec:likertclass}
+\label{subsubsec:likertqueclass}
 
 Likert questions are the questions for which the answers are from the preset list of answers. 
 For the Likert questions, 
@@ -117,7 +116,24 @@ the questions can be either of type
 ``Never-Always-*'', 
 of which Never-Always-5 has been used by Hepting~\cite{prof}. 
 The survey ontology consists of ``LikertScaleQuestions'' class for likert questions.
+which has two sub-classes: 
+``LikertItem'' and ``LikertItemLabel''. 
+The ``LikertItem'' class consists of the actual questions of the survey 
+(as shown in Figure~\ref{likert-item}) 
+which can be represented using the labels from the ``LikertItemLabel'' class. 
+For example, ``LikertQ1'' can be used for ``Q1\_The\_instructor\_is\_well-prepared\_for\_class''. 
+The questions and labels are described as individuals of ``LikertItem'' and ``LikertItemLabel'' classes respectively.
 
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/survey/likert-item.png}
+    \caption{``LikertItem'' class in Survey Ontology}
+    \label{likert-item}
+\end{figure}
+   
+\subsubsection{The ``LikertItemAnswer'' Class}
+\label{subsubsec:likertansclass}
+    
 In a Never-Always-5 type of survey, 
 5 degrees of agreement can be used. 
 It is challenging to decide whether the range for the degrees would be 
@@ -140,24 +156,25 @@ the field corresponding to the answer is left blank.
      4 & [Often]\\ \hline
      5 & Always\\ \hline
     \end{tabular}
-    \caption{Degrees of Agreement for Likert-scale Questions}
+    \caption{Degrees of Agreement for Likert-scale Answers}
     \label{likert-degrees}
 \end{table}
 
-The ``LikertScaleQuestions'' class of survey ontology has a sub-class, 
-``LikertScale5'', 
-which represents the likert scale with the degrees of agreement from Table~\ref{likert-degrees}. 
+The ``LikertItemAnswer'' class represents answers for likert-scale questions of the survey with 
+``LikertAns\_Never1Always5'', as it's sub-class that 
+represents the likert scale with degrees of agreement from Table~\ref{likert-degrees}. 
 The ``Equivalent To'' 
 (from the description view of the class tab) 
 can be used to describe the 
-``LikertScale5'' class in terms of a range containing degrees of agreement as shown in Figure~\ref{likertscale5-class}. 
-Each of these degrees are treated as an individual 
+``LikertAns\_Never1Always5'' class in terms of a range containing degrees of agreement 
+as shown in Figure~\ref{likertscale5-class}. 
+Each of these degrees is treated as an individual 
 (section~\ref{subsec:individuals}) of the class.
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/likertscale5-class.png}
-    \caption{``LikertScale5'' class in Survey Ontology}
+    \caption{``LikertAns\_Never1Always5'' class in Survey Ontology}
     \label{likertscale5-class}
 \end{figure}
 
@@ -165,24 +182,20 @@ Each of these degrees are treated as an individual
 \label{subsec:surveyobjectproperties}
 
 Using the method of naming and building object properties described in
-Section~\ref{subsec:objectproperties}, 
+section~\ref{subsec:objectproperties}, 
 some of the primary object properties are described for the survey ontology 
-as shown in Figure~\ref{survey-object-properties} 
-where as Table~\ref{survey-object-properties-domains-and-ranges} 
-shows the list of the object properties along with their domain and range classes. 
-Table~\ref{survey-object-properties-parent-nodes-and-inverse} 
-consists of the parent nodes and inverse properties of the object properties. 
-The three parent nodes involved in object property hierarchy are 
-``owl:TopObjectProperty'', 
-``hasContent'', and 
-``isContentOf''.
+as shown in Figure~\ref{survey-object-properties}. 
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/survey-object-properties.png}
-    \caption{Object Property Hierarchies, Domain and Range for Classes}
-    \label{fig:survey-object-properties}
+    \caption{Object Property Hierarchies, Domain and Range in Survey Ontology}
+    \label{survey-object-properties}
 \end{figure}
+
+Table~\ref{survey-object-properties-domains-and-ranges} 
+shows the list of the object properties along with their domain and range classes. 
+The parent node for all object properties is ``owl:TopObjectProperty''.
 
 \begin{table}[h!]
     \centering
@@ -193,45 +206,16 @@ The three parent nodes involved in object property hierarchy are
      hasOEAnswer\_Change & OpenEndedQuestions & OpenEndedAnswers\\ \hline
      hasOEAnswer\_LikeBest & OpenEndedQuestions & OpenEndedAnswers\\ \hline
      hasOEAnswer\_Strengths & OpenEndedQuestions & OpenEndedAnswers\\ \hline
-     hasLikertScaleAnswer & LikertScaleQuestions & LikertScale5\\ \hline
-     hasEvent & SurveyResponse & Event\\ \hline
-     hasCourseID & SurveyResponse & CourseID\\ \hline
-     hasSemesterID & SurveyResponse & SemesterID\\ \hline
-     hasCollectionID & SurveyResponse & CollectionID\\ \hline
-     isCollectionOf & SurveyCollection & SurveyResponse\\ \hline
+     hasLikertItemAnswer & LikertScaleQuestions & LikertAns\_Never1Always5\\ \hline
+     hasEligibleRespondents & SurveyCollection & Respondent\\ \hline
+     hasLikertItemLabel & LikertItem & LikertItemLabel\\ \hline
+     hasRespondent & SurveyCollection & Respondent\\ \hline
+     hasCollection & Course & SurveyCollection\\ \hline
      respondedToSurvey & Respondent & Survey\\ \hline
      isTypeOf & FeedbackSurvey & Survey\\ \hline
     \end{tabular}
     \caption{Object Properties and Their Domain and Range}
     \label{survey-object-properties-domains-and-ranges}
-\end{table}
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|l|l|l|} 
-    \hline \ \ \ \ \ Object Property & \ \ \ \ \ \ \ Parent Node & \ \ \ \ \ Inverse Property\\ \hline
-     hasContent & owl:TopObjectProperty & isContentOf\\ \hline
-     isContentOf & owl:TopObjectProperty & hasContent\\ \hline
-     hasType & owl:TopObjectProperty & isTypeOf\\ \hline
-     isTypeOf & owl:TopObjectProperty & hasType\\ \hline
-     hasLikertScaleAnswer & owl:TopObjectProperty & \\ \hline
-     hasOEAnswer\_Change & owl:TopObjectProperty & \\ \hline
-     hasOEAnswer\_LikeBest & owl:TopObjectProperty & \\ \hline
-     hasOEAnswer\_Strengths & owl:TopObjectProperty & \\ \hline
-     hasEvent & owl:TopObjectProperty & \\ \hline
-     hasCourseID & owl:TopObjectProperty & \\ \hline
-     hasSemesterID & owl:TopObjectProperty & \\ \hline
-     hasCollectionID & owl:TopObjectProperty & \\ \hline
-     isCollectionOf & owl:TopObjectProperty & \\ \hline
-     respondedByRespondent & owl:TopObjectProperty & respondedToSurvey\\ \hline
-     respondedToSurvey & owl:TopObjectProperty & respondedByRespondent\\ \hline
-     hasSurveyQuestion & hasContent & isSurveyQuestionOf\\ \hline
-     hasSurveyAnswer & hasContent & isSurveyAnswerOf\\ \hline
-     isSurveyQuestionOf & isContentOf & hasSurveyQuestion\\ \hline
-     isSurveyAnswerOf & isContentOf & hasSurveyAnswer\\ \hline
-    \end{tabular}
-    \caption{Object Properties with Their Parent Nodes and Inverse Properties}
-    \label{survey-object-properties-parent-nodes-and-inverse}
 \end{table}
 
 \subsection{Data Properties for Survey Ontology}
@@ -243,8 +227,9 @@ which are as shown in Figure~\ref{survey-data-properties}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/survey-data-properties.png}
-    \label{fig:survey-data-properties}
-    \end{figure}
+    \caption{Data Property Hierarchies, Domain and Range in Survey Ontology}
+    \label{survey-data-properties}
+\end{figure}
 
 The parent node of all the data properties is ``owl:topDataProperty'' 
 and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}. 
@@ -252,43 +237,21 @@ The properties for Likert answers restrict the datatype to positive integer and 
 
 \begin{table}[h!]
     \centering
-    % smaller font size... 
-    \footnotesize
-    \begin{tabular}{|p{8cm}|l|l|} 
+    \begin{tabular}{|l|l|l|} 
     \hline 
-    Data Property & Domain & Range\\ 
-    \hline
-    hasLikertAns\_is\_well-prepared\_for\_class & Respondent & xsd:positiveInteger\\ 
-    \hline
-    hasLikertAns\_clearly\_communicates\_his\-
-    \_expectations\_for\_student\_preparation\-
-    \_and\_participation & 
-    Respondent & xsd:positiveInteger\\ 
-    \hline
-    hasLikertAns\_uses\_class\_time\_effectively & Respondent & xsd:positiveInteger\\ 
-    \hline
-    hasLikertAns\_has\_clear\_expectations\_for\-\_assigned\_work &
-    Respondent & xsd:positiveInteger\\
-    \hline
-    hasLikertAns\_encourages\_student\_participation & Respondent & xsd:positiveInteger\\
-    \hline
-    hasLikertAns\_clearly\_answers\_questions & Respondent & xsd:positiveInteger\\ 
-    \hline
-    hasLikertAns\_treats\_students\_with\_respect & Respondent & xsd:positiveInteger\\ 
-    \hline
-    hasLikertAns\_effectively\_directs\_and\_stimulates\-\_discussion & 
-    Respondent & xsd:positiveInteger\\ 
-    \hline
-    hasLikertAns\_effectively\_encourages\_students\_to\- 
-    \_ask\_questions\_and\_give\_answers &
-    Respondent & xsd:positiveInteger\\ 
-    \hline
-    hasOEAnswer\_Change & Respondent & xsd:string\\ 
-    \hline
-    hasOEAnswer\_LikeBest & Respondent & xsd:string\\
-    \hline
-    hasOEAnswer\_Strengths & Respondent & xsd:string\\ 
-    \hline
+    \ \ \ \ \ \ Data Property & \ \ Domain & \ \ \ \ \ \ \ \ Range\\ \hline
+    hasLikertQ1Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ2Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ3Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ4Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ5Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ6Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ7Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ8Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasLikertQ9Ans & Respondent & xsd:positiveInteger\\ \hline
+    hasOEAnswer\_Change & Respondent & xsd:string\\ \hline
+    hasOEAnswer\_LikeBest & Respondent & xsd:string\\ \hline
+    hasOEAnswer\_Strengths & Respondent & xsd:string\\ \hline
     \end{tabular}
     \caption{Data Properties and Their Domain and Range}
     \label{survey-data-properties-domains-and-ranges}
@@ -300,65 +263,54 @@ The properties for Likert answers restrict the datatype to positive integer and 
 While dealing with ontologies, 
 an instance of class is termed as an ``Individual''. 
 In protégé, 
-an individual can be described as an instance of class using the Description view of the Class tab. 
-For example, 
+an individual can be described as an instance of class using the Description view of the Class tab 
+as shown in 
 Figure~\ref{instances-of-survey-class} 
-shows instances of ``Survey'' class.
+for ``Respondent'' class. 
+A new individual can be described using the Individuals view of the Entities tab 
+where as 
+the property assertions view can be used to describe the property restrictions. 
+Table~\ref{survey-individuals} 
+shows a list of classes and individuals described in survey ontology.
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/instances-of-survey-class.png}
-    \caption{Individuals for Survey Class}
+    \caption{Individual for Respondent Class}
     \label{instances-of-survey-class}
 \end{figure}
-
-A new individual can be described using the Individuals view of the Entities tab where as the property assertions view can be used to describe the property restrictions. 
-Table~\ref{survey-individuals} 
-shows a list of classes and individuals described in survey ontology.
 
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|} 
-    \hline \ \ \ \ \ \ \ \ \ \ Class & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Individuals \\ \hline
-     Respondent &  1, 2, 3, ... , 59 \\ \hline
-     Survey & CS280/202210, CS499+900/202210, CS730/202210 \\ \hline
-     SurveyCollection &  Collection1, Collection2 \\ \hline
-     Event &  FinalExam, Midterm \\ \hline
-     CollectionID &  CS280/202210/Collection1 \\ \hline
-     SemesterID &  202210, 202220, 202230 \\ \hline
-     CourseID &  CS280, CS499+900, CS730 \\ \hline
+    \hline \ \ \ \ \ \ \ \ \ \ \ \ Class & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Individuals \\ \hline
+     Respondent &  C1R1 \\ \hline
+     Course & CS280/202210 \\ \hline
+     SurveyCollection &  Collection1 \\ \hline
+     Event & Midterm \\ \hline
+     Semester &  202210 \\ \hline
+     LikertItem &  Q1\_LI \\ \hline
+     LikertItemLabel &  Q1\_LI\_Label \\ \hline
+     LikertAns\_Never1Always5 & 1\_Never, 2\_Rarely, 3\_Sometimes, 4\_Often, 5\_Always \\ \hline
      \multirow{2}{9.5em}{OpenEndedQuestions} &  OEQuestion\_LikeBest, OEQuestion\_Change, \\& OEQuestion\_Strengths \\ \hline
      OpenEndedAnswers & OEAns\_LikeBest, OEAns\_Change, OEAns\_Strengths \\ \hline
-     LikertScale5 & 1\_Never, 2\_Rarely, 3\_Sometimes, 4\_Often, 5\_Always \\ \hline
     \end{tabular}
     \caption{Classes and their Individuals}
     \label{survey-individuals}
 \end{table}
 
-\subsection{Final Class Hierarchy for Survey Ontology}
-\label{subsec:finalsurveyclasses}
-
-The final class hierarchy in the \ac{owl} ontology for feedback survey using protégé, 
-after using the HermiT 1.4.3.456 reasoner, 
-would be as shown in Figure~\ref{fig:final-survey-classes}.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/final-survey-classes.png}
-    \caption{Class Hierarchy for the Final Version of Survey Ontology}
-    \label{fig:final-survey-classes}
-\end{figure}
-
+The final class hierarchy (see Figure~\ref{survey-class-hierarchy}) 
+can be obtained 
+for feedback survey in protégé 
+using the HermiT 1.4.3.456 reasoner. 
 The blue back arrow 
-(``Survey'' and ``SurveyCollection'' class) 
+(``Survey'' and ``LikertItem'' class) 
 in front of the yellow solid dot, 
 which indicates class, 
 show parent/child relationship other than that of SubClassOf. 
 This feature can be enabled and disabled by selecting 
 ``Display relationship in class hierarchy'' 
 option from the ``View'' menu of protégé. 
-Figure~\ref{final-survey-classes} 
-shows the relation indicated by the blue back arrow.
 
 \subsection{Data Validation Using SHACL}
 \label{subsec:shacl}
@@ -370,7 +322,7 @@ For feedback survey,
 the likert answers can only have values 
 1, 2, 3, 4, 5, or No Answer (blank cell). 
 To restrict the values of data properties corresponding to likert questions in Figure~\ref{survey-data-properties}, 
-\ac{shacl}4P has been used.
+\ac{shacl}4P has been used. 
 
 Protégé offers a view for \ac{shacl} editor as well as \ac{shacl} constraint violations. 
 For successful working of \ac{shacl}4P, 
