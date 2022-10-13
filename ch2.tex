@@ -63,16 +63,18 @@ linked data principles~\cite{bizer2009emerging, bizer2011linked, bizer2008linked
 	so that \ac{uri} of a thing used in different datasets is understood to signify
 	the same thing.
   
-  	\item Use \ac{http}\footnote{Both \ac{http} and \ac{https}} 
+  	\item Use \ac{https} (or \ac{http}) 
   	\ac{uri}s to look up those names:
   	
 	The hypertext transfer protocols allow easy retrieval of resources. 
   	This promotes the publication of data on the web and its addition 
 	to the global data space.
   
-  	\item Provide useful information, using the standards
-  	(\ac{rdf}\footnote{includes all the standards belonging to \ac{rdf} family}, 
-  	\ac{sparql}) to look up for a \ac{uri}:
+  	\item Provide useful information, using the standards from the
+	\ac{rdf} family
+	%\footnote{includes all the standards belonging to \ac{rdf} family}, 
+  	%\ac{sparql}) 
+	to look up for a \ac{uri}:
   
   	When an entity is searched using the \ac{uri} associated with it, 
   	it is beneficial to use standards like \ac{rdf} 
@@ -80,7 +82,7 @@ linked data principles~\cite{bizer2009emerging, bizer2011linked, bizer2008linked
 	\ac{rdf} is a framework used for graphical representation of publication and
 	distribution of data on the web,
 	as described in detail in section~\ref{sec:rdf}. 
-  	On the other hand, %\marginpar{???}
+  	On the other hand, ???
   	\ac{sparql} is a query language used for retrieval and 
   	manipulation of data (in \ac{rdf} format) on the web. 
   	It also helps with the information on relationships related to the 
@@ -205,7 +207,8 @@ as shown in Figure~\ref{semantic-web}.
 The 
 semantic web
 stack represents the architecture of semantic web. 
-Figure~\ref{web-stack}\footnote{https://www.w3.org/2001/12/semweb-fin/w3csw} 
+Figure~\ref{web-stack} (after https://www.cs.helsinki.fi/u/eahyvone/stes/semanticweb/kick-off/proceedings.pdf ??? cite this proceedings PLEASE)
+%\footnote{https://www.w3.org/2001/12/semweb-fin/w3csw} 
 shows how semantic web principles are implemented in the layers of technologies.
 
 \begin{figure}[htp]
@@ -231,7 +234,9 @@ self-descriptive document, data and rules.
 The \ac{rdf}, 
 initially designed as a metadata data model, 
 is a computer-understandable specification written in a particular format. 
-According to a W3C Recommendation\footnote{https://www.w3.org/TR/rdf-syntax-grammar/},
+According to the
+{\em RDF 1.1 XML Syntax}\footnote{https://www.w3.org/TR/rdf-syntax-grammar/}
+W3C Recommendation from 25 February 2014,
 %proposal by \ac{w3c}\footnote{https://www.w3.org/TR/PR-rdf-syntax/Overview.html}, 
 %\marginpar{has not RDF gotten past the proposal stage? When was this proposal written? 1999! DO NOT USE THIS! -> https://www.w3.org/TR/rdf-syntax-grammar/ (2014)}
 \ac{rdf} plays an important role in their 
@@ -280,7 +285,8 @@ can be represented in three ways:
 \end{enumerate}
 
 Figure~\ref{rdf-xml-doc} 
-shows an example of an \ac{rdf}/\ac{xml}\footnote{\ac{rdf} written using \ac{xml}} 
+shows an example of an \ac{rdf}/\ac{xml}
+%\footnote{\ac{rdf} written using \ac{xml}} 
 document for the statement: 
 
 https://parita-amin.github.io/survey.owl has Respondent
@@ -566,7 +572,9 @@ the node does not require a \ac{uri}reference\footnote{https://lists.w3.org/Arch
 In 2004, 
 \ac{w3c} recommended intended goals that are to be achieved whenever an \ac{rdf} 
 is to be designed. 
-According to the \ac{w3c}Recommendation\footnote{https://www.w3.org/TR/rdf-concepts/}, 
+According to the \ac{w3c} 
+Recommendation\footnote{\tt https://www.w3.org/TR/rdf11-concepts/}
+%\footnote{https://www.w3.org/TR/rdf-concepts/}, 
 the design should 
 ``have a simple data model; 
 formal semantics and provable inference; 
