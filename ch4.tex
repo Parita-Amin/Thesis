@@ -497,7 +497,7 @@ appears which offers two options:
 The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
  
 \begin{lstlisting} 
-     Base URI: https://parita-amin.github.io/survey.owl# 
+     Base URI: https://parita-amin.github.io/ 
 \end{lstlisting}
  
 \subsection{RDF Skeleton}
@@ -530,8 +530,13 @@ and the fields in the project with an option of using linked data vocabularies t
         \item It also allows adding other prefixes which can be done by clicking on 
         ``+Add'' option 
         as shown in Figure~\ref{openrefine-add-prefix}. 
-        The prefix ``survey'' 
-        has been added to the list with \ac{uri} https://parita-amin.github.io/survey.owl\#.
+        Following prefixes along with \ac{uri}s have been added to the list:
+        
+        \begin{lstlisting} 
+    survey : https://parita-amin.github.io/survey.owl#
+    xsd : http://www.w3.org/2001/XMLSchema#
+        \end{lstlisting}
+        
     
         \begin{figure}[htp]
             \centering
@@ -563,13 +568,13 @@ It offers options for
 ``Content used...'', and 
 ``Use expression...''.
 For survey data, 
-\ac{uri} for ``ID'' has been set as unique index. 
-On clicking ``Preview edit'', format of expression to display ``ID'' can be modified.
+\ac{uri} for ``Response'' has been set as unique respondent number. 
+On clicking ``Preview edit'', format of expression to display ``Response'' can be modified.
        
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-index.png}
-    \caption{RDF Node Settings for Index ID of Records in CSV in OpenRefine}
+    \caption{RDF Node Settings for Response Number from CSV in OpenRefine}
     \label{openrefine-index}
 \end{figure} 
 
@@ -581,12 +586,12 @@ in terms of linked open vocabularies.
 ``Available prefixes'' 
 allows using vocabularies described in the list of ontologies. 
 Figure~\ref{openrefine-selecting-property} 
-shows the list of classes and properties along with the ontology prefix that match the input string. 
+shows the list of classes and properties along with the ontology prefixes that match the input string. 
 The vocabulary can be selected for each field of the CSV 
 to represent the data. 
 
 For instance, 
-``survey:hasLikertAns\_is\_well\_prepared\_for\_class'' 
+``survey:hasLikertQ1Ans'' 
 property can be assigned to the data corresponding to the field, 
 ``Q01\_Rate instructor->1. The instructor is well-prepared for class'' 
 of the CSV. 
@@ -613,9 +618,9 @@ depicts an \ac{rdf} Preview
 of using survey vocabulary to describe the data stored in CSV. 
 It includes 
 all the prefixes for vocabularies from ``Available prefixes'' 
-along with their \ac{uri}s; 
-a \ac{uri} for the ``ID'' for each record;
-the vocabulary and value for the fields corresponding to the responses to all the likert-scale as well as open-ended questions for each record.
+and with their \ac{uri}s
+along with the sample representation of the result of 
+using \ac{rdf} Skeleton to describe data.
 
 \begin{figure}[htp]
     \centering
@@ -644,12 +649,13 @@ data reuse is more likely to happen.
     
     \item Publishing Survey Vocabulary:
     
-    The linked open vocabulary for feedback survey that Dr. Hepting solicits from his students in the classes he teaches. 
-    The dataset can be accessed as \ac{turtle} 
+    The linked open vocabulary for feedback survey 
+    that Dr. Hepting solicits from his students 
+    in the classes he teaches, 
+    can be accessed as \ac{turtle} 
     file from my website\footnote{https://parita-amin.github.io/sample.ttl} 
     or can be viewed by visiting the link to the \ac{turtle} 
-    file\footnote{https://parita-amin.github.io/evaluationofteaching.html} 
-    on my website (see Figure~\ref{survey-license}).
+    file on my website\footnote{https://parita-amin.github.io/evaluationofteaching.html} (see Figure~\ref{survey-license}).
     
     \begin{figure}[htp]
        \centering
