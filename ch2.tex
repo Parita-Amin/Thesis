@@ -205,32 +205,17 @@ shows its components.
 \subsection{Resource Description Framework}
 \label{subsec:rdf}
 
-The \ac{rdf}, 
-initially designed as a metadata data model, 
-is a computer-understandable specification written in a particular format. 
-According to the
-{\em RDF 1.1 XML Syntax}\footnote{https://www.w3.org/TR/rdf-syntax-grammar/}
-W3C Recommendation from 25 February 2014,
-%proposal by \ac{w3c}\footnote{https://www.w3.org/TR/PR-rdf-syntax/Overview.html}, 
-%\marginpar{has not RDF gotten past the proposal stage? When was this proposal written? 1999! DO NOT USE THIS! -> https://www.w3.org/TR/rdf-syntax-grammar/ (2014)}
-\ac{rdf} plays an important role in their 
-``Semantic Web Vision''. 
-\ac{rdf} describes an entity (or resources) and the relationships among them on the web using basic data models like the \ac{er} model.
+RDF began as a metadata model and is now the means to describe resources
+(entities) and the relationships amongst them in a computer-understandable format,
+using basic data models like the \ac{er} model. ??? needs more about data models, modelling, ER ???
 
-\ac{rdf} is a \ac{w3c}%\footnote{https://www.w3schools.com/xml/xml\_rdf.asp} 
-%\marginpar{NO to W3Schools, W3C only!}
-specification for describing resources on the web. 
-\ac{rdf} uses 
-``properties'' and 
-``property values'' 
-to describe the resource which is identified by web identifiers called \ac{uri} (section~\ref{subsec:uri}). 
-There are three types of objects in \ac{rdf}, 
-namely, 
-resources, properties, and statements. 
-Each data object in a dataset on the web is considered a resource and is named using a \ac{uri} 
-with an optional ID. 
+\ac{rdf} uses ``properties'' and ``property values'' 
+to describe resources, which are named by \ac{uri}s. 
+The three types of objects in \ac{rdf} are resources, properties, and statements. 
+Each data object in a dataset on the web is considered a resource and is named 
+using a \ac{uri} ???with an optional ID??? Needs more???. 
 To search for the resources on the web, 
-the resources must be named using the \ac{http}/\ac{https} \ac{uri}s. 
+the resources must be named using the \ac{https} \ac{uri}s. 
 The \ac{w3c} has defined the 
 ``rdf:type'' 
 property to represent the 
@@ -258,28 +243,58 @@ can be represented in three ways:
   
 \end{enumerate}
 
+??? What are the advantages and disadvantages of each ???
+
+??? What about Turtle???
+
+??? Maybe get some inspiration from https://en.wikipedia.org/wiki/Resource\_Description\_Framework where they illustrate the same examples
+in triples, RDF/XML, and Turtle ???
+
+\noindent
 Figure~\ref{rdf-xml-doc} 
 shows an example of an \ac{rdf}/\ac{xml}
-%\footnote{\ac{rdf} written using \ac{xml}} 
 document for the statement: 
 
-https://parita-amin.github.io/survey.owl has Respondent
- 
- \begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch2/rdf-xml-doc.png}
-    \caption{An Illustration of Code in an RDF/XML Document}
-    \label{rdf-xml-doc}
+https://parita-amin.github.io/survey.owl has Respondent ??? more context ???
+
+
+\begin{figure}[h]
+\framebox{\vbox{\tt\small
+\begin{tabbing}
+\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\= \kill
+\hspace*{\columnwidth}}\\[-1cm]
+<rdf:RDF>\\
+\><rdf:Description rdf:about="https://parita-amin.github.io/survey.owl">\\
+\>\><s:has>Respondent</s:has>\\
+\></rdf:Description>\\
+</rdf:RDF>
+\\[-1cm]
+\end{tabbing}
+}}
+\caption{An Illustration of Code in an RDF/XML Document}
+\label{rdf-xml-doc}
 \end{figure}
+
+% \begin{figure}[htp]
+%    \centering
+%    \includegraphics[width=\columnwidth]{images/ch2/rdf-xml-doc.png}
+%    \caption{An Illustration of Code in an RDF/XML Document}
+%    \label{rdf-xml-doc}
+%\end{figure}
  
+??? I suggest using the Simpson's Family Tree (graph.ttl) as the examples ???
+
+??? Your survey vocabulary can go in a later chapter ???
+
 The resource being described is 
-``https://parita-amin.github.io/survey.owl'' and 
+{\tt https://parita-amin.github.io/survey.owl} and 
 ``Respondent'' 
 is the property value. 
 The document consists of various \ac{xml} tags enclosed between the angular brackets (``<'' and ``>''). 
 An \ac{rdf}/\ac{xml} 
-document starts and ends with <rdf : \ac{rdf}> and </rdf : \ac{rdf}> respectively. 
-<rdf : Description> 
+document starts and ends with {\tt <rdf:\ac{rdf}>} and 
+{\tt </rdf:\ac{rdf}>} respectively. 
+{\tt <rdf:Description>}
 consists of the elements that are responsible for the creation of the statement. 
 Description tag holds an identification for the resource.
 
@@ -287,20 +302,32 @@ Figure~\ref{rdf-triple}
 shows an example of an \ac{rdf} triple,
 which 
 %An \ac{rdf} triple, 
-generally, 
-follows subject-predicate-object format. 
+can be written
 %For the illustration in the figure, 
 There,
 ``https://parita-amin.github.io/survey.owl'' is the subject;
 the predicate is ``has''; 
 and the object is ``Respondent''.
-%\marginpar{is this a real example?-now,yes}
+??? SHOULD NOT ALL (subject, predicate, object) be https URI ???
+??? sometimes has is preceded by s: (a prefix?) that should be included ???
+
+??? I would prefer to do code examples in a tabbing environment directly in LaTeX --
+that would be easier to edit I think... see Figures~\ref{rdf-xml-doc} and~\ref{rdf-triple}. ???
 
 \begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch2/rdf-triple.png}
-    \caption{An Example of an \ac{rdf} Triple}
-    \label{rdf-triple}
+\framebox{\vbox{\tt\small
+\begin{tabbing}
+\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
+\hspace*{\columnwidth}}\\[-1cm]
+Subject:\>\>\>https://parita-amin.github.io/survey.owl\\
+Predicate:\>\>\>has\\
+Object:\>\>\>Respondent
+\\[-1cm]
+\end{tabbing}
+}}
+%\includegraphics[width=\columnwidth]{images/ch2/rdf-triple.png}
+\caption{An Example of an \ac{rdf} Triple ??? but this is not in parseable N-triples format ???}
+\label{rdf-triple}
 \end{figure}
 
 Figure~\ref{rdf-graph} 
@@ -319,7 +346,7 @@ A connector (an arrow) is used to represent a property to show that property (pr
 The subject and object of the triples of \ac{rdf} act as nodes in the graph.
 In addition to \ac{rdf}/\ac{xml} documentation, 
 the \ac{rdf} data model has a variety of serialization formats such as N-triples, 
-which is a line base format where an \ac{rdf} triple is used to represent each line~\cite{beckett2014rdf}; 
+which is a line based format where an \ac{rdf} triple is used to represent each line~\cite{beckett2014rdf}; 
 \ac{turtle}; \ac{n3}, 
 which is a subset of Turtle and N-Quads, 
 which is an extension of N-Triples (line based) and adds a graph label to each line that allows multiple graph encoding~\cite{cyganiak2008n}.
@@ -455,6 +482,7 @@ more statements can be added which are in relation to the original statement.
 Suppose the new statement added is:
 
 \textbf{https://parita-amin.github.io/survey.owl} has a \textbf{SurveyCollection} with value \textbf{``https://parita-amin.github.io/survey.owl\#Collection1''}    
+??? this is not correct is it? The individual called Collection1 is defined/created in the ttl file, not the owl file? The owl file has the class Collection, not the individuals ???
 
 where 
 ``https://parita-amin.github.io/survey.owl\#SurveyCollection'' 
@@ -514,7 +542,7 @@ The \ac{uri} for respName is
 and the value, Robert James, is the object. 
 On the other hand, 
 respondent (subject) is connected to address (object) node, 
-with \ac{uri} ``http://www.semanticwe- b.org/addressID/1234'', 
+with \ac{uri} ``http://www.semanticweb.org/addressID/1234'', 
 through respAddress (predicate) with \ac{uri} ``http://www.sema- nticweb.org/respDetails/address''. 
 Further, 
 the address node has multiple child nodes, 
@@ -522,9 +550,9 @@ namely,
 street, city, state and postal code. 
 The address (subject) \ac{uri} 
 is connected to the values of four different object values, 
-49 University Drive (street), 
+49 University Drive (??? where is this ???? street), 
 Regina (city), 
-Saskatchewan (state) and S4S 5N2 (postalCode) 
+Saskatchewan (??? Province, not a state???) and S4S 5N2 (postalCode) 
 where the \ac{uri}s for the predicates are 
 ``http://www.semanticweb.org/respDetails/street'', 
 ``http://www.semanticweb.org/res- pDetails/city'', 
@@ -1026,15 +1054,16 @@ can be performed.
 
 \begin{table}[h!]
     \centering
-    \begin{tabular}{|l|l|} \hline 
-     \ \ \ \ \ \ \ \ \ \ \ Stage \ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Description \\ \hline
-     Extraction & Extraction and conversion of unstructured and semi-\\ & structured data into \ac{rdf}\\ \hline
-     Storage \& Querying & Storing the \ac{rdf} data in a format that supports data\\ & querying efficiently\\ \hline
-     Authoring & Allowing the users to create new data or to access and\\ & modify the existing data\\ \hline
-     Linking & Creating links among the data belonging to various\\ & domains and users based on their entities\\ \hline
-     Enrichment & Data enrichment for efficient query support using\\ & various top-tier structures\\ \hline
-     Quality Analysis & Managing data using different strategies to ensure good\\ & quality of available data on the web\\ \hline
-     Browsing \& Exploration & Making the structured data available on the web for\\ & the users to browse and explore effectively\\ \hline
+    \begin{tabular}{|l|p{10cm}|} \hline 
+     Stage & Description \\ \hline
+     Extraction & Extraction and conversion of unstructured and semi-structured data into \ac{rdf}\\ \hline
+     Storage \& Querying & Storing the \ac{rdf} data in a format that supports data querying efficiently\\ \hline
+     Authoring & Allowing the users to create new data or to access and 
+     modify the existing data\\ \hline
+     Linking & Creating links among the data belonging to various domains and users based on their entities\\ \hline
+     Enrichment & Data enrichment for efficient query support using various top-tier structures\\ \hline
+     Quality Analysis & Managing data using different strategies to ensure good quality of available data on the web\\ \hline
+     Browsing \& Exploration & Making the structured data available on the web for the users to browse and explore effectively\\ \hline
     \end{tabular}
     \caption{Stages in Linked Data Life Cycle, after Ngomo et al.~\cite{ngomo2014introduction}}
     \label{ldlc-stages}
@@ -1186,6 +1215,9 @@ that can be used for \ac{rml} conversion.
 \subsection{Linking}
 \subsection{Enrichment}
 \subsection{Quality Analysis}
+
+???SHACL???
+
 \subsection{Browsing \& Exploration}
 \subsection{Usability Considerations}
 \end{doublespace}
