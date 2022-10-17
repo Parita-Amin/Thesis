@@ -11,24 +11,21 @@ from the perspectives of technology and usability,
 that form the foundation of this thesis.
 
 The web was first designed by Berners-Lee in 
-1989\footnote{https://www.w3.org/History/1989/proposal.html} 
+1989\footnote{\tt https://www.w3.org/History/1989/proposal.html} 
 while working at the \ac{cern}.
-
-The web pages for the semantic web can be written using \ac{html} and \ac{rdf} 
-as it is the web of data, contrary to the web of documents, 
-where the web pages were written using \ac{html} 
-and the links were described using hyperlinks. 
-In the web of data, 
-arbitrary things can be expressed using links to 
-represent the relationship between two entities, 
-as shown in Figure~\ref{semantic-web}.
+On the original web, of documents, 
+the web pages were written and the links between 
+pages were described using \ac{html}.
+On the next web, of data, 
+the web pages are written using \ac{html} and the relationships amongst
+entities on those pages are described using \ac{rdf}.
+These differences are illustrated in Figure~\ref{semantic-web}.
 
 \begin{figure}[htp]
-    \centering
     \includegraphics[width=\columnwidth]{images/ch2/semantic-web.png}
-    \caption{Contrasting the web of documents and the web of data, 
-    after Aghaei et al.~\cite{aghaei2012evolution}}
-    \label{semantic-web}
+    \caption{Following Aghaei et al.~\cite{aghaei2012evolution},
+    an illustration of the contrast between the web of documents 
+    and the web of data.\label{semantic-web}}
 \end{figure}
 
 \section{Linked Open Data}
@@ -84,46 +81,47 @@ this unique string is subject to guidelines and security considerations
 while defining the syntax for a generic \ac{uri} 
 and a process for resolving \ac{uri} references. 
 Berners-Lee et al.~\cite{RFC3986uri} 
-characterized \ac{uri} using following definitions, 
+characterized \ac{uri} in the following way.
 
-\begin{itemize}
+%\begin{itemize}
+%
+%    \item 
 
-    \item Uniform: 
+Uniform: 
+Numerous advantages come from uniformity. 
+It permits the use of various types of resource identifier 
+in the same context 
+even when the methods of accessing those resources may vary. 
+It enables uniform semantic interpretation of standard syntactic rules 
+across various types of resource identifiers. 
+It permits the introduction of new types of resource identifiers 
+without affecting how those categories are currently used. 
+It enables the reuse of the identifiers in a variety of settings, 
+enabling new applications or protocols to benefit from 
+an existing, substantial, and widely-utilized 
+set of resource identifiers.
     
-    Numerous advantages come from uniformity. 
-    It permits the use of various types of resource identifier 
-    in the same context 
-    even when the methods of accessing those resources may vary. 
-    It enables uniform semantic interpretation of standard syntactic rules 
-    across various types of resource identifiers. 
-    It permits the introduction of new types of resource identifiers 
-    without affecting how those categories are currently used. 
-    It enables the reuse of the identifiers in a variety of settings, 
-    enabling new applications or protocols to benefit from 
-    an existing, substantial, and widely-utilized 
-    set of resource identifiers.
-    
-    \item Resource: 
-    
-    Anything on the web that can be uniquely identified is a resource. 
+Resource: 
+Anything on the web that can be uniquely identified is a resource. 
     Some resources on the web correspond to physical entities that cannot 
     be accessed over the network. 
-    A resource is the {\tt conceptual mapping} 
+    A resource is the %{\tt conceptual mapping} 
+    conceptual mapping
     to a set of entities independent of the corresponding entities 
     at a particular time. 
     If the conceptual mapping is not changed, 
     the resource can remain constant.
     
-    \item Identifier: 
-    
-    An object that is used to refer to a thing 
+Identifier: 
+An object that is used to refer to a thing 
     with unique identity on the web is an identifier. 
     In a \ac{uri}, 
     the string of ASCII characters obeying the syntax rules is that object. 
 
-\end{itemize} 
+%\end{itemize} 
 
 %??? Do you need this paragraph???- i think yes, syntax diagram starts with uri scheme
+??? you say you need it, then you need to explain it better :-) ???
 As mentioned by \ac{w3c}, 
 for the operating systems on \ac{uri}s, 
 some specific protocols are defined depending on the UriScheme. 
@@ -144,8 +142,8 @@ as shown in figure~\ref{syntax-diagram}.
     \label{syntax-diagram}
 \end{figure}
 
-A \ac{uri} comprises of five following components sequentially. 
-It is not mandatory for \ac{uri}s to have all components. 
+A \ac{uri} comprises the five following components sequentially. 
+It is not mandatory for a \ac{uri} to have all the components. 
 % Does the RFC3986 say hierarchical sequence and does it use 'authority'? - yes???
 
 {\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} 
@@ -198,7 +196,8 @@ which are a subject, an object, and a predicate.
 An object in a statement can be either a property value, a resource, or a literal. 
 \ac{rdf}, 
 according to Beckett, Gandon and Schreiber~\cite{gandon2014rdf,zongmin2016rdf}, 
-can be represented in three ways:
+can be represented in three ways: 
+??? are these 3 ways useful? esp. the graphical form? ???
 
 \begin{enumerate}
 
@@ -230,6 +229,8 @@ can be represented in three ways:
     
     {\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#} and 
     {\tt http://www.w3.org/2001/XMLSchema\#} 
+    ??? can you do a figure that shows all the prefixes. Is protege happy with your
+    prefixes ???
     are the base \ac{uri}s that have been expressed using prefixes 
     {\tt pizza} and {\tt xsd} respectively 
     for the classes and properties in Figure~\ref{rdf-xml-doc}. 
