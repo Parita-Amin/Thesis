@@ -4,28 +4,57 @@
 
 \begin{doublespace}
 
-This Chapter focuses on the usability of protégé along with the methodology involved in describing and publishing linked open data. 
+%protégé along with the methodology involved in describing and publishing linked open data. 
+% usability of the linked data lifecycle 
+This Chapter focuses on the methodology that is 
+required to create and publish \ac{lod}.
 Chapter~\ref{chap:proofOfConcept} 
-presents the proof of concept for this methodology.
+presents a proof of concept for this methodology with real data.
 
-\section{Describing New OWL Vocabularies}
+The linked data lifecycle as presented by Ngomo et al.~\cite{ngomo2014introduction}
+identifies 7 stages:
+Extraction;
+Storage \& Querying;
+Authoring;
+Linking;
+Enrichment;
+Quality Analysis;
+and
+Browsing \& Exploration.
+This is a good starting point, but it is incomplete.
+This Chapter will reconsider the lifecycle required to 
+move from unpublished unstructured data to published \ac{lod}
+and focus on the use OpenRefine~\cite{openrefine} and Protégé~\cite{protege} tools.
+
+\section{Describe Semantics}
+
+First stage: was Extraction
+( Extraction and conversion of unstructured and semi-structured data into \ac{rdf}).
+
+Better to reuse existing vocabularies if possible, but may need to create a new one.
+LOV Ontology Library
+\subsection{Describing New OWL Vocabularies}
 \label{sec:describenewowlvocab}
 
-In data science, 
-for a fresh and developing branch like ontology engineering, 
-it is difficult to find enough knowledge that can be reused. 
-The field is still growing with research and development in progress as well as a lot still required to be explored in the future. 
-As a result of this, 
-linked open vocabularies are limited currently, 
-and hence, 
-the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
+%In data science, 
+%for a fresh and developing branch like ontology engineering, 
+%it is difficult to find enough knowledge that can be reused. 
+%The field is still growing with research and development in progress as well as a lot still required to be explored in the future. 
+%As a result of this, 
+%linked open vocabularies are limited currently, 
+%and hence, 
+%the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
 
-There are editors available today that help the publishers to create their own linked open vocabularies. 
-Alatrish at the University of Belgrad~\cite{alatrish2013comparison}, 
-in 2013, 
-compared the most used ontology editors, 
+??? Related work should go into Chapter 2. Alatrish doesn't look like a good source ??? 
+There are editors available ???today (or in 2013)??? that help the publishers to create their own linked open vocabularies. 
+In 2013, Alatrish~\cite{alatrish2013comparison}, 
+%at the University of Belgrad
+%in 2013, 
+compared the most-used ontology editors, 
 namely, 
-Apollo, OntoStudio, Protégé, Swoop, and TopBraid Composer. 
+Apollo, OntoStudio, Protégé, Swoop, and TopBraid Composer.
+Today, these editors are...?
+
 The editors were compared based on the following features:
 
 \begin{itemize}
@@ -50,14 +79,15 @@ protégé has been used for the development of the instrument to support this re
 \subsection{Protégé}
 \label{subsec:protege}
 
-Stanford University developed a free, 
-open-source ontology development platform, 
-Protégé\footnote{https://protege.stanford.edu}, 
-that offers a set of substantial tools\footnote{along with various plug-ins and Java-based \ac{api}} 
-to build ontologies for knowledge-based applications and to implement various 
-``knowledge-modeling structures and actions that support the creation, 
-visualization and manipulation of ontologies in various representation formats''~\cite{alatrish2013comparison}. 
-Protégé offers customization options to build knowledge models and to add data. 
+Stanford University ??? more details than this??? has developed 
+Protégé\footnote{\tt https://protege.stanford.edu}, 
+``a free, open-source ontology editor and framework for building intelligent systems.''
+%that offers a set of substantial tools
+%%footnote{along with various plug-ins and Java-based \ac{api}} 
+%to build ontologies for knowledge-based applications and to implement various 
+%``knowledge-modeling structures and actions that support the creation, 
+%visualization and manipulation of ontologies in various representation formats''~\cite{alatrish2013comparison}. 
+%Protégé offers customization options to build knowledge models and to add data. 
 
 \subsection{Usability of Protégé}
 \label{subsec:usabilityofprotege}
