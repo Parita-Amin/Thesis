@@ -66,116 +66,75 @@ which promotes the publication of data on the web and its use.
 Rule 3.  
 Provide useful information to others, using standards from the \ac{rdf} family,
 in response to a look-up of a unique name associated with one of your \ac{uri}s.
-  
-%  	When an entity is searched using the \ac{uri} associated with it, 
-%  	it is beneficial to use standards like \ac{rdf} 
-%  	and \ac{sparql} to query the datasets.
-%	\ac{rdf} is a framework used for graphical representation of publication and
-%	distribution of data on the web,
-%	as described in detail in section~\ref{sec:rdf}. 
-%  	On the other hand, ???
-%  	\ac{sparql} is a query language used for retrieval and 
-%  	manipulation of data (in \ac{rdf} format) on the web. 
-%  	It also helps with the information on relationships related to the 
-%	data being searched.
-  
+   
 Rule 4.
 Use other (existing) \ac{uri}s in your data to encourage discovery of more relationships,
 which promotes the global interconnection of data.
   
 \subsection{Uniform Resource Identifiers}
+\label{subsec:uri}
 
 Resources on the web, 
 whether they are abstract (logical) or physical,
 are identified by a unique string of ASCII characters known 
-as a \ac{uri}\footnote{\tt https://www.w3.org/wiki/URI}.
-??? Is URI footnote needed? ???
+as a \ac{uri}.
 As described by Berners-Lee et al.~\cite{RFC3986uri} 
-??? should https://www.rfc-editor.org/rfc/rfc8820 be added your bib file?
-but rfc2396 should be removed because it is obsolete ???
 in RFC 3986 (which became STD 66), 
 this unique string is subject to guidelines and security considerations 
 while defining the syntax for a generic \ac{uri} 
 and a process for resolving \ac{uri} references. 
 Berners-Lee et al.~\cite{RFC3986uri} 
-characterized \ac{uri} using three definitions, 
-presented in Table~\ref{definitions-for-uri}.
+characterized \ac{uri} using following definitions, 
 
-\begin{table}[h!]
-	\centering
-    \begin{tabular}{| l | p{10cm} |} \hline
-    Term & Definition\\ \hline
-    Uniform &
-    	Uniformity facilitates:
-    	different procedures to access ???different??? resources in the same 
-		environment using different types of resource identifiers; 
-		new types of resource identifiers to be introduced without 
-		modifying the actual usage of the existing identifiers; 
-		common syntactic conventions to be interpreted uniformly
-		for a variety of resource identifiers on the semantic web; and
-		reuse of the already existing and widely-used resource 
-		identifiers by new applications or protocols.\\ \hline
-     Resource &	
-     	Anything on the web that can be uniquely identified is a resource. 
-		Some day-to-day examples of a resource are:
-		a computerized file or folder, 
-		a weather-broadcasting service, 
-		or an image.
-		???I'm not sure that I understand this one???
-     	Some resources on the web correspond to physical entities that cannot
-		be accessed over the network.
-%		like books in a library, an animal, a human being,
-%				and a corporation are a set of resources that cannot be 
-%				retrieved over the network. 
-		A resource is the ``conceptual mapping''
-		to a set of entities independent of the corresponding entities at a
-		particular time.
-		If the conceptual mapping is not changed, 
-		the resource can remain constant.\\ \hline
-%		irrespective of the changes 
-%				in its content	
-	Identifier &	
-		An object that is used to refer to a thing with 
-		unique identity on the web is an identifier. 
-     	In a \ac{uri}, the string of ASCII characters obeying the
-		syntax rules is that object.\\ \hline
-    \end{tabular}
-    \caption{Definitions used to characterize URIs, by Berners-Lee, Fielding and Masinter~\cite{RFC3986uri}.??? Does this need to be in a table???}
-    \label{definitions-for-uri}
-\end{table}  
+\begin{itemize}
 
-??? Do you need this paragraph???
+    \item Uniform: 
+    
+    Numerous advantages come from uniformity. 
+    It permits the use of various types of resource identifier 
+    in the same context 
+    even when the methods of accessing those resources may vary. 
+    It enables uniform semantic interpretation of standard syntactic rules 
+    across various types of resource identifiers. 
+    It permits the introduction of new types of resource identifiers 
+    without affecting how those categories are currently used. 
+    It enables the reuse of the identifiers in a variety of settings, 
+    enabling new applications or protocols to benefit from 
+    an existing, substantial, and widely-utilized 
+    set of resource identifiers.
+    
+    \item Resource: 
+    
+    Anything on the web that can be uniquely identified is a resource. 
+    Some resources on the web correspond to physical entities that cannot 
+    be accessed over the network. 
+    A resource is the {\tt conceptual mapping} 
+    to a set of entities independent of the corresponding entities 
+    at a particular time. 
+    If the conceptual mapping is not changed, 
+    the resource can remain constant.
+    
+    \item Identifier: 
+    
+    An object that is used to refer to a thing 
+    with unique identity on the web is an identifier. 
+    In a \ac{uri}, 
+    the string of ASCII characters obeying the syntax rules is that object. 
+
+\end{itemize} 
+
+%??? Do you need this paragraph???- i think yes, syntax diagram starts with uri scheme
 As mentioned by \ac{w3c}, 
 for the operating systems on \ac{uri}s, 
-some specific 
-``protocols are defined depending on the 
-%UriScheme\footnote{https://www.w3.org/2001/tag/doc/SchemeProtocols.html}''. 
+some specific protocols are defined depending on the UriScheme. 
 A system can perform multiple operations like 
-``access'', 
-``update'', 
-``replace'' and 
-``find attributes'' on the identified resources. 
+{\tt access}, 
+{\tt update}, 
+{\tt replace} and 
+{\tt find attributes} on the identified resources. 
 
 Berners-Lee et al.~\cite{RFC3986uri} defined the generic syntax of a \ac{uri} 
-as follows. 
-Figure~\ref{syntax-diagram} presents the corresponding 
-syntax diagram\footnote{\tt https://www.w3.org/Addressing/URL/uri-spec.html}.
-??? Do you need this footnote???
-
-??? as comprising the five following components in a hierarchical sequence:
- Does the RFC3986 say hierarchical sequence and does it use 'authority'?
-???
-%\begin{center}
-    
-{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} 
-
-%\end{center}
-\noindent
-where the authority component consists of three more components which are:
-
-%\begin{center}
-{\tt authority = [userinfo@] host [:port]}
-%\end{center}
+as shown in figure~\ref{syntax-diagram}.
 
 \begin{figure}[htp]
     \centering
@@ -185,21 +144,29 @@ where the authority component consists of three more components which are:
     \label{syntax-diagram}
 \end{figure}
 
-Consider the following \ac{url}.
-??? Explain why you have switched to URL here and what is the difference between URL and URI. Can you make a real example URL? In practice, how many have all the parts ???
-Figure~\ref{components-of-url-example} 
-shows its components.
+A \ac{uri} comprises of five following components sequentially. 
+It is not mandatory for \ac{uri}s to have all components. 
+% Does the RFC3986 say hierarchical sequence and does it use 'authority'? - yes???
 
-%\begin{center}
-    {\tt https://parita@www.semanticweb.org:695/ontology/?tag=survey\&order=newest\#top}
-%\end{center}
+{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} 
+
+\noindent
+where the authority component consists of three more components which are:
+
+{\tt authority = [userinfo@] host [:port]}
+ 
+\noindent
+Consider the \ac{uri}: {\tt https://parita-amin.github.io/survey.owl\#Survey}. 
+It has {\tt scheme}, {\tt authority} without {\tt userinfo} and {\tt port}, {\tt path} and {\tt fragment}. 
+Figure~\ref{components-of-uri-example} 
+shows its components.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=\columnwidth]{images/ch2/components-of-url-example.png}
-    \caption{Components of the example URL, 
+    \includegraphics[width=\columnwidth]{images/ch2/components-of-uri-example.png}
+    \caption{Components of the example URI, 
     after Berners-Lee et al.~\cite{RFC3986uri}}
-    \label{components-of-url-example}
+    \label{components-of-uri-example}
 \end{figure}
 
 \subsection{Resource Description Framework}
@@ -209,147 +176,269 @@ RDF began as a metadata model and is now the means to describe resources
 (entities) and the relationships amongst them in a computer-understandable format,
 using basic data models like the \ac{er} model. ??? needs more about data models, modelling, ER ???
 
-\ac{rdf} uses ``properties'' and ``property values'' 
+\ac{rdf} uses {\tt properties} and {\tt property values} 
 to describe resources, which are named by \ac{uri}s. 
 The three types of objects in \ac{rdf} are resources, properties, and statements. 
 Each data object in a dataset on the web is considered a resource and is named 
-using a \ac{uri} ???with an optional ID??? Needs more???. 
+using a \ac{uri}. 
 To search for the resources on the web, 
 the resources must be named using the \ac{https} \ac{uri}s. 
 The \ac{w3c} has defined the 
-``rdf:type'' 
+{\tt rdf:type} 
 property to represent the 
 ``object of one or more classes''~\cite{cyganiak2014rdf}. 
 Resources are described by their characteristics, 
-called ``property''. 
+called {\tt property}. 
 The object of \ac{rdf} 
-that is used to combine a resource with a property of its value is a ``statement''. 
+that is used to combine a resource with a property of its value is a {\tt statement}. 
 A statement, 
 in general terms, 
 can be seen as building blocks of a statement in English, 
 which are a subject, an object, and a predicate. 
 An object in a statement can be either a property value, a resource, or a literal. 
 \ac{rdf}, 
-according to Swick and Lassila~\cite{beckett2004rdf,anything-more-recent}, 
+according to Beckett, Gandon and Schreiber~\cite{gandon2014rdf,zongmin2016rdf}, 
 can be represented in three ways:
 
 \begin{enumerate}
 
     \item Using \ac{xml}: an \ac{rdf}/\ac{xml} document
+    
+    Figure~\ref{rdf-xml-doc} 
+    shows an example of an \ac{rdf}/\ac{xml}
+    document for the following statement: 
+    
+    {\tt Pizza has Caloric Content with integer value}
+
+    \begin{figure}[h]
+        \framebox{\vbox{\tt\small
+        \begin{tabbing}
+            \hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\= \kill
+            \hspace*{\columnwidth}\\[-1cm]
+            <rdf:RDF>\\
+            \><owl:Class rdf:about="pizza:Pizza">\\
+            \>\>\><owl:onProperty rdf:resource="pizza:hasCaloricContent"/>\\
+            \>\>\><owl:someValuesFrom rdf:resource="xsd:integer"/>\\
+            \></owl:Class>\\
+            </rdf:RDF>
+            \\[-1cm]
+        \end{tabbing}
+        }}
+        \caption{An Illustration of Code in an RDF/XML Document}
+        \label{rdf-xml-doc}
+    \end{figure}
+    
+    {\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#} and 
+    {\tt http://www.w3.org/2001/XMLSchema\#} 
+    are the base \ac{uri}s that have been expressed using prefixes 
+    {\tt pizza} and {\tt xsd} respectively 
+    for the classes and properties in Figure~\ref{rdf-xml-doc}. 
+    The resource being described is {\tt pizza:Pizza}, 
+    the property is {\tt pizza:hasCaloricContent}, and 
+    {\tt xsd:integer} is the value. 
+    The document consists of various \ac{xml} tags enclosed between the angular brackets (``<'' and ``>''). 
+    An \ac{rdf}/\ac{xml} 
+    document starts and ends with {\tt <rdf:\ac{rdf}>} and 
+    {\tt </rdf:\ac{rdf}>} respectively.
   
     \item As triples: subject-predicate-object form
+    
+    Figure~\ref{rdf-triple} 
+    shows an example of an \ac{rdf} triple, 
+    where {\tt pizza:Pizza} is the subject; 
+    the predicate is {\tt pizza:hasCaloricContent}; 
+    and the object is {\tt xsd:integer}. 
+    
+    \begin{figure}[htp]
+        \framebox{\vbox{\tt\small
+        \begin{tabbing}
+            \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
+            \hspace*{\columnwidth}\\[-1cm]
+            Subject: {\tt pizza:Pizza}\\
+            \>\>Predicate: {\tt pizza:hasCaloricContent}\\
+            \>\>\>\>Object: {\tt xsd:integer}
+            \\[-1cm]
+        \end{tabbing}
+        }}
+        \caption{An Example of an \ac{rdf} Triple}
+        \label{rdf-triple}
+    \end{figure}
   
     \item In graphical form
+    
+    Figure~\ref{rdf-graph} 
+    shows an \ac{rdf} graph in graphical format. 
+    Resource is indicated using an oval shape and a rectangle is used to 
+    represent a property value. 
+    A connector (an arrow) is used to represent a property to show that 
+    property (predicate) connects the resource (subject) with the value (object).
+    
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[width=\columnwidth]{images/ch2/rdf-graph.png}
+        \caption{Graphical Representation of an \ac{rdf} graph.}
+        \label{rdf-graph}
+    \end{figure}
+    
+    The subject and object of the triples of \ac{rdf} act as nodes in the graph
+    where they are two entities and 
+    the predicate being the third entity acts as a connector between them. 
+    Considering an entity-relationship data model, 
+    the predicate can be treated as a relationship shared by the subject and the object. 
+    In addition to \ac{rdf}/\ac{xml} documentation, 
+    the \ac{rdf} data model has a variety of serialization formats such as N-triples, 
+    which is a line based format where an \ac{rdf} triple is used to represent each line~\cite{beckett2014rdf}; 
+    \ac{turtle}; \ac{n3}, 
+    which is a subset of Turtle and N-Quads, 
+    which is an extension of N-Triples (line based) 
+    and adds a graph label to each line 
+    that allows multiple graph encoding~\cite{cyganiak2008n}.
   
 \end{enumerate}
 
-??? What are the advantages and disadvantages of each ???
+%??? What are the advantages and disadvantages of each-do we really need them? this was just to show various forms in which rdf can be represented. We haven't used them as exercising options and selecting one ???
 
-??? What about Turtle???
+%??? What about Turtle-the idea is document form, triple in the form of subject object predicate, and then graph. so turtle would be under document category along with all other code formats???
 
-??? Maybe get some inspiration from https://en.wikipedia.org/wiki/Resource\_Description\_Framework where they illustrate the same examples
-in triples, RDF/XML, and Turtle ???
+%The actual \ac{rdf} 
+%looks quite different from the previous example 
+%(). 
+%For the representation of an actual \ac{rdf}, 
+%consider the following statement:
+%
+%\begin{center}
+%    \textbf{Pizza has PizzaBase}
+%\end{center}
+%
+%The \ac{uri} for subject is 
+%{\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#Pizza} 
+%whereas 
+%for hasBase, 
+%it is {\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#hasBase} 
+%while 
+%the \ac{uri} for PizzaBase is 
+%{\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#PizzaBase}. 
+%The example represents a pizza system which has pizza base as well as caloric content and related details as a part of the environment.
+%
+%In the form of \ac{rdf} triple, 
+%the statement  
+%can be represented as follows:
+%
+%\textbf{SUBJECT - http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#Pizza}
+%
+%\textbf{PREDICATE - http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#hasBase}
+%
+%\textbf{OBJECT - http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#PizzaBase}
+%
+%Figure~\ref{rdf-graph-for-statement} 
+%shows a graphical representation of the \ac{rdf} 
+%triple described above.
+
+%\begin{figure}[htp]
+%    \centering
+%    \includegraphics[width=14cm]{images/ch2/rdf-graph-for-statement.png}
+%    \caption{\ac{rdf} Graph for Survey Triple, after \ac{rdf} Primer~\cite{manola2004rdf}}
+%    \label{rdf-graph-for-statement}
+%\end{figure}
+
+There can be more details added to the above \ac{rdf} system 
+(Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}), 
+that is, 
+more statements can be added which are in relation to the original statement.  
+Suppose the new statement added is: {\tt Pizza has Pizza Base} 
 
 \noindent
-Figure~\ref{rdf-xml-doc} 
-shows an example of an \ac{rdf}/\ac{xml}
-document for the statement: 
-
-https://parita-amin.github.io/survey.owl has Respondent ??? more context ???
-
-
-\begin{figure}[h]
-\framebox{\vbox{\tt\small
-\begin{tabbing}
-\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\= \kill
-\hspace*{\columnwidth}}\\[-1cm]
-<rdf:RDF>\\
-\><rdf:Description rdf:about="https://parita-amin.github.io/survey.owl">\\
-\>\><s:has>Respondent</s:has>\\
-\></rdf:Description>\\
-</rdf:RDF>
-\\[-1cm]
-\end{tabbing}
-}}
-\caption{An Illustration of Code in an RDF/XML Document}
-\label{rdf-xml-doc}
-\end{figure}
-
-% \begin{figure}[htp]
-%    \centering
-%    \includegraphics[width=\columnwidth]{images/ch2/rdf-xml-doc.png}
-%    \caption{An Illustration of Code in an RDF/XML Document}
-%    \label{rdf-xml-doc}
-%\end{figure}
- 
-??? I suggest using the Simpson's Family Tree (graph.ttl) as the examples ???
-
-??? Your survey vocabulary can go in a later chapter ???
-
-The resource being described is 
-{\tt https://parita-amin.github.io/survey.owl} and 
-``Respondent'' 
-is the property value. 
-The document consists of various \ac{xml} tags enclosed between the angular brackets (``<'' and ``>''). 
-An \ac{rdf}/\ac{xml} 
-document starts and ends with {\tt <rdf:\ac{rdf}>} and 
-{\tt </rdf:\ac{rdf}>} respectively. 
-{\tt <rdf:Description>}
-consists of the elements that are responsible for the creation of the statement. 
-Description tag holds an identification for the resource.
-
-Figure~\ref{rdf-triple} 
-shows an example of an \ac{rdf} triple,
-which 
-%An \ac{rdf} triple, 
-can be written
-%For the illustration in the figure, 
-There,
-``https://parita-amin.github.io/survey.owl'' is the subject;
-the predicate is ``has''; 
-and the object is ``Respondent''.
-??? SHOULD NOT ALL (subject, predicate, object) be https URI ???
-??? sometimes has is preceded by s: (a prefix?) that should be included ???
-
-??? I would prefer to do code examples in a tabbing environment directly in LaTeX --
-that would be easier to edit I think... see Figures~\ref{rdf-xml-doc} and~\ref{rdf-triple}. ???
-
-\begin{figure}[htp]
-\framebox{\vbox{\tt\small
-\begin{tabbing}
-\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
-\hspace*{\columnwidth}}\\[-1cm]
-Subject:\>\>\>https://parita-amin.github.io/survey.owl\\
-Predicate:\>\>\>has\\
-Object:\>\>\>Respondent
-\\[-1cm]
-\end{tabbing}
-}}
-%\includegraphics[width=\columnwidth]{images/ch2/rdf-triple.png}
-\caption{An Example of an \ac{rdf} Triple ??? but this is not in parseable N-triples format ???}
-\label{rdf-triple}
-\end{figure}
-
-Figure~\ref{rdf-graph} 
-shows an \ac{rdf} graph in graphical format. 
-Resource is indicated using an oval shape and a rectangle is used to 
-represent a property value. 
-A connector (an arrow) is used to represent a property to show that property (predicate) connects the resource (subject) with the value (object).
+where
+{\tt pizza:Pizza} is a resource, 
+{\tt pizza:hasBase} is the property, and
+the value is {\tt pizza:PizzaBase}.
+The new graph would be as shown in Figure~\ref{graph-for-relative-statements} 
+whereas Figure~\ref{rdf-notations} shows \ac{rdf} triples.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=\columnwidth]{images/ch2/rdf-graph.png}
-    \caption{Graphical Representation of an \ac{rdf} graph.}
-    \label{rdf-graph}
+    \includegraphics[width=\columnwidth]{images/ch2/graph-for-relative-statements.png}
+    \caption{\ac{rdf} Graph for Two Relative Statements, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \label{graph-for-relative-statements}
 \end{figure}
 
-The subject and object of the triples of \ac{rdf} act as nodes in the graph.
-In addition to \ac{rdf}/\ac{xml} documentation, 
-the \ac{rdf} data model has a variety of serialization formats such as N-triples, 
-which is a line based format where an \ac{rdf} triple is used to represent each line~\cite{beckett2014rdf}; 
-\ac{turtle}; \ac{n3}, 
-which is a subset of Turtle and N-Quads, 
-which is an extension of N-Triples (line based) and adds a graph label to each line that allows multiple graph encoding~\cite{cyganiak2008n}.
+\begin{figure}[htp]
+    \framebox{\vbox{\tt\small
+    \begin{tabbing}
+        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
+        \hspace*{\columnwidth}\\[-1cm]
+        \>{\tt1.} {\tt <pizza:Pizza>} {\tt <pizza:hasBase>} {\tt <pizza:PizzaBase>}\\
+        \>{\tt2.} {\tt <pizza:Pizza>} {\tt <pizza:hasCaloricContent>} {\tt <xsd:integer>}
+        \\[-1cm]
+    \end{tabbing}
+    }}
+    \caption{\ac{rdf} Notations for Figure~\ref{graph-for-relative-statements}, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \label{rdf-notations}
+\end{figure}
+
+The first notation represents the entities, 
+{\tt Pizza} (subject) and {\tt PizzaBase} (object), 
+along with {\tt hasBase} (predicate) as the relation between them, 
+using the \ac{uri}s. 
+The second notation is for {\tt CaloricContent}, 
+where instead of the \ac{uri}, 
+the value of the property, {\tt integer}, is used. 
+Here, 
+{\tt Pizza} is the subject and {\tt integer} is the object with {\tt hasCaloricContent} acting as the predicate.
+
+Consider a more complex system, 
+where the types of {\tt PizzaBase} are described. 
+Suppose, 
+the types are {\tt DeepPanBase} and {\tt ThinAndCrispyBase}.
+Figure~\ref{graph-for-base-types} 
+shows a graphical representation of this \ac{rdf} system.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch2/graph-for-base-types.png}
+    \caption{Graphical Representation of \ac{rdf} with types of PizzaBase, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \label{graph-for-base-types}
+\end{figure}
+
+For caloric content, 
+{\tt pizza:Pizza} is subject 
+and the value {\tt xsd:integer} acts as object 
+whereas {\tt pizza:hasCaloricContent} is the predicate. 
+On the other hand, 
+{\tt pizza:Pizza} (subject) 
+is connected to {\tt pizza:PizzaBase} (object) node 
+through {\tt pizza:hasBase} (predicate). 
+Further, 
+the {\tt pizza:PizzaBase} node has multiple child nodes, 
+namely, 
+{\tt pizza:ThinAndCrispyBase} and {\tt pizza:DeepPanBase} 
+where the \ac{uri}s for the predicates are 
+{\tt pizza:hasCrispyBase} and {\tt pizza:hasPanBase} respectively. 
+Instead of using an unnecessary \ac{uri} 
+for the {\tt pizza:PizzaBase} entity, 
+a blank node can be used to denote the entity, 
+as shown in Figure~\ref{blank-node-for-rdf}. 
+As the relationships of the node with other nodes give sufficient details without hindering the flow of the data tree, 
+the node does not require a \ac{uri}reference\footnote{https://lists.w3.org/Archives/Public/uri/2007Jul/0027.html}.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch2/blank-node-for-rdf.png}
+    \caption{\ac{rdf} Representation in Figure~\ref{graph-for-base-types} without a URI (blank node) for PizzaBase Entity, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \label{blank-node-for-rdf}
+\end{figure}
+
+In 2004, 
+\ac{w3c} recommended intended goals that are to be achieved whenever an \ac{rdf} 
+is to be designed. 
+According to the \ac{w3c} 
+Recommendation\footnote{\tt https://www.w3.org/TR/rdf11-concepts/},  
+the design should 
+``have a simple data model; 
+formal semantics and provable inference; 
+should use an extensible \ac{uri}-based vocabulary and an \ac{xml}-based syntax; 
+should support the use of \ac{xml} schema datatypes; 
+and should allow any one to make statements about any resource''. 
 
 \ac{rdfs}, 
 according to McBride~\cite{mcbride2004resource}, 
@@ -382,26 +471,26 @@ along with their description are listed in Table~\ref{rdfs-classes-and-propertie
     \label{rdfs-classes-and-properties}
 \end{table}
 
+Consider the statement: 
+
+{\tt Romeo and Juliet is written by William Shakespeare}
+
+\noindent
 Figure~\ref{rdfs-graph-for-complex} 
 shows a graph for the representation of \ac{rdfs} 
-for a comparatively complex and abstract example based on \ac{rdf} Primer~\cite{manola2004rdf}. 
-The graph has been drawn for the following statement:
-
-\begin{center}
-    \textbf{Romeo and Juliet is written by William Shakespeare.}
-\end{center}
-
-Figure~\ref{rdfs-graph-for-complex} 
-is the graphical representation of an \ac{rdf} 
+for above statement 
+which is comparatively complex and abstract example 
+based on \ac{rdf} Primer~\cite{manola2004rdf}. 
+It is the graphical representation of an \ac{rdf} 
 with schema as well as data. 
 In the graph, 
-the rdf:type of 
-``Romeo and Juliet'' is ``Play'' 
-which in turn is an rdf:subClassOf ``Literature''. 
+the {\tt rdf:type} of 
+{\tt Romeo and Juliet} is {\tt Play} 
+which, in turn, is an {\tt rdf:subClassOf Literature}. 
 Also, 
-the rdf:type of ``William Shakespeare'' is ``Person'' which, 
+the {\tt rdf:type} of {\tt William Shakespeare} is {\tt Person} which, 
 further, 
-is an rdfs:range of ``is written by'' of rdfs:domain ``Literature''.
+is an {\tt rdfs:range} of {\tt is written by} of {\tt rdfs:domain Literature}. 
 
 \begin{figure}[htp]
     \centering
@@ -409,181 +498,6 @@ is an rdfs:range of ``is written by'' of rdfs:domain ``Literature''.
     \caption{Graphical Representation of an RDFS for a Comparatively Complex Illustration, after McBride~\cite{mcbride2004resource}}
     \label{rdfs-graph-for-complex}
 \end{figure} 
-
-The actual \ac{rdf} 
-looks quite different from the previous example 
-(Figures~\ref{rdf-xml-doc},~\ref{rdf-triple},~\ref{rdf-graph} and~\ref{rdfs-graph-for-complex}). 
-For the representation of an actual \ac{rdf}, 
-consider %Figure~\ref{statement-for-rdf} 
-%for the corresponding English
-the following statement:
-
-\begin{center}
-    \textbf{https://parita-amin.github.io/survey.owl} has \textbf{Respondent} with value \textbf{C1R1}
-\end{center}
- 
-The \ac{uri} for subject is ``https://parita-amin.github.io/survey.owl''  
-whereas 
-for Respondent, it is ``https://parita-amin.github.io/survey.owl\#Respondent''
-while 
-the \ac{uri} for C1R1 is ``https://parita-amin.github.io/survey.owl\#C1R1''. 
-??? this should be in the .ttl file :C1R1 ???
-The example represents a survey system which has responses as well as respondents and related details as a part of the environment.
-
-%\begin{figure}[htp]
-%    \centering
-%    \includegraphics[width=\columnwidth]{images/ch2/statement-for-rdf.png}
-%    \caption{English Statement for an Example of Actual \ac{rdf}}
-%    \label{statement-for-rdf}
-%\end{figure}
-
-In the form of \ac{rdf} triple, 
-the statement 
-% in Figure~\ref{statement-for-rdf} 
-can be represented as follows:
-%shown in Figure~\ref{triple-for-rdf-statement}. 
-
-\textbf{SUBJECT - https://parita-amin.github.io/survey.owl}
-
-\textbf{PREDICATE - https://parita-amin.github.io/survey.owl\#Respondent}
-
-\textbf{OBJECT - https://parita-amin.github.io/survey.owl\#C1R1}
-
-%
-%\ac{uri} is assigned to the subject survey.owl and to the object which is the respondent with value C1R1 which corresponds to the property value Robert James. 
-%A \ac{uri} is also assigned to the predicate (respondent).
-
-%\begin{figure}[htp]
-%    \centering
-%    \includegraphics[width=\columnwidth]{images/ch2/triple-for-rdf-statement.png}
-%    \caption{\ac{rdf} Triple for English Statement in Figure~\ref{statement-for-rdf}, after \ac{rdf} Primer~\cite{manola2004rdf}}
-%    \label{triple-for-rdf-statement}
-%\end{figure}
-
-Figure~\ref{rdf-graph-for-statement} 
-shows a graphical representation of the \ac{rdf} 
-triple described above.
-%in Figure~\ref{triple-for-rdf-statement}. 
-The subject and the object are two entities and the predicate being the third entity acts as a connector between them. 
-Considering an entity-relationship data model, 
-the predicate can be treated as a relationship shared by the subject and the object. 
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=14cm]{images/ch2/rdf-graph-for-statement.png}
-    \caption{\ac{rdf} Graph for Survey Triple, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{rdf-graph-for-statement}
-\end{figure}
-
-There can be more details added to the system, 
-that is, 
-more statements can be added which are in relation to the original statement. 
-%one in Figure~\ref{statement-for-rdf}. 
-Suppose the new statement added is:
-
-\textbf{https://parita-amin.github.io/survey.owl} has a \textbf{SurveyCollection} with value \textbf{``https://parita-amin.github.io/survey.owl\#Collection1''}    
-??? this is not correct is it? The individual called Collection1 is defined/created in the ttl file, not the owl file? The owl file has the class Collection, not the individuals ???
-
-where 
-``https://parita-amin.github.io/survey.owl\#SurveyCollection'' 
-is the \ac{uri} for SurveyCollection and
-``https://parita-amin.github.io/survey.owl\#Collection1''
-for Collection1.
-
-The new graph would be as shown in Figure~\ref{graph-for-relative-statements} 
-whereas the set of statements in Table~\ref{rdf-notations} 
-shows the \ac{rdf} triple notation for Figure~\ref{graph-for-relative-statements}. 
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch2/graph-for-relative-statements.png}
-    \caption{\ac{rdf} Graph for Two Relative Statements, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{graph-for-relative-statements}
-\end{figure}
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|l|} \hline
-     \ \ https://parita-amin.github.io/survey.owl> \\ \ \ \ \ \ \ <https://parita-amin.github.io/survey.owl\#SurveyCollection> \\ \ \ \ \ \ \ \ \ \ \ <https://parita-amin.github.io/survey.owl\#Collection1> . \\ \hline
-      \ \ https://parita-amin.github.io/survey.owl> \\ \ \ \ \ \ \ <https://parita-amin.github.io/survey.owl\#Respondent> \\ \ \ \ \ \ \ \ \ \ \ “C1R1” .\\ \hline
-    \end{tabular}
-    \caption{\ac{rdf} Notations for Figure~\ref{graph-for-relative-statements}, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{rdf-notations}
-\end{table}
-
-The first notation represents the entities, 
-survey.owl (subject) and Collection1 (object), 
-along with SurveyCollection (predicate) as the relation between them, 
-using the \ac{uri}s. 
-The second notation is for Respondent, 
-where instead of the \ac{uri}, 
-the value of the property, C1R1, is used. 
-Here, 
-survey.owl is the subject and C1R1 is the object with Respondent acting as the predicate.
-
-Consider a more complex system, 
-where the details of SurveyCollection are described. 
-Suppose, 
-one of the details is Course and the other is Semester of the collection. 
-Figure~\ref{graph-for-respondent-details} 
-shows a graphical representation of this \ac{rdf} system.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch2/graph-for-respondent-details.png}
-    \caption{Graphical Representation of \ac{rdf} with Details of the Respondent of the Survey, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{graph-for-respondent-details}
-\end{figure}
-
-For name, 
-the respondent is subject and Robert James acts as object whereas respName is the predicate. 
-The \ac{uri} for respName is 
-``http://www.semanticweb.org/respDe- tails/name'' 
-and the value, Robert James, is the object. 
-On the other hand, 
-respondent (subject) is connected to address (object) node, 
-with \ac{uri} ``http://www.semanticweb.org/addressID/1234'', 
-through respAddress (predicate) with \ac{uri} ``http://www.sema- nticweb.org/respDetails/address''. 
-Further, 
-the address node has multiple child nodes, 
-namely, 
-street, city, state and postal code. 
-The address (subject) \ac{uri} 
-is connected to the values of four different object values, 
-49 University Drive (??? where is this ???? street), 
-Regina (city), 
-Saskatchewan (??? Province, not a state???) and S4S 5N2 (postalCode) 
-where the \ac{uri}s for the predicates are 
-``http://www.semanticweb.org/respDetails/street'', 
-``http://www.semanticweb.org/res- pDetails/city'', 
-``http://www.semanticweb.org/respDetails/state'' and 
-``http://www.se- manticweb.org/respDetails/postalCode'' respectively. 
-Instead of using an unnecessary \ac{uri} 
-for the address entity, 
-a blank node can be used to denote the entity, 
-as shown in Figure~\ref{blank-node-for-rdf}. 
-As the relationships of the node with other nodes give sufficient details without hindering the flow of the data tree, 
-the node does not require a \ac{uri}reference\footnote{https://lists.w3.org/Archives/Public/uri/2007Jul/0027.html}.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch2/blank-node-for-rdf.png}
-    \caption{\ac{rdf} Representation in Figure~\ref{graph-for-respondent-details} without a URI (blank node) for Address Entity, after \ac{rdf} Primer~\cite{manola2004rdf}}
-    \label{blank-node-for-rdf}
-\end{figure}
-
-In 2004, 
-\ac{w3c} recommended intended goals that are to be achieved whenever an \ac{rdf} 
-is to be designed. 
-According to the \ac{w3c} 
-Recommendation\footnote{\tt https://www.w3.org/TR/rdf11-concepts/}
-%\footnote{https://www.w3.org/TR/rdf-concepts/}, 
-the design should 
-``have a simple data model; 
-formal semantics and provable inference; 
-should use an extensible \ac{uri}-based vocabulary and an \ac{xml}-based syntax; 
-should support the use of \ac{xml} schema datatypes; 
-and should allow any one to make statements about any resource''.
 
 \subsection{Open Data}
 
@@ -639,7 +553,6 @@ Digital signatures are used as security at different levels.
 The layers belong to three different groups, 
 namely, 
 self-descriptive document, data and rules.
-
 
 Linked data is concerned with publishing structured data,
 along with the semantics of the relationships amongst that data,
