@@ -28,6 +28,8 @@ and focus on the use OpenRefine~\cite{openrefine} and Protégé~\cite{protege} t
 
 \section{Describe Semantics}
 
+Either one needs to reuse an existing vocabulary or create one.
+
 First stage: was Extraction
 ( Extraction and conversion of unstructured and semi-structured data into \ac{rdf}).
 
@@ -161,7 +163,7 @@ The five dimensions of usability were used to assess the usability of protégé 
   
 \end{itemize}
 
-\section{Procedure to Describe OWL Vocabularies Using Protégé}
+\subsection{Procedure to Describe OWL Vocabularies Using Protégé}
 \label{sec:protegeprocedure}
 
 This section focuses on a step-wise methodology that has been followed to create new \ac{owl} 
@@ -380,6 +382,12 @@ Data properties can be described using the description view of data properties o
 \subsection{OWL Ontology Inconsistencies and Reasoner}
 \label{subsec:owlreasoner}
 
+Pitfall scanners: https://oops.linkeddata.es/ and foops (https://foops.linkeddata.es/FAIR_validator.html
+
+https://lov.linkeddata.es/Recommendations_Vocabulary_Design.pdf
+
+https://www.w3.org/TR/void/
+
 After describing the classes, object properties, data properties, and individuals, 
 the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
 The current version of the protégé IDE (Integrated Development Environment) 
@@ -413,10 +421,11 @@ To address this challenge,
 they developed SHACL4P, 
 a protégé plugin. 
 SHACL4P is used for defining and validating \ac{shacl}, 
-which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{https://www.w3.org/TR/shacl/}. 
+which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{\tt https://www.w3.org/TR/shacl/}. 
 \ac{shacl} uses ``shapes'' to describe constraints.
 
 \section{Conversion of Tabular Data into Linked Data}
+Mapping Data to RDF
 \label{sec:csvtolodconversion}
 
 After describing the best possible version of the ontology, 
@@ -438,7 +447,7 @@ shows the homepage of OpenRefine.
 \begin{figure}[htp] 
     \centering
     \includegraphics[width=15cm]{images/ch3/openrefine/homepage.png}
-    \caption{OpenRefine Homepage}
+    \caption{OpenRefine Homepage???why???}
     \label{openrefine-homepage}
 \end{figure}
 
@@ -624,6 +633,7 @@ OpenRefine provides support for following tasks:
     which can be then uploaded to central databases.
    
 \end{enumerate}
+\section{Testing Data Quality}
 
 \section{Announcing Linked Open Data}
 \label{sec:announcinglod}
@@ -633,11 +643,11 @@ it can be made available on the web in two steps,
 licensing the data and publishing on the web, 
 which are discussed in this section. 
 
-\subsection{Licensing Linked Data}
+\section{Licensing Linked Data}
 \label{subsec:licensinglinkeddata}
 
 \ac{w3c}~\cite{hyland2014bestpractices} 
-advises that it's critical to identify the owner of any data published on the web and to explicitly link the licence to the data itself. 
+advises that it is critical to identify the owner of any data published on the web and to explicitly link the licence to the data itself. 
 It is simpler to attach a licence that goes with the data itself when publishing linked open data. 
 When data has a clear, 
 agreeable licence attached to it, 
@@ -654,7 +664,7 @@ developed, supported, and maintained by Creative Commons.
 %Attribution-ShareAlike 3.0 Unported\footnote{https://creativecommons.org/licenses/by-sa/3.0/}, and 
 %Attribution-ShareAlike 4.0 International\footnote{https://creativecommons.org/licenses/by-sa/4.0/}
 
-\subsection{Publishing Linked ``Open'' Data}
+\section{Publishing Linked Open Data}
 \label{subsec:publishinglod}
 
 According to Petrou et al.~\cite{irene2014publishlod}, 
@@ -674,98 +684,98 @@ Publishing datasets to international or national open data portals
 might further 
 ``announce'' them to the public and make them discoverable.
 
-\subsection{5-star Rating System}
-\label{subsec:5-star}
-
-Tim Berners-Lee, 
-the creator of the web and the linked data project's founder, 
-proposed a five-star deployment strategy for linked data. 
-The system of 5-star\footnote{https://www.w3.org/2011/gld/wiki/5\_Star\_Linked\_Data} 
-linked data is cumulative. 
-In this system, 
-the authors of the online data link their data to the already linked data to serve as a reference and make it searchable using the linked data principles. 
-For the 5-star system to accept the linked data on the web as 5-star the data should be:
-
-\begin{itemize}
-
-  \item structured (machine-readable)
-  
-  \item open-licensed for access
-  
-  \item described and linked to other data using \ac{uri}s
-  
-\end{itemize}
-
-Each successive star implies that the data satisfies the requirements of the preceding phase(s) as explained in Table~\ref{5-star-system}.
-
-\begin{table}[h!]
-        \centering
-        \begin{tabular}{|l|l|} \hline 
-             \ \ \ \ \ Stars \ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explanation \\ \hline
-             \FiveStarOpen & The data is accessible on the web with open license, regardless \\& of the format.\\ \hline
-             \FiveStarOpen \ \FiveStarOpen & AND the open data is accessible on the web as structured data \\& that can be read by machines. For example, using Microsoft \\& Excel instead of a screenshot of a Microsoft Excel workbook.\\ \hline
-             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the data is accessible in a non-proprietary format with \\& open-license. For instance, storing data in CSV instead of \\& Microsoft Excel.\\ \hline
-             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND \ac{w3c} open standards were used for publication of the linked \\& open data on the web. For example, \ac{rdf}, \ac{uri}s, and \ac{sparql}.\\ \hline
-             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the open data is linked to other web-based data for context.\\ \hline
-        \end{tabular}
-        \caption{5-star Rating System for Linked Data Implementation}
-        \label{5-star-system}
-\end{table}  
-
-\section{Visualizing Linked Data}
-\label{sec:visualizinglinkeddata}
-
-The modelled ontology can be visualized using various visualization tools. 
-Protégé supports plug-ins for some visualization tools like 
-OntoGraf and \ac{owl}Viz 
-whereas tools like 
-WebVOWL, RelFinder and \ac{owl}GrEd 
-are available for use as web-based tools. 
-This section focuses on the two tools, 
-OntoGraf and WebVOWL, 
-used for the visualization of ontology in this research.
-
-\subsection{OntoGraf}
-\label{subsec:ontograf}
-
-Falconer~\cite{falconer2010ontograf} 
-introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. 
-This tool helps the users to represent the ontologies, 
-built using protégé, 
-by repetitively allowing and restricting the desired classes. 
-OntoGraf offers various graph layout options for visualization like 
-Grid Layout\footnote{classes are arranged in a grid alphabetically}, 
-Spring Layout, and 
-Tree Layout\footnote{both horizontal and vertical}. 
-Antoniazzi and Viola~\cite{antoniazz2018rdf} 
-stated that the 
-``individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements''. 
-The graphs generated using OntoGraf can be exported as image files of various formats such as 
-PNG, JPEG, GIF and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
-
-\subsection{WebVOWL}
-\label{subsec:webvowl}
-
-WebVOWL~\cite{lohmann2014webvowl}, 
-the Web-based \ac{vowl}, 
-one of the variety of forms in which the \ac{vowl} visualization tool is available, 
-represents the 
-``ontologies graphically using a force-directed graph layout''~\cite{antoniazz2018rdf}. 
-\ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
-
-\begin{enumerate}
-  
-    \item Circles are used to denote classes. 
-    Also, 
-    different types are assigned different colors. 
-    For instance, 
-    \ac{owl} classes are denoted using ``light blue circles''.
-
-    \item Black solid lines are used to represent \ac{owl} object and datatype properties. 
-    The object properties use light blue labels where as the datatype properties are labelled in green.
-  
-    \item The relationships between the classes and their subclasses are represented using dashed lines.
-
-\end{enumerate}
+%\subsection{5-star Rating System}
+%\label{subsec:5-star}
+%
+%Tim Berners-Lee, 
+%the creator of the web and the linked data project's founder, 
+%proposed a five-star deployment strategy for linked data. 
+%The system of 5-star\footnote{https://www.w3.org/2011/gld/wiki/5\_Star\_Linked\_Data} 
+%linked data is cumulative. 
+%In this system, 
+%the authors of the online data link their data to the already linked data to serve as a reference and make it searchable using the linked data principles. 
+%For the 5-star system to accept the linked data on the web as 5-star the data should be:
+%
+%\begin{itemize}
+%
+%  \item structured (machine-readable)
+%  
+%  \item open-licensed for access
+%  
+%  \item described and linked to other data using \ac{uri}s
+%  
+%\end{itemize}
+%
+%Each successive star implies that the data satisfies the requirements of the preceding phase(s) as explained in Table~\ref{5-star-system}.
+%
+%\begin{table}[h!]
+%        \centering
+%        \begin{tabular}{|l|l|} \hline 
+%             \ \ \ \ \ Stars \ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explanation \\ \hline
+%             \FiveStarOpen & The data is accessible on the web with open license, regardless \\& of the format.\\ \hline
+%             \FiveStarOpen \ \FiveStarOpen & AND the open data is accessible on the web as structured data \\& that can be read by machines. For example, using Microsoft \\& Excel instead of a screenshot of a Microsoft Excel workbook.\\ \hline
+%             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the data is accessible in a non-proprietary format with \\& open-license. For instance, storing data in CSV instead of \\& Microsoft Excel.\\ \hline
+%             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND \ac{w3c} open standards were used for publication of the linked \\& open data on the web. For example, \ac{rdf}, \ac{uri}s, and \ac{sparql}.\\ \hline
+%             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the open data is linked to other web-based data for context.\\ \hline
+%        \end{tabular}
+%        \caption{5-star Rating System for Linked Data Implementation}
+%        \label{5-star-system}
+%\end{table}  
+%
+%\section{Visualizing Linked Data}
+%\label{sec:visualizinglinkeddata}
+%
+%The modelled ontology can be visualized using various visualization tools. 
+%Protégé supports plug-ins for some visualization tools like 
+%OntoGraf and \ac{owl}Viz 
+%whereas tools like 
+%WebVOWL, RelFinder and \ac{owl}GrEd 
+%are available for use as web-based tools. 
+%This section focuses on the two tools, 
+%OntoGraf and WebVOWL, 
+%used for the visualization of ontology in this research.
+%
+%\subsection{OntoGraf}
+%\label{subsec:ontograf}
+%
+%Falconer~\cite{falconer2010ontograf} 
+%introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. 
+%This tool helps the users to represent the ontologies, 
+%built using protégé, 
+%by repetitively allowing and restricting the desired classes. 
+%OntoGraf offers various graph layout options for visualization like 
+%Grid Layout\footnote{classes are arranged in a grid alphabetically}, 
+%Spring Layout, and 
+%Tree Layout\footnote{both horizontal and vertical}. 
+%Antoniazzi and Viola~\cite{antoniazz2018rdf} 
+%stated that the 
+%``individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements''. 
+%The graphs generated using OntoGraf can be exported as image files of various formats such as 
+%PNG, JPEG, GIF and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
+%
+%\subsection{WebVOWL}
+%\label{subsec:webvowl}
+%
+%WebVOWL~\cite{lohmann2014webvowl}, 
+%the Web-based \ac{vowl}, 
+%one of the variety of forms in which the \ac{vowl} visualization tool is available, 
+%represents the 
+%``ontologies graphically using a force-directed graph layout''~\cite{antoniazz2018rdf}. 
+%\ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
+%
+%\begin{enumerate}
+%  
+%    \item Circles are used to denote classes. 
+%    Also, 
+%    different types are assigned different colors. 
+%    For instance, 
+%    \ac{owl} classes are denoted using ``light blue circles''.
+%
+%    \item Black solid lines are used to represent \ac{owl} object and datatype properties. 
+%    The object properties use light blue labels where as the datatype properties are labelled in green.
+%  
+%    \item The relationships between the classes and their subclasses are represented using dashed lines.
+%
+%\end{enumerate}
 
 \end{doublespace}

@@ -1,19 +1,19 @@
 %!TEX root = parita-msc.tex
 
-\chapter{Proof of Concept}
+\chapter{Publishing LOD from a Feedback Survey}
 \label{chap:proofOfConcept}
 
 \begin{doublespace}
 
-This Chapter provides the proof of concept for the methodology 
-(see chapter~\ref{chap:methodology}) 
-followed to describe and publish linked open data for survey.
+This Chapter provides a practical application of the methodology 
+presented in Chapter~\ref{chap:methodology}
+to describe and publish linked open data for a feedback survey.
 
 \section{Modelling Ontology for Survey Using Protégé}
 \label{sec:modelingontology}
 
 Figure~\ref{feedback-form} 
-shows the student feedback form for which the new vocabularies are described. 
+shows the student feedback form for which the new vocabulary is described. 
 
 \begin{figure}[htp]
     \centering
@@ -21,6 +21,10 @@ shows the student feedback form for which the new vocabularies are described.
     \caption{The Student Feedback Form, from Hepting~\cite{prof}}
     \label{feedback-form}
 \end{figure}
+
+Here is what was done to locate an existing vocabulary to reuse.
+
+Modelling a survey requires this...
 
 \subsection{Classes for Survey Ontology}
 \label{subsec:surveyclasses}
@@ -53,12 +57,14 @@ the survey questions and survey answers have classes corresponding to various fo
 Generally, 
 feedback surveys consist of two types of questions, 
 namely, 
-``Likert Questions'' and ``Open-ended Questions''. 
+``Likert Questions'' and ``Open-ended Questions''.
+???Why get into surveymonkey ? ???
 The type of questions might differ depending on the designer of the survey, 
 some of which, 
 as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} 
 website, are listed below. 
 
+??? what value is this list -- do you explain it and discuss it in the text with citations ???
 \begin{multicols}{2}
 \begin{itemize}
    
@@ -110,6 +116,7 @@ Open-ended questions have unpredictable answers.
 Likert questions are the questions for which the answers are from the preset list of answers. 
 For the Likert questions, 
 the questions can be either of type 
+??? do you develop these in sufficient detail to discuss here ???
 ``Never-Always-4'' or 
 ``Never-Always-5'' or 
 ``Never-Always-7'' or 
