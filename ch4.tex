@@ -8,6 +8,19 @@
 This Chapter provides a practical application of the methodology 
 presented in Chapter~\ref{chap:methodology}
 to describe and publish linked open data for a feedback survey.
+The organization of this Chapter mirrors the preceding one,
+as the methodology is applied to publish ~\ac{lod} from Hepting's feedback
+survey.
+
+???
+\begin{itemize}
+\item https://actionproject.eu/coney-the-conversational-survey-toolkit-released-open-source/
+\item https://cefriel.github.io/survey-ontology/docs/index.html
+\item https://lov.linkeddata.es/dataset/lov/terms?q=survey
+\item https://ddialliance.org/learn/why-use-ddi
+\item https://rdf-vocabulary.ddialliance.org/discovery.html
+\end{itemize}
+???
 
 \section{Modelling Ontology for Survey Using Protégé}
 \label{sec:modelingontology}
@@ -18,7 +31,7 @@ shows the student feedback form for which the new vocabulary is described.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/feedback-form.png}
-    \caption{The Student Feedback Form, from Hepting~\cite{prof}}
+    \caption{The Student Feedback Form, from Hepting~\cite{prof}.}
     \label{feedback-form}
 \end{figure}
 
@@ -129,21 +142,36 @@ The ``LikertItem'' class consists of the actual questions of the survey
 (as shown in Figure~\ref{likert-item}) 
 which can be represented using the labels from the ``LikertItemLabel'' class. 
 For example, ``LikertQ1'' can be used for ``Q1\_The\_instructor\_is\_well-prepared\_for\_class''. 
+??? 
+This seems overly complicated.
+Can you have LikertQ1 as an instance/individual of LikertScaleQuestion
+and then have as properties of LikertQ1 a QuestionLabel "The instructor is well-prepared for class" and LikertScale (Never-Always-5). If this doesn't work, save it for future work
+in Chapter 5 :-)
+???
 The questions and labels are described as individuals of ``LikertItem'' and ``LikertItemLabel'' classes respectively.
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/likert-item.png}
-    \caption{``LikertItem'' class in Survey Ontology}
+    \caption{{\tt LikertItem} class in survey ontology.}
     \label{likert-item}
 \end{figure}
+
+??? 
+I'm not clear about Fig~\ref{likert-item}
+SurveyQuestions can be LikertScaleQuestions or OpenEndedQuestions.
+Then don't
+the LikertScaleQuestions have a LikertScale (say Never1Always5)
+and a QuestionLabel (as would OpenEndedQuestions)
+???
    
 \subsubsection{The ``LikertItemAnswer'' Class}
 \label{subsubsec:likertansclass}
     
 In a Never-Always-5 type of survey, 
 5 degrees of agreement can be used. 
-It is challenging to decide whether the range for the degrees would be 
+It is challenging to decide ???WHY???
+whether the range for the degrees would be 
 0 to 4, 
 1 to 5, 
 10 to 50, or something else. 
@@ -177,6 +205,14 @@ can be used to describe the
 as shown in Figure~\ref{likertscale5-class}. 
 Each of these degrees is treated as an individual 
 (section~\ref{subsec:individuals}) of the class.
+
+??? 
+The question I asked you a while ago was whether one could store 2_Rarely instead of
+2 to convey more meaning and still have it resolve to 2 (xsd:positiveInteger)
+[or the label 'Rarely'] for
+SPARQL queries. If this doesn't work or would require too much work, then I think that you
+should simplify the ontology to be consistent with what you put into the turtle file.
+???
 
 \begin{figure}[htp]
     \centering
