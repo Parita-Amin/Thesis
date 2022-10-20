@@ -1,6 +1,6 @@
 %!TEX root = parita-msc.tex
 
-\chapter{Publishing LOD from a Feedback Survey}
+\chapter{Publishing LOD from a Spreadsheet}
 \label{chap:proofOfConcept}
 
 \begin{doublespace}
@@ -338,7 +338,13 @@ shows a list of classes and individuals described in survey ontology.
      \multirow{2}{9.5em}{OpenEndedQuestions} &  OEQuestion\_LikeBest, OEQuestion\_Change, \\& OEQuestion\_Strengths \\ \hline
      OpenEndedAnswers & OEAns\_LikeBest, OEAns\_Change, OEAns\_Strengths \\ \hline
     \end{tabular}
-    \caption{Classes and their Individuals}
+    \caption{Classes and their Individuals. ??? This needs work: a survey has questions; and there are 2 types of questions -- OpenEnded OEQ (answer is a string) and Likert LIQ (answer is one of items on specified scale) and both have labels or text describing the question. HeptingStudentFeedback (say) is a Survey with 9 Likert Questions and 3 OpenEnded Questions. 
+    *** MAYBE: Survey is a Pizza, HeptingStudentFeedback is a specific Survey (like a specific 
+    pizza with certain ingredients... Respodent is a Customer and "hasLIQ01Answer", etc. are the 
+    customer details recorded, etc. WHAT DO YOU THINK?? 
+    Data is collected for a course offering (and a course can have more than one offering 
+    (an offering is in a semester). There can be more than one collection for an offering of a course 
+    [look at DISCO vocabulary for how that is organized] ???}
     \label{survey-individuals}
 \end{table}
 

@@ -28,6 +28,17 @@ and focus on the use OpenRefine~\cite{openrefine} and Protégé~\cite{protege} t
 
 \section{Describe Semantics}
 
+??? 
+https://drive.google.com/file/d/1oFRBfBNSTQqXAXg_8PYYoB0S44kIW4Y6/view
+Use the pizza ontology with data for your examples in this chapter.
+I think that you need to deal with issues of splitting things between ontology and
+the datafile using the ontology. The pizza ontology with data file describes everything
+in the ontology, but should individual customers be in the ontology or in a datafile (ttl) that uses the ontology? 
+In the sample.ttl file in the appendix, you set the blank prefix to be the survey.owl URI
+rather than the path of the datafile itself. Please check the literature for this. You have done a good job with survey.owl, but there are extras in there that could confuse things.
+I think that you can isolate a few examples from the pizza ontology with data to foreshadow what you will need in Chapter 4. Does that make sense?
+
+???
 Either one needs to reuse an existing vocabulary or create one.
 
 First stage: was Extraction
@@ -301,6 +312,7 @@ The details that can be added or modified using the description view are
 ``SuperProperty Of (Chain)''. 
 
 The names of the object properties usually start with an ``is'' or a ``has''. 
+??? different example, please ???
 For instance, 
 consider two classes: 
 ``Lady'' (class 1) and ``Parita'' (class 2). 
