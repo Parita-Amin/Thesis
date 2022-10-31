@@ -39,66 +39,51 @@ Data collection was changed and interrupted during the COVID-19 pandemic.
 
 Although it is valuable to have this feedback data available on the web, 
 it is not published as \ac{lod}. 
-The motivation for the research presented here was to examine the process 
+The motivation for the research presented here is to examine the process 
 by which existing data can be published as \ac{lod} 
 and to consider whether that process is ``sufficiently attractive to use''.
-
-%The published linked (structured) data which is available on the web can be efficiently 
-%retrieved and reused as, 
-According to Ngomo et al.~\cite{ngomo2014introduction}, 
-linked data is 
-``a set of best practices for publishing and connecting structured data on the web''.
-The principles of linked data have been articulated by 
-Berners-Lee~\cite{berners1996linked} 
-and enhanced by Berners-Lee, Bizer, Heath, 
-and Idehen~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}. 
-These principles encourage 
-naming of subjects, predicates, and objects with \acp{uri};
-using \ac{https} \ac{uri}s to look up those names;
-providing useful information through the \ac{rdf} family of standards;
-and including links to other \ac{uri}s to discover more things.
- 
-Berners-Lee introduced the concept of 5-star linked open 
-data\footnote{\tt https://www.w3.org/TR/ld-glossary/\#x5-star-linked-open-data}
-to denote structured data on the web as \ac{rdf} wherein all identifiers are \ac{uri}s
-pointing to other useful data sources, with an open license for access.
-
-??? the stuff about queries seems out of place???
-A query\footnote{https://en.wikipedia.org/wiki/SPARQL} 
-is used to retrieve information from a database that consists of multiple tables.
-??? instead of wikipedia (yuck), how about\footnote{\tt https://www.w3.org/TR/sparql11-overview/}???
-
-According to the \ac{w3c} recommendation, 
-a semantic (web) query depicts the techniques and protocols that are 
-``used to retrieve information from the web of data'' 
-using computer programs. 
-Web (semantic) queries use the semantics and the constitution of data on the web to perform data retrieval operations. 
-Various semantic web technologies have been developed for data retrieval on the web. 
-\ac{sparql} is one of the semantic web technologies used for web queries, 
-where it gathers all the data from different domains and treats all those datasets as local.
 
 \section{Contribution}
 \label{sec:contribution}
 
-Real-world application of data science principles has not been
-meaningfully available to citizens. 
-??? a bit more explanation needed ???
+Within the \ac{lod} community, most research effort deals with
+users who are domain experts.
+This thesis is focused on the usability of \ac{lod} publishing
+tools and frameworks for use by citizens,
+as maybe indicated by Sommaruga1 et al.~\cite{ceur-ws.org/Vol-3116/Paper_14}
+%Real-world application of data science principles has not been
+%meaningfully available to citizens. 
+%??? a bit more explanation needed ???
  
-This research work is a small trial towards using the semantic web for 
-non-computer-related tasks.
-??? non-computer-related --> publishing data.
-It is not just about RDF but conveying the semantics in the data...
-Mention lifecycle.
-There is a scarcity of 
-%work related to the development of 
-linked open vocabularies for Likert items. 
-A sentence or two about Likert and terminology. ???
+The research presented here is a practical exploration of the process to
+take spreadsheet data and publish it on the web as 5-star \ac{lod}.
+More than converting the data into \ac{rdf}, it is about conveying the semantics
+of the data.
+This thesis examines the linked data lifecycle from the perspective of usability
+for citizens.
+Hepting's feedback instrument has 9 Likert items with a 5-point Likert 
+scale~\cite{johns2010likert}. How to express the semantics in the feedback
+response data? After a thorough but not exhaustive search, no vocabularies were
+found for reuse.
+??? A sentence or two about Likert and terminology. ???
+A preliminary vocabulary to capture these semantics has been developed and
+used to represent the feedback response data.
+The publishing process has been aided by open-source tools (namely
+Protégé~\cite{} and OpenRefine~\cite{}.
 
-??? Not sure that this is needed here:
-Protégé, an open-source ontology development tool, 
-has been used for the development of a vocabulary. 
-OpenRefine, an open-source ... is used to describe 
-the CSV file in terms of linked data. ???
+%
+%
+%%This research work is a small trial towards using the semantic web for 
+%%non-computer-related tasks.
+%%??? non-computer-related --> publishing data.
+%%It is not just about RDF but conveying the semantics in the data...
+%Mention lifecycle.
+%
+%??? Not sure that this is needed here:
+%, an open-source ontology development tool, 
+%has been used for the development of a vocabulary. 
+%, an open-source ... is used to describe 
+%the CSV file in terms of linked data. ???
 
 \section{Organization}
 \label{sec:organization}

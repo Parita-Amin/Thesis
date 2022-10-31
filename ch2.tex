@@ -24,20 +24,20 @@ These differences are illustrated in Figure~\ref{semantic-web}.
 \begin{figure}[htp]
     \includegraphics[width=\columnwidth]{images/ch2/semantic-web.png}
     \caption{Following Aghaei et al.~\cite{aghaei2012evolution},
-    an illustration of the contrast between the web of documents 
-    and the web of data.\label{semantic-web}}
+    an illustration of the contrast between the web of documents
+    that uses \ac{html} and the web of data that uses \ac{rdf}.
+    \label{semantic-web}}
 \end{figure}
 
 \section{Linked Open Data}
 \label{sec:linkedopendata}
 
-The relationships shared amongst data from different sources on the web 
-are equally important to the working of the semantic web as the access 
-to the data itself~\cite{bizer2011linked}.
-Linked Open Data
-is the amalgamation of two ideas:
-linked data that expresses the relationships between data
-and open data that seeks to grant broad access rights for the data.
+Linked Open Data is the amalgamation of
+linked data, that expresses the relationships between data,
+and open data, that grants broad access rights to the data.
+The relationships amongst data are equally important 
+to the working of the semantic web 
+as the access to the data itself~\cite{bizer2011linked}.
 
 In 2006, 
 Berners-Lee~\cite{bizer2009linked} 
@@ -46,28 +46,55 @@ for publishing and connecting
 structured datasets across the web. 
 These rules have become known as the 
 linked data 
-principles~\cite{bizer2009emerging,bizer2011linked,bizer2008linked,heath2011linked}
-and they are presented here. 
+principles, and have been enhanced by Berners-Lee, Bizer, Heath, 
+and Idehen~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}.
+Those rules are presented here. 
 Terminology introduced in the rules is described in the subsequent text.
 
 Rule 1.
-Use \ac{uri}s as unique names for (all) things on the web,
+Use \acp{uri} as unique names for (all) things on the web,
 so that the same \ac{uri} used in different datasets is understood to signify
 the same thing.
 
 Rule 2.
-Use \ac{https} (or \ac{http}) \ac{uri}s to look up those unique names
+Use \ac{https} (or \ac{http}) \acp{uri} to look up those unique names
 because the hypertext transfer protocols allow easy retrieval of resources,
-which promotes the publication of data on the web and its use.
+which promotes the publication and use of data on the web.
 
 Rule 3.  
 Provide useful information to others, using standards from the \ac{rdf} family,
-in response to a look-up of a unique name associated with one of your \ac{uri}s.
+in response to a look-up of a unique name associated with one of your \acp{uri}.
    
 Rule 4.
-Use other (existing) \ac{uri}s in your data to encourage discovery of more relationships,
+Use other (existing) \acp{uri} in your data to encourage discovery of more relationships,
 which promotes the global interconnection of data.
-  
+
+These principles encourage the
+naming of subjects, predicates, and objects with 
+\ac{https} \acp{uri}\footnote{\tt https://www.w3.org/TR/uri-clarification/}
+%\textsuperscript{,}
+
+and providing useful information through the \ac{rdf} family of standards.
+%; and including links to other \ac{uri}s to discover more things.
+Berners-Lee introduced the concept of 5-star 
+\ac{lod}\footnote{\tt https://www.w3.org/TR/ld-glossary/\#x5-star-linked-open-data}
+to denote structured data on the web as \ac{rdf} wherein all identifiers are \ac{https} \acp{uri}
+pointing to other useful data sources, with an open license for access.
+
+??? the stuff about queries seems out of place???
+%A query\footnote{https://en.wikipedia.org/wiki/SPARQL} 
+%is used to retrieve information from a database that consists of multiple tables.
+%??? instead of wikipedia (yuck), how about\footnote{\tt https://www.w3.org/TR/sparql11-overview/}???
+%
+%According to the \ac{w3c} recommendation, 
+%a semantic (web) query depicts the techniques and protocols that are 
+%``used to retrieve information from the web of data'' 
+%using computer programs. 
+%Web (semantic) queries use the semantics and the constitution of data on the web to perform data retrieval operations. 
+%Various semantic web technologies have been developed for data retrieval on the web. 
+%\ac{sparql} is one of the semantic web technologies used for web queries, 
+%where it gathers all the data from different domains and treats all those datasets as local.
+
 \subsection{Uniform Resource Identifiers}
 \label{subsec:uri}
 
@@ -123,8 +150,9 @@ An object that is used to refer to a thing
 %??? Do you need this paragraph???- i think yes, syntax diagram starts with uri scheme
 ??? you say you need it, then you need to explain it better :-) ???
 As mentioned by \ac{w3c}, 
-for the operating systems on \ac{uri}s, 
-some specific protocols are defined depending on the UriScheme. 
+for the operating systems on \acp{uri}i}s, 
+some specific protocols are defined depending on the 
+UriScheme\footnote{\tt https://www.iana.org/assignments/uri-schemes/uri-schemes.xhtml}. 
 A system can perform multiple operations like 
 {\tt access}, 
 {\tt update}, 
@@ -146,13 +174,15 @@ A \ac{uri} comprises the five following components sequentially.
 It is not mandatory for a \ac{uri} to have all the components. 
 % Does the RFC3986 say hierarchical sequence and does it use 'authority'? - yes???
 
-{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} 
-
+\begin{flalign}
+\text{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} &&
+\end{flalign}
 \noindent
 where the authority component consists of three more components which are:
 
-{\tt authority = [userinfo@] host [:port]}
- 
+\begin{flalign}
+\text{\tt authority = [userinfo@] host [:port]} &&
+\end{flalign}
 \noindent
 Consider the \ac{uri}: {\tt https://parita-amin.github.io/survey.owl\#Survey}. 
 It has {\tt scheme}, {\tt authority} without {\tt userinfo} and {\tt port}, {\tt path} and {\tt fragment}. 
@@ -175,12 +205,12 @@ RDF began as a metadata model and is now the means to describe resources
 using basic data models like the \ac{er} model. ??? needs more about data models, modelling, ER ???
 
 \ac{rdf} uses {\tt properties} and {\tt property values} 
-to describe resources, which are named by \ac{uri}s. 
+to describe resources, which are named by \acp{uri}. 
 The three types of objects in \ac{rdf} are resources, properties, and statements. 
 Each data object in a dataset on the web is considered a resource and is named 
 using a \ac{uri}. 
 To search for the resources on the web, 
-the resources must be named using the \ac{https} \ac{uri}s. 
+the resources must be named using the \ac{https} \acp{uri}. 
 The \ac{w3c} has defined the 
 {\tt rdf:type} 
 property to represent the 
@@ -192,7 +222,7 @@ that is used to combine a resource with a property of its value is a {\tt statem
 A statement, 
 in general terms, 
 can be seen as building blocks of a statement in English, 
-which are a subject, an object, and a predicate. 
+which are a subject, a predicate, and an object. 
 An object in a statement can be either a property value, a resource, or a literal. 
 \ac{rdf}, 
 according to Beckett, Gandon and Schreiber~\cite{gandon2014rdf,zongmin2016rdf}, 
@@ -207,8 +237,9 @@ can be represented in three ways:
     shows an example of an \ac{rdf}/\ac{xml}
     document for the following statement: 
     
-    {\tt Pizza has Caloric Content with integer value}
-
+\begin{flalign}  
+    \text{\tt Pizza has Caloric Content with integer value}&&
+\end{flalign}
     \begin{figure}[h]
         \framebox{\vbox{\tt\small
         \begin{tabbing}
@@ -413,14 +444,16 @@ Further,
 the {\tt pizza:PizzaBase} node has multiple child nodes, 
 namely, 
 {\tt pizza:ThinAndCrispyBase} and {\tt pizza:DeepPanBase} 
-where the \ac{uri}s for the predicates are 
+where the \acp{uri} for the predicates are 
 {\tt pizza:hasCrispyBase} and {\tt pizza:hasPanBase} respectively. 
 Instead of using an unnecessary \ac{uri} 
 for the {\tt pizza:PizzaBase} entity, 
 a blank node can be used to denote the entity, 
 as shown in Figure~\ref{blank-node-for-rdf}. 
 As the relationships of the node with other nodes give sufficient details without hindering the flow of the data tree, 
-the node does not require a \ac{uri}reference\footnote{https://lists.w3.org/Archives/Public/uri/2007Jul/0027.html}.
+the node does not require a 
+\ac{uri} reference.
+%\footnote{https://lists.w3.org/Archives/Public/uri/2007Jul/0027.html}.
 
 \begin{figure}[htp]
     \centering
@@ -578,7 +611,7 @@ original format.
 \ac{rdf} data model to provide structure to the data.
 This means that ... ???
 %An \ac{rdf}
-%data model and \ac{uri}s 
+%data model and \acp{uri} 
 %are used by the linked data to name the things (entities). 
 
 ??? A method for describing a software system with diagrams and symbols is data modelling. 
@@ -740,7 +773,7 @@ which results in the identification of the structure of the template using vario
 Once the appropriate template is selected, 
 the template data is parsed using a suitable algorithm and transformed into \ac{rdf} triples.
 MediaWiki\footnote{https://www.mediawiki.org/wiki/MediaWiki} 
-links are identified and assigned specific \ac{uri}s. 
+links are identified and assigned specific \acp{uri}. 
 On the other hand, 
 the common units of data are recognized  and assigned appropriate datatypes whereas \ac{rdf} 
 lists are created for the object lists. 
@@ -1037,7 +1070,7 @@ submission suggested ???
     is a tool that is used for the conversion of tabular data into structured and linked \ac{rdf} 
     using specifications that are based on declarative \ac{rdf} 
     enhancement parameters. 
-    It forms default namespaces for \ac{uri}s 
+    It forms default namespaces for \acp{uri} 
     and provides VoID and original metada for the conversion using identifiers for source organization, dataset and version.
    
     \item XLWrap:
@@ -1136,5 +1169,5 @@ that can be used for \ac{rml} conversion.
 ???SHACL???
 
 \subsection{Browsing \& Exploration}
-\subsection{Usability Considerations} (google search for "Linked Open Usable Data")
+\section{Usability Considerations} (google search for "Linked Open Usable Data")
 \end{doublespace}
