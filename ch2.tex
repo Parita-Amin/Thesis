@@ -73,7 +73,6 @@ These principles encourage the
 naming of subjects, predicates, and objects with 
 \ac{https} \acp{uri}\footnote{\tt https://www.w3.org/TR/uri-clarification/}
 %\textsuperscript{,}
-
 and providing useful information through the \ac{rdf} family of standards.
 Berners-Lee introduced the concept of 5-star 
 \ac{lod}\footnote{\tt https://www.w3.org/TR/ld-glossary/\#x5-star-linked-open-data}
@@ -93,41 +92,85 @@ this unique string is subject to guidelines and security considerations
 while defining the syntax for a generic \ac{uri} 
 and a process for resolving \ac{uri} references. 
 Berners-Lee et al.~\cite{RFC3986uri} 
-characterized \ac{uri} in the following way.
+characterized \ac{uri} by discussing the component terms.
 
-Uniform: 
 Numerous advantages come from uniformity. 
-    It permits the use of various types of resource identifier 
-    in the same context 
-    even when the methods of accessing those resources may vary. 
-    It enables uniform semantic interpretation of standard syntactic rules 
-    across various types of resource identifiers. 
-    It permits the introduction of new types of resource identifiers 
-    without affecting how those categories are currently used. 
-    It enables the reuse of the identifiers in a variety of settings, 
-    enabling new applications or protocols to benefit from 
-    an existing, substantial, and widely-utilized 
-    set of resource identifiers.
-    
-Resource: 
-Anything on the web that can be uniquely identified is a resource. 
-    Some resources on the web correspond to physical entities that cannot 
-    be accessed over the network. 
-    A resource is the 
-    conceptual mapping
-    to a set of entities independent of the corresponding entities 
-    at a particular time. 
-    If the conceptual mapping is not changed, 
-    the resource can remain constant.
-    
-Identifier: 
-An object that is used to refer to a thing 
-    with unique identity on the web is an identifier. 
-    In a \ac{uri}, 
-    the string of ASCII characters obeying the syntax rules is that object. 
+Various types of resource identifier can be used
+in the same context even when the means accessing those resources may vary. 
+Semantic interpretation of standard syntactic rules is the same
+across various types of resource identifiers. 
+New types of resource identifiers can be introduced
+without affecting how other identifiers are used. 
+Existing resource identifiers can be reused in a variety of settings, 
+enabling new applications or protocols to benefit from that 
+widely-utilized set of resource identifiers.
+%
+%   Uniform
+%
+%      Uniformity provides several benefits.  It allows different types
+%      of resource identifiers to be used in the same context, even when
+%      the mechanisms used to access those resources may differ.  It
+%      allows uniform semantic interpretation of common syntactic
+%      conventions across different types of resource identifiers.  It
+%      allows introduction of new types of resource identifiers without
+%      interfering with the way that existing identifiers are used.  It
+%      allows the identifiers to be reused in many different contexts,
+%      thus permitting new applications or protocols to leverage a pre-
+%      existing, large, and widely used set of resource identifiers.
+%
 
+A resource is anything that can be identified
+by a \ac{uri}. The pages on a website are a recognizable example. 
+A resource is not necessarily available via the web. 
+It may correspond to a physical entity such as a person,
+an abstract concept such as a relationship,
+or a numeric quantity.
+    
+%   Resource
+%
+%      This specification does not limit the scope of what might be a
+%      resource; rather, the term "resource" is used in a general sense
+%      for whatever might be identified by a URI.  Familiar examples
+%      include an electronic document, an image, a source of information
+%      with a consistent purpose (e.g., "today's weather report for Los
+%      Angeles"), a service (e.g., an HTTP-to-SMS gateway), and a
+%      collection of other resources.  A resource is not necessarily
+%      accessible via the Internet; e.g., human beings, corporations, and
+%      bound books in a library can also be resources.  Likewise,
+%      abstract concepts can be resources, such as the operators and
+%      operands of a mathematical equation, the types of a relationship
+%      (e.g., "parent" or "employee"), or numeric values (e.g., zero,
+%      one, and infinity).
+
+An identifier distinguishes an object from all other objects within its scope.
+The purpose of an identifier is to distinguish one resource from all others.
+An identifier is not required to define the identity of what is referenced, 
+though this may be the true for some.
+A system using \acp{uri} is neither required to access the resource identified
+and for some there is no intention that they be accessed.
+%  
+%   Identifier
+%
+%      An identifier embodies the information required to distinguish
+%      what is being identified from all other things within its scope of
+%      identification.  Our use of the terms "identify" and "identifying"
+%      refer to this purpose of distinguishing one resource from all
+%      other resources, regardless of how that purpose is accomplished
+%      (e.g., by name, address, or context).  These terms should not be
+%      mistaken as an assumption that an identifier defines or embodies
+%      the identity of what is referenced, though that may be the case
+%      for some identifiers.  Nor should it be assumed that a system
+%      using URIs will access the resource identified: in many cases,
+%      URIs are used to denote resources without any intention that they
+%      be accessed.  Likewise, the "one" resource identified might not be
+%      singular in nature (e.g., a resource might be a named set or a
+%      mapping that varies over time).
+%
+    
 Berners-Lee et al.~\cite{RFC3986uri} defined the generic syntax of a \ac{uri} 
-as shown in figure~\ref{syntax-diagram}.
+as shown in Figure~\ref{syntax-diagram}.
+A \ac{uri} comprises the five following components sequentially (see Fragment~\ref{generic-uri}. 
+It is not mandatory for a \ac{uri} to have all the components.
 
 \begin{figure}[htp]
     \centering
@@ -137,23 +180,29 @@ as shown in figure~\ref{syntax-diagram}.
     \label{syntax-diagram}
 \end{figure}
 
-A \ac{uri} comprises the five following components sequentially. 
-It is not mandatory for a \ac{uri} to have all the components.
-
 \begin{flalign}
 \text{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} &&
+\label{generic-uri}
 \end{flalign}
+
 \noindent
 where the authority component consists of three more components which are:
-
 \begin{flalign}
 \text{\tt authority = [userinfo@] host [:port]} &&
+\label{authority-uri}
 \end{flalign}
+
 \noindent
-Consider the \ac{uri}: {\tt https://parita-amin.github.io/survey.owl\#Survey}. 
-It has {\tt scheme}, {\tt authority} without {\tt userinfo} and {\tt port}, {\tt path} and {\tt fragment}. 
+Consider the \ac{uri} (in Sentence~\ref{example-uri}).
 Figure~\ref{components-of-uri-example} 
 shows its components.
+??? Typing this \ac{uri} into a web browser (details of your browser) leads to ... ??? 
+
+\begin{flalign}
+\text{\tt https://parita-amin.github.io/survey.owl\#Survey} &&
+\label{example-uri}
+\end{flalign}
+%It has {\tt scheme}, {\tt authority} without {\tt userinfo} and {\tt port}, {\tt path} and {\tt fragment}. 
 
 \begin{figure}[htp]
     \centering
@@ -167,7 +216,7 @@ shows its components.
 \label{subsec:rdf}
 
 According to Flanders and Jannidis~\cite{julia2015data}, 
-``data modeling refers to the process of representing data, 
+data modelling refers ``the process of representing data, 
 their relationships, and their semantics in a way 
 which is processable by humans and machines''. 
 A data model is 
@@ -180,29 +229,33 @@ namely,
 conceptual, logical, and physical data model. 
 Some widely-used primary data models are 
 dimensional, relational, and \ac{er} models. 
-RDF began as a metadata model and is now the means to describe resources 
+RDF began as a ??? metadata model ??? and is now the means to describe resources 
 (entities) and the relationships amongst them in a computer-understandable format, 
 using basic data models like the \ac{er} model. 
 An \ac{er} model is a high-level conceptual data model 
 that assists rigorous analysis of the data requirements 
 to build a well-designed database. 
 The \ac{er} model depicts real-world entities and the relationships between them.
+??? citation(s) ???
 
-\ac{rdf} uses {\tt properties} and {\tt property values} 
+\ac{rdf} uses {\em properties} and {\em property values} 
 to describe resources, which are named by \acp{uri}. 
-The three types of objects in \ac{rdf} are resources, properties, and statements. 
+The three types of objects in \ac{rdf} are resources, properties, and statements.
+??? relate this to subject predicate object... ???
 Each data object in a dataset on the web is considered a resource and is named 
 using a \ac{uri}. 
 To search for the resources on the web, 
-the resources must be named using the \ac{https} \acp{uri}. 
+the resources must be named using \ac{https} \acp{uri}. 
+??? OR resources available on the web must be named using \ac{https} \acp{uri} ???
 The \ac{w3c} has defined the 
+??? a table/figure/something is needed to list the prefixes rdf:, etc. ???
 {\tt rdf:type} 
 property to represent the 
 ``object of one or more classes''~\cite{cyganiak2014rdf}. 
 Resources are described by their characteristics, 
-called {\tt property}. 
+called {\tt property} ??? {\em properties} REPETITION ???. 
 The object of \ac{rdf} 
-that is used to combine a resource with a property of its value is a {\tt statement}. 
+that is used to combine a resource with a property of its value is a {\em statement}. 
 A statement, 
 in general terms, 
 can be seen as building blocks of a statement in English, 
@@ -210,21 +263,20 @@ which are a subject, a predicate, and an object.
 An object in a statement can be either a property value, a resource, or a literal. 
 \ac{rdf}, 
 according to Beckett, Gandon and Schreiber~\cite{gandon2014rdf,zongmin2016rdf}, 
-can be represented in three ways: 
+can be represented in three ways:
+using \ac{xml} in an \ac{rdf}/\ac{xml} document,
+as triples in subject-predicate-object form ??? use a real format for this ???,
+or in graphical form.
 
-\begin{enumerate}
-
-    \item Using \ac{xml}: an \ac{rdf}/\ac{xml} document
-    
-    Figure~\ref{rdf-xml-doc} 
-    shows an example of an \ac{rdf}/\ac{xml}
-    document for the following statement: 
-    
+??? Introduce the source of the pizza examples ???
+Consider the following example:
 \begin{flalign}  
     \text{\tt Pizza has Caloric Content with integer value}&&
 \end{flalign}
-    \begin{figure}[h]
-        \framebox{\vbox{\tt\small
+Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml}.
+    
+\begin{figure}[h]
+	\framebox{\vbox{\tt\small
         \begin{tabbing}
             \hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\= \kill
             \hspace*{\columnwidth}\\[-1cm]
@@ -236,10 +288,11 @@ can be represented in three ways:
             </rdf:RDF>
             \\[-1cm]
         \end{tabbing}
-        }}
-        \caption{An Illustration of Code in an RDF/XML Document}
+      }}
+        \caption{An illustration of Fragment~\ref{caloric-content} in a \ac{rdf}/\ac{xml} document.
+        ??? Add prefixes to this code example ???}
         \label{rdf-xml-doc}
-    \end{figure}
+ \end{figure}
     
     {\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#} and 
     {\tt http://www.w3.org/2001/XMLSchema\#} 
@@ -248,19 +301,20 @@ can be represented in three ways:
     for the classes and properties in Figure~\ref{rdf-xml-doc}. 
     The resource being described is {\tt pizza:Pizza}, 
     the property is {\tt pizza:hasCaloricContent}, and 
-    {\tt xsd:integer} is the value. 
-    The document consists of various \ac{xml} tags enclosed between the angular brackets (``<'' and ``>''). 
+    {\tt xsd:integer} is the value.
+    
+    The document consists of various \ac{xml} tags.
+%    enclosed between
+%    angle brackets (``<'' and ``>''). 
     An \ac{rdf}/\ac{xml} 
     document starts and ends with {\tt <rdf:\ac{rdf}>} and 
     {\tt </rdf:\ac{rdf}>} respectively.
-  
-    \item As triples: subject-predicate-object form
-    
+      
     Figure~\ref{rdf-triple} 
     shows an example of an \ac{rdf} triple, 
     where {\tt pizza:Pizza} is the subject; 
     the predicate is {\tt pizza:hasCaloricContent}; 
-    and the object is {\tt xsd:integer}. 
+    and the object is {\tt xsd:integer} ??? use an accepted format for this ???. 
     
     \begin{figure}[htp]
         \framebox{\vbox{\tt\small
@@ -273,50 +327,51 @@ can be represented in three ways:
             \\[-1cm]
         \end{tabbing}
         }}
-        \caption{An Example of an \ac{rdf} Triple}
+        \caption{An illustration of Fragment~\ref{caloric-content} as an \ac{rdf} triple.
+        ??? use a real example from the tutorial ???}
         \label{rdf-triple}
     \end{figure}
   
-    \item In graphical form
-    
     Figure~\ref{rdf-graph} 
-    shows an \ac{rdf} graph in graphical format. 
-    Resource is indicated using an oval shape and a rectangle is used to 
-    represent a property value. 
-    A connector (an arrow) is used to represent a property to show that 
-    property (predicate) connects the resource (subject) with the value (object).
+    shows Fragment~\ref{caloric-content} in graphical format. 
+    A resource is represented by an oval;
+    a property value is represented by a rectangle;
+    and a property is represented by an arrow,
+    to show that the property (predicate) connects the resource (subject) with the value (object).
     
     \begin{figure}[htp]
         \centering
         \includegraphics[width=\columnwidth]{images/ch2/rdf-graph.png}
-        \caption{Graphical Representation of an \ac{rdf} graph.}
+        \caption{Graphical Representation of of Fragment~\ref{caloric-content} as an \ac{rdf} graph.}
         \label{rdf-graph}
     \end{figure}
     
-    The subject and object of the triples of \ac{rdf} act as nodes in the graph
-    where they are two entities and 
-    the predicate being the third entity acts as a connector between them. 
+%    The subject and object of an \ac{rdf} triple of \ac{rdf} act as nodes in the graph
+%    where they are two entities and 
+%    the predicate being the third entity acts as a connector between them. 
     Considering an entity-relationship data model, 
     the predicate can be treated as a relationship shared by the subject and the object. 
-    In addition to \ac{rdf}/\ac{xml} documentation, 
-    the \ac{rdf} data model has a variety of serialization formats such as N-triples, 
-    which is a line based format where an \ac{rdf} triple is used to represent each line~\cite{beckett2014rdf}; 
+    In addition to the \ac{rdf}/\ac{xml} and the line-based N-triples~\cite{beckett2014rdf} 
+    formats, 
+    the \ac{rdf} data model has a variety of serialization formats such as
     \ac{turtle}; \ac{n3}, 
-    which is a subset of Turtle and N-Quads, 
+    which is a subset of Turtle and N-Quads, ??? CHECK THESE ???
     which is an extension of N-Triples (line based) 
     and adds a graph label to each line 
     that allows multiple graph encoding~\cite{cyganiak2008n}.
-  
-\end{enumerate}
 
-There can be more details added to the above \ac{rdf} system 
-(Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}), 
-that is, 
-more statements can be added which are in relation to the original statement.  
-Suppose the new statement added is: {\tt Pizza has Pizza Base} 
+There can be more details added to the preceding \ac{rdf} examples 
+(Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}). 
+That is, 
+more statements can be added that are in relation to the original statement.  
+Suppose the new statement added is: 
+\begin{flalign}  
+    \text{\tt Pizza has PizzaBase} &&
+\end{flalign}
+
 
 \noindent
-where
+where ??? improve consistency ???
 {\tt pizza:Pizza} is a resource, 
 {\tt pizza:hasBase} is the property, and
 the value is {\tt pizza:PizzaBase}.
@@ -340,7 +395,7 @@ whereas Figure~\ref{rdf-notations} shows \ac{rdf} triples.
         \\[-1cm]
     \end{tabbing}
     }}
-    \caption{\ac{rdf} Notations for Figure~\ref{graph-for-relative-statements}, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \caption{\ac{rdf} Notations for Figure~\ref{graph-for-relative-statements}, after \ac{rdf} Primer~\cite{manola2004rdf} ??? Would triples be this generic? Use real syntax (no line numbers) ???}
     \label{rdf-notations}
 \end{figure}
 
@@ -397,9 +452,9 @@ the node does not require a
     \label{blank-node-for-rdf}
 \end{figure}
 
-In 2004, 
+??? In 2004, 
 \ac{w3c} recommended intended goals that are to be achieved whenever an \ac{rdf} 
-is to be designed. 
+is to be designed. --- TOO GENERIC What is this sentence meant to convey ???
 According to the \ac{w3c} 
 Recommendation\footnote{\tt https://www.w3.org/TR/rdf11-concepts/},  
 the design should 
@@ -440,9 +495,13 @@ along with their description are listed in Table~\ref{rdfs-classes-and-propertie
     \label{rdfs-classes-and-properties}
 \end{table}
 
-Consider the statement: 
-
-{\tt Romeo and Juliet is written by William Shakespeare}
+Consider the statement:
+\begin{flalign}  
+    \text{\tt Pizza has PizzaBase} &&
+    \text{\tt Romeo and Juliet is written by William Shakespeare} &&
+\end{flalign}
+ 
+ ??? NOT PIZZA? ???
 
 \noindent
 Figure~\ref{rdfs-graph-for-complex} 
