@@ -215,6 +215,17 @@ shows its components.
 \subsection{Resource Description Framework}
 \label{subsec:rdf}
 
+??? see comments here in source file ???
+%FROM https://www.w3.org/TR/rdf11-concepts/
+%The Resource Description Framework (RDF) is a framework for representing information in the Web.
+%
+%This document defines an abstract syntax (a data model) which serves to link all RDF-based languages and specifications, including:
+%
+%the formal model-theoretic semantics for RDF [RDF11-MT];
+%serialization syntaxes for storing and exchanging RDF such as Turtle [TURTLE] and JSON-LD [JSON-LD];
+%the SPARQL Query Language [SPARQL11-OVERVIEW];
+%the RDF Schema vocabulary [RDF11-SCHEMA].
+
 According to Flanders and Jannidis~\cite{julia2015data}, 
 data modelling refers ``the process of representing data, 
 their relationships, and their semantics in a way 
@@ -580,7 +591,9 @@ According to Erxleben et al.~\cite{fredo2014intro},
 Wikidata is ``the community-created knowledge base of Wikipedia 
 and the central data management platform for Wikipedia''. 
 It was established for the collection and integration of Wikipedia data 
-onto the semantic web. 
+%onto 
+into
+the semantic web. 
 Wikidata is a free and open-source tool that handles a large amount of 
 structured data and maintains pages that store the data. 
 Each entity on Wikidata represents the subject of a triple with a dedicated page. 
@@ -589,28 +602,33 @@ where the individuals and classes are indicated using items.
 Data on a page of the Wikidata is available for the users to access as well as edit.
 
 For instance, 
-the University of Regina in Regina, Saskatchewan, Canada, 
-has an item page ({\tt https://www.wikidata.org/wiki/Q3104287})
-allotted for it. 
+the University of Regina (Q3104287)
+%in Regina, Saskatchewan, Canada, 
+has an item page\footnote{\tt https://www.wikidata.org/wiki/Q3104287}.
+%allotted for it. 
 Figure~\ref{wikidata-uofr} 
-illustrates the contents of this page. 
+illustrates a portion of the contents of this page. 
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/wikidata-uofr.png}
-    \caption{Item page for the University of Regina on Wikidata.}
+    \caption{A portion of the item page for the University of Regina on Wikidata.}
     \label{wikidata-uofr}
 \end{figure}
 
 Wikidata uses a method of automatically assigning unique identifiers to the entities, 
 which are used as the labels of the item pages instead of the actual names of the entities. 
+??? are these identifiers URIs, etc? ???
 These identifiers are a string starting with a capital Q followed by a sequence of digits. 
-The identifiers are assigned irrespective of the language as the Wikidata website supports multiple languages. 
-The item page on Wikidata consists of multiple sections.
+The identifiers are assigned irrespective of the language as the Wikidata website supports multiple languages.
 
-statements: This section consists of a list of subsections called {\tt property}. 
-    The properties along with their property IDs for the University of Regina 
-    are listed in Table~\ref{uofr-statement-properties-and-id}.
+An item page on Wikidata consists of two main sections.
+The first section, entitled Statements, contains a list properties and values.
+The properties, along with their property IDs, used for the University of Regina 
+are listed in Table~\ref{uofr-statement-properties-and-id}.
+The other section is Identifiers, which consists of various IDs associated with the subject.
+The identifiers, along with their property IDs, used for the University of Regina 
+are listed in Table~\ref{uofr-identifier-properties-and-id}.
   
 \begin{table}[h!]
         \centering
@@ -631,13 +649,9 @@ statements: This section consists of a list of subsections called {\tt property}
              API endpoint & P6269\\ \hline
              social media followers & P8687\\ \hline
         \end{tabular}
-        \caption{Statement Properties and Property IDs for the University of Regina on Wikidata}
+        \caption{Statement Properties and Property IDs for the University of Regina on Wikidata.}
         \label{uofr-statement-properties-and-id}
 \end{table}
-  
-identifiers: This section consists of various IDs belonging to the subject. 
-    For the University of Regina, 
-    the set of properties used for identifiers and their IDs are listed in Table~\ref{uofr-identifier-properties-and-id}.
    
 \begin{table}[h!]
 	\centering
@@ -663,13 +677,14 @@ identifiers: This section consists of various IDs belonging to the subject.
              Twitter username & P2002\\ \hline
              U-Multirank university ID & P5600\\ \hline
 	\end{tabular}
-    \caption{Identifier Properties and Property IDs for University of Regina on Wikidata}
+    \caption{Identifier Properties and Property IDs for the University of Regina on Wikidata.}
     \label{uofr-identifier-properties-and-id}
  \end{table}
 
 Figure~\ref{rdf-xml-uofr} 
 shows the \ac{rdf}/\ac{xml} 
 description of the University of Regina on Wikidata.
+??? how did you generate this? Is it better done in a tabbing environment? ???
 
 \begin{figure}[htp]
     \centering
@@ -681,20 +696,19 @@ description of the University of Regina on Wikidata.
 \subsection{DBpedia}
 \label{subsec:dbpedia}
 
-Jimmy Wales and Larry Sanger, 
-in 2001, 
-created the largest general reference work on the internet consisting of articles
-that include data comprising templates, images, videos, categorizations, and links,
-in over 280 languages, 
-the Wikipedia\footnote{\tt https://en.wikipedia.org/wiki/Main\_Page}, 
-which acts as a source of data for many web projects like DBpedia, 
+Jimmy Wales and Larry Sanger in 2001 created 
+Wikipedia\footnote{\tt https://en.wikipedia.org/wiki/Main\_Page},
+what has become the largest general reference work on the internet.
+It consists of articles in over 280 languages
+that include data comprising templates, images, videos, categorizations, and links.
+It acts as a source of data for many web projects like DBpedia, 
 one of the major linked open data projects. 
 The main aim behind the development of DBpedia\footnote{\tt https://wiki.dbpedia.org/} 
 is the conversion of unstructured data on Wikipedia into structured datasets. 
-DBpedia enables querying the Wikipedia data 
+DBpedia enables querying of Wikipedia data 
 as well as 
-the generation of links among the structured datasets, 
-resulting in the establishment of a massive web of data.
+the generation of links amongst its structured datasets.
+The result is a massive web of data.
 
 Initially, 
 the template of the page is discovered using a Template Extraction Algorithm 
@@ -707,7 +721,8 @@ On the other hand,
 the common units of data are recognized  and assigned appropriate datatypes whereas \ac{rdf} 
 lists are created for the object lists. 
 According to Auer et al.~\cite{auer2007dbpedia}, 
-DBpedia in 2007 
+DBpedia in 2007 ??? why a quote from 2007 ???
+??? do you need all these footnotes? ???
 was a platform that delivered information on 
 ``more than 1.95 million {\tt things} 
 that includes at least 
@@ -718,8 +733,7 @@ The data on DBpedia is easily accessible in different ways like accessing the da
 using \ac{sparql} queries for data extraction and accessibility; 
 and in the form of a downloadable \ac{rdf} snippets~\cite{bizer2009dbpedia}. 
 Figure~\ref{dbpedia-uofr} 
-shows DBpedia entry for the 
-{\tt University of Regina, Regina, SK}. 
+shows the DBpedia entry for the University of Regina.
 Like Wikidata, 
 DBpedia also has a label, 
 a description section and a set of important property-value pairs 
@@ -728,7 +742,7 @@ that give information related to the entity that has been described.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/dbpedia-uofr.png}
-    \caption{Description of University of Regina, Regina, SK on DBpedia}
+    \caption{Description of the University of Regina on DBpedia.}
     \label{dbpedia-uofr}
 \end{figure}
 

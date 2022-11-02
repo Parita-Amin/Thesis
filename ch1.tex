@@ -25,11 +25,15 @@ The original
 ``web of documents'' is becoming the 
 ``web of data'' or the
 ``semantic web''. 
-Is this next web sufficiently attractive to use?
-This thesis will examine this question in the context of an example.
 
-??? introduce a few terms so that the Motivation and Contribution sections, etc.
-are not a shock to the reader ???
+The gold standard for data on the semantic web is 5-star \ac{lod}.
+All resources (subjects, predicates, and objects) 
+are named with \ac{https} \acp{uri} that can be looked-up on the web
+to provide useful information with the \ac{rdf} family of standards.
+This data is accompanied with an open license for access.
+
+Is this next web of data sufficiently attractive to use?
+This thesis will examine this question in the context of an example.
 
 \section{Motivation}
 \label{sec:motivation}
@@ -40,8 +44,8 @@ Typically, student responses are collected on paper and then entered manually in
 computer-readable form. 
 Data collection was changed and interrupted during the COVID-19 pandemic. 
 
-Although it is valuable to have this feedback data available on the web, 
-it is not published as \ac{lod}. 
+Although it is valuable to have this feedback data available on the web
+in any form, it is not published as \ac{lod}. 
 The motivation for the research presented here is to examine the process 
 by which existing data can be published as \ac{lod} 
 and to consider whether that process is ``sufficiently attractive to use''.
@@ -57,19 +61,21 @@ as ???maybe??? indicated by Sommaruga1 et al.~\cite{ceur-ws.org/Vol-3116/Paper_1
  
 The research presented here is a practical exploration of the process to
 take spreadsheet data and publish it on the web as 5-star \ac{lod}.
-More than converting the data into \ac{rdf}, it is about conveying the semantics
-of the data.
+More than converting the data into \ac{rdf}, 
+it is about conveying as much as possible of the semantics of the data.
 This thesis examines the linked data lifecycle from the perspective of usability
 for citizens.
 Hepting's feedback instrument has 9 Likert items with a 5-point Likert 
-scale~\cite{johns2010likert}. How to express the semantics in the feedback
-response data? After a thorough but not exhaustive search, no vocabularies were
-found for reuse.
-??? A sentence or two about Likert and terminology. ???
+scale~\cite{johns2010likert} and 3 open-ended questions.
+What is the best way to express the semantics in the feedback
+response data? After a thorough search for Likert scales and items, 
+no vocabularies were found for reuse.
 A preliminary vocabulary to capture these semantics has been developed and
 used to represent the feedback response data.
 The publishing process has been aided by open-source tools,
 namely Protégé~\cite{} and OpenRefine~\cite{}.
+Illumination of the practical solutions employed to address problems that arise
+while using these tools also represents an important contribution.
 
 \section{Organization}
 \label{sec:organization}
