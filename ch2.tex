@@ -169,45 +169,40 @@ and for some there is no intention that they be accessed.
     
 Berners-Lee et al.~\cite{RFC3986uri} defined the generic syntax of a \ac{uri} 
 as shown in Figure~\ref{syntax-diagram}.
-A \ac{uri} comprises the five following components sequentially (see Fragment~\ref{generic-uri}. 
+A \ac{uri} comprises five components in sequence 
+(see Examples~\ref{generic-uri} and~\ref{authority-uri}). 
 It is not mandatory for a \ac{uri} to have all the components.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch2/syntax-diagram.png}
-    \caption{Syntax diagram of a generic URI, 
-    after Berners-Lee et al.~\cite{RFC3986uri}.}
-    \label{syntax-diagram}
-\end{figure}
-
 \begin{flalign}
 \text{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} &&
 \label{generic-uri}
 \end{flalign}
-
 \noindent
-where the authority component consists of three more components which are:
+The authority component comprises three elements, which are:
 \begin{flalign}
 \text{\tt authority = [userinfo@] host [:port]} &&
 \label{authority-uri}
 \end{flalign}
+\begin{figure}[h]
+    \includegraphics[width=\columnwidth]{images/ch2/syntax-diagram.png}
+    \caption{Syntax diagram for a generic \ac{uri}, 
+    after Berners-Lee et al.~\cite{RFC3986uri}.}
+    \label{syntax-diagram}
+\end{figure}
 
 \noindent
-Consider the \ac{uri} (in Sentence~\ref{example-uri}).
+Consider the \ac{uri} in Example~\ref{example-uri}.
 Figure~\ref{components-of-uri-example} 
 shows its components.
 ??? Typing this \ac{uri} into a web browser (details of your browser) leads to ... ??? 
-
 \begin{flalign}
 \text{\tt https://parita-amin.github.io/survey.owl\#Survey} &&
 \label{example-uri}
 \end{flalign}
 %It has {\tt scheme}, {\tt authority} without {\tt userinfo} and {\tt port}, {\tt path} and {\tt fragment}. 
-
-\begin{figure}[htp]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/components-of-uri-example.png}
-    \caption{Components of the example URI, 
+    \caption{Components of the example \ac{uri}, 
     after Berners-Lee et al.~\cite{RFC3986uri}}
     \label{components-of-uri-example}
 \end{figure}
@@ -282,9 +277,15 @@ or in graphical form.
 ??? Introduce the source of the pizza examples ???
 Consider the following example:
 \begin{flalign}  
-    \text{\tt Pizza has Caloric Content with integer value}&&
+    \text{\tt Pizza has CaloricContent with some integer value}&&
+    \label{caloriccontent}
 \end{flalign}
-Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml}.
+\noident
+Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml},
+which consists of various \ac{xml} tags.
+An \ac{rdf}/\ac{xml} 
+document starts and ends with {\tt <rdf:\ac{rdf}>} and 
+{\tt </rdf:\ac{rdf}>} respectively.
     
 \begin{figure}[h]
 	\framebox{\vbox{\tt\small
@@ -300,10 +301,10 @@ Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml}.
             \\[-1cm]
         \end{tabbing}
       }}
-        \caption{An illustration of Fragment~\ref{caloric-content} in a \ac{rdf}/\ac{xml} document.
-        ??? Add prefixes to this code example ???}
-        \label{rdf-xml-doc}
- \end{figure}
+      \caption{Example~\ref{caloriccontent} expressed as \ac{rdf}/\ac{xml}.
+      ??? Add prefixes to this code example ???}
+      \label{rdf-xml-doc}
+\end{figure}
     
     {\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#} and 
     {\tt http://www.w3.org/2001/XMLSchema\#} 
@@ -314,13 +315,7 @@ Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml}.
     the property is {\tt pizza:hasCaloricContent}, and 
     {\tt xsd:integer} is the value.
     
-    The document consists of various \ac{xml} tags.
-%    enclosed between
-%    angle brackets (``<'' and ``>''). 
-    An \ac{rdf}/\ac{xml} 
-    document starts and ends with {\tt <rdf:\ac{rdf}>} and 
-    {\tt </rdf:\ac{rdf}>} respectively.
-      
+          
     Figure~\ref{rdf-triple} 
     shows an example of an \ac{rdf} triple, 
     where {\tt pizza:Pizza} is the subject; 
@@ -338,22 +333,23 @@ Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml}.
             \\[-1cm]
         \end{tabbing}
         }}
-        \caption{An illustration of Fragment~\ref{caloric-content} as an \ac{rdf} triple.
+        \caption{An illustration of Example~\ref{caloricontent} as an \ac{rdf} triple.
         ??? use a real example from the tutorial ???}
         \label{rdf-triple}
     \end{figure}
   
-    Figure~\ref{rdf-graph} 
-    shows Fragment~\ref{caloric-content} in graphical format. 
-    A resource is represented by an oval;
-    a property value is represented by a rectangle;
-    and a property is represented by an arrow,
-    to show that the property (predicate) connects the resource (subject) with the value (object).
+Figure~\ref{rdf-graph} 
+shows Example~\ref{caloriccontent} in graphical format. 
+A resource is represented by an oval;
+a property value is represented by a rectangle;
+and a property is represented by an arrow,
+to show that the property (predicate, {\tt pizza:hasCaloricContent}) 
+connects the resource (subject, {\tt pizza:Pizza}) with the value (object, {\tt xsd:integer}).
     
     \begin{figure}[htp]
         \centering
         \includegraphics[width=\columnwidth]{images/ch2/rdf-graph.png}
-        \caption{Graphical Representation of of Fragment~\ref{caloric-content} as an \ac{rdf} graph.}
+        \caption{Graphical representation of Example~\ref{caloriccontent}.}
         \label{rdf-graph}
     \end{figure}
     
@@ -371,73 +367,74 @@ Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml}.
     and adds a graph label to each line 
     that allows multiple graph encoding~\cite{cyganiak2008n}.
 
-There can be more details added to the preceding \ac{rdf} examples 
-(Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}). 
+There can be more details added to Example~\ref{caloriccontent}
+(illustrated in Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}). 
 That is, 
-more statements can be added that are in relation to the original statement.  
+more statements can be added in relation to the original statement.  
 Suppose the new statement added is: 
 \begin{flalign}  
     \text{\tt Pizza has PizzaBase} &&
+    \label{pizzabase}
 \end{flalign}
-
-
 \noindent
-where ??? improve consistency ???
-{\tt pizza:Pizza} is a resource, 
-{\tt pizza:hasBase} is the property, and
-the value is {\tt pizza:PizzaBase}.
-The new graph would be as shown in Figure~\ref{graph-for-relative-statements} 
-whereas Figure~\ref{rdf-notations} shows \ac{rdf} triples.
+where the property (predicate, {\tt pizza:hasBase}) 
+connects the resource (subject, {\tt pizza:Pizza}) with the value (object, {\tt pizza:PizzaBase}).
+Figure~\ref{graph-for-relative-statements} shows a graphical representation
+of the two example statements combined.
 
-\begin{figure}[htp]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/graph-for-relative-statements.png}
-    \caption{\ac{rdf} Graph for Two Relative Statements, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \caption{Graphical representation of Examples~\ref{caloriccontent} and~\ref{pizzabase} combined,
+    following the \ac{rdf} Primer~\cite{manola2004rdf}.}
     \label{graph-for-relative-statements}
 \end{figure}
 
-\begin{figure}[htp]
-    \framebox{\vbox{\tt\small
-    \begin{tabbing}
-        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
-        \hspace*{\columnwidth}\\[-1cm]
-        \>{\tt1.} {\tt <pizza:Pizza>} {\tt <pizza:hasBase>} {\tt <pizza:PizzaBase>}\\
-        \>{\tt2.} {\tt <pizza:Pizza>} {\tt <pizza:hasCaloricContent>} {\tt <xsd:integer>}
-        \\[-1cm]
-    \end{tabbing}
-    }}
-    \caption{\ac{rdf} Notations for Figure~\ref{graph-for-relative-statements}, after \ac{rdf} Primer~\cite{manola2004rdf} ??? Would triples be this generic? Use real syntax (no line numbers) ???}
-    \label{rdf-notations}
-\end{figure}
+%\begin{figure}[htp]
+%    \framebox{\vbox{\tt\small
+%    \begin{tabbing}
+%        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
+%        \hspace*{\columnwidth}\\[-1cm]
+%        \>{\tt1.} {\tt <pizza:Pizza>} {\tt <pizza:hasBase>} {\tt <pizza:PizzaBase>}\\
+%        \>{\tt2.} {\tt <pizza:Pizza>} {\tt <pizza:hasCaloricContent>} {\tt <xsd:integer>}
+%        \\[-1cm]
+%    \end{tabbing}
+%    }}
+%    \caption{\ac{rdf} Notations for Figure~\ref{graph-for-relative-statements}, after \ac{rdf} Primer~\cite{manola2004rdf} ??? Would triples be this generic? Use real syntax (no line numbers) ???}
+%    \label{rdf-notations}
+%\end{figure}
 
-The first notation represents the entities, 
-{\tt Pizza} (subject) and {\tt PizzaBase} (object), 
-along with {\tt hasBase} (predicate) as the relation between them, 
-using the \ac{uri}s. 
-The second notation is for {\tt CaloricContent}, 
-where instead of the \ac{uri}, 
-the value of the property, {\tt integer}, is used. 
-Here, 
-{\tt Pizza} is the subject and {\tt integer} is the object with {\tt hasCaloricContent} acting as the predicate.
-
-Consider a more complex system, 
-where the types of {\tt PizzaBase} are described. 
-Suppose, 
-the types are {\tt DeepPanBase} and {\tt ThinAndCrispyBase}.
+%??? what are first and second notations ???
+%The first notation represents the entities, 
+%{\tt Pizza} (subject) and {\tt PizzaBase} (object), 
+%along with {\tt hasBase} (predicate) as the relation between them, 
+%using the \ac{uri}s. 
+%The second notation is for {\tt CaloricContent}, 
+%where instead of the \ac{uri}, 
+%the value of the property, {\tt integer}, is used. 
+%Here, 
+%{\tt Pizza} is the subject and {\tt integer} is the object with {\tt hasCaloricContent} acting as the predicate.
+\noindent
+Adding more complexity to the system,
+include a description of the types of {\tt PizzaBase}.
 Figure~\ref{graph-for-base-types} 
-shows a graphical representation of this \ac{rdf} system.
+shows a graphical representation of this system.
+\begin{flalign}  
+    \text{ {\tt DeepPanBase} and {\tt ThinAndCrispyBase}} &&
+    \label{kindsofbase}
+\end{flalign}
+ 
+%Suppose, 
+%the types are {\tt DeepPanBase} and {\tt ThinAndCrispyBase}.
 
-\begin{figure}[htp]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/graph-for-base-types.png}
-    \caption{Graphical Representation of \ac{rdf} with types of PizzaBase, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \caption{Graphical Representation of \ac{rdf} with types of PizzaBase, 
+    after the \ac{rdf} Primer~\cite{manola2004rdf}.}
     \label{graph-for-base-types}
 \end{figure}
 
-For caloric content, 
-{\tt pizza:Pizza} is subject 
-and the value {\tt xsd:integer} acts as object 
-whereas {\tt pizza:hasCaloricContent} is the predicate. 
 On the other hand, 
 {\tt pizza:Pizza} (subject) 
 is connected to {\tt pizza:PizzaBase} (object) node 
@@ -459,7 +456,9 @@ the node does not require a
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/blank-node-for-rdf.png}
-    \caption{\ac{rdf} Representation in Figure~\ref{graph-for-base-types} without a URI (blank node) for PizzaBase Entity, after \ac{rdf} Primer~\cite{manola2004rdf}}
+    \caption{\ac{rdf} Representation in Figure~\ref{graph-for-base-types} 
+    without a \ac{uri} (blank node) for PizzaBase Entity, after the \ac{rdf} 
+    Primer~\cite{manola2004rdf}.}
     \label{blank-node-for-rdf}
 \end{figure}
 
@@ -508,22 +507,19 @@ along with their description are listed in Table~\ref{rdfs-classes-and-propertie
 
 Consider the statement:
 \begin{flalign}  
-    \text{\tt Pizza has PizzaBase} &&
-    \text{\tt Romeo and Juliet is written by William Shakespeare} &&
+    \text{\tt Pizza was enjoyed by William Shakespeare} &&
 \end{flalign}
- 
- ??? NOT PIZZA? ???
 
 \noindent
 Figure~\ref{rdfs-graph-for-complex} 
 shows a graph for the representation of \ac{rdfs} 
 for above statement 
 which is comparatively complex and abstract example 
-based on \ac{rdf} Primer~\cite{manola2004rdf}. 
+based on the \ac{rdf} Primer~\cite{manola2004rdf}. 
 It is the graphical representation of an \ac{rdf} 
 with schema as well as data. 
 In the graph, 
-the {\tt rdf:type} of 
+the {\tt rdf:type} of ??? PIZZA! :-) ???
 {\tt Romeo and Juliet} is {\tt Play} 
 which, in turn, is an {\tt rdf:subClassOf Literature}. 
 Also, 
