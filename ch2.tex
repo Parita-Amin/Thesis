@@ -71,8 +71,7 @@ which promotes the global interconnection of data.
 
 These principles encourage the
 naming of subjects, predicates, and objects with 
-\ac{https} \acp{uri}\footnote{\tt https://www.w3.org/TR/uri-clarification/}
-%\textsuperscript{,}
+\ac{https} \acp{uri}\footnote{\tt https://www.w3.org/TR/uri-clarification/} 
 and providing useful information through the \ac{rdf} family of standards.
 Berners-Lee introduced the concept of 5-star 
 \ac{lod}\footnote{\tt https://www.w3.org/TR/ld-glossary/\#x5-star-linked-open-data}
@@ -104,20 +103,6 @@ without affecting how other identifiers are used.
 Existing resource identifiers can be reused in a variety of settings, 
 enabling new applications or protocols to benefit from that 
 widely-utilized set of resource identifiers.
-%
-%   Uniform
-%
-%      Uniformity provides several benefits.  It allows different types
-%      of resource identifiers to be used in the same context, even when
-%      the mechanisms used to access those resources may differ.  It
-%      allows uniform semantic interpretation of common syntactic
-%      conventions across different types of resource identifiers.  It
-%      allows introduction of new types of resource identifiers without
-%      interfering with the way that existing identifiers are used.  It
-%      allows the identifiers to be reused in many different contexts,
-%      thus permitting new applications or protocols to leverage a pre-
-%      existing, large, and widely used set of resource identifiers.
-%
 
 A resource is anything that can be identified
 by a \ac{uri}. The pages on a website are a recognizable example. 
@@ -125,22 +110,6 @@ A resource is not necessarily available via the web.
 It may correspond to a physical entity such as a person,
 an abstract concept such as a relationship,
 or a numeric quantity.
-    
-%   Resource
-%
-%      This specification does not limit the scope of what might be a
-%      resource; rather, the term "resource" is used in a general sense
-%      for whatever might be identified by a URI.  Familiar examples
-%      include an electronic document, an image, a source of information
-%      with a consistent purpose (e.g., "today's weather report for Los
-%      Angeles"), a service (e.g., an HTTP-to-SMS gateway), and a
-%      collection of other resources.  A resource is not necessarily
-%      accessible via the Internet; e.g., human beings, corporations, and
-%      bound books in a library can also be resources.  Likewise,
-%      abstract concepts can be resources, such as the operators and
-%      operands of a mathematical equation, the types of a relationship
-%      (e.g., "parent" or "employee"), or numeric values (e.g., zero,
-%      one, and infinity).
 
 An identifier distinguishes an object from all other objects within its scope.
 The purpose of an identifier is to distinguish one resource from all others.
@@ -148,39 +117,21 @@ An identifier is not required to define the identity of what is referenced,
 though this may be the true for some.
 A system using \acp{uri} is neither required to access the resource identified
 and for some there is no intention that they be accessed.
-%  
-%   Identifier
-%
-%      An identifier embodies the information required to distinguish
-%      what is being identified from all other things within its scope of
-%      identification.  Our use of the terms "identify" and "identifying"
-%      refer to this purpose of distinguishing one resource from all
-%      other resources, regardless of how that purpose is accomplished
-%      (e.g., by name, address, or context).  These terms should not be
-%      mistaken as an assumption that an identifier defines or embodies
-%      the identity of what is referenced, though that may be the case
-%      for some identifiers.  Nor should it be assumed that a system
-%      using URIs will access the resource identified: in many cases,
-%      URIs are used to denote resources without any intention that they
-%      be accessed.  Likewise, the "one" resource identified might not be
-%      singular in nature (e.g., a resource might be a named set or a
-%      mapping that varies over time).
-%
     
 Berners-Lee et al.~\cite{RFC3986uri} defined the generic syntax of a \ac{uri} 
-as shown in Figure~\ref{syntax-diagram}.
+as shown in Figure~\ref{syntax-diagram}. 
 A \ac{uri} comprises five components in sequence 
 (see Examples~\ref{generic-uri} and~\ref{authority-uri}). 
 It is not mandatory for a \ac{uri} to have all the components.
 \begin{flalign}
-\text{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} &&
-\label{generic-uri}
+    \text{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} &&
+    \label{generic-uri}
 \end{flalign}
 \noindent
 The authority component comprises three elements, which are:
 \begin{flalign}
-\text{\tt authority = [userinfo@] host [:port]} &&
-\label{authority-uri}
+    \text{\tt authority = [userinfo@] host [:port]} &&
+    \label{authority-uri}
 \end{flalign}
 \begin{figure}[h]
     \includegraphics[width=\columnwidth]{images/ch2/syntax-diagram.png}
@@ -188,17 +139,14 @@ The authority component comprises three elements, which are:
     after Berners-Lee et al.~\cite{RFC3986uri}.}
     \label{syntax-diagram}
 \end{figure}
-
 \noindent
-Consider the \ac{uri} in Example~\ref{example-uri}.
+One of the \acp{uri} from the Survey ontology is in Example~\ref{example-uri}.
 Figure~\ref{components-of-uri-example} 
 shows its components.
-??? Typing this \ac{uri} into a web browser (details of your browser) leads to ... ??? 
 \begin{flalign}
-\text{\tt https://parita-amin.github.io/survey.owl\#Survey} &&
-\label{example-uri}
+    \text{\tt https://parita-amin.github.io/survey.owl\#Survey} &&
+    \label{example-uri}
 \end{flalign}
-%It has {\tt scheme}, {\tt authority} without {\tt userinfo} and {\tt port}, {\tt path} and {\tt fragment}. 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/components-of-uri-example.png}
@@ -209,17 +157,6 @@ shows its components.
 
 \subsection{Resource Description Framework}
 \label{subsec:rdf}
-
-??? see comments here in source file ???
-%FROM https://www.w3.org/TR/rdf11-concepts/
-%The Resource Description Framework (RDF) is a framework for representing information in the Web.
-%
-%This document defines an abstract syntax (a data model) which serves to link all RDF-based languages and specifications, including:
-%
-%the formal model-theoretic semantics for RDF [RDF11-MT];
-%serialization syntaxes for storing and exchanging RDF such as Turtle [TURTLE] and JSON-LD [JSON-LD];
-%the SPARQL Query Language [SPARQL11-OVERVIEW];
-%the RDF Schema vocabulary [RDF11-SCHEMA].
 
 According to Flanders and Jannidis~\cite{julia2015data}, 
 data modelling refers ``the process of representing data, 
@@ -235,31 +172,26 @@ namely,
 conceptual, logical, and physical data model. 
 Some widely-used primary data models are 
 dimensional, relational, and \ac{er} models. 
-RDF began as a ??? metadata model ??? and is now the means to describe resources 
+RDF began as a metadata model and is now the means to describe resources 
 (entities) and the relationships amongst them in a computer-understandable format, 
 using basic data models like the \ac{er} model. 
 An \ac{er} model is a high-level conceptual data model 
 that assists rigorous analysis of the data requirements 
 to build a well-designed database. 
-The \ac{er} model depicts real-world entities and the relationships between them.
-??? citation(s) ???
+The \ac{er} model depicts real-world entities and the relationships between them~\cite{lin2019structure}.
 
 \ac{rdf} uses {\em properties} and {\em property values} 
 to describe resources, which are named by \acp{uri}. 
 The three types of objects in \ac{rdf} are resources, properties, and statements.
-??? relate this to subject predicate object... ???
 Each data object in a dataset on the web is considered a resource and is named 
 using a \ac{uri}. 
-To search for the resources on the web, 
-the resources must be named using \ac{https} \acp{uri}. 
-??? OR resources available on the web must be named using \ac{https} \acp{uri} ???
+The resources available on the web must be named using \ac{https} \acp{uri}. 
 The \ac{w3c} has defined the 
-??? a table/figure/something is needed to list the prefixes rdf:, etc. ???
 {\tt rdf:type} 
 property to represent the 
 ``object of one or more classes''~\cite{cyganiak2014rdf}. 
 Resources are described by their characteristics, 
-called {\tt property} ??? {\em properties} REPETITION ???. 
+called {\em properties}. 
 The object of \ac{rdf} 
 that is used to combine a resource with a property of its value is a {\em statement}. 
 A statement, 
@@ -271,16 +203,17 @@ An object in a statement can be either a property value, a resource, or a litera
 according to Beckett, Gandon and Schreiber~\cite{gandon2014rdf,zongmin2016rdf}, 
 can be represented in three ways:
 using \ac{xml} in an \ac{rdf}/\ac{xml} document,
-as triples in subject-predicate-object form ??? use a real format for this ???,
+as triples in subject-predicate-object form 
 or in graphical form.
 
-??? Introduce the source of the pizza examples ???
+The University of Manchester has developed Pizza ontology 
+which acts as an inspiration for ``pizza'' examples in this chapter.
 Consider the following example:
 \begin{flalign}  
     \text{\tt Pizza has CaloricContent with some integer value}&&
     \label{caloriccontent}
 \end{flalign}
-\noident
+\noindent
 Figure~\ref{rdf-xml-doc} shows the \ac{rdf}/\ac{xml},
 which consists of various \ac{xml} tags.
 An \ac{rdf}/\ac{xml} 
@@ -292,6 +225,10 @@ document starts and ends with {\tt <rdf:\ac{rdf}>} and
         \begin{tabbing}
             \hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\= \kill
             \hspace*{\columnwidth}\\[-1cm]
+            @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> .\\
+            @prefix owl: <http://www.w3.org/2002/07/owl\#> .\\
+            @prefix pizza: <http://www.semanticweb.org/pizzatutorial/ontologies/2020/ \\ \>\>\> PizzaTutorial\#> .\\
+            @prefix xsd:  <http://www.w3.org/2001/XMLSchema\#> .\\
             <rdf:RDF>\\
             \><owl:Class rdf:about="pizza:Pizza">\\
             \>\>\><owl:onProperty rdf:resource="pizza:hasCaloricContent"/>\\
@@ -301,26 +238,26 @@ document starts and ends with {\tt <rdf:\ac{rdf}>} and
             \\[-1cm]
         \end{tabbing}
       }}
-      \caption{Example~\ref{caloriccontent} expressed as \ac{rdf}/\ac{xml}.
-      ??? Add prefixes to this code example ???}
+      \caption{Example~\ref{caloriccontent} expressed as \ac{rdf}/\ac{xml}.}
       \label{rdf-xml-doc}
 \end{figure}
-    
-    {\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#} and 
-    {\tt http://www.w3.org/2001/XMLSchema\#} 
-    are the base \ac{uri}s that have been expressed using prefixes 
-    {\tt pizza} and {\tt xsd} respectively 
+     
+    {\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#},  
+    {\tt http://www.w3.org/1999/02/22-rdf-syntax-ns\#},  
+    {\tt http://www.w3.org/2002/07/owl\#}, and 
+    {\tt http://www.w3.org/2001/XMLSchema\#}
+    are the base \acp{uri} that have been expressed using prefixes 
+    {\tt pizza}, {\tt rdf}, {\tt owl}, and {\tt xsd} respectively 
     for the classes and properties in Figure~\ref{rdf-xml-doc}. 
     The resource being described is {\tt pizza:Pizza}, 
-    the property is {\tt pizza:hasCaloricContent}, and 
+    {\tt pizza:hasCaloricContent} is the property, and 
     {\tt xsd:integer} is the value.
     
-          
     Figure~\ref{rdf-triple} 
     shows an example of an \ac{rdf} triple, 
     where {\tt pizza:Pizza} is the subject; 
     the predicate is {\tt pizza:hasCaloricContent}; 
-    and the object is {\tt xsd:integer} ??? use an accepted format for this ???. 
+    and the object is {\tt xsd:integer}. 
     
     \begin{figure}[htp]
         \framebox{\vbox{\tt\small
@@ -333,8 +270,7 @@ document starts and ends with {\tt <rdf:\ac{rdf}>} and
             \\[-1cm]
         \end{tabbing}
         }}
-        \caption{An illustration of Example~\ref{caloricontent} as an \ac{rdf} triple.
-        ??? use a real example from the tutorial ???}
+        \caption{An illustration of Example~\ref{caloriccontent} as an \ac{rdf} triple.}
         \label{rdf-triple}
     \end{figure}
   
@@ -353,19 +289,18 @@ connects the resource (subject, {\tt pizza:Pizza}) with the value (object, {\tt 
         \label{rdf-graph}
     \end{figure}
     
-%    The subject and object of an \ac{rdf} triple of \ac{rdf} act as nodes in the graph
-%    where they are two entities and 
-%    the predicate being the third entity acts as a connector between them. 
-    Considering an entity-relationship data model, 
-    the predicate can be treated as a relationship shared by the subject and the object. 
-    In addition to the \ac{rdf}/\ac{xml} and the line-based N-triples~\cite{beckett2014rdf} 
-    formats, 
-    the \ac{rdf} data model has a variety of serialization formats such as
-    \ac{turtle}; \ac{n3}, 
-    which is a subset of Turtle and N-Quads, ??? CHECK THESE ???
-    which is an extension of N-Triples (line based) 
-    and adds a graph label to each line 
-    that allows multiple graph encoding~\cite{cyganiak2008n}.
+The subject and object of an \ac{rdf} triple of \ac{rdf} act as nodes in the graph
+where they are two entities and 
+the predicate being the third entity acts as a connector between them. 
+Considering an entity-relationship data model, 
+the predicate can be treated as a relationship shared by the subject and the object. 
+In addition to the \ac{rdf}/\ac{xml} and the line-based N-triples~\cite{beckett2014rdf} 
+formats, 
+the \ac{rdf} data model has a variety of serialization formats such as
+\ac{turtle}; \ac{n3}, 
+which is an extension of N-Triples (line based) 
+and adds a graph label to each line 
+that allows multiple graph encoding~\cite{cyganiak2008n}.
 
 There can be more details added to Example~\ref{caloriccontent}
 (illustrated in Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}). 
@@ -381,7 +316,6 @@ where the property (predicate, {\tt pizza:hasBase})
 connects the resource (subject, {\tt pizza:Pizza}) with the value (object, {\tt pizza:PizzaBase}).
 Figure~\ref{graph-for-relative-statements} shows a graphical representation
 of the two example statements combined.
-
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/graph-for-relative-statements.png}
@@ -389,31 +323,6 @@ of the two example statements combined.
     following the \ac{rdf} Primer~\cite{manola2004rdf}.}
     \label{graph-for-relative-statements}
 \end{figure}
-
-%\begin{figure}[htp]
-%    \framebox{\vbox{\tt\small
-%    \begin{tabbing}
-%        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
-%        \hspace*{\columnwidth}\\[-1cm]
-%        \>{\tt1.} {\tt <pizza:Pizza>} {\tt <pizza:hasBase>} {\tt <pizza:PizzaBase>}\\
-%        \>{\tt2.} {\tt <pizza:Pizza>} {\tt <pizza:hasCaloricContent>} {\tt <xsd:integer>}
-%        \\[-1cm]
-%    \end{tabbing}
-%    }}
-%    \caption{\ac{rdf} Notations for Figure~\ref{graph-for-relative-statements}, after \ac{rdf} Primer~\cite{manola2004rdf} ??? Would triples be this generic? Use real syntax (no line numbers) ???}
-%    \label{rdf-notations}
-%\end{figure}
-
-%??? what are first and second notations ???
-%The first notation represents the entities, 
-%{\tt Pizza} (subject) and {\tt PizzaBase} (object), 
-%along with {\tt hasBase} (predicate) as the relation between them, 
-%using the \ac{uri}s. 
-%The second notation is for {\tt CaloricContent}, 
-%where instead of the \ac{uri}, 
-%the value of the property, {\tt integer}, is used. 
-%Here, 
-%{\tt Pizza} is the subject and {\tt integer} is the object with {\tt hasCaloricContent} acting as the predicate.
 \noindent
 Adding more complexity to the system,
 include a description of the types of {\tt PizzaBase}.
@@ -423,10 +332,6 @@ shows a graphical representation of this system.
     \text{ {\tt DeepPanBase} and {\tt ThinAndCrispyBase}} &&
     \label{kindsofbase}
 \end{flalign}
- 
-%Suppose, 
-%the types are {\tt DeepPanBase} and {\tt ThinAndCrispyBase}.
-
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/graph-for-base-types.png}
@@ -435,7 +340,6 @@ shows a graphical representation of this system.
     \label{graph-for-base-types}
 \end{figure}
 
-On the other hand, 
 {\tt pizza:Pizza} (subject) 
 is connected to {\tt pizza:PizzaBase} (object) node 
 through {\tt pizza:hasBase} (predicate). 
@@ -462,9 +366,6 @@ the node does not require a
     \label{blank-node-for-rdf}
 \end{figure}
 
-??? In 2004, 
-\ac{w3c} recommended intended goals that are to be achieved whenever an \ac{rdf} 
-is to be designed. --- TOO GENERIC What is this sentence meant to convey ???
 According to the \ac{w3c} 
 Recommendation\footnote{\tt https://www.w3.org/TR/rdf11-concepts/},  
 the design should 
@@ -505,36 +406,8 @@ along with their description are listed in Table~\ref{rdfs-classes-and-propertie
     \label{rdfs-classes-and-properties}
 \end{table}
 
-Consider the statement:
-\begin{flalign}  
-    \text{\tt Pizza was enjoyed by William Shakespeare} &&
-\end{flalign}
-
-\noindent
-Figure~\ref{rdfs-graph-for-complex} 
-shows a graph for the representation of \ac{rdfs} 
-for above statement 
-which is comparatively complex and abstract example 
-based on the \ac{rdf} Primer~\cite{manola2004rdf}. 
-It is the graphical representation of an \ac{rdf} 
-with schema as well as data. 
-In the graph, 
-the {\tt rdf:type} of ??? PIZZA! :-) ???
-{\tt Romeo and Juliet} is {\tt Play} 
-which, in turn, is an {\tt rdf:subClassOf Literature}. 
-Also, 
-the {\tt rdf:type} of {\tt William Shakespeare} is {\tt Person} which, 
-further, 
-is an {\tt rdfs:range} of {\tt is written by} of {\tt rdfs:domain Literature}. 
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch2/rdfs-graph-for-complex.png}
-    \caption{Graphical Representation of an RDFS for a Comparatively Complex Illustration, after McBride~\cite{mcbride2004resource}}
-    \label{rdfs-graph-for-complex}
-\end{figure} 
-
 \subsection{Open Data}
+\label{subsec:opendata}
 
 According to the Open Knowledge Foundation~\cite{foundation}, 
 ``Open Data is data that can be freely used, 
