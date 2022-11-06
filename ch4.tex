@@ -12,16 +12,6 @@ The organization of this Chapter mirrors the preceding one,
 as the methodology is applied to publish ~\ac{lod} from Hepting's feedback
 survey.
 
-???
-\begin{itemize}
-\item https://actionproject.eu/coney-the-conversational-survey-toolkit-released-open-source/
-\item https://cefriel.github.io/survey-ontology/docs/index.html
-\item https://lov.linkeddata.es/dataset/lov/terms?q=survey
-\item https://ddialliance.org/learn/why-use-ddi
-\item https://rdf-vocabulary.ddialliance.org/discovery.html
-\end{itemize}
-???
-
 \section{Modelling Ontology for Survey Using Protégé}
 \label{sec:modelingontology}
 
@@ -361,8 +351,11 @@ This feature can be enabled and disabled by selecting
 ``Display relationship in class hierarchy'' 
 option from the ``View'' menu of protégé. 
 
-\subsection{Data Validation Using SHACL}
-\label{subsec:shacl}
+\subsection{Results of FAIR Evaluator}
+\label{fairresults}
+
+\section{Data Validation Using SHACL}
+\label{sec:shacl}
 
 \ac{shacl}4P is a protégé plugin for \ac{shacl}, 
 which uses ``shapes'' to describe constraints. 
@@ -721,61 +714,5 @@ data reuse is more likely to happen.
     This makes it possible for the user to investigate the relationships in the data and use it effectively. 
 
 \end{itemize}
-
-\section{Visualizing Survey Ontology}
-\label{sec:visualizingsurveyontology}
-
-This section consists of the results of using two ontology visualizations tools for survey vocabulary, 
-namely, 
-OntoGraf and Web\ac{vowl}.
-
-\subsection{Representation of Survey Ontology in OntoGraf}
-\label{subsec:surveyontograf}
-
-To start with the graph formation, 
-the classes 
-``owl:Thing'', 
-``Survey'', 
-``SurveyResponse'', 
-``SurveyQuestions'', 
-``SurveyAnswers'', 
-``Respondent'', and 
-``SurveyCollection'' 
-were selected followed by their expansion by double-clicking them. 
-This expansion adds all the classes that are connected to the classes. 
-The classes connected includes both the subclasses as well as the ones linked through the object properties and individuals. 
-
-Figure~\ref{ontograf} 
-shows the graph generated using OntoGraf for survey ontology. 
-Solid blue lines in the graph are used to denote the relationships between the classes and their subclasses whereas dashed lines are used to represent the object properties. 
-``Arc Types'' 
-represent symbols for different object properties. 
-The classes are denoted by yellow solid dot followed by the class name where as individuals are denoted by purple solid diamond followed by the instance name.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/ontograf.png}
-    \caption{OntoGraf for Survey Ontology}
-    \label{fig:ontograf}
-\end{figure}
-
-\subsection{Representation of Survey Ontology in WebVOWL}
-\label{subsec:surveywebvowl}
-
-Figure~\ref{webVOWL} 
-shows the graphical representation of the survey ontology using Web\ac{vowl}. 
-The figure focuses on only some of the class-subclass relationships and some of the object properties. 
-The metadata and the statistics of the node (circle) or the edge (line) 
-can be retrieved by clicking on them. 
-The entities (classes) and their relationships (object and datatype properties) 
-can be presented or restricted using filters. 
-The \ac{vowl} graph can be exported as an SVG image file or a JSON code file.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/webVOWL.png}
-    \caption{WebVOWL for Survey Ontology}
-    \label{fig:webVOWL}
-\end{figure}
 
 \end{doublespace}
