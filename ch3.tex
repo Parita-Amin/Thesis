@@ -3,142 +3,131 @@
 \label{chap:methodology}
 
 \begin{doublespace}
-
-%protégé along with the methodology involved in describing and publishing linked open data. 
-% usability of the linked data lifecycle 
+ 
 This Chapter focuses on the methodology that is 
 required to create and publish \ac{lod}.
 Chapter~\ref{chap:proofOfConcept} 
 presents a proof of concept for this methodology with real data.
 
-The linked data lifecycle as presented by Ngomo et al.~\cite{ngomo2014introduction}
-identifies 7 stages:
-Extraction;
-Storage \& Querying;
-Authoring;
-Linking;
-Enrichment;
-Quality Analysis;
-and
-Browsing \& Exploration.
-This is a good starting point, but it is incomplete.
-This Chapter will reconsider the lifecycle required to 
-move from unpublished unstructured data to published \ac{lod}
-and focus on the use OpenRefine~\cite{openrefine} and Protégé~\cite{protege} tools.
-
 \section{Describe Semantics}
+\label{sec:semantics}
 
-??? 
-https://drive.google.com/file/d/1oFRBfBNSTQqXAXg\_8PYYoB0S44kIW4Y6/view
-Use the pizza ontology with data for your examples in this chapter.
-I think that you need to deal with issues of splitting things between ontology and
-the datafile using the ontology. The pizza ontology with data file describes everything
-in the ontology, but should individual customers be in the ontology or in a datafile (ttl) that uses the ontology? 
-In the sample.ttl file in the appendix, you set the blank prefix to be the survey.owl URI
-rather than the path of the datafile itself. Please check the literature for this. You have done a good job with survey.owl, but there are extras in there that could confuse things.
-I think that you can isolate a few examples from the pizza ontology with data to foreshadow what you will need in Chapter 4. Does that make sense?
+In data science, 
+for a fresh and developing branch like ontology engineering, 
+it is difficult to find enough knowledge that can be reused. 
+The field is still growing with research and development in progress 
+as well as a lot still required to be explored in the future. 
+As a result of this, 
+linked open vocabularies are limited currently, 
+and hence, 
+the data publishers will have to create a vocabulary 
+in case they do not find the required vocabulary 
+from the already existing vocabularies.
 
-???
-Either one needs to reuse an existing vocabulary or create one.
-
-First stage: was Extraction
-( Extraction and conversion of unstructured and semi-structured data into \ac{rdf}).
-
-Better to reuse existing vocabularies if possible, but may need to create a new one.
-LOV Ontology Library
-\subsection{Describing New OWL Vocabularies}
+\section{Describing New OWL Vocabularies}
 \label{sec:describenewowlvocab}
 
-%In data science, 
-%for a fresh and developing branch like ontology engineering, 
-%it is difficult to find enough knowledge that can be reused. 
-%The field is still growing with research and development in progress as well as a lot still required to be explored in the future. 
-%As a result of this, 
-%linked open vocabularies are limited currently, 
-%and hence, 
-%the data publishers will have to create a vocabulary in case they do not find the required vocabulary from the already existing vocabularies.
-
-??? Related work should go into Chapter 2. Alatrish doesn't look like a good source ??? 
-There are editors available ???today (or in 2013)??? that help the publishers to create their own linked open vocabularies. 
+There are editors available that help the publishers to create their own 
+linked open vocabularies. 
 In 2013, Alatrish~\cite{alatrish2013comparison}, 
-%at the University of Belgrad
-%in 2013, 
-compared the most-used ontology editors, 
-namely, 
-Apollo, OntoStudio, Protégé, Swoop, and TopBraid Composer.
-Today, these editors are...?
-
-The editors were compared based on the following features:
+at the University of Belgrad
+in 2013, 
+compared the most-used ontology editors 
+based on the following features:
 
 \begin{itemize}
  
-  \item General description: developers' details, and accessibility on the internet (open source or software licensed)
+  \item General Description: 
+  developers' details, and accessibility 
+  on the internet (open source or software licensed)
  
-  \item Software architecture and tools evaluation: semantic web architecture, support for plug-ins, backup management, and ontology storage
+  \item Software Architecture and Tools Evaluation: 
+  semantic web architecture, 
+  support for plug-ins, 
+  backup management, and ontology storage
  
-  \item Interoperability: interoperability with other ontology tools, support and translation for other languages
+  \item Interoperability: 
+  interoperability with other ontology tools, 
+  support and translation for other languages
  
-  \item Knowledge representation: Knowledge Representation (KR) paradigm of knowledge model, axiom language, and methodological support
+  \item Knowledge Representation: 
+  Knowledge Representation (KR) paradigm of knowledge model, 
+  axiom language, and methodological support
  
-  \item Inference services: built-in inference engine, other attached inference engines, and constraint/consistency checking
+  \item Inference Services: 
+  built-in inference engine, 
+  other attached inference engines, 
+  and constraint/consistency checking
  
-  \item Usability: graphical taxonomy, graphical views, zooms, collaborative working, and ontology libraries
+  \item Usability: 
+  graphical taxonomy, graphical views, 
+  zooms, collaborative working, and ontology libraries
 
 \end{itemize}
 
-After studying the details and comparison among the most used editors based on the above features by Alatrish~\cite{alatrish2013comparison}, 
-protégé has been used for the development of the instrument to support this research and thesis work.
+After studying the details and comparison 
+among the most used editors 
+based on the above features by Alatrish~\cite{alatrish2013comparison}, 
+protégé has been used for the development of the instrument 
+to support this research and thesis work 
+as it is the most popular among the researchers. 
+Also, the other editors comparatively are out-dated or have not advanced.
 
 \subsection{Protégé}
 \label{subsec:protege}
 
-Stanford University ??? more details than this??? has developed 
+Stanford University has developed 
 Protégé\footnote{\tt https://protege.stanford.edu}, 
 ``a free, open-source ontology editor and framework for building intelligent systems.''
 %that offers a set of substantial tools
 %%footnote{along with various plug-ins and Java-based \ac{api}} 
 %to build ontologies for knowledge-based applications and to implement various 
 %``knowledge-modeling structures and actions that support the creation, 
-%visualization and manipulation of ontologies in various representation formats''~\cite{alatrish2013comparison}. 
+%visualization and manipulation of ontologies 
+in various representation formats''~\cite{alatrish2013comparison}. 
 %Protégé offers customization options to build knowledge models and to add data. 
 
-\subsection{Usability of Protégé}
-\label{subsec:usabilityofprotege}
+\subsubsection{Usability of Protégé}
+\label{subsubsec:usabilityofprotege}
 
 The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} 
 defines usability as 
-``the extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, 
+``the extent to which a product can be used by specified users 
+to achieve specified goals with effectiveness, efficiency, 
 and satisfaction in a specified context of use''. 
 In usability engineering, 
 Jacob Neilson~\cite{neilson1994usability} 
 suggested five qualities of a usable product: 
-``learnability, 
-efficiency, 
-memorability, 
-errors (low rate, easy to recover), and 
-satisfaction''. 
-These were the original five dimensions of usability which were then re-termed as all five words starting with 
+{\tt learnability}, {\tt efficiency}, {\tt memorability}, 
+{\tt errors} (low rate, easy to recover), and {\tt satisfaction}. 
+These were the original five dimensions of usability 
+which were then re-termed as all five words starting with 
 ``E'' by Quesenbery~\cite{quesenbery2003dimensions}, 
 and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. 
 The new terms are 
-``Effective'', 
-``Efficient'', 
-``Engaging'', 
-``Error-tolerant'', and 
-``Easy to learn''.
+{\tt Effective}, 
+{\tt Efficient}, 
+{\tt Engaging}, 
+{\tt Error-tolerant}, and 
+{\tt Easy to learn}.
 
-The five dimensions of usability can be considered while designing as well as for evaluation. 
+The five dimensions of usability can be considered 
+while designing as well as for evaluation. 
 While designing, 
-the engineers consider the five dimensions as goals to be achieved whereas while testing and evaluation, 
+the engineers consider the five dimensions as goals to be achieved 
+whereas while testing and evaluation, 
 they are considered as the requirements necessary for the designed model. 
-The five dimensions of usability were used to assess the usability of protégé and the report of the evaluation is as follows:
+The five dimensions of usability were used to assess the usability of protégé and 
+the report of the evaluation is as follows:
 
 \begin{itemize}
  
   \item Effective: The task is completed accurately
   
-  Protégé is an effective design as it allows the users to build ontologies and use other tools precisely. 
-  The users can complete the desired tasks accurately using the set of facilities available.
+  Protégé is an effective design as it allows the users to build ontologies and 
+  use other tools precisely. 
+  The users can complete the desired tasks accurately 
+  using the set of facilities available.
   
   \item Efficient: The task is completed quickly
   
@@ -151,69 +140,79 @@ The five dimensions of usability were used to assess the usability of protégé 
  
   \item Engaging: The look and feel of the design is interactive and engaging 
   
-  The tools and menus in protégé are interactive which leads to a better experience for the user. 
+  The tools and menus in protégé are interactive 
+  which leads to a better experience for the user. 
   Also, 
-  the layout and the components are attractive and decent for the user to use this ontology builder whenever necessary. 
+  the layout and the components are attractive and 
+  decent for the user to use this ontology builder 
+  whenever necessary. 
   Overall, 
   protégé gives an engaging and satisfactory user experience.
 
   \item Error-tolerant: Error prevention and data recovery in case any error is committed
   
-  Protégé provides options for modifications, additions, and deletions of classes, objects, and properties, 
+  Protégé provides options for modifications, additions, 
+  and deletions of classes, objects, and properties, 
   which allow the users to correct the errors that were committed. 
   Also, 
-  the deleted classes can be recovered using ``Undo'' 
+  the deleted classes can be recovered using {\tt Undo} 
   from the edit menu resulting in proving protégé as an error-tolerant design.
  
   \item Easy to learn: The interface should be easy to learn
   
-  Protégé is easy to learn as it has a familiar look and commonly used names for the tools and menus making it easy for the users to adapt and know them nicely. 
+  Protégé is easy to learn as it has a familiar look and 
+  commonly used names for the tools and menus making it easy 
+  for the users to adapt and know them nicely. 
   Also, 
-  the ``Help'' document 
-  along with a list of some frequently asked questions is available which helps the users in the correct direction whenever they are lost.
+  the {\tt Help} document 
+  along with a list of some frequently asked questions is available 
+  which helps the users in the correct direction whenever they are lost.
   
 \end{itemize}
 
 \subsection{Procedure to Describe OWL Vocabularies Using Protégé}
-\label{sec:protegeprocedure}
+\label{subsec:protegeprocedure}
 
-This section focuses on a step-wise methodology that has been followed to create new \ac{owl} 
+This section focuses on a step-wise methodology 
+that has been followed to create new \ac{owl} 
 vocabularies using protégé. 
-Protégé is available for use as a web application or it can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} 
+Protégé is available for use as a web application or 
+it can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} 
 to use as a desktop application.
 
-To commence with the process of building an ontology, a new project needs to be created with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal} 
+To commence with the process of building an ontology, 
+a new project needs to be created 
+with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal} 
 and the ontology version. 
-Figure~\ref{protege-homescreen} 
-shows the protégé home-screen with a new project created and an \ac{iri} 
-with the name and version of ontology.
+%Figure~\ref{protege-homescreen} 
+%shows the protégé home-screen with a new project created and an \ac{iri} 
+%with the name and version of ontology.
+%
+%\begin{figure}[htp]
+%    \centering
+%    \includegraphics[width=15cm]{images/ch3/protege/protege-homescreen.png}
+%    \caption{Protégé Home-screen for a New Project with an Ontology Name and an IRI}
+%    \label{protege-homescreen}
+%\end{figure}
 
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=15cm]{images/ch3/protege/protege-homescreen.png}
-    \caption{Protégé Home-screen for a New Project with an Ontology Name and an IRI}
-    \label{protege-homescreen}
-\end{figure}
-
-\subsection{Classes and Class Hierarchy}
-\label{subsec:classhierarchy}
+\subsubsection{Classes and Class Hierarchy}
+\label{subsubsec:classhierarchy}
 
 The next step is to create classes and build the hierarchy for the class nodes. 
-Each entity in protégé is directly or indirectly a child node of the ``Thing'' class. 
+Each entity in protégé is directly or indirectly a child node of the {\tt Thing} class. 
 Also, 
 each object has a name-value pair, 
-which generally are the nodes of the ``Domain\_Entity'' class, 
+which generally are the nodes of the {\tt Domain\_Entity} class, 
 an inherited class of Thing. 
 Initially, 
 four classes, 
-``Thing'', 
-``Domain\_Entity'', 
-``Independent\_Entity'', and 
-``Value'' 
+{\tt Thing}, 
+{\tt Independent\_Entity},
+{\tt Domain\_Entity}, 
+and 
+{\tt Value} 
 are created using class hierarchy, 
 as shown in Figure~\ref{class-hierarchy}. 
-To create a class hierarchy for the classes that represent entities in an ontology, 
-there are three steps to be followed:
 
 \begin{figure}[htp]
     \centering
@@ -222,20 +221,24 @@ there are three steps to be followed:
     \label{class-hierarchy}
 \end{figure}
 
+To create a class hierarchy for the classes that represent entities in an ontology, 
+there are three steps to be followed:
+
 \begin{enumerate}
 
-    \item Select ``owl:Thing'' in the Class Hierarchy View of the Classes tab from the Windows menu followed by selecting ``Create class hierarchy...'' 
+    \item Select {\tt owl:Thing} in the Class Hierarchy View 
+    of the Classes tab from the Windows menu followed by selecting {\tt Create class hierarchy...} 
     from the Tools menu, 
-    as shown in Figure~\ref{tools-menu-class-hierarchy} 
-    to open a ``Enter hierarchy'' pop-up window 
+%    as shown in Figure~\ref{tools-menu-class-hierarchy} 
+    to open a {\tt Enter hierarchy} pop-up window 
     which allows the users to add classes to the ontology.
     
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[width=15cm]{images/ch3/protege/tools-menu-class-hierarchy.png}
-        \caption{Tools Menu to Create Class Hierarchy}
-        \label{tools-menu-class-hierarchy}
-    \end{figure}
+%    \begin{figure}[htp]
+%        \centering
+%        \includegraphics[width=15cm]{images/ch3/protege/tools-menu-class-hierarchy.png}
+%        \caption{Tools Menu to Create Class Hierarchy}
+%        \label{tools-menu-class-hierarchy}
+%    \end{figure}
     
     \item Enter the class names in the pop-up window starting from the left. 
     For the child nodes, 
@@ -246,85 +249,92 @@ there are three steps to be followed:
     \begin{figure}[htp]
         \centering
         \includegraphics[width=15cm]{images/ch3/protege/enter-hierarchy-pop-up.png}
-        \caption{\enquote{Enter hierarchy} Pop-up Window} 
+        \caption{Enter hierarchy Pop-up Window} 
         \label{enter-hierarchy-pop-up}
     \end{figure}
     
-    \item On clicking ``Continue'' 
+    \item On clicking {\tt Continue} 
     on the pop-up window in Figure~\ref{enter-hierarchy-pop-up}, 
     it opens up a new pop-up window.
     Here, 
     it is important to state whether one wants the sibling classes to be disjoint or not. 
     The checkbox needs to be checked accordingly. 
     Usually, 
-    it is recommended to create disjoint sibling classes which can be changed later as necessary, 
-    as shown in Figure~\ref{create-disjoint-siblings}.
-    
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[width=15cm]{images/ch3/protege/create-disjoint-siblings.png}
-        \caption{Pop-up Window to Create Disjoint Sibling Classes}
-        \label{create-disjoint-siblings}
-    \end{figure}
+    it is recommended to create disjoint sibling classes which can be changed later as necessary.
+%    , 
+%    as shown in Figure~\ref{create-disjoint-siblings}.
+%    
+%    \begin{figure}[htp]
+%        \centering
+%        \includegraphics[width=15cm]{images/ch3/protege/create-disjoint-siblings.png}
+%        \caption{Pop-up Window to Create Disjoint Sibling Classes}
+%        \label{create-disjoint-siblings}
+%    \end{figure}
     
 \end{enumerate}
 
 Once the classes are added, 
 the next step is to describe the classes. 
 Descriptions of classes like 
-``Equivalent to'', 
-``SubClass Of'', 
-``Instances'', 
-``Disjoint With'' and so on 
+{\tt Equivalent to}, 
+{\tt SubClass Of}, 
+{\tt Instances}, 
+{\tt Disjoint With} and so on 
 can be added using the Description view of the Class tab 
 (shown in Figure~\ref{class-hierarchy}). 
-Each class can be described individually by selecting a particular class and adding details to the description view. 
+Each class can be described individually by selecting a particular class and 
+adding details to the description view. 
 
-\subsection{Object Properties and Object Property Hierarchy}
-\label{subsec:objectproperties}
+\subsubsection{Object Properties and Object Property Hierarchy}
+\label{subsubsec:objectproperties}
 
 The next step in building the ontology, 
 after describing the classes, 
-is describing the ``Object Properties''. 
+is describing the {\tt Object Properties}. 
 Object properties are used to link the entities (classes in protégé). 
-The ``owl:topObjectProperty'' 
+The {\tt owl:topObjectProperty} 
 is the root node of the object properties' hierarchy. 
-The hierarchy for object properties can be built by selecting a property in the Object Property Hierarchy view of the Object Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-object-property-hierarchy}. 
+The hierarchy for object properties can be built 
+by selecting a property in the Object Property Hierarchy view 
+of the Object Property Views tab and 
+then going to the tools menu and selecting {\tt Create object property hierarchy...}.
+%as shown in Figure~\ref{tools-menu-object-property-hierarchy}. 
 The remaining steps are similar to the ones that are followed for building class hierarchy 
-(Figure~\ref{enter-hierarchy-pop-up} and ~\ref{create-disjoint-siblings}).    
+(section~\ref{subsubsec:classhierarchy}).    
 
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-object-property-hierarchy.png}
-    \caption{Tools Menu to Create Object Property Hierarchy}
-    \label{tools-menu-object-property-hierarchy}
-\end{figure}
+%\begin{figure}[htp]
+%    \centering
+%    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-object-property-hierarchy.png}
+%    \caption{Tools Menu to Create Object Property Hierarchy}
+%    \label{tools-menu-object-property-hierarchy}
+%\end{figure}
 
 Also, 
-the description view of object properties hierarchy allows the user to describe the object properties. 
+the description view of object properties hierarchy 
+allows the user to describe the object properties. 
 The details that can be added or modified using the description view are 
-``Equivalent To'', 
-``SubProperty Of'', 
-``Inverse Of'', 
-``Domains (intersection)'', 
-``Ranges (intersection)'', 
-``Disjoint With'', and 
-``SuperProperty Of (Chain)''. 
+{\tt Equivalent To}, 
+{\tt SubProperty Of}, 
+{\tt Inverse Of}, 
+{\tt Domains (intersection)}, 
+{\tt Ranges (intersection)}, 
+{\tt Disjoint With}, and 
+{\tt SuperProperty Of (Chain)}. 
 
-The names of the object properties usually start with an ``is'' or a ``has''. 
-??? different example, please ???
+The names of the object properties usually start with an {\tt is} or a {\tt has}. 
 For instance, 
-consider two classes: 
-``Lady'' (class 1) and ``Parita'' (class 2). 
-To describe the link between class 1 (Lady) and class 2 (Parita) such that class 1 has value class 2 and class 2 is value of class 1, 
-the properties ``hasName'' and ``isNameOf'' would be used respectively, 
-as shown in Figure~\ref{object-properties-for-lady-and-parita}. 
+consider two classes from the pizza ontology: 
+{\tt Pizza} (class 1) and {\tt PizzaBase} (class 2). 
+To describe the link between class 1 ({\tt Pizza}) and class 2 ({\tt PizzaBase}) 
+such that class 1 has value class 2 and class 2 is value of class 1, 
+the properties {\tt hasBase} and {\tt isBaseOf} would be used respectively, 
+as shown in Figure~\ref{object-properties-for-pizza-and-pizzabase}. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=15cm]{images/ch3/protege/object-properties-for-lady-and-parita.png}
-    \caption{Object Properties for Classes \enquote{Lady} and \enquote{Parita}}
-    \label{object-properties-for-lady-and-parita}
+    \includegraphics[width=15cm]{images/ch3/protege/object-properties-for-pizza-and-pizzabase.png}
+    \caption{Object Properties for Classes Pizza and PizzaBase}
+    \label{object-properties-for-pizza-and-pizzabase}
 \end{figure}
 
 Each object property might have a corresponding inverse property. 
@@ -332,12 +342,12 @@ For the above instance,
 it can be said that:
 
 \begin{center}
-    \par Lady hasName Parita \textbf{is equivalent to} Parita isNameOf Lady
+    \par Pizza hasBase PizzaBase \textbf{is equivalent to} PizzaBase isBaseOf Pizza
 \end{center}
-
+\noindent
 Here, 
-``hasName'' is inverse of ``isNameOf'' 
-and ``isNameOf'' is inverse of ``hasName''. 
+{\tt hasBase} is inverse of {\tt isBaseOf} 
+and {\tt isBaseOf} is inverse of {\tt hasBase}. 
 Apart from inverse, 
 domain and range\footnote{http://protegeproject.github.io/protege/views/object-property-description/} 
 are two other important parts of description of object properties. 
@@ -345,133 +355,164 @@ According to Horridge et al.~\cite{horridge2009practical},
 in \ac{owl}, 
 ``domain and range are not constraints to be checked. 
 They are axioms which are used by the reasoner to make inferences''. 
-As shown in Figure~\ref{domain-and-range-for-hasName-and-isNameOf}, 
-``Lady'' acts as the ``Domain'' and 
-``Parita'' acts as the ``Range'' 
-for ``hasName'' whereas 
-for ``isNameOf'', 
-``Parita'' is the ``Domain'' and 
-``Lady'' is the ``Range''. 
+As shown in Figure~\ref{domain-and-range-for-hasBase-and-isBaseOf}, 
+{\tt Pizza} acts as the {\tt domain} and 
+{\tt PizzaBase} acts as the {\tt range} 
+for {\tt hasBase} whereas 
+for {\tt isBaseOf}, 
+{\tt PizzaBase} is the {\tt domain} and 
+{\tt Pizza} is the {\tt range}. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=12cm]{images/ch3/protege/domain-and-range-for-hasName-and-isNameOf.png}
-    \caption{Domain and Range Classes for \enquote{hasName} and \enquote{isNameOf}}
-    \label{domain-and-range-for-hasName-and-isNameOf}
+    \includegraphics[width=12cm]{images/ch3/protege/domain-and-range-for-hasBase-and-isBaseOf.png}
+    \caption{Domain and Range Classes for hasBase and isBaseOf}
+    \label{domain-and-range-for-hasBase-and-isBaseOf}
 \end{figure}
 
-\subsection{Data Properties and Data Property Hierarchy}
-\label{subsec:dataproperties}
+\subsubsection{Data Properties and Data Property Hierarchy}
+\label{subsubsec:dataproperties}
 
 Furthermore, 
-the ``Data Properties'' 
+the {\tt Data Properties} 
 can also be described for ontology.
-``An ontology data property provides a relation to attach an entity instance to some literal datatype value 
+``An ontology data property provides a relation 
+to attach an entity instance to some literal datatype value 
 (an \ac{rdf} number, string or data for example) 
-that is a measure or estimate of what that data property is about.''\footnote{https://ddooley.github.io/docs/data-properties/}
+that is a measure or estimate of 
+what that data property is about.''\footnote{https://ddooley.github.io/docs/data-properties/}
 
 In protégé, 
-the ``owl:topDataProperty'' 
+the {\tt owl:topDataProperty} 
 is the root node of the data properties' hierarchy. 
-The data property hierarchy can be built by selecting a property in the Data Property Hierarchy view of the Data Property Views tab and then going to the tools menu as shown in Figure~\ref{tools-menu-data-property-hierarchy}. 
-The remaining steps are similar to the ones that are followed for building class and object property hierarchy 
-(Figure~\ref{enter-hierarchy-pop-up} and ~\ref{create-disjoint-siblings}). 
+The data property hierarchy can be built by selecting a property 
+in the Data Property Hierarchy view of the Data Property Views tab and 
+then going to the tools menu and 
+selecting {\tt Create data property hierarchy...}.
+%as shown in Figure~\ref{tools-menu-data-property-hierarchy}. 
+The remaining steps are similar to the ones that are followed 
+for building class and object property hierarchy 
+(section~\ref{subsubsec:classhierarchy}). 
 
-\begin{figure}[htp] 
-    \centering
-    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-data-property-hierarchy.png}
-    \caption{Tools Menu to Create Data Property Hierarchy}
-    \label{tools-menu-data-property-hierarchy}
-\end{figure}
+%\begin{figure}[htp] 
+%    \centering
+%    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-data-property-hierarchy.png}
+%    \caption{Tools Menu to Create Data Property Hierarchy}
+%    \label{tools-menu-data-property-hierarchy}
+%\end{figure}
 
-Data properties can be described using the description view of data properties of hierarchy which included details like 
-``Equivalent To'', 
-``SubProperty Of'', 
-``Domains (intersection)'', 
-``Ranges'', and 
-``Disjoint With''.
+Data properties can be described using the description view 
+of data properties of hierarchy which included details like 
+{\tt Equivalent To}, 
+{\tt SubProperty Of}, 
+{\tt Domains (intersection)}, 
+{\tt Ranges}, and 
+{\tt Disjoint With}.
 
-\subsection{OWL Ontology Inconsistencies and Reasoner}
-\label{subsec:owlreasoner}
-
-Pitfall scanners: https://oops.linkeddata.es/ and foops (https://foops.linkeddata.es/FAIR\_validator.html
-
-https://lov.linkeddata.es/Recommendations\_Vocabulary\_Design.pdf
-
-https://www.w3.org/TR/void/
+\subsubsection{OWL Ontology Inconsistencies and Reasoner}
+\label{subsubsec:owlreasoner}
 
 After describing the classes, object properties, data properties, and individuals, 
-the next step is to determine and fix the errors and inconsistencies in the ontology using a Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
+the next step is to determine and fix the errors and inconsistencies in the ontology 
+using a Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
 The current version of the protégé IDE (Integrated Development Environment) 
 offers support for some built-in semantic reasoners which are listed below: 
 
 \begin{itemize}
    
-    \item ELK 0.4.3\footnote{https://www.w3.org/2001/sw/wiki/ELK} : A Java-based fast reasoner for lightweight \ac{owl}2 EL which is available under Apache License 2.0
+    \item ELK 0.4.3\footnote{https://www.w3.org/2001/sw/wiki/ELK} : 
+    A Java-based fast reasoner for lightweight \ac{owl}2 EL 
+    which is available under Apache License 2.0
    
-    \item FaCT++ 1.6.5\footnote{https://www.w3.org/2001/sw/wiki/Fact} : A Tableaux-based reasoner for expressive \ac{owl} \ac{dl} which is implemented using C++
+    \item FaCT++ 1.6.5\footnote{https://www.w3.org/2001/sw/wiki/Fact} : 
+    A Tableaux-based reasoner for expressive \ac{owl} \ac{dl} 
+    which is implemented using C++
    
-    \item HermiT 1.4.3.456\footnote{https://www.w3.org/2001/sw/wiki/Hermit} : A Java-based reasoner, written using \ac{owl}, that can be used to determine consistency of the ontology as well as for the identification of relationships among the classes of the ontology
+    \item HermiT 1.4.3.456\footnote{https://www.w3.org/2001/sw/wiki/Hermit} : 
+    A Java-based reasoner, 
+    written using \ac{owl}, 
+    that can be used to determine consistency of the ontology 
+    as well as 
+    for the identification of relationships 
+    among the classes of the ontology
    
-    \item Mastro DL-Lite\footnote{https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : An OBDA (Ontology-Based Data Access) management system in which the \ac{dl}-Lite family of languages for lightweight \ac{dl} are used for ontology specifications
+    \item Mastro DL-Lite\footnote{https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : 
+    An OBDA (Ontology-Based Data Access) management system 
+    in which the \ac{dl}-Lite family of languages 
+    for lightweight \ac{dl} are used for ontology specifications
    
-    \item Ontop 4.1.0\footnote{https://www.w3.org/2001/sw/wiki/Ontop} : A reasoner which uses \ac{sparql} for querying datasets as Virtual \ac{rdf} Graphs
+    \item Ontop 4.1.0\footnote{https://www.w3.org/2001/sw/wiki/Ontop} : 
+    A reasoner which uses \ac{sparql} for querying datasets as Virtual \ac{rdf} Graphs
    
-    \item Pellet and Pellet (incremental)\footnote{https://www.w3.org/2001/sw/wiki/Pellet} : A Java-based \ac{owl}2 reasoner for the optimization of nominals, conjunctive query answering, and incremental reasoning
+    \item Pellet and Pellet (incremental)\footnote{https://www.w3.org/2001/sw/wiki/Pellet} : 
+    A Java-based \ac{owl}2 reasoner for the optimization of nominals, 
+    conjunctive query answering, and incremental reasoning
 
 \end{itemize}
+
+\subsubsection{The FAIR Principles}
+\label{subsubsec: fairprinciples}
 
 \subsection{Data Validation}
 \label{subsec:datavalidation}
 
-Dr. Hepting collects the feedback responses and manually stores them in spreadsheets. 
-It is important to validate the stored data so that the data only consist of acceptable values. 
+Dr. Hepting collects the feedback responses and 
+manually stores them in spreadsheets. 
+It is important to validate the stored data 
+so that the data only consist of acceptable values. 
 According to Ekaputra and Xiashuo~\cite{shacl4protege}, 
 ``One of the challenges of adopting \ac{swt} 
-for enterprise data integration is to provide the means to define and validate structural constraints over \ac{rdf} graphs.'' 
+for enterprise data integration is to provide the means 
+to define and validate structural constraints over \ac{rdf} graphs.'' 
 To address this challenge, 
 they developed SHACL4P, 
 a protégé plugin. 
 SHACL4P is used for defining and validating \ac{shacl}, 
-which is a W3C standard for the validation of contents of an \ac{rdf}-style graph database\footnote{\tt https://www.w3.org/TR/shacl/}. 
-\ac{shacl} uses ``shapes'' to describe constraints.
+which is a W3C standard 
+for the validation of contents of 
+an \ac{rdf}-style graph database\footnote{\tt https://www.w3.org/TR/shacl/}. 
+\ac{shacl} uses {\tt shapes} to describe constraints.
 
 \section{Conversion of Tabular Data into Linked Data}
 Mapping Data to RDF
 \label{sec:csvtolodconversion}
 
 After describing the best possible version of the ontology, 
-the next step is to convert the data stored in spreadsheets into linked data using either OpenRefine or RMLStreamer. 
-As RMLStreamer is still under development and provides limited support for custom functions, 
+the next step is to convert the data stored in spreadsheets into linked data 
+using either OpenRefine or RMLStreamer. 
+As RMLStreamer is still under development and 
+provides limited support for custom functions, 
 this research uses OpenRefine.
 
 \subsection{Conversion Using OpenRefine}
+\label{subsec:openrefineconversion}
 
 OpenRefine is a free, 
 open-source powerful tool for working with messy data. 
-OpenRefine can be downloaded and installed from the OpenRefine website\footnote{https://openrefine.org/}; 
+OpenRefine can be downloaded and installed 
+from the OpenRefine website\footnote{https://openrefine.org/}; 
 run as a web server; 
 and accessed using local web server in the browser. 
 The first step is to load OpenRefine and access it in the browser. 
-Figure~\ref{openrefine-homepage} 
-shows the homepage of OpenRefine.
-
-\begin{figure}[htp] 
-    \centering
-    \includegraphics[width=15cm]{images/ch3/openrefine/homepage.png}
-    \caption{OpenRefine Homepage???why???}
-    \label{openrefine-homepage}
-\end{figure}
+%Figure~\ref{openrefine-homepage} 
+%shows the homepage of OpenRefine.
+%
+%\begin{figure}[htp] 
+%    \centering
+%    \includegraphics[width=15cm]{images/ch3/openrefine/homepage.png}
+%    \caption{OpenRefine Homepage???why???}
+%    \label{openrefine-homepage}
+%\end{figure}
 
  OpenRefine offers options to create a new project as well as to open an existing project. 
- The users can open an existing project using ``Open Project'' 
+ The users can open an existing project using {\tt Open Project} 
  and continue working on the data. 
  Creating a new project includes following steps:
 
 \begin{enumerate}
    
-    \item Click on ``Create Project'', 
-    select the type on sources of dataset and then click on ``Choose Files'' button
+    \item Click on {\tt Create Project}, 
+    select the type on sources of dataset and then click on {\tt Choose Files} button
      to select data sources as shown in Figure~\ref{openrefine-new-project}. 
     OpenRefine supports imports from 
     TSV, CSV, JSON, \ac{xml}, \ac{rdf}/\ac{xml}, Excel, and Google Data documents 
@@ -484,8 +525,9 @@ shows the homepage of OpenRefine.
         \label{openrefine-new-project}
     \end{figure}
 
-    \item The next step is to decide the orientation of the data to be displayed using various options as shown in Figure~\ref{openrefine-update-preview}. 
-    The ``Update Preview'' 
+    \item The next step is to decide the orientation of the data to be displayed 
+    using various options as shown in Figure~\ref{openrefine-update-preview}. 
+    The {\tt Update Preview} 
     button allows viewing the results of these modifications. 
 
     \begin{figure}[htp] 
@@ -496,7 +538,7 @@ shows the homepage of OpenRefine.
     \end{figure}
 
     \item The final step is to mention the name of the project and click on the 
-    ``Create Project >>'' button as shown in Figure~\ref{openrefine-name-project}.
+    {\tt Create Project >>} button as shown in Figure~\ref{openrefine-name-project}.
 
      \begin{figure}[htp] 
         \centering
@@ -514,11 +556,11 @@ OpenRefine provides support for following tasks:
     \item Exploring Data: 
     
     Large data sets can be explored with ease using OpenRefine. 
-    The ``Facet'' option allows users to explore values of particular type by offering options like 
-    ``Text facet'', 
-    ``Numeric facet'', 
-    ``Timeline facet'', 
-    ``Scatterplot facet'', and other custom facet. 
+    The {\tt Facet} option allows users to explore values of particular type by offering options like 
+    {\tt Text facet}, 
+    {\tt Numeric facet}, 
+    {\tt Timeline facet}, 
+    {\tt Scatterplot facet}, and other custom facet. 
     Figure~\ref{openrefine-facet} 
     shows the facet options offered by OpenRefine for a field.
     
@@ -531,12 +573,12 @@ OpenRefine provides support for following tasks:
 
     The left side of the screen in Figure~\ref{openrefine-facet-result} 
     shows the result of using 
-    ``Text facet'' for ``Response'' column. 
+    {\tt Text facet} for {\tt Response} column. 
     It also offers an option to 
-    ``edit'' and ``include'' the results of the facet. 
+    {\tt edit} and {\tt include} the results of the facet. 
     Figure~\ref{openrefine-include-result} 
-    shows the result of using ``include'' 
-    for the record corresponding to the response ``C1R1''.
+    shows the result of using {\tt include} 
+    for the record corresponding to the response {\tt C1R1}.
         
     \begin{figure}[htp] 
         \centering
@@ -560,9 +602,9 @@ OpenRefine provides support for following tasks:
         
         While dealing with messy data, 
         OpenRefine can be used to clean the data using the 
-        ``Text filter'' option. 
+        {\tt Text filter} option. 
         Figure~\ref{openrefine-clean-data} 
-        shows the ''Text filter'' option offered by OpenRefine for a field. 
+        shows the {\tt Text filter} option offered by OpenRefine for a field. 
                 
         \begin{figure}[htp] 
             \centering
@@ -573,8 +615,8 @@ OpenRefine provides support for following tasks:
 
         Figure~\ref{openrefine-textfilter-result} 
         shows the result of applying the 
-        ``Text filter'' option for the ``Q01\_Rate instructor->1.'' 
-        field and using ``-999'' as argument.  
+        {\tt Text filter} option for the {\tt Q01\_Rate instructor->1.} 
+        field and using {\tt -999} as argument.  
         
         \begin{figure}[htp] 
             \centering
@@ -586,9 +628,9 @@ OpenRefine provides support for following tasks:
         \item Transforming Data: 
         
         OpenRefine allows transforming data from one format to another using 
-        ``Edit cells'' option under which 
-        ``Transform...'' and 
-        ``Common transform'' 
+        {\tt Edit cells} option under which 
+        {\tt Transform...} and 
+        {\tt Common transform} 
         offers different options for transforming data. 
         Figure~\ref{openrefine-transform} 
         shows all the options offered by OpenRefine for transforming data.
@@ -645,7 +687,6 @@ OpenRefine provides support for following tasks:
     which can be then uploaded to central databases.
    
 \end{enumerate}
-\section{Testing Data Quality}
 
 \section{Announcing Linked Open Data}
 \label{sec:announcinglod}
@@ -655,12 +696,14 @@ it can be made available on the web in two steps,
 licensing the data and publishing on the web, 
 which are discussed in this section. 
 
-\section{Licensing Linked Data}
+\subsection{Licensing Linked Data}
 \label{subsec:licensinglinkeddata}
 
 \ac{w3c}~\cite{hyland2014bestpractices} 
-advises that it is critical to identify the owner of any data published on the web and to explicitly link the licence to the data itself. 
-It is simpler to attach a licence that goes with the data itself when publishing linked open data. 
+advises that it is critical to identify the owner of any data published on the web 
+and to explicitly link the licence to the data itself. 
+It is simpler to attach a licence that goes with the data itself 
+when publishing linked open data. 
 When data has a clear, 
 agreeable licence attached to it, 
 people are more likely to reuse it.
@@ -669,14 +712,14 @@ The Creative Commons\footnote{https://creativecommons.org/}
 website is a useful resource for open data providers. 
 The legal and technical framework for publishing digital content is 
 developed, supported, and maintained by Creative Commons. 
-%There are different licenses available like 
-%Attribution-ShareAlike 1.0 Generic\footnote{https://creativecommons.org/licenses/by-sa/1.0/}, 
-%Attribution-ShareAlike 2.0 Generic\footnote{https://creativecommons.org/licenses/by-sa/2.0/}, 
-%Attribution-ShareAlike 2.5 Generic\footnote{https://creativecommons.org/licenses/by-sa/2.5/}, 
-%Attribution-ShareAlike 3.0 Unported\footnote{https://creativecommons.org/licenses/by-sa/3.0/}, and 
-%Attribution-ShareAlike 4.0 International\footnote{https://creativecommons.org/licenses/by-sa/4.0/}
+There are different licenses available like 
+Attribution-ShareAlike 1.0 Generic\footnote{https://creativecommons.org/licenses/by-sa/1.0/}, 
+Attribution-ShareAlike 2.0 Generic\footnote{https://creativecommons.org/licenses/by-sa/2.0/}, 
+Attribution-ShareAlike 2.5 Generic\footnote{https://creativecommons.org/licenses/by-sa/2.5/}, 
+Attribution-ShareAlike 3.0 Unported\footnote{https://creativecommons.org/licenses/by-sa/3.0/}, and 
+Attribution-ShareAlike 4.0 International\footnote{https://creativecommons.org/licenses/by-sa/4.0/}
 
-\section{Publishing Linked Open Data}
+\subsection{Publishing Linked Open Data}
 \label{subsec:publishinglod}
 
 According to Petrou et al.~\cite{irene2014publishlod}, 
@@ -694,100 +737,6 @@ which allows users to search resources and move between them.
 Publishing datasets to international or national open data portals 
 (e.g. LicenceCanada\footnote{https://open.canada.ca/en/open-government-licence-canada}) 
 might further 
-``announce'' them to the public and make them discoverable.
-
-%\subsection{5-star Rating System}
-%\label{subsec:5-star}
-%
-%Tim Berners-Lee, 
-%the creator of the web and the linked data project's founder, 
-%proposed a five-star deployment strategy for linked data. 
-%The system of 5-star\footnote{https://www.w3.org/2011/gld/wiki/5\_Star\_Linked\_Data} 
-%linked data is cumulative. 
-%In this system, 
-%the authors of the online data link their data to the already linked data to serve as a reference and make it searchable using the linked data principles. 
-%For the 5-star system to accept the linked data on the web as 5-star the data should be:
-%
-%\begin{itemize}
-%
-%  \item structured (machine-readable)
-%  
-%  \item open-licensed for access
-%  
-%  \item described and linked to other data using \ac{uri}s
-%  
-%\end{itemize}
-%
-%Each successive star implies that the data satisfies the requirements of the preceding phase(s) as explained in Table~\ref{5-star-system}.
-%
-%\begin{table}[h!]
-%        \centering
-%        \begin{tabular}{|l|l|} \hline 
-%             \ \ \ \ \ Stars \ & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Explanation \\ \hline
-%             \FiveStarOpen & The data is accessible on the web with open license, regardless \\& of the format.\\ \hline
-%             \FiveStarOpen \ \FiveStarOpen & AND the open data is accessible on the web as structured data \\& that can be read by machines. For example, using Microsoft \\& Excel instead of a screenshot of a Microsoft Excel workbook.\\ \hline
-%             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the data is accessible in a non-proprietary format with \\& open-license. For instance, storing data in CSV instead of \\& Microsoft Excel.\\ \hline
-%             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND \ac{w3c} open standards were used for publication of the linked \\& open data on the web. For example, \ac{rdf}, \ac{uri}s, and \ac{sparql}.\\ \hline
-%             \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen \ \FiveStarOpen & AND the open data is linked to other web-based data for context.\\ \hline
-%        \end{tabular}
-%        \caption{5-star Rating System for Linked Data Implementation}
-%        \label{5-star-system}
-%\end{table}  
-%
-%\section{Visualizing Linked Data}
-%\label{sec:visualizinglinkeddata}
-%
-%The modelled ontology can be visualized using various visualization tools. 
-%Protégé supports plug-ins for some visualization tools like 
-%OntoGraf and \ac{owl}Viz 
-%whereas tools like 
-%WebVOWL, RelFinder and \ac{owl}GrEd 
-%are available for use as web-based tools. 
-%This section focuses on the two tools, 
-%OntoGraf and WebVOWL, 
-%used for the visualization of ontology in this research.
-%
-%\subsection{OntoGraf}
-%\label{subsec:ontograf}
-%
-%Falconer~\cite{falconer2010ontograf} 
-%introduced OntoGraf as a protégé plug-in for the visualization of the \ac{owl} ontologies. 
-%This tool helps the users to represent the ontologies, 
-%built using protégé, 
-%by repetitively allowing and restricting the desired classes. 
-%OntoGraf offers various graph layout options for visualization like 
-%Grid Layout\footnote{classes are arranged in a grid alphabetically}, 
-%Spring Layout, and 
-%Tree Layout\footnote{both horizontal and vertical}. 
-%Antoniazzi and Viola~\cite{antoniazz2018rdf} 
-%stated that the 
-%``individuals of a class can be visualized in its tooltip, but this is uncomfortable when dealing with a high number of assertional statements''. 
-%The graphs generated using OntoGraf can be exported as image files of various formats such as 
-%PNG, JPEG, GIF and as a dot file\footnote{a Microsoft Word Template with the details of default settings}.
-%
-%\subsection{WebVOWL}
-%\label{subsec:webvowl}
-%
-%WebVOWL~\cite{lohmann2014webvowl}, 
-%the Web-based \ac{vowl}, 
-%one of the variety of forms in which the \ac{vowl} visualization tool is available, 
-%represents the 
-%``ontologies graphically using a force-directed graph layout''~\cite{antoniazz2018rdf}. 
-%\ac{vowl} follows some ground rules for the representation of \ac{owl} ontologies which are:
-%
-%\begin{enumerate}
-%  
-%    \item Circles are used to denote classes. 
-%    Also, 
-%    different types are assigned different colors. 
-%    For instance, 
-%    \ac{owl} classes are denoted using ``light blue circles''.
-%
-%    \item Black solid lines are used to represent \ac{owl} object and datatype properties. 
-%    The object properties use light blue labels where as the datatype properties are labelled in green.
-%  
-%    \item The relationships between the classes and their subclasses are represented using dashed lines.
-%
-%\end{enumerate}
+\emph{announce} them to the public and make them discoverable.
 
 \end{doublespace}
