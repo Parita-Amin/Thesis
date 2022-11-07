@@ -28,14 +28,14 @@ shows the student feedback form for which the new vocabulary is described.
 \subsection{Classes for Survey Ontology}
 \label{subsec:surveyclasses}
 
-All the classes can be created and described using the steps described in section~\ref{subsec:classhierarchy}. 
-The resultant class hierarchy for the survey ontology would be as shown in Figure~\ref{survey-class-hierarchy}. 
+All the classes can be created and 
+described using the steps described in section~\ref{subsubsec:classhierarchy}. 
+The resultant class hierarchy for the survey ontology 
+would be as shown in Figure~\ref{survey-class-hierarchy}. 
 A survey can have 
-``Survey Collection'', 
-``Respondent'',  
-``Type of Survey'', 
-``Survey Questions'', and 
-``Survey Answers'', 
+{\tt Survey Collection}, 
+{\tt Survey Respondent}, and 
+{\tt Type of Survey} 
 which have been considered for this ontology as well. 
 
 \begin{figure}[htp]
@@ -46,55 +46,20 @@ which have been considered for this ontology as well.
 \end{figure}
 
 Here, 
-the type of survey used is feedback survey (``FeedbackSurvey'' class). 
-The ``SurveyCollection'' class corresponds to a collection of survey responses 
-that were collected for a particular course (``Course'' class)  
-at a specific time (``Event'' class) 
-in a particular semester (``Semester'' class). 
+the {\tt SurveyCollection} class corresponds to a collection of survey responses 
+that were collected for a particular course-offering ({\tt CourseOffering} class). 
+The type of survey used is feedback survey ({\tt FeedbackSurvey} class)
+with Dr. Hepting's feedback survey 
+as the specific survey instrument ({\tt HeptingStudentFeedbackSurvey} class)
+and responses to the survey ({\tt HeptingStudentFeedbackSurveyRespondent} class). 
 Furthermore, 
-the survey questions and survey answers have classes corresponding to various forms of question-answer. 
+the survey questions and survey answers have classes 
+corresponding to various forms of question-answer. 
 Generally, 
 feedback surveys consist of two types of questions, 
 namely, 
-``Likert Questions'' and ``Open-ended Questions''.
-???Why get into surveymonkey ? ???
-The type of questions might differ depending on the designer of the survey, 
-some of which, 
-as stated on the \emph{SurveyMonkey}\footnote{https://www.surveymonkey.com/mp/survey-question-types/} 
-website, are listed below. 
-
-??? what value is this list -- do you explain it and discuss it in the text with citations ???
-\begin{multicols}{2}
-\begin{itemize}
-   
-    \item Multiple Choice Questions
-   
-    \item Rating Scale Questions
-   
-    \item Likert Scale Questions
-   
-    \item Matrix Questions
-   
-    \item Dropdown Questions
-   
-    \item Open-ended Questions
-   
-    \item Demographic Questions
-   
-    \item Ranking Questions
-   
-    \item Image Choice Questions
-   
-    \item Click Map Questions
-   
-    \item File Upload Questions
-   
-    \item Slider Questions
-   
-    \item Benchmarkable Questions
-
-\end{itemize}
-\end{multicols}
+\emph{Likert Questions} and \emph{Open-ended Questions}.
+The type of questions might differ depending on the designer of the survey.
 
 The feedback survey in this research has Likert and Open-ended questions. 
 The classes described for the questions and answers are 
