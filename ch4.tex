@@ -52,7 +52,7 @@ The type of survey used is feedback survey ({\tt FeedbackSurvey} class)
 with Dr. Hepting's feedback survey 
 as the specific survey instrument ({\tt HeptingStudentFeedbackSurvey} class)
 and responses to the survey ({\tt HeptingStudentFeedbackSurveyRespondent} class). 
-Furthermore, 
+The Furthermore, 
 the survey questions and survey answers have classes 
 corresponding to various forms of question-answer. 
 Generally, 
@@ -63,16 +63,25 @@ The type of questions might differ depending on the designer of the survey.
 
 The feedback survey in this research has Likert and Open-ended questions. 
 The classes described for the questions and answers are 
-``LikertScaleQuestions'' and ``OpenEndedQuestions'' 
+{\tt SurveyQuestion} and {\tt SurveyAnswer} 
 as sub-classes of 
-``SurveyQuestions'' and 
-``LikertItemAnswer'' and ``OpenEndedAnswers'' 
-as sub-classes of 
-``SurveyAnswers''. 
-For all the survey questions, 
-there is a question and an answer, 
+{\tt HeptingStudentFeedbackSurvey} and 
+{\tt HeptingStudentFeedbackSurveyRespondent} 
+respectively.
+For each survey question, 
+there is an answer, 
 where both of them are considered as distinct classes. 
-Open-ended questions have unpredictable answers.
+The {\tt SurveyQuestion} class has 
+{\tt LikertScaleQuestion} and {\tt OpenEndedQuestion} classes 
+whereas the {\tt SurveyAnswer} class has
+{\tt LikertScaleAnswer} and {\tt OpenEndedAnswer} classes
+
+\subsubsection{The ``OpenEndedQuestion'' Class}
+\label{subsubsec:openendedqueclass}
+
+\subsubsection{The ``OpenEndedAnswer'' Class}
+\label{subsubsec:openendedansclass}
+%Open-ended questions have unpredictable answers.
 
 \subsubsection{The ``LikertScaleQuestions'' Class}
 \label{subsubsec:likertqueclass}
@@ -116,7 +125,7 @@ the LikertScaleQuestions have a LikertScale (say Never1Always5)
 and a QuestionLabel (as would OpenEndedQuestions)
 ???
    
-\subsubsection{The ``LikertItemAnswer'' Class}
+\subsubsection{The ``LikertScaleAnswer'' Class}
 \label{subsubsec:likertansclass}
     
 In a Never-Always-5 type of survey, 
