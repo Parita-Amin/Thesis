@@ -121,7 +121,7 @@ and for some there is no intention that they be accessed.
 Berners-Lee et al.~\cite{RFC3986uri} defined the generic syntax of a \ac{uri} 
 as shown in Figure~\ref{syntax-diagram}. 
 A \ac{uri} comprises five components in sequence 
-(see Examples~\ref{generic-uri} and~\ref{authority-uri}). 
+(see Statements~\ref{generic-uri} and~\ref{authority-uri}). 
 It is not mandatory for a \ac{uri} to have all the components.
 \begin{flalign}
     \text{\tt \ac{uri} = scheme: [//authority] path [?query] [\#fragment]} &&
@@ -141,7 +141,7 @@ The authority component comprises three elements, which are:
     \label{syntax-diagram}
 \end{figure}
 \noindent
-One of the \acp{uri} from the Survey ontology is in Example~\ref{example-uri}.
+One of the \acp{uri} from the Survey ontology is in Statement~\ref{example-uri}.
 Figure~\ref{components-of-uri-example} 
 shows its components.
 \begin{flalign}
@@ -209,8 +209,8 @@ as triples in subject-predicate-object form
 or in graphical form.
 
 The University of Manchester has developed Pizza ontology 
-which acts as an inspiration for ``pizza'' examples in this chapter.
-Consider the following example:
+which acts as an inspiration for ``pizza'' examples in this Chapter.
+Consider the following statement:
 \begin{flalign}  
     \text{\tt Pizza has CaloricContent with some integer value}&&
     \label{caloriccontent}
@@ -240,44 +240,52 @@ document starts and ends with {\tt <rdf:\ac{rdf}>} and
             \\[-1cm]
         \end{tabbing}
       }}
-      \caption{Example~\ref{caloriccontent} expressed as \ac{rdf}/\ac{xml}.}
+      \caption{Statement~\ref{caloriccontent} expressed as \ac{rdf}/\ac{xml}. The first few lines 
+      define prefixes as a shorthand for the \acp{uri}. }
       \label{rdf-xml-doc}
 \end{figure}
      
-{\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#},  
-{\tt http://www.w3.org/1999/02/22-rdf-syntax-ns\#},  
-{\tt http://www.w3.org/2002/07/owl\#}, and 
-{\tt http://www.w3.org/2001/XMLSchema\#}
-are the base \acp{uri} that have been expressed using prefixes 
-{\tt pizza}, {\tt rdf}, {\tt owl}, and {\tt xsd} respectively 
-for the classes and properties in Figure~\ref{rdf-xml-doc}. 
-The resource being described is {\tt pizza:Pizza}, 
-{\tt pizza:hasCaloricContent} is the property, and 
-{\tt xsd:integer} is the value.
+%{\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#},  
+%{\tt http://www.w3.org/1999/02/22-rdf-syntax-ns\#},  
+%{\tt http://www.w3.org/2002/07/owl\#}, and 
+%{\tt http://www.w3.org/2001/XMLSchema\#}
+%are the base \acp{uri} that have been expressed using prefixes 
+%{\tt pizza}, {\tt rdf}, {\tt owl}, and {\tt xsd} respectively 
+%for the classes and properties in Figure~\ref{rdf-xml-doc}. 
+%The resource being described is {\tt pizza:Pizza}, 
+%{\tt pizza:hasCaloricContent} is the property, and 
+%{\tt xsd:integer} is the value.
 
-Figure~\ref{rdf-triple} 
+Statement~\ref{rdf-triple} 
 shows an example of an \ac{rdf} triple, 
-where {\tt pizza:Pizza} is the subject; 
-the predicate is {\tt pizza:hasCaloricContent}; 
-and the object is {\tt xsd:integer}. 
+where the subject (resource) is {\tt pizza:Pizza}; 
+the predicate (property) is {\tt pizza:hasCaloricContent}; 
+and the object (property value) is {\tt xsd:integer}. 
 
-\begin{figure}[htp]
-    \framebox{\vbox{\tt\small
-    \begin{tabbing}
-        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
-        \hspace*{\columnwidth}\\[-1cm]
-        Subject: {\tt pizza:Pizza}\\
-        \>\>Predicate: {\tt pizza:hasCaloricContent}\\
-        \>\>\>\>Object: {\tt xsd:integer}
-        \\[-1cm]
-    \end{tabbing}
-    }}
-    \caption{An illustration of Example~\ref{caloriccontent} as an \ac{rdf} triple.}
+\begin{flalign}  
+    \text{\tt <pizza:Pizza>  <pizza:hasCaloricContent>  <xsd:integer>}&&
     \label{rdf-triple}
-\end{figure}
+\end{flalign}
+\noindent
+
+%\begin{figure}[htp]
+%    \framebox{\vbox{\tt\small
+%    \begin{tabbing}
+%        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
+%        \hspace*{\columnwidth}\\[-1cm]
+%        Subject: {\tt pizza:Pizza}\\
+%        \>\>Predicate: {\tt pizza:hasCaloricContent}\\
+%        \>\>\>\>Object: {\tt xsd:integer}\\
+%       {\tt }
+%        \\[-1cm]
+%    \end{tabbing}
+%    }}
+%    \caption{An illustration of Statement~\ref{caloriccontent} as an \ac{rdf} triple.}
+%    
+%\end{figure}
   
 Figure~\ref{rdf-graph} 
-shows Example~\ref{caloriccontent} in graphical format. 
+shows Statement~\ref{caloriccontent} in graphical format. 
 A resource is represented by an oval;
 a property value is represented by a rectangle;
 and a property is represented by an arrow,
@@ -287,7 +295,7 @@ connects the resource (subject, {\tt pizza:Pizza}) with the value (object, {\tt 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/rdf-graph.png}
-    \caption{Graphical representation of Example~\ref{caloriccontent}.}
+    \caption{Graphical representation of Statement~\ref{caloriccontent}.}
     \label{rdf-graph}
 \end{figure}
     
@@ -304,7 +312,7 @@ which is an extension of N-Triples (line based)
 and adds a graph label to each line 
 that allows multiple graph encoding~\cite{cyganiak2008n}.
 
-There can be more details added to Example~\ref{caloriccontent}
+There can be more details added to Statement~\ref{caloriccontent}
 (illustrated in Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}). 
 That is, 
 more statements can be added in relation to the original statement.  
@@ -322,7 +330,7 @@ of the two example statements combined.
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/graph-for-relative-statements.png}
-    \caption{Graphical representation of Examples~\ref{caloriccontent} and~\ref{pizzabase} combined,
+    \caption{Graphical representation of Statements~\ref{caloriccontent} and~\ref{pizzabase} combined,
     following the \ac{rdf} Primer~\cite{manola2004rdf}.}
     \label{graph-for-relative-statements}
 \end{figure}
@@ -331,8 +339,8 @@ Adding more complexity to the system,
 include a description of the types of {\tt PizzaBase}.
 Figure~\ref{graph-for-base-types} 
 shows a graphical representation of this system.
-\begin{flalign}  
-    \text{ {\tt DeepPanBase} and {\tt ThinAndCrispyBase}} &&
+\begin{flalign} 
+    \text{\tt PizzaBase has types DeepPanBase and ThinAndCrispyBase} &&
     \label{kindsofbase}
 \end{flalign}
 
@@ -551,31 +559,33 @@ description of the University of Regina on Wikidata is as shown in Figure~\ref{r
  \end{table}
 
 \begin{figure}[htp]
-    \framebox{\vbox{\tt\small
+    \framebox{\vbox{\tt\scriptsize
     \begin{tabbing}
-        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
+        \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
         \hspace*{\columnwidth}\\[-1cm]
+        \\
         <?xml version="1.0" encoding="utf-8" ?>\\
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns\#"\\
         \>xmlns:xsd="http://www.w3.org/2001/XMLSchema\#"\\
         \>xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex\#"\\
         \>xmlns:wdt="http://www.wikidata.org/prop/direct/"\\
         \>xmlns:wdtn="http://www.wikidata.org/prop/direct-normalized/">\\
-        <rdf:Description rdf:about="https://www.wikidata.org/wiki/Special:EntityData/Q3104287">\\
-        \><rdf:type rdf:resource="http://schema.org/Dataset"/>\\
-        \><schema:about rdf:resource="https://www.wikidata.org/entity/Q3104287"/>\\
-        \><cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>\\
-        \><rdf:Description rdf:about="https://en.wikipedia.org/wiki/University\_of\_Regina">\\
-        \>\><rdf:type rdf:resource="http://schema.org/Article"/>\\
-        \>\><schema:about rdf:resource="http://www.wikidata.org/entity/Q3104287"/>\\
-        \>\><schema:inLanguage>en</scehma:inLanguage>\\
-        \>\><schema:isPartOf rdf:resource="https://en.wikipedia.org/"/>\\
-        \>\><schema:name xml:lang="en">Univeristy of Regina</schema:name>\\
-        \>\><schema:description xml:lang="en">university in Saskatchewan, Canada\\\>\></schema:description>\\
-        \>\><wdt:P18 rdf:resource="http://commons.wikinedia.org/wiki/Special:FilePath/\\ \>\>University\%20of\%20Regina\%20Library\%20viewed\%20from\%20the\%20Oval.jpg"/>\\
+        \><rdf:Description rdf:about="https://www.wikidata.org/wiki/Special:EntityData/Q3104287">\\
+       	\>\><rdf:type rdf:resource="http://schema.org/Dataset"/>\\
+        \>\><schema:about rdf:resource="https://www.wikidata.org/entity/Q3104287"/>\\
+        \>\><cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>\\
+        \>\><rdf:Description rdf:about="https://en.wikipedia.org/wiki/University\_of\_Regina">\\
+        \>\>\><rdf:type rdf:resource="http://schema.org/Article"/>\\
+        \>\>\><schema:about rdf:resource="http://www.wikidata.org/entity/Q3104287"/>\\
+        \>\>\><schema:inLanguage>en</scehma:inLanguage>\\
+        \>\>\><schema:isPartOf rdf:resource="https://en.wikipedia.org/"/>\\
+        \>\>\><schema:name xml:lang="en">Univeristy of Regina</schema:name>\\
+        \>\>\><schema:description xml:lang="en">university in Saskatchewan, Canada</schema:description>\\
+        \>\>\><wdt:P18 rdf:resource="http://commons.wikimedia.org/wiki/Special:\\\>\>\>\>FilePath/University\%20of\%20Regina\%20Library\%20viewed\%20from\%20the\%20Oval.jpg"/>\\
+        \>\></rdf:Description>\\
         \></rdf:Description>\\
-        </rdf:Description>\\
         </rdf:RDF>
+        \\
         \\[-1cm]
     \end{tabbing}
     }}
@@ -583,8 +593,8 @@ description of the University of Regina on Wikidata is as shown in Figure~\ref{r
     \label{rdf-xml-uofr}
 \end{figure}
 
-\section{Ontology in Web Semantics}
-\label{sec:ontologyinwebsemantics}
+\section{Ontologies}
+\label{sec:ontologies}
 
 Ontology is a branch of information science 
 that encloses representation, nomenclature, and 
@@ -629,9 +639,8 @@ suitable concept for particular definitions~\cite{horridge2009practical}.
 \label{subsec:componentsofowlontologies}
 
 An \ac{owl} ontology consists of a set of components that define and describe the concepts collectively. 
-The basic components of any \ac{owl} ontology, 
-Individuals, Properties and Classes, 
-are briefly explained in this section.
+The basic components of any \ac{owl} ontology 
+are briefly explained in this Section.
 
 \subsubsection{Individuals}
 \label{subsubsec:individuals}
