@@ -223,20 +223,22 @@ document starts and ends with {\tt <rdf:\ac{rdf}>} and
 {\tt </rdf:\ac{rdf}>} respectively.
     
 \begin{figure}[h]
-	\framebox{\vbox{\tt\small
+	\framebox{\vbox{\tt\scriptsize
         \begin{tabbing}
-            \hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\=\hspace*{0.5cm}\= \kill
+            \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
             \hspace*{\columnwidth}\\[-1cm]
-            @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns\#> .\\
-            @prefix owl: <http://www.w3.org/2002/07/owl\#> .\\
-            @prefix pizza: <http://www.semanticweb.org/pizzatutorial/ontologies/2020/ \\ \>\>\> PizzaTutorial\#> .\\
-            @prefix xsd:  <http://www.w3.org/2001/XMLSchema\#> .\\
-            <rdf:RDF>\\
+            \\
+            <rdf:RDF\\
+            \>"xmlns:rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns\#"\\
+            \>"xmlns:owl="http://www.w3.org/2002/07/owl\#"\\
+            \>"xmlns:pizza="http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#"\\
+            \>"xmlns:xsd="http://www.w3.org/2001/XMLSchema\#" >\\
             \><owl:Class rdf:about="pizza:Pizza">\\
-            \>\>\><owl:onProperty rdf:resource="pizza:hasCaloricContent"/>\\
-            \>\>\><owl:someValuesFrom rdf:resource="xsd:integer"/>\\
+            \>\><owl:onProperty rdf:resource="pizza:hasCaloricContent"/>\\
+            \>\><owl:someValuesFrom rdf:resource="xsd:integer"/>\\
             \></owl:Class>\\
             </rdf:RDF>
+            \\
             \\[-1cm]
         \end{tabbing}
       }}
@@ -299,9 +301,9 @@ connects the resource (subject, {\tt pizza:Pizza}) with the value (object, {\tt 
     \label{rdf-graph}
 \end{figure}
     
-The subject and object of an \ac{rdf} triple of \ac{rdf} act as nodes in the graph
-where they are two entities and 
-the predicate being the third entity acts as a connector between them. 
+The subject and object of an \ac{rdf} triple are nodes in a graph
+and the predicate is an edge that connects the nodes.
+%being the third entity acts as a connector between them. 
 Considering an entity-relationship data model, 
 the predicate can be treated as a relationship shared by the subject and the object. 
 In addition to the \ac{rdf}/\ac{xml} and the line-based N-triples~\cite{beckett2014rdf} 
@@ -313,7 +315,8 @@ and adds a graph label to each line
 that allows multiple graph encoding~\cite{cyganiak2008n}.
 
 There can be more details added to Statement~\ref{caloriccontent}
-(illustrated in Figures~\ref{rdf-xml-doc},~\ref{rdf-triple}, and~\ref{rdf-graph}). 
+(illustrated in Figures~\ref{rdf-xml-doc} and~\ref{rdf-graph}) and
+Statement~\ref{rdf-triple}. 
 That is, 
 more statements can be added in relation to the original statement.  
 Suppose the new statement added is: 
@@ -335,8 +338,8 @@ of the two example statements combined.
     \label{graph-for-relative-statements}
 \end{figure}
 \noindent
-Adding more complexity to the system,
-include a description of the types of {\tt PizzaBase}.
+To add more complexity to the system,
+a description of the types of {\tt PizzaBase} can be included.
 Figure~\ref{graph-for-base-types} 
 shows a graphical representation of this system.
 \begin{flalign} 
@@ -621,7 +624,7 @@ the ontologies have been used
 to define resources' conceptual and physical qualities 
 in the form of metadata schema for a predetermined group of users.
 
-\subsection{OWL Ontologies}
+\subsection{Web Ontology Language}
 \label{subsec:owlontologies}
 
 The \ac{w3c} developed a standard ontology language called 
@@ -655,7 +658,7 @@ The triangles are used here to denote the individuals in free space.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=8cm]{images/ch2/owl-individuals.png}
-    \caption{Representation of Individuals in OWL}
+    \caption{Representation of individuals in OWL.}
     \label{owl-individuals}
 \end{figure}
 
@@ -684,7 +687,7 @@ The arrow between two individuals in the figure denotes the property (relationsh
 \begin{figure}[htp]
     \centering
     \includegraphics[width=8cm]{images/ch2/owl-properties.png}
-    \caption{Representation of Properties in OWL}
+    \caption{Representation of properties and individuals in OWL.}
     \label{owl-properties}
 \end{figure}
 
@@ -692,7 +695,7 @@ The arrow between two individuals in the figure denotes the property (relationsh
 \label{subsubsec:classes}
 
 In \ac{owl}, 
-the sets consisting of individuals are called \ac{owl} classes. 
+the sets consisting of individuals are called classes. 
 Mathematical (formal) descriptions are used to describe the \ac{owl} classes. 
 These descriptions include accurate statements on the requirements for the class membership. 
 For instance, 
@@ -709,11 +712,11 @@ This implies the following statements:
 
 \begin{itemize}
 
-    \item All customers are person
+    \item All customers are persons
     
     \item All members of class {\tt Customer} are members of class {\tt Person}
     
-    \item Being a {\tt Customer} implies that individual is {\tt Person}
+    \item Being a {\tt Customer} implies that individual is a {\tt Person}
     
     \item {\tt Customer} is subsumed by {\tt Person}
     
@@ -727,45 +730,48 @@ shown in Figure~\ref{owl-properties}.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=8cm]{images/ch2/owl-classes-with-individuals-and-properties.png}
-    \caption{Representation of OWL Classes Consisting of Individuals and Properties}
+    \caption{Representation of classes, individuals, and properties in OWL.}
     \label{owl-classes-with-individuals-and-properties}
 \end{figure}
 
 \subsection{Ontology Editors}
 \label{subsec:ontologyeditors}
 
-Ontology editors are used by publishers 
-to create new ontologies 
-when the existing vocabulary is not suitable for their purpose. 
-A list of ontology editors\footnote{\tt https://www.w3.org/wiki/Ontology\_editors} 
-that can be used to edit, manage, organize and visualize ontology 
-includes Protégé, NeOn Toolkit, SWOOP, Neologism, TopBraid Composer, 
-Vitro, Knoodl, Anzo for Excel, OWLGrEd, Fluent Editor, Semantic Turkey, VocBench. 
-Protégé is the most popular ontology editor among researchers. 
-Most of the editors from the list are 
-either non-existent or 
-there exists negligible information about them, 
-which has driven the decision of the use of protégé 
-for ontology development which is discussed in detail in Chapter~\ref{chap:proofOfConcept}.
+Ontology editors are used by data publishers 
+to create new ontologies when existing vocabularies are not suitable for their purpose. 
+Of the ontology editors listed on the \ac{w3c} 
+wiki page\footnote{\tt https://www.w3.org/wiki/Ontology\_editors}
+that appear to be active with a current cross-platform application available
+(Protégé, Neologism, TopBraid Composer, Anzo, Semantic Turkey, and VocBench),
+Protégé~\cite{protege} is the most popular amongst researchers.
+Protégé also has a well-established tutorial~\cite{pizzatutorial} explaining its use.
+ 
+%Most of the editors from the list are 
+%either non-existent or 
+%there exists negligible information about them, 
+%which has driven the decision of the use of protégé 
+%for ontology development which is discussed in detail in Chapter~\ref{chap:proofOfConcept}.
 
 \section{Linked Data Life Cycle}
 \label{sec:linkeddatalifecycle}
 
-The Linked Data Life Cycle includes multiple stages as described by 
-Ngomo et al.~\cite{ngomo2014introduction} 
-which are listed in
+The Linked Data Life Cycle described by 
+Ngomo et al.~\cite{ngomo2014introduction}
+includes multiple stages, which are listed in
 Table~\ref{ldlc-stages}.
-Each stage of this life cycle is independent yet linked to one another. 
-So, 
-it is not mandatory to go through all the stages sequentially 
-to publish the data on the web. 
-It is necessary to use a procedure that follows the life cycle 
-to ensure the quality of data to be published as linked data. 
-The first stage, 
-generally, 
-is data extraction along with conversion of the extracted data 
-(in forms other than \ac{rdf}) into \ac{rdf}. 
-Once the data is in \ac{rdf} form, 
+%Each stage of this life cycle is independent yet linked to one another. 
+%So, 
+It is not required to go through all the stages sequentially 
+to publish \ac{lod} on the web. 
+However, 
+%It is necessary to use 
+a procedure that follows the life cycle 
+to ensure the quality of data to be published as linked data. ??? Unclear ???
+The first stage
+%, generally, 
+is extraction of non-\ac{rdf} data and conversion of that data 
+into \ac{rdf}. 
+Then,
 any or all of the other stages listed in 
 Table~\ref{ldlc-stages} 
 can be performed.
@@ -773,7 +779,7 @@ can be performed.
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|p{10cm}|} \hline 
-     Stage & Description \\ \hline
+     {\bf Stage} & {\bf Description} \\ \hline \hline
      Extraction & Extraction and conversion of unstructured and semi-structured data into \ac{rdf}\\ \hline
      Storage \& Querying & Storing the \ac{rdf} data in a format that supports data querying efficiently\\ \hline
      Authoring & Allowing the users to create new data or to access and 
@@ -783,22 +789,23 @@ can be performed.
      Quality Analysis & Managing data using different strategies to ensure good quality of available data on the web\\ \hline
      Browsing \& Exploration & Making the structured data available on the web for the users to browse and explore effectively\\ \hline
     \end{tabular}
-    \caption{Stages in Linked Data Life Cycle, after Ngomo et al.~\cite{ngomo2014introduction}}
+    \caption{Stages in the Linked Data Life Cycle described Ngomo et al.~\cite{ngomo2014introduction}}
     \label{ldlc-stages}
 \end{table}
 
 The linked data life cycle is too basic and generic 
 and may not be the best approach for describing data semantics. 
+??? present it first then say at the end of the chapter what may need attention ???
 While working on this research, 
 it was established that the life cycle~\cite{ngomo2014introduction} 
-has gaps and does not aid the development of 5-star \ac{lov}.
+has gaps and does not aid the development of 5-star \ac{lod}. ??? Why? Explain ???
 Hence, this thesis introduces a new approach in Chapter~\ref{chap:methodology} 
 that can be followed for developing \ac{lov} to map CSV data.
 
 \section{Conversion of Data from Spreadsheets to RDF}
 \label{sec:csvtordf}
 
-The preferred format of the data published on the semantic web is \ac{rdf} format. 
+The preferred format of the data published on the semantic web is an \ac{rdf} format. 
 Many data scientists use tables and spreadsheets to store and publish data using CSV
 files over \ac{rdf} format 
 as conversion of data to \ac{rdf} 
@@ -827,6 +834,8 @@ or using \ac{rml}\footnote{\tt https://d2s.semanticscience.org/docs/convert-rml/
 %CSV, Excel, spreadsheets and other tabular data into \ac{rdf} 
 %where a GUI (Graphical User Interface) is used to define schema mapping. 
 
+??? These blurbs, below, seem quite close to wiki entries... please be careful...
+and please avoid the list format... I will fix this :-) ???
 \begin{itemize}
    
     \item OpenRefine:
