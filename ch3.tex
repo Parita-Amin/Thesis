@@ -76,21 +76,22 @@ Also, the other editors comparatively are out-dated or have not advanced.
 \subsection{Protégé}
 \label{subsec:protege}
 
-Stanford University has developed 
+Horridge et al.~\cite{protege} have developed 
+%Stanford University has developed 
 Protégé\footnote{\tt https://protege.stanford.edu}, 
-``a free, open-source ontology editor and framework for building intelligent systems.''
+``a free, open-source ontology editor and framework for building intelligent systems''.
 %that offers a set of substantial tools
 %%footnote{along with various plug-ins and Java-based \ac{api}} 
 %to build ontologies for knowledge-based applications and to implement various 
 %``knowledge-modeling structures and actions that support the creation, 
 %visualization and manipulation of ontologies 
-in various representation formats''~\cite{alatrish2013comparison}. 
+%in various representation formats''~\cite{alatrish2013comparison}. 
 %Protégé offers customization options to build knowledge models and to add data. 
 
 \subsubsection{Usability of Protégé}
 \label{subsubsec:usabilityofprotege}
 
-The \ac{iso} standard 9241\footnote{https://www.iso.org/standard/63500.html} 
+The \ac{iso} standard 9241\footnote{\tt https://www.iso.org/standard/63500.html} 
 defines usability as 
 ``the extent to which a product can be used by specified users 
 to achieve specified goals with effectiveness, efficiency, 
@@ -177,12 +178,12 @@ This section focuses on a step-wise methodology
 that has been followed to create new \ac{owl} 
 vocabularies using protégé. 
 Protégé is available for use as a web application or 
-it can also be downloaded\footnote{https://protege.stanford.edu/products.php\#desktop-protege} 
+it can also be downloaded\footnote{\tt https://protege.stanford.edu/products.php\#desktop-protege} 
 to use as a desktop application.
 
 To commence with the process of building an ontology, 
 a new project needs to be created 
-with a unique \ac{iri}\footnote{https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal} 
+with a unique \ac{iri}\footnote{\tt https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal} 
 and the ontology version. 
 %Figure~\ref{protege-homescreen} 
 %shows the protégé home-screen with a new project created and an \ac{iri} 
@@ -349,7 +350,7 @@ Here,
 {\tt hasBase} is inverse of {\tt isBaseOf} 
 and {\tt isBaseOf} is inverse of {\tt hasBase}. 
 Apart from inverse, 
-domain and range\footnote{http://protegeproject.github.io/protege/views/object-property-description/} 
+domain and range\footnote{\tt http://protegeproject.github.io/protege/views/object-property-description/} 
 are two other important parts of description of object properties. 
 According to Horridge et al.~\cite{horridge2009practical}, 
 in \ac{owl}, 
@@ -380,7 +381,7 @@ can also be described for ontology.
 to attach an entity instance to some literal datatype value 
 (an \ac{rdf} number, string or data for example) 
 that is a measure or estimate of 
-what that data property is about.''\footnote{https://ddooley.github.io/docs/data-properties/}
+what that data property is about.''\footnote{\tt https://ddooley.github.io/docs/data-properties/}
 
 In protégé, 
 the {\tt owl:topDataProperty} 
@@ -414,21 +415,21 @@ of data properties of hierarchy which included details like
 
 After describing the classes, object properties, data properties, and individuals, 
 the next step is to determine and fix the errors and inconsistencies in the ontology 
-using a Reasoner\footnote{https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
+using a Reasoner\footnote{\tt https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
 The current version of the protégé IDE (Integrated Development Environment) 
 offers support for some built-in semantic reasoners which are listed below: 
 
 \begin{itemize}
    
-    \item ELK 0.4.3\footnote{https://www.w3.org/2001/sw/wiki/ELK} : 
+    \item ELK 0.4.3\footnote{\tt https://www.w3.org/2001/sw/wiki/ELK} : 
     A Java-based fast reasoner for lightweight \ac{owl}2 EL 
     which is available under Apache License 2.0
    
-    \item FaCT++ 1.6.5\footnote{https://www.w3.org/2001/sw/wiki/Fact} : 
+    \item FaCT++ 1.6.5\footnote{\tt https://www.w3.org/2001/sw/wiki/Fact} : 
     A Tableaux-based reasoner for expressive \ac{owl} \ac{dl} 
     which is implemented using C++
    
-    \item HermiT 1.4.3.456\footnote{https://www.w3.org/2001/sw/wiki/Hermit} : 
+    \item HermiT 1.4.3.456\footnote{\tt https://www.w3.org/2001/sw/wiki/Hermit} : 
     A Java-based reasoner, 
     written using \ac{owl}, 
     that can be used to determine consistency of the ontology 
@@ -436,15 +437,15 @@ offers support for some built-in semantic reasoners which are listed below:
     for the identification of relationships 
     among the classes of the ontology
    
-    \item Mastro DL-Lite\footnote{https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : 
+    \item Mastro DL-Lite\footnote{\tt https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : 
     An OBDA (Ontology-Based Data Access) management system 
     in which the \ac{dl}-Lite family of languages 
     for lightweight \ac{dl} are used for ontology specifications
    
-    \item Ontop 4.1.0\footnote{https://www.w3.org/2001/sw/wiki/Ontop} : 
+    \item Ontop 4.1.0\footnote{\tt https://www.w3.org/2001/sw/wiki/Ontop} : 
     A reasoner which uses \ac{sparql} for querying datasets as Virtual \ac{rdf} Graphs
    
-    \item Pellet and Pellet (incremental)\footnote{https://www.w3.org/2001/sw/wiki/Pellet} : 
+    \item Pellet and Pellet (incremental)\footnote{\tt https://www.w3.org/2001/sw/wiki/Pellet} : 
     A Java-based \ac{owl}2 reasoner for the optimization of nominals, 
     conjunctive query answering, and incremental reasoning
 
@@ -473,8 +474,7 @@ for the validation of contents of
 an \ac{rdf}-style graph database\footnote{\tt https://www.w3.org/TR/shacl/}. 
 \ac{shacl} uses {\tt shapes} to describe constraints.
 
-\section{Conversion of Tabular Data into Linked Data}
-Mapping Data to RDF
+\section{Mapping Tabular Data to RDF}
 \label{sec:csvtolodconversion}
 
 After describing the best possible version of the ontology, 
@@ -484,13 +484,13 @@ As RMLStreamer is still under development and
 provides limited support for custom functions, 
 this research uses OpenRefine.
 
-\subsection{Conversion Using OpenRefine}
-\label{subsec:openrefineconversion}
+\subsection{Mapping Using OpenRefine}
+\label{subsec:openrefinemapping}
 
 OpenRefine is a free, 
 open-source powerful tool for working with messy data. 
 OpenRefine can be downloaded and installed 
-from the OpenRefine website\footnote{https://openrefine.org/}; 
+from the OpenRefine website\footnote{\tt https://openrefine.org/}; 
 run as a web server; 
 and accessed using local web server in the browser. 
 The first step is to load OpenRefine and access it in the browser. 
@@ -677,12 +677,12 @@ When data has a clear,
 agreeable licence attached to it, 
 people are more likely to reuse it.
 
-The Creative Commons\footnote{https://creativecommons.org/} 
+The Creative Commons\footnote{\tt https://creativecommons.org/} 
 website is a useful resource for open data providers. 
 The legal and technical framework for publishing digital content is 
 developed, supported, and maintained by Creative Commons. 
 There are different licenses available like  
-{\tt Attribution-ShareAlike 4.0 International}\footnote{https://creativecommons.org/licenses/by-sa/4.0/}
+{\tt Attribution-ShareAlike 4.0 International}\footnote{\tt https://creativecommons.org/licenses/by-sa/4.0/}
 
 \subsection{Publishing Linked Open Data}
 \label{subsec:publishinglod}
@@ -700,7 +700,7 @@ or through the faceted browsing feature,
 which allows users to search resources and move between them.
 
 Publishing datasets to international or national open data portals 
-(e.g. LicenceCanada\footnote{https://open.canada.ca/en/open-government-licence-canada}) 
+(e.g. LicenceCanada\footnote{\tt https://open.canada.ca/en/open-government-licence-canada}) 
 might further 
 \emph{announce} them to the public and make them discoverable.
 
