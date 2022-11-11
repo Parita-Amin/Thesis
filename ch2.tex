@@ -208,7 +208,7 @@ using \ac{xml} in an \ac{rdf}/\ac{xml} document,
 as triples in subject-predicate-object form 
 or in graphical form.
 
-The University of Manchester has developed Pizza ontology 
+The University of Manchester has developed Pizza ontology~\cite{debellis2021practical}  
 which acts as an inspiration for ``pizza'' examples in this Chapter.
 Consider the following statement:
 \begin{flalign}  
@@ -246,17 +246,6 @@ document starts and ends with {\tt <rdf:\ac{rdf}>} and
       define prefixes as a shorthand for the \acp{uri}. }
       \label{rdf-xml-doc}
 \end{figure}
-     
-%{\tt http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial\#},  
-%{\tt http://www.w3.org/1999/02/22-rdf-syntax-ns\#},  
-%{\tt http://www.w3.org/2002/07/owl\#}, and 
-%{\tt http://www.w3.org/2001/XMLSchema\#}
-%are the base \acp{uri} that have been expressed using prefixes 
-%{\tt pizza}, {\tt rdf}, {\tt owl}, and {\tt xsd} respectively 
-%for the classes and properties in Figure~\ref{rdf-xml-doc}. 
-%The resource being described is {\tt pizza:Pizza}, 
-%{\tt pizza:hasCaloricContent} is the property, and 
-%{\tt xsd:integer} is the value.
 
 Statement~\ref{rdf-triple} 
 shows an example of an \ac{rdf} triple, 
@@ -270,22 +259,6 @@ and the object (property value) is {\tt xsd:integer}.
 \end{flalign}
 \noindent
 
-%\begin{figure}[htp]
-%    \framebox{\vbox{\tt\small
-%    \begin{tabbing}
-%        \hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.9cm}\=\hspace*{0.5cm}\= \kill
-%        \hspace*{\columnwidth}\\[-1cm]
-%        Subject: {\tt pizza:Pizza}\\
-%        \>\>Predicate: {\tt pizza:hasCaloricContent}\\
-%        \>\>\>\>Object: {\tt xsd:integer}\\
-%       {\tt }
-%        \\[-1cm]
-%    \end{tabbing}
-%    }}
-%    \caption{An illustration of Statement~\ref{caloriccontent} as an \ac{rdf} triple.}
-%    
-%\end{figure}
-  
 Figure~\ref{rdf-graph} 
 shows Statement~\ref{caloriccontent} in graphical format. 
 A resource is represented by an oval;
@@ -302,8 +275,7 @@ connects the resource (subject, {\tt pizza:Pizza}) with the value (object, {\tt 
 \end{figure}
     
 The subject and object of an \ac{rdf} triple are nodes in a graph
-and the predicate is an edge that connects the nodes.
-%being the third entity acts as a connector between them. 
+and the predicate is an edge that connects the nodes. 
 Considering an entity-relationship data model, 
 the predicate can be treated as a relationship shared by the subject and the object. 
 In addition to the \ac{rdf}/\ac{xml} and the line-based N-triples~\cite{beckett2014rdf} 
@@ -368,7 +340,8 @@ Instead of using an unnecessary \ac{uri}
 for the {\tt pizza:PizzaBase} entity, 
 a blank node can be used to denote the entity, 
 as shown in Figure~\ref{blank-node-for-rdf}. 
-As the relationships of the node with other nodes give sufficient details without hindering the flow of the data tree, 
+As the relationships of the node with other nodes give sufficient details 
+without hindering the flow of the data tree, 
 the node does not require a 
 \ac{uri} reference.
 
@@ -396,8 +369,10 @@ was introduced by the \ac{w3c}
 as a technique to define resource types and property names. 
 The data publishers can use \ac{rdfs} 
 to define various vocabularies in an \ac{rdf} model. 
-Some of the commonly used \ac{rdfs} classes and properties\footnote{\tt https://www.w3.org/TR/rdf-schema/} 
-along with their description are listed in Table~\ref{rdfs-classes-and-properties}~\cite{mcbride2004resource}.
+Some of the commonly used \ac{rdfs} 
+classes and properties\footnote{\tt https://www.w3.org/TR/rdf-schema/} 
+along with their description 
+are listed in Table~\ref{rdfs-classes-and-properties}~\cite{mcbride2004resource}.
 
 \begin{table}[h!]
 	\centering
@@ -408,14 +383,21 @@ along with their description are listed in Table~\ref{rdfs-classes-and-propertie
      rdf:Property & The class of \ac{rdf} properties. 
      It is an instance of rdfs:Class  \\ \hline
      rdfs:Literal & The class of literal values like integers and strings  \\ \hline
-     rdfs:Datatype & The class of datatypes. All the objects of this class correspond to the \ac{rdf} model of datatype  \\ \hline
+     rdfs:Datatype & The class of datatypes. 
+     All the objects of this class correspond to the \ac{rdf} model of datatype  \\ \hline
      rdf:HTML & The class of \ac{html} literal values and subclass of rdfs:Literal  \\ \hline
-     rdfs:range & An instance of rdf:Property that is used to state that the values of a property are instances of one or more classes \\ \hline
-     rdfs:domain & An instance of rdf:Property that is used to state that any resource that has a given property is an instance of one or more classes \\ \hline
-     rdf:type & An instance of rdf:Property that is used to state that a resource is an instance of a class  \\ \hline
-     rdfs:subClassOf & An instance of rdf:Property that is used to state that all the instances of one class are instances of another  \\ \hline
-     rdfs:label & an instance of rdf:Property that may be used to provide a human-readable version of a resource's name  \\ \hline
-     rdfs:subPropertyOf \ \ & An instance of rdf:Property that is used to state that all resources related by one property are also related by another  \\ \hline
+     rdfs:range & An instance of rdf:Property that is used to state that 
+     the values of a property are instances of one or more classes \\ \hline
+     rdfs:domain & An instance of rdf:Property that is used to state that 
+     any resource that has a given property is an instance of one or more classes \\ \hline
+     rdf:type & An instance of rdf:Property that is used to state that 
+     a resource is an instance of a class  \\ \hline
+     rdfs:subClassOf & An instance of rdf:Property that is used to state that 
+     all the instances of one class are instances of another  \\ \hline
+     rdfs:label & an instance of rdf:Property that may be used to provide 
+     a human-readable version of a resource's name  \\ \hline
+     rdfs:subPropertyOf \ \ & An instance of rdf:Property that is used to state that 
+     all resources related by one property are also related by another  \\ \hline
     \end{tabular}
     \caption{Commonly used Classes and Properties of RDFS}
     \label{rdfs-classes-and-properties}
@@ -465,7 +447,8 @@ it as one huge database~\cite{bernerslee1999weaving}.
 A variety of projects and websites, 
 that use linked open data, 
 have been developed. 
-Wikidata is one of the major projects of linked open data that present structured data on the semantic web. 
+Wikidata is one of the major projects of linked open data that 
+present structured data on the semantic web. 
 
 Krotzsch and Vrandecic~\cite{denny2014wikidata}
 describe the introduction of Wikidata to the world in 2012. 
@@ -475,12 +458,15 @@ and the central data management platform for Wikipedia''.
 It was established for the collection and integration of Wikipedia data  
 into
 the semantic web. 
-Wikidata is a free and open-source tool that handles a large amount of 
+Wikidata is a free and open-source tool 
+that handles a large amount of 
 structured data and maintains pages that store the data. 
-Each entity on Wikidata represents the subject of a triple with a dedicated page. 
+Each entity on Wikidata represents 
+the subject of a triple with a dedicated page. 
 The properties of Wikidata are similar to that of \ac{rdf} 
 where the individuals and classes are indicated using items. 
-Data on a page of the Wikidata is available for the users to access as well as edit.
+Data on a page of the Wikidata is available 
+for the users to access as well as edit.
 
 For instance, 
 the University of Regina (Q3104287) 
@@ -495,20 +481,28 @@ illustrates a portion of the contents of this page.
     \label{wikidata-uofr}
 \end{figure}
 
-Wikidata uses a method of automatically assigning unique identifiers to the entities, 
-which are used as the labels of the item pages instead of the actual names of the entities. 
-These identifiers are a string starting with a capital Q followed by a sequence of digits. 
-The identifiers are assigned irrespective of the language as the Wikidata website supports multiple languages.
+Wikidata uses a method of automatically assigning 
+unique identifiers to the entities, 
+which are used as the labels of the item pages 
+instead of the actual names of the entities. 
+These identifiers are a string starting with a capital Q 
+followed by a sequence of digits. 
+The identifiers are assigned irrespective of the language 
+as the Wikidata website supports multiple languages.
 
 An item page on Wikidata consists of two main sections.
 The first section, entitled Statements, contains a list properties and values.
-The properties, along with their property IDs, used for the University of Regina 
+The properties, along with their property IDs, 
+used for the University of Regina 
 are listed in Table~\ref{uofr-statement-properties-and-id}.
-The other section is Identifiers, which consists of various IDs associated with the subject.
-The identifiers, along with their property IDs, used for the University of Regina 
+The other section is Identifiers, which consists of 
+various IDs associated with the subject.
+The identifiers, along with their property IDs, 
+used for the University of Regina 
 are listed in Table~\ref{uofr-identifier-properties-and-id} 
 where as the \ac{rdf}/\ac{xml} 
-description of the University of Regina on Wikidata is as shown in Figure~\ref{rdf-xml-uofr}. 
+description of the University of Regina 
+on Wikidata is as shown in Figure~\ref{rdf-xml-uofr}. 
   
 \begin{table}[h!]
         \centering
@@ -744,13 +738,7 @@ wiki page\footnote{\tt https://www.w3.org/wiki/Ontology\_editors}
 that appear to be active with a current cross-platform application available
 (Protégé, Neologism, TopBraid Composer, Anzo, Semantic Turkey, and VocBench),
 Protégé~\cite{protege} is the most popular amongst researchers.
-Protégé also has a well-established tutorial~\cite{pizzatutorial} explaining its use.
- 
-%Most of the editors from the list are 
-%either non-existent or 
-%there exists negligible information about them, 
-%which has driven the decision of the use of protégé 
-%for ontology development which is discussed in detail in Chapter~\ref{chap:proofOfConcept}.
+Protégé also has a well-established tutorial~\cite{debellis2021practical} explaining its use.
 
 \section{Linked Data Life Cycle}
 \label{sec:linkeddatalifecycle}
@@ -759,16 +747,9 @@ The Linked Data Life Cycle described by
 Ngomo et al.~\cite{ngomo2014introduction}
 includes multiple stages, which are listed in
 Table~\ref{ldlc-stages}.
-%Each stage of this life cycle is independent yet linked to one another. 
-%So, 
 It is not required to go through all the stages sequentially 
 to publish \ac{lod} on the web. 
-However, 
-%It is necessary to use 
-a procedure that follows the life cycle 
-to ensure the quality of data to be published as linked data. ??? Unclear ???
-The first stage
-%, generally, 
+The first stage 
 is extraction of non-\ac{rdf} data and conversion of that data 
 into \ac{rdf}. 
 Then,
@@ -779,7 +760,7 @@ can be performed.
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|p{10cm}|} \hline 
-     {\bf Stage} & {\bf Description} \\ \hline \hline
+     {\bf Stage} & {\bf Description} \\ \hline
      Extraction & Extraction and conversion of unstructured and semi-structured data into \ac{rdf}\\ \hline
      Storage \& Querying & Storing the \ac{rdf} data in a format that supports data querying efficiently\\ \hline
      Authoring & Allowing the users to create new data or to access and 
@@ -793,7 +774,7 @@ can be performed.
     \label{ldlc-stages}
 \end{table}
 
-\section{Conversion of Data from Spreadsheets to RDF}
+\section{Mapping of Data from Spreadsheets to RDF}
 \label{sec:csvtordf}
 
 The preferred format of the data published on the semantic web is an \ac{rdf} format. 
@@ -806,7 +787,7 @@ using different open source tools~\cite{ermilov2013csv}
 listed by \ac{w3c}\footnote{\tt https://www.w3.org/wiki/ConverterToRdf} 
 or using \ac{rml}\footnote{\tt https://d2s.semanticscience.org/docs/convert-rml/}. 
 
-\subsection{Tools to Describe CSV Data using Vocabulary}
+\subsection{Open-Source Tools to Describe CSV Data using Vocabulary}
 \label{subsec:tools}
 
 %Some of the open-source tools listed by the \ac{w3c} 
@@ -814,7 +795,7 @@ or using \ac{rml}\footnote{\tt https://d2s.semanticscience.org/docs/convert-rml/
 %OpenRefine, RDF123, csv2rdf4lod, XLWrap, and Tarql.
 %After an extensive research on these tools, 
 %OpenRefine has been used in this thesis as most of these tools are out-dated.
-
+%
 %\subsubsection{OpenRefine}
 %\label{subsubsec:openrefine}
 %
@@ -827,6 +808,7 @@ or using \ac{rml}\footnote{\tt https://d2s.semanticscience.org/docs/convert-rml/
 
 ??? These blurbs, below, seem quite close to wiki entries... please be careful...
 and please avoid the list format... I will fix this :-) ???
+
 \begin{itemize}
    
     \item OpenRefine:
@@ -953,6 +935,14 @@ that can be used for \ac{rml} conversion.
 
 \section{Summary}
 \label{sec:summary}
+
+
+
+%Most of the editors from the list are 
+%either non-existent or 
+%there exists negligible information about them, 
+%which has driven the decision of the use of protégé 
+%for ontology development which is discussed in detail in Chapter~\ref{chap:proofOfConcept}.
 
 %The linked data life cycle is too basic and generic 
 %and may not be the best approach for describing data semantics. 
