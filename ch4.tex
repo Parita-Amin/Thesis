@@ -15,11 +15,36 @@ survey.
 \section{Describing Semantics for Survey Ontology}
 \label{sec:describingsemanticsforsurvey}
 
+As described in Chapter~\ref{chap:methodology}, 
+to create a new ontology, 
+an existing vocabulary can be reused or 
+a new vocabulary can be described. 
+According to the {\tt Linked Open Vocabularies} 
+website\footnote{\tt https://lov.linkeddata.es/dataset/lov/vocabs?q=survey}, 
+there are 6 survey-related vocabularies described, 
+as shown in Figure~\ref{lov-website}. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/survey/lov-website.png}
+    \caption{Search Results for ``Survey'' on {\tt Linked Open Vocabularies}  Website}
+    \label{lov-website}
+\end{figure}
+
+Some terms from the {\tt disco-DDI-RDF Discovery Vocabulary}~\cite{disco} 
+can be reused to describe Dr. Hepting's student feedback form. 
+For now, there is no existing vocabulary to describe ``likert'' items, 
+so the vocabulary for {\tt Survey} ontology has been described 
+without using any existing vocabularies. 
+The following Section focuses on describing new vocabulary for {\tt Survey} ontology.
+
 \section{Modelling Ontology for Survey Using Protégé}
 \label{sec:modelingontology}
 
 Figure~\ref{feedback-form} 
 shows the student feedback form for which the new vocabulary is described. 
+Dr. Hepting uses 9 \emph{likert-scale} questions and 3 \emph{open-ended} questions 
+in his feedback forms to collect the responses.
 
 \begin{figure}[htp]
     \centering
@@ -32,10 +57,10 @@ shows the student feedback form for which the new vocabulary is described.
 \label{subsec:surveyclasses}
 
 All the classes can be created and 
-described using the steps described in section~\ref{subsubsec:classhierarchy}. 
+described using the steps described in Section~\ref{subsubsec:classhierarchy}. 
 The resultant class hierarchy for the survey ontology 
 would be as shown in Figure~\ref{survey-class-hierarchy}. 
-A survey can have 
+A {\tt Survey} can have 
 {\tt Survey Collection}, 
 {\tt Survey Respondent}, and 
 {\tt Type of Survey} 
@@ -48,24 +73,22 @@ which have been considered for this ontology as well.
     \label{survey-class-hierarchy}
 \end{figure}
 
-Here, 
-the {\tt SurveyCollection} class corresponds to a collection of survey responses 
+The {\tt SurveyCollection} class corresponds to a collection of survey responses 
 that were collected for a particular course-offering ({\tt CourseOffering} class). 
-The type of survey used is feedback survey ({\tt FeedbackSurvey} class)
+The type of survey used is feedback survey ({\tt FeedbackSurvey} class, sub-class of {\tt Survey})
 with Dr. Hepting's feedback survey 
 as the specific survey instrument ({\tt HeptingStudentFeedbackSurvey} class)
 and responses to the survey ({\tt HeptingStudentFeedbackSurveyRespondent} class). 
-The Furthermore, 
-the survey questions and survey answers have classes 
+
+The survey questions and survey answers have classes 
 corresponding to various forms of question-answer. 
 Generally, 
 feedback surveys consist of two types of questions, 
 namely, 
 \emph{Likert Questions} and \emph{Open-ended Questions}.
 The type of questions might differ depending on the designer of the survey.
-
 The feedback survey in this research has Likert and Open-ended questions. 
-The classes described for the questions and answers are 
+The classes described for the question and answer are 
 {\tt SurveyQuestion} and {\tt SurveyAnswer} 
 as sub-classes of 
 {\tt HeptingStudentFeedbackSurvey} and 
@@ -74,151 +97,106 @@ respectively.
 For each survey question, 
 there is an answer, 
 where both of them are considered as distinct classes. 
-The {\tt SurveyQuestion} class has 
-{\tt LikertScaleQuestion} and {\tt OpenEndedQuestion} classes 
-whereas the {\tt SurveyAnswer} class has
-{\tt LikertScaleAnswer} and {\tt OpenEndedAnswer} classes
+The details of {\tt SurveyQuestion} and {\tt SurveyAnswer} classes 
+are in following sections. 
 
-\subsubsection{The ``OpenEndedQuestion'' Class}
-\label{subsubsec:openendedqueclass}
+\subsubsection{The ``SurveyQuestion'' Class}
+\label{subsubsec:surveyqueclass}
 
-\subsubsection{The ``OpenEndedAnswer'' Class}
-\label{subsubsec:openendedansclass}
-%Open-ended questions have unpredictable answers.
-
-\subsubsection{The ``LikertScaleQuestions'' Class}
-\label{subsubsec:likertqueclass}
-
-Likert questions are the questions for which the answers are from the preset list of answers. 
-For the Likert questions, 
-the questions can be either of type 
-??? do you develop these in sufficient detail to discuss here ???
-``Never-Always-4'' or 
-``Never-Always-5'' or 
-``Never-Always-7'' or 
-``Never-Always-*'', 
-of which Never-Always-5 has been used by Hepting~\cite{prof}. 
-The survey ontology consists of ``LikertScaleQuestions'' class for likert questions.
-which has two sub-classes: 
-``LikertItem'' and ``LikertItemLabel''. 
-The ``LikertItem'' class consists of the actual questions of the survey 
-(as shown in Figure~\ref{likert-item}) 
-which can be represented using the labels from the ``LikertItemLabel'' class. 
-For example, ``LikertQ1'' can be used for ``Q1\_The\_instructor\_is\_well-prepared\_for\_class''. 
-??? 
-This seems overly complicated.
-Can you have LikertQ1 as an instance/individual of LikertScaleQuestion
-and then have as properties of LikertQ1 a QuestionLabel "The instructor is well-prepared for class" and LikertScale (Never-Always-5). If this doesn't work, save it for future work
-in Chapter 5 :-)
-???
-The questions and labels are described as individuals of ``LikertItem'' and ``LikertItemLabel'' classes respectively.
+Figure~\ref{survey-que-class} shows the {\tt SurveyQuestion} Class from survey ontology. 
+Each question in survey has one question label whose datatype is string. 
+It has two sub-classes, one for each of the 
+{\tt OpenEndedQuestion} and {\tt LikertScaleQuestion} classes. 
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/likert-item.png}
-    \caption{{\tt LikertItem} class in survey ontology.}
-    \label{likert-item}
+    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-que-class.png}
+    \caption{{\tt SurveyQuestion} Class in Survey Ontology}
+    \label{survey-que-class}
 \end{figure}
 
-??? 
-I'm not clear about Fig~\ref{likert-item}
-SurveyQuestions can be LikertScaleQuestions or OpenEndedQuestions.
-Then don't
-the LikertScaleQuestions have a LikertScale (say Never1Always5)
-and a QuestionLabel (as would OpenEndedQuestions)
-???
+The {\tt OpenEndedQuestion} class describes 
+the set of 3 open-ended questions on the survey instrument 
+where each question has it's own class (sub-class of {\tt OpenEndedQuestion}), 
+namely, 
+{\tt OEQ1}, {\tt OEQ2}, and {\tt OEQ3} 
+with question labels, 
+\emph{What do you like best about the course?}, 
+\emph{What would you like to change about the course?}, and 
+\emph{What do you think the instructor's greatest strengths are?} respectively. 
+
+Likert-scale questions are the questions for which 
+the answers are from the preset list of answers. 
+The {\tt LikertScaleQuestion} class represents 
+a set of 9 likert-scale questions from the survey instrument.
+Each likert-scale question has a {\tt LikertQuestion} and a {\tt LikertScale}.  
+where {\tt LikertQuestion} has the 9 questions each as a distinct class. 
+{\tt LSQ1}, {\tt LSQ2}, . . , and {\tt LSQ9} are the classes 
+with question label representing the question.
+
+The {\tt LikertScale} class describes the likert scale used by Dr. Hepting in his survey. 
+The likert scale has degrees of agreement-either in the form of label or a number, 
+which determine the type of likert-scale used. 
+Here, there are 5 options, 1, 2, 3, 4, and 5  
+where 1 = Never and 5 = Always (see Figure~\ref{feedback-form}).
+In the vocabulary, each of these degrees of agreement 
+has been described as an individual of the {\tt LikertScale} class 
+as shown in Figure~\ref{likert-scale-class}. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/survey/likert-scale-class.png}
+    \caption{{\tt LikertScale} Class in Survey Ontology}
+    \label{likert-scale-class}
+\end{figure}
+
+\subsubsection{The ``SurveyAnswer'' Class}
+\label{subsubsec:surveyansclass}
+
+The {\tt SurveyAnswer} class respresents the responses to the questions of the survey. 
+It has two sub-classes, one for each of the 
+{\tt OpenEndedAnswer} and {\tt LikertScaleAnswer} classes.
+The {\tt OpenEndedAnswer} class represents 
+the set of answers for 3 open-ended questions.
+Open-ended questions have unpredictable answers. 
+Answer to each question is described by a disctinct class (sub-class of {\tt OpenEndedAnswer}) 
+that consists of a string, 
+namely, 
+{\tt OEQ1Ans}, {\tt OEQ2Ans}, and {\tt OEQ3Ans}.
    
-\subsubsection{The ``LikertScaleAnswer'' Class}
-\label{subsubsec:likertansclass}
-    
-In a Never-Always-5 type of survey, 
-5 degrees of agreement can be used. 
-It is challenging to decide ???WHY???
-whether the range for the degrees would be 
-0 to 4, 
-1 to 5, 
-10 to 50, or something else. 
-The degree of agreements used here are as shown in Table~\ref{likert-degrees}. 
-In addition to these degrees, 
-this ontology also considers the instances where the question wouldn't be answered. 
-In this case, 
-the field corresponding to the answer is left blank.
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|l|}
-    \hline Number \ & Agreement \\ \hline
-     1 & Never\\ \hline
-     2 & [Rarely]\\ \hline
-     3 & [Sometimes]\\ \hline
-     4 & [Often]\\ \hline
-     5 & Always\\ \hline
-    \end{tabular}
-    \caption{Degrees of Agreement for Likert-scale Answers}
-    \label{likert-degrees}
-\end{table}
-
-The ``LikertItemAnswer'' class represents answers for likert-scale questions of the survey with 
-``LikertAns\_Never1Always5'', as it's sub-class that 
-represents the likert scale with degrees of agreement from Table~\ref{likert-degrees}. 
-The ``Equivalent To'' 
-(from the description view of the class tab) 
-can be used to describe the 
-``LikertAns\_Never1Always5'' class in terms of a range containing degrees of agreement 
-as shown in Figure~\ref{likertscale5-class}. 
-Each of these degrees is treated as an individual 
-(section~\ref{subsec:individuals}) of the class.
-
-??? 
-The question I asked you a while ago was whether one could store 2\_Rarely instead of
-2 to convey more meaning and still have it resolve to 2 (xsd:positiveInteger)
-[or the label 'Rarely'] for
-SPARQL queries. If this doesn't work or would require too much work, then I think that you
-should simplify the ontology to be consistent with what you put into the turtle file.
-???
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/likertscale5-class.png}
-    \caption{``LikertAns\_Never1Always5'' class in Survey Ontology}
-    \label{likertscale5-class}
-\end{figure}
+The {\tt LikertScaleAnswer} class represents 
+the set of answers for 9 likert-scale questions. 
+Answer to each question would be a value belonging to
+the {\tt LikertScale},
+which is between 1 and 5.
+In case of no answer, the data field will be left blank. 
+There are 9 sub-classes of the {\tt LikertScaleAnswer} class, 
+namely, 
+{LSQ1Ans}, {LSQ2Ans}, . . , and {LSQ9Ans}.
+The next step is to describe properties.
 
 \subsection{Object Properties for Survey Ontology}
 \label{subsec:surveyobjectproperties}
 
 Using the method of naming and building object properties described in
-section~\ref{subsec:objectproperties}, 
-some of the primary object properties are described for the survey ontology 
-as shown in Figure~\ref{survey-object-properties}. 
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-object-properties.png}
-    \caption{Object Property Hierarchies, Domain and Range in Survey Ontology}
-    \label{survey-object-properties}
-\end{figure}
-
+Section~\ref{subsubsec:objectproperties}, 
+some of the primary object properties are described for the survey ontology
+which are listed in 
 Table~\ref{survey-object-properties-domains-and-ranges} 
-shows the list of the object properties along with their domain and range classes. 
-The parent node for all object properties is ``owl:TopObjectProperty''.
+along with their domain and range classes. 
+The parent node for all object properties is {\tt owl:TopObjectProperty}.
 
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|l|} 
     \hline \ \ \ \ \ Object Property & \ \ \ \ \ \ \ \ Domain & \ \ \ \ \ \ \ \ Range\\ \hline
-     hasSurveyQuestion & Survey & SurveyQuestions\\ \hline
-     hasSurveyAnswer & Survey & SurveyAnswers\\ \hline
-     hasOEAnswer\_Change & OpenEndedQuestions & OpenEndedAnswers\\ \hline
-     hasOEAnswer\_LikeBest & OpenEndedQuestions & OpenEndedAnswers\\ \hline
-     hasOEAnswer\_Strengths & OpenEndedQuestions & OpenEndedAnswers\\ \hline
-     hasLikertItemAnswer & LikertScaleQuestions & LikertAns\_Never1Always5\\ \hline
-     hasEligibleRespondents & SurveyCollection & Respondent\\ \hline
-     hasLikertItemLabel & LikertItem & LikertItemLabel\\ \hline
-     hasRespondent & SurveyCollection & Respondent\\ \hline
-     hasCollection & Course & SurveyCollection\\ \hline
-     respondedToSurvey & Respondent & Survey\\ \hline
+     hasCollection & CourseOffering & SurveyCollection\\ \hline
+     hasCourseOffering & HeptingStudentFeedbackSurvey & CourseOffering\\ \hline
+     hasRespondent & SurveyCollection & SurveyRespondent\\ \hline
      isTypeOf & FeedbackSurvey & Survey\\ \hline
+     hasQuestion & Survey & SurveyQuestion\\ \hline
+     hasLikertScale & LikertQuestion, LikertScaleAnswer & LikertScale\\ \hline
+     hasEligibleRespondents & SurveyCollection & \\ \hline
     \end{tabular}
     \caption{Object Properties and Their Domain and Range}
     \label{survey-object-properties-domains-and-ranges}
@@ -227,37 +205,33 @@ The parent node for all object properties is ``owl:TopObjectProperty''.
 \subsection{Data Properties for Survey Ontology}
 \label{subsec:surveydataproperties}
 
-Data properties for survey ontology have been described following the method described in section~\ref{subsec:dataproperties} 
-which are as shown in Figure~\ref{survey-data-properties}.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/survey-data-properties.png}
-    \caption{Data Property Hierarchies, Domain and Range in Survey Ontology}
-    \label{survey-data-properties}
-\end{figure}
-
-The parent node of all the data properties is ``owl:topDataProperty'' 
-and the domain and range for all the data properties are listed in Table~\ref{survey-data-properties-domains-and-ranges}. 
-The properties for Likert answers restrict the datatype to positive integer and to string for open-ended answers.
+Data properties for survey ontology have been described following the method described in 
+Section~\ref{subsubsec:dataproperties} 
+which are listed in 
+Table~\ref{survey-data-properties-domains-and-ranges} 
+along with their domain and range. 
+The parent node of all the data properties is {\tt owl:topDataProperty}.
+The properties for Likert answers restrict the datatype to positive integer 
+and to string for open-ended answers.
 
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|l|} 
     \hline 
     \ \ \ \ \ \ Data Property & \ \ Domain & \ \ \ \ \ \ \ \ Range\\ \hline
-    hasLikertQ1Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ2Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ3Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ4Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ5Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ6Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ7Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ8Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasLikertQ9Ans & Respondent & xsd:positiveInteger\\ \hline
-    hasOEAnswer\_Change & Respondent & xsd:string\\ \hline
-    hasOEAnswer\_LikeBest & Respondent & xsd:string\\ \hline
-    hasOEAnswer\_Strengths & Respondent & xsd:string\\ \hline
+    hasLSQ1Ans & LSQ1 & xsd:positiveInteger\\ \hline
+    hasLSQ2Ans & LSQ2 & xsd:positiveInteger\\ \hline
+    hasLSQ3Ans & LSQ3 & xsd:positiveInteger\\ \hline
+    hasLSQ4Ans & LSQ4 & xsd:positiveInteger\\ \hline
+    hasLSQ5Ans & LSQ5 & xsd:positiveInteger\\ \hline
+    hasLSQ6Ans & LSQ6 & xsd:positiveInteger\\ \hline
+    hasLSQ7Ans & LSQ7 & xsd:positiveInteger\\ \hline
+    hasLSQ8Ans & LSQ8 & xsd:positiveInteger\\ \hline
+    hasLSQ9Ans & LSQ9 & xsd:positiveInteger\\ \hline
+    hasOEQ1Ans & OEQ1 & xsd:string\\ \hline
+    hasOEQ2Ans & OEQ2 & xsd:string\\ \hline
+    hasOEQ3Ans & OEQ3 & xsd:string\\ \hline
+    hasQuestionText & SurveyQuestion & xsd:string\\ \hline
     \end{tabular}
     \caption{Data Properties and Their Domain and Range}
     \label{survey-data-properties-domains-and-ranges}
@@ -267,76 +241,77 @@ The properties for Likert answers restrict the datatype to positive integer and 
 \label{subsec:individuals}
 
 While dealing with ontologies, 
-an instance of class is termed as an ``Individual''. 
+an instance of class is termed as an {\tt Individual}. 
 In protégé, 
-an individual can be described as an instance of class using the Description view of the Class tab 
+an individual can be described as an instance of class 
+using the Description view of the Class tab 
 as shown in 
-Figure~\ref{instances-of-survey-class} 
-for ``Respondent'' class. 
+Figure~\ref{likert-scale-class} 
+for {\tt LikertScale} class. 
 A new individual can be described using the Individuals view of the Entities tab 
 where as 
 the property assertions view can be used to describe the property restrictions. 
-Table~\ref{survey-individuals} 
-shows a list of classes and individuals described in survey ontology.
-
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/survey/instances-of-survey-class.png}
-    \caption{Individual for Respondent Class}
-    \label{instances-of-survey-class}
-\end{figure}
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|l|l|} 
-    \hline \ \ \ \ \ \ \ \ \ \ \ \ Class & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Individuals \\ \hline
-     Respondent &  C1R1 \\ \hline
-     Course & CS280/202210 \\ \hline
-     SurveyCollection &  Collection1 \\ \hline
-     Event & Midterm \\ \hline
-     Semester &  202210 \\ \hline
-     LikertItem &  Q1\_LI \\ \hline
-     LikertItemLabel &  Q1\_LI\_Label \\ \hline
-     LikertAns\_Never1Always5 & 1\_Never, 2\_Rarely, 3\_Sometimes, 4\_Often, 5\_Always \\ \hline
-     \multirow{2}{9.5em}{OpenEndedQuestions} &  OEQuestion\_LikeBest, OEQuestion\_Change, \\& OEQuestion\_Strengths \\ \hline
-     OpenEndedAnswers & OEAns\_LikeBest, OEAns\_Change, OEAns\_Strengths \\ \hline
-    \end{tabular}
-    \caption{Classes and their Individuals. ??? This needs work: a survey has questions; and there are 2 types of questions -- OpenEnded OEQ (answer is a string) and Likert LIQ (answer is one of items on specified scale) and both have labels or text describing the question. HeptingStudentFeedback (say) is a Survey with 9 Likert Questions and 3 OpenEnded Questions. 
-    *** MAYBE: Survey is a Pizza, HeptingStudentFeedback is a specific Survey (like a specific 
-    pizza with certain ingredients... Respodent is a Customer and "hasLIQ01Answer", etc. are the 
-    customer details recorded, etc. WHAT DO YOU THINK?? 
-    Data is collected for a course offering (and a course can have more than one offering 
-    (an offering is in a semester). There can be more than one collection for an offering of a course 
-    [look at DISCO vocabulary for how that is organized] ???}
-    \label{survey-individuals}
-\end{table}
+In this research, 
+the individuals have been described as a part of data file (Appendix~\ref{chap:appendix-data}).
 
 The final class hierarchy (see Figure~\ref{survey-class-hierarchy}) 
 can be obtained 
 for feedback survey in protégé 
 using the HermiT 1.4.3.456 reasoner. 
-The blue back arrow 
-(``Survey'' and ``LikertItem'' class) 
+Figure~\ref{blue-back-arrow} shows 
+blue back arrows  
 in front of the yellow solid dot, 
 which indicates class, 
-show parent/child relationship other than that of SubClassOf. 
+to denote relationship among classes other than that of SubClassOf. 
 This feature can be enabled and disabled by selecting 
-``Display relationship in class hierarchy'' 
-option from the ``View'' menu of protégé. 
+{\tt Display relationship in class hierarchy} 
+option from the View menu of protégé. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/survey/blue-back-arrow.png}
+    \caption{Relationship among classes in Survey Ontology}
+    \label{blue-back-arrow}
+\end{figure}
 
 \subsection{Results of FAIR Evaluator}
 \label{fairresults}
+
+After describing, 
+the vocabulary was tested against the FAIR principles 
+to evaluate its usability 
+using the ``FOOPS! Ontology Pitfall Scanner for FAIR (Beta)''. 
+The results in Figure~\ref{fair-evaluator} 
+show that 30\% of the {\tt survey.owl} vocabulary 
+ obeys the FAIR principles~\cite{fair2016principles}. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/survey/fair-evaluator.png}
+    \caption{The Results of FAIR Evaluator for Survey Ontology}
+    \label{fair-evaluator}
+\end{figure}
+
+The results in Figure~\ref{fair-evaluator} 
+depicts that the {\tt survey.owl} vocabulary is 
+35\% Findable, 
+66\% Accessible, 
+33\% Interoperable, and
+11\% Reusable.
 
 \section{Data Validation Using SHACL}
 \label{sec:shacl}
 
 \ac{shacl}4P is a protégé plugin for \ac{shacl}, 
-which uses ``shapes'' to describe constraints. 
-\ac{shacl} can be used to validate the manually entered data which are stored in spreadsheets. 
+which uses \emph{shapes} to describe constraints. 
+\ac{shacl} can be used to validate the manually entered data 
+which are stored in spreadsheets. 
 For feedback survey, 
 the likert answers can only have values 
 1, 2, 3, 4, 5, or No Answer (blank cell). 
-To restrict the values of data properties corresponding to likert questions in Figure~\ref{survey-data-properties}, 
+To restrict the values of data properties 
+corresponding to likert questions 
+in Table~\ref{survey-data-properties-domains-and-ranges}, 
 \ac{shacl}4P has been used. 
 
 Protégé offers a view for \ac{shacl} editor as well as \ac{shacl} constraint violations. 
@@ -344,16 +319,16 @@ For successful working of \ac{shacl}4P,
 a reasoner should be enabled. 
 The \ac{shacl} editor provides three buttons, 
 namely, 
-``Open'', 
-``Save'' , and 
-``Validate''. 
-After opening the shapes file (Open button), 
-changes can be made and saved (Save button). 
-Where as the Validate button allows users to validate the data. 
+{\tt Open}, 
+{\tt Save}, and 
+{\tt Validate}. 
+After opening the shapes file ({\tt Open} button), 
+changes can be made and saved ({\tt Save} button). 
+Where as the {\tt Validate} button allows users to validate the data. 
 Figure~\ref{shacl-editor} 
-shows a part of ``SurveyShapes.txt'' 
+shows a part of {\tt SurveyShapes.txt} 
 file opened in \ac{shacl} editor of protégé 
-for the data property ``hasLikertQ1Ans''. 
+for the data property {\tt hasLSQ1Ans}. 
 
 \begin{figure}[htp]
     \centering
@@ -362,16 +337,16 @@ for the data property ``hasLikertQ1Ans''.
     \label{shacl-editor}
 \end{figure}
 
-On clicking the Validate button, 
+On clicking the {\tt Validate} button, 
 the summary of violated constraints is displayed 
 on the \ac{shacl} constraint violations view in protégé. 
 It contains the details like 
-``Severity'', 
-``SourceShape'', 
-``Message'', 
-``FocusNode'', 
-``Path'', and 
-``Value'' 
+{\tt Severity}, 
+{\tt SourceShape}, 
+{\tt Message}, 
+{\tt FocusNode}, 
+{\tt Path}, and 
+{\tt Value} 
 as shown in Figure~\ref{shacl-constraint-violations}.
 
 \begin{figure}[htp]
@@ -394,7 +369,7 @@ Protégé offers a plugin for DL as well as SPARQL queries which are discussed i
 
 Vasilevsky\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html} 
 defines DL query as a class expression that is constructed using constructs such as 
-`and’, `or’ (corresponding to set intersection) and `some’. 
+{\tt and}, {\tt or} (corresponding to set intersection) and {\tt some}. 
 Users can rapidly check that class definitions encompass the right subclasses 
 by running them via the DL Query tab. 
 
@@ -422,21 +397,23 @@ According to \ac{w3c}~\cite{garlik2013sparql},
 conjunctions, disjunctions, aggregation, subqueries, negation, and other operations 
 to define queries and optional graph patterns. 
 Protégé offers plugins for 
-``\ac{sparql} Query'' and ``Snap \ac{sparql} Query''.
+{\tt \ac{sparql} Query} and {\tt Snap \ac{sparql} Query}.
 
 \subsubsection{Using \ac{sparql} Query Plugin}
 \label{subsubsec:usingsparql}
     
-\ac{sparql} plugin in protégé is used to express simple queries on ontologies like displaying classes and subclasses. 
+\ac{sparql} plugin in protégé 
+is used to express simple queries 
+on ontologies like displaying classes and subclasses. 
 For instance, 
 consider the following query:
 
 \begin{lstlisting}
 
-    SELECT * WHERE { ?Respondent 
-        survey:hasOEAnswer_LikeBest ?Answer_LikeBest
-	OPTIONAL { ?Respondent 
-	survey:hasOEAnswer_Strengths ?Answer_Strengths }
+    SELECT * WHERE { ?SurveyRespondent survey:hasOEQ1Ans 
+    		?AnswerLikeBest
+	OPTIONAL { ?SurveyRespondent survey:hasOEQ3Ans 
+		?AnswerStrengths }
     }
 
 \end{lstlisting}
@@ -445,8 +422,8 @@ consider the following query:
  shows the result of expression of \ac{sparql} query on survey ontology. 
  Here, 
  the query is used to display 
- ``Respondent'',  ``hasOEAnswer\_LikeBest'',  and ``hasOEAnswer\_Strengths'' 
- with column titles Respondent, Answer\_LikeBest and Answer\_Strengths respectively.
+ {\tt SurveyRespondent},  {\tt hasOEQ1Ans},  and {\tt hasOEQ3Ans} 
+ with column titles SurveyRespondent, AnswerLikeBest and AnswerStrengths respectively.
     
 \begin{figure}[htp]
     \centering
@@ -467,10 +444,10 @@ consider the following query:
 
 \begin{lstlisting}
 
-    SELECT * WHERE { ?Respondent rdf:type survey:Respondent .
-	OPTIONAL {?Respondent survey:hasLikertQ6Ans 
+    SELECT * WHERE { ?Respondent rdf:type survey:SurveyRespondent .
+	OPTIONAL {?Respondent survey:hasLSQ6Ans 
 		?The_instructor_clearly_answers_questions}
-    } ORDER BY ?Respondent 
+    } ORDER BY ?SurveyRespondent 
    
 \end{lstlisting}
 
@@ -479,7 +456,7 @@ shows the result of expression of Snap \ac{sparql} query on survey ontology.
 It is necessary to enable a reasoner for successful working of Snap \ac{sparql} query. 
 Here, 
 the query is used to display 
-``Respondent'' and ``hasLikertQ6Ans'' 
+{\tt SurveyRespondent} and {\tt hasLSQ6Ans} 
 with column titles ?Respondent and ?The\_instructor\_clearly\_answers\_questions respectively.
  
 \begin{figure}[htp]
@@ -489,13 +466,14 @@ with column titles ?Respondent and ?The\_instructor\_clearly\_answers\_questions
     \label{survey-snap-sparql-query}
 \end{figure}
 
-\section{Conversion from Spreadsheets to Linked Data For Survey using OpenRefine}
+\section{Mapping Data from Spreadsheets to RDF For Survey using OpenRefine}
 \label{sec:surveycsvtolod}
 
 Primarily, 
 OpenRefine\footnote{https://openrefine.org/} 
-has been used to convert the data stored in spreadsheets to \ac{turtle} and \ac{rdf} files using the methodology 
-described in section~\ref{sec:csvtolodconversion}. 
+has been used to convert the data stored in spreadsheets 
+to \ac{turtle} and \ac{rdf} files using the methodology 
+described in Section~\ref{sec:csvtolodconversion}. 
 Using survey ontology in OpenRefine, 
 the CSV file consisting of survey responses is converted into 
 \ac{turtle} and \ac{rdf}/\ac{xml} files.
@@ -505,21 +483,22 @@ the next step is to manage \ac{rdf} Schema alignment
 to describe the data stored in CSV 
 in terms of linked data vocabulary. 
 On selecting 
-``Edit \ac{rdf} Skeleton'' from the menu of \ac{rdf} Extension, 
-an ``\ac{rdf} Schema alignment'' dialog box 
+{\tt Edit \ac{rdf} Skeleton} from the menu of \ac{rdf} Extension, 
+an {\tt \ac{rdf} Schema alignment} dialog box 
 appears which offers two options: 
-\ac{rdf} Skeleton and \ac{rdf} Preview. 
+{\tt \ac{rdf} Skeleton} and {\tt \ac{rdf} Preview}. 
 The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
- 
-\begin{lstlisting} 
-     Base URI: https://parita-amin.github.io/ 
-\end{lstlisting}
+
+\begin{flalign}
+    \text{\tt Base URI: https://parita-amin.github.io/ } &&
+    \label{base-uri}
+\end{flalign}
  
 \subsection{RDF Skeleton}
 \label{subsec:rdfskeleton}
 
-Figure~\ref{openrefine-rdf-skeleton} 
-shows \ac{rdf} skeleton for CSV using survey ontology. 
+Figures~\ref{openrefine-rdf-skeleton-1}, ~\ref{openrefine-rdf-skeleton-2}, and~\ref{openrefine-rdf-skeleton-3} 
+show \ac{rdf} skeleton for CSV using survey ontology. 
 It consists of a list of 
 prefixes along with options for adding and managing prefixes; 
 \ac{uri} for index count; 
@@ -527,121 +506,133 @@ and the fields in the project with an option of using linked data vocabularies t
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-skeleton.png}
-    \caption{RDF Skeleton for CSV using Survey Ontology}
-    \label{openrefine-rdf-skeleton}
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-skeleton-1.png}
+    \caption{RDF Skeleton for CSV using Survey Ontology, 1 of 3}
+    \label{openrefine-rdf-skeleton-1}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-skeleton-2.png}
+    \caption{RDF Skeleton for CSV using Survey Ontology, 2 of 3}
+    \label{openrefine-rdf-skeleton-2}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-skeleton-3.png}
+    \caption{RDF Skeleton for CSV using Survey Ontology, 3 of 3}
+    \label{openrefine-rdf-skeleton-3}
 \end{figure}
 
 \subsubsection{Prefixes}
 \label{subsubsec:prefixes}
-    
-    \begin{itemize}
-    
-        \item OpenRefine offers some default prefixes, 
-        namely, 
-        ``rdf'', ``owl'', ``rdfs'', and ``foaf'', 
-        which can be used and managed as necessary. 
-    
-        \item It also allows adding other prefixes which can be done by clicking on 
-        ``+Add'' option 
-        as shown in Figure~\ref{openrefine-add-prefix}. 
-        Following prefixes along with \ac{uri}s have been added to the list:
-        
-        \begin{lstlisting} 
-    survey : https://parita-amin.github.io/survey.owl#
-    xsd : http://www.w3.org/2001/XMLSchema#
-        \end{lstlisting}
-        
-    
-        \begin{figure}[htp]
-            \centering
-            \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-add-prefix.png}
-            \caption{Add New Prefix for Survey Ontology in OpenRefine}
-            \label{openrefine-add-prefix}
-        \end{figure}
-    
-        \item The prefixes can be deleted and/or refreshed using ``Manage'' option 
-        as shown in Figure~\ref{openrefine-manage-prefix}.
-        
-        \begin{figure}[htp]
-            \centering
-            \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-manage-prefix.png}
-            \caption{Manage Prefixes in OpenRefine}
-            \label{openrefine-manage-prefix}
-        \end{figure}
-        
-    \end{itemize}
+
+OpenRefine offers some default prefixes, 
+namely, 
+{\tt rdf}, {\tt owl}, {\tt rdfs}, and {\tt foaf}, 
+which can be used and managed as necessary. 
+It also allows adding other prefixes which can be done by clicking on 
+{\tt +Add} option 
+as shown in Figure~\ref{openrefine-add-prefix}. 
+Following prefixes along with \ac{uri}s have been added to the list:
+
+{\tt survey : https://parita-amin.github.io/survey.owl\#
+
+xsd : http://www.w3.org/2001/XMLSchema\#}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-add-prefix.png}
+    \caption{Add New Prefix for Survey Ontology in OpenRefine}
+    \label{openrefine-add-prefix}
+\end{figure}
+
+\noindent
+The prefixes can be deleted and/or refreshed using {\tt Manage} option 
+as shown in Figure~\ref{openrefine-manage-prefix}.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-manage-prefix.png}
+    \caption{Manage Prefixes in OpenRefine}
+    \label{openrefine-manage-prefix}
+\end{figure}
 
 \subsubsection{RDF Node for Index}
 \label{subsubsec:rdfnode}
     
 Index is a unique identifier for the number of records in the table. 
-Figure~\ref{openrefine-index} 
-shows options available for the settings of the \ac{rdf} Node for index. 
-It offers options for 
-``Use content...'', 
-``Content used...'', and 
-``Use expression...''.
-For survey data, 
-\ac{uri} for ``Response'' has been set as unique respondent number. 
-On clicking ``Preview edit'', format of expression to display ``Response'' can be modified.
+The settings of the \ac{rdf} Node for index 
+offer options for 
+{\tt Use content...}, 
+{\tt Content used...}, and 
+{\tt Use expression...}.
+On clicking {\tt Preview edit}, format of expression to display records can be modified.
        
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-index.png}
-    \caption{RDF Node Settings for Response Number from CSV in OpenRefine}
-    \label{openrefine-index}
-\end{figure} 
+%\begin{figure}[htp]
+%    \centering
+%    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-index.png}
+%    \caption{RDF Node Settings for Response Number from CSV in OpenRefine}
+%    \label{openrefine-index}
+%\end{figure} 
 
 \subsubsection{Describing Fields in terms of Linked Data}
 \label{subsubsec:describingfields}
 
 The next step is describing the CSV data
 in terms of linked open vocabularies. 
-``Available prefixes'' 
+{\tt Available prefixes} 
 allows using vocabularies described in the list of ontologies. 
-Figure~\ref{openrefine-selecting-property} 
-shows the list of classes and properties along with the ontology prefixes that match the input string. 
+It offers a list of classes and properties along with the ontology prefixes that match the input string. 
 The vocabulary can be selected for each field of the CSV 
 to represent the data. 
 
 For instance, 
-``survey:hasLikertQ1Ans'' 
+{\tt survey:hasLSQ1Ans'}
 property can be assigned to the data corresponding to the field, 
-``Q01\_Rate instructor->1. The instructor is well-prepared for class'' 
+\emph{Q01\_Rate instructor->1. The instructor is well-prepared for class} 
 of the CSV. 
 
-\begin{figure}[htp]
-    \centering
-    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-selecting-property.png}
-    \caption{Using Linked Data to Describe the Fields in CSV for Feedback Responses}
-    \label{openrefine-selecting-property}
-\end{figure}
+%\begin{figure}[htp]
+%    \centering
+%    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-selecting-property.png}
+%    \caption{Using Linked Data to Describe the Fields in CSV for Feedback Responses}
+%    \label{openrefine-selecting-property}
+%\end{figure}
 
-\subsection{RDF Preview}\label{subsec:rdfpreview}
+\subsection{RDF Preview}
+\label{subsec:rdfpreview}
 
 Once the \ac{rdf} skeleton is set, 
-``\ac{rdf} Preview'' 
+{\tt \ac{rdf} Preview} 
 can be used to view the description of CSV data. 
 The fields of data that were not described in \ac{rdf} skeleton, 
 do not appear in \ac{rdf} Preview. 
 It consists of a \ac{turtle} representation 
 of the first 10 rows of the resultant linked data. 
 
-Figure~\ref{openrefine-rdf-preview} 
-depicts an \ac{rdf} Preview 
+Figures~\ref{openrefine-rdf-preview-1} and~\ref{openrefine-rdf-preview-2} 
+depict an \ac{rdf} Preview 
 of using survey vocabulary to describe the data stored in CSV. 
 It includes 
-all the prefixes for vocabularies from ``Available prefixes'' 
+all the prefixes for vocabularies from {\tt Available prefixes} 
 and with their \ac{uri}s
 along with the sample representation of the result of 
 using \ac{rdf} Skeleton to describe data.
 
 \begin{figure}[htp]
     \centering
-    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-preview.png}
-    \caption{RDF Preview for CSV using Survey Ontology}
-    \label{openrefine-rdf-preview}
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-preview-1.png}
+    \caption{RDF Preview for CSV using Survey Ontology, 1 of 2}
+    \label{openrefine-rdf-preview-1}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=\columnwidth]{images/ch4/openrefine/openrefine-rdf-preview-2.png}
+    \caption{RDF Preview for CSV using Survey Ontology, 2 of 2}
+    \label{openrefine-rdf-preview-2}
 \end{figure}
 
 Any modifications in \ac{rdf} skeleton will reflect on the \ac{rdf} preview. 
@@ -653,7 +644,7 @@ it can be stored as
 \section{Publishing Survey Vocabulary with License}
 \label{sec:publishingsurveyvocabulary}
 
-As mentioned in section~\ref{sec:announcinglod}, 
+As mentioned in Section~\ref{sec:announcinglod}, 
 it is necessary to specify an appropriate license for linked open data. 
 When there is a clear declaration regarding 
 the source, ownership, and conditions associated to 
@@ -668,9 +659,10 @@ data reuse is more likely to happen.
     that Dr. Hepting solicits from his students 
     in the classes he teaches, 
     can be accessed as \ac{turtle} 
-    file from my website\footnote{https://parita-amin.github.io/sample.ttl} 
+    file from my website\footnote{\tt https://parita-amin.github.io/sample.ttl} 
     or can be viewed by visiting the link to the \ac{turtle} 
-    file on my website\footnote{https://parita-amin.github.io/evaluationofteaching.html} (see Figure~\ref{survey-license}).
+    file on my website\footnote{\tt https://parita-amin.github.io/evaluationofteaching.html} 
+    (see Figure~\ref{survey-license}).
     
     \begin{figure}[htp]
        \centering
@@ -682,7 +674,7 @@ data reuse is more likely to happen.
     \item License:
     
     The linked open dataset discussed in this research has an open license: 
-    ``Attribution-ShareAlike 4.0 International''\footnote{https://creativecommons.org/licenses/by-sa/4.0/}. 
+    {\tt Attribution-ShareAlike 4.0 International}\footnote{\tt https://creativecommons.org/licenses/by-sa/4.0/}. 
     The degree of transparency increases as more data become available under an open license. 
     This makes it possible for the user to investigate the relationships in the data and use it effectively. 
 
