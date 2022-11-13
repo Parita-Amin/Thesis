@@ -11,6 +11,13 @@ presents a proof of concept for this methodology with real data.
 
 \section{Describe Semantics}
 \label{sec:semantics}
+ 
+It is feasible to use existing linked open vocabularies 
+to develop new ontologies~\cite{kotis2020ontology}. 
+``Linked Open Vocabularies'' available at {\tt https://lov.linkeddata.es/dataset/lov} 
+serves as the main resource to linked open vocabularies. 
+There exist some vocabularies for ``Survey'' but 
+none of them describes ``Likert'' items.
 
 In data science, 
 for a fresh and developing branch like ontology engineering, 
@@ -29,45 +36,23 @@ from the already existing vocabularies.
 
 There are editors available that help the publishers to create their own 
 linked open vocabularies. 
-In 2013, Alatrish~\cite{alatrish2013comparison}, 
-at the University of Belgrad
-in 2013, 
-compared the most-used ontology editors 
-based on the following features:
-
-\begin{itemize}
- 
-  \item General Description: 
-  developers' details, and accessibility 
-  on the internet (open source or software licensed)
- 
-  \item Software Architecture and Tools Evaluation: 
-  semantic web architecture, 
-  support for plug-ins, 
-  backup management, and ontology storage
- 
-  \item Interoperability: 
-  interoperability with other ontology tools, 
-  support and translation for other languages
- 
-  \item Knowledge Representation: 
-  Knowledge Representation (KR) paradigm of knowledge model, 
-  axiom language, and methodological support
- 
-  \item Inference Services: 
-  built-in inference engine, 
-  other attached inference engines, 
-  and constraint/consistency checking
- 
-  \item Usability: 
-  graphical taxonomy, graphical views, 
-  zooms, collaborative working, and ontology libraries
-
-\end{itemize}
+The editors can be compared and chosen based on some basic features like 
+\emph{General Description} 
+(developers' details, and accessibility on the internet), 
+\emph{Software Architecture and Tools Evaluation} 
+(semantic web architecture, support for plug-ins, backup management, and ontology storage), 
+\emph{Interoperability} 
+(interoperability with other ontology tools, support and translation for other languages) 
+\emph{Knowledge Representation} 
+(Knowledge Representation paradigm of knowledge model, axiom language, and methodological support), 
+\emph{Inference Services} 
+(built-in inference engine, other attached inference engines, and constraint/consistency checking), and
+\emph{Usability} 
+(graphical taxonomy, graphical views, zooms, collaborative working, and ontology libraries).
 
 After studying the details and comparison 
-among the most used editors 
-based on the above features by Alatrish~\cite{alatrish2013comparison}, 
+among some popular editors 
+by Clunis and Sashanie~\cite{clunis2019comparative}, 
 protégé has been used for the development of the instrument 
 to support this research and thesis work 
 as it is the most popular among the researchers. 
@@ -76,17 +61,9 @@ Also, the other editors comparatively are out-dated or have not advanced.
 \subsection{Protégé}
 \label{subsec:protege}
 
-Horridge et al.~\cite{protege} have developed 
-%Stanford University has developed 
+Horridge et al.~\cite{protege} have developed  
 Protégé\footnote{\tt https://protege.stanford.edu}, 
 ``a free, open-source ontology editor and framework for building intelligent systems''.
-%that offers a set of substantial tools
-%%footnote{along with various plug-ins and Java-based \ac{api}} 
-%to build ontologies for knowledge-based applications and to implement various 
-%``knowledge-modeling structures and actions that support the creation, 
-%visualization and manipulation of ontologies 
-%in various representation formats''~\cite{alatrish2013comparison}. 
-%Protégé offers customization options to build knowledge models and to add data. 
 
 \subsubsection{Usability of Protégé}
 \label{subsubsec:usabilityofprotege}
@@ -174,7 +151,7 @@ the report of the evaluation is as follows:
 \subsection{Procedure to Describe OWL Vocabularies Using Protégé}
 \label{subsec:protegeprocedure}
 
-This section focuses on a step-wise methodology 
+This Section focuses on a step-wise methodology 
 that has been followed to create new \ac{owl} 
 vocabularies using protégé. 
 Protégé is available for use as a web application or 
@@ -185,16 +162,6 @@ To commence with the process of building an ontology,
 a new project needs to be created 
 with a unique \ac{iri}\footnote{\tt https://www.w3.org/2011/rdf-wg/wiki/IRIs/RDFConceptsProposal} 
 and the ontology version. 
-%Figure~\ref{protege-homescreen} 
-%shows the protégé home-screen with a new project created and an \ac{iri} 
-%with the name and version of ontology.
-%
-%\begin{figure}[htp]
-%    \centering
-%    \includegraphics[width=15cm]{images/ch3/protege/protege-homescreen.png}
-%    \caption{Protégé Home-screen for a New Project with an Ontology Name and an IRI}
-%    \label{protege-homescreen}
-%\end{figure}
 
 \subsubsection{Classes and Class Hierarchy}
 \label{subsubsec:classhierarchy}
@@ -230,17 +197,9 @@ there are three steps to be followed:
     \item Select {\tt owl:Thing} in the Class Hierarchy View 
     of the Classes tab from the Windows menu followed by selecting {\tt Create class hierarchy...} 
     from the Tools menu, 
-%    as shown in Figure~\ref{tools-menu-class-hierarchy} 
     to open a {\tt Enter hierarchy} pop-up window 
     which allows the users to add classes to the ontology.
-    
-%    \begin{figure}[htp]
-%        \centering
-%        \includegraphics[width=15cm]{images/ch3/protege/tools-menu-class-hierarchy.png}
-%        \caption{Tools Menu to Create Class Hierarchy}
-%        \label{tools-menu-class-hierarchy}
-%    \end{figure}
-    
+     
     \item Enter the class names in the pop-up window starting from the left. 
     For the child nodes, 
     leave some spaces before writing the class name. 
@@ -262,15 +221,6 @@ there are three steps to be followed:
     The checkbox needs to be checked accordingly. 
     Usually, 
     it is recommended to create disjoint sibling classes which can be changed later as necessary.
-%    , 
-%    as shown in Figure~\ref{create-disjoint-siblings}.
-%    
-%    \begin{figure}[htp]
-%        \centering
-%        \includegraphics[width=15cm]{images/ch3/protege/create-disjoint-siblings.png}
-%        \caption{Pop-up Window to Create Disjoint Sibling Classes}
-%        \label{create-disjoint-siblings}
-%    \end{figure}
     
 \end{enumerate}
 
@@ -298,18 +248,9 @@ is the root node of the object properties' hierarchy.
 The hierarchy for object properties can be built 
 by selecting a property in the Object Property Hierarchy view 
 of the Object Property Views tab and 
-then going to the tools menu and selecting {\tt Create object property hierarchy...}.
-%as shown in Figure~\ref{tools-menu-object-property-hierarchy}. 
+then going to the tools menu and selecting {\tt Create object property hierarchy...}. 
 The remaining steps are similar to the ones that are followed for building class hierarchy 
-(section~\ref{subsubsec:classhierarchy}).    
-
-%\begin{figure}[htp]
-%    \centering
-%    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-object-property-hierarchy.png}
-%    \caption{Tools Menu to Create Object Property Hierarchy}
-%    \label{tools-menu-object-property-hierarchy}
-%\end{figure}
-
+(Section~\ref{subsubsec:classhierarchy}).    
 Also, 
 the description view of object properties hierarchy 
 allows the user to describe the object properties. 
@@ -389,19 +330,10 @@ is the root node of the data properties' hierarchy.
 The data property hierarchy can be built by selecting a property 
 in the Data Property Hierarchy view of the Data Property Views tab and 
 then going to the tools menu and 
-selecting {\tt Create data property hierarchy...}.
-%as shown in Figure~\ref{tools-menu-data-property-hierarchy}. 
+selecting {\tt Create data property hierarchy...}.  
 The remaining steps are similar to the ones that are followed 
 for building class and object property hierarchy 
-(section~\ref{subsubsec:classhierarchy}). 
-
-%\begin{figure}[htp] 
-%    \centering
-%    \includegraphics[width=15cm]{images/ch3/protege/tools-menu-data-property-hierarchy.png}
-%    \caption{Tools Menu to Create Data Property Hierarchy}
-%    \label{tools-menu-data-property-hierarchy}
-%\end{figure}
-
+(Section~\ref{subsubsec:classhierarchy}). 
 Data properties can be described using the description view 
 of data properties of hierarchy which included details like 
 {\tt Equivalent To}, 
@@ -453,6 +385,47 @@ offers support for some built-in semantic reasoners which are listed below:
 
 \subsubsection{The FAIR Principles}
 \label{subsubsec: fairprinciples}
+
+After developing the linked data vocabulary, 
+the next step is to use this vocabulary, 
+either to develop another ontology or to map data but
+before that, 
+it is important to check 
+if the developed vocabulary meets the standards.
+The FAIR principles~\cite{fair2016principles} for linked open data 
+were published in 2016.
+According to the GoFAIR~\cite{gofair}, 
+``the authors intended to provide guidelines 
+to improve the 
+{\tt Findability}, 
+{\tt Accessibility}, 
+{\tt Interoperability}, and 
+{\tt Reuse} of digital assets''. 
+The FAIR principles as listed by GoFAIR\cite{gofair} are:
+
+\begin{itemize}
+   
+    \item Findable: 
+    The metadata and data should be easy to find for both humans and computers in order to be reused.
+   
+    \item Accessible: 
+    After finding the data,
+    the data needs to be accessible, possibly including authentication and authorization.
+   
+    \item Interoperable: 
+    Users should be able to integrate the data with other data, and 
+    interoperate with applications or workflows 
+    for analysis, storage, and processing.
+   
+    \item Reusable: 
+    To optimize the reuse of the data, 
+    metadata and data should be well-described 
+    so that they can be replicated and/or combined in different settings.
+
+\end{itemize}
+
+Chapter~\ref{chap:proofOfConcept} discusses the results of using 
+FAIR principles to evaluate the {\tt Survey} vocabulary.
 
 \subsection{Data Validation}
 \label{subsec:datavalidation}
