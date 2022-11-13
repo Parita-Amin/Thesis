@@ -1,6 +1,6 @@
 %!TEX root = parita-msc.tex
-\chapter{OWL Vocabulary for Survey Data}
-\label{chap:appendix-owl}
+\chapter{OWL Vocabulary for Survey Data: survey.owl}
+\label{appendix-owl}
 
 OWL Vocabulary for Survey Data.
 This is the OWL file that describes the feedback survey data received.
@@ -54,68 +54,38 @@ This is the OWL file that describes the feedback survey data received.
 
 ###  https://parita-amin.github.io/survey.owl#hasCollection
 survey:hasCollection rdf:type owl:ObjectProperty ;
-                     rdfs:domain survey:Course ;
+                     rdfs:domain survey:CourseOffering ;
                      rdfs:range survey:SurveyCollection .
 
 
-###  https://parita-amin.github.io/survey.owl#hasContent
-survey:hasContent rdf:type owl:ObjectProperty .
+###  https://parita-amin.github.io/survey.owl#hasCourseOffering
+survey:hasCourseOffering rdf:type owl:ObjectProperty ;
+                         rdfs:domain survey:HeptingStudentFeedbackSurvey ;
+                         rdfs:range survey:CourseOffering .
 
 
 ###  https://parita-amin.github.io/survey.owl#hasEligibleRespondents
 survey:hasEligibleRespondents rdf:type owl:ObjectProperty ;
-                              rdfs:domain survey:SurveyCollection ;
-                              rdfs:range survey:Respondent .
+                              rdfs:domain survey:SurveyCollection .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertItemAnswer
-survey:hasLikertItemAnswer rdf:type owl:ObjectProperty ;
-                           rdfs:domain survey:LikertScaleQuestions ;
-                           rdfs:range survey:LikertAns_Never1Always5 .
+###  https://parita-amin.github.io/survey.owl#hasLikertScale
+survey:hasLikertScale rdf:type owl:ObjectProperty ;
+                      rdfs:domain survey:LikertQuestion ,
+                                  survey:LikertScaleAnswer ;
+                      rdfs:range survey:LikertScale .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertItemLabel
-survey:hasLikertItemLabel rdf:type owl:ObjectProperty ;
-                          rdfs:domain survey:LikertItem ;
-                          rdfs:range survey:LikertItemLabel .
-
-
-###  https://parita-amin.github.io/survey.owl#hasOEAnswer_Change
-survey:hasOEAnswer_Change rdf:type owl:ObjectProperty ;
-                          rdfs:domain survey:OpenEndedQuestions ;
-                          rdfs:range survey:OpenEndedAnswers .
-
-
-###  https://parita-amin.github.io/survey.owl#hasOEAnswer_LikeBest
-survey:hasOEAnswer_LikeBest rdf:type owl:ObjectProperty ;
-                            rdfs:domain survey:OpenEndedQuestions ;
-                            rdfs:range survey:OpenEndedAnswers .
-
-
-###  https://parita-amin.github.io/survey.owl#hasOEAnswer_Strengths
-survey:hasOEAnswer_Strengths rdf:type owl:ObjectProperty ;
-                             rdfs:domain survey:OpenEndedQuestions ;
-                             rdfs:range survey:OpenEndedAnswers .
+###  https://parita-amin.github.io/survey.owl#hasQuestion
+survey:hasQuestion rdf:type owl:ObjectProperty ;
+                   rdfs:domain survey:Survey ;
+                   rdfs:range survey:SurveyQuestion .
 
 
 ###  https://parita-amin.github.io/survey.owl#hasRespondent
 survey:hasRespondent rdf:type owl:ObjectProperty ;
                      rdfs:domain survey:SurveyCollection ;
-                     rdfs:range survey:Respondent .
-
-
-###  https://parita-amin.github.io/survey.owl#hasSurveyAnswer
-survey:hasSurveyAnswer rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf survey:hasContent ;
-                       rdfs:domain survey:Survey ;
-                       rdfs:range survey:SurveyAnswers .
-
-
-###  https://parita-amin.github.io/survey.owl#hasSurveyQuestion
-survey:hasSurveyQuestion rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf survey:hasContent ;
-                         rdfs:domain survey:Survey ;
-                         rdfs:range survey:SurveyQuestions .
+                     rdfs:range survey:SurveyRespondent .
 
 
 ###  https://parita-amin.github.io/survey.owl#isTypeOf
@@ -124,405 +94,434 @@ survey:isTypeOf rdf:type owl:ObjectProperty ;
                 rdfs:range survey:Survey .
 
 
-###  https://parita-amin.github.io/survey.owl#respondedToSurvey
-survey:respondedToSurvey rdf:type owl:ObjectProperty ;
-                         rdfs:domain survey:Respondent ;
-                         rdfs:range survey:Survey .
-
-
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ1Ans
-survey:hasLikertQ1Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q1_The_instructor_is_well-prepared_for_class ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ1Ans
+survey:hasLSQ1Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ1 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ2Ans
-survey:hasLikertQ2Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q2_The_instructor_clearly_communicates_his_expectations _for_student_preparation_and_participation ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ2Ans
+survey:hasLSQ2Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ2 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ3Ans
-survey:hasLikertQ3Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q3_The_instructor_uses_class_time_effectively ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ3Ans
+survey:hasLSQ3Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ3 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ4Ans
-survey:hasLikertQ4Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q4_The_instructor_has_clear_expectations_for_assigned_work ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ4Ans
+survey:hasLSQ4Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ4 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ5Ans
-survey:hasLikertQ5Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q5_The_instructor_encourages_student_participation ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ5Ans
+survey:hasLSQ5Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ5 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ6Ans
-survey:hasLikertQ6Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q6_The_instructor_clearly_answers_questions ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ6Ans
+survey:hasLSQ6Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ6 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ7Ans
-survey:hasLikertQ7Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q7_The_instructor_treats_students_with_respect ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ7Ans
+survey:hasLSQ7Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ7 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ8Ans
-survey:hasLikertQ8Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q8_The_instructor_effectively_directs_and_stimulates_discussion ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ8Ans
+survey:hasLSQ8Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ8 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasLikertQ9Ans
-survey:hasLikertQ9Ans rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain survey:Q9_The_instructor_effectively_encourages_students_to_ask _questions_and_give_answers ;
-                      rdfs:range xsd:positiveInteger .
+###  https://parita-amin.github.io/survey.owl#hasLSQ9Ans
+survey:hasLSQ9Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:LSQ9 ;
+                  rdfs:range xsd:positiveInteger .
 
 
-###  https://parita-amin.github.io/survey.owl#hasOEAns_Change
-survey:hasOEAns_Change rdf:type owl:DatatypeProperty ;
-                       rdfs:domain survey:Respondent ;
+###  https://parita-amin.github.io/survey.owl#hasOEQ1Ans
+survey:hasOEQ1Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:OEQ1 ;
+                  rdfs:range xsd:string .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEQ2Ans
+survey:hasOEQ2Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:OEQ2 ;
+                  rdfs:range xsd:string .
+
+
+###  https://parita-amin.github.io/survey.owl#hasOEQ3Ans
+survey:hasOEQ3Ans rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain survey:OEQ3 ;
+                  rdfs:range xsd:string .
+
+
+###  https://parita-amin.github.io/survey.owl#hasQuestionText
+survey:hasQuestionText rdf:type owl:DatatypeProperty ;
+                       rdfs:domain survey:SurveyQuestion ;
                        rdfs:range xsd:string .
-
-
-###  https://parita-amin.github.io/survey.owl#hasOEAns_LikeBest
-survey:hasOEAns_LikeBest rdf:type owl:DatatypeProperty ;
-                         rdfs:domain survey:Respondent ;
-                         rdfs:range xsd:string .
-
-
-###  https://parita-amin.github.io/survey.owl#hasOEAns_Strengths
-survey:hasOEAns_Strengths rdf:type owl:DatatypeProperty ;
-                          rdfs:domain survey:Respondent ;
-                          rdfs:range xsd:string .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  https://parita-amin.github.io/survey.owl#Course
-survey:Course rdf:type owl:Class ;
-              rdfs:subClassOf survey:SurveyCollection .
-
-
-###  https://parita-amin.github.io/survey.owl#Event
-survey:Event rdf:type owl:Class ;
-             rdfs:subClassOf survey:SurveyCollection .
+###  https://parita-amin.github.io/survey.owl#CourseOffering
+survey:CourseOffering rdf:type owl:Class ;
+                      rdfs:subClassOf survey:SurveyCollection ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty survey:hasCollection ;
+                                        owl:someValuesFrom survey:SurveyCollection
+                                      ] .
 
 
 ###  https://parita-amin.github.io/survey.owl#FeedbackSurvey
 survey:FeedbackSurvey rdf:type owl:Class ;
-                      rdfs:subClassOf survey:Survey .
+                      rdfs:subClassOf survey:Survey ;
+                      owl:disjointWith survey:FeedbackSurveyRespondent .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertAns_Never1Always5
-survey:LikertAns_Never1Always5 rdf:type owl:Class ;
-                               owl:equivalentClass [ rdf:type owl:Class ;
-                                                     owl:oneOf ( <https://parita-amin.github.io/survey.owl#1_Never>
-                                                                 <https://parita-amin.github.io/survey.owl#2_Rarely>
-                                                                 <https://parita-amin.github.io/survey.owl#3_Sometimes>
-                                                                 <https://parita-amin.github.io/survey.owl#4_Often>
-                                                                 <https://parita-amin.github.io/survey.owl#5_Always>
-                                                               )
-                                                   ] ;
-                               rdfs:subClassOf survey:LikertItemAnswer .
+###  https://parita-amin.github.io/survey.owl#FeedbackSurveyRespondent
+survey:FeedbackSurveyRespondent rdf:type owl:Class ;
+                                rdfs:subClassOf survey:SurveyRespondent .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertItem
-survey:LikertItem rdf:type owl:Class ;
-                  rdfs:subClassOf survey:LikertScaleQuestions ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty survey:hasLikertItemAnswer ;
-                                    owl:someValuesFrom survey:LikertItemAnswer
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty survey:hasLikertItemLabel ;
-                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                    owl:onClass survey:LikertItemLabel
-                                  ] ;
-                  owl:disjointWith survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#HeptingStudentFeedbackSurvey
+survey:HeptingStudentFeedbackSurvey rdf:type owl:Class ;
+                                    rdfs:subClassOf survey:FeedbackSurvey ;
+                                    owl:disjointWith survey:HeptingStudentFeedbackSurveyRespondent .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertItemAnswer
-survey:LikertItemAnswer rdf:type owl:Class ;
-                        rdfs:subClassOf survey:SurveyAnswers ;
-                        owl:disjointWith survey:OpenEndedAnswers .
+###  https://parita-amin.github.io/survey.owl#HeptingStudentFeedbackSurveyRespondent
+survey:HeptingStudentFeedbackSurveyRespondent rdf:type owl:Class ;
+                                              rdfs:subClassOf survey:FeedbackSurveyRespondent .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertItemLabel
-survey:LikertItemLabel rdf:type owl:Class ;
-                       rdfs:subClassOf survey:LikertScaleQuestions .
+###  https://parita-amin.github.io/survey.owl#LSQ1
+survey:LSQ1 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor is well-prepared for class"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ1
-survey:LikertQ1 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ1Ans
+survey:LSQ1Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ2
-survey:LikertQ2 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ2
+survey:LSQ2 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor clearly communicates his expectations for student preparation and participation"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ3
-survey:LikertQ3 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ2Ans
+survey:LSQ2Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ4
-survey:LikertQ4 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ3
+survey:LSQ3 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor uses class time effectively"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ5
-survey:LikertQ5 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ3Ans
+survey:LSQ3Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ6
-survey:LikertQ6 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ4
+survey:LSQ4 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor has clear expectations for assigned work"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ7
-survey:LikertQ7 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ4Ans
+survey:LSQ4Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ8
-survey:LikertQ8 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ5
+survey:LSQ5 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor encourages student participation"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertQ9
-survey:LikertQ9 rdf:type owl:Class ;
-                rdfs:subClassOf survey:LikertItemLabel .
+###  https://parita-amin.github.io/survey.owl#LSQ5Ans
+survey:LSQ5Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LikertScaleQuestions
-survey:LikertScaleQuestions rdf:type owl:Class ;
-                            rdfs:subClassOf survey:SurveyQuestions ;
-                            owl:disjointWith survey:OpenEndedQuestions .
+###  https://parita-amin.github.io/survey.owl#LSQ6
+survey:LSQ6 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor clearly answers questions"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#OpenEndedAnswers
-survey:OpenEndedAnswers rdf:type owl:Class ;
-                        owl:equivalentClass [ rdf:type owl:Class ;
-                                              owl:oneOf ( survey:OEAns_Change
-                                                          survey:OEAns_LikeBest
-                                                          survey:OEAns_Strengths
-                                                        )
-                                            ] ;
-                        rdfs:subClassOf survey:SurveyAnswers .
+###  https://parita-amin.github.io/survey.owl#LSQ6Ans
+survey:LSQ6Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#OpenEndedQuestions
-survey:OpenEndedQuestions rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Class ;
-                                                owl:oneOf ( survey:OEQuestion_Change
-                                                            survey:OEQuestion_LikeBest
-                                                            survey:OEQuestion_Strengths
-                                                          )
-                                              ] ;
-                          rdfs:subClassOf survey:SurveyQuestions .
+###  https://parita-amin.github.io/survey.owl#LSQ7
+survey:LSQ7 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor treats students with respect"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LIQ1
-survey:Q1_The_instructor_is_well-prepared_for_class rdf:type owl:Class ;
-                                                    rdfs:subClassOf survey:LikertItem .
+###  https://parita-amin.github.io/survey.owl#LSQ7Ans
+survey:LSQ7Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LIQ2
-survey:Q2_The_instructor_clearly_communicates_his_expectations_for _student_preparation_and_participation rdf:type owl:Class ;
-                                                                                                                 rdfs:subClassOf survey:LikertItem .
+###  https://parita-amin.github.io/survey.owl#LSQ8
+survey:LSQ8 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor effectively directs and stimulates discussion"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LIQ3
-survey:Q3_The_instructor_uses_class_time_effectively rdf:type owl:Class ;
-                                                     rdfs:subClassOf survey:LikertItem .
+###  https://parita-amin.github.io/survey.owl#LSQ8Ans
+survey:LSQ8Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LIQ4
-survey:Q4_The_instructor_has_clear_expectations_for_assigned_work rdf:type owl:Class ;
-                                                                  rdfs:subClassOf survey:LikertItem .
+###  https://parita-amin.github.io/survey.owl#LSQ9
+survey:LSQ9 rdf:type owl:Class ;
+            rdfs:subClassOf survey:LikertQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "The instructor effectively encourages students to ask questions and give answers"
+                            ] .
 
 
-###  https://parita-amin.github.io/survey.owl#LIQ5
-survey:Q5_The_instructor_encourages_student_participation rdf:type owl:Class ;
-                                                          rdfs:subClassOf survey:LikertItem .
+###  https://parita-amin.github.io/survey.owl#LSQ9Ans
+survey:LSQ9Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:LikertScaleAnswer .
 
 
-###  https://parita-amin.github.io/survey.owl#LIQ6
-survey:Q6_The_instructor_clearly_answers_questions rdf:type owl:Class ;
-                                                   rdfs:subClassOf survey:LikertItem .
-
-
-###  https://parita-amin.github.io/survey.owl#LIQ7
-survey:Q7_The_instructor_treats_students_with_respect rdf:type owl:Class ;
-                                                      rdfs:subClassOf survey:LikertItem .
-
-
-###  https://parita-amin.github.io/survey.owl#LIQ8
-survey:Q8_The_instructor_effectively_directs_and_stimulates_discussion rdf:type owl:Class ;
-                                                                       rdfs:subClassOf survey:LikertItem .
-
-
-###  https://parita-amin.github.io/survey.owl#LIQ9
-survey:Q9_The_instructor_effectively_encourages_students_to_ask_questions _and_give_answers rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf survey:LikertItem .
-
-
-###  https://parita-amin.github.io/survey.owl#Respondent
-survey:Respondent rdf:type owl:Class ;
-                  owl:equivalentClass [ owl:intersectionOf ( survey:Respondent
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty survey:respondedToSurvey ;
-                                                               owl:someValuesFrom survey:Survey
-                                                             ]
-                                                           ) ;
-                                        rdf:type owl:Class
+###  https://parita-amin.github.io/survey.owl#LikertQuestion
+survey:LikertQuestion rdf:type owl:Class ;
+                      rdfs:subClassOf survey:LikertScaleQuestion ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty survey:hasLikertScale ;
+                                        owl:someValuesFrom survey:LikertScale
                                       ] .
 
 
-###  https://parita-amin.github.io/survey.owl#Semester
-survey:Semester rdf:type owl:Class ;
-                rdfs:subClassOf survey:SurveyCollection .
+###  https://parita-amin.github.io/survey.owl#LikertScale
+survey:LikertScale rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Class ;
+                                         owl:oneOf ( <https://parita-amin.github.io/survey.owl#1>
+                                                     <https://parita-amin.github.io/survey.owl#2>
+                                                     <https://parita-amin.github.io/survey.owl#3>
+                                                     <https://parita-amin.github.io/survey.owl#4>
+                                                     <https://parita-amin.github.io/survey.owl#5>
+                                                   )
+                                       ] ;
+                   rdfs:subClassOf survey:LikertScaleQuestion .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertScaleAnswer
+survey:LikertScaleAnswer rdf:type owl:Class ;
+                         rdfs:subClassOf survey:SurveyAnswer ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty survey:hasLikertScale ;
+                                           owl:someValuesFrom survey:LikertScale
+                                         ] ;
+                         owl:disjointWith survey:OpenEndedAnswer .
+
+
+###  https://parita-amin.github.io/survey.owl#LikertScaleQuestion
+survey:LikertScaleQuestion rdf:type owl:Class ;
+                           rdfs:subClassOf survey:SurveyQuestion ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty survey:hasLikertScale ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass survey:LikertScale
+                                           ] ;
+                           owl:disjointWith survey:OpenEndedQuestion .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQ1
+survey:OEQ1 rdf:type owl:Class ;
+            rdfs:subClassOf survey:OpenEndedQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "What do you like best about the course?"
+                            ] .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQ1Ans
+survey:OEQ1Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:OpenEndedAnswer ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty survey:hasOEQ1Ans ;
+                                 owl:someValuesFrom xsd:string
+                               ] .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQ2
+survey:OEQ2 rdf:type owl:Class ;
+            rdfs:subClassOf survey:OpenEndedQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "What would you like to change about the course?"
+                            ] .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQ2Ans
+survey:OEQ2Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:OpenEndedAnswer ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty survey:hasOEQ2Ans ;
+                                 owl:someValuesFrom xsd:string
+                               ] .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQ3
+survey:OEQ3 rdf:type owl:Class ;
+            rdfs:subClassOf survey:OpenEndedQuestion ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty survey:hasQuestionText ;
+                              owl:hasValue "What do you think the instructor's greatest strengths are?"
+                            ] .
+
+
+###  https://parita-amin.github.io/survey.owl#OEQ3Ans
+survey:OEQ3Ans rdf:type owl:Class ;
+               rdfs:subClassOf survey:OpenEndedAnswer ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty survey:hasOEQ3Ans ;
+                                 owl:someValuesFrom xsd:string
+                               ] .
+
+
+###  https://parita-amin.github.io/survey.owl#OpenEndedAnswer
+survey:OpenEndedAnswer rdf:type owl:Class ;
+                       rdfs:subClassOf survey:SurveyAnswer .
+
+
+###  https://parita-amin.github.io/survey.owl#OpenEndedQuestion
+survey:OpenEndedQuestion rdf:type owl:Class ;
+                         rdfs:subClassOf survey:SurveyQuestion .
 
 
 ###  https://parita-amin.github.io/survey.owl#Survey
 survey:Survey rdf:type owl:Class ;
               rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                owl:onProperty survey:hasSurveyQuestion ;
-                                owl:someValuesFrom survey:SurveyQuestions
+                                owl:onProperty survey:hasQuestion ;
+                                owl:someValuesFrom survey:SurveyQuestion
                               ] .
 
 
-###  https://parita-amin.github.io/survey.owl#SurveyAnswers
-survey:SurveyAnswers rdf:type owl:Class .
+###  https://parita-amin.github.io/survey.owl#SurveyAnswer
+survey:SurveyAnswer rdf:type owl:Class ;
+                    rdfs:subClassOf survey:HeptingStudentFeedbackSurveyRespondent .
 
 
 ###  https://parita-amin.github.io/survey.owl#SurveyCollection
-survey:SurveyCollection rdf:type owl:Class .
+survey:SurveyCollection rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty survey:hasEligibleRespondents ;
+                                          owl:someValuesFrom survey:SurveyRespondent
+                                        ] .
 
 
-###  https://parita-amin.github.io/survey.owl#SurveyQuestions
-survey:SurveyQuestions rdf:type owl:Class .
+###  https://parita-amin.github.io/survey.owl#SurveyQuestion
+survey:SurveyQuestion rdf:type owl:Class ;
+                      rdfs:subClassOf survey:HeptingStudentFeedbackSurvey ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty survey:hasQuestionText ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] .
+
+
+###  https://parita-amin.github.io/survey.owl#SurveyRespondent
+survey:SurveyRespondent rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty survey:hasCollection ;
+                                          owl:someValuesFrom survey:SurveyCollection
+                                        ] .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://parita-amin.github.io/survey.owl#C1R1
-survey:C1R1 rdf:type owl:NamedIndividual ,
-                     survey:Respondent .
+###  https://parita-amin.github.io/survey.owl#1
+<https://parita-amin.github.io/survey.owl#1> rdf:type owl:NamedIndividual ,
+                                                      survey:LikertScale .
 
 
-###  https://parita-amin.github.io/survey.owl#Collection1
-survey:Collection1 rdf:type owl:NamedIndividual ,
-                            survey:SurveyCollection .
+###  https://parita-amin.github.io/survey.owl#2
+<https://parita-amin.github.io/survey.owl#2> rdf:type owl:NamedIndividual ,
+                                                      survey:LikertScale .
 
 
-###  https://parita-amin.github.io/survey.owl#Midterm
-survey:Midterm rdf:type owl:NamedIndividual ,
-                        survey:Event .
+###  https://parita-amin.github.io/survey.owl#3
+<https://parita-amin.github.io/survey.owl#3> rdf:type owl:NamedIndividual ,
+                                                      survey:LikertScale .
 
 
-###  https://parita-amin.github.io/survey.owl#OEAns_Change
-survey:OEAns_Change rdf:type owl:NamedIndividual ,
-                             survey:OpenEndedAnswers ;
-                    survey:hasOEAns_Change "" .
+###  https://parita-amin.github.io/survey.owl#4
+<https://parita-amin.github.io/survey.owl#4> rdf:type owl:NamedIndividual ,
+                                                      survey:LikertScale .
 
 
-###  https://parita-amin.github.io/survey.owl#OEAns_LikeBest
-survey:OEAns_LikeBest rdf:type owl:NamedIndividual ,
-                               survey:OpenEndedAnswers ;
-                      survey:hasOEAns_LikeBest "" .
-
-
-###  https://parita-amin.github.io/survey.owl#OEAns_Strengths
-survey:OEAns_Strengths rdf:type owl:NamedIndividual ,
-                                survey:OpenEndedAnswers ;
-                       survey:hasOEAns_Strengths "" .
-
-
-###  https://parita-amin.github.io/survey.owl#OEQuestion_Change
-survey:OEQuestion_Change rdf:type owl:NamedIndividual ,
-                                  survey:OpenEndedQuestions .
-
-
-###  https://parita-amin.github.io/survey.owl#OEQuestion_LikeBest
-survey:OEQuestion_LikeBest rdf:type owl:NamedIndividual ,
-                                    survey:OpenEndedQuestions .
-
-
-###  https://parita-amin.github.io/survey.owl#OEQuestion_Strengths
-survey:OEQuestion_Strengths rdf:type owl:NamedIndividual ,
-                                     survey:OpenEndedQuestions .
-
-
-###  https://parita-amin.github.io/survey.owl#Q1_LI
-survey:Q1_LI rdf:type owl:NamedIndividual ,
-                      survey:LikertItem .
-
-
-###  https://parita-amin.github.io/survey.owl#Q1_LI_Label
-survey:Q1_LI_Label rdf:type owl:NamedIndividual ,
-                            survey:LikertItemLabel .
-
-
-###  https://parita-amin.github.io/survey.owl#1_Never
-<https://parita-amin.github.io/survey.owl#1_Never> rdf:type owl:NamedIndividual ,
-                                                            survey:LikertAns_Never1Always5 .
-
-
-###  https://parita-amin.github.io/survey.owl#2_Rarely
-<https://parita-amin.github.io/survey.owl#2_Rarely> rdf:type owl:NamedIndividual ,
-                                                             survey:LikertAns_Never1Always5 .
-
-
-###  https://parita-amin.github.io/survey.owl#202210
-<https://parita-amin.github.io/survey.owl#202210> rdf:type owl:NamedIndividual ,
-                                                           survey:Semester .
-
-
-###  https://parita-amin.github.io/survey.owl#3_Sometimes
-<https://parita-amin.github.io/survey.owl#3_Sometimes> rdf:type owl:NamedIndividual ,
-                                                                survey:LikertAns_Never1Always5 .
-
-
-###  https://parita-amin.github.io/survey.owl#4_Often
-<https://parita-amin.github.io/survey.owl#4_Often> rdf:type owl:NamedIndividual ,
-                                                            survey:LikertAns_Never1Always5 .
-
-
-###  https://parita-amin.github.io/survey.owl#5_Always
-<https://parita-amin.github.io/survey.owl#5_Always> rdf:type owl:NamedIndividual ,
-                                                             survey:LikertAns_Never1Always5 .
-
-
-###  https://parita-amin.github.io/survey.owl#CS280/202210
-<https://parita-amin.github.io/survey.owl#CS280/202210> rdf:type owl:NamedIndividual ,
-                                                                 survey:Course .
+###  https://parita-amin.github.io/survey.owl#5
+<https://parita-amin.github.io/survey.owl#5> rdf:type owl:NamedIndividual ,
+                                                      survey:LikertScale .
 
 
 #################################################################
@@ -530,51 +529,58 @@ survey:Q1_LI_Label rdf:type owl:NamedIndividual ,
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( survey:LikertQ1
-                survey:LikertQ2
-                survey:LikertQ3
-                survey:LikertQ4
-                survey:LikertQ5
-                survey:LikertQ6
-                survey:LikertQ7
-                survey:LikertQ8
-                survey:LikertQ9
+  owl:members ( survey:LSQ1
+                survey:LSQ2
+                survey:LSQ3
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( 
-  		survey:Q1_The_instructor_is_well-prepared_for_class
-  		survey:Q2_The_instructor_clearly_communicates_his_expectations _for_student_preparation_and_participation
-  		survey:Q3_The_instructor_uses_class_time_effectively
-  		survey:Q4_The_instructor_has_clear_expectations_for_assigned_work
-  		survey:Q5_The_instructor_encourages_student_participation
-  		survey:Q6_The_instructor_clearly_answers_questions
-  		survey:Q7_The_instructor_treats_students_with_respect
-  		survey:Q8_The_instructor_effectively_directs_and_stimulates_discussion
-  		survey:Q9_The_instructor_effectively_encourages_students_to_ask _questions_and_give_answers
+  owl:members ( survey:LSQ1
+                survey:LSQ2
+                survey:LSQ3
+                survey:LSQ4
+                survey:LSQ5
+                survey:LSQ6
+                survey:LSQ7
+                survey:LSQ8
+                survey:LSQ9
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( survey:LSQ1Ans
+                survey:LSQ2Ans
+                survey:LSQ3Ans
+                survey:LSQ4Ans
+                survey:LSQ5Ans
+                survey:LSQ6Ans
+                survey:LSQ7Ans
+                survey:LSQ8Ans
+                survey:LSQ9Ans
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( survey:OEQ1
+                survey:OEQ2
+                survey:OEQ3
               )
 ] .
 
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( survey:Survey
-                survey:SurveyAnswers
-                survey:SurveyQuestions
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointProperties ;
-  owl:members ( survey:hasOEAnswer_Change
-                survey:hasOEAnswer_LikeBest
-                survey:hasOEAnswer_Strengths
+                survey:SurveyCollection
+                survey:SurveyRespondent
               )
 ] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
-\end{lstlisting}
 
+\end{lstlisting}
 %\end{doublespace}
