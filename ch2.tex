@@ -344,9 +344,6 @@ a blank node can be used to denote the entity,
 as shown in Figure~\ref{blank-node-for-rdf}. 
 The relationships of the blank node with other nodes give sufficient details 
 without hindering the flow of the data tree.
-%, 
-%the node does not require a 
-%\ac{uri} reference.
 
 \begin{figure}[htp]
     \centering
@@ -596,15 +593,6 @@ on Wikidata is as shown in Figure~\ref{rdf-xml-uofr}.
 \section{Ontologies}
 \label{sec:ontologies}
 
-%Ontology is a branch of information science 
-%that encloses representation, nomenclature, and 
-%definition of various properties, categories, and relationships shared among 
-%entities, which includes all types of data, concepts and entities,
-%that support any number of domains 
-%in which the user is interested.
-%In other words, 
-%ontology is a form of defining a set of concepts for representing the subject 
-%properties and the relationships shared among them. 
 According to Gruber~\cite{gruber1995towards}, 
 ontology is 
 {\tt an explicit specification of a conceptualization}, 
@@ -781,37 +769,13 @@ can be performed.
 \label{sec:csvtordf}
 
 The preferred format of the data published on the semantic web is an \ac{rdf} format. 
-Many scientists store and publish data using \ac{csv}, rather than \ac{rdf},
+Many scientists store and publish data using CSV, rather than \ac{rdf},
 format because conversion of data to \ac{rdf} 
 is comparatively difficult. 
 A number of open source tools~\cite{ermilov2013csv},
 listed on the \ac{w3c} 
 wiki\footnote{\tt https://www.w3.org/wiki/ConverterToRdf},
 can be used to do the conversion. Two worth highlighting are OpenRefine and RML Mapper.
-
-%or using \ac{rml}\footnote{\tt https://d2s.semanticscience.org/docs/convert-rml/}. 
-%
-%\subsection{Open-Source Tools to Describe CSV Data using Vocabulary}
-%\label{subsec:tools}
-%
-%%Some of the open-source tools listed by the \ac{w3c} 
-%%for the mapping of CSV data using \ac{lov} are
-%%OpenRefine, RDF123, csv2rdf4lod, XLWrap, and Tarql.
-%%After an extensive research on these tools, 
-%%OpenRefine has been used in this thesis as most of these tools are out-dated.
-%%
-%%\subsubsection{OpenRefine}
-%%\label{subsubsec:openrefine}
-%%
-%%OpenRefine\footnote{\tt https://openrefine.org}, 
-%%an \ac{rdf} extension of Google Refine, 
-%%is a Java-based set of tools that work with messy data using \ac{grel}
-%%It allows the users to extract, transform, export, and convert 
-%%CSV, Excel, spreadsheets and other tabular data into \ac{rdf} 
-%%where a GUI (Graphical User Interface) is used to define schema mapping. 
-%
-%??? These blurbs, below, seem quite close to wiki entries... please be careful...
-%and please avoid the list format... I will fix this :-) ???
 
 OpenRefine\footnote{\tt https://openrefine.org},  
     is a Java-based set of tools that work with messy data using \ac{grel}
@@ -820,148 +784,24 @@ OpenRefine\footnote{\tt https://openrefine.org},
     where a GUI (Graphical User Interface) is used to define schema mapping.
     The RDF mapping is accomplished with an extension. 
    
-%    \item RDF123:
-%    
-%    RDF123\footnote{\tt https://ebiquity.umbc.edu/resource/html/id/237/RDF123-java-application-v1-0} 
-%    is a Java application and servlet for the conversion of CSV 
-%    and spreadsheets to \ac{rdf} 
-%    which uses arbitrary graphs to define schema mapping. 
-%    According to Han et al.~\cite{han2008rdf}, 
-%    it uses a graphical RDF123 template to allow users to convert the data from spreadsheets to \ac{rdf}.
-%   
-%    \item csv2rdf4lod:
-%   
-%    csv2rdf4lod\footnote{\tt https://github.com/timrdf/csv2rdf4lod-automation/wiki} 
-%    is a tool that is used for the conversion of tabular data into structured and linked \ac{rdf} 
-%    using specifications that are based on declarative \ac{rdf} 
-%    enhancement parameters. 
-%    It forms default namespaces for \acp{uri} 
-%    and provides VoID and original metada for the conversion 
-%    using identifiers for source organization, dataset and version.
-%   
-%    \item XLWrap:
-%    
-%    XLWrap\footnote{\tt https://xlwrap.sourceforge.io} 
-%    is a graphical template based application that allows execution of various \ac{sparql} 
-%    queries~\cite{andreas2009xlwrap}. 
-%    The spreadsheets are wrapped to arbitrary \ac{rdf} 
-%    graphs which allows:
-%   
-%        \begin{itemize}
-%    	
-%	        \item Streamed processing of tabular data like Excel, OpenDocument and CSV
-%	
-%	        \item Loading Local/\ac{http}
-%	
-%	        \item Expressions that include calculator operations for Excel and OpenDocument, and Custom functions
-%	
-%	        \item Use of \ac{api} and \ac{sparql} endpoint
-%    
-%        \end{itemize}
-%   
-%    \item Tarql:
-%   
-%    Tarql\footnote{\tt https://tarql.github.io} 
-%    operates as a command-line application for the conversion of CSV to \ac{rdf} 
-%    using a user-defined mapping that is written in \ac{sparql} standard 1.1.
-%    
-%\end{itemize}
-%
-%After an extensive research on these tools, 
-%OpenRefine has been used in this thesis as most of these tools are out-dated.
-%Also, the community of data scientists is more interested in 
-%developing more stable methods like using RMLConversion to map CSV data.
-
-%\subsection{Conversion Using RML}
-%\label{subsec:rmlconversion}
-
 ``An \ac{rml} mapping defines a mapping from any logical source to \ac{rdf}. 
 It is a structure that consists of one or more triples maps.''\footnote{\tt https://rml.io/specs/rml/\#example-XML} 
 The \ac{rml} rules can be written and tested in YARRRML (a more accessible way to use RML)
 using tools like the Matey Web UI\footnote{\tt https://rml.io/yarrrml/matey/}.
 
-%\subsubsection{Tools for RML Conversion}
-%\label{subsubsec:rmlconversiontools}
-
 Once the \ac{rml} rules have been defined, 
 the next step is generate \ac{rdf} 
 from the \ac{rml} mappings. 
-%The list below shows multiple tools, 
-%suggested by Data2Services\footnote{\tt https://d2s.semanticscience.org/}, 
-%with various efficiency, stability, and features 
-%that can be used for \ac{rml} conversion.
 
-%\begin{itemize}
-   
-%    \item RMLMapper:
-    
     RMLMapper\footnote{\tt https://github.com/RMLio/rmlmapper-java} 
     is a reference implementation written in Java. 
     It supports custom functions and operations 
     with small files as it loads all data in memory. 
     
-%    \item RMLStreamer: 
-%    
-%    RMLStreamer\footnote{\tt https://github.com/RMLio/RMLStreamer}, 
-%    written in Scala, 
-%    is well-suited for large input files and 
-%    continuous data streams like sensor data. 
-%    It is still under development resulting in limited support 
-%    for the use of custom functions.    
-%    
-%    \item SDM-RDFizer:
-%    
-%    SDM-RDFizer\footnote{\tt https://github.com/SDM-TIB/SDM-RDFizer}, 
-%    written in Python, 
-%    implements optimized data structures and relational algebra operators 
-%    that enable an efficient execution of \ac{rml} 
-%    triple maps even in the presence of Big data. 
-%    A separate tools called Dragoman\footnote{\tt https://github.com/SDM-TIB/Dragoman} 
-%    can be used for the execution of custom functions.
-%    
-%    \item Morph-KGC:
-%    
-%    Morph-KGC\footnote{\tt https://morph-kgc.readthedocs.io/en/latest/documentation/} 
-%    is an \ac{rml} 
-%    conversion tool written in Python. 
-%    It does not support custom functions.
-%    
-%    \item RocketRML:
-%    
-%    RocketRML\footnote{\tt https://github.com/semantifyit/RocketRML} 
-%    is a JavaScript implementation for \ac{rml} conversion. 
-%    It provides an easy way to define custom functions.
-%        
-%\end{itemize}
-
 \section{Summary}
-%\label{sec:summary}
-%
-%This Section provides a summary of my experience with different tools 
-%at various stages of linked data development. 
-%
-%Initially, the idea was to follow the linked data life cycle but 
-%it is too basic and generic 
-%and may not be the best approach for describing data semantics. 
-%While working on this research, 
-%it was established that the life cycle~\cite{ngomo2014introduction} 
-%has gaps and does not aid the development of all 5-star \acp{lod}. 
-%Hence, this thesis introduces a new approach in Chapter~\ref{chap:methodology} 
-%that can be followed for developing \ac{lov} to map CSV data. 
-%
-%The lack of advancement in related research resulted in 
-%additional research on various ontology editors and mapping tools. 
-%Most of the editors listed in Section~\ref{subsec:tools} 
-%are either non-existent or there exists negligible information about them, 
-%which has driven the decision of the use of protégé 
-%for ontology development for this research. 
-%Using RMLConversion is an interesting approach, 
-%where the tools were studied 
-%but the lack of standard guidelines forced the use of OpenRefine
-%over RMLConversion tools. 
 
 The building blocks discussed here are used
-to define a generic process for publishing \ac{lod} from spreadsheet data (Chapter 3),
+to define a generic process for publishing \ac{lod} from spreadsheet data (Chapter~\ref{chap:methodology}),
 which is then applied to a real example with Hepting's student feedback data
-(Chapter 4).
+(Chapter~\ref{chap:proofOfConcept}).
 \end{doublespace}
