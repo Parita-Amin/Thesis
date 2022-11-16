@@ -30,25 +30,33 @@ transforming their own data into \ac{lod}.
 \section{Future Work}
 \label{sec:futurework}
 
-Modelling of the range of Likert~\cite{south2022effective} scales.
-with different labels and values.
+\begin{itemize}
 
-Jekyll-RDF integration.
+	\item The FOOPS Evaluator shows that 30\% of the {\tt Survey} vocabulary 
+	obeys the FAIR principles. 
+	The results show that the vocabulary 
+	isn't using existing vocabularies to describe its terms. 
+	The survey vocabulary can be redefined using existing vocabularies.
+	
+	\item Using RMLConversion by employing 
+	RMLMapper or RMLStreamer to map data into \ac{rdf}.
+	
+	\item Modelling the range of Likert~\cite{south2022effective} scales 
+	with different labels and values.
+	
+	\item Jekyll-RDF integration.
+	
+	\item Conversion and management of all feedback data collected by Hepting.
+	
+	\item Developing a data entry form for the feedback survey instrument 
+	using Schimatos\footnote{\tt https://github.com/schimatos/schimatos.org} 
+	(a \ac{shacl}-based web-form generator).
+	
+	\item Versioning of the survey ontology is a topic of interest. 
+	The ontology vocabularies can be reused for appropriate applications 
+	but they may need to be updated over time. Hence, 
+	ontology versioning and version management of the survey instrument 
+	for this feedback survey, 
+	as well as for other types of surveys is an aspect of this research that can be explored.
 
-Conversion and management of all feedback data collected by Hepting
-
-https://github.com/schimatos/schimatos.org -- data entry
-Developing a data entry form for the feedback survey instrument
-that can be defined in part ...
-
-Versioning of the survey ontology is a topic of interest. 
-The ontology vocabularies can be reused for appropriate applications 
-but they may need to be updated over time. 
-Hence, 
-ontology versioning and version management of the survey instrument 
-for this feedback survey, 
-as well as for other types of surveys 
-is an aspect of this research that can be explored.
-
-directly from the survey ontology would facilitate recording of survey responses collected offline.
 \end{doublespace}
