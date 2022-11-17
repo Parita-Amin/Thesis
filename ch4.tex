@@ -33,7 +33,8 @@ as shown in Figure~\ref{lov-website}.
 
 Some terms from the {\tt disco-DDI-RDF Discovery Vocabulary}~\cite{disco} 
 can be reused to describe Dr. Hepting's student feedback form. 
-For now, there is no existing vocabulary to describe ``likert'' items, 
+For now, there is no existing vocabulary to describe %``likert'' 
+Likert items, 
 so the vocabulary for {\tt Survey} ontology has been described 
 without using any existing vocabularies. 
 The following Section focuses on describing new vocabulary for {\tt Survey} ontology.
@@ -43,8 +44,8 @@ The following Section focuses on describing new vocabulary for {\tt Survey} onto
 
 Figure~\ref{feedback-form} 
 shows the student feedback form for which the new vocabulary is described. 
-Dr. Hepting uses 9 \emph{likert-scale} questions and 3 \emph{open-ended} questions 
-in his feedback forms to collect the responses.
+It comprises 9 \emph{likert-scale} questions and 3 \emph{open-ended} questions.
+%in his feedback forms to collect the responses.
 
 \begin{figure}[htp]
     \centering
@@ -134,8 +135,8 @@ where {\tt LikertQuestion} has the 9 questions each as a distinct class.
 {\tt LSQ1}, {\tt LSQ2}, . . , and {\tt LSQ9} are the classes 
 with question label representing the question.
 
-The {\tt LikertScale} class describes the likert scale used by Dr. Hepting in his survey. 
-The likert scale has degrees of agreement-either in the form of label or a number, 
+The {\tt LikertScale} class describes the Likert scale used by Hepting in his survey. 
+The Likert scale has degrees of agreement-either in the form of label or a number, 
 which determine the type of likert-scale used. 
 Here, there are 5 options, 1, 2, 3, 4, and 5  
 where 1 = Never and 5 = Always (see Figure~\ref{feedback-form}).
@@ -570,7 +571,7 @@ offer options for
 {\tt Use expression...}.
 On clicking {\tt Preview edit}, format of expression to display records can be modified.
 
-\subsubsection{Describing Fields in terms of Linked Data}
+\subsubsection{Describing Fields in Terms of Linked Data}
 \label{subsubsec:describingfields}
 
 The next step is describing the CSV data

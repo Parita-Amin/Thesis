@@ -19,17 +19,18 @@ serves as the main resource to linked open vocabularies.
 There exist some vocabularies for ``Survey'' but 
 none of them describes ``Likert'' items.
 
-In data science, 
-for a fresh and developing branch like ontology engineering, 
-it is difficult to find enough knowledge that can be reused. 
-The field is still growing with research and development in progress 
-as well as a lot still required to be explored in the future. 
-As a result of this, 
-linked open vocabularies are limited currently, 
-and hence, 
-the data publishers will have to create a vocabulary 
+%In data science, 
+%for a fresh and developing branch like ontology engineering, 
+%it is difficult to find enough knowledge that can be reused. 
+%The field is still growing with research and development in progress 
+%as well as a lot still required to be explored in the future. 
+%As a result of this, 
+%linked open vocabularies are limited currently, 
+%and hence, 
+%the d
+Data publishers will have to create a vocabulary 
 in case they do not find the required vocabulary 
-from the already existing vocabularies.
+from those already existing. % vocabularies.
 
 \section{Describing New OWL Vocabularies}
 \label{sec:describenewowlvocab}
@@ -53,10 +54,12 @@ The editors can be compared and chosen based on some basic features like
 After studying the details and comparison 
 among some popular editors 
 by Clunis and Sashanie~\cite{clunis2019comparative}, 
-protégé has been used for the development of the instrument 
+Protégé has been used for the development of the instrument 
 to support this research and thesis work 
-as it is the most popular among the researchers. 
-Also, the other editors comparatively are out-dated or have not advanced.
+as it is the most popular amongst
+%the
+researchers. 
+%Also, the other editors comparatively are out-dated or have not advanced.
 
 \subsection{Protégé}
 \label{subsec:protege}
@@ -81,13 +84,13 @@ suggested five qualities of a usable product:
 These were the original five dimensions of usability 
 which were then re-termed as all five words starting with 
 ``E'' by Quesenbery~\cite{quesenbery2003dimensions}, 
-and they became popular as the five Es of usability~\cite{quesenbery2003dimensions}. 
+and they became popular as the five Es of usability. %~\cite{quesenbery2003dimensions}. 
 The new terms are 
-{\tt Effective}, 
-{\tt Efficient}, 
-{\tt Engaging}, 
-{\tt Error-tolerant}, and 
-{\tt Easy to learn}.
+{\em Effective}, 
+{\em Efficient}, 
+{\em Engaging}, 
+{\em Error-tolerant}, and 
+{\em Easy-to-learn}.
 
 The five dimensions of usability can be considered 
 while designing as well as for evaluation. 
@@ -95,7 +98,7 @@ While designing,
 the engineers consider the five dimensions as goals to be achieved 
 whereas while testing and evaluation, 
 they are considered as the requirements necessary for the designed model. 
-The five dimensions of usability were used to assess the usability of protégé and 
+The five dimensions of usability were used to assess the usability of Protégé and 
 the report of the evaluation is as follows:
 
 \begin{itemize}
@@ -110,22 +113,22 @@ the report of the evaluation is as follows:
   \item Efficient: The task is completed quickly
   
   It is easy and straightforward to describe the vocabularies and build ontologies. 
-  All the desired tasks in protégé can be completed quickly 
+  All the desired tasks in Protégé can be completed quickly 
   (without wasting much time) 
   as it is easy to look for the facilities using the menus and tools available. 
   Hence, 
-  protégé is an efficient ontology builder.
+  Protégé is an efficient ontology builder.
  
   \item Engaging: The look and feel of the design is interactive and engaging 
   
-  The tools and menus in protégé are interactive 
+  The tools and menus in Protégé are interactive 
   which leads to a better experience for the user. 
   Also, 
   the layout and the components are attractive and 
   decent for the user to use this ontology builder 
   whenever necessary. 
   Overall, 
-  protégé gives an engaging and satisfactory user experience.
+  Protégé gives an engaging and satisfactory user experience.
 
   \item Error-tolerant: Error prevention and data recovery in case any error is committed
   
@@ -134,16 +137,16 @@ the report of the evaluation is as follows:
   which allow the users to correct the errors that were committed. 
   Also, 
   the deleted classes can be recovered using {\tt Undo} 
-  from the edit menu resulting in proving protégé as an error-tolerant design.
+  from the edit menu resulting in proving Protégé as an error-tolerant design.
  
-  \item Easy to learn: The interface should be easy to learn
+  \item Easy-to-learn: The interface should be easy to learn
   
   Protégé is easy to learn as it has a familiar look and 
   commonly used names for the tools and menus making it easy 
   for the users to adapt and know them nicely. 
   Also, 
-  the {\tt Help} document 
-  along with a list of some frequently asked questions is available 
+  the help documentation
+  along with a list of some frequently asked questions is available,
   which helps the users in the correct direction whenever they are lost.
   
 \end{itemize}
@@ -153,10 +156,13 @@ the report of the evaluation is as follows:
 
 This Section focuses on a step-wise methodology 
 that has been followed to create new \ac{owl} 
-vocabularies using protégé. 
-Protégé is available for use as a web application or 
-it can also be downloaded\footnote{\tt https://protege.stanford.edu/products.php\#desktop-protege} 
-to use as a desktop application.
+vocabularies using Protégé,
+which
+%Protégé 
+is available for use as a web application or
+for download in the case of the desktop application.
+%it can also be downloaded\footnote{\tt https://protege.stanford.edu/products.php\#desktop-protege} 
+%to use as a desktop application.
 
 To commence with the process of building an ontology, 
 a new project needs to be created 
@@ -167,7 +173,7 @@ and the ontology version.
 \label{subsubsec:classhierarchy}
 
 The next step is to create classes and build the hierarchy for the class nodes. 
-Each entity in protégé is directly or indirectly a child node of the {\tt Thing} class. 
+Each entity in Protégé is directly or indirectly a child node of the {\tt Thing} class. 
 Also, 
 each object has a name-value pair, 
 which generally are the nodes of the {\tt Domain\_Entity} class, 
@@ -242,7 +248,7 @@ adding details to the description view.
 The next step in building the ontology, 
 after describing the classes, 
 is describing the {\tt Object Properties}. 
-Object properties are used to link the entities (classes in protégé). 
+Object properties are used to link the entities (classes in Protégé). 
 The {\tt owl:topObjectProperty} 
 is the root node of the object properties' hierarchy. 
 The hierarchy for object properties can be built 
@@ -324,7 +330,7 @@ to attach an entity instance to some literal datatype value
 that is a measure or estimate of 
 what that data property is about.''\footnote{\tt https://ddooley.github.io/docs/data-properties/}
 
-In protégé, 
+In Protégé, 
 the {\tt owl:topDataProperty} 
 is the root node of the data properties' hierarchy. 
 The data property hierarchy can be built by selecting a property 
@@ -347,8 +353,9 @@ of data properties of hierarchy which included details like
 
 After describing the classes, object properties, data properties, and individuals, 
 the next step is to determine and fix the errors and inconsistencies in the ontology 
-using a Reasoner\footnote{\tt https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
-The current version of the protégé IDE (Integrated Development Environment) 
+using a Reasoner.
+% NO WIKIPEDIA!!! \footnote{\tt https://en.wikipedia.org/wiki/Semantic\_reasoner}. 
+The current version of the Protégé IDE (Integrated Development Environment) 
 offers support for some built-in semantic reasoners which are listed below: 
 
 \begin{itemize}
@@ -384,7 +391,7 @@ offers support for some built-in semantic reasoners which are listed below:
 \end{itemize}
 
 \subsubsection{The FAIR Principles}
-\label{subsubsec: fairprinciples}
+\label{subsubsec:fairprinciples}
 
 After developing the linked data vocabulary, 
 the next step is to use this vocabulary, 
@@ -443,7 +450,7 @@ for enterprise data integration is to provide the means
 to define and validate structural constraints over \ac{rdf} graphs.'' 
 To address this challenge, 
 they developed SHACL4P, 
-a protégé plugin. 
+a Protégé plugin. 
 SHACL4P is used for defining and validating \ac{shacl}, 
 which is a W3C standard 
 for the validation of contents of 

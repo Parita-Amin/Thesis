@@ -13,52 +13,67 @@ It identifies the contributions made in this thesis and opportunities for future
 \label{sec:conclusion}
 
 After motivating the topic in Chapter 1,
-Chapter 2 provides a detailed background study on the fundamental topics
+Chapter 2 provided a detailed background study on the fundamental topics
 supporting \ac{lod} and the tools which facilitate its publication on the web.
-These include 
+These included 
 Semantic Web, 
 Linked Open Data, 
 \ac{rdf}, and 
 \ac{owl} ontologies. 
-This thesis describes the methodology of transforming data contained in a spreadsheet
-into \ac{lod} that is available on the web of data, 
+A methodology of transforming data contained in a spreadsheet
+into \ac{lod} available on the web of data was described, 
 both in general terms (Chapter 3) 
-and in the specific case of Dr. Hepting's student feedback survey (Chapter 4).
+and in the specific case of Hepting's student feedback survey (Chapter 4).
 The thesis can be considered as a guide for researchers who are interested in 
 transforming their own data into \ac{lod}.
+In response to the question asked about whether this next web of data sufficiently attractive to use,
+I have found sufficiency with opportunities for improvement.
 
 \section{Future Work}
 \label{sec:futurework}
 
-\begin{itemize}
+While the vocabulary developed for Hepting's survey is a first step in describing
+Likert items using Likert scales, this vocabulary could be improved by reusing parts of
+other existing vocabularies. Adding expressiveness to the vocabulary by modelling a range of Likert~\cite{south2022effective} scales with different labels and values would also be valuable.
 
-	\item The FOOPS Evaluator shows that 30\% of the {\tt Survey} vocabulary 
-	obeys the FAIR principles. 
-	The results show that the vocabulary 
-	isn't using existing vocabularies to describe its terms. 
-	The survey vocabulary can be redefined using existing vocabularies.
+%The FOOPS Evaluator shows that 30\% of the {\tt Survey} vocabulary 
+%	obeys the FAIR principles. 
+%	The results show that the vocabulary 
+%	isn't using existing vocabularies to describe its terms. 
+%	The survey vocabulary can be redefined using existing vocabularies.
+
+OpenRefine was used in this thesis for mapping data to RDF.
+Although it has a solid user interface, RMLMapper may be preferred in
+future because it permits the mappings to be scripted and executed from
+a command line interface. Such an approach may be preferrable for the same
+mapping applied to several spreadsheets.
+%	\item Using RMLConversion by employing 
+%	RMLMapper or RMLStreamer to map data into \ac{rdf}.
+%	
+%	\item Modelling the range of Likert~\cite{south2022effective} scales 
+%	with different labels and values.
+%	
+%	\item Jekyll-RDF integration.
+%	
+%	\item Conversion and management of all feedback data collected by Hepting.
+
+Hepting has a substantial collection of feedback data from these surveys spanning
+several years. Conversion of all this data into \ac{lod}, in a way that permits
+effective querying and analysis, would be an important achievement. The latest
+survey collections have once again been done on paper, and it would be helpful
+to have a means to support data entry.
 	
-	\item Using RMLConversion by employing 
-	RMLMapper or RMLStreamer to map data into \ac{rdf}.
+%	\item Developing a data entry form for the feedback survey instrument 
+%	using Schimatos\footnote{\tt https://github.com/schimatos/schimatos.org} 
+%	(a \ac{shacl}-based web-form generator).
+%	
+%	\item Versioning of the survey ontology is a topic of interest. 
+%	The ontology vocabularies can be reused for appropriate applications 
+%	but they may need to be updated over time. Hence, 
+%	ontology versioning and version management of the survey instrument 
+%	for this feedback survey, 
+%	as well as for other types of surveys is an aspect of this research that can be explored.
 	
-	\item Modelling the range of Likert~\cite{south2022effective} scales 
-	with different labels and values.
-	
-	\item Jekyll-RDF integration.
-	
-	\item Conversion and management of all feedback data collected by Hepting.
-	
-	\item Developing a data entry form for the feedback survey instrument 
-	using Schimatos\footnote{\tt https://github.com/schimatos/schimatos.org} 
-	(a \ac{shacl}-based web-form generator).
-	
-	\item Versioning of the survey ontology is a topic of interest. 
-	The ontology vocabularies can be reused for appropriate applications 
-	but they may need to be updated over time. Hence, 
-	ontology versioning and version management of the survey instrument 
-	for this feedback survey, 
-	as well as for other types of surveys is an aspect of this research that can be explored.
-	
-\end{itemize}
+%\end{itemize}
 
 \end{doublespace}
