@@ -90,55 +90,51 @@ they are considered as the requirements necessary for the designed model.
 The five dimensions of usability were used to assess the usability of Protégé and 
 the report of the evaluation is as follows:
 
-\begin{itemize}
- 
-  \item Effective: The task is completed accurately
-  
-  Protégé is an effective design as it allows the users to build ontologies and 
-  use other tools precisely. 
-  The users can complete the desired tasks accurately 
-  using the set of facilities available.
-  
-  \item Efficient: The task is completed quickly
-  
-  It is easy and straightforward to describe the vocabularies and build ontologies. 
-  All the desired tasks in Protégé can be completed quickly 
-  (without wasting much time) 
-  as it is easy to look for the facilities using the menus and tools available. 
-  Hence, 
-  Protégé is an efficient ontology builder.
- 
-  \item Engaging: The look and feel of the design is interactive and engaging 
-  
-  The tools and menus in Protégé are interactive 
-  which leads to a better experience for the user. 
-  Also, 
-  the layout and the components are attractive and 
-  decent for the user to use this ontology builder 
-  whenever necessary. 
-  Overall, 
-  Protégé gives an engaging and satisfactory user experience.
+\emph{Effective}: The task is completed accurately
 
-  \item Error-tolerant: Error prevention and data recovery in case any error is committed
-  
-  Protégé provides options for modifications, additions, 
-  and deletions of classes, objects, and properties, 
-  which allow the users to correct the errors that were committed. 
-  Also, 
-  the deleted classes can be recovered using {\tt Undo} 
-  from the edit menu resulting in proving Protégé as an error-tolerant design.
- 
-  \item Easy-to-learn: The interface should be easy to learn
-  
-  Protégé is easy to learn as it has a familiar look and 
-  commonly used names for the tools and menus making it easy 
-  for the users to adapt and know them nicely. 
-  Also, 
-  the help documentation
-  along with a list of some frequently asked questions is available,
-  which helps the users in the correct direction whenever they are lost.
-  
-\end{itemize}
+Protégé is an effective design as it allows the users to build ontologies and 
+use other tools precisely. 
+The users can complete the desired tasks accurately 
+using the set of facilities available.
+
+\emph{Efficient}: The task is completed quickly
+
+It is easy and straightforward to describe the vocabularies and build ontologies. 
+All the desired tasks in Protégé can be completed quickly 
+(without wasting much time) 
+as it is easy to look for the facilities using the menus and tools available. 
+Hence, 
+Protégé is an efficient ontology builder.
+
+\emph{Engaging}: The look and feel of the design is interactive and engaging 
+
+The tools and menus in Protégé are interactive 
+which leads to a better experience for the user. 
+Also, 
+the layout and the components are attractive and 
+decent for the user to use this ontology builder 
+whenever necessary. 
+Overall, 
+Protégé gives an engaging and satisfactory user experience.
+
+\emph{Error-tolerant}: Error prevention and data recovery in case any error is committed
+
+Protégé provides options for modifications, additions, 
+and deletions of classes, objects, and properties, 
+which allow the users to correct the errors that were committed. 
+Also, 
+the deleted classes can be recovered using {\tt Undo} 
+from the edit menu resulting in proving Protégé as an error-tolerant design.
+
+\emph{Easy-to-learn}: The interface should be easy to learn
+
+Protégé is easy to learn as it has a familiar look and 
+commonly used names for the tools and menus making it easy 
+for the users to adapt and know them nicely. 
+Also, 
+the help documentation
+along with a list of some frequently asked questions is available,
+which helps the users in the correct direction whenever they are lost.
 
 \subsection{Procedure to Describe OWL Vocabularies Using Protégé}
 \label{subsec:protegeprocedure}
@@ -340,40 +336,10 @@ of data properties of hierarchy which included details like
 After describing the classes, object properties, data properties, and individuals, 
 the next step is to determine and fix the errors and inconsistencies in the ontology 
 using a Reasoner. 
+Reasoners are also used to identify 
 The current version of the Protégé IDE (Integrated Development Environment) 
-offers support for some built-in semantic reasoners which are listed below: 
-
-\begin{itemize}
-   
-    \item ELK 0.4.3\footnote{\tt https://www.w3.org/2001/sw/wiki/ELK} : 
-    A Java-based fast reasoner for lightweight \ac{owl}2 EL 
-    which is available under Apache License 2.0
-   
-    \item FaCT++ 1.6.5\footnote{\tt https://www.w3.org/2001/sw/wiki/Fact} : 
-    A Tableaux-based reasoner for expressive \ac{owl} \ac{dl} 
-    which is implemented using C++
-   
-    \item HermiT 1.4.3.456\footnote{\tt https://www.w3.org/2001/sw/wiki/Hermit} : 
-    A Java-based reasoner, 
-    written using \ac{owl}, 
-    that can be used to determine consistency of the ontology 
-    as well as 
-    for the identification of relationships 
-    among the classes of the ontology
-   
-    \item Mastro DL-Lite\footnote{\tt https://protegewiki.stanford.edu/wiki/Mastro\_DL-Lite\_Reasoner} : 
-    An OBDA (Ontology-Based Data Access) management system 
-    in which the \ac{dl}-Lite family of languages 
-    for lightweight \ac{dl} are used for ontology specifications
-   
-    \item Ontop 4.1.0\footnote{\tt https://www.w3.org/2001/sw/wiki/Ontop} : 
-    A reasoner which uses \ac{sparql} for querying datasets as Virtual \ac{rdf} Graphs
-   
-    \item Pellet and Pellet (incremental)\footnote{\tt https://www.w3.org/2001/sw/wiki/Pellet} : 
-    A Java-based \ac{owl}2 reasoner for the optimization of nominals, 
-    conjunctive query answering, and incremental reasoning
-
-\end{itemize}
+is Protégé 5.5.0.
+It offers support for \emph{HermiT 1.4.3.456}\footnote{\tt https://www.w3.org/2001/sw/wiki/Hermit}, which is a built-in semantic reasoner that has been used for this research.
 
 \subsubsection{The FAIR Principles}
 \label{subsubsec:fairprinciples}
