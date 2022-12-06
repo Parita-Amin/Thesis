@@ -25,8 +25,23 @@ into \ac{lod} available on the web of data was described,
 both in general terms (Chapter 3) 
 and in the specific case of Hepting's student feedback survey (Chapter 4).
 The thesis can be considered as a guide for researchers who are interested in 
-transforming their own data into \ac{lod}.
-In response to the question asked about whether this next web of data sufficiently attractive to use,
+transforming their own data into \ac{lod}. 
+Here, the guide has been developed from the example of taking the spreadsheet data 
+from Hepting's Feedback survey collection and mapping it into \ac{rdf}. 
+
+The thesis also answers some questions that might arise 
+while describing semantics and mapping data. 
+It enlists the vocabulary repositories that can be used to describe vocabulary. 
+It also offers a methodology to describe one's own vocabulary where, 
+from a list of ontology editors, protégé has been used to describe vocabulary. 
+It also suggests separating data from the semantics to promote the reuse of vocabulary 
+which means separate files would be used to store 
+vocabulary (\emph{survey.owl} file) and mapped data (\emph{CS-280-202210.ttl} file). 
+To map the spreadsheet data from \ac{rdf}, 
+there exist different tools, of which the use of OpenRefine has been recommended. 
+OpenRefine can also be used to clean and transform unstructured and semi-structured data. 
+The methodology described in this thesis can be followed to map data of different types.
+In response to the question asked about whether this next web of data is sufficiently attractive to use,
 I have found sufficiency with opportunities for improvement.
 
 \section{Future Work}
@@ -36,44 +51,16 @@ While the vocabulary developed for Hepting's survey is a first step in describin
 Likert items using Likert scales, this vocabulary could be improved by reusing parts of
 other existing vocabularies. Adding expressiveness to the vocabulary by modelling a range of Likert~\cite{south2022effective} scales with different labels and values would also be valuable.
 
-%The FOOPS Evaluator shows that 30\% of the {\tt Survey} vocabulary 
-%	obeys the FAIR principles. 
-%	The results show that the vocabulary 
-%	isn't using existing vocabularies to describe its terms. 
-%	The survey vocabulary can be redefined using existing vocabularies.
-
 OpenRefine was used in this thesis for mapping data to RDF.
 Although it has a solid user interface, RMLMapper may be preferred in
 future because it permits the mappings to be scripted and executed from
 a command line interface. Such an approach may be preferrable for the same
 mapping applied to several spreadsheets.
-%	\item Using RMLConversion by employing 
-%	RMLMapper or RMLStreamer to map data into \ac{rdf}.
-%	
-%	\item Modelling the range of Likert~\cite{south2022effective} scales 
-%	with different labels and values.
-%	
-%	\item Jekyll-RDF integration.
-%	
-%	\item Conversion and management of all feedback data collected by Hepting.
 
 Hepting has a substantial collection of feedback data from these surveys spanning
 several years. Conversion of all this data into \ac{lod}, in a way that permits
 effective querying and analysis, would be an important achievement. The latest
 survey collections have once again been done on paper, and it would be helpful
 to have a means to support data entry.
-	
-%	\item Developing a data entry form for the feedback survey instrument 
-%	using Schimatos\footnote{\tt https://github.com/schimatos/schimatos.org} 
-%	(a \ac{shacl}-based web-form generator).
-%	
-%	\item Versioning of the survey ontology is a topic of interest. 
-%	The ontology vocabularies can be reused for appropriate applications 
-%	but they may need to be updated over time. Hence, 
-%	ontology versioning and version management of the survey instrument 
-%	for this feedback survey, 
-%	as well as for other types of surveys is an aspect of this research that can be explored.
-	
-%\end{itemize}
 
 \end{doublespace}
