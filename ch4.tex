@@ -73,12 +73,13 @@ which have been considered for this ontology as well.
     \label{survey-class-hierarchy}
 \end{figure}
 
-The {\tt SurveyCollection} class corresponds to a collection of survey responses 
-that were collected for a particular course-offering ({\tt CourseOffering} class). 
-The type of survey used is feedback survey ({\tt FeedbackSurvey} class, sub-class of {\tt Survey})
+The {\tt SurveyCollection} class corresponds to a particular collection of survey responses
+for a particular course offering ({\tt CourseOffering} class). 
+The type of survey used is feedback survey ({\tt FeedbackSurvey} class, subclass of {\tt Survey})
 with Dr. Hepting's feedback survey 
-as the specific survey instrument ({\tt HeptingStudentFeedbackSurvey} class)
-and responses to the survey ({\tt HeptingStudentFeedbackSurveyRespondent} class). 
+as the specific survey instrument.
+%({\tt HeptingStudentFeedbackSurvey} class)
+%and responses to the survey ({\tt HeptingStudentFeedbackSurveyRespondent} class). 
 
 The survey questions and survey answers have classes 
 corresponding to various forms of question-answer. 
@@ -116,14 +117,15 @@ It has two sub-classes, one for each of the
 \end{figure}
 
 The {\tt OpenEndedQuestion} class describes 
-the set of 3 open-ended questions on the survey instrument 
-where each question has it's own class (sub-class of {\tt OpenEndedQuestion}), 
+the set of 3 open-ended questions on the survey instrument,
+where each question has its own class, %(sub-class of {\tt OpenEndedQuestion}), 
 namely, 
-{\tt OEQ1}, {\tt OEQ2}, and {\tt OEQ3} 
-with question labels, 
-\emph{What do you like best about the course?}, 
-\emph{What would you like to change about the course?}, and 
-\emph{What do you think the instructor's greatest strengths are?} respectively. 
+{\tt OEQ1}, {\tt OEQ2}, and {\tt OEQ3},
+which correspond to questions:
+%with question labels, 
+``What do you like best about the course?'', 
+``What would you like to change about the course?'', and 
+``What do you think the instructor's greatest strengths are?''. 
 
 Likert-scale questions are the questions for which 
 the answers are from the preset list of answers. 
@@ -178,12 +180,12 @@ The next step is to describe properties.
 \subsection{Object Properties for Survey Ontology}
 \label{subsec:surveyobjectproperties}
 
-Using the method of naming and building object properties described in
-Section~\ref{subsubsec:objectproperties}, 
-some of the primary object properties are described for the survey ontology
-which are listed in 
+Using the method of naming and building object properties described in Chapter
+3 (beginning on page~\pageref{subsubsec:objectproperties}),
+%Section~\ref{subsubsec:objectproperties}, 
+the object properties are described for the survey ontology.
 Table~\ref{survey-object-properties-domains-and-ranges} 
-along with their domain and range classes. 
+lists the primary properties along with their domain and range classes. 
 The parent node for all object properties is {\tt owl:TopObjectProperty}.
 
 \begin{table}[h!]
@@ -405,7 +407,7 @@ to define queries and optional graph patterns.
 Protégé offers plugins for 
 {\tt \ac{sparql} Query} and {\tt Snap \ac{sparql} Query}.
 
-\subsubsection{Using \ac{sparql} Query Plugin}
+\subsubsection{Using \acs{sparql} Query Plugin}
 \label{subsubsec:usingsparql}
     
 \ac{sparql} plugin in protégé 
@@ -438,7 +440,7 @@ consider the following query:
     \label{survey-sparql-query}
 \end{figure}
     
-\subsubsection{Using Snap \ac{sparql} Query Plugin}
+\subsubsection{Using Snap \acs{sparql} Query Plugin}
 \label{subsubsec:usingsnapsparql}
 
 The Snap \ac{sparql} plugin in protégé 
@@ -450,7 +452,7 @@ consider the following query:
 
 \begin{lstlisting}
 
-    SELECT * WHERE { ?Respondent rdf:type survey:SurveyRespondent .
+    SELECT * WHERE { ?Resp a survey:SurveyRespondent .
 	OPTIONAL {?Respondent survey:hasLSQ6Ans 
 		?The_instructor_clearly_answers_questions}
     } ORDER BY ?SurveyRespondent 
@@ -472,7 +474,7 @@ with column titles ?Respondent and ?The\_instructor\_clearly\_answers\_questions
     \label{survey-snap-sparql-query}
 \end{figure}
 
-\section{Mapping Data from Spreadsheets to RDF For Survey using OpenRefine}
+\section{Mapping Data from Spreadsheets to RDF using OpenRefine}
 \label{sec:surveycsvtolod}
 
 Primarily, 
@@ -666,7 +668,7 @@ data reuse is more likely to happen.
     \item License:
     
     The linked open dataset discussed in this research has an 
-    {\tt Attribution-ShareAlike 4.0 International}\footnote{\tt https://creativecommons.org/licenses/by-sa/4.0/}
+    ``Attribution-ShareAlike 4.0 International''\footnote{\tt https://creativecommons.org/licenses/by-sa/4.0/}
     open license. 
     The degree of transparency increases as more data become available under an open license. 
     This makes it possible for the user to investigate the relationships in the data and use it effectively. 

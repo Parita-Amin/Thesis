@@ -31,21 +31,17 @@
 \usepackage{adjustbox,lipsum}
 \usepackage{enumitem}
 \usepackage{amssymb}
+\usepackage{MnSymbol}
 \usepackage{fancyhdr}
 \usepackage{dirtytalk}
 \usepackage{url}
 \def\UrlBreaks{\do\/\do-}
-\usepackage{breakurl}
+%\usepackage{breakurl}
 %\usepackage[breaklinks]{hyperref}
 
-\usepackage{acro}
-\acsetup{
-	list-style=tabular, 
-	only-used=true, 
-	sort=true,
-	page-style=plain, 
-	pages=first
-}
+\usepackage{acro}[upgrade=true]
+\acsetup{list/template=tabular,list/display=used,list/sort=true,pages/display=first}
+%page-style=plain, 
 \include{abbrev}
 
 
@@ -120,7 +116,7 @@
 \cleardoublepage
 
 \addcontentsline{toc}{chapter}{List of Abbreviations}
-\printacronyms[include-classes=abbrev,name={List of Abbreviations},heading={chapter*}]
+\printacronyms[include=abbrev,name={List of Abbreviations},heading={chapter*}]
 \cleardoublepage
 
 \pagenumbering{arabic}

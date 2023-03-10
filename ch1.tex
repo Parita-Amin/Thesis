@@ -26,30 +26,59 @@ The original
 ``web of data'' or the
 ``semantic web''. 
 
-The gold standard for data on the semantic web is 5-star Linked Open Data\ac{lod}.
-All resources (subjects, predicates, and objects) 
+The gold standard for data on the semantic web is
+5-star\footnote{\tt https://5stardata.info/en/} \ac{lod}.
+Table~\ref{tab:fivestars} illustrates the progression of stars.
+All resource triples (subjects, predicates, and objects) 
 are named with \ac{https} \acp{uri} that can be looked-up on the web
 to provide useful information with the Resource Description Framework\ac{rdf} family of standards.
 This data is accompanied with an open license for access.
 
+
+\begin{table}[htp]
+\caption{The meaning of the stars in Berners-Lee's 5-star system. If the data is on the web without an open license, one can think of 5-star linked data (that is not open).}
+\begin{center}
+\begin{tabular}{|r|p{10cm}|}
+\hline
+Stars & Data Qualities \\ \hline
+$\largestar$ & available on the Web (whatever format) under an open license \\ \hline
+$\largestar\largestar$ & available as structured data (e.g., Excel instead of image scan of a table) \\ \hline 
+$\largestar\largestar\largestar$ & available in a non-proprietary open format (e.g., CSV instead of Excel)\\ \hline
+$\largestar\largestar\largestar\largestar$ & uses URIs to denote things, so that people can point at the contents of the data\\ \hline
+$\largestar\largestar\largestar\largestar\largestar$ & links to other data to provide context\\ \hline
+\end{tabular}
+\end{center}
+\label{tab:fivestars}
+\end{table}%
+
 Is this next web of data sufficiently attractive to use?
-This thesis will examine this question in the context of an example.
+Have we reached the point that Berners-Lee envisioned, 
+when the information stored in the web of data, 
+using \ac{rdf},
+has grown past a critical threshold and the usefulness of \ac{rdf} and related technologies 
+encourages their increased use?
+Conservatively, there are now several billion triples on the web.
+Does this wealth of data compel would-be publishers to put their own
+\ac{rdf} triples onto the web? Has data consumption and production become,
+for institutions and citizens, not merely accessible but welcoming?
+This thesis will examine these questions in the context of an example.
 
 \section{Motivation}
 \label{sec:motivation}
 
 In his teaching practise, 
-Dr. Daryl Hepting\footnote{my supervisor} collects feedback from students in his classes each semester and makes the responses available on his 
+my thesis supervisor\footnote{Daryl H. Hepting, Professor of Computer Science, University of Regina, Regina, Canada.} collects feedback from students in his classes each semester and makes the responses available on his 
 website\footnote{\tt http://www2.cs.uregina.ca/$\sim$hepting/teaching/evaluation.html}. 
-Hepting's feedback instrument~\cite{prof.} (as shown in Figure~\ref{feedback-form})
-has 9 Likert items measured on a 5-point Likert 
-scale~\cite{johns2010likert} and 3 open-ended questions.
-Typically, student responses are collected on paper and then entered manually into
-computer-readable form. 
+Hepting's feedback 
+instrument\footnote{\tt http://www2.cs.uregina.ca/$\sim$hepting/assets/teaching/pdf/feedback-instrument.pdf} (as shown in Figure~\ref{feedback-form} on page~\pageref{feedback-form})
+has 9 Likert~\cite{johns2010likert} items and 3 open-ended questions.
+Typically, student responses are collected on paper 
+and then entered manually into computer-based spreadsheets. 
 Data collection was changed and interrupted during the COVID-19 pandemic. 
 
 Although it is valuable to have this feedback data available on the web
-in any form, it is not published as \ac{lod}. 
+in any form (earning 1, 2 or 3 stars, see Table~\ref{tab:fivestars}), 
+it is not published as \ac{lod}. 
 The motivation for the research presented here is to examine the process 
 by which existing data can be published as \ac{lod} 
 and to consider whether that process is ``sufficiently attractive to use''.
@@ -74,18 +103,18 @@ for citizens.
 What is the best way to express the semantics in the feedback
 response data? 
 After a thorough search for Likert scales and items 
-in the vocabulary repositories~\cite{cox2021ten} like 
+in the vocabulary repositories~\cite{cox2021ten} such as 
 Linked Open Vocabularies (LOV)\footnote{\tt https://lov.linkeddata.es/dataset/lov}, 
 Research Vocabularies Australia (RVA)\footnote{\tt https://vocabs.ardc.edu.au/}, 
 BioPortal\footnote{\tt https://bioportal.org}, 
 Agroportal\footnote{\tt http://aims.fao.org/agroportal}, 
 Ecoportal\footnote{\tt http://ecoportal.lifewatchitaly.eu/ontologies}, 
-Zenoda\footnote{\tt https://zenodo.org}, 
+Zenodo\footnote{\tt https://zenodo.org}, 
 FAIRsharing\footnote{\tt https://fairsharing.org/} and 
 Dryad\footnote{\tt https://datadryad.org/stash}, 
 no vocabularies were found for reuse. 
-A preliminary vocabulary to capture these semantics has been developed and
-used to represent the feedback response data. 
+A preliminary vocabulary to capture the required semantics has been developed and
+it is used to represent the feedback response data. 
 To do this, it is important to have a clear idea 
 of the data model and the relationships among the data.
 The publishing process has been aided by open-source tools,
