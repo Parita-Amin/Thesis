@@ -40,14 +40,13 @@ to the working of the semantic web
 as the access to the data itself~\cite{bizer2011linked}.
 
 In 2006, 
-Berners-Lee~\cite{bizer2009linked} 
+Berners-Lee\footnote{\tt https://www.w3.org/DesignIssues/LinkedData}
 described four basic rules 
 for publishing and connecting 
 structured datasets across the web. 
 These rules have become known as the 
 linked data 
-principles, and have been enhanced by Berners-Lee, Bizer, Heath, 
-and Idehen~\cite{bizer2009emerging, bizer2011linked, bizer2008linked, heath2011linked}.
+principles, and have been enhanced by Berners-Lee, Bizer, and Heath~\cite{bizer2009emerging, bizer2011linked, heath2011linked}.
 Those rules are presented here. 
 Terminology introduced in the rules is described in the subsequent text.
 
@@ -312,7 +311,7 @@ shows a graphical representation of this system.
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/graph-for-relative-statements.png}
     \caption{Graphical representation of Statements~\ref{caloriccontent} and~\ref{pizzabase} combined,
-    following the \ac{rdf} Primer~\cite{manola2004rdf}.}
+    following the \ac{rdf} 1.1 Primer~\cite{schreiber2014rdfprimer}.}
     \label{graph-for-relative-statements}
 \end{figure}
 \noindent
@@ -326,7 +325,7 @@ shows a graphical representation of this system.
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/graph-for-base-types.png}
     \caption{Graphical Representation of \ac{rdf} with types of {\tt PizzaBase}, 
-    after the \ac{rdf} Primer~\cite{manola2004rdf}.}
+    after the \ac{rdf} 1.1 Primer~\cite{schreiber2014rdfprimer}.}
     \label{graph-for-base-types}
 \end{figure}
 
@@ -351,7 +350,7 @@ without hindering the flow of the data tree.
     \includegraphics[width=\columnwidth]{images/ch2/blank-node-for-rdf.png}
     \caption{\ac{rdf} Representation in Figure~\ref{graph-for-base-types} 
     without a \ac{uri} (blank node) for {\tt PizzaBase} Entity, after the \ac{rdf} 
-    Primer~\cite{manola2004rdf}.}
+    1.1 Primer~\cite{schreiber2014rdfprimer}.}
     \label{blank-node-for-rdf}
 \end{figure}
 
@@ -410,7 +409,8 @@ are listed in Table~\ref{rdfs-classes-and-properties}~\cite{mcbride2004resource}
 \subsection{Open Data}
 \label{subsec:opendata}
 
-According to the Open Knowledge Foundation~\cite{foundation}, 
+According to the Open Knowledge 
+Foundation\footnote{\tt https://opendatahandbook.org/guide/en/what-is-open-data/}, 
 ``Open Data is data that can be freely used, 
 re-used and redistributed by anyone - subject only, 
 at most, 
@@ -630,7 +630,7 @@ on which a reasoner
 can be used to check the mutual consistency 
 among the statements and definitions in the ontology. 
 The reasoner is also responsible for the identification of a 
-suitable concept for particular definitions~\cite{horridge2009practical}.
+suitable concept for particular definitions~\cite{horridge2011practical}.
 
 \subsection{Components of OWL Ontologies}
 \label{subsec:componentsofowlontologies}
@@ -642,7 +642,7 @@ are briefly explained in this Section.
 \subsubsection{Individuals}
 \label{subsubsec:individuals}
 
-According to Horridge et al.~\cite{horridge2009practical}, 
+According to Horridge et al.~\cite{horridge2011practical}, 
 ``Individuals represent objects in the domain in which we are interested''. 
 Individuals are the objects of classes. 
 Figure~\ref{owl-individuals} 
@@ -698,7 +698,7 @@ consists of all the individuals that are customers in the Domain of Discourse
 which can contain one or more classes. 
 Inheritance in \ac{owl} classes (Class Hierarchy) 
 may exist with the classes having subclasses and/or super-classes which is technically termed as taxonomy. 
-``Subclasses specialize (``are subsumed by'') their super-classes''~\cite{horridge2009practical}. 
+``Subclasses specialize (``are subsumed by'') their super-classes''~\cite{horridge2011practical}. 
 For instance, 
 consider the classes {\tt Person} and {\tt Customer} from the pizza ontology, 
 where {\tt Customer} is a subclass of {\tt Person}.
