@@ -247,17 +247,17 @@ document starts and ends with {\tt <rdf:\ac{rdf}>} and
       \label{rdf-xml-doc}
 \end{figure}
 
+\begin{flalign}  
+    \text{\tt <pizza:Pizza>  <pizza:hasCaloricContent>  <xsd:integer>}&&
+    \label{rdf-triple}
+\end{flalign}
+\noindent
 Statement~\ref{rdf-triple} 
 shows an example of an \ac{rdf} triple, 
 where the subject (resource) is {\tt pizza:Pizza}; 
 the predicate (property) is {\tt pizza:hasCaloricContent}; 
 and the object (property value) is {\tt xsd:integer}. 
 
-\begin{flalign}  
-    \text{\tt <pizza:Pizza>  <pizza:hasCaloricContent>  <xsd:integer>}&&
-    \label{rdf-triple}
-\end{flalign}
-\noindent
 
 Figure~\ref{rdf-graph} 
 shows Statement~\ref{caloriccontent} in graphical format. 
@@ -415,12 +415,16 @@ Foundation\footnote{\tt https://opendatahandbook.org/guide/en/what-is-open-data/
 re-used and redistributed by anyone - subject only, 
 at most, 
 to the requirement to attribute and share-alike''. 
+Azogu and Longo\cite{open2022} say that ``data and information that is ... electronically available in a 
+machine-readable format, is freely accessible by anyone and may be used, reused or redistributed without 
+reasonable restriction''. \marginpar{Is there anything in my definition that is missing from yours? Do 
+the additions matter? You identify "sufficiently attractive to use" - is this an additional criteria you 
+would endorse?}
 To make open data available to everyone on the web, 
 the data don't need to be interlinked. 
 Important features of open data are:
 
 \begin{itemize}
-
 	\item Availability and access: 
 	the data should be available on the web. 
   	The users should be able to access the data easily by downloading 
@@ -435,8 +439,9 @@ Important features of open data are:
 	the data should be available to use, re-use, 
 	and redistribute for all the users without any 
 	discrimination to an individual or a group.
-	
 \end{itemize}
+
+Solid~\cite{soliddemo2016,solidtutorial2016}\marginpar{see EE's comment on page 13}
 
 Linked data is concerned with publishing structured data,
 along with the semantics of the relationships amongst that data,
@@ -737,11 +742,14 @@ Of the ontology editors listed on the \ac{w3c}
 wiki page\footnote{\tt https://www.w3.org/wiki/Ontology\_editors}
 that appear to be active with a current cross-platform application available
 (Protégé, Neologism, TopBraid Composer, Anzo, Semantic Turkey, and VocBench),
-Protégé~\cite{protege} is the most popular amongst researchers.
+Protégé\footnote{\tt https://protege.stanford.edu/} 
+is the most popular amongst researchers.
 Protégé also has a well-established tutorial~\cite{debellis2021practical} explaining its use.
 
 \section{Linked Data Life Cycle}
 \label{sec:linkeddatalifecycle}
+
+Benkler~\cite{benkler}\marginpar{see EE's note on page 21}
 
 The Linked Data Life Cycle described by 
 Ngomo et al.~\cite{ngomo2014introduction}

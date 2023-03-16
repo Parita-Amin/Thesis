@@ -12,23 +12,24 @@ presents a proof of concept for this methodology with real data.
 \section{Describe Semantics}
 \label{sec:semantics}
  
-It is feasible to use existing linked open vocabularies 
+It is feasible, and desirable, to use existing \acp{lov} 
 to develop new ontologies~\cite{kotis2020ontology}. 
-``Linked Open Vocabularies'' available at {\tt https://lov.linkeddata.es/dataset/lov} 
-serves as the main resource to linked open vocabularies. 
-There exist some vocabularies for ``Survey'' but 
-none of them describes ``Likert'' items.
+The ``Linked Open Vocabularies'' website\footnote{\tt https://lov.linkeddata.es/dataset/lov} 
+serves as a main resource for discovery of existing \acp{lov}. 
+Searching that website\footnote{\tt https://lov.linkeddata.es/dataset/lov/vocabs?q=survey}, 
+there are 6 vocabularies that match ``survey''.
+Figure~\ref{lov-website} shows these results.
+There are no vocabularies that match ``likert''. 
 
 Data publishers will have to create a vocabulary 
-in case they do not find the required vocabulary 
+in case they do not find the required elements 
 from those already existing.
 
 \section{Describing New OWL Vocabularies}
 \label{sec:describenewowlvocab}
 
-There are editors available that help the publishers to create their own 
-linked open vocabularies. 
-The editors can be compared and chosen based on some basic features like 
+There are editors available that help the publishers to create their own \acp{lov}.
+Clunis~\cite{clunis2019comparative} compared several editors, based on the following criteria: 
 \emph{General Description} 
 (developers' details, and accessibility on the internet), 
 \emph{Software Architecture and Tools Evaluation} 
@@ -42,19 +43,14 @@ The editors can be compared and chosen based on some basic features like
 \emph{Usability} 
 (graphical taxonomy, graphical views, zooms, collaborative working, and ontology libraries).
 
-After studying the details and comparison 
-among some popular editors 
-by Clunis and Sashanie~\cite{clunis2019comparative}, 
+Considering that study and the popularity amongst researchers, 
 Protégé has been used for the development of the instrument 
-to support this research and thesis work 
-as it is the most popular amongst
-researchers. 
+to support this research and thesis work.
 
 \subsection{Protégé}
 \label{subsec:protege}
 
-Horridge et al.~\cite{protege} have developed  
-Protégé\footnote{\tt https://protege.stanford.edu}, 
+Protégé\footnote{\tt https://protege.stanford.edu} has been developed as
 ``a free, open-source ontology editor and framework for building intelligent systems''.
 
 \subsubsection{Usability of Protégé}
@@ -71,9 +67,9 @@ suggested five qualities of a usable product:
 {\tt learnability}, {\tt efficiency}, {\tt memorability}, 
 {\tt errors} (low rate, easy to recover), and {\tt satisfaction}. 
 These were the original five dimensions of usability 
-which were then re-termed as all five words starting with 
+which were then re-termed using words starting with the letter
 ``E'' by Quesenbery~\cite{quesenbery2003dimensions}, 
-and they became popular as the five Es of usability. 
+and they became popular as the five E's of usability. 
 The new terms are 
 {\em Effective}, 
 {\em Efficient}, 
