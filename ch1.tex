@@ -31,7 +31,7 @@ The gold standard for data on the semantic web is
 Table~\ref{tab:fivestars} illustrates the progression of stars.
 All resource triples (subjects, predicates, and objects) 
 are named with \ac{https} \acp{uri} that can be looked-up on the web
-to provide useful information with the Resource Description Framework\ac{rdf} family of standards.
+to provide useful information with the \ac{rdf} family of standards.
 This data is accompanied with an open license for access.
 
 
@@ -51,9 +51,9 @@ $\largestar\largestar\largestar\largestar\largestar$ & links to other data to pr
 \label{tab:fivestars}
 \end{table}%
 
-Is this next web of data sufficiently attractive to use?
+Is this next web of data sufficiently attractive to use, and by whom?
 Have we reached the point that Berners-Lee envisioned, 
-when the information stored in the web of data, 
+when the quantity of information stored in the web of data, 
 using \ac{rdf},
 has grown past a critical threshold and the usefulness of \ac{rdf} and related technologies 
 encourages their increased use?
@@ -70,7 +70,8 @@ In his teaching practise,
 my thesis supervisor\footnote{Daryl H. Hepting, Professor of Computer Science, University of Regina, Regina, Canada.} collects feedback from students in his classes each semester and makes the responses available on his 
 website\footnote{\tt http://www2.cs.uregina.ca/$\sim$hepting/teaching/evaluation.html}. 
 Hepting's feedback 
-instrument\footnote{\tt http://www2.cs.uregina.ca/$\sim$hepting/assets/teaching/pdf/feedback-instrument.pdf} (as shown in Figure~\ref{feedback-form} on page~\pageref{feedback-form})
+instrument\footnote{\tt http://www2.cs.uregina.ca/$\sim$hepting/assets/teaching/pdf/feedback-instrument.pdf}
+(as shown in Figure~\ref{feedback-form} on page~\pageref{feedback-form})
 has 9 Likert~\cite{johns2010likert} items and 3 open-ended questions.
 Typically, student responses are collected on paper 
 and then entered manually into computer-based spreadsheets. 
@@ -80,16 +81,15 @@ Although it is valuable to have this feedback data available on the web
 in any form (earning 1, 2 or 3 stars, see Table~\ref{tab:fivestars}), 
 it is not published as \ac{lod}. 
 The motivation for the research presented here is to examine the process 
-by which existing data can be published as \ac{lod} 
+by which existing data, in spreadsheet form, can be published as \ac{lod} 
 and to consider whether that process is ``sufficiently attractive to use''.
 
 \section{Contribution}
 \label{sec:contribution}
 
-Within the \ac{lod} community, most research effort deal with
-users who are domain experts.
-This thesis is focused on the usability of 
-tools and frameworks 
+Within the \ac{lod} community, 
+most research efforts deal with users who are domain experts.
+This thesis is focused on the usability of tools and frameworks 
 for the development, description and reuse 
 of \ac{lod} by citizens.
  
@@ -100,10 +100,8 @@ it is about conveying as much as possible of the semantics of the data.
 This thesis examines the linked data lifecycle from the perspective of usability
 for citizens.
 
-What is the best way to express the semantics in the feedback
-response data? 
-After a thorough search for Likert scales and items 
-in the vocabulary repositories~\cite{cox2021ten} such as 
+In order to express the semantics of Likert items on Hepting's feedback instrument, 
+a thorough search for vocabularies that might be reused was made of vocabulary repositories~\cite{cox2021ten} that included:
 Linked Open Vocabularies (LOV)\footnote{\tt https://lov.linkeddata.es/dataset/lov}, 
 Research Vocabularies Australia (RVA)\footnote{\tt https://vocabs.ardc.edu.au/}, 
 BioPortal\footnote{\tt https://bioportal.org}, 
@@ -111,16 +109,16 @@ Agroportal\footnote{\tt http://aims.fao.org/agroportal},
 Ecoportal\footnote{\tt http://ecoportal.lifewatchitaly.eu/ontologies}, 
 Zenodo\footnote{\tt https://zenodo.org}, 
 FAIRsharing\footnote{\tt https://fairsharing.org/} and 
-Dryad\footnote{\tt https://datadryad.org/stash}, 
-no vocabularies were found for reuse. 
-A preliminary vocabulary to capture the required semantics has been developed and
-it is used to represent the feedback response data. 
-To do this, it is important to have a clear idea 
-of the data model and the relationships among the data.
+Dryad\footnote{\tt https://datadryad.org/stash}.
+No matches were found, so a
+preliminary vocabulary to express the needed Likert semantics was developed and
+it is used to represent Hepting's feedback response data. 
+%To facilitate such a representation, it is important to have a clear idea 
+%of the data model and the relationships amongst the data.
+
 The publishing process has been aided by open-source tools,
 namely Protégé~\cite{billey2019foundations} and OpenRefine~\cite{fiorelli2021lifting}.
-Illumination of the practical solutions employed to address problems that arise
-while using these tools also represents an important contribution.
+Details of the practical application of these tools also represents an important contribution.
 
 \section{Organization}
 \label{sec:organization}
