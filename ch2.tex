@@ -89,10 +89,10 @@ in RFC 3986 (which became STD 66),
 this unique string is subject to guidelines and security considerations 
 while defining the syntax for a generic \ac{uri} 
 and a process for resolving \ac{uri} references. 
-Berners-Lee et al.~\cite{RFC3986uri} 
-characterized \ac{uri} by discussing the component terms.
 
-Numerous advantages come from uniformity. 
+Berners-Lee et al.~\cite{RFC3986uri} 
+characterized a \ac{uri} by discussing the component terms:
+Numerous advantages come from {\bf uniform}ity. 
 Various types of resource identifier can be used
 in the same context even when the means accessing those resources may vary. 
 Semantic interpretation of standard syntactic rules is the same
@@ -102,19 +102,17 @@ without affecting how other identifiers are used.
 Existing resource identifiers can be reused in a variety of settings, 
 enabling new applications or protocols to benefit from that 
 widely-utilized set of resource identifiers.
-
-A resource is anything that can be identified
+A {\bf resource} is anything that can be identified
 by a \ac{uri}. The pages on a website are a recognizable example. 
 A resource is not necessarily available via the web. 
 It may correspond to a physical entity such as a person,
 an abstract concept such as a relationship,
 or a numeric quantity.
-
-An identifier distinguishes an object from all other objects within its scope.
+An {\bf identifier} distinguishes an object from all other objects within its scope.
 The purpose of an identifier is to distinguish one resource from all others.
 An identifier is not required to define the identity of what is referenced, 
 though this may be the true for some.
-A system using \acp{uri} is neither required to access the resource identified
+A system using \acp{uri} is not required to access the resource identified
 and for some there is no intention that they be accessed.
     
 Berners-Lee et al.~\cite{RFC3986uri} defined the generic syntax of a \ac{uri} 
@@ -140,9 +138,8 @@ The authority component comprises three elements, which are:
     \label{syntax-diagram}
 \end{figure}
 \noindent
-One of the \acp{uri} from the Survey ontology is in Statement~\ref{example-uri}.
-Figure~\ref{components-of-uri-example} 
-shows its components.
+One of the \acp{uri} from the Survey ontology is presented in Statement~\ref{example-uri}.
+Figure~\ref{components-of-uri-example} shows its components.
 \begin{flalign}
     \text{\tt https://parita-amin.github.io/survey.owl\#Survey} &&
     \label{example-uri}
@@ -170,7 +167,7 @@ relate to one another and to the characteristics of real-world objects.
 Depending on the level of abstraction, 
 there are three main types of data models, 
 namely, 
-conceptual, logical, and physical data model. 
+conceptual, logical, and physical. 
 Some widely-used primary data models are 
 dimensional, relational, and \ac{er} models. 
 RDF began as a metadata model and is now the means to describe resources 
@@ -197,8 +194,8 @@ The object of \ac{rdf}
 that is used to combine a resource with a property of its value is a {\em statement}. 
 A statement, 
 in general terms, 
-can be seen as building blocks of a statement in English, 
-which are a subject, a predicate, and an object. 
+can be seen as a building block of a statement in English, 
+which has a subject, a predicate, and an object. 
 An object in a statement can be either a property value, a resource, or a literal. 
 \ac{rdf}, 
 according to Beckett, Gandon and Schreiber~\cite{gandon2014rdf,zongmin2016rdf}, 
@@ -207,7 +204,8 @@ using \ac{xml} in an \ac{rdf}/\ac{xml} document,
 as triples in subject-predicate-object form 
 or in graphical form.
 
-The University of Manchester has developed Pizza ontology~\cite{debellis2021practical}  
+The University of Manchester developed the Pizza 
+ontology~\cite{horridge2011practical,debellis2021practical}  
 which acts as an inspiration for ``pizza'' examples in this Chapter.
 Consider the following statement:
 \begin{flalign}  
@@ -257,7 +255,6 @@ shows an example of an \ac{rdf} triple,
 where the subject (resource) is {\tt pizza:Pizza}; 
 the predicate (property) is {\tt pizza:hasCaloricContent}; 
 and the object (property value) is {\tt xsd:integer}. 
-
 
 Figure~\ref{rdf-graph} 
 shows Statement~\ref{caloriccontent} in graphical format. 
@@ -421,7 +418,7 @@ reasonable restriction''. \marginpar{Is there anything in my definition that is 
 the additions matter? You identify "sufficiently attractive to use" - is this an additional criteria you 
 would endorse?}
 To make open data available to everyone on the web, 
-the data don't need to be interlinked. 
+the data do not need to be interlinked. 
 Important features of open data are:
 
 \begin{itemize}
@@ -474,7 +471,7 @@ Each entity on Wikidata represents
 the subject of a triple with a dedicated page. 
 The properties of Wikidata are similar to that of \ac{rdf} 
 where the individuals and classes are indicated using items. 
-Data on a page of the Wikidata is available 
+Data on a page of Wikidata is available 
 for the users to access as well as edit.
 
 For instance, 
@@ -486,7 +483,7 @@ illustrates a portion of the contents of this page.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch2/wikidata-uofr.png}
-    \caption{A portion of the item page for {\tt University of Regina} on Wikidata.}
+    \caption{A portion of the item page for the University of Regina on Wikidata.}
     \label{wikidata-uofr}
 \end{figure}
 
@@ -744,7 +741,7 @@ that appear to be active with a current cross-platform application available
 (Protégé, Neologism, TopBraid Composer, Anzo, Semantic Turkey, and VocBench),
 Protégé\footnote{\tt https://protege.stanford.edu/} 
 is the most popular amongst researchers.
-Protégé also has a well-established tutorial~\cite{debellis2021practical} explaining its use.
+Protégé also has a well-established tutorial~\cite{horridge2011practical,debellis2021practical} explaining its use.
 
 \section{Linked Data Life Cycle}
 \label{sec:linkeddatalifecycle}
@@ -804,8 +801,11 @@ OpenRefine\footnote{\tt https://openrefine.org},
     The RDF mapping is accomplished with an extension. 
    
 ``An \ac{rml} mapping defines a mapping from any logical source to \ac{rdf}. 
-It is a structure that consists of one or more triples maps.''\footnote{\tt https://rml.io/specs/rml/\#example-XML} 
-The \ac{rml} rules can be written and tested in YARRRML (a more accessible way to use RML)
+It is a structure that consists of one or more triples maps.''~\cite{dimou_ldow_2014}
+%\footnote{\tt https://rml.io/specs/rml/\#example-XML} 
+
+The \ac{rml} rules can be written and tested in YARRRML~\cite{yarrrml2018} 
+(a more accessible way to use RML)
 using tools like the Matey Web UI\footnote{\tt https://rml.io/yarrrml/matey/}.
 
 Once the \ac{rml} rules have been defined, 

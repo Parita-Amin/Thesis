@@ -225,18 +225,18 @@ adding details to the description view.
 
 The next step in building the ontology, 
 after describing the classes, 
-is describing the {\tt Object Properties}. 
-Object properties are used to link the entities (classes in Protégé). 
+is describing the
+object properties, which are used to link the entities (classes in Protégé). 
 The {\tt owl:topObjectProperty} 
 is the root node of the object properties' hierarchy. 
 The hierarchy for object properties can be built 
 by selecting a property in the Object Property Hierarchy view 
 of the Object Property Views tab and 
 then going to the tools menu and selecting {\tt Create object property hierarchy...}. 
-The remaining steps are similar to the ones that are followed for building class hierarchy 
+The remaining steps are similar to the ones that are followed for building a class hierarchy 
 (Section~\ref{subsubsec:classhierarchy}).    
 Also, 
-the description view of object properties hierarchy 
+the description view of the object property hierarchy 
 allows the user to describe the object properties. 
 The details that can be added or modified using the description view are 
 {\tt Equivalent To}, 
@@ -304,7 +304,7 @@ the {\tt Data Properties}
 can also be described for ontology.
 ``An ontology data property provides a relation 
 to attach an entity instance to some literal datatype value 
-(an \ac{rdf} number, string or data for example) 
+(an \ac{rdf} number, string or date for example) 
 that is a measure or estimate of 
 what that data property is about.''\footnote{\tt https://ddooley.github.io/docs/data-properties/}
 
@@ -380,7 +380,7 @@ FAIR principles to evaluate the {\tt Survey} vocabulary.
 \label{subsec:datavalidation}
 
 Hepting collects feedback responses and 
-manually stores them in spreadsheets. 
+stores them in spreadsheets. 
 Much of this data is collected on paper,
 with a handful of spreadsheets created directly
 from within the University of Regina's learning management system.
@@ -461,12 +461,12 @@ OpenRefine provides support for following tasks:
    
     \item Exploring Data: 
     
-    Large data sets can be explored with ease using OpenRefine. 
-    The {\tt Facet} option allows users to explore values of particular type by offering options like 
-    {\tt Text facet}, 
-    {\tt Numeric facet}, 
-    {\tt Timeline facet}, 
-    {\tt Scatterplot facet}, and other custom facet. 
+    %Large data sets can be explored with ease using OpenRefine. 
+    The {\tt Facet} option allows users to explore values of particular type by offering options for facets like 
+    {\tt Text}, 
+    {\tt Numeric}, 
+    {\tt Timeline}, 
+    {\tt Scatterplot}, and custom. 
     Figure~\ref{openrefine-facet} 
     shows the facet options offered by OpenRefine for a field.
     
@@ -506,11 +506,10 @@ OpenRefine provides support for following tasks:
    
         \item Cleaning Data: 
         
-        While dealing with messy data, 
-        OpenRefine can be used to clean the data using the 
-        {\tt Text filter} option. 
+        The 
+        {\tt Text filter} option can be used to clean data.
         Figure~\ref{openrefine-clean-data} 
-        shows the {\tt Text filter} option offered by OpenRefine for a field. 
+        shows this option offered by OpenRefine for a field. 
                 
         \begin{figure}[htp] 
             \centering
@@ -537,19 +536,19 @@ OpenRefine provides support for following tasks:
         {\tt Edit cells} option under which 
         {\tt Transform...} and 
         {\tt Common transform} 
-        offers different options for transforming data. 
+        offer different options for transforming data. 
                 
     \end{itemize}
    
     \item Reconciling and Matching Data:
     
-    OpenRefine can be used to link and extend dataset with various web services. 
+    OpenRefine can be used to link and extend a dataset with various web services. 
     It also supports services 
     (using extensions and plugins) 
-    that can be used to upload the cleaned data to central databases like Wikidata. 
-    The data can be converted to linked data 
-    (as in this research) 
-    which can be then uploaded to central databases.
+    that can be used to upload the cleaned data to databases like Wikidata. 
+    The data can be converted to \ac{rdf}
+    (as in this research) with an extension. 
+   % which can be then uploaded to central databases.
    
 \end{enumerate}
 
@@ -561,7 +560,7 @@ it can be made available on the web in two steps,
 licensing the data and publishing on the web, 
 which are discussed in this section. 
 
-\marginpar{you need to add more substance to this section}
+%\marginpar{you need to add more substance to this section}
 
 \subsection{Licensing Linked Data}
 \label{subsec:licensinglinkeddata}
@@ -569,10 +568,10 @@ which are discussed in this section.
 \ac{w3c}~\cite{hyland2014bestpractices,DWBP2017tr,DWBP2019impl} 
 advises that it is critical to identify the owner of any data published on the web 
 and to explicitly link the licence to the data itself. 
-It is simpler to attach a licence that goes with the data itself 
-when publishing linked open data. 
+%It is simpler to attach a licence that goes with the data itself 
+%when publishing linked open data. 
 When data has a clear, 
-agreeable licence attached to it, 
+agreeable, licence attached to it, 
 people are more likely to reuse it.
 
 The Creative Commons\footnote{\tt https://creativecommons.org/} 
@@ -586,10 +585,10 @@ There are different licenses available like
 \label{subsec:publishinglod}
 
 According to Petrou et al.~\cite{irene2014publishlod}, 
-the linked data principles state that dereferencable \ac{uri}s 
+the linked data principles state that dereferenceable \ac{uri}s 
 are the preferred method of accessing linked data and that the data should be openly available. 
 When accessed, 
-these \ac{uri}s offer accurate descriptions of the concepts they stand for in a number of formats. 
+these \ac{uri}s offer accurate descriptions of the concepts for which they stand. 
 \ac{rdf} dumps and \ac{sparql} endpoints are hence 
 two ways that users can access the data. 
 Dereferencing of the data is accomplished using the specialised \ac{rdf} store, 

@@ -7,10 +7,10 @@
 
 This Chapter provides a practical application of the methodology 
 presented in Chapter~\ref{chap:methodology}
-to describe and publish linked open data for a feedback survey.
-The organization of this Chapter mirrors the preceding one,
-as the methodology is applied to publish \ac{lod} from Hepting's feedback
+to describe and publish \ac{lod} from Hepting's feedback
 survey.
+The organization of this Chapter mirrors the preceding one.
+%, as the methodology is applied to publish \ac{lod} 
 
 \section{Describing Semantics for a Survey Ontology}
 \label{sec:describingsemanticsforsurvey}
@@ -89,7 +89,8 @@ It comprises 9 \emph{Likert scale} questions and 3 \emph{open-ended} questions.
 All the classes can be created and 
 described using the steps described in Section~\ref{subsubsec:classhierarchy}. 
 The resultant class hierarchy for the survey ontology 
-would be as shown in Figure~\ref{survey-class-hierarchy}. 
+%would be as 
+is shown in Figure~\ref{survey-class-hierarchy}. 
 A {\tt Survey} can have 
 {\tt Survey Collection}, 
 {\tt Survey Respondent}, and 
@@ -106,7 +107,7 @@ which have been considered for this ontology as well.
 The {\tt SurveyCollection} class corresponds to a particular collection of survey responses
 for a particular course offering ({\tt CourseOffering} class). 
 The type of survey used is feedback survey ({\tt FeedbackSurvey} class, subclass of {\tt Survey})
-with Dr. Hepting's feedback survey 
+with Hepting's feedback survey 
 as the specific survey instrument.
 %({\tt HeptingStudentFeedbackSurvey} class)
 %and responses to the survey ({\tt HeptingStudentFeedbackSurveyRespondent} class). 
@@ -167,7 +168,7 @@ where {\tt LikertQuestion} has the 9 questions each as a distinct class.
 with question label representing the question.
 
 The {\tt LikertScale} class describes the Likert scale used by Hepting in his survey. 
-The Likert scale has degrees of agreement-either in the form of label or a number, 
+The Likert scale has degrees of agreement -- either in the form of label or a number, 
 which determine the type of Likert-scale used. 
 Here, there are 5 options, 1, 2, 3, 4, and 5  
 where 1 = Never and 5 = Always (see Figure~\ref{feedback-form}).
@@ -188,23 +189,24 @@ as shown in Figure~\ref{likert-scale-class}.
 The {\tt SurveyAnswer} class represents the responses to the questions of the survey. 
 It has two sub-classes, one for each of the 
 {\tt OpenEndedAnswer} and {\tt LikertScaleAnswer} classes.
+
 The {\tt OpenEndedAnswer} class represents 
-the set of answers for 3 open-ended questions.
+the answers for the 3 open-ended questions.
 Open-ended questions have unpredictable answers. 
-Answer to each question is described by a disctinct class (sub-class of {\tt OpenEndedAnswer}) 
-that consists of a string, 
+The answer to each question is described by a distinct class (sub-class of {\tt OpenEndedAnswer},
 namely, 
-{\tt OEQ1Ans}, {\tt OEQ2Ans}, and {\tt OEQ3Ans}.
+{\tt OEQ1Ans}, {\tt OEQ2Ans}, and {\tt OEQ3Ans}) 
+that consists of a string.
    
 The {\tt LikertScaleAnswer} class represents 
-the set of answers for 9 Likert-scale questions. 
-Answer to each question would be a value belonging to
+the set of answers for each of the 9 Likert-scale questions. 
+There are 9 sub-classes of the {\tt LikertScaleAnswer} class, 
+namely, 
+{\tt LSQ1Ans}, {\tt LSQ2Ans}, . . . , and {\tt LSQ9Ans}.
+The answer to each of these questions is a value belonging to
 the {\tt LikertScale},
 which is between 1 and 5.
 In case of no answer, the data field will be left blank. 
-There are 9 sub-classes of the {\tt LikertScaleAnswer} class, 
-namely, 
-{LSQ1Ans}, {LSQ2Ans}, . . , and {LSQ9Ans}.
 The next step is to describe properties.
 
 \subsection{Object Properties for Survey Ontology}
@@ -246,7 +248,7 @@ which are listed in
 Table~\ref{survey-data-properties-domains-and-ranges} 
 along with their domain and range. 
 The parent node of all the data properties is {\tt owl:topDataProperty}.
-The properties for Likert answers restrict the datatype to positive integer 
+The properties restrict the datatype to positive integer for Likert answers 
 and to string for open-ended answers.
 
 \begin{table}[h!]
@@ -279,28 +281,29 @@ and to string for open-ended answers.
 \label{subsec:individuals}
 
 While dealing with ontologies, 
-an instance of class is termed as an {\tt Individual}. 
+an instance of class is termed an {\tt Individual}. 
 In Protégé, 
-an individual can be described as an instance of class 
+an individual can be described
 using the Description view of the Class tab 
 as shown in 
 Figure~\ref{likert-scale-class} 
 for {\tt LikertScale} class. 
 A new individual can be described using the Individuals view of the Entities tab 
-where as 
-the property assertions view can be used to describe the property restrictions. 
+whereas 
+the Property Assertions view can be used to describe the property restrictions. 
 In this research, 
-the individuals have been described as a part of data file (Appendix~\ref{chap:appendix-data}).
+the individuals have been described as a part of the data file found in 
+Appendix~\ref{chap:appendix-data}.
 
 The final class hierarchy (see Figure~\ref{survey-class-hierarchy}) 
-can be obtained 
-for feedback survey in Protégé 
+for the Survey ontology can be obtained 
+in Protégé 
 using the HermiT 1.4.3.456 reasoner. 
 Figure~\ref{blue-back-arrow} shows 
 blue back arrows  
 in front of the yellow solid dot, 
 which indicates class, 
-to denote relationship among classes other than that of SubClassOf. 
+to denote relationships, other than that of SubClassOf, amongst classes. 
 This feature can be enabled and disabled by selecting 
 {\tt Display relationship in class hierarchy} 
 option from the View menu of Protégé. 
@@ -308,7 +311,7 @@ option from the View menu of Protégé.
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/blue-back-arrow.png}
-    \caption{Relationship among classes in Survey Ontology}
+    \caption{Relationships amongst classes in Survey Ontology}
     \label{blue-back-arrow}
 \end{figure}
 
@@ -336,9 +339,9 @@ In particular, the Survey Ontology is
 
 \ac{shacl}4P is a Protégé plugin for \ac{shacl}, 
 which uses \emph{shapes} to describe constraints. 
-\ac{shacl} can be used to validate the manually entered data 
+\ac{shacl} can be used to validate the data 
 which are stored in spreadsheets. 
-For feedback survey, 
+For the feedback survey, 
 the Likert answers can only have values 
 1, 2, 3, 4, 5, or No Answer (blank cell). 
 To restrict the values of data properties 
@@ -346,9 +349,9 @@ corresponding to Likert questions
 in Table~\ref{survey-data-properties-domains-and-ranges}, 
 \ac{shacl}4P has been used. 
 
-Protégé offers a view for \ac{shacl} editor as well as \ac{shacl} constraint violations. 
-For successful working of \ac{shacl}4P, 
-a reasoner should be enabled. 
+Protégé offers views for the \ac{shacl} editor as well as \ac{shacl} constraint violations. 
+A reasoner should be enabled to get the best results from \ac{shacl}4P.
+ 
 The \ac{shacl} editor provides three buttons, 
 namely, 
 {\tt Open}, 
@@ -358,9 +361,8 @@ After opening the shapes file ({\tt Open} button),
 changes can be made and saved ({\tt Save} button). 
 Where as the {\tt Validate} button allows users to validate the data. 
 Figure~\ref{shacl-editor} 
-shows a part of {\tt SurveyShapes.txt} 
-file opened in \ac{shacl} editor of Protégé 
-for the data property {\tt hasLSQ1Ans}. 
+shows a part of the {\tt SurveyShapes.txt} file for the data property {\tt hasLSQ1Ans},
+opened in \ac{shacl} editor of Protégé.
 
 \begin{figure}[htp]
     \centering
@@ -369,9 +371,9 @@ for the data property {\tt hasLSQ1Ans}.
     \label{shacl-editor}
 \end{figure}
 
-On clicking the {\tt Validate} button, 
+Upon clicking the {\tt Validate} button, 
 the summary of violated constraints is displayed 
-on the \ac{shacl} constraint violations view in Protégé. 
+in the \ac{shacl} constraint violations view in Protégé. 
 It contains the details like 
 {\tt Severity}, 
 {\tt SourceShape}, 
@@ -394,7 +396,7 @@ as shown in Figure~\ref{shacl-constraint-violations}.
 The ontology vocabularies can be queried using query languages like 
 DL query\footnote{https://protegewiki.stanford.edu/wiki/DL\_Query} 
 and \ac{sparql}. 
-Protégé offers a plugin for DL as well as SPARQL queries which are discussed in this section. 
+Protégé offers plugins for DL and SPARQL queries, which are discussed in this Section. 
 
 \subsection{DL Query}
 \label{subsec:dlquery}
@@ -403,7 +405,7 @@ In her tutorial,
 Vasilevsky\footnote{https://ontology101tutorial.readthedocs.io/en/latest/EXERCISE\_BasicDL\_Queries.html} 
 defines DL query as a class expression that is constructed with 
 {\tt and}, {\tt or},  and {\tt some}. 
-Users can rapidly check that class definitions encompass the right subclasses 
+Users can rapidly check that class definitions encompass the proper subclasses 
 by running them via the DL Query tab. 
 
 Alternately, 
@@ -413,7 +415,7 @@ placeholders for specified classes.
 The DL Query tab can be opened using Tabs option under Windows menu. 
 It is important to configure a reasoner to successfully express a DL query.
 Figure~\ref{survey-dl-query} 
-shows expression of a sample DL query using the survey ontology in Protégé. 
+shows expression of a sample DL query using the Survey Ontology in Protégé. 
 
 \begin{figure}[htp]
     \centering
@@ -432,37 +434,37 @@ to define queries and optional graph patterns.
 Protégé offers plugins for 
 {\tt \ac{sparql} Query} and {\tt Snap \ac{sparql} Query}.
 
-\subsubsection{Using \acs{sparql} Query Plugin}
+\subsubsection{Using the \acs{sparql} Query Plugin}
 \label{subsubsec:usingsparql}
     
-\ac{sparql} plugin in Protégé 
+The \ac{sparql} plugin in Protégé 
 is used to express simple queries 
 on ontologies like displaying classes and subclasses. 
 For instance, 
-consider the following query:
+consider the query in Figure~\ref{fig:sparql-optional}.
 
-\begin{figure}[htp]
-\framebox{\vbox{\tt\scriptsize
-    \begin{tabbing}
-        \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
-        \hspace*{0.95\columnwidth}\\[-1cm]
-        \\
-		SELECT * WHERE \{\\
-		\>?SurveyRespondent survey:hasOEQ1Ans ?AnswerLikeBest\\
-		\}\\
-		OPTIONAL \{\\
-		\>?SurveyRespondent survey:hasOEQ3Ans ?AnswerStrengths\\
-		\}\\
-        \\
-        \\[-1cm]
-    \end{tabbing}
-}}
-\caption{Describe what this query does and what are the pieces. Add prefixes, etc.}
-\end{figure}
-       
-Figure~\ref{survey-sparql-query} 
- shows the result of expression of \ac{sparql} query on survey ontology. 
- Here, 
+%\begin{figure}[htp]
+%\framebox{\vbox{\tt\scriptsize
+%    \begin{tabbing}
+%        \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
+%        \hspace*{0.95\columnwidth}\\[-1cm]
+%        \\
+%		SELECT * WHERE \{\\
+%		\>?SurveyRespondent survey:hasOEQ1Ans ?AnswerLikeBest\\
+%		\}\\
+%		OPTIONAL \{\\
+%		\>?SurveyRespondent survey:hasOEQ3Ans ?AnswerStrengths\\
+%		\}\\
+%        \\
+%        \\[-1cm]
+%    \end{tabbing}
+%}}
+%\caption{Describe what this query does and what are the pieces. Add prefixes, etc.}
+%\label{fig:sparql-optional}
+%\end{figure}
+%       
+Figure~\ref{survey-sparql-query} shows a \ac{sparql} query and its result. %shown in Figure~\ref{fig:sparql-optional}. 
+Here, 
  the query is used to display 
  {\tt SurveyRespondent},  {\tt hasOEQ1Ans},  and {\tt hasOEQ3Ans} 
  with column titles SurveyRespondent, AnswerLikeBest and AnswerStrengths respectively.
@@ -470,37 +472,38 @@ Figure~\ref{survey-sparql-query}
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/survey-sparql-query.png}
-    \caption{SPARQL Query on Survey Ontology}
+    \caption{SPARQL Query and Results.}% for query in Figure~\ref{fig:sparql-optional}.}
     \label{survey-sparql-query}
 \end{figure}
     
-\subsubsection{Using Snap \acs{sparql} Query Plugin}
+\subsubsection{Using the Snap \acs{sparql} Query Plugin}
 \label{subsubsec:usingsnapsparql}
 
 The Snap \ac{sparql} plugin in Protégé 
 is generally used to express comparatively complex queries 
 on ontologies 
-like displaying description of individuals. 
+like displaying the descriptions of individuals. 
 For instance, 
 consider the following query:    
 
-\begin{figure}[htp]
-\framebox{\vbox{\tt\scriptsize
-    \begin{tabbing}
-        \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
-        \hspace*{0.95\columnwidth}\\[-1cm]
-        \\
-        SELECT * WHERE \{ ?Resp a survey:SurveyRespondent .\\
-        \>OPTIONAL \{ ?Respondent survey:hasLSQ6Ans ?The\_instructor\_clearly\_answers\_questions \}\\
-        \} ORDER BY ?SurveyRespondent\\
-         \\[-1cm]
-    \end{tabbing}
-    }}
-\caption{Is this correct? add prefixes and is there a variable to order by?}
-\end{figure}
+%\begin{figure}[htp]
+%\framebox{\vbox{\tt\scriptsize
+%    \begin{tabbing}
+%        \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
+%        \hspace*{0.95\columnwidth}\\[-1cm]
+%        \\
+%        SELECT * WHERE \{ ?Resp a survey:SurveyRespondent .\\
+%        \>OPTIONAL \{ ?Respondent survey:hasLSQ6Ans ?The\_instructor\_clearly\_answers\_questions \}\\
+%        \} ORDER BY ?SurveyRespondent\\
+%         \\[-1cm]
+%    \end{tabbing}
+%    }}
+%\caption{Is this correct? add prefixes and is there a variable to order by?}
+%\label{fig:sparql-snap}
+%\end{figure}
 
-Figure~\ref{survey-snap-sparql-query} 
-shows the result of expression of Snap \ac{sparql} query on survey ontology. 
+Figure~\ref{survey-snap-sparql-query}
+shows a Snap \ac{sparql} query and its result. %shown in Figure~\ref{fig:sparql-snap}.
 It is necessary to enable a reasoner for successful working of Snap \ac{sparql} query. 
 Here, 
 the query is used to display 
@@ -510,7 +513,7 @@ with column titles ?Respondent and ?The\_instructor\_clearly\_answers\_questions
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{images/ch4/survey/survey-snap-sparql-query.png}
-    \caption{Snap SPARQL Query on Survey Ontology}
+    \caption{Snap SPARQL Query and Results.}% for query in Figure~\ref{fig:sparql-snap}.}
     \label{survey-snap-sparql-query}
 \end{figure}
 
@@ -522,21 +525,20 @@ OpenRefine\footnote{https://openrefine.org/}
 has been used to convert the data stored in spreadsheets 
 to \ac{turtle} and \ac{rdf} files using the methodology 
 described in Section~\ref{sec:csvtolodconversion}. 
-Using survey ontology in OpenRefine, 
+Using the Survey Ontology in OpenRefine, 
 the CSV file consisting of survey responses is converted into 
 \ac{turtle} and \ac{rdf}/\ac{xml} files.
 
 After importing the CSV and creating a new project, 
 the next step is to manage \ac{rdf} Schema alignment 
 to describe the data stored in CSV 
-in terms of linked data vocabulary. 
+in terms of the survey vocabulary. 
 On selecting 
 {\tt Edit \ac{rdf} Skeleton} from the menu of \ac{rdf} Extension, 
 an {\tt \ac{rdf} Schema alignment} dialog box 
 appears which offers two options: 
 {\tt \ac{rdf} Skeleton} and {\tt \ac{rdf} Preview}. 
 The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
-
 \begin{flalign}
     \text{\tt Base URI: https://parita-amin.github.io/ } &&
     \label{base-uri}
@@ -546,11 +548,11 @@ The base \ac{uri} for the \ac{rdf} schema alignment has been set to:
 \label{subsec:rdfskeleton}
 
 Figures~\ref{openrefine-rdf-skeleton-1}, ~\ref{openrefine-rdf-skeleton-2}, and~\ref{openrefine-rdf-skeleton-3} 
-show \ac{rdf} skeleton for CSV using survey ontology. 
+show \ac{rdf} skeleton for CSV using the survey ontology. 
 It consists of a list of 
 prefixes along with options for adding and managing prefixes; 
 \ac{uri} for index count; 
-and the fields in the project with an option of using linked data vocabularies to describe them.
+and the fields in the project dataset, with an option of using linked data vocabularies to describe them.
 
 \begin{figure}[htp]
     \centering
@@ -583,7 +585,7 @@ which can be used and managed as necessary.
 It also allows adding other prefixes which can be done by clicking on 
 {\tt +Add} option 
 as shown in Figure~\ref{openrefine-add-prefix}. 
-Following prefixes along with \ac{uri}s have been added to the list:
+The following prefixes, along with \ac{uri}s, have been added to the list:
 
 {\tt survey : https://parita-amin.github.io/survey.owl\#
 
@@ -640,20 +642,19 @@ of the CSV.
 
 Once the \ac{rdf} skeleton is set, 
 {\tt \ac{rdf} Preview} 
-can be used to view the description of CSV data. 
-The fields of data that were not described in \ac{rdf} skeleton, 
+can be used to view the description of the CSV data. 
+The fields of data that were not described in the \ac{rdf} skeleton, 
 do not appear in \ac{rdf} Preview. 
 It consists of a \ac{turtle} representation 
-of the first 10 rows of the resultant linked data. 
+of the first 10 rows of the \ac{rdf} output. 
 
 Figures~\ref{openrefine-rdf-preview-1} and~\ref{openrefine-rdf-preview-2} 
-depict an \ac{rdf} Preview 
-of using survey vocabulary to describe the data stored in CSV. 
+depict an \ac{rdf} Preview using the survey vocabulary to describe the data stored in the CSV. 
 It includes 
-all the prefixes for vocabularies from {\tt Available prefixes} 
-and with their \ac{uri}s
-along with the sample representation of the result of 
-using \ac{rdf} Skeleton to describe data.
+all the prefixes (along with their \ac{uri}s) for vocabularies from {\tt Available prefixes}.
+%and 
+%along with the sample representation of the result of 
+%using \ac{rdf} Skeleton to describe data.
 
 \begin{figure}[htp]
     \centering
@@ -686,12 +687,10 @@ data reuse is more likely to happen.
 
 \begin{itemize}
     
-    \item Publishing Survey Vocabulary:
+    \item Publishing Survey Data:
     
-    The linked open vocabulary for feedback survey 
-    that Dr. Hepting solicits from his students 
-    in the classes he teaches, 
-    can be accessed as \ac{turtle} 
+    A sample of the linked open data from Hepting's feedback survey 
+   	can be accessed as \ac{turtle} 
     file from my website\footnote{\tt https://parita-amin.github.io/sample.ttl} 
     or can be viewed by visiting the link to the \ac{turtle} 
     file on my website\footnote{\tt https://parita-amin.github.io/evaluationofteaching.html} 
@@ -709,8 +708,13 @@ data reuse is more likely to happen.
     The linked open dataset discussed in this research has an 
     ``Attribution-ShareAlike 4.0 International''\footnote{\tt https://creativecommons.org/licenses/by-sa/4.0/}
     open license. 
-    The degree of transparency increases as more data become available under an open license. 
+    The degree of transparency increases as more data becomes available under an open license. 
     This makes it possible for the user to investigate the relationships in the data and use it effectively. 
+    
+    \item Publishing Survey Vocabulary:
+    
+    https://parita-amin.github.io/survey.owl
+    https://parita-amin.github.io/survey.owl\
 
 \end{itemize}
 
