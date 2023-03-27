@@ -42,11 +42,20 @@ This is the OWL file that describes the feedback survey data received.
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
 @prefix survey: <https://parita-amin.github.io/survey.owl#> .
 @base <https://parita-amin.github.io/survey.owl> .
 
 <https://parita-amin.github.io/survey.owl> rdf:type owl:Ontology ;
-                                            owl:versionIRI <https://parita-amin.github.io/survey.owl/1.0> .
+                                            owl:versionIRI <https://parita-amin.github.io/survey.owl/1.0> ;
+                                            terms:license "Creative Commons Attribution-ShareAlike 4.0 International"^^xsd:string .
+                               
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+terms:license rdf:type owl:AnnotationProperty .
 
 #################################################################
 #    Object Properties
