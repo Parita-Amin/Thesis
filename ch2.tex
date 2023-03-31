@@ -111,7 +111,9 @@ or a numeric quantity.
 An {\bf identifier} distinguishes an object from all other objects within its scope.
 The purpose of an identifier is to distinguish one resource from all others.
 An identifier is not required to define the identity of what is referenced, 
-though this may be the true for some.
+though this may be 
+%the
+true for some.
 A system using \acp{uri} is not required to access the resource identified
 and for some there is no intention that they be accessed.
     
@@ -157,7 +159,9 @@ Figure~\ref{components-of-uri-example} shows its components.
 \label{subsec:rdf}
 
 According to Flanders and Jannidis~\cite{julia2015data}, 
-data modelling refers ``the process of representing data, 
+data modelling refers
+to
+``the process of representing data, 
 their relationships, and their semantics in a way 
 which is processable by humans and machines''. 
 A data model is 
@@ -201,11 +205,11 @@ An object in a statement can be either a property value, a resource, or a litera
 according to Beckett, Gandon and Schreiber~\cite{gandon2014rdf,zongmin2016rdf}, 
 can be represented in three ways:
 using \ac{xml} in an \ac{rdf}/\ac{xml} document,
-as triples in subject-predicate-object form 
+as triples in subject-predicate-object form,
 or in graphical form.
 
-The University of Manchester developed the Pizza 
-ontology~\cite{horridge2011practical,debellis2021practical}  
+The University of Manchester developed the 
+Pizza ontology~\cite{horridge2011practical,debellis2021practical}, 
 which acts as an inspiration for ``pizza'' examples in this Chapter.
 Consider the following statement:
 \begin{flalign}  
@@ -277,11 +281,12 @@ Considering an entity-relationship data model,
 the predicate can be treated as a relationship shared by the subject and the object. 
 In addition to the \ac{rdf}/\ac{xml} and the line-based N-triples~\cite{beckett2014rdf} 
 formats, 
-the \ac{rdf} data model has a variety of serialization formats such as
-\ac{turtle}; \ac{n3}, 
-which is an extension of N-Triples (line based) 
+the \ac{rdf} data model has a variety of serialization formats 
+including
+\ac{n3} and \ac{turtle}.
+\ac{n3} is an extension of N-Triples (line based) 
 and adds a graph label to each line 
-that allows multiple graph encoding~\cite{cyganiak2008n}.
+that allows multiple graph encoding~\cite{cyganiak2014rdf}.
 
 There can be more details added to Statement~\ref{caloriccontent}
 (illustrated in Figures~\ref{rdf-xml-doc} and~\ref{rdf-graph}) and
@@ -326,9 +331,9 @@ shows a graphical representation of this system.
     \label{graph-for-base-types}
 \end{figure}
 
-{\tt pizza:Pizza} (subject) 
-is connected to {\tt pizza:PizzaBase} (object) node 
-through {\tt pizza:hasBase} (predicate). 
+The {\tt pizza:Pizza} (subject) node
+is connected to the {\tt pizza:PizzaBase} (object) node 
+through the {\tt pizza:hasBase} (predicate). 
 Further, 
 the {\tt pizza:PizzaBase} node has multiple child nodes, 
 namely, 
@@ -339,7 +344,8 @@ Instead of using an unnecessary \ac{uri}
 for the {\tt pizza:PizzaBase} entity, 
 a blank node can be used to denote the entity, 
 as shown in Figure~\ref{blank-node-for-rdf}. 
-The relationships of the blank node with other nodes give sufficient details 
+The relationships of the blank node with the 
+other nodes give sufficient details 
 without hindering the flow of the data tree.
 
 \begin{figure}[htp]
@@ -412,7 +418,8 @@ Foundation\footnote{\tt https://opendatahandbook.org/guide/en/what-is-open-data/
 re-used and redistributed by anyone - subject only, 
 at most, 
 to the requirement to attribute and share-alike''. 
-Azogu and Longo\cite{open2022} say that ``data and information that is ... electronically available in a 
+Azogu and Longo~\cite{open2022} say that 
+``data and information that is ... electronically available in a 
 machine-readable format, is freely accessible by anyone and may be used, reused or redistributed without 
 reasonable restriction''.
 To make open data available to everyone on the web, 
@@ -437,8 +444,8 @@ Important features of open data are:
 \end{itemize}
 
 To control the use of open data, 
-Berners-Lee~\cite{soliddemo2016,solidtutorial2016} 
-proposed a protocol called SOcial LInked Data (SOLID)
+Berners-Lee 
+proposed a protocol called SOcial LInked Data (SOLID)~\cite{soliddemo2016,solidtutorial2016}
 which focuses on web decentralization. 
 The project identifies the need for control over the use of available data 
 by web economy firms like social media sites.
@@ -456,9 +463,9 @@ it as one huge database~\cite{bernerslee1999weaving}.
 \subsection{Wikidata}
 \label{subsec:wikidata}
 
-A variety of projects and websites, 
-that use linked open data, 
-have been developed. 
+A variety of projects and websites 
+that use linked open data
+have been developed.
 Wikidata is one of the major projects of linked open data that 
 present structured data on the semantic web. 
 
@@ -520,7 +527,7 @@ on Wikidata is as shown in Figure~\ref{rdf-xml-uofr}.
 
 		\centering
 		
-		\caption{Statement Properties and Property IDs for {\tt University of Regina} on Wikidata.\label{uofr-statement-properties-and-id}}
+		\caption{Statement Properties and Property IDs for the University of Regina on Wikidata.\label{uofr-statement-properties-and-id}}
         
         \begin{tabular}{|l|l|} \hline 
              Statement Property \ & Property ID \\ \hline
@@ -544,7 +551,7 @@ on Wikidata is as shown in Figure~\ref{rdf-xml-uofr}.
 \begin{table}[h!]
 	\centering
 	
-	\caption{Identifier Properties and Property IDs for {\tt University of Regina} on Wikidata.}
+	\caption{Identifier Properties and Property IDs for the University of Regina on Wikidata.}
     \label{uofr-identifier-properties-and-id}
    
   	\begin{tabular}{|l|l|} \hline
@@ -751,8 +758,6 @@ Protégé also has a well-established tutorial~\cite{horridge2011practical,debel
 
 \section{Linked Data Life Cycle}
 \label{sec:linkeddatalifecycle}
-
-Benkler~\cite{benkler}\marginpar{see EE's note on page 21}
 
 The Linked Data Life Cycle described by 
 Ngomo et al.~\cite{ngomo2014introduction}

@@ -67,7 +67,7 @@ in a ``survey'' vocabulary to describe Hepting's student feedback instrument and
 This reuse will be a focus of a subsequent revision of the vocabulary. 
 Because no existing vocabularies have been found to describe Likert items, 
 the ``survey'' ontology has been described without using any existing vocabularies. 
-The following Section focuses on describing new vocabulary for the ``survey'' ontology.
+The following Section focuses on describing a new vocabulary for the ``survey'' ontology.
 
 \section{Modelling Ontology for Survey Using Protégé}
 \label{sec:modelingontology}
@@ -439,31 +439,8 @@ Protégé offers plugins for
     
 The \ac{sparql} plugin in Protégé 
 is used to express simple queries 
-on ontologies like displaying classes and subclasses. 
-For instance, 
-consider the query in Figure~\ref{fig:sparql-optional}.
-
-%\begin{figure}[htp]
-%\framebox{\vbox{\tt\scriptsize
-%    \begin{tabbing}
-%        \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
-%        \hspace*{0.95\columnwidth}\\[-1cm]
-%        \\
-%		SELECT * WHERE \{\\
-%		\>?SurveyRespondent survey:hasOEQ1Ans ?AnswerLikeBest\\
-%		\}\\
-%		OPTIONAL \{\\
-%		\>?SurveyRespondent survey:hasOEQ3Ans ?AnswerStrengths\\
-%		\}\\
-%        \\
-%        \\[-1cm]
-%    \end{tabbing}
-%}}
-%\caption{Describe what this query does and what are the pieces. Add prefixes, etc.}
-%\label{fig:sparql-optional}
-%\end{figure}
-%       
-Figure~\ref{survey-sparql-query} shows a \ac{sparql} query and its result. %shown in Figure~\ref{fig:sparql-optional}. 
+on ontologies like displaying classes and subclasses.       
+Figure~\ref{survey-sparql-query} shows a \ac{sparql} query and its result. 
 Here, 
  the query is used to display 
  {\tt SurveyRespondent},  {\tt hasOEQ1Ans},  and {\tt hasOEQ3Ans} 
@@ -483,25 +460,6 @@ The Snap \ac{sparql} plugin in Protégé
 is generally used to express comparatively complex queries 
 on ontologies 
 like displaying the descriptions of individuals. 
-For instance, 
-consider the following query:    
-
-%\begin{figure}[htp]
-%\framebox{\vbox{\tt\scriptsize
-%    \begin{tabbing}
-%        \hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\=\hspace*{0.3cm}\= \kill
-%        \hspace*{0.95\columnwidth}\\[-1cm]
-%        \\
-%        SELECT * WHERE \{ ?Resp a survey:SurveyRespondent .\\
-%        \>OPTIONAL \{ ?Respondent survey:hasLSQ6Ans ?The\_instructor\_clearly\_answers\_questions \}\\
-%        \} ORDER BY ?SurveyRespondent\\
-%         \\[-1cm]
-%    \end{tabbing}
-%    }}
-%\caption{Is this correct? add prefixes and is there a variable to order by?}
-%\label{fig:sparql-snap}
-%\end{figure}
-
 Figure~\ref{survey-snap-sparql-query}
 shows a Snap \ac{sparql} query and its result. %shown in Figure~\ref{fig:sparql-snap}.
 It is necessary to enable a reasoner for successful working of Snap \ac{sparql} query. 
@@ -719,7 +677,7 @@ data reuse is more likely to happen.
     open license which has been descried as a part of the vocabulary itself in the survey.owl file as shown in 
     Figure~\ref{survey-vocabulary-license}. 
     
-    \begin{figure}[htp]
+    \begin{figure}[t]
        \centering
        \includegraphics[width=\columnwidth]{images/ch4/survey/survey-vocabulary-license.png}
        \caption{License for Survey Vocabulary}
